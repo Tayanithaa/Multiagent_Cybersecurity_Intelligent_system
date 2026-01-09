@@ -1,5 +1,0 @@
-source_ip,threat_type,severity,alert_count,avg_confidence,primary_action,secondary_action,action_priority,automation_status,ti_category,ti_risk_level
-192.168.1.100,brute_force,MEDIUM,25,0.998,BLOCK_IP,RESET_PASSWORD,1,Can be automated,Authentication Attack,MEDIUM
-10.0.0.50,malware,HIGH,5,0.995,ISOLATE_HOST,SCAN_SYSTEM,1,Can be automated,Malicious Software,HIGH
-172.16.0.200,ransomware,HIGH,3,0.999,ISOLATE_HOST,NOTIFY_LEGAL,1,Can be automated,Extortion Malware,HIGH
-192.168.5.75,data_exfil,HIGH,12,0.972,BLOCK_IP,ESCALATE,1,Can be automated,Data Breach,HIGH

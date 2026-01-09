@@ -44,5 +44,5 @@ build/
 .env.local
 .env.*.local
 
-# Trained models (too large for GitHub)
 models/
+
