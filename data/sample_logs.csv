@@ -1,0 +1,86 @@
+timestamp,user,ip,event_type,status,raw_message
+2026-01-03 08:00:01,user1,192.168.1.10,login,failed,Invalid credentials - attempt 1
+2026-01-03 08:00:02,user1,192.168.1.10,login,failed,Invalid credentials - attempt 2
+2026-01-03 08:00:03,user1,192.168.1.10,login,failed,Invalid credentials - attempt 3
+2026-01-03 08:00:04,user1,192.168.1.10,login,failed,Invalid credentials - attempt 4
+2026-01-03 08:00:05,user1,192.168.1.10,login,failed,Invalid credentials - attempt 5
+2026-01-03 08:00:06,user2,192.168.1.20,login,success,User login successful
+2026-01-03 08:00:07,user2,192.168.1.20,file_access,success,Accessed document.pdf
+2026-01-03 08:00:08,user3,192.168.1.30,network,success,Connected to server
+2026-01-03 08:00:09,user4,192.168.1.40,process,blocked,Blocked suspicious.exe execution
+2026-01-03 08:00:10,user4,192.168.1.40,process,blocked,Blocked malware.sys loading
+2026-01-03 08:01:01,user1,192.168.1.10,login,failed,Invalid credentials - attempt 6
+2026-01-03 08:01:02,user1,192.168.1.10,login,failed,Invalid credentials - attempt 7
+2026-01-03 08:01:03,user1,192.168.1.10,login,failed,Invalid credentials - attempt 8
+2026-01-03 08:01:04,user1,192.168.1.10,login,failed,Invalid credentials - attempt 9
+2026-01-03 08:01:05,user1,192.168.1.10,login,failed,Invalid credentials - attempt 10
+2026-01-03 08:01:06,user5,192.168.1.50,login,success,User login successful
+2026-01-03 08:01:07,user5,192.168.1.50,file_access,success,Downloaded report.xlsx
+2026-01-03 08:01:08,user6,192.168.1.60,network,success,Uploaded data.zip
+2026-01-03 08:01:09,user7,192.168.1.70,process,blocked,Blocked ransomware.exe
+2026-01-03 08:01:10,user7,192.168.1.70,process,blocked,Blocked crypto_miner.dll
+2026-01-03 08:02:01,user1,192.168.1.10,login,failed,Invalid credentials - attempt 11
+2026-01-03 08:02:02,user1,192.168.1.10,login,failed,Invalid credentials - attempt 12
+2026-01-03 08:02:03,user1,192.168.1.10,login,failed,Invalid credentials - attempt 13
+2026-01-03 08:02:04,user1,192.168.1.10,login,failed,Invalid credentials - attempt 14
+2026-01-03 08:02:05,user1,192.168.1.10,login,failed,Invalid credentials - attempt 15
+2026-01-03 08:02:06,user8,192.168.1.80,login,success,User login successful
+2026-01-03 08:02:07,user8,192.168.1.80,file_access,success,Accessed config.ini
+2026-01-03 08:02:08,user9,192.168.1.90,network,success,Connected to database
+2026-01-03 08:02:09,user10,192.168.1.100,process,blocked,Blocked trojan.exe
+2026-01-03 08:02:10,user10,192.168.1.100,process,blocked,Blocked spyware.bin
+2026-01-03 08:03:01,user1,192.168.1.10,login,failed,Invalid credentials - attempt 16
+2026-01-03 08:03:02,user1,192.168.1.10,login,failed,Invalid credentials - attempt 17
+2026-01-03 08:03:03,user1,192.168.1.10,login,failed,Invalid credentials - attempt 18
+2026-01-03 08:03:04,user1,192.168.1.10,login,failed,Invalid credentials - attempt 19
+2026-01-03 08:03:05,user1,192.168.1.10,login,failed,Invalid credentials - attempt 20
+2026-01-03 08:03:06,user11,192.168.1.110,login,success,User login successful
+2026-01-03 08:03:07,user11,192.168.1.110,file_access,success,Read logs.txt
+2026-01-03 08:03:08,user12,192.168.1.120,network,success,Sync completed
+2026-01-03 08:03:09,user13,192.168.1.130,process,blocked,Blocked backdoor.exe
+2026-01-03 08:03:10,user13,192.168.1.130,process,blocked,Blocked rootkit.sys
+2026-01-03 08:04:01,user14,192.168.1.140,login,failed,Invalid credentials - attempt 1
+2026-01-03 08:04:02,user14,192.168.1.140,login,failed,Invalid credentials - attempt 2
+2026-01-03 08:04:03,user14,192.168.1.140,login,failed,Invalid credentials - attempt 3
+2026-01-03 08:04:04,user14,192.168.1.140,login,failed,Invalid credentials - attempt 4
+2026-01-03 08:04:05,user14,192.168.1.140,login,failed,Invalid credentials - attempt 5
+2026-01-03 08:04:06,user15,192.168.1.150,login,success,User login successful
+2026-01-03 08:04:07,user15,192.168.1.150,file_access,success,Edited presentation.pptx
+2026-01-03 08:04:08,user16,192.168.1.160,network,success,Query executed
+2026-01-03 08:04:09,user17,192.168.1.170,process,blocked,Blocked worm.exe
+2026-01-03 08:04:10,user17,192.168.1.170,process,blocked,Blocked botnet.dll
+2026-01-03 08:05:01,user18,192.168.1.180,login,success,User login successful
+2026-01-03 08:05:02,user18,192.168.1.180,file_access,success,Printed document
+2026-01-03 08:05:03,user19,192.168.1.190,network,success,Backup initiated
+2026-01-03 08:05:04,user20,192.168.1.200,process,success,Process completed
+2026-01-03 08:05:05,user20,192.168.1.200,process,success,Service restarted
+2026-01-03 08:05:06,user1,192.168.1.10,login,failed,Invalid credentials - attempt 21
+2026-01-03 08:05:07,user1,192.168.1.10,login,failed,Invalid credentials - attempt 22
+2026-01-03 08:05:08,user1,192.168.1.10,login,failed,Invalid credentials - attempt 23
+2026-01-03 08:05:09,user1,192.168.1.10,login,failed,Invalid credentials - attempt 24
+2026-01-03 08:05:10,user1,192.168.1.10,login,failed,Invalid credentials - attempt 25
+2026-01-03 08:06:01,user2,192.168.1.20,login,success,User login successful
+2026-01-03 08:06:02,user2,192.168.1.20,file_access,success,Viewed spreadsheet
+2026-01-03 08:06:03,user3,192.168.1.30,network,success,Transfer completed
+2026-01-03 08:06:04,user4,192.168.1.40,process,blocked,Blocked virus.exe
+2026-01-03 08:06:05,user4,192.168.1.40,process,blocked,Blocked adware.scr
+2026-01-03 08:07:01,user5,192.168.1.50,login,success,User login successful
+2026-01-03 08:07:02,user5,192.168.1.50,file_access,success,Exported data.csv
+2026-01-03 08:07:03,user6,192.168.1.60,network,success,Connection established
+2026-01-03 08:07:04,user7,192.168.1.70,process,blocked,Blocked loader.exe
+2026-01-03 08:07:05,user7,192.168.1.70,process,blocked,Blocked injector.dll
+2026-01-03 08:08:01,user8,192.168.1.80,login,success,User login successful
+2026-01-03 08:08:02,user8,192.168.1.80,file_access,success,Modified settings
+2026-01-03 08:08:03,user9,192.168.1.90,network,success,Synced folders
+2026-01-03 08:08:04,user10,192.168.1.100,process,blocked,Blocked exploiter.exe
+2026-01-03 08:08:05,user10,192.168.1.100,process,blocked,Blocked payload.bin
+2026-01-03 08:09:01,user14,192.168.1.140,login,failed,Invalid credentials - attempt 6
+2026-01-03 08:09:02,user14,192.168.1.140,login,failed,Invalid credentials - attempt 7
+2026-01-03 08:09:03,user14,192.168.1.140,login,failed,Invalid credentials - attempt 8
+2026-01-03 08:09:04,user14,192.168.1.140,login,failed,Invalid credentials - attempt 9
+2026-01-03 08:09:05,user14,192.168.1.140,login,failed,Invalid credentials - attempt 10
+2026-01-03 08:09:06,user11,192.168.1.110,login,success,User login successful
+2026-01-03 08:09:07,user11,192.168.1.110,file_access,success,Checked inbox
+2026-01-03 08:09:08,user12,192.168.1.120,network,success,Download started
+2026-01-03 08:09:09,user13,192.168.1.130,process,blocked,Blocked dropper.exe
+2026-01-03 08:09:10,user13,192.168.1.130,process,blocked,Blocked packer.dll

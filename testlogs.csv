@@ -1,0 +1,60 @@
+timestamp,user,ip,event_type,status,raw_message
+2026-01-03 10:01:12,alice,192.168.1.21,LOGIN_SUCCESS,SUCCESS,User logged in successfully
+2026-01-03 10:02:45,bob,192.168.1.45,LOGIN_FAILED,FAILED,Multiple failed login attempts detected
+2026-01-03 10:03:11,unknown,192.168.1.78,NETWORK_TRAFFIC,ANOMALOUS,High volume of requests detected from single IP
+2026-01-03 10:04:33,charlie,192.168.1.32,PROCESS_EXECUTION,SUSPICIOUS,Suspicious executable detected in temp directory
+2026-01-03 10:05:10,eve,192.168.1.56,EMAIL_RECEIVED,SUSPICIOUS,Email contains malicious link asking for credentials
+2026-01-03 10:06:02,admin,192.168.1.12,PRIVILEGE_USE,SUSPICIOUS,Admin accessed confidential files outside business hours
+2026-01-03 10:07:18,david,192.168.1.67,DATA_TRANSFER,SUSPICIOUS,Large outbound data transfer to external server
+2026-01-03 10:08:41,alice,192.168.1.89,FILE_ACTIVITY,CRITICAL,Multiple files encrypted in short time interval
+2026-01-03 10:09:54,bob,192.168.1.34,LOGIN_SUCCESS,SUCCESS,User logged in successfully
+2026-01-03 10:10:20,unknown,192.168.1.101,NETWORK_TRAFFIC,ANOMALOUS,Distributed traffic spike indicating possible DDoS attack
+2026-01-03 10:11:45,charlie,192.168.1.76,LOGIN_FAILED,FAILED,Repeated authentication failures detected
+2026-01-03 10:12:59,eve,192.168.1.58,EMAIL_RECEIVED,SUSPICIOUS,Phishing email spoofing IT support detected
+2026-01-03 10:13:44,david,192.168.1.61,PROCESS_EXECUTION,SUSPICIOUS,Unknown binary executed from downloads folder
+2026-01-03 10:14:33,admin,192.168.1.19,DATA_TRANSFER,SUSPICIOUS,Unusually large data upload outside office hours
+2026-01-03 10:15:27,bob,192.168.1.40,LOGIN_FAILED,FAILED,Account locked after multiple failed login attempts
+2026-01-03 10:16:51,unknown,192.168.1.88,NETWORK_TRAFFIC,ANOMALOUS,Abnormal packet flood detected
+2026-01-03 10:17:42,alice,192.168.1.73,LOGIN_SUCCESS,SUCCESS,User logged in successfully
+2026-01-03 10:18:30,charlie,192.168.1.64,FILE_ACTIVITY,CRITICAL,Rapid file modifications consistent with ransomware behavior
+2026-01-03 10:19:11,eve,192.168.1.55,EMAIL_RECEIVED,SUSPICIOUS,Email attachment flagged as malicious
+2026-01-03 10:20:49,david,192.168.1.92,DATA_TRANSFER,SUSPICIOUS,Potential data exfiltration via encrypted channel
+2026-01-03 10:21:36,admin,192.168.1.18,PRIVILEGE_USE,SUSPICIOUS,Privileged command executed outside maintenance window
+2026-01-03 10:22:10,bob,192.168.1.47,LOGIN_SUCCESS,SUCCESS,User logged in successfully
+2026-01-03 10:23:55,unknown,192.168.1.111,NETWORK_TRAFFIC,ANOMALOUS,Excessive SYN requests from single source
+2026-01-03 10:24:31,charlie,192.168.1.69,PROCESS_EXECUTION,SUSPICIOUS,Malware-like process behavior detected
+2026-01-03 10:25:08,eve,192.168.1.52,EMAIL_RECEIVED,SUSPICIOUS,Credential harvesting phishing attempt detected
+2026-01-03 10:26:47,david,192.168.1.83,DATA_TRANSFER,SUSPICIOUS,Large outbound transfer to unknown IP
+2026-01-03 10:27:34,admin,192.168.1.14,PRIVILEGE_USE,SUSPICIOUS,Unauthorized access to sensitive directory
+2026-01-03 10:28:19,alice,192.168.1.36,LOGIN_FAILED,FAILED,Failed login attempt from unusual location
+2026-01-03 10:29:58,unknown,192.168.1.95,NETWORK_TRAFFIC,ANOMALOUS,Traffic surge indicative of DDoS amplification
+2026-01-03 10:30:44,charlie,192.168.1.62,FILE_ACTIVITY,CRITICAL,Mass file encryption detected
+2026-01-03 10:31:12,eve,192.168.1.57,EMAIL_RECEIVED,SUSPICIOUS,Malicious URL detected in email body
+2026-01-03 10:32:39,david,192.168.1.90,PROCESS_EXECUTION,SUSPICIOUS,Unauthorized script execution detected
+2026-01-03 10:33:21,admin,192.168.1.11,DATA_TRANSFER,SUSPICIOUS,Data exfiltration attempt using cloud storage
+2026-01-03 10:34:05,bob,192.168.1.48,LOGIN_SUCCESS,SUCCESS,User logged in successfully
+2026-01-03 10:35:50,unknown,192.168.1.104,NETWORK_TRAFFIC,ANOMALOUS,High bandwidth consumption detected
+2026-01-03 10:36:29,charlie,192.168.1.71,LOGIN_FAILED,FAILED,Repeated failed authentication attempts
+2026-01-03 10:37:18,eve,192.168.1.53,EMAIL_RECEIVED,SUSPICIOUS,Email impersonating CEO requesting urgent action
+2026-01-03 10:38:41,david,192.168.1.86,DATA_TRANSFER,SUSPICIOUS,Unscheduled data upload detected
+2026-01-03 10:39:22,admin,192.168.1.16,PRIVILEGE_USE,SUSPICIOUS,Admin privilege escalation detected
+2026-01-03 10:40:07,alice,192.168.1.29,LOGIN_SUCCESS,SUCCESS,User logged in successfully
+2026-01-03 10:41:54,unknown,192.168.1.117,NETWORK_TRAFFIC,ANOMALOUS,Sustained traffic flood from multiple sources
+2026-01-03 10:42:36,charlie,192.168.1.66,PROCESS_EXECUTION,SUSPICIOUS,Execution of unsigned binary detected
+2026-01-03 10:43:19,eve,192.168.1.59,EMAIL_RECEIVED,SUSPICIOUS,Phishing email with fake password reset link
+2026-01-03 10:44:51,david,192.168.1.94,FILE_ACTIVITY,CRITICAL,Ransomware encryption pattern detected
+2026-01-03 10:45:33,admin,192.168.1.13,DATA_TRANSFER,SUSPICIOUS,Large data export to removable media
+2026-01-03 10:46:18,bob,192.168.1.50,LOGIN_FAILED,FAILED,Multiple invalid password attempts
+2026-01-03 10:47:59,unknown,192.168.1.109,NETWORK_TRAFFIC,ANOMALOUS,Abnormal UDP flood detected
+2026-01-03 10:48:44,charlie,192.168.1.68,PROCESS_EXECUTION,SUSPICIOUS,Malicious payload execution detected
+2026-01-03 10:49:27,eve,192.168.1.54,EMAIL_RECEIVED,SUSPICIOUS,Email attachment contains macro malware
+2026-01-03 10:50:12,david,192.168.1.97,DATA_TRANSFER,SUSPICIOUS,Possible data leakage detected
+2026-01-03 10:51:05,admin,192.168.1.17,PRIVILEGE_USE,SUSPICIOUS,Unauthorized admin command execution
+2026-01-03 10:52:44,alice,192.168.1.33,LOGIN_SUCCESS,SUCCESS,User logged in successfully
+2026-01-03 10:53:36,unknown,192.168.1.120,NETWORK_TRAFFIC,ANOMALOUS,Traffic anomaly consistent with DDoS
+2026-01-03 10:54:19,charlie,192.168.1.74,FILE_ACTIVITY,CRITICAL,High-speed file encryption detected
+2026-01-03 10:55:07,eve,192.168.1.60,EMAIL_RECEIVED,SUSPICIOUS,Credential phishing attempt detected
+2026-01-03 10:56:49,david,192.168.1.99,PROCESS_EXECUTION,SUSPICIOUS,Suspicious process spawned by user
+2026-01-03 10:57:31,admin,192.168.1.15,DATA_TRANSFER,SUSPICIOUS,Unauthorized bulk data transfer detected
+2026-01-03 10:58:14,bob,192.168.1.46,LOGIN_SUCCESS,SUCCESS,User logged in successfully
+2026-01-03 10:59:55,unknown,192.168.1.122,NETWORK_TRAFFIC,ANOMALOUS,Massive inbound traffic spike detected

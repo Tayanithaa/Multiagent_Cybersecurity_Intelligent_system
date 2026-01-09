@@ -1,0 +1,21 @@
+timestamp,user,ip,event_type,status,raw_message
+2026-01-03 09:00:01,user1,192.168.2.10,login,success,User login successful
+2026-01-03 09:00:02,user1,192.168.2.10,file_access,success,Accessed report.pdf
+2026-01-03 09:00:03,user2,192.168.2.20,network,success,Connected to file server
+2026-01-03 09:00:04,user2,192.168.2.20,file_access,success,Downloaded dataset.xlsx
+2026-01-03 09:00:05,user3,192.168.2.30,login,success,User login successful
+2026-01-03 09:00:06,user3,192.168.2.30,process,success,Started application
+2026-01-03 09:00:07,user4,192.168.2.40,network,success,Upload completed
+2026-01-03 09:00:08,user4,192.168.2.40,login,success,User login successful
+2026-01-03 09:00:09,user5,192.168.2.50,file_access,success,Modified document.docx
+2026-01-03 09:00:10,user5,192.168.2.50,network,success,Sync completed
+2026-01-03 09:01:01,user6,192.168.2.60,login,success,User login successful
+2026-01-03 09:01:02,user6,192.168.2.60,file_access,success,Viewed spreadsheet
+2026-01-03 09:01:03,user7,192.168.2.70,process,success,Service running normally
+2026-01-03 09:01:04,user7,192.168.2.70,network,success,Connection established
+2026-01-03 09:01:05,user8,192.168.2.80,login,success,User login successful
+2026-01-03 09:01:06,user8,192.168.2.80,file_access,success,Edited presentation
+2026-01-03 09:01:07,user9,192.168.2.90,network,success,Transfer successful
+2026-01-03 09:01:08,user9,192.168.2.90,process,success,Task completed
+2026-01-03 09:01:09,user10,192.168.2.100,login,success,User login successful
+2026-01-03 09:01:10,user10,192.168.2.100,file_access,success,Accessed database

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Agent SOC Security Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">
+                <span class="logo-icon">🛡️</span>
+                <h1>Multi-Agent SOC Dashboard</h1>
+            </div>
+            <div class="header-status">
+                <span class="status-dot"></span>
+                <span>System Active</span>
+                <button id="refresh-btn" class="btn-icon" title="Refresh">🔄</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="nav-tabs">
+        <button class="tab-btn active" data-tab="dashboard">📊 Dashboard</button>
+        <button class="tab-btn" data-tab="incidents">🚨 Incidents</button>
+        <button class="tab-btn" data-tab="upload">📤 Upload & Analyze</button>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        
+        <!-- Dashboard Tab -->
+        <div id="dashboard-tab" class="tab-content active">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">📈</div>
+                    <div class="stat-info">
+                        <div class="stat-value" id="total-incidents">0</div>
+                        <div class="stat-label">Total Incidents</div>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">🔴</div>
+                    <div class="stat-info">
+                        <div class="stat-value" id="high-severity">0</div>
+                        <div class="stat-label">High Severity</div>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">🎯</div>
+                    <div class="stat-info">
+                        <div class="stat-value" id="avg-confidence">0%</div>
+                        <div class="stat-label">Avg Confidence</div>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">⚡</div>
+                    <div class="stat-info">
+                        <div class="stat-value" id="critical-actions">0</div>
+                        <div class="stat-label">Critical Actions</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="charts-grid">
+                <div class="chart-card">
+                    <h3>Threat Type Distribution</h3>
+                    <canvas id="threatChart" height="300"></canvas>
+                </div>
+                <div class="chart-card">
+                    <h3>Detection Confidence Distribution</h3>
+                    <canvas id="confidenceChart" height="300"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <!-- Incidents Tab -->
+        <div id="incidents-tab" class="tab-content">
+            <div class="table-controls">
+                <h2>Security Incidents</h2>
+                <div class="filter-group">
+                    <select id="severity-filter" class="filter-select">
+                        <option value="">All Severities</option>
+                        <option value="HIGH">HIGH</option>
+                        <option value="MEDIUM">MEDIUM</option>
+                        <option value="LOW">LOW</option>
+                    </select>
+                    <input type="text" id="search-input" placeholder="Search IP or threat..." class="search-input">
+                </div>
+            </div>
+            
+            <div class="table-container">
+                <table id="incidents-table">
+                    <thead>
+                        <tr>
+                            <th>Source IP</th>
+                            <th>Threat Type</th>
+                            <th>Severity</th>
+                            <th>Alerts</th>
+                            <th>Confidence</th>
+                            <th>TI Category</th>
+                            <th>Action</th>
+                            <th>Priority</th>
+                            <th>Time</th>
+                            <th>Details</th>
+                        </tr>
+                    </thead>
+                    <tbody id="incidents-body">
+                        <tr>
+                            <td colspan="10" class="no-data">No incidents to display. Upload logs to analyze.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Upload Tab -->
+        <div id="upload-tab" class="tab-content">
+            <div class="upload-container">
+                <h2>Upload Security Logs</h2>
+                <p class="upload-description">
+                    Upload a CSV file containing security logs for AI-powered analysis.<br>
+                    Pipeline: <strong>BERT Detection</strong> → <strong>Correlation</strong> → <strong>TI Enrichment</strong> → <strong>Response Recommendations</strong>
+                </p>
+
+                <div class="upload-box" id="upload-box">
+                    <div class="upload-icon">📁</div>
+                    <p class="upload-text">Drag & drop CSV file here or click to browse</p>
+                    <input type="file" id="file-input" accept=".csv" hidden>
+                    <button class="btn-primary" onclick="document.getElementById('file-input').click()">Choose File</button>
+                </div>
+
+                <div id="file-info" class="file-info" style="display: none;">
+                    <span id="file-name"></span>
+                    <button class="btn-primary" id="upload-btn">Upload & Analyze</button>
+                </div>
+
+                <div id="upload-progress" class="progress-container" style="display: none;">
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progress-fill"></div>
+                    </div>
+                    <p class="progress-text" id="progress-text">Analyzing...</p>
+                </div>
+
+                <div id="upload-result" class="result-box" style="display: none;"></div>
+            </div>
+
+            <div class="info-section">
+                <h3>Expected CSV Format</h3>
+                <table class="format-table">
+                    <thead>
+                        <tr>
+                            <th>Column</th>
+                            <th>Description</th>
+                            <th>Example</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>timestamp</td>
+                            <td>Log timestamp</td>
+                            <td>2026-01-05 10:00:00</td>
+                        </tr>
+                        <tr>
+                            <td>source_ip / ip</td>
+                            <td>Source IP address</td>
+                            <td>192.168.1.100</td>
+                        </tr>
+                        <tr>
+                            <td>user</td>
+                            <td>Username</td>
+                            <td>admin</td>
+                        </tr>
+                        <tr>
+                            <td>message / raw_message</td>
+                            <td>Log message</td>
+                            <td>Failed password for admin</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Notification Toast -->
+    <div id="notification" class="notification"></div>
+
+    <!-- Incident Details Modal -->
+    <div id="incident-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Incident Details & Model Analysis</h2>
+                <button class="modal-close" onclick="closeIncidentModal()">&times;</button>
+            </div>
+            <div class="modal-body" id="modal-body">
+                <!-- Dynamic content will be inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

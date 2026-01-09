@@ -1,0 +1,201 @@
+timestamp,source_ip,user,message,actual_threat
+2026-01-03 01:26:45.624674,192.168.1.47,system,System health check passed,normal
+2026-01-03 01:33:15.624674,192.168.1.47,admin,DDoS attack detected: 442 connections from 189.252.223.163,ddos
+2026-01-03 01:34:07.624674,192.168.10.163,aanderson,System health check passed,normal
+2026-01-03 01:34:54.624674,192.168.9.138,slee,Invalid password attempt for user kwilson,brute_force
+2026-01-03 01:44:07.624674,192.168.2.200,system,Email from 176.113.169.46 flagged as phishing attempt,phishing
+2026-01-03 01:44:39.624674,192.168.7.108,slee,Brute force pattern detected: 58 failed logins from 192.168.3.16,brute_force
+2026-01-03 01:47:58.624674,192.168.2.191,root,Brute force pattern detected: 499 failed logins from 192.168.6.148,brute_force
+2026-01-03 02:04:42.624674,192.168.1.47,system,Suspicious activity: aanderson accessed payroll data without authorization,insider_threat
+2026-01-03 02:40:29.624674,192.168.6.148,rgarcia,System health check passed,normal
+2026-01-03 02:48:40.624674,192.168.6.34,slee,Configuration updated by system,normal
+2026-01-03 02:49:05.624674,192.168.10.22,mjones,Abnormal traffic spike from single source 119.31.77.94,ddos
+2026-01-03 02:54:01.624674,192.168.2.191,system,User kwilson logged in successfully from 192.168.1.15,normal
+2026-01-03 03:01:08.624674,192.168.6.34,rgarcia,Brute force pattern detected: 453 failed logins from 192.168.10.163,brute_force
+2026-01-03 03:02:20.624674,192.168.3.16,kwilson,Multiple failed SSH attempts detected from 192.168.8.64,brute_force
+2026-01-03 03:28:32.624674,192.168.9.138,admin,Authentication successful for user mjones,normal
+2026-01-03 03:36:39.624674,192.168.7.132,rgarcia,Session started for slee from 192.168.2.191,normal
+2026-01-03 03:37:51.624674,192.168.1.178,aanderson,User root accessed file backup.zip,normal
+2026-01-03 03:48:54.624674,192.168.8.192,aanderson,User aanderson accessed file budget.xlsx,normal
+2026-01-03 03:56:58.624674,192.168.7.132,dbrown,User kwilson logged in successfully from 192.168.6.148,normal
+2026-01-03 04:05:40.624674,192.168.1.47,root,Unauthorized data transfer to cloud storage http://fake-bank.com,data_exfil
+2026-01-03 04:20:21.624674,192.168.9.111,aanderson,Security alert: ransomware.variant found in user downloads folder,malware
+2026-01-03 04:31:07.624674,192.168.1.15,slee,Brute force pattern detected: 495 failed logins from 192.168.3.16,brute_force
+2026-01-03 04:31:36.624674,192.168.9.138,mjones,Session started for jsmith from 192.168.7.132,normal
+2026-01-03 04:39:53.624674,192.168.9.138,slee,User slee accessed file budget.xlsx,normal
+2026-01-03 04:40:07.624674,192.168.3.16,system,Sensitive file credentials.txt transferred to external IP 176.113.169.46,data_exfil
+2026-01-03 04:43:38.624674,192.168.10.194,kwilson,Role violation: system attempted to access executive files,insider_threat
+2026-01-03 04:43:39.624674,192.168.6.148,root,Multiple failed SSH attempts detected from 192.168.1.15,brute_force
+2026-01-03 04:56:29.624674,192.168.3.16,rgarcia,Session started for jsmith from 192.168.10.194,normal
+2026-01-03 05:05:57.624674,192.168.10.22,system,Fake login page detected: http://phishing-site.com/login impersonating internal portal,phishing
+2026-01-03 05:17:54.624674,192.168.6.50,admin,Unauthorized data transfer to cloud storage http://fake-bank.com,data_exfil
+2026-01-03 05:20:35.624674,192.168.3.16,root,Invalid password attempt for user kwilson,brute_force
+2026-01-03 05:22:15.624674,192.168.6.34,rgarcia,User kwilson accessed file passwords.db,normal
+2026-01-03 05:30:35.624674,192.168.10.163,aanderson,Malware hash 02c972 detected in memory scan,malware
+2026-01-03 05:41:29.624674,192.168.10.194,root,Database connection established from 192.168.2.200,normal
+2026-01-03 05:56:22.624674,192.168.10.194,rgarcia,User admin logged out successfully,normal
+2026-01-03 05:58:54.624674,192.168.1.178,kwilson,Failed login attempt #323 for mjones from 192.168.6.50,brute_force
+2026-01-03 06:08:10.624674,192.168.1.15,slee,Failed login attempt #165 for rgarcia from 192.168.9.138,brute_force
+2026-01-03 06:09:44.624674,192.168.9.138,jsmith,User slee logged out successfully,normal
+2026-01-03 06:17:47.624674,192.168.9.111,root,User aanderson logged out successfully,normal
+2026-01-03 06:21:23.624674,192.168.8.64,rgarcia,Brute force pattern detected: 257 failed logins from 192.168.10.163,brute_force
+2026-01-03 06:24:07.624674,192.168.10.194,admin,Abnormal traffic spike from single source 38.210.237.113,ddos
+2026-01-03 06:29:14.624674,192.168.9.170,jsmith,Backup completed successfully,normal
+2026-01-03 06:29:50.624674,192.168.1.15,rgarcia,File report.docx opened by kwilson,normal
+2026-01-03 06:35:34.624674,192.168.8.192,slee,User rgarcia accessed file backup.zip,normal
+2026-01-03 06:38:26.624674,192.168.2.191,root,Repeated authentication failures from 192.168.7.132,brute_force
+2026-01-03 06:39:06.624674,192.168.2.200,aanderson,Credential phishing attempt blocked for user jsmith,phishing
+2026-01-03 06:40:13.624674,192.168.1.47,slee,Failed login attempt #448 for rgarcia from 192.168.8.64,brute_force
+2026-01-03 06:40:27.624674,192.168.6.34,system,Ransomware behavior: 102 files modified with encryption markers,ransomware
+2026-01-03 06:53:46.624674,192.168.10.194,jsmith,Critical: 58 files encrypted in last 20 minutes by admin,ransomware
+2026-01-03 06:59:22.624674,192.168.1.47,aanderson,Authentication successful for user jsmith,normal
+2026-01-03 07:04:56.624674,192.168.10.163,mjones,Suspicious executable ransomware.variant detected in C:\Temp,malware
+2026-01-03 07:17:59.624674,192.168.6.148,rgarcia,File encryption pattern detected: backup.zip,ransomware
+2026-01-03 07:23:06.624674,192.168.3.16,slee,File passwords.db opened by system,normal
+2026-01-03 07:29:02.624674,192.168.1.178,system,Malware hash 0614d4 detected in memory scan,malware
+2026-01-03 07:30:57.624674,192.168.7.108,slee,User system logged out successfully,normal
+2026-01-03 07:31:35.624674,192.168.6.50,dbrown,Database connection established from 192.168.9.138,normal
+2026-01-03 07:34:56.624674,192.168.4.69,dbrown,Virus signature matched: trojan.backdoor in backup.zip,malware
+2026-01-03 07:50:12.624674,192.168.9.111,root,Large outbound data transfer detected: 289GB to 38.210.237.113,data_exfil
+2026-01-03 07:58:25.624674,192.168.1.47,admin,Fake login page detected: http://malicious-domain.ru/steal impersonating internal portal,phishing
+2026-01-03 08:00:04.624674,192.168.1.15,jsmith,Virus signature matched: ransomware.variant in passwords.db,malware
+2026-01-03 08:03:12.624674,192.168.8.64,system,Malicious process win32.malware.exe terminated by antivirus,malware
+2026-01-03 08:12:24.624674,192.168.1.15,rgarcia,Abnormal traffic spike from single source 19.16.16.145,ddos
+2026-01-03 08:34:26.624674,192.168.2.191,mjones,Malware hash 02c972 detected in memory scan,malware
+2026-01-03 08:42:46.624674,192.168.7.108,aanderson,Suspicious link clicked by user dbrown: http://phishing-site.com/login,phishing
+2026-01-03 08:44:42.624674,192.168.2.200,root,Account lockout triggered for root after 241 failed attempts,brute_force
+2026-01-03 08:50:52.624674,192.168.10.163,kwilson,Repeated authentication failures from 192.168.7.108,brute_force
+2026-01-03 08:53:01.624674,192.168.6.148,slee,Configuration updated by jsmith,normal
+2026-01-03 09:09:19.624674,192.168.9.170,kwilson,Brute force pattern detected: 334 failed logins from 192.168.10.22,brute_force
+2026-01-03 09:37:59.624674,192.168.10.163,jsmith,Ransomware behavior: 437 files modified with encryption markers,ransomware
+2026-01-03 09:41:52.624674,192.168.10.163,admin,Unusual access pattern: mjones viewed 282 sensitive documents,insider_threat
+2026-01-03 09:52:00.624674,192.168.10.194,slee,Authentication successful for user dbrown,normal
+2026-01-03 10:00:19.624674,192.168.1.15,slee,User admin accessed file budget.xlsx,normal
+2026-01-03 10:04:42.624674,192.168.3.16,rgarcia,System health check passed,normal
+2026-01-03 10:15:38.624674,192.168.1.15,kwilson,Quarantined file report.docx - malware signature detected,malware
+2026-01-03 10:27:50.624674,192.168.10.163,jsmith,Backup completed successfully,normal
+2026-01-03 10:28:15.624674,192.168.10.22,aanderson,User system accessed file backup.zip,normal
+2026-01-03 10:28:29.624674,192.168.7.108,root,Backup completed successfully,normal
+2026-01-03 10:33:46.624674,192.168.1.47,admin,Unauthorized data transfer to cloud storage http://phishing-site.com/login,data_exfil
+2026-01-03 10:42:37.624674,192.168.8.64,root,Failed password for system from 192.168.4.69 port 22 ssh2,brute_force
+2026-01-03 10:50:45.624674,192.168.6.34,dbrown,Database connection established from 192.168.9.138,normal
+2026-01-03 10:52:11.624674,192.168.2.191,rgarcia,Database connection established from 192.168.10.194,normal
+2026-01-03 11:03:57.624674,192.168.10.22,slee,Connection flood detected: 65 SYN packets from 176.113.169.46,ddos
+2026-01-03 11:08:20.624674,192.168.9.138,slee,Invalid password attempt for user system,brute_force
+2026-01-03 11:13:56.624674,192.168.1.178,dbrown,Repeated authentication failures from 192.168.10.194,brute_force
+2026-01-03 11:14:30.624674,192.168.9.138,admin,Invalid password attempt for user slee,brute_force
+2026-01-03 11:19:25.624674,192.168.1.15,mjones,Malware hash 0186a7 detected in memory scan,malware
+2026-01-03 11:38:22.624674,192.168.9.111,slee,System health check passed,normal
+2026-01-03 11:44:20.624674,192.168.3.16,admin,Ransomware behavior: 133 files modified with encryption markers,ransomware
+2026-01-03 11:53:50.624674,192.168.10.22,jsmith,Failed login attempt #7 for root from 192.168.8.192,brute_force
+2026-01-03 11:54:10.624674,192.168.6.50,kwilson,User slee logged out successfully,normal
+2026-01-03 11:56:17.624674,192.168.6.148,aanderson,User admin logged out successfully,normal
+2026-01-03 12:00:40.624674,192.168.1.178,mjones,Authentication successful for user aanderson,normal
+2026-01-03 12:03:12.624674,192.168.10.22,jsmith,Suspicious executable trojan.backdoor detected in C:\Temp,malware
+2026-01-03 12:05:38.624674,192.168.8.64,mjones,User kwilson accessed file budget.xlsx,normal
+2026-01-03 12:13:21.624674,192.168.7.108,jsmith,Malware hash 0614d4 detected in memory scan,malware
+2026-01-03 12:15:07.624674,192.168.2.191,root,Trojan detected: trojan.backdoor attempting network connection,malware
+2026-01-03 12:16:48.624674,192.168.6.50,mjones,Ransomware behavior: 37 files modified with encryption markers,ransomware
+2026-01-03 12:17:21.624674,192.168.6.148,system,Backup completed successfully,normal
+2026-01-03 12:20:50.624674,192.168.9.170,admin,Backup completed successfully,normal
+2026-01-03 12:30:36.624674,192.168.7.108,root,Unusual access pattern: dbrown viewed 170 sensitive documents,insider_threat
+2026-01-03 12:36:20.624674,192.168.1.178,rgarcia,Authentication failure for aanderson from 192.168.6.148,brute_force
+2026-01-03 12:49:46.624674,192.168.8.192,rgarcia,Malicious process ransomware.variant.exe terminated by antivirus,malware
+2026-01-03 13:12:37.624674,192.168.6.50,rgarcia,File budget.xlsx opened by slee,normal
+2026-01-03 13:53:08.624674,192.168.9.138,aanderson,Session started for root from 192.168.6.50,normal
+2026-01-03 13:58:57.624674,192.168.4.69,root,Phishing email detected: credential harvesting attempt,phishing
+2026-01-03 14:01:06.624674,192.168.6.50,slee,Multiple failed SSH attempts detected from 192.168.10.194,brute_force
+2026-01-03 14:26:01.624674,192.168.8.64,root,Unusual access pattern: aanderson viewed 389 sensitive documents,insider_threat
+2026-01-03 14:45:53.624674,192.168.7.108,system,Brute force pattern detected: 233 failed logins from 192.168.6.148,brute_force
+2026-01-03 14:48:30.624674,192.168.4.69,admin,File invoice.pdf opened by root,normal
+2026-01-03 14:49:03.624674,192.168.10.163,root,Suspicious link clicked by user jsmith: http://phishing-site.com/login,phishing
+2026-01-03 14:55:37.624674,192.168.6.50,aanderson,Email with malicious attachment blocked from 38.210.237.113,phishing
+2026-01-03 15:01:30.624674,192.168.6.148,system,Suspicious activity: rgarcia accessed payroll data without authorization,insider_threat
+2026-01-03 15:01:51.624674,192.168.10.194,root,Security alert: trojan.backdoor found in user downloads folder,malware
+2026-01-03 15:16:05.624674,192.168.9.138,admin,Repeated authentication failures from 192.168.10.22,brute_force
+2026-01-03 15:23:44.624674,192.168.9.138,admin,Malicious process ransomware.variant.exe terminated by antivirus,malware
+2026-01-03 15:26:39.624674,192.168.9.111,root,Connection flood detected: 114 SYN packets from 123.229.37.27,ddos
+2026-01-03 15:33:32.624674,192.168.7.132,admin,Privileged account kwilson accessed restricted database at 12,insider_threat
+2026-01-03 16:06:52.624674,192.168.9.111,system,Malware hash 0186a7 detected in memory scan,malware
+2026-01-03 16:09:49.624674,192.168.1.178,admin,Abnormal traffic spike from single source 90.180.37.80,ddos
+2026-01-03 16:14:45.624674,192.168.10.22,jsmith,Trojan detected: cryptominer.exe attempting network connection,malware
+2026-01-03 16:18:10.624674,192.168.10.163,slee,Invalid password attempt for user admin,brute_force
+2026-01-03 16:22:44.624674,192.168.10.22,slee,Invalid password attempt for user rgarcia,brute_force
+2026-01-03 16:33:42.624674,192.168.9.138,rgarcia,User kwilson logged in successfully from 192.168.6.34,normal
+2026-01-03 17:05:51.624674,192.168.9.170,aanderson,User jsmith logged out successfully,normal
+2026-01-03 17:07:18.624674,192.168.6.34,root,Suspicious executable ransomware.variant detected in C:\Temp,malware
+2026-01-03 17:07:50.624674,192.168.10.163,root,Fake login page detected: http://malicious-domain.ru/steal impersonating internal portal,phishing
+2026-01-03 17:26:08.624674,192.168.2.191,system,Authentication failure for aanderson from 192.168.8.64,brute_force
+2026-01-03 17:32:53.624674,192.168.2.191,aanderson,Account lockout triggered for system after 280 failed attempts,brute_force
+2026-01-03 17:34:58.624674,192.168.9.170,rgarcia,Failed password for aanderson from 192.168.4.69 port 22 ssh2,brute_force
+2026-01-03 17:36:38.624674,192.168.1.15,dbrown,Account lockout triggered for rgarcia after 329 failed attempts,brute_force
+2026-01-03 17:38:27.624674,192.168.3.16,system,User system logged out successfully,normal
+2026-01-03 17:46:11.624674,192.168.7.108,jsmith,Failed password for rgarcia from 192.168.2.191 port 22 ssh2,brute_force
+2026-01-03 18:06:18.624674,192.168.6.34,jsmith,Account lockout triggered for mjones after 129 failed attempts,brute_force
+2026-01-03 18:17:34.624674,192.168.3.16,root,Trojan detected: keylogger attempting network connection,malware
+2026-01-03 18:17:58.624674,192.168.7.132,system,Configuration updated by aanderson,normal
+2026-01-03 18:42:00.624674,192.168.6.148,aanderson,Unauthorized data transfer to cloud storage http://fake-bank.com,data_exfil
+2026-01-03 18:55:54.624674,192.168.7.108,admin,Large outbound data transfer detected: 25GB to 38.210.237.113,data_exfil
+2026-01-03 18:56:01.624674,192.168.3.16,system,User admin logged out successfully,normal
+2026-01-03 19:16:26.624674,192.168.8.192,dbrown,Admin kwilson exported user database to external drive,insider_threat
+2026-01-03 19:16:31.624674,192.168.1.15,slee,User dbrown accessed file report.docx,normal
+2026-01-03 19:20:28.624674,192.168.9.111,jsmith,Brute force pattern detected: 410 failed logins from 192.168.2.191,brute_force
+2026-01-03 19:30:11.624674,192.168.7.108,dbrown,Email from 19.16.16.145 flagged as phishing attempt,phishing
+2026-01-03 19:40:52.624674,192.168.9.138,rgarcia,User mjones logged out successfully,normal
+2026-01-03 19:50:07.624674,192.168.2.200,root,Backup completed successfully,normal
+2026-01-03 20:01:53.624674,192.168.6.50,root,Fake login page detected: http://fake-bank.com impersonating internal portal,phishing
+2026-01-03 20:09:56.624674,192.168.6.50,mjones,Virus signature matched: ransomware.variant in budget.xlsx,malware
+2026-01-03 20:21:19.624674,192.168.1.47,aanderson,Malicious process trojan.backdoor.exe terminated by antivirus,malware
+2026-01-03 20:22:41.624674,192.168.7.132,system,User rgarcia logged in successfully from 192.168.1.47,normal
+2026-01-03 20:23:20.624674,192.168.3.16,system,Authentication successful for user system,normal
+2026-01-03 20:26:18.624674,192.168.2.191,system,Failed login attempt #272 for root from 192.168.2.191,brute_force
+2026-01-03 20:27:10.624674,192.168.10.22,system,Session started for mjones from 192.168.9.138,normal
+2026-01-03 20:35:34.624674,192.168.9.170,root,User kwilson logged in successfully from 192.168.10.22,normal
+2026-01-03 20:44:43.624674,192.168.1.178,dbrown,Authentication successful for user mjones,normal
+2026-01-03 20:47:48.624674,192.168.9.138,admin,Suspicious DLL injection attempt by process ransomware.variant,malware
+2026-01-03 20:51:39.624674,192.168.2.200,root,Security alert: keylogger found in user downloads folder,malware
+2026-01-03 20:52:43.624674,192.168.1.178,admin,File credentials.txt opened by system,normal
+2026-01-03 21:09:06.624674,192.168.4.69,jsmith,Quarantined file backup.zip - malware signature detected,malware
+2026-01-03 21:18:04.624674,192.168.6.50,mjones,Repeated authentication failures from 192.168.10.22,brute_force
+2026-01-03 21:29:04.624674,192.168.7.132,rgarcia,Unusual access pattern: kwilson viewed 499 sensitive documents,insider_threat
+2026-01-03 21:29:32.624674,192.168.10.194,root,Unusual access pattern: kwilson viewed 211 sensitive documents,insider_threat
+2026-01-03 21:30:12.624674,192.168.10.194,slee,User dbrown logged in successfully from 192.168.9.138,normal
+2026-01-03 21:38:38.624674,192.168.3.16,kwilson,User aanderson logged out successfully,normal
+2026-01-03 21:43:00.624674,192.168.7.108,kwilson,User jsmith reported suspicious email requesting password,phishing
+2026-01-03 21:43:02.624674,192.168.10.163,root,Database connection established from 192.168.10.194,normal
+2026-01-03 21:51:20.624674,192.168.6.34,aanderson,Authentication successful for user mjones,normal
+2026-01-03 21:55:24.624674,192.168.4.69,mjones,Trojan detected: win32.malware attempting network connection,malware
+2026-01-03 21:55:42.624674,192.168.1.15,jsmith,User kwilson accessed file passwords.db,normal
+2026-01-03 21:58:16.624674,192.168.10.194,aanderson,File encryption pattern detected: passwords.db,ransomware
+2026-01-03 22:07:14.624674,192.168.1.15,dbrown,Database connection established from 192.168.9.111,normal
+2026-01-03 22:08:31.624674,192.168.1.47,rgarcia,Trojan detected: win32.malware attempting network connection,malware
+2026-01-03 22:13:53.624674,192.168.1.178,system,Configuration updated by admin,normal
+2026-01-03 22:16:17.624674,192.168.7.108,mjones,Failed login attempt #238 for slee from 192.168.1.15,brute_force
+2026-01-03 22:25:31.624674,192.168.7.132,aanderson,Suspicious executable win32.malware detected in C:\Temp,malware
+2026-01-03 22:27:15.624674,192.168.3.16,mjones,Quarantined file credentials.txt - malware signature detected,malware
+2026-01-03 22:29:51.624674,192.168.1.178,aanderson,Authentication successful for user rgarcia,normal
+2026-01-03 22:31:27.624674,192.168.6.50,mjones,Backup completed successfully,normal
+2026-01-03 22:32:15.624674,192.168.7.132,mjones,Ransomware behavior: 236 files modified with encryption markers,ransomware
+2026-01-03 22:37:22.624674,192.168.6.148,rgarcia,Repeated authentication failures from 192.168.1.47,brute_force
+2026-01-03 22:46:13.624674,192.168.1.47,root,Unusual data upload: 342MB transferred to external server 119.31.77.94,data_exfil
+2026-01-03 23:09:02.624674,192.168.9.170,system,Repeated authentication failures from 192.168.4.69,brute_force
+2026-01-03 23:23:41.624674,192.168.10.194,kwilson,Rate limit exceeded from 19.16.16.145: 69 requests,ddos
+2026-01-03 23:41:34.624674,192.168.8.192,kwilson,Failed login attempt #457 for system from 192.168.9.170,brute_force
+2026-01-03 23:41:38.624674,192.168.9.170,rgarcia,Suspicious executable cryptominer.exe detected in C:\Temp,malware
+2026-01-03 23:46:03.624674,192.168.10.194,slee,Invalid password attempt for user system,brute_force
+2026-01-03 23:48:26.624674,192.168.10.163,rgarcia,Database connection established from 192.168.10.194,normal
+2026-01-03 23:51:56.624674,192.168.9.170,system,User root logged in successfully from 192.168.7.132,normal
+2026-01-03 23:59:41.624674,192.168.10.163,slee,Authentication failure for admin from 192.168.7.108,brute_force
+2026-01-04 00:08:50.624674,192.168.1.178,dbrown,Virus signature matched: keylogger in report.docx,malware
+2026-01-04 00:15:08.624674,192.168.6.50,system,Security alert: win32.malware found in user downloads folder,malware
+2026-01-04 00:17:18.624674,192.168.9.138,root,Trojan detected: trojan.backdoor attempting network connection,malware
+2026-01-04 00:18:04.624674,192.168.1.178,slee,Configuration updated by root,normal
+2026-01-04 00:19:15.624674,192.168.9.111,kwilson,System health check passed,normal
+2026-01-04 00:21:08.624674,192.168.6.34,dbrown,User mjones accessed file passwords.db,normal
+2026-01-04 00:28:45.624674,192.168.9.170,kwilson,Connection flood detected: 160 SYN packets from 218.99.42.22,ddos
+2026-01-04 00:34:59.624674,192.168.10.194,root,Credential phishing attempt blocked for user dbrown,phishing
+2026-01-04 00:35:41.624674,192.168.10.194,root,Invalid password attempt for user aanderson,brute_force
+2026-01-04 00:43:48.624674,192.168.6.34,mjones,Repeated authentication failures from 192.168.10.194,brute_force
+2026-01-04 00:48:13.624674,192.168.2.200,system,Database connection established from 192.168.9.111,normal
+2026-01-04 01:12:46.624674,192.168.6.148,kwilson,Configuration updated by rgarcia,normal
+2026-01-04 01:23:55.624674,192.168.9.170,jsmith,Failed password for root from 192.168.1.47 port 22 ssh2,brute_force
