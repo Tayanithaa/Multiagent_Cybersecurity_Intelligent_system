@@ -46,3 +46,32 @@ build/
 
 models/
 
+# Quarantine - NEVER commit malware samples!
+quarantine/pending/*
+quarantine/analyzed/*
+quarantine/rejected/*
+!quarantine/*/
+!quarantine/README.md
+
+# Database files
+*.db
+*.sqlite3
+backend/incidents.db
+
+# Analysis results
+analysis_results/
+*.pcap
+*.dmp
+*.mem
+
+# Secrets and keys
+secrets/
+keys/
+*.pem
+*.key
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+

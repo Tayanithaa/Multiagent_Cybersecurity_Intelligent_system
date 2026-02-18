@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sandbox Analysis - Multi-Agent SOC</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="sandbox.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <h1>🔬 Malware Sandbox Analysis</h1>
+            <p>Isolated analysis & threat intelligence extraction</p>
+            <nav>
+                <a href="../index.html">← Back to Dashboard</a>
+            </nav>
+        </header>
+
+        <!-- Tabs -->
+        <div class="tabs">
+            <button class="tab-btn active" data-tab="upload">📤 Upload</button>
+            <button class="tab-btn" data-tab="submissions">📋 Submissions</button>
+            <button class="tab-btn" data-tab="results">🔍 Analysis Results</button>
+            <button class="tab-btn" data-tab="stats">📊 Statistics</button>
+        </div>
+
+        <!-- Tab Content -->
+        <div class="tab-content">
+            <!-- Upload Tab -->
+            <div id="upload-tab" class="tab-pane active">
+                <div class="upload-section">
+                    <h2>Submit Malware Sample</h2>
+                    <div class="warning-box">
+                        ⚠️ <strong>Security Notice:</strong> Files are stored in isolated quarantine. 
+                        No execution occurs on this machine. Analysis happens on a physically separated server.
+                    </div>
+                    
+                    <div class="upload-area" id="drop-zone">
+                        <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="17 8 12 3 7 8"></polyline>
+                            <line x1="12" y1="3" x2="12" y2="15"></line>
+                        </svg>
+                        <h3>Drag & Drop Malware Sample</h3>
+                        <p>or</p>
+                        <label for="file-input" class="file-label">
+                            <input type="file" id="file-input" accept="*" style="display: none;">
+                            <button class="btn-primary" onclick="document.getElementById('file-input').click()">
+                                Browse Files
+                            </button>
+                        </label>
+                        <p class="small-text">Max file size: 100MB</p>
+                    </div>
+
+                    <div id="upload-progress" class="upload-progress" style="display: none;">
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="progress-fill"></div>
+                        </div>
+                        <p id="progress-text">Uploading...</p>
+                    </div>
+
+                    <div id="upload-result" class="result-box" style="display: none;">
+                        <h3>✅ Upload Successful</h3>
+                        <p><strong>Task ID:</strong> <span id="task-id" class="mono"></span></p>
+                        <p><strong>Status:</strong> <span id="upload-status"></span></p>
+                        <p><strong>Estimated Time:</strong> <span id="estimated-time"></span></p>
+                        <button class="btn-secondary" onclick="checkStatus()">Check Status</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Submissions Tab -->
+            <div id="submissions-tab" class="tab-pane">
+                <h2>Recent Submissions</h2>
+                <div class="filters">
+                    <select id="status-filter" onchange="loadSubmissions()">
+                        <option value="">All Statuses</option>
+                        <option value="queued">Queued</option>
+                        <option value="processing">Processing</option>
+                        <option value="completed">Completed</option>
+                        <option value="failed">Failed</option>
+                    </select>
+                    <button class="btn-secondary" onclick="loadSubmissions()">🔄 Refresh</button>
+                </div>
+                <div class="submissions-list" id="submissions-list">
+                    <p class="loading">Loading submissions...</p>
+                </div>
+            </div>
+
+            <!-- Results Tab -->
+            <div id="results-tab" class="tab-pane">
+                <h2>Analysis Results</h2>
+                <div class="search-box">
+                    <input type="text" id="search-hash" placeholder="Enter file hash (task ID)...">
+                    <button class="btn-primary" onclick="searchResults()">🔍 Search</button>
+                </div>
+                <div id="analysis-results" class="analysis-container">
+                    <p class="info-text">Enter a file hash to view analysis results</p>
+                </div>
+            </div>
+
+            <!-- Stats Tab -->
+            <div id="stats-tab" class="tab-pane">
+                <h2>Sandbox Statistics</h2>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <h3>Total Submissions</h3>
+                        <p class="stat-value" id="stat-total">0</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Completed Analyses</h3>
+                        <p class="stat-value" id="stat-completed">0</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Average Risk Score</h3>
+                        <p class="stat-value" id="stat-risk">0</p>
+                    </div>
+                </div>
+                <div class="charts-grid">
+                    <div class="chart-container">
+                        <canvas id="status-chart"></canvas>
+                    </div>
+                    <div class="chart-container">
+                        <canvas id="threat-chart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Analysis Result Modal -->
+    <div id="result-modal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeModal()">&times;</span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <script src="sandbox.js"></script>
+</body>
+</html>

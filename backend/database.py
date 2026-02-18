@@ -26,6 +26,8 @@ class IncidentDatabase:
     def _create_tables(self):
         """Create incidents table if not exists"""
         cursor = self.conn.cursor()
+        
+        # Existing incidents table
         cursor.execute("""
             CREATE TABLE IF NOT EXISTS incidents (
                 id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -46,6 +48,75 @@ class IncidentDatabase:
                 created_at TEXT DEFAULT CURRENT_TIMESTAMP
             )
         """)
+        
+        # New table for malware submissions
+        cursor.execute("""
+            CREATE TABLE IF NOT EXISTS malware_submissions (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                file_hash TEXT UNIQUE NOT NULL,
+                original_filename TEXT,
+                file_size INTEGER,
+                user_id TEXT,
+                upload_timestamp TEXT NOT NULL,
+                status TEXT DEFAULT 'queued',
+                completed_timestamp TEXT,
+                quarantine_path TEXT,
+                created_at TEXT DEFAULT CURRENT_TIMESTAMP
+            )
+        """)
+        
+        # New table for malware analysis results
+        cursor.execute("""
+            CREATE TABLE IF NOT EXISTS malware_analysis (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                file_hash TEXT NOT NULL,
+                analysis_timestamp TEXT NOT NULL,
+                threat_category TEXT,
+                confidence REAL,
+                risk_score INTEGER,
+                severity TEXT,
+                malware_family TEXT,
+                attack_techniques TEXT,
+                iocs TEXT,
+                recommendations TEXT,
+                behavioral_summary TEXT,
+                full_result TEXT,
+                created_at TEXT DEFAULT CURRENT_TIMESTAMP,
+                FOREIGN KEY (file_hash) REFERENCES malware_submissions(file_hash)
+            )
+        """)
+        
+        # New table for learned patterns
+        cursor.execute("""
+            CREATE TABLE IF NOT EXISTS learned_patterns (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                file_hash TEXT,
+                threat_category TEXT,
+                confidence REAL,
+                risk_score INTEGER,
+                pattern_signature TEXT,
+                discovered_timestamp TEXT NOT NULL,
+                used_in_training BOOLEAN DEFAULT 0,
+                created_at TEXT DEFAULT CURRENT_TIMESTAMP
+            )
+        """)
+        
+        # Create indexes for better query performance
+        cursor.execute("""
+            CREATE INDEX IF NOT EXISTS idx_submissions_hash 
+            ON malware_submissions(file_hash)
+        """)
+        
+        cursor.execute("""
+            CREATE INDEX IF NOT EXISTS idx_analysis_hash 
+            ON malware_analysis(file_hash)
+        """)
+        
+        cursor.execute("""
+            CREATE INDEX IF NOT EXISTS idx_submissions_status 
+            ON malware_submissions(status)
+        """)
+        
         self.conn.commit()
     
     def insert_incident(self, incident: Dict) -> int:

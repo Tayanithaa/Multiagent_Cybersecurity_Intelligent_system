@@ -23,6 +23,10 @@ from agents.correlation import correlate_alerts
 from agents.ti_enrichment import enrich_with_threat_intel
 from agents.response_agent import recommend_response
 
+# Import sandbox services
+from backend.services.malware_submission_handler import MalwareSubmissionHandler
+from backend.services.analysis_result_processor import AnalysisResultProcessor
+
 # Initialize FastAPI app
 app = FastAPI(
     title="Multi-Agent SOC API",
@@ -41,6 +45,10 @@ app.add_middleware(
 
 # Database instance
 db = get_db()
+
+# Initialize sandbox services
+submission_handler = MalwareSubmissionHandler(quarantine_dir="quarantine")
+result_processor = AnalysisResultProcessor()
 
 
 @app.get("/")
@@ -318,7 +326,209 @@ async def clear_incidents():
             "deleted": count,
             "message": f"Cleared {count} incidents"
         }
+  ============================================================================
+# SANDBOX MALWARE ANALYSIS ENDPOINTS
+# ============================================================================
+
+@app.post("/api/sandbox/submit")
+async def submit_malware_sample(file: UploadFile = File(...), user_id: str = "demo_user"):
+    """
+    Submit malware sample for sandbox analysis
+    
+    **Security Note:** File is stored in quarantine with read-only permissions.
+    No execution happens on this machine. Analysis is performed on isolated server.
+    """
+    try:
+        # Read file content
+        file_content = await file.read()
+        
+        # Handle submission
+        result = await submission_handler.handle_upload(
+            file_content=file_content,
+            filename=file.filename,
+            user_id=user_id,
+            db_connection=db
+        )
+        
+        return result
+        
     except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Submission failed: {str(e)}")
+
+
+@app.get("/api/sandbox/status/{task_id}")
+async def get_sandbox_status(task_id: str):
+    """
+    Get status of submitted malware sample
+    
+    Args:
+        task_id: File hash (returned from submit endpoint)
+    """
+    try:
+        status = await submission_handler.get_submission_status(task_id, db)
+        
+        if not status:
+            raise HTTPException(status_code=404, detail=f"Task {task_id} not found")
+        
+        return status
+        
+    except HTTPException:
+        raise
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Failed to get status: {str(e)}")
+
+
+@app.get("/api/sandbox/results/{task_id}")
+async def get_analysis_results(task_id: str):
+    """
+    Get complete analysis results for a malware sample
+    
+    Args:
+        task_id: File hash
+    """
+    try:
+        # Query database for analysis result
+        cursor = db.conn.cursor()
+        cursor.execute("""
+            SELECT * FROM malware_analysis 
+            WHERE file_hash = ? 
+            ORDER BY analysis_timestamp DESC 
+            LIMIT 1
+        """, (task_id,))
+        
+        result = cursor.fetchone()
+        
+        if not result:
+            raise HTTPException(status_code=404, detail=f"No analysis found for {task_id}")
+        
+        # Convert to dictionary
+        result_dict = dict(result)
+        
+        # Parse JSON fields
+        import json
+        if 'attack_techniques' in result_dict and result_dict['attack_techniques']:
+            result_dict['attack_techniques'] = json.loads(result_dict['attack_techniques'])
+        if 'iocs' in result_dict and result_dict['iocs']:
+            result_dict['iocs'] = json.loads(result_dict['iocs'])
+        if 'recommendations' in result_dict and result_dict['recommendations']:
+            result_dict['recommendations'] = json.loads(result_dict['recommendations'])
+        if 'full_result' in result_dict and result_dict['full_result']:
+            result_dict['full_result'] = json.loads(result_dict['full_result'])
+        
+        return result_dict
+        
+    except HTTPException:
+        raise
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Failed to get results: {str(e)}")
+
+
+@app.get("/api/sandbox/list")
+async def list_submissions(limit: int = 50, status: str = None):
+    """
+    List recent malware submissions
+    
+    Args:
+        limit: Maximum number of results
+        status: Filter by status (queued, processing, completed, failed)
+    """
+    try:
+        cursor = db.conn.cursor()
+        
+        if status:
+            cursor.execute("""
+                SELECT * FROM malware_submissions 
+                WHERE status = ?
+                ORDER BY upload_timestamp DESC 
+                LIMIT ?
+            """, (status, limit))
+        else:
+            cursor.execute("""
+                SELECT * FROM malware_submissions 
+                ORDER BY upload_timestamp DESC 
+                LIMIT ?
+            """, (limit,))
+        
+        results = cursor.fetchall()
+        
+        return [dict(row) for row in results]
+        
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Failed to list submissions: {str(e)}")
+
+
+@app.post("/api/sandbox/process_result")
+async def process_analysis_result(result: dict):
+    """
+    Process analysis result from DMZ orchestrator
+    This endpoint is called by the DMZ server with sanitized results
+    
+    **Security:** Should be restricted to DMZ server IP in production
+    """
+    try:
+        # Process result with BERT and store
+        final_result = await result_processor.process_result(result, db)
+        
+        return {
+            "status": "processed",
+            "file_hash": final_result['file_hash'],
+            "threat_category": final_result['threat_category'],
+            "risk_score": final_result['risk_score']
+        }
+        
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Processing failed: {str(e)}")
+
+
+@app.get("/api/sandbox/stats")
+async def get_sandbox_statistics():
+    """
+    Get sandbox analysis statistics
+    """
+    try:
+        cursor = db.conn.cursor()
+        
+        # Total submissions
+        cursor.execute("SELECT COUNT(*) as count FROM malware_submissions")
+        total_submissions = cursor.fetchone()['count']
+        
+        # Completed analyses
+        cursor.execute("SELECT COUNT(*) as count FROM malware_analysis")
+        completed_analyses = cursor.fetchone()['count']
+        
+        # By status
+        cursor.execute("""
+            SELECT status, COUNT(*) as count 
+            FROM malware_submissions 
+            GROUP BY status
+        """)
+        status_counts = {row['status']: row['count'] for row in cursor.fetchall()}
+        
+        # By threat category
+        cursor.execute("""
+            SELECT threat_category, COUNT(*) as count 
+            FROM malware_analysis 
+            GROUP BY threat_category
+        """)
+        threat_counts = {row['threat_category']: row['count'] for row in cursor.fetchall()}
+        
+        # Average risk score
+        cursor.execute("SELECT AVG(risk_score) as avg_risk FROM malware_analysis")
+        avg_risk = cursor.fetchone()['avg_risk'] or 0
+        
+        return {
+            "total_submissions": total_submissions,
+            "completed_analyses": completed_analyses,
+            "status_breakdown": status_counts,
+            "threat_categories": threat_counts,
+            "average_risk_score": round(avg_risk, 2)
+        }
+        
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Failed to get stats: {str(e)}")
+
+
+#   except Exception as e:
         raise HTTPException(status_code=500, detail=f"Failed to clear incidents: {str(e)}")
 
 
