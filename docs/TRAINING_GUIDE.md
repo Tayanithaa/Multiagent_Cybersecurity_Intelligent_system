@@ -43,7 +43,7 @@ python -c "import pandas as pd; df = pd.read_csv('data/training/csv/full/full_da
 
 ```powershell
 # Train DistilBERT (this takes 2-4 hours on GPU)
-python train_bert_model.py
+python training/train_bert_model.py
 ```
 
 **What happens:**
@@ -214,7 +214,7 @@ print(torch.cuda.is_available())  # Must be True
 .\venv\Scripts\Activate.ps1
 pip install torch transformers datasets accelerate
 python data/training/scripts/generate_training_data.py
-python train_bert_model.py
+python training/train_bert_model.py
 
 # After training completes:
 mv agents\bert_detection.py agents\bert_detection_OLD.py

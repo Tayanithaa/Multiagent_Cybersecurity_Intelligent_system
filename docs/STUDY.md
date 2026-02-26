@@ -299,7 +299,7 @@ message,label
 #### 2. **Model Training**
 
 ```bash
-python train_bert_model.py
+python training/train_bert_model.py
 ```
 
 **Detailed training flow:**
@@ -564,14 +564,20 @@ AI_Aztechs/
 ├── tests/
 │   ├── test_bert.py               # BERT unit tests
 │   └── test_correlation.py        # End-to-end pipeline tests
-├── train_bert_model.py            # Training script
+├── training/
+│   ├── train_bert_model.py        # DistilBERT training script
+│   ├── train_correlation_roberta_model.py
+│   ├── train_ti_enrichment_bert_model.py
+│   ├── train_response_albert_model.py
+│   └── run_training_pipeline.py   # Complete pipeline runner
+├── docs/
+│   ├── TRAINING_GUIDE.md          # Training documentation
+│   ├── STUDY.md                   # This file
+│   └── *.md                       # Other guides
 ├── test_real_logs.py              # Real-world testing interface
 ├── generate_realistic_logs.py     # Realistic log generator
 ├── requirements.txt               # Python dependencies
-├── README.md                      # Quick start guide
-├── START_HERE.md                  # Setup instructions
-├── TRAINING_GUIDE.md              # Training documentation
-└── STUDY.md                       # This file
+└── README.md                      # Quick start guide
 ```
 
 ---
@@ -1508,7 +1514,7 @@ RuntimeError: CUDA out of memory
 FileNotFoundError: models/distilbert_log_classifier
 ```
 **Solution:**
-- Train model first: `python train_bert_model.py`
+- Train model first: `python training/train_bert_model.py`
 - Verify files exist: `ls models/distilbert_log_classifier/`
 
 **3. Low accuracy on real logs**
@@ -1518,7 +1524,7 @@ Model accuracy drops to 60% on production data
 **Solution:**
 - Template-based training data doesn't match real log formats
 - Collect 500-1000 real labeled logs
-- Retrain with real data: `python train_bert_model.py --data real_logs.csv`
+- Retrain with real data: `python training/train_bert_model.py --data real_logs.csv`
 
 **4. Slow inference on CPU**
 ```
@@ -1579,7 +1585,7 @@ combined = pd.concat([synthetic_logs, real_logs])
 
 # 3. Retrain
 # Edit train_bert_model.py to use combined dataset
-python train_bert_model.py --data combined_dataset.csv --epochs 10
+python training/train_bert_model.py --data combined_dataset.csv --epochs 10
 ```
 
 ### Adding New Threat Classes

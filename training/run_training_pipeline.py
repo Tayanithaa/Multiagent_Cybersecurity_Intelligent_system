@@ -39,7 +39,7 @@ def main():
     # Step 2: Train model
     run_command(
         "Step 2/4: Train DistilBERT model (2-4 hours on GPU)",
-        "python train_bert_model.py"
+        "python training/train_bert_model.py"
     )
     
     # Step 3: Backup old model

@@ -65,7 +65,7 @@ def test_full_pipeline():
             print(f"   - {threat:20s}: {count:3d} alerts")
     except Exception as e:
         print(f"❌ BERT detection failed: {e}")
-        print("   (Model may not be trained yet - run train_bert_model.py)")
+        print("   (Model may not be trained yet - run python training/train_bert_model.py)")
         return False
     
     # AGENT 2: Correlation

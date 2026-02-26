@@ -25,7 +25,7 @@ pip install -r requirements.txt
 
 ### 2. Train the Model (First Time Only)
 ```bash
-python train_bert_model.py
+python training/train_bert_model.py
 ```
 ⏱️ Training time: ~3 minutes on RTX 3050 GPU
 
