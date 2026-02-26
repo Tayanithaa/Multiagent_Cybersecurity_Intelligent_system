@@ -297,10 +297,9 @@ python training/train_response_albert_model.py
 - [ ] ALBERT response model trained
 
 **Integration & Testing:**
-- [ ] Old bert_detection.py backed up
-- [ ] New model integrated
+- [ ] BERT agent verified working
 - [ ] End-to-end test passes
-- [ ] Documentation updated
+- [ ] All models accessible from agents/
 
 ---
 
