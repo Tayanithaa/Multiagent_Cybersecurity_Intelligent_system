@@ -16,10 +16,10 @@ Transform the toy classifier into a production-grade DistilBERT model for securi
 pip install torch transformers datasets accelerate --upgrade
 
 # 2. Generate 8,000 labeled logs (1,000 per class)
-python data/generate_training_data.py
+python data/training/scripts/generate_training_data.py
 ```
 
-**Output:** `data/training/full_dataset.csv` with 8,000 labeled samples
+**Output:** `data/training/csv/full/full_dataset.csv` with 8,000 labeled samples
 
 ---
 
@@ -34,7 +34,7 @@ print(torch.cuda.get_device_name(0))  # Your GPU name
 
 **Verify dataset:**
 ```powershell
-python -c "import pandas as pd; df = pd.read_csv('data/training/full_dataset.csv'); print(df['label'].value_counts())"
+python -c "import pandas as pd; df = pd.read_csv('data/training/csv/full/full_dataset.csv'); print(df['label'].value_counts())"
 ```
 
 ---
@@ -126,7 +126,7 @@ import pandas as pd
 from agents.bert_detection import bert_detect
 
 # Test brute force
-brute_force_logs = pd.read_csv("data/brute_force.csv")
+brute_force_logs = pd.read_csv("data/training/csv/full/samples/brute_force.csv")
 results = bert_detect(brute_force_logs)
 print(results[['raw_message', 'bert_class', 'bert_confidence', 'severity']].head())
 ```
@@ -213,7 +213,7 @@ print(torch.cuda.is_available())  # Must be True
 # Complete pipeline in 4 commands:
 .\venv\Scripts\Activate.ps1
 pip install torch transformers datasets accelerate
-python data/generate_training_data.py
+python data/training/scripts/generate_training_data.py
 python train_bert_model.py
 
 # After training completes:
@@ -256,5 +256,5 @@ python tests\test_correlation.py
 **Ready? Start with Step 1: Generate training data!**
 
 ```powershell
-python data/generate_training_data.py
+python data/training/scripts/generate_training_data.py
 ```

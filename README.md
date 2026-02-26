@@ -180,9 +180,12 @@ AI_Aztechs/
 │   └── response_agent.py            # Member 2: Response recommendations
 ├── data/
 │   ├── sample_logs.csv              # Test dataset (85 logs)
-│   ├── generate_training_data.py    # Synthetic data generator
 │   └── training/
-│       └── full_dataset.csv         # 8,000 labeled samples
+│       ├── scripts/
+│       │   └── generate_training_data.py    # Synthetic data generator
+│       └── csv/
+│           └── full/
+│               └── full_dataset.csv         # 8,000 labeled samples
 ├── frontend/                        # Web dashboard
 │   ├── index.html                   # UI structure (3-tab layout)
 │   ├── app.js                       # JavaScript logic + API calls

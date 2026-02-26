@@ -1,0 +1,285 @@
+alert1_ip,alert2_ip,time_diff_minutes,threat_type,correlation_text,should_correlate
+192.168.2.201,192.168.2.26,2,insider_threat,Correlated threat: insider_threat activity from 192.168.2.201 and 192.168.2.26 same source network,1
+192.168.9.151,192.168.9.151,4,insider_threat,Multiple insider_threat attacks: 192.168.9.151 -> 192.168.9.151 with common pattern,1
+192.168.6.1,192.168.6.76,5,insider_threat,Failed login from 192.168.6.1 followed by failed login from 192.168.6.76 within 2 minutes,1
+192.168.8.126,192.168.8.51,4,insider_threat,Multiple insider_threat attacks: 192.168.8.126 -> 192.168.8.51 with common pattern,1
+192.168.7.1,192.168.4.1,51,insider_threat,Unique threat pattern at 192.168.7.1 no correlation,0
+192.168.6.126,192.168.3.176,106,insider_threat,Unique threat pattern at 192.168.6.126 no correlation,0
+192.168.7.1,192.168.7.101,1,insider_threat,Multiple insider_threat attacks: 192.168.7.1 -> 192.168.7.101 with common pattern,1
+192.168.1.226,192.168.1.151,3,insider_threat,Alert streak: insider_threat detected at 192.168.1.226 and 192.168.1.151 in 5-min window,1
+192.168.6.151,192.168.9.76,67,insider_threat,Isolated insider_threat from 192.168.6.151 not related to other activity,0
+192.168.2.51,192.168.6.126,72,insider_threat,Unique threat pattern at 192.168.2.51 no correlation,0
+192.168.1.201,192.168.7.101,32,insider_threat,Isolated insider_threat from 192.168.1.201 not related to other activity,0
+192.168.2.226,192.168.7.26,39,insider_threat,Single point insider_threat detection at 192.168.2.226 independent,0
+192.168.1.101,192.168.5.51,114,insider_threat,Single user eve at 192.168.1.101 suspicious activity standalone,0
+192.168.8.126,192.168.8.201,4,insider_threat,Correlated threat: insider_threat activity from 192.168.8.126 and 192.168.8.201 same source network,1
+192.168.5.176,192.168.5.1,4,insider_threat,Alert streak: insider_threat detected at 192.168.5.176 and 192.168.5.1 in 5-min window,1
+192.168.9.101,192.168.1.176,44,insider_threat,Unique threat pattern at 192.168.9.101 no correlation,0
+192.168.3.176,192.168.3.226,2,insider_threat,Multiple insider_threat attacks: 192.168.3.176 -> 192.168.3.226 with common pattern,1
+192.168.6.151,192.168.6.176,2,insider_threat,"admin at 192.168.6.151 attempted data access, then alice at 192.168.6.176 accessed same resource",1
+192.168.2.101,192.168.2.226,3,insider_threat,Failed login from 192.168.2.101 followed by failed login from 192.168.2.226 within 2 minutes,1
+192.168.6.151,192.168.6.226,2,insider_threat,Alert streak: insider_threat detected at 192.168.6.151 and 192.168.6.226 in 5-min window,1
+192.168.3.26,192.168.4.176,101,insider_threat,Single user eve at 192.168.3.26 suspicious activity standalone,0
+192.168.1.1,192.168.1.101,1,insider_threat,"bob at 192.168.1.1 attempted data access, then charlie at 192.168.1.101 accessed same resource",1
+192.168.1.76,192.168.2.51,30,insider_threat,Isolated insider_threat from 192.168.1.76 not related to other activity,0
+192.168.1.176,192.168.2.51,87,insider_threat,insider_threat attack from 192.168.1.176 unrelated to other incidents,0
+192.168.3.176,192.168.8.1,59,insider_threat,Single point insider_threat detection at 192.168.3.176 independent,0
+192.168.8.1,192.168.8.176,4,insider_threat,Failed login from 192.168.8.1 followed by failed login from 192.168.8.176 within 2 minutes,1
+192.168.6.151,192.168.6.51,4,insider_threat,Failed login from 192.168.6.151 followed by failed login from 192.168.6.51 within 2 minutes,1
+192.168.3.76,192.168.7.51,50,insider_threat,Single point insider_threat detection at 192.168.3.76 independent,0
+192.168.9.51,192.168.9.176,5,insider_threat,Multiple insider_threat attacks: 192.168.9.51 -> 192.168.9.176 with common pattern,1
+192.168.9.226,192.168.8.76,33,insider_threat,Single user bob at 192.168.9.226 suspicious activity standalone,0
+192.168.7.101,192.168.4.226,75,insider_threat,Single user david at 192.168.7.101 suspicious activity standalone,0
+192.168.6.226,192.168.4.26,32,insider_threat,Isolated insider_threat from 192.168.6.226 not related to other activity,0
+192.168.8.126,192.168.8.126,5,insider_threat,Multiple insider_threat attacks: 192.168.8.126 -> 192.168.8.126 with common pattern,1
+192.168.9.226,192.168.9.126,1,insider_threat,Correlated threat: insider_threat activity from 192.168.9.226 and 192.168.9.126 same source network,1
+192.168.4.126,192.168.4.151,2,insider_threat,Alert streak: insider_threat detected at 192.168.4.126 and 192.168.4.151 in 5-min window,1
+192.168.6.201,192.168.9.76,83,insider_threat,Single user david at 192.168.6.201 suspicious activity standalone,0
+192.168.1.26,192.168.1.51,4,insider_threat,Failed login from 192.168.1.26 followed by failed login from 192.168.1.51 within 2 minutes,1
+192.168.6.176,192.168.4.26,62,insider_threat,Unique threat pattern at 192.168.6.176 no correlation,0
+192.168.6.151,192.168.6.176,1,insider_threat,"admin at 192.168.6.151 attempted data access, then alice at 192.168.6.176 accessed same resource",1
+192.168.4.151,192.168.5.176,81,insider_threat,Single point insider_threat detection at 192.168.4.151 independent,0
+192.168.9.76,192.168.3.51,90,insider_threat,Unique threat pattern at 192.168.9.76 no correlation,0
+192.168.5.201,192.168.9.201,57,insider_threat,Single user user2 at 192.168.5.201 suspicious activity standalone,0
+192.168.3.176,192.168.3.176,2,insider_threat,Failed login from 192.168.3.176 followed by failed login from 192.168.3.176 within 2 minutes,1
+192.168.6.176,192.168.6.101,4,insider_threat,Multiple insider_threat attacks: 192.168.6.176 -> 192.168.6.101 with common pattern,1
+192.168.2.101,192.168.4.101,32,insider_threat,Single user bob at 192.168.2.101 suspicious activity standalone,0
+192.168.1.151,192.168.5.176,109,insider_threat,Isolated insider_threat from 192.168.1.151 not related to other activity,0
+192.168.1.126,192.168.4.26,105,insider_threat,Single user admin at 192.168.1.126 suspicious activity standalone,0
+192.168.9.101,192.168.6.176,39,insider_threat,Unique threat pattern at 192.168.9.101 no correlation,0
+192.168.7.126,192.168.5.201,32,insider_threat,Single user eve at 192.168.7.126 suspicious activity standalone,0
+192.168.8.51,192.168.7.76,119,insider_threat,Unique threat pattern at 192.168.8.51 no correlation,0
+192.168.6.226,192.168.2.101,48,insider_threat,Single point insider_threat detection at 192.168.6.226 independent,0
+192.168.1.101,192.168.2.51,37,insider_threat,insider_threat attack from 192.168.1.101 unrelated to other incidents,0
+192.168.9.26,192.168.9.201,5,insider_threat,Correlated threat: insider_threat activity from 192.168.9.26 and 192.168.9.201 same source network,1
+192.168.4.201,192.168.4.126,3,insider_threat,Correlated threat: insider_threat activity from 192.168.4.201 and 192.168.4.126 same source network,1
+192.168.4.151,192.168.8.151,98,insider_threat,Isolated insider_threat from 192.168.4.151 not related to other activity,0
+192.168.1.126,192.168.1.176,1,insider_threat,Failed login from 192.168.1.126 followed by failed login from 192.168.1.176 within 2 minutes,1
+192.168.8.176,192.168.2.1,76,insider_threat,Single user charlie at 192.168.8.176 suspicious activity standalone,0
+192.168.6.101,192.168.1.126,43,insider_threat,insider_threat attack from 192.168.6.101 unrelated to other incidents,0
+192.168.6.51,192.168.7.126,50,insider_threat,Single point insider_threat detection at 192.168.6.51 independent,0
+192.168.3.1,192.168.3.26,5,insider_threat,Failed login from 192.168.3.1 followed by failed login from 192.168.3.26 within 2 minutes,1
+192.168.4.51,192.168.4.101,2,insider_threat,Alert streak: insider_threat detected at 192.168.4.51 and 192.168.4.101 in 5-min window,1
+192.168.7.176,192.168.7.151,3,insider_threat,Failed login from 192.168.7.176 followed by failed login from 192.168.7.151 within 2 minutes,1
+192.168.4.201,192.168.4.151,5,insider_threat,Alert streak: insider_threat detected at 192.168.4.201 and 192.168.4.151 in 5-min window,1
+192.168.8.201,192.168.8.151,4,insider_threat,"alice at 192.168.8.201 attempted data access, then user1 at 192.168.8.151 accessed same resource",1
+192.168.9.151,192.168.9.1,3,insider_threat,Correlated threat: insider_threat activity from 192.168.9.151 and 192.168.9.1 same source network,1
+192.168.8.126,192.168.8.126,4,insider_threat,Multiple insider_threat attacks: 192.168.8.126 -> 192.168.8.126 with common pattern,1
+192.168.8.101,192.168.3.201,89,insider_threat,insider_threat attack from 192.168.8.101 unrelated to other incidents,0
+192.168.7.126,192.168.7.226,4,insider_threat,"admin at 192.168.7.126 attempted data access, then user2 at 192.168.7.226 accessed same resource",1
+192.168.1.26,192.168.1.151,2,insider_threat,Multiple insider_threat attacks: 192.168.1.26 -> 192.168.1.151 with common pattern,1
+192.168.8.1,192.168.4.51,115,insider_threat,Isolated insider_threat from 192.168.8.1 not related to other activity,0
+192.168.5.226,192.168.5.51,2,insider_threat,Multiple insider_threat attacks: 192.168.5.226 -> 192.168.5.51 with common pattern,1
+192.168.5.51,192.168.5.201,1,insider_threat,Correlated threat: insider_threat activity from 192.168.5.51 and 192.168.5.201 same source network,1
+192.168.4.26,192.168.1.26,64,insider_threat,Unique threat pattern at 192.168.4.26 no correlation,0
+192.168.8.201,192.168.1.1,112,insider_threat,Isolated insider_threat from 192.168.8.201 not related to other activity,0
+192.168.9.76,192.168.9.201,1,insider_threat,Alert streak: insider_threat detected at 192.168.9.76 and 192.168.9.201 in 5-min window,1
+192.168.3.26,192.168.3.226,4,insider_threat,"bob at 192.168.3.26 attempted data access, then eve at 192.168.3.226 accessed same resource",1
+192.168.8.101,192.168.8.76,3,insider_threat,Failed login from 192.168.8.101 followed by failed login from 192.168.8.76 within 2 minutes,1
+192.168.9.226,192.168.9.51,3,insider_threat,Alert streak: insider_threat detected at 192.168.9.226 and 192.168.9.51 in 5-min window,1
+192.168.9.151,192.168.9.101,2,insider_threat,Correlated threat: insider_threat activity from 192.168.9.151 and 192.168.9.101 same source network,1
+192.168.9.1,192.168.4.1,74,insider_threat,Unique threat pattern at 192.168.9.1 no correlation,0
+192.168.3.201,192.168.7.151,45,insider_threat,Single user admin at 192.168.3.201 suspicious activity standalone,0
+192.168.8.126,192.168.2.151,113,insider_threat,Single point insider_threat detection at 192.168.8.126 independent,0
+192.168.5.201,192.168.5.201,5,insider_threat,"user1 at 192.168.5.201 attempted data access, then charlie at 192.168.5.201 accessed same resource",1
+192.168.3.126,192.168.3.201,2,insider_threat,Alert streak: insider_threat detected at 192.168.3.126 and 192.168.3.201 in 5-min window,1
+192.168.7.151,192.168.9.176,44,insider_threat,Single point insider_threat detection at 192.168.7.151 independent,0
+192.168.1.126,192.168.9.76,99,insider_threat,insider_threat attack from 192.168.1.126 unrelated to other incidents,0
+192.168.2.126,192.168.2.101,3,insider_threat,Correlated threat: insider_threat activity from 192.168.2.126 and 192.168.2.101 same source network,1
+192.168.7.226,192.168.2.76,80,insider_threat,Isolated insider_threat from 192.168.7.226 not related to other activity,0
+192.168.4.26,192.168.4.26,4,insider_threat,"user2 at 192.168.4.26 attempted data access, then user1 at 192.168.4.26 accessed same resource",1
+192.168.6.176,192.168.7.1,81,insider_threat,Isolated insider_threat from 192.168.6.176 not related to other activity,0
+192.168.9.101,192.168.1.26,110,insider_threat,Single user user2 at 192.168.9.101 suspicious activity standalone,0
+192.168.4.151,192.168.6.201,43,insider_threat,insider_threat attack from 192.168.4.151 unrelated to other incidents,0
+192.168.7.76,192.168.7.151,5,insider_threat,Failed login from 192.168.7.76 followed by failed login from 192.168.7.151 within 2 minutes,1
+192.168.8.126,192.168.6.1,59,insider_threat,Single point insider_threat detection at 192.168.8.126 independent,0
+192.168.2.76,192.168.2.226,4,insider_threat,Alert streak: insider_threat detected at 192.168.2.76 and 192.168.2.226 in 5-min window,1
+192.168.2.151,192.168.7.26,68,insider_threat,insider_threat attack from 192.168.2.151 unrelated to other incidents,0
+192.168.7.76,192.168.7.151,1,insider_threat,Failed login from 192.168.7.76 followed by failed login from 192.168.7.151 within 2 minutes,1
+192.168.2.201,192.168.6.226,78,insider_threat,insider_threat attack from 192.168.2.201 unrelated to other incidents,0
+192.168.6.26,192.168.6.151,2,insider_threat,Multiple insider_threat attacks: 192.168.6.26 -> 192.168.6.151 with common pattern,1
+192.168.8.26,192.168.7.51,115,insider_threat,Single point insider_threat detection at 192.168.8.26 independent,0
+192.168.6.226,192.168.6.201,1,insider_threat,"user1 at 192.168.6.226 attempted data access, then admin at 192.168.6.201 accessed same resource",1
+192.168.6.176,192.168.6.51,1,insider_threat,Correlated threat: insider_threat activity from 192.168.6.176 and 192.168.6.51 same source network,1
+192.168.9.1,192.168.9.51,1,insider_threat,"alice at 192.168.9.1 attempted data access, then user2 at 192.168.9.51 accessed same resource",1
+192.168.1.26,192.168.1.126,1,insider_threat,"user1 at 192.168.1.26 attempted data access, then admin at 192.168.1.126 accessed same resource",1
+192.168.9.226,192.168.9.101,2,insider_threat,"david at 192.168.9.226 attempted data access, then david at 192.168.9.101 accessed same resource",1
+192.168.4.76,192.168.4.126,2,insider_threat,Failed login from 192.168.4.76 followed by failed login from 192.168.4.126 within 2 minutes,1
+192.168.6.226,192.168.6.151,2,insider_threat,"charlie at 192.168.6.226 attempted data access, then user2 at 192.168.6.151 accessed same resource",1
+192.168.6.151,192.168.4.26,114,insider_threat,Isolated insider_threat from 192.168.6.151 not related to other activity,0
+192.168.8.176,192.168.4.201,45,insider_threat,Isolated insider_threat from 192.168.8.176 not related to other activity,0
+192.168.7.151,192.168.7.151,2,insider_threat,Alert streak: insider_threat detected at 192.168.7.151 and 192.168.7.151 in 5-min window,1
+192.168.7.151,192.168.8.1,107,insider_threat,Single user alice at 192.168.7.151 suspicious activity standalone,0
+192.168.5.51,192.168.5.226,2,insider_threat,Failed login from 192.168.5.51 followed by failed login from 192.168.5.226 within 2 minutes,1
+192.168.2.51,192.168.6.101,94,insider_threat,Unique threat pattern at 192.168.2.51 no correlation,0
+192.168.4.126,192.168.1.26,32,insider_threat,Single user bob at 192.168.4.126 suspicious activity standalone,0
+192.168.4.101,192.168.5.201,57,insider_threat,Unique threat pattern at 192.168.4.101 no correlation,0
+192.168.2.51,192.168.2.201,3,insider_threat,Failed login from 192.168.2.51 followed by failed login from 192.168.2.201 within 2 minutes,1
+192.168.1.226,192.168.7.26,86,insider_threat,Single user charlie at 192.168.1.226 suspicious activity standalone,0
+192.168.3.176,192.168.4.151,84,insider_threat,Isolated insider_threat from 192.168.3.176 not related to other activity,0
+192.168.8.126,192.168.1.76,84,insider_threat,Single point insider_threat detection at 192.168.8.126 independent,0
+192.168.9.51,192.168.9.1,1,insider_threat,Failed login from 192.168.9.51 followed by failed login from 192.168.9.1 within 2 minutes,1
+192.168.2.176,192.168.4.151,93,insider_threat,Single point insider_threat detection at 192.168.2.176 independent,0
+192.168.4.176,192.168.4.201,5,insider_threat,Alert streak: insider_threat detected at 192.168.4.176 and 192.168.4.201 in 5-min window,1
+192.168.8.26,192.168.8.51,4,insider_threat,Alert streak: insider_threat detected at 192.168.8.26 and 192.168.8.51 in 5-min window,1
+192.168.3.126,192.168.8.51,85,insider_threat,Unique threat pattern at 192.168.3.126 no correlation,0
+192.168.7.1,192.168.7.1,5,insider_threat,Multiple insider_threat attacks: 192.168.7.1 -> 192.168.7.1 with common pattern,1
+192.168.2.51,192.168.7.51,114,insider_threat,insider_threat attack from 192.168.2.51 unrelated to other incidents,0
+192.168.8.201,192.168.1.126,113,insider_threat,insider_threat attack from 192.168.8.201 unrelated to other incidents,0
+192.168.8.226,192.168.6.1,86,insider_threat,Single user user1 at 192.168.8.226 suspicious activity standalone,0
+192.168.5.76,192.168.5.226,2,insider_threat,Correlated threat: insider_threat activity from 192.168.5.76 and 192.168.5.226 same source network,1
+192.168.5.201,192.168.7.76,35,insider_threat,Isolated insider_threat from 192.168.5.201 not related to other activity,0
+192.168.4.101,192.168.4.26,1,insider_threat,"eve at 192.168.4.101 attempted data access, then bob at 192.168.4.26 accessed same resource",1
+192.168.1.176,192.168.3.101,77,insider_threat,Unique threat pattern at 192.168.1.176 no correlation,0
+192.168.7.226,192.168.2.1,39,insider_threat,Isolated insider_threat from 192.168.7.226 not related to other activity,0
+192.168.5.26,192.168.1.1,96,insider_threat,insider_threat attack from 192.168.5.26 unrelated to other incidents,0
+192.168.8.76,192.168.3.1,56,insider_threat,Single user user2 at 192.168.8.76 suspicious activity standalone,0
+192.168.3.51,192.168.3.26,2,insider_threat,Correlated threat: insider_threat activity from 192.168.3.51 and 192.168.3.26 same source network,1
+192.168.7.176,192.168.4.51,93,insider_threat,Single point insider_threat detection at 192.168.7.176 independent,0
+192.168.3.126,192.168.3.151,4,insider_threat,Correlated threat: insider_threat activity from 192.168.3.126 and 192.168.3.151 same source network,1
+192.168.9.76,192.168.9.51,1,insider_threat,Correlated threat: insider_threat activity from 192.168.9.76 and 192.168.9.51 same source network,1
+192.168.9.126,192.168.9.101,5,insider_threat,Correlated threat: insider_threat activity from 192.168.9.126 and 192.168.9.101 same source network,1
+192.168.2.51,192.168.2.151,2,insider_threat,Alert streak: insider_threat detected at 192.168.2.51 and 192.168.2.151 in 5-min window,1
+192.168.3.176,192.168.3.51,1,insider_threat,Correlated threat: insider_threat activity from 192.168.3.176 and 192.168.3.51 same source network,1
+192.168.8.226,192.168.2.101,91,insider_threat,insider_threat attack from 192.168.8.226 unrelated to other incidents,0
+192.168.6.126,192.168.6.1,1,insider_threat,Multiple insider_threat attacks: 192.168.6.126 -> 192.168.6.1 with common pattern,1
+192.168.7.151,192.168.5.126,117,insider_threat,insider_threat attack from 192.168.7.151 unrelated to other incidents,0
+192.168.7.26,192.168.7.201,3,insider_threat,"david at 192.168.7.26 attempted data access, then user2 at 192.168.7.201 accessed same resource",1
+192.168.6.201,192.168.6.176,2,insider_threat,Alert streak: insider_threat detected at 192.168.6.201 and 192.168.6.176 in 5-min window,1
+192.168.7.176,192.168.7.126,1,insider_threat,Alert streak: insider_threat detected at 192.168.7.176 and 192.168.7.126 in 5-min window,1
+192.168.6.126,192.168.7.201,36,insider_threat,Unique threat pattern at 192.168.6.126 no correlation,0
+192.168.4.126,192.168.4.226,2,insider_threat,"bob at 192.168.4.126 attempted data access, then user1 at 192.168.4.226 accessed same resource",1
+192.168.3.76,192.168.3.1,2,insider_threat,Correlated threat: insider_threat activity from 192.168.3.76 and 192.168.3.1 same source network,1
+192.168.7.151,192.168.4.1,55,insider_threat,Single user admin at 192.168.7.151 suspicious activity standalone,0
+192.168.2.151,192.168.2.151,3,insider_threat,Failed login from 192.168.2.151 followed by failed login from 192.168.2.151 within 2 minutes,1
+192.168.9.201,192.168.9.1,4,insider_threat,Alert streak: insider_threat detected at 192.168.9.201 and 192.168.9.1 in 5-min window,1
+192.168.5.176,192.168.3.176,90,insider_threat,Single point insider_threat detection at 192.168.5.176 independent,0
+192.168.2.151,192.168.2.151,3,insider_threat,Correlated threat: insider_threat activity from 192.168.2.151 and 192.168.2.151 same source network,1
+192.168.5.201,192.168.1.176,90,insider_threat,Single user user2 at 192.168.5.201 suspicious activity standalone,0
+192.168.4.76,192.168.4.101,2,insider_threat,Failed login from 192.168.4.76 followed by failed login from 192.168.4.101 within 2 minutes,1
+192.168.4.126,192.168.1.101,95,insider_threat,Single point insider_threat detection at 192.168.4.126 independent,0
+192.168.6.201,192.168.6.51,1,insider_threat,Failed login from 192.168.6.201 followed by failed login from 192.168.6.51 within 2 minutes,1
+192.168.6.1,192.168.6.26,2,insider_threat,Correlated threat: insider_threat activity from 192.168.6.1 and 192.168.6.26 same source network,1
+192.168.5.1,192.168.8.26,59,insider_threat,Unique threat pattern at 192.168.5.1 no correlation,0
+192.168.4.151,192.168.4.226,1,insider_threat,Correlated threat: insider_threat activity from 192.168.4.151 and 192.168.4.226 same source network,1
+192.168.7.1,192.168.7.151,3,insider_threat,"user2 at 192.168.7.1 attempted data access, then admin at 192.168.7.151 accessed same resource",1
+192.168.3.1,192.168.6.126,40,insider_threat,Single point insider_threat detection at 192.168.3.1 independent,0
+192.168.7.201,192.168.3.1,69,insider_threat,Unique threat pattern at 192.168.7.201 no correlation,0
+192.168.1.76,192.168.8.226,81,insider_threat,Single user eve at 192.168.1.76 suspicious activity standalone,0
+192.168.4.1,192.168.9.126,85,insider_threat,insider_threat attack from 192.168.4.1 unrelated to other incidents,0
+192.168.1.176,192.168.1.26,1,insider_threat,"bob at 192.168.1.176 attempted data access, then bob at 192.168.1.26 accessed same resource",1
+192.168.8.201,192.168.4.151,111,insider_threat,Single user user1 at 192.168.8.201 suspicious activity standalone,0
+192.168.6.101,192.168.6.151,3,insider_threat,Correlated threat: insider_threat activity from 192.168.6.101 and 192.168.6.151 same source network,1
+192.168.2.1,192.168.1.51,80,insider_threat,Unique threat pattern at 192.168.2.1 no correlation,0
+192.168.4.51,192.168.3.201,119,insider_threat,Single point insider_threat detection at 192.168.4.51 independent,0
+192.168.2.226,192.168.2.201,3,insider_threat,Failed login from 192.168.2.226 followed by failed login from 192.168.2.201 within 2 minutes,1
+192.168.4.151,192.168.2.126,110,insider_threat,Unique threat pattern at 192.168.4.151 no correlation,0
+192.168.2.76,192.168.2.101,2,insider_threat,Correlated threat: insider_threat activity from 192.168.2.76 and 192.168.2.101 same source network,1
+192.168.6.176,192.168.6.101,1,insider_threat,Correlated threat: insider_threat activity from 192.168.6.176 and 192.168.6.101 same source network,1
+192.168.1.1,192.168.1.26,5,insider_threat,Correlated threat: insider_threat activity from 192.168.1.1 and 192.168.1.26 same source network,1
+192.168.1.1,192.168.2.51,92,insider_threat,Single point insider_threat detection at 192.168.1.1 independent,0
+192.168.5.51,192.168.5.26,2,insider_threat,Correlated threat: insider_threat activity from 192.168.5.51 and 192.168.5.26 same source network,1
+192.168.7.126,192.168.7.1,2,insider_threat,"bob at 192.168.7.126 attempted data access, then david at 192.168.7.1 accessed same resource",1
+192.168.2.151,192.168.2.76,1,insider_threat,Alert streak: insider_threat detected at 192.168.2.151 and 192.168.2.76 in 5-min window,1
+192.168.8.101,192.168.4.226,62,insider_threat,Isolated insider_threat from 192.168.8.101 not related to other activity,0
+192.168.9.51,192.168.9.51,3,insider_threat,"bob at 192.168.9.51 attempted data access, then admin at 192.168.9.51 accessed same resource",1
+192.168.3.126,192.168.3.176,1,insider_threat,Multiple insider_threat attacks: 192.168.3.126 -> 192.168.3.176 with common pattern,1
+192.168.5.126,192.168.1.226,119,insider_threat,Isolated insider_threat from 192.168.5.126 not related to other activity,0
+192.168.3.101,192.168.9.1,106,insider_threat,Single point insider_threat detection at 192.168.3.101 independent,0
+192.168.6.51,192.168.7.151,62,insider_threat,Single point insider_threat detection at 192.168.6.51 independent,0
+192.168.1.226,192.168.1.1,2,insider_threat,Failed login from 192.168.1.226 followed by failed login from 192.168.1.1 within 2 minutes,1
+192.168.2.201,192.168.7.226,95,insider_threat,Single point insider_threat detection at 192.168.2.201 independent,0
+192.168.5.51,192.168.7.101,34,insider_threat,Unique threat pattern at 192.168.5.51 no correlation,0
+192.168.6.151,192.168.6.76,2,insider_threat,Alert streak: insider_threat detected at 192.168.6.151 and 192.168.6.76 in 5-min window,1
+192.168.8.1,192.168.8.51,3,insider_threat,Multiple insider_threat attacks: 192.168.8.1 -> 192.168.8.51 with common pattern,1
+192.168.1.76,192.168.1.76,2,insider_threat,Multiple insider_threat attacks: 192.168.1.76 -> 192.168.1.76 with common pattern,1
+192.168.3.101,192.168.4.176,77,insider_threat,insider_threat attack from 192.168.3.101 unrelated to other incidents,0
+192.168.5.101,192.168.5.26,1,insider_threat,Failed login from 192.168.5.101 followed by failed login from 192.168.5.26 within 2 minutes,1
+192.168.6.26,192.168.5.51,86,insider_threat,Single user david at 192.168.6.26 suspicious activity standalone,0
+192.168.8.76,192.168.8.126,1,insider_threat,"david at 192.168.8.76 attempted data access, then david at 192.168.8.126 accessed same resource",1
+192.168.6.1,192.168.6.51,5,insider_threat,Correlated threat: insider_threat activity from 192.168.6.1 and 192.168.6.51 same source network,1
+192.168.5.101,192.168.5.201,3,insider_threat,Failed login from 192.168.5.101 followed by failed login from 192.168.5.201 within 2 minutes,1
+192.168.2.126,192.168.2.126,2,insider_threat,Failed login from 192.168.2.126 followed by failed login from 192.168.2.126 within 2 minutes,1
+192.168.6.151,192.168.8.226,58,insider_threat,Unique threat pattern at 192.168.6.151 no correlation,0
+192.168.6.176,192.168.6.151,1,insider_threat,"bob at 192.168.6.176 attempted data access, then charlie at 192.168.6.151 accessed same resource",1
+192.168.2.151,192.168.6.26,81,insider_threat,Unique threat pattern at 192.168.2.151 no correlation,0
+192.168.8.126,192.168.6.126,65,insider_threat,Unique threat pattern at 192.168.8.126 no correlation,0
+192.168.6.226,192.168.9.101,34,insider_threat,insider_threat attack from 192.168.6.226 unrelated to other incidents,0
+192.168.8.101,192.168.5.76,99,insider_threat,Single point insider_threat detection at 192.168.8.101 independent,0
+192.168.6.151,192.168.4.51,47,insider_threat,Single user eve at 192.168.6.151 suspicious activity standalone,0
+192.168.6.176,192.168.2.76,56,insider_threat,insider_threat attack from 192.168.6.176 unrelated to other incidents,0
+192.168.5.51,192.168.4.1,98,insider_threat,Unique threat pattern at 192.168.5.51 no correlation,0
+192.168.9.101,192.168.4.126,55,insider_threat,Single point insider_threat detection at 192.168.9.101 independent,0
+192.168.7.26,192.168.7.201,2,insider_threat,Alert streak: insider_threat detected at 192.168.7.26 and 192.168.7.201 in 5-min window,1
+192.168.5.151,192.168.3.226,64,insider_threat,Unique threat pattern at 192.168.5.151 no correlation,0
+192.168.4.76,192.168.7.126,120,insider_threat,Isolated insider_threat from 192.168.4.76 not related to other activity,0
+192.168.2.126,192.168.2.76,5,insider_threat,Correlated threat: insider_threat activity from 192.168.2.126 and 192.168.2.76 same source network,1
+192.168.4.176,192.168.4.26,4,insider_threat,Alert streak: insider_threat detected at 192.168.4.176 and 192.168.4.26 in 5-min window,1
+192.168.8.1,192.168.4.151,105,insider_threat,Single user charlie at 192.168.8.1 suspicious activity standalone,0
+192.168.1.126,192.168.7.101,93,insider_threat,Isolated insider_threat from 192.168.1.126 not related to other activity,0
+192.168.9.1,192.168.9.51,5,insider_threat,Correlated threat: insider_threat activity from 192.168.9.1 and 192.168.9.51 same source network,1
+192.168.9.151,192.168.1.76,48,insider_threat,Single point insider_threat detection at 192.168.9.151 independent,0
+192.168.1.176,192.168.1.151,5,insider_threat,Alert streak: insider_threat detected at 192.168.1.176 and 192.168.1.151 in 5-min window,1
+192.168.9.201,192.168.5.226,57,insider_threat,insider_threat attack from 192.168.9.201 unrelated to other incidents,0
+192.168.2.1,192.168.2.151,4,insider_threat,Failed login from 192.168.2.1 followed by failed login from 192.168.2.151 within 2 minutes,1
+192.168.8.176,192.168.8.76,3,insider_threat,Failed login from 192.168.8.176 followed by failed login from 192.168.8.76 within 2 minutes,1
+192.168.5.26,192.168.9.1,70,insider_threat,Isolated insider_threat from 192.168.5.26 not related to other activity,0
+192.168.4.1,192.168.7.151,37,insider_threat,Single point insider_threat detection at 192.168.4.1 independent,0
+192.168.2.1,192.168.3.176,67,insider_threat,Unique threat pattern at 192.168.2.1 no correlation,0
+192.168.2.176,192.168.2.151,5,insider_threat,Multiple insider_threat attacks: 192.168.2.176 -> 192.168.2.151 with common pattern,1
+192.168.1.76,192.168.1.51,2,insider_threat,Alert streak: insider_threat detected at 192.168.1.76 and 192.168.1.51 in 5-min window,1
+192.168.9.126,192.168.9.226,2,insider_threat,"user1 at 192.168.9.126 attempted data access, then user1 at 192.168.9.226 accessed same resource",1
+192.168.9.76,192.168.9.26,5,insider_threat,Multiple insider_threat attacks: 192.168.9.76 -> 192.168.9.26 with common pattern,1
+192.168.7.76,192.168.7.201,5,insider_threat,Correlated threat: insider_threat activity from 192.168.7.76 and 192.168.7.201 same source network,1
+192.168.2.151,192.168.2.26,2,insider_threat,"user1 at 192.168.2.151 attempted data access, then user2 at 192.168.2.26 accessed same resource",1
+192.168.4.226,192.168.7.26,118,insider_threat,Single user alice at 192.168.4.226 suspicious activity standalone,0
+192.168.9.151,192.168.1.126,102,insider_threat,insider_threat attack from 192.168.9.151 unrelated to other incidents,0
+192.168.5.26,192.168.6.76,77,insider_threat,Single point insider_threat detection at 192.168.5.26 independent,0
+192.168.1.201,192.168.6.201,35,insider_threat,Single user user1 at 192.168.1.201 suspicious activity standalone,0
+192.168.1.1,192.168.4.51,86,insider_threat,Single point insider_threat detection at 192.168.1.1 independent,0
+192.168.3.1,192.168.3.101,1,insider_threat,Failed login from 192.168.3.1 followed by failed login from 192.168.3.101 within 2 minutes,1
+192.168.6.126,192.168.2.126,103,insider_threat,Isolated insider_threat from 192.168.6.126 not related to other activity,0
+192.168.7.51,192.168.7.176,5,insider_threat,"alice at 192.168.7.51 attempted data access, then eve at 192.168.7.176 accessed same resource",1
+192.168.4.201,192.168.6.201,59,insider_threat,insider_threat attack from 192.168.4.201 unrelated to other incidents,0
+192.168.8.51,192.168.8.76,1,insider_threat,Failed login from 192.168.8.51 followed by failed login from 192.168.8.76 within 2 minutes,1
+192.168.8.1,192.168.8.101,5,insider_threat,Alert streak: insider_threat detected at 192.168.8.1 and 192.168.8.101 in 5-min window,1
+192.168.8.101,192.168.8.101,2,insider_threat,Failed login from 192.168.8.101 followed by failed login from 192.168.8.101 within 2 minutes,1
+192.168.1.176,192.168.7.201,46,insider_threat,Unique threat pattern at 192.168.1.176 no correlation,0
+192.168.6.1,192.168.6.101,4,insider_threat,"david at 192.168.6.1 attempted data access, then user2 at 192.168.6.101 accessed same resource",1
+192.168.7.76,192.168.7.176,3,insider_threat,Multiple insider_threat attacks: 192.168.7.76 -> 192.168.7.176 with common pattern,1
+192.168.1.176,192.168.6.176,75,insider_threat,Single user david at 192.168.1.176 suspicious activity standalone,0
+192.168.7.226,192.168.7.201,1,insider_threat,Multiple insider_threat attacks: 192.168.7.226 -> 192.168.7.201 with common pattern,1
+192.168.6.101,192.168.6.151,1,insider_threat,"bob at 192.168.6.101 attempted data access, then charlie at 192.168.6.151 accessed same resource",1
+192.168.4.101,192.168.4.1,1,insider_threat,Multiple insider_threat attacks: 192.168.4.101 -> 192.168.4.1 with common pattern,1
+192.168.4.176,192.168.1.51,37,insider_threat,Isolated insider_threat from 192.168.4.176 not related to other activity,0
+192.168.8.126,192.168.8.101,1,insider_threat,"admin at 192.168.8.126 attempted data access, then user1 at 192.168.8.101 accessed same resource",1
+192.168.8.151,192.168.8.76,4,insider_threat,Multiple insider_threat attacks: 192.168.8.151 -> 192.168.8.76 with common pattern,1
+192.168.7.176,192.168.6.76,83,insider_threat,Single user admin at 192.168.7.176 suspicious activity standalone,0
+192.168.1.51,192.168.5.101,72,insider_threat,insider_threat attack from 192.168.1.51 unrelated to other incidents,0
+192.168.6.26,192.168.9.1,61,insider_threat,Single point insider_threat detection at 192.168.6.26 independent,0
+192.168.5.101,192.168.2.26,41,insider_threat,insider_threat attack from 192.168.5.101 unrelated to other incidents,0
+192.168.7.101,192.168.9.51,94,insider_threat,Isolated insider_threat from 192.168.7.101 not related to other activity,0
+192.168.9.201,192.168.9.26,5,insider_threat,"alice at 192.168.9.201 attempted data access, then alice at 192.168.9.26 accessed same resource",1
+192.168.4.226,192.168.4.76,1,insider_threat,Correlated threat: insider_threat activity from 192.168.4.226 and 192.168.4.76 same source network,1
+192.168.2.176,192.168.4.26,84,insider_threat,Isolated insider_threat from 192.168.2.176 not related to other activity,0
+192.168.7.101,192.168.5.126,62,insider_threat,insider_threat attack from 192.168.7.101 unrelated to other incidents,0
+192.168.7.176,192.168.7.176,3,insider_threat,Multiple insider_threat attacks: 192.168.7.176 -> 192.168.7.176 with common pattern,1
+192.168.7.101,192.168.7.151,4,insider_threat,Alert streak: insider_threat detected at 192.168.7.101 and 192.168.7.151 in 5-min window,1
+192.168.7.176,192.168.5.126,36,insider_threat,Isolated insider_threat from 192.168.7.176 not related to other activity,0
+192.168.3.151,192.168.1.201,70,insider_threat,Single point insider_threat detection at 192.168.3.151 independent,0
+192.168.9.101,192.168.9.151,4,insider_threat,Multiple insider_threat attacks: 192.168.9.101 -> 192.168.9.151 with common pattern,1
+192.168.5.126,192.168.4.201,118,insider_threat,Unique threat pattern at 192.168.5.126 no correlation,0
+192.168.4.101,192.168.2.176,79,insider_threat,Single point insider_threat detection at 192.168.4.101 independent,0
+192.168.4.126,192.168.2.201,89,insider_threat,Isolated insider_threat from 192.168.4.126 not related to other activity,0
+192.168.7.1,192.168.7.26,2,insider_threat,Alert streak: insider_threat detected at 192.168.7.1 and 192.168.7.26 in 5-min window,1
+192.168.6.151,192.168.7.201,101,insider_threat,Single user alice at 192.168.6.151 suspicious activity standalone,0
+192.168.3.176,192.168.1.176,78,insider_threat,Single point insider_threat detection at 192.168.3.176 independent,0
+192.168.5.201,192.168.8.126,67,insider_threat,Unique threat pattern at 192.168.5.201 no correlation,0
+192.168.5.101,192.168.6.201,94,insider_threat,Isolated insider_threat from 192.168.5.101 not related to other activity,0
+192.168.7.176,192.168.7.226,3,insider_threat,Correlated threat: insider_threat activity from 192.168.7.176 and 192.168.7.226 same source network,1
+192.168.9.151,192.168.9.151,4,insider_threat,Correlated threat: insider_threat activity from 192.168.9.151 and 192.168.9.151 same source network,1
+192.168.2.76,192.168.8.151,73,insider_threat,Isolated insider_threat from 192.168.2.76 not related to other activity,0
+192.168.3.26,192.168.3.201,4,insider_threat,Correlated threat: insider_threat activity from 192.168.3.26 and 192.168.3.201 same source network,1
+192.168.3.51,192.168.2.151,81,insider_threat,Unique threat pattern at 192.168.3.51 no correlation,0
+192.168.9.51,192.168.4.226,32,insider_threat,Unique threat pattern at 192.168.9.51 no correlation,0
+192.168.6.1,192.168.6.26,3,insider_threat,Failed login from 192.168.6.1 followed by failed login from 192.168.6.26 within 2 minutes,1

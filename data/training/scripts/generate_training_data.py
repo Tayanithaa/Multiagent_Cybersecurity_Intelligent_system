@@ -9,7 +9,7 @@ import os
 
 # Configuration
 SAMPLES_PER_CLASS = 1000  # Increase for better model
-OUTPUT_DIR = "data/training"
+OUTPUT_DIR = "data/training/csv/full"
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 USERS = ["alice", "bob", "charlie", "david", "eve", "admin", "user1", "user2", "user3", "system"]

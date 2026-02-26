@@ -96,7 +96,7 @@ This is an **AI-powered security log analysis system** that automatically:
 
 ### Component Breakdown
 
-#### 1. **Data Generation Module** (`data/generate_training_data.py`)
+#### 1. **Data Generation Module** (`data/training/scripts/generate_training_data.py`)
 - **Purpose:** Create synthetic labeled training data
 - **Method:** Template-based generation with realistic variability
 - **Output:** 8,000 balanced samples (1,000 per class)
@@ -271,13 +271,13 @@ incidents = alerts.groupby(['ip', 'time_window', 'class']).agg({
 #### 1. **Data Preparation**
 
 ```bash
-python data/generate_training_data.py
+python data/training/scripts/generate_training_data.py
 ```
 
 **What it does:**
 - Generates 8,000 labeled logs using 15 templates per class
 - Realistic variable substitution (IPs, usernames, file names)
-- Saves to `data/training/full_dataset.csv`
+- Saves to `data/training/csv/full/full_dataset.csv`
 
 **Template example:**
 ```python
@@ -306,7 +306,7 @@ python train_bert_model.py
 
 ```python
 # 1. Load dataset
-df = pd.read_csv('data/training/full_dataset.csv')
+df = pd.read_csv('data/training/csv/full/full_dataset.csv')
 # 8000 rows × 2 columns
 
 # 2. Train/Val/Test split (stratified to maintain class balance)
@@ -546,9 +546,12 @@ AI_Aztechs/
 ├── data/
 │   ├── sample_logs.csv            # Test dataset (85 logs)
 │   ├── realistic_logs.csv         # Generated realistic logs (200)
-│   ├── generate_training_data.py  # Training data generator
 │   └── training/
-│       └── full_dataset.csv       # 8,000 labeled samples
+│       ├── scripts/
+│       │   └── generate_training_data.py  # Training data generator
+│       └── csv/
+│           └── full/
+│               └── full_dataset.csv       # 8,000 labeled samples
 ├── models/
 │   └── distilbert_log_classifier/
 │       ├── config.json            # Model configuration + labels
@@ -801,7 +804,7 @@ LABEL_MAP = {
 
 ```python
 # 1. Load and split data
-df = pd.read_csv('data/training/full_dataset.csv')
+df = pd.read_csv('data/training/csv/full/full_dataset.csv')
 train_df, val_df, test_df = split_data(df)
 
 # 2. Tokenize
@@ -1571,7 +1574,7 @@ real_logs = pd.DataFrame({
 })
 
 # 2. Combine with synthetic data (optional)
-synthetic_logs = pd.read_csv('data/training/full_dataset.csv')
+synthetic_logs = pd.read_csv('data/training/csv/full/full_dataset.csv')
 combined = pd.concat([synthetic_logs, real_logs])
 
 # 3. Retrain
@@ -1592,7 +1595,7 @@ LABEL_MAP = {
 }
 
 # 2. Generate training data for new classes
-# Add templates to data/generate_training_data.py
+# Add templates to data/training/scripts/generate_training_data.py
 
 # 3. Retrain with num_labels=10
 model = DistilBertForSequenceClassification.from_pretrained(

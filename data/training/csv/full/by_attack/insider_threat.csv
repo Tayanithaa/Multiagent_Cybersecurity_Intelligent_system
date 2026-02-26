@@ -1,0 +1,1001 @@
+timestamp,user,ip,raw_message,label,label_id
+2025-12-25 11:56:06.586686,user2,192.168.38.221,Confidential data accessed at 11:21,insider_threat,7
+2025-12-21 19:27:06.584186,charlie,192.168.32.121,Confidential data accessed at 20:50,insider_threat,7
+2026-01-03 04:05:06.586686,user1,192.168.34.231,Confidential data accessed at 05:09,insider_threat,7
+2025-12-23 03:02:06.582092,david,192.168.42.91,Admin account used from unusual location,insider_threat,7
+2025-12-06 10:56:06.584186,user2,192.168.12.1,Unauthorized access to sensitive database,insider_threat,7
+2025-12-14 04:40:06.581082,admin,192.168.21.51,Confidential data accessed at 20:02,insider_threat,7
+2025-12-31 14:16:06.580083,charlie,192.168.32.211,Suspicious file access by privileged user,insider_threat,7
+2026-01-01 22:54:06.585691,charlie,192.168.26.91,Unauthorized access to sensitive database,insider_threat,7
+2026-01-03 07:36:06.584186,david,192.168.13.101,Unauthorized access to sensitive database,insider_threat,7
+2025-12-25 08:32:06.584186,bob,192.168.39.11,Admin accessed confidential files outside business hours,insider_threat,7
+2025-12-21 06:12:06.580083,eve,192.168.6.41,Unauthorized database query by bob,insider_threat,7
+2025-12-26 10:07:06.580083,user2,192.168.18.211,Unauthorized database query by admin,insider_threat,7
+2025-12-20 07:21:06.584186,admin,192.168.17.61,Privilege escalation detected for charlie,insider_threat,7
+2025-12-31 05:46:06.584186,user3,192.168.23.241,Unauthorized database query by admin,insider_threat,7
+2026-01-04 06:34:06.586686,charlie,192.168.21.211,Sensitive file download by user3 after hours,insider_threat,7
+2026-01-03 13:32:06.582092,user1,192.168.14.21,Privilege escalation detected for user3,insider_threat,7
+2025-12-27 14:48:06.584186,eve,192.168.19.231,Suspicious file access by privileged user,insider_threat,7
+2025-12-19 16:35:06.583091,user2,192.168.9.211,Suspicious file access by privileged user,insider_threat,7
+2025-12-12 23:38:06.581082,user3,192.168.31.61,Privilege escalation detected for user3,insider_threat,7
+2026-01-02 04:05:06.582092,charlie,192.168.15.111,Unauthorized database query by charlie,insider_threat,7
+2025-12-03 12:13:06.580083,david,192.168.28.221,Unauthorized database query by system,insider_threat,7
+2025-12-15 16:14:06.584186,eve,192.168.38.71,Unauthorized access to sensitive database,insider_threat,7
+2025-12-28 22:40:06.582092,user3,192.168.28.151,Unauthorized access to sensitive database,insider_threat,7
+2025-12-20 03:07:06.581082,eve,192.168.16.1,Suspicious file access by privileged user,insider_threat,7
+2025-12-06 11:32:06.583091,eve,192.168.11.21,Unauthorized access to sensitive database,insider_threat,7
+2025-12-18 18:32:06.584186,user2,192.168.42.101,Suspicious file access by privileged user,insider_threat,7
+2025-12-05 15:49:06.584186,system,192.168.31.191,Admin account used from unusual location,insider_threat,7
+2025-12-10 14:21:06.584186,alice,192.168.39.21,Admin accessed confidential files outside business hours,insider_threat,7
+2025-12-10 12:54:06.583091,user2,192.168.43.61,Privilege abuse detected: user1,insider_threat,7
+2025-12-21 00:51:06.585691,user3,192.168.47.181,Privilege escalation detected for system,insider_threat,7
+2025-12-08 14:41:06.584186,charlie,192.168.26.71,Unauthorized database query by user1,insider_threat,7
+2025-12-31 18:19:06.585691,bob,192.168.36.81,Admin accessed confidential files outside business hours,insider_threat,7
+2025-12-31 00:50:06.583091,alice,192.168.3.81,Privilege abuse detected: charlie,insider_threat,7
+2025-12-24 07:49:06.580083,user2,192.168.43.121,Privilege escalation detected for admin,insider_threat,7
+2025-12-18 08:30:06.586686,system,192.168.17.161,Privilege escalation detected for charlie,insider_threat,7
+2026-01-04 06:01:06.581082,eve,192.168.17.141,User bob accessed HR records without authorization,insider_threat,7
+2026-01-02 02:33:06.583091,system,192.168.21.1,Privilege abuse detected: alice,insider_threat,7
+2025-12-16 04:53:06.586686,bob,192.168.47.71,Confidential data accessed at 14:46,insider_threat,7
+2025-12-30 09:36:06.586686,user1,192.168.43.201,Confidential data accessed at 02:02,insider_threat,7
+2025-12-29 08:17:06.585691,admin,192.168.19.81,Privilege abuse detected: charlie,insider_threat,7
+2025-12-07 23:40:06.585691,david,192.168.23.61,Admin account used from unusual location,insider_threat,7
+2025-12-21 11:21:06.582092,david,192.168.42.61,Admin accessed confidential files outside business hours,insider_threat,7
+2026-01-01 18:28:06.584186,eve,192.168.4.241,Confidential data accessed at 15:12,insider_threat,7
+2025-12-10 18:46:06.585691,user1,192.168.41.161,Admin account used from unusual location,insider_threat,7
+2025-12-13 22:49:06.583091,charlie,192.168.39.11,Sensitive file download by system after hours,insider_threat,7
+2026-01-03 01:31:06.586686,alice,192.168.36.201,Admin accessed confidential files outside business hours,insider_threat,7
+2025-12-07 16:28:06.581082,charlie,192.168.9.41,Privilege escalation detected for user2,insider_threat,7
+2025-12-03 11:17:06.580083,system,192.168.48.201,Privilege abuse detected: charlie,insider_threat,7
+2025-12-04 10:43:06.586686,user3,192.168.16.241,Unauthorized access to sensitive database,insider_threat,7
+2025-12-10 08:15:06.586686,system,192.168.26.121,Unauthorized access to sensitive database,insider_threat,7
+2025-12-29 21:46:06.586686,admin,192.168.7.131,Suspicious file access by privileged user,insider_threat,7
+2025-12-23 10:46:06.583091,david,192.168.28.151,Confidential data accessed at 02:01,insider_threat,7
+2026-01-01 06:39:06.581082,eve,192.168.25.21,Sensitive file download by charlie after hours,insider_threat,7
+2025-12-29 21:55:06.583091,user3,192.168.39.221,Unauthorized database query by eve,insider_threat,7
+2025-12-24 16:08:06.581082,user2,192.168.18.151,Admin account used from unusual location,insider_threat,7
+2025-12-24 20:45:06.582092,bob,192.168.39.71,Confidential data accessed at 04:51,insider_threat,7
+2026-01-01 00:46:06.585691,user1,192.168.1.181,Admin account used from unusual location,insider_threat,7
+2025-12-26 00:11:06.586686,bob,192.168.41.71,Suspicious file access by privileged user,insider_threat,7
+2025-12-11 17:08:06.585691,david,192.168.35.191,Sensitive file download by user1 after hours,insider_threat,7
+2026-01-01 20:31:06.581082,user3,192.168.45.211,Confidential data accessed at 12:36,insider_threat,7
+2025-12-28 20:03:06.581082,user1,192.168.8.31,Confidential data accessed at 16:51,insider_threat,7
+2025-12-23 11:16:06.583091,user3,192.168.6.31,Privilege abuse detected: charlie,insider_threat,7
+2025-12-06 00:18:06.586686,charlie,192.168.32.51,Unauthorized access to sensitive database,insider_threat,7
+2025-12-11 19:56:06.585691,user2,192.168.3.111,Admin account used from unusual location,insider_threat,7
+2026-01-01 13:19:06.580083,eve,192.168.44.51,Privilege abuse detected: user3,insider_threat,7
+2025-12-14 18:05:06.582092,user3,192.168.22.101,Sensitive file download by bob after hours,insider_threat,7
+2026-01-01 12:29:06.586686,user1,192.168.2.61,User user3 accessed HR records without authorization,insider_threat,7
+2025-12-16 22:32:06.582092,user2,192.168.13.131,Unauthorized access to sensitive database,insider_threat,7
+2025-12-20 02:46:06.586686,admin,192.168.15.231,Privilege escalation detected for system,insider_threat,7
+2025-12-06 18:15:06.584186,user2,192.168.23.181,Admin account used from unusual location,insider_threat,7
+2025-12-10 18:38:06.583091,david,192.168.35.181,Sensitive file download by david after hours,insider_threat,7
+2025-12-23 22:43:06.586686,david,192.168.14.41,User charlie accessed HR records without authorization,insider_threat,7
+2025-12-05 02:33:06.584186,system,192.168.16.121,Sensitive file download by user1 after hours,insider_threat,7
+2026-01-04 17:51:06.586686,bob,192.168.3.121,Sensitive file download by charlie after hours,insider_threat,7
+2025-12-08 09:18:06.581082,bob,192.168.48.151,Admin account used from unusual location,insider_threat,7
+2025-12-14 19:27:06.581082,david,192.168.20.221,Privilege escalation detected for charlie,insider_threat,7
+2025-12-11 13:24:06.582092,admin,192.168.10.61,Suspicious file access by privileged user,insider_threat,7
+2025-12-17 08:09:06.581082,david,192.168.14.71,Unauthorized database query by user3,insider_threat,7
+2025-12-13 23:17:06.585691,user1,192.168.34.51,Unauthorized access to sensitive database,insider_threat,7
+2025-12-03 20:01:06.584186,charlie,192.168.27.51,Suspicious file access by privileged user,insider_threat,7
+2025-12-24 04:19:06.583091,admin,192.168.4.1,Unauthorized access to sensitive database,insider_threat,7
+2026-01-04 07:47:06.586686,alice,192.168.22.41,Confidential data accessed at 07:09,insider_threat,7
+2025-12-18 04:14:06.580083,david,192.168.27.1,Privilege escalation detected for alice,insider_threat,7
+2025-12-25 06:36:06.585691,system,192.168.34.61,Privilege abuse detected: system,insider_threat,7
+2025-12-04 03:14:06.584186,eve,192.168.34.31,Admin account used from unusual location,insider_threat,7
+2025-12-21 01:27:06.580083,charlie,192.168.18.221,Unauthorized database query by eve,insider_threat,7
+2025-12-02 01:25:06.585691,charlie,192.168.29.221,Privilege abuse detected: bob,insider_threat,7
+2026-01-04 05:17:06.584186,david,192.168.33.161,Privilege abuse detected: charlie,insider_threat,7
+2026-01-01 11:11:06.584186,system,192.168.4.121,Sensitive file download by user2 after hours,insider_threat,7
+2025-12-08 01:18:06.583091,system,192.168.22.41,Suspicious file access by privileged user,insider_threat,7
+2025-12-12 00:07:06.582092,bob,192.168.26.191,Unauthorized access to sensitive database,insider_threat,7
+2025-12-31 05:08:06.583091,charlie,192.168.22.101,User system accessed HR records without authorization,insider_threat,7
+2026-01-04 15:31:06.581082,system,192.168.1.101,Sensitive file download by david after hours,insider_threat,7
+2025-12-14 01:09:06.583091,user1,192.168.27.51,Admin accessed confidential files outside business hours,insider_threat,7
+2026-01-04 01:47:06.583091,user2,192.168.35.151,Admin account used from unusual location,insider_threat,7
+2026-01-01 21:40:06.582092,user2,192.168.4.61,Admin account used from unusual location,insider_threat,7
+2025-12-19 23:15:06.584186,bob,192.168.2.151,Privilege escalation detected for system,insider_threat,7
+2025-12-26 09:45:06.585691,david,192.168.40.221,Confidential data accessed at 07:18,insider_threat,7
+2025-12-13 15:18:06.584186,bob,192.168.6.161,Privilege escalation detected for bob,insider_threat,7
+2025-12-19 23:03:06.584186,user1,192.168.3.201,Unauthorized access to sensitive database,insider_threat,7
+2026-01-05 02:44:06.585691,system,192.168.31.151,User user3 accessed HR records without authorization,insider_threat,7
+2025-12-29 11:43:06.586686,user2,192.168.4.71,Admin account used from unusual location,insider_threat,7
+2025-12-30 00:47:06.586686,user1,192.168.15.241,Unauthorized access to sensitive database,insider_threat,7
+2025-12-02 13:08:06.583091,user3,192.168.38.171,User user2 accessed HR records without authorization,insider_threat,7
+2025-12-16 07:55:06.586686,user3,192.168.28.201,Privilege escalation detected for david,insider_threat,7
+2025-12-19 08:52:06.581082,alice,192.168.33.81,Unauthorized access to sensitive database,insider_threat,7
+2025-12-20 10:50:06.580083,david,192.168.14.71,Admin accessed confidential files outside business hours,insider_threat,7
+2025-12-20 03:53:06.585691,user2,192.168.31.21,Sensitive file download by user2 after hours,insider_threat,7
+2025-12-07 00:01:06.586686,bob,192.168.29.71,Privilege abuse detected: bob,insider_threat,7
+2025-12-15 15:58:06.586686,user2,192.168.2.11,Suspicious file access by privileged user,insider_threat,7
+2025-12-16 13:51:06.581082,user1,192.168.10.221,Unauthorized database query by charlie,insider_threat,7
+2025-12-06 08:51:06.584186,alice,192.168.11.161,Confidential data accessed at 16:58,insider_threat,7
+2025-12-05 06:54:06.586686,user3,192.168.15.171,Sensitive file download by eve after hours,insider_threat,7
+2025-12-19 15:55:06.583091,bob,192.168.25.171,User system accessed HR records without authorization,insider_threat,7
+2025-12-25 12:25:06.585691,eve,192.168.41.11,Admin accessed confidential files outside business hours,insider_threat,7
+2026-01-04 05:24:06.584186,system,192.168.14.141,Privilege abuse detected: user1,insider_threat,7
+2026-01-02 05:55:06.584186,bob,192.168.23.101,Sensitive file download by user2 after hours,insider_threat,7
+2025-12-08 13:19:06.583091,admin,192.168.47.181,Unauthorized access to sensitive database,insider_threat,7
+2025-12-10 13:56:06.584186,user2,192.168.21.31,Confidential data accessed at 07:42,insider_threat,7
+2025-12-11 01:30:06.582092,eve,192.168.2.1,Sensitive file download by alice after hours,insider_threat,7
+2025-12-02 01:57:06.581082,user2,192.168.44.161,Confidential data accessed at 17:58,insider_threat,7
+2025-12-08 15:34:06.583091,eve,192.168.45.61,Privilege escalation detected for user3,insider_threat,7
+2025-12-05 08:56:06.585691,user3,192.168.11.31,Unauthorized access to sensitive database,insider_threat,7
+2025-12-26 19:50:06.582092,david,192.168.23.81,Privilege escalation detected for david,insider_threat,7
+2025-12-23 01:53:06.580083,admin,192.168.17.91,Unauthorized access to sensitive database,insider_threat,7
+2025-12-20 16:38:06.583091,system,192.168.37.131,User bob accessed HR records without authorization,insider_threat,7
+2025-12-09 13:43:06.585691,user1,192.168.2.221,Unauthorized access to sensitive database,insider_threat,7
+2025-12-03 05:18:06.586686,user3,192.168.13.221,Privilege escalation detected for user3,insider_threat,7
+2026-01-02 17:33:06.584186,charlie,192.168.9.161,User user1 accessed HR records without authorization,insider_threat,7
+2025-12-09 03:42:06.580083,bob,192.168.16.231,Admin accessed confidential files outside business hours,insider_threat,7
+2025-12-03 18:38:06.585691,eve,192.168.46.71,Confidential data accessed at 04:20,insider_threat,7
+2026-01-04 04:54:06.582092,system,192.168.31.191,Privilege escalation detected for david,insider_threat,7
+2025-12-11 10:55:06.583091,system,192.168.23.91,User eve accessed HR records without authorization,insider_threat,7
+2026-01-01 16:31:06.581082,user3,192.168.49.11,User bob accessed HR records without authorization,insider_threat,7
+2025-12-02 11:28:06.586686,user1,192.168.46.181,Admin accessed confidential files outside business hours,insider_threat,7
+2026-01-02 22:42:06.585691,admin,192.168.44.101,Admin account used from unusual location,insider_threat,7
+2025-12-19 00:10:06.584186,david,192.168.17.31,Sensitive file download by bob after hours,insider_threat,7
+2025-12-13 06:51:06.581082,user2,192.168.24.231,Admin account used from unusual location,insider_threat,7
+2025-12-03 04:33:06.583091,eve,192.168.23.91,Sensitive file download by alice after hours,insider_threat,7
+2025-12-25 12:36:06.584186,system,192.168.7.81,Sensitive file download by bob after hours,insider_threat,7
+2025-12-05 04:32:06.586686,user2,192.168.7.161,Confidential data accessed at 20:38,insider_threat,7
+2025-12-04 11:48:06.584186,alice,192.168.15.91,Privilege escalation detected for user1,insider_threat,7
+2025-12-07 01:45:06.581082,admin,192.168.29.41,Admin accessed confidential files outside business hours,insider_threat,7
+2025-12-19 08:53:06.583091,charlie,192.168.18.221,Privilege escalation detected for system,insider_threat,7
+2025-12-28 08:39:06.580083,bob,192.168.30.61,Suspicious file access by privileged user,insider_threat,7
+2026-01-02 10:55:06.586686,user2,192.168.20.91,Unauthorized access to sensitive database,insider_threat,7
+2025-12-11 22:23:06.584186,admin,192.168.47.101,Privilege abuse detected: bob,insider_threat,7
+2025-12-08 15:55:06.586686,alice,192.168.25.11,Privilege abuse detected: bob,insider_threat,7
+2025-12-29 00:02:06.585691,david,192.168.28.211,Confidential data accessed at 22:37,insider_threat,7
+2025-12-10 08:47:06.580083,eve,192.168.46.211,Admin account used from unusual location,insider_threat,7
+2025-12-08 21:59:06.586686,alice,192.168.18.181,User user2 accessed HR records without authorization,insider_threat,7
+2025-12-13 11:21:06.586686,bob,192.168.37.171,Admin accessed confidential files outside business hours,insider_threat,7
+2025-12-20 16:25:06.581082,user1,192.168.26.91,Admin account used from unusual location,insider_threat,7
+2025-12-10 23:39:06.584186,david,192.168.44.81,Confidential data accessed at 01:13,insider_threat,7
+2025-12-18 15:04:06.580083,david,192.168.45.91,Sensitive file download by system after hours,insider_threat,7
+2026-01-03 04:56:06.586686,bob,192.168.10.11,Privilege abuse detected: user1,insider_threat,7
+2025-12-05 05:19:06.583091,admin,192.168.4.101,Privilege abuse detected: user3,insider_threat,7
+2025-12-21 03:00:06.584186,alice,192.168.23.231,Unauthorized access to sensitive database,insider_threat,7
+2025-12-29 13:42:06.583091,david,192.168.30.161,Suspicious file access by privileged user,insider_threat,7
+2026-01-01 19:35:06.586686,david,192.168.42.211,Confidential data accessed at 14:46,insider_threat,7
+2025-12-28 14:49:06.585691,user2,192.168.5.91,Privilege escalation detected for user2,insider_threat,7
+2025-12-31 20:00:06.582092,user1,192.168.1.21,Suspicious file access by privileged user,insider_threat,7
+2025-12-10 12:12:06.581082,user1,192.168.27.31,Privilege escalation detected for admin,insider_threat,7
+2025-12-17 05:53:06.582092,bob,192.168.46.171,Unauthorized database query by user2,insider_threat,7
+2025-12-18 13:58:06.585691,user2,192.168.22.81,Admin account used from unusual location,insider_threat,7
+2025-12-28 12:16:06.580083,system,192.168.38.201,Suspicious file access by privileged user,insider_threat,7
+2025-12-04 19:01:06.580083,user2,192.168.23.181,Privilege abuse detected: user1,insider_threat,7
+2026-01-05 01:34:06.585691,bob,192.168.17.21,Admin account used from unusual location,insider_threat,7
+2025-12-11 21:53:06.583091,admin,192.168.21.101,Suspicious file access by privileged user,insider_threat,7
+2025-12-14 15:42:06.586686,system,192.168.32.91,User david accessed HR records without authorization,insider_threat,7
+2025-12-17 08:48:06.585691,charlie,192.168.45.131,Privilege abuse detected: charlie,insider_threat,7
+2025-12-27 23:46:06.582092,user2,192.168.29.221,Privilege escalation detected for david,insider_threat,7
+2025-12-25 16:15:06.580083,user1,192.168.2.21,Admin accessed confidential files outside business hours,insider_threat,7
+2025-12-25 04:53:06.583091,charlie,192.168.35.191,Privilege escalation detected for david,insider_threat,7
+2025-12-29 12:28:06.585691,eve,192.168.26.241,Unauthorized access to sensitive database,insider_threat,7
+2025-12-27 05:33:06.581082,user1,192.168.12.221,Admin account used from unusual location,insider_threat,7
+2025-12-18 09:00:06.582092,user3,192.168.27.161,Suspicious file access by privileged user,insider_threat,7
+2025-12-18 03:27:06.584186,eve,192.168.21.131,Confidential data accessed at 18:08,insider_threat,7
+2025-12-11 22:11:06.584186,eve,192.168.3.11,Sensitive file download by user3 after hours,insider_threat,7
+2025-12-21 13:02:06.583091,eve,192.168.35.131,Admin accessed confidential files outside business hours,insider_threat,7
+2025-12-13 11:43:06.586686,bob,192.168.30.201,Admin accessed confidential files outside business hours,insider_threat,7
+2025-12-04 13:23:06.580083,user3,192.168.10.101,Sensitive file download by eve after hours,insider_threat,7
+2025-12-23 10:06:06.584186,user3,192.168.20.121,Unauthorized database query by alice,insider_threat,7
+2025-12-17 21:59:06.580083,admin,192.168.17.111,Privilege abuse detected: alice,insider_threat,7
+2025-12-31 06:14:06.585691,user3,192.168.23.21,Admin account used from unusual location,insider_threat,7
+2025-12-15 13:15:06.582092,charlie,192.168.24.241,Confidential data accessed at 15:10,insider_threat,7
+2025-12-08 12:07:06.582092,alice,192.168.46.91,User alice accessed HR records without authorization,insider_threat,7
+2025-12-12 08:19:06.581082,bob,192.168.41.241,Privilege escalation detected for charlie,insider_threat,7
+2025-12-11 22:23:06.586686,system,192.168.44.211,Privilege abuse detected: user1,insider_threat,7
+2025-12-25 14:36:06.584186,user2,192.168.20.41,Confidential data accessed at 01:39,insider_threat,7
+2026-01-01 21:10:06.581082,charlie,192.168.31.151,Sensitive file download by alice after hours,insider_threat,7
+2026-01-03 19:56:06.586686,admin,192.168.39.51,Privilege escalation detected for admin,insider_threat,7
+2025-12-14 10:19:06.584186,system,192.168.30.171,Sensitive file download by user2 after hours,insider_threat,7
+2025-12-12 13:44:06.585691,user3,192.168.34.111,Suspicious file access by privileged user,insider_threat,7
+2025-12-19 20:27:06.582092,eve,192.168.49.81,Privilege escalation detected for system,insider_threat,7
+2026-01-04 05:26:06.585691,admin,192.168.29.141,Unauthorized database query by system,insider_threat,7
+2025-12-17 21:20:06.585691,charlie,192.168.3.231,Sensitive file download by alice after hours,insider_threat,7
+2025-12-28 11:20:06.582092,eve,192.168.12.171,Unauthorized access to sensitive database,insider_threat,7
+2025-12-04 08:22:06.584186,alice,192.168.17.141,Suspicious file access by privileged user,insider_threat,7
+2025-12-03 18:52:06.586686,charlie,192.168.9.201,Privilege escalation detected for david,insider_threat,7
+2025-12-26 03:36:06.580083,alice,192.168.12.21,Suspicious file access by privileged user,insider_threat,7
+2025-12-14 13:09:06.581082,eve,192.168.32.151,Sensitive file download by alice after hours,insider_threat,7
+2026-01-04 04:48:06.584186,user2,192.168.45.141,Unauthorized database query by eve,insider_threat,7
+2025-12-16 04:59:06.586686,david,192.168.32.231,Admin account used from unusual location,insider_threat,7
+2025-12-20 04:54:06.581082,bob,192.168.34.241,Sensitive file download by user3 after hours,insider_threat,7
+2025-12-04 03:33:06.584186,alice,192.168.32.221,Privilege abuse detected: admin,insider_threat,7
+2025-12-14 00:24:06.585691,system,192.168.25.241,Unauthorized database query by bob,insider_threat,7
+2025-12-03 23:04:06.581082,system,192.168.16.191,Admin accessed confidential files outside business hours,insider_threat,7
+2025-12-16 21:22:06.580083,charlie,192.168.48.51,Sensitive file download by user1 after hours,insider_threat,7
+2025-12-08 15:57:06.585691,user2,192.168.43.141,Privilege abuse detected: bob,insider_threat,7
+2025-12-13 20:59:06.583091,user1,192.168.14.71,Suspicious file access by privileged user,insider_threat,7
+2025-12-09 19:58:06.583091,david,192.168.21.1,Sensitive file download by alice after hours,insider_threat,7
+2025-12-19 21:51:06.585691,user2,192.168.1.61,Privilege abuse detected: user1,insider_threat,7
+2025-12-19 17:36:06.583091,charlie,192.168.45.11,Privilege escalation detected for alice,insider_threat,7
+2025-12-05 05:30:06.582092,system,192.168.36.241,Privilege abuse detected: charlie,insider_threat,7
+2025-12-07 17:14:06.582092,bob,192.168.31.11,Sensitive file download by user2 after hours,insider_threat,7
+2025-12-08 16:51:06.585691,alice,192.168.36.241,Unauthorized access to sensitive database,insider_threat,7
+2025-12-07 07:48:06.581082,charlie,192.168.35.91,Unauthorized database query by admin,insider_threat,7
+2026-01-05 10:24:06.583091,user1,192.168.47.21,Sensitive file download by david after hours,insider_threat,7
+2026-01-01 16:17:06.584186,bob,192.168.41.61,Privilege abuse detected: system,insider_threat,7
+2025-12-22 23:02:06.583091,alice,192.168.3.131,Suspicious file access by privileged user,insider_threat,7
+2025-12-27 23:57:06.584186,alice,192.168.20.111,Unauthorized database query by user2,insider_threat,7
+2025-12-13 00:29:06.586686,charlie,192.168.35.61,Sensitive file download by charlie after hours,insider_threat,7
+2025-12-31 23:15:06.581082,system,192.168.7.211,Admin accessed confidential files outside business hours,insider_threat,7
+2025-12-07 14:02:06.581082,user2,192.168.30.21,Sensitive file download by alice after hours,insider_threat,7
+2025-12-15 04:03:06.584186,system,192.168.43.101,Unauthorized access to sensitive database,insider_threat,7
+2025-12-28 04:06:06.579084,user3,192.168.17.41,Admin accessed confidential files outside business hours,insider_threat,7
+2025-12-23 03:53:06.583091,eve,192.168.4.181,Admin accessed confidential files outside business hours,insider_threat,7
+2025-12-20 00:30:06.580083,david,192.168.42.41,Privilege abuse detected: david,insider_threat,7
+2025-12-18 23:39:06.586686,admin,192.168.29.151,Privilege escalation detected for user2,insider_threat,7
+2025-12-06 15:51:06.579084,charlie,192.168.7.31,Admin accessed confidential files outside business hours,insider_threat,7
+2025-12-29 16:16:06.583091,david,192.168.27.221,Privilege escalation detected for user3,insider_threat,7
+2025-12-11 18:04:06.586686,david,192.168.12.141,User user2 accessed HR records without authorization,insider_threat,7
+2025-12-05 05:48:06.583091,alice,192.168.39.41,User charlie accessed HR records without authorization,insider_threat,7
+2025-12-08 03:12:06.582092,alice,192.168.48.241,Confidential data accessed at 06:42,insider_threat,7
+2025-12-19 23:22:06.584186,user1,192.168.8.181,Admin accessed confidential files outside business hours,insider_threat,7
+2025-12-06 14:43:06.580083,user3,192.168.47.151,Unauthorized database query by user3,insider_threat,7
+2025-12-16 02:13:06.581082,bob,192.168.21.231,Sensitive file download by user1 after hours,insider_threat,7
+2025-12-26 21:24:06.585691,user2,192.168.41.101,Admin account used from unusual location,insider_threat,7
+2026-01-05 07:44:06.585691,user2,192.168.45.141,Privilege escalation detected for system,insider_threat,7
+2025-12-02 07:11:06.581082,bob,192.168.9.81,Admin account used from unusual location,insider_threat,7
+2025-12-05 11:08:06.586686,eve,192.168.1.81,Privilege abuse detected: bob,insider_threat,7
+2025-12-23 16:19:06.583091,system,192.168.30.201,Privilege escalation detected for user2,insider_threat,7
+2025-12-25 20:29:06.584186,admin,192.168.29.181,Suspicious file access by privileged user,insider_threat,7
+2025-12-07 18:04:06.584186,bob,192.168.28.51,Unauthorized database query by alice,insider_threat,7
+2026-01-01 03:13:06.580083,admin,192.168.7.141,Unauthorized database query by charlie,insider_threat,7
+2025-12-28 21:16:06.585691,charlie,192.168.9.221,Suspicious file access by privileged user,insider_threat,7
+2026-01-01 01:09:06.583091,user1,192.168.11.161,User system accessed HR records without authorization,insider_threat,7
+2025-12-05 12:35:06.584186,eve,192.168.40.191,Sensitive file download by system after hours,insider_threat,7
+2025-12-08 17:00:06.586686,bob,192.168.31.31,Privilege escalation detected for user2,insider_threat,7
+2025-12-08 20:40:06.584186,user3,192.168.24.201,Sensitive file download by bob after hours,insider_threat,7
+2025-12-03 18:09:06.586686,user2,192.168.33.121,Privilege escalation detected for charlie,insider_threat,7
+2025-12-21 10:09:06.580083,user2,192.168.49.111,Privilege abuse detected: admin,insider_threat,7
+2025-12-11 02:11:06.583091,bob,192.168.16.211,Privilege escalation detected for charlie,insider_threat,7
+2025-12-18 14:00:06.584186,david,192.168.33.11,Confidential data accessed at 10:50,insider_threat,7
+2026-01-01 06:34:06.583091,user2,192.168.12.21,User david accessed HR records without authorization,insider_threat,7
+2025-12-31 16:47:06.581082,bob,192.168.7.131,Sensitive file download by david after hours,insider_threat,7
+2025-12-20 10:51:06.583091,david,192.168.48.71,User user2 accessed HR records without authorization,insider_threat,7
+2025-12-21 12:30:06.585691,admin,192.168.21.171,Admin accessed confidential files outside business hours,insider_threat,7
+2025-12-16 00:58:06.581082,eve,192.168.7.171,Privilege abuse detected: admin,insider_threat,7
+2026-01-04 00:03:06.582092,eve,192.168.24.81,Suspicious file access by privileged user,insider_threat,7
+2025-12-02 15:35:06.582092,alice,192.168.6.21,Unauthorized access to sensitive database,insider_threat,7
+2025-12-09 12:29:06.582092,eve,192.168.34.141,Confidential data accessed at 05:27,insider_threat,7
+2025-12-25 21:49:06.580083,eve,192.168.5.231,Admin accessed confidential files outside business hours,insider_threat,7
+2025-12-30 14:04:06.585691,charlie,192.168.34.31,Admin accessed confidential files outside business hours,insider_threat,7
+2025-12-29 21:45:06.582092,eve,192.168.49.141,Privilege abuse detected: user2,insider_threat,7
+2025-12-06 21:32:06.586686,eve,192.168.32.141,Admin accessed confidential files outside business hours,insider_threat,7
+2025-12-08 06:36:06.586686,alice,192.168.41.11,Sensitive file download by user3 after hours,insider_threat,7
+2025-12-08 13:58:06.585691,user3,192.168.43.91,Sensitive file download by user1 after hours,insider_threat,7
+2025-12-02 10:16:06.580083,user2,192.168.48.141,Unauthorized access to sensitive database,insider_threat,7
+2025-12-15 14:53:06.586686,charlie,192.168.3.21,Confidential data accessed at 12:18,insider_threat,7
+2025-12-13 05:43:06.584186,eve,192.168.32.171,Privilege abuse detected: user3,insider_threat,7
+2025-12-22 02:56:06.583091,bob,192.168.14.241,Privilege escalation detected for system,insider_threat,7
+2025-12-24 14:01:06.584186,bob,192.168.39.1,Confidential data accessed at 10:57,insider_threat,7
+2025-12-24 02:15:06.585691,charlie,192.168.13.231,Unauthorized access to sensitive database,insider_threat,7
+2025-12-15 04:24:06.581082,system,192.168.36.111,Confidential data accessed at 07:34,insider_threat,7
+2025-12-28 07:44:06.583091,admin,192.168.13.21,Privilege abuse detected: alice,insider_threat,7
+2025-12-15 07:58:06.582092,user1,192.168.38.191,Unauthorized database query by user2,insider_threat,7
+2025-12-26 23:07:06.586686,eve,192.168.17.111,Sensitive file download by bob after hours,insider_threat,7
+2025-12-07 23:44:06.581082,admin,192.168.44.191,Sensitive file download by david after hours,insider_threat,7
+2025-12-28 21:54:06.580083,charlie,192.168.39.231,Unauthorized access to sensitive database,insider_threat,7
+2025-12-14 22:42:06.580083,user2,192.168.22.191,Confidential data accessed at 23:06,insider_threat,7
+2025-12-29 04:01:06.582092,user3,192.168.16.231,Privilege abuse detected: david,insider_threat,7
+2025-12-19 03:33:06.581082,alice,192.168.3.51,Confidential data accessed at 15:36,insider_threat,7
+2025-12-10 08:02:06.580083,admin,192.168.22.141,Unauthorized database query by user1,insider_threat,7
+2025-12-08 00:27:06.582092,alice,192.168.39.141,Privilege escalation detected for user1,insider_threat,7
+2025-12-09 13:10:06.585691,user1,192.168.10.181,Admin account used from unusual location,insider_threat,7
+2025-12-22 15:58:06.580083,user1,192.168.44.121,Unauthorized access to sensitive database,insider_threat,7
+2025-12-14 23:03:06.585691,alice,192.168.20.221,Unauthorized database query by bob,insider_threat,7
+2025-12-03 11:42:06.584186,bob,192.168.49.81,Suspicious file access by privileged user,insider_threat,7
+2025-12-03 15:36:06.585691,user3,192.168.46.191,Sensitive file download by user1 after hours,insider_threat,7
+2025-12-25 10:53:06.583091,admin,192.168.3.71,Privilege escalation detected for user2,insider_threat,7
+2025-12-12 13:46:06.585691,user2,192.168.35.81,Privilege escalation detected for eve,insider_threat,7
+2025-12-06 23:08:06.583091,eve,192.168.8.31,Sensitive file download by user2 after hours,insider_threat,7
+2025-12-15 21:44:06.584186,system,192.168.43.201,Sensitive file download by david after hours,insider_threat,7
+2026-01-01 13:16:06.581082,admin,192.168.13.61,Unauthorized access to sensitive database,insider_threat,7
+2026-01-04 17:55:06.581082,user3,192.168.8.71,User user2 accessed HR records without authorization,insider_threat,7
+2025-12-25 22:38:06.584186,admin,192.168.5.11,Sensitive file download by user1 after hours,insider_threat,7
+2026-01-03 11:09:06.583091,bob,192.168.4.231,Admin account used from unusual location,insider_threat,7
+2025-12-17 19:53:06.580083,eve,192.168.1.211,Privilege abuse detected: bob,insider_threat,7
+2025-12-17 02:21:06.582092,alice,192.168.19.151,Unauthorized database query by user2,insider_threat,7
+2025-12-28 04:54:06.581082,admin,192.168.35.71,Suspicious file access by privileged user,insider_threat,7
+2026-01-02 11:44:06.582092,eve,192.168.4.151,Admin accessed confidential files outside business hours,insider_threat,7
+2025-12-29 04:11:06.583091,system,192.168.10.241,Privilege escalation detected for user3,insider_threat,7
+2025-12-21 11:43:06.584186,bob,192.168.36.211,Unauthorized access to sensitive database,insider_threat,7
+2025-12-03 07:19:06.585691,user2,192.168.42.1,Admin account used from unusual location,insider_threat,7
+2025-12-13 09:49:06.582092,system,192.168.32.91,Admin accessed confidential files outside business hours,insider_threat,7
+2025-12-07 08:39:06.584186,bob,192.168.38.1,Admin accessed confidential files outside business hours,insider_threat,7
+2025-12-03 17:29:06.581082,eve,192.168.33.11,Confidential data accessed at 08:52,insider_threat,7
+2025-12-09 12:03:06.584186,user2,192.168.11.81,Unauthorized access to sensitive database,insider_threat,7
+2025-12-24 17:34:06.586686,bob,192.168.35.111,Unauthorized database query by user1,insider_threat,7
+2026-01-04 11:07:06.581082,charlie,192.168.21.151,Sensitive file download by eve after hours,insider_threat,7
+2025-12-07 06:59:06.585691,david,192.168.13.141,Suspicious file access by privileged user,insider_threat,7
+2026-01-02 15:21:06.585691,admin,192.168.17.191,Sensitive file download by alice after hours,insider_threat,7
+2025-12-04 15:38:06.586686,user3,192.168.6.111,Sensitive file download by user3 after hours,insider_threat,7
+2026-01-01 19:13:06.583091,david,192.168.47.141,Privilege escalation detected for david,insider_threat,7
+2026-01-03 12:28:06.584186,bob,192.168.31.81,Privilege abuse detected: admin,insider_threat,7
+2025-12-30 12:40:06.585691,david,192.168.18.171,Admin accessed confidential files outside business hours,insider_threat,7
+2025-12-03 04:05:06.583091,david,192.168.38.131,Sensitive file download by bob after hours,insider_threat,7
+2025-12-28 19:06:06.582092,eve,192.168.5.181,Suspicious file access by privileged user,insider_threat,7
+2025-12-10 12:36:06.583091,bob,192.168.39.31,User charlie accessed HR records without authorization,insider_threat,7
+2026-01-04 18:45:06.584186,charlie,192.168.21.151,Privilege abuse detected: user1,insider_threat,7
+2025-12-17 15:54:06.580083,system,192.168.33.81,User user3 accessed HR records without authorization,insider_threat,7
+2025-12-16 03:59:06.584186,admin,192.168.6.221,Unauthorized access to sensitive database,insider_threat,7
+2025-12-05 14:12:06.583091,admin,192.168.43.61,Suspicious file access by privileged user,insider_threat,7
+2025-12-12 09:41:06.580083,charlie,192.168.40.121,Admin accessed confidential files outside business hours,insider_threat,7
+2025-12-02 05:46:06.583091,eve,192.168.27.151,Privilege escalation detected for user1,insider_threat,7
+2025-12-12 08:17:06.584186,eve,192.168.20.191,Sensitive file download by user1 after hours,insider_threat,7
+2025-12-05 15:42:06.580083,user1,192.168.14.231,User alice accessed HR records without authorization,insider_threat,7
+2025-12-22 02:06:06.583091,alice,192.168.20.131,Admin accessed confidential files outside business hours,insider_threat,7
+2025-12-28 10:54:06.586686,alice,192.168.45.151,Confidential data accessed at 08:23,insider_threat,7
+2025-12-24 08:36:06.584186,david,192.168.8.161,Unauthorized access to sensitive database,insider_threat,7
+2025-12-21 09:29:06.583091,eve,192.168.17.101,Privilege abuse detected: system,insider_threat,7
+2025-12-06 03:11:06.584186,user1,192.168.25.171,Privilege escalation detected for admin,insider_threat,7
+2025-12-28 18:03:06.584186,user1,192.168.30.1,User charlie accessed HR records without authorization,insider_threat,7
+2025-12-22 20:42:06.580083,alice,192.168.6.41,Privilege abuse detected: user1,insider_threat,7
+2025-12-17 19:55:06.585691,eve,192.168.1.171,Suspicious file access by privileged user,insider_threat,7
+2025-12-21 17:04:06.581082,david,192.168.8.111,Unauthorized database query by user2,insider_threat,7
+2025-12-12 20:34:06.582092,eve,192.168.4.111,User admin accessed HR records without authorization,insider_threat,7
+2025-12-22 00:56:06.586686,user1,192.168.25.31,Privilege escalation detected for admin,insider_threat,7
+2025-12-10 15:08:06.582092,bob,192.168.7.161,User admin accessed HR records without authorization,insider_threat,7
+2025-12-31 07:17:06.586686,admin,192.168.27.241,Admin accessed confidential files outside business hours,insider_threat,7
+2025-12-19 23:28:06.585691,eve,192.168.34.151,Unauthorized access to sensitive database,insider_threat,7
+2025-12-29 19:49:06.585691,user1,192.168.15.131,Privilege abuse detected: charlie,insider_threat,7
+2025-12-04 03:40:06.582092,alice,192.168.25.91,User david accessed HR records without authorization,insider_threat,7
+2025-12-20 21:44:06.585691,charlie,192.168.6.21,Privilege escalation detected for bob,insider_threat,7
+2026-01-03 22:20:06.580083,user2,192.168.3.111,Privilege escalation detected for user1,insider_threat,7
+2025-12-02 15:59:06.584186,eve,192.168.8.211,User user3 accessed HR records without authorization,insider_threat,7
+2025-12-03 18:26:06.586686,user3,192.168.40.211,Admin account used from unusual location,insider_threat,7
+2025-12-23 18:32:06.583091,user2,192.168.12.161,Sensitive file download by alice after hours,insider_threat,7
+2026-01-02 14:53:06.580083,eve,192.168.22.11,Privilege escalation detected for user1,insider_threat,7
+2026-01-01 22:29:06.583091,admin,192.168.20.21,Suspicious file access by privileged user,insider_threat,7
+2025-12-09 17:26:06.584186,eve,192.168.27.221,Sensitive file download by system after hours,insider_threat,7
+2025-12-31 05:05:06.585691,charlie,192.168.1.131,Sensitive file download by admin after hours,insider_threat,7
+2025-12-06 20:53:06.583091,alice,192.168.5.111,Sensitive file download by charlie after hours,insider_threat,7
+2025-12-23 05:26:06.579084,alice,192.168.38.201,Confidential data accessed at 19:56,insider_threat,7
+2025-12-04 13:54:06.585691,user3,192.168.46.21,Confidential data accessed at 06:02,insider_threat,7
+2025-12-31 14:45:06.584186,bob,192.168.33.81,User david accessed HR records without authorization,insider_threat,7
+2025-12-18 12:47:06.586686,user3,192.168.17.141,Admin accessed confidential files outside business hours,insider_threat,7
+2025-12-23 15:15:06.583091,user1,192.168.43.181,Unauthorized database query by alice,insider_threat,7
+2025-12-21 18:53:06.584186,user3,192.168.44.61,User alice accessed HR records without authorization,insider_threat,7
+2025-12-23 18:34:06.582092,system,192.168.44.81,Suspicious file access by privileged user,insider_threat,7
+2025-12-25 17:04:06.582092,charlie,192.168.5.131,User user1 accessed HR records without authorization,insider_threat,7
+2025-12-31 07:30:06.581082,user2,192.168.49.81,Confidential data accessed at 12:06,insider_threat,7
+2025-12-24 16:01:06.584186,alice,192.168.8.91,Admin account used from unusual location,insider_threat,7
+2025-12-29 21:57:06.585691,admin,192.168.13.221,Admin accessed confidential files outside business hours,insider_threat,7
+2025-12-18 15:30:06.580083,david,192.168.19.61,Unauthorized access to sensitive database,insider_threat,7
+2025-12-06 00:37:06.581082,user2,192.168.38.11,Unauthorized access to sensitive database,insider_threat,7
+2025-12-13 15:27:06.583091,eve,192.168.43.211,Privilege escalation detected for charlie,insider_threat,7
+2025-12-22 00:11:06.585691,bob,192.168.34.211,Sensitive file download by eve after hours,insider_threat,7
+2025-12-06 13:12:06.580083,user2,192.168.49.31,Admin accessed confidential files outside business hours,insider_threat,7
+2025-12-07 09:37:06.581082,admin,192.168.49.181,Admin accessed confidential files outside business hours,insider_threat,7
+2025-12-09 02:47:06.584186,alice,192.168.47.21,Privilege abuse detected: user1,insider_threat,7
+2025-12-24 02:53:06.581082,admin,192.168.1.211,Admin accessed confidential files outside business hours,insider_threat,7
+2025-12-20 13:04:06.581082,david,192.168.13.101,Confidential data accessed at 01:57,insider_threat,7
+2025-12-23 00:50:06.583091,alice,192.168.15.141,Unauthorized access to sensitive database,insider_threat,7
+2025-12-27 03:44:06.581082,david,192.168.42.151,Unauthorized access to sensitive database,insider_threat,7
+2025-12-17 19:31:06.585691,admin,192.168.45.21,Privilege abuse detected: user3,insider_threat,7
+2025-12-04 19:38:06.585691,system,192.168.33.201,Admin account used from unusual location,insider_threat,7
+2025-12-01 23:37:06.581082,bob,192.168.49.191,Unauthorized database query by alice,insider_threat,7
+2025-12-14 08:11:06.585691,david,192.168.32.91,Suspicious file access by privileged user,insider_threat,7
+2026-01-04 22:22:06.584186,david,192.168.42.71,Privilege abuse detected: system,insider_threat,7
+2025-12-28 12:55:06.584186,user3,192.168.7.71,Suspicious file access by privileged user,insider_threat,7
+2025-12-17 23:44:06.584186,user2,192.168.33.51,User system accessed HR records without authorization,insider_threat,7
+2025-12-19 07:46:06.583091,admin,192.168.4.221,User charlie accessed HR records without authorization,insider_threat,7
+2025-12-15 23:07:06.585691,charlie,192.168.41.1,Privilege escalation detected for user3,insider_threat,7
+2025-12-22 17:57:06.582092,user3,192.168.29.241,Privilege abuse detected: eve,insider_threat,7
+2025-12-25 09:32:06.586686,alice,192.168.27.21,Unauthorized database query by user2,insider_threat,7
+2025-12-22 08:16:06.582092,alice,192.168.24.221,Unauthorized database query by david,insider_threat,7
+2025-12-22 13:47:06.580083,eve,192.168.18.121,User david accessed HR records without authorization,insider_threat,7
+2025-12-13 13:07:06.584186,system,192.168.42.51,Admin account used from unusual location,insider_threat,7
+2025-12-10 08:18:06.585691,eve,192.168.16.221,Sensitive file download by charlie after hours,insider_threat,7
+2025-12-10 09:22:06.581082,charlie,192.168.7.111,Confidential data accessed at 16:44,insider_threat,7
+2025-12-16 22:43:06.583091,bob,192.168.30.11,Sensitive file download by user1 after hours,insider_threat,7
+2025-12-27 18:50:06.583091,user1,192.168.34.121,User admin accessed HR records without authorization,insider_threat,7
+2025-12-19 03:21:06.584186,user3,192.168.17.181,Unauthorized database query by system,insider_threat,7
+2025-12-17 14:51:06.580083,charlie,192.168.9.181,User admin accessed HR records without authorization,insider_threat,7
+2025-12-03 20:30:06.584186,bob,192.168.8.201,Unauthorized access to sensitive database,insider_threat,7
+2025-12-03 09:20:06.583091,david,192.168.43.21,Confidential data accessed at 00:16,insider_threat,7
+2025-12-21 02:44:06.582092,admin,192.168.5.141,Privilege abuse detected: system,insider_threat,7
+2026-01-02 10:10:06.586686,system,192.168.5.51,Unauthorized access to sensitive database,insider_threat,7
+2026-01-03 22:39:06.583091,user3,192.168.36.151,Admin account used from unusual location,insider_threat,7
+2025-12-24 20:00:06.584186,admin,192.168.42.151,Unauthorized access to sensitive database,insider_threat,7
+2025-12-13 12:08:06.582092,charlie,192.168.49.181,Suspicious file access by privileged user,insider_threat,7
+2025-12-12 05:45:06.585691,david,192.168.40.151,Unauthorized access to sensitive database,insider_threat,7
+2025-12-22 18:34:06.584186,eve,192.168.20.231,Privilege escalation detected for system,insider_threat,7
+2025-12-12 06:39:06.581082,charlie,192.168.23.61,Sensitive file download by admin after hours,insider_threat,7
+2025-12-08 04:57:06.583091,system,192.168.42.231,User david accessed HR records without authorization,insider_threat,7
+2025-12-13 02:23:06.582092,david,192.168.28.61,Confidential data accessed at 17:42,insider_threat,7
+2025-12-23 06:25:06.584186,user3,192.168.44.201,Admin account used from unusual location,insider_threat,7
+2025-12-15 14:44:06.583091,user2,192.168.3.11,Privilege abuse detected: admin,insider_threat,7
+2025-12-16 05:21:06.581082,system,192.168.26.121,Admin account used from unusual location,insider_threat,7
+2025-12-04 09:09:06.585691,charlie,192.168.35.161,User alice accessed HR records without authorization,insider_threat,7
+2025-12-22 12:42:06.583091,admin,192.168.34.71,User alice accessed HR records without authorization,insider_threat,7
+2025-12-05 20:47:06.584186,system,192.168.12.241,Sensitive file download by david after hours,insider_threat,7
+2026-01-04 04:52:06.584186,system,192.168.48.141,Privilege abuse detected: user3,insider_threat,7
+2025-12-11 12:22:06.585691,user1,192.168.33.101,Privilege abuse detected: charlie,insider_threat,7
+2025-12-19 02:47:06.583091,system,192.168.29.181,Unauthorized database query by system,insider_threat,7
+2026-01-04 08:26:06.584186,user1,192.168.34.101,Suspicious file access by privileged user,insider_threat,7
+2025-12-15 23:16:06.579084,alice,192.168.49.161,User charlie accessed HR records without authorization,insider_threat,7
+2025-12-05 17:14:06.584186,user2,192.168.42.121,Confidential data accessed at 22:26,insider_threat,7
+2025-12-13 15:23:06.581082,user3,192.168.31.171,Privilege escalation detected for david,insider_threat,7
+2025-12-15 18:09:06.584186,eve,192.168.17.71,Admin accessed confidential files outside business hours,insider_threat,7
+2026-01-04 11:26:06.581082,alice,192.168.20.161,Suspicious file access by privileged user,insider_threat,7
+2026-01-04 05:30:06.583091,david,192.168.15.231,Privilege escalation detected for user1,insider_threat,7
+2025-12-15 12:10:06.584186,charlie,192.168.4.191,Unauthorized database query by eve,insider_threat,7
+2025-12-19 18:41:06.582092,david,192.168.1.211,Privilege escalation detected for user3,insider_threat,7
+2026-01-01 00:30:06.581082,david,192.168.20.81,Privilege escalation detected for user1,insider_threat,7
+2025-12-04 13:18:06.583091,eve,192.168.21.21,Privilege escalation detected for bob,insider_threat,7
+2025-12-27 23:56:06.581082,system,192.168.40.31,Sensitive file download by bob after hours,insider_threat,7
+2025-12-18 14:51:06.581082,system,192.168.38.221,Unauthorized access to sensitive database,insider_threat,7
+2025-12-10 09:18:06.579084,alice,192.168.2.61,Unauthorized access to sensitive database,insider_threat,7
+2025-12-08 23:42:06.580083,user2,192.168.15.21,Privilege abuse detected: david,insider_threat,7
+2026-01-02 06:13:06.580083,charlie,192.168.26.1,Suspicious file access by privileged user,insider_threat,7
+2025-12-17 18:34:06.584186,david,192.168.13.121,Confidential data accessed at 14:54,insider_threat,7
+2025-12-15 05:22:06.585691,charlie,192.168.3.201,Confidential data accessed at 15:34,insider_threat,7
+2026-01-02 04:32:06.582092,admin,192.168.9.81,Confidential data accessed at 12:43,insider_threat,7
+2025-12-10 06:33:06.585691,admin,192.168.43.151,Unauthorized database query by user1,insider_threat,7
+2025-12-04 09:27:06.581082,system,192.168.26.131,Admin accessed confidential files outside business hours,insider_threat,7
+2026-01-01 03:47:06.580083,eve,192.168.45.121,Unauthorized access to sensitive database,insider_threat,7
+2025-12-23 19:18:06.585691,bob,192.168.24.1,Admin account used from unusual location,insider_threat,7
+2026-01-04 05:06:06.585691,user2,192.168.29.121,Privilege escalation detected for eve,insider_threat,7
+2025-12-20 23:12:06.582092,eve,192.168.38.31,Privilege abuse detected: eve,insider_threat,7
+2025-12-13 17:53:06.581082,system,192.168.34.61,Admin accessed confidential files outside business hours,insider_threat,7
+2025-12-22 22:30:06.584186,user2,192.168.6.1,Admin accessed confidential files outside business hours,insider_threat,7
+2025-12-22 15:56:06.583091,charlie,192.168.8.151,Sensitive file download by system after hours,insider_threat,7
+2026-01-01 22:42:06.583091,david,192.168.26.1,Confidential data accessed at 07:36,insider_threat,7
+2025-12-15 21:16:06.584186,alice,192.168.44.1,Admin account used from unusual location,insider_threat,7
+2025-12-07 22:45:06.583091,user3,192.168.22.161,Suspicious file access by privileged user,insider_threat,7
+2026-01-01 19:14:06.583091,david,192.168.36.161,Sensitive file download by alice after hours,insider_threat,7
+2026-01-05 05:50:06.584186,charlie,192.168.9.111,Suspicious file access by privileged user,insider_threat,7
+2026-01-05 02:32:06.583091,david,192.168.45.31,Privilege abuse detected: eve,insider_threat,7
+2025-12-05 23:30:06.584186,system,192.168.26.181,Sensitive file download by charlie after hours,insider_threat,7
+2025-12-19 18:36:06.580083,charlie,192.168.44.21,Privilege abuse detected: user2,insider_threat,7
+2025-12-07 02:52:06.583091,user2,192.168.36.101,Suspicious file access by privileged user,insider_threat,7
+2025-12-25 02:52:06.581082,david,192.168.19.21,User david accessed HR records without authorization,insider_threat,7
+2025-12-11 15:19:06.582092,user2,192.168.49.81,User user1 accessed HR records without authorization,insider_threat,7
+2025-12-25 23:54:06.586686,david,192.168.24.181,Unauthorized access to sensitive database,insider_threat,7
+2025-12-13 15:16:06.586686,admin,192.168.23.181,User user3 accessed HR records without authorization,insider_threat,7
+2025-12-07 08:31:06.581082,david,192.168.4.31,Admin accessed confidential files outside business hours,insider_threat,7
+2025-12-28 01:45:06.582092,admin,192.168.35.101,User admin accessed HR records without authorization,insider_threat,7
+2025-12-26 02:59:06.583091,bob,192.168.38.1,Privilege abuse detected: user2,insider_threat,7
+2025-12-20 21:12:06.585691,system,192.168.10.131,Privilege escalation detected for alice,insider_threat,7
+2025-12-08 06:00:06.586686,eve,192.168.21.161,Unauthorized database query by user3,insider_threat,7
+2025-12-30 14:59:06.581082,user1,192.168.16.101,Confidential data accessed at 10:32,insider_threat,7
+2026-01-03 06:29:06.580083,user1,192.168.5.131,Unauthorized access to sensitive database,insider_threat,7
+2025-12-23 09:18:06.580083,user2,192.168.43.121,User bob accessed HR records without authorization,insider_threat,7
+2025-12-26 15:42:06.583091,alice,192.168.10.141,Sensitive file download by user3 after hours,insider_threat,7
+2025-12-31 03:51:06.582092,user2,192.168.40.11,Admin account used from unusual location,insider_threat,7
+2025-12-16 02:10:06.583091,david,192.168.39.101,Confidential data accessed at 05:49,insider_threat,7
+2025-12-21 10:38:06.582092,user2,192.168.3.21,User david accessed HR records without authorization,insider_threat,7
+2025-12-29 19:34:06.585691,admin,192.168.22.141,Unauthorized access to sensitive database,insider_threat,7
+2026-01-03 02:11:06.586686,bob,192.168.1.151,Unauthorized access to sensitive database,insider_threat,7
+2026-01-02 07:53:06.585691,alice,192.168.38.161,Privilege abuse detected: david,insider_threat,7
+2025-12-10 00:10:06.582092,bob,192.168.40.151,Privilege escalation detected for bob,insider_threat,7
+2026-01-04 16:09:06.582092,user2,192.168.34.141,Sensitive file download by alice after hours,insider_threat,7
+2026-01-04 05:55:06.586686,system,192.168.30.231,Admin accessed confidential files outside business hours,insider_threat,7
+2025-12-18 16:20:06.585691,user1,192.168.1.131,Unauthorized access to sensitive database,insider_threat,7
+2025-12-11 06:37:06.583091,charlie,192.168.21.161,Admin account used from unusual location,insider_threat,7
+2025-12-17 22:04:06.580083,bob,192.168.29.191,Privilege escalation detected for david,insider_threat,7
+2025-12-22 17:23:06.586686,alice,192.168.40.221,Sensitive file download by bob after hours,insider_threat,7
+2025-12-19 23:46:06.580083,admin,192.168.36.61,Confidential data accessed at 08:51,insider_threat,7
+2025-12-26 17:03:06.586686,alice,192.168.36.191,User system accessed HR records without authorization,insider_threat,7
+2026-01-02 14:51:06.580083,user2,192.168.9.91,Privilege escalation detected for user2,insider_threat,7
+2025-12-31 10:18:06.584186,user2,192.168.45.131,User david accessed HR records without authorization,insider_threat,7
+2025-12-13 09:04:06.583091,user2,192.168.39.31,User system accessed HR records without authorization,insider_threat,7
+2026-01-03 22:27:06.584186,user2,192.168.4.11,Suspicious file access by privileged user,insider_threat,7
+2025-12-26 14:44:06.584186,user1,192.168.30.191,Admin account used from unusual location,insider_threat,7
+2025-12-24 01:05:06.580083,user3,192.168.28.231,Privilege abuse detected: david,insider_threat,7
+2025-12-09 05:36:06.583091,admin,192.168.7.121,Suspicious file access by privileged user,insider_threat,7
+2026-01-02 22:44:06.581082,bob,192.168.48.231,Unauthorized database query by charlie,insider_threat,7
+2025-12-18 09:14:06.585691,user3,192.168.3.121,Unauthorized database query by user2,insider_threat,7
+2025-12-03 17:26:06.581082,admin,192.168.13.151,Admin account used from unusual location,insider_threat,7
+2025-12-28 15:28:06.582092,user2,192.168.7.111,Privilege escalation detected for user1,insider_threat,7
+2025-12-30 10:45:06.586686,charlie,192.168.23.191,Unauthorized access to sensitive database,insider_threat,7
+2026-01-02 11:35:06.585691,user2,192.168.42.71,Unauthorized database query by bob,insider_threat,7
+2025-12-08 21:54:06.585691,eve,192.168.12.161,Suspicious file access by privileged user,insider_threat,7
+2025-12-24 04:02:06.585691,user2,192.168.18.71,Unauthorized database query by eve,insider_threat,7
+2025-12-19 00:13:06.580083,system,192.168.35.181,Admin account used from unusual location,insider_threat,7
+2025-12-08 03:18:06.586686,system,192.168.10.31,Confidential data accessed at 14:01,insider_threat,7
+2025-12-16 04:20:06.585691,user2,192.168.2.1,Sensitive file download by user1 after hours,insider_threat,7
+2025-12-16 02:04:06.584186,user3,192.168.39.201,Unauthorized access to sensitive database,insider_threat,7
+2025-12-04 23:19:06.581082,user2,192.168.18.151,Privilege abuse detected: alice,insider_threat,7
+2025-12-14 21:44:06.585691,david,192.168.14.11,User alice accessed HR records without authorization,insider_threat,7
+2025-12-13 12:11:06.580083,charlie,192.168.9.171,Confidential data accessed at 21:45,insider_threat,7
+2025-12-14 05:45:06.582092,charlie,192.168.33.241,Privilege escalation detected for charlie,insider_threat,7
+2025-12-30 12:46:06.580083,user2,192.168.41.141,Admin accessed confidential files outside business hours,insider_threat,7
+2025-12-20 16:41:06.580083,alice,192.168.10.41,Privilege abuse detected: alice,insider_threat,7
+2025-12-07 14:36:06.582092,alice,192.168.18.241,User charlie accessed HR records without authorization,insider_threat,7
+2025-12-04 19:08:06.581082,alice,192.168.5.221,Admin accessed confidential files outside business hours,insider_threat,7
+2025-12-21 02:03:06.584186,user1,192.168.45.61,Privilege abuse detected: david,insider_threat,7
+2025-12-04 23:48:06.580083,bob,192.168.11.81,Suspicious file access by privileged user,insider_threat,7
+2026-01-04 15:17:06.580083,admin,192.168.2.221,Privilege abuse detected: alice,insider_threat,7
+2025-12-24 19:22:06.583091,user2,192.168.24.211,Confidential data accessed at 14:58,insider_threat,7
+2025-12-10 07:41:06.585691,user3,192.168.6.171,Privilege abuse detected: bob,insider_threat,7
+2025-12-03 21:46:06.582092,charlie,192.168.4.211,Privilege escalation detected for alice,insider_threat,7
+2026-01-04 18:33:06.584186,david,192.168.28.31,Unauthorized access to sensitive database,insider_threat,7
+2025-12-21 23:28:06.582092,user2,192.168.43.101,Unauthorized access to sensitive database,insider_threat,7
+2025-12-26 23:04:06.584186,charlie,192.168.22.11,Confidential data accessed at 07:25,insider_threat,7
+2025-12-09 03:02:06.586686,alice,192.168.4.91,Admin accessed confidential files outside business hours,insider_threat,7
+2025-12-17 21:11:06.583091,admin,192.168.6.221,Confidential data accessed at 23:49,insider_threat,7
+2025-12-13 02:47:06.586686,bob,192.168.6.121,Sensitive file download by david after hours,insider_threat,7
+2025-12-31 16:40:06.584186,eve,192.168.40.91,Unauthorized database query by admin,insider_threat,7
+2025-12-26 23:56:06.582092,user1,192.168.23.151,Privilege escalation detected for eve,insider_threat,7
+2025-12-26 16:48:06.581082,alice,192.168.22.181,Unauthorized access to sensitive database,insider_threat,7
+2025-12-22 18:58:06.581082,david,192.168.21.61,Privilege abuse detected: eve,insider_threat,7
+2025-12-19 17:33:06.583091,admin,192.168.14.241,Privilege abuse detected: alice,insider_threat,7
+2025-12-03 04:42:06.582092,user2,192.168.25.21,Privilege abuse detected: alice,insider_threat,7
+2025-12-18 13:37:06.580083,admin,192.168.6.211,Admin accessed confidential files outside business hours,insider_threat,7
+2025-12-05 18:08:06.584186,eve,192.168.40.161,User user2 accessed HR records without authorization,insider_threat,7
+2025-12-20 17:56:06.582092,eve,192.168.38.91,Admin accessed confidential files outside business hours,insider_threat,7
+2025-12-05 05:52:06.585691,eve,192.168.10.31,Suspicious file access by privileged user,insider_threat,7
+2025-12-03 19:24:06.582092,charlie,192.168.5.231,User eve accessed HR records without authorization,insider_threat,7
+2025-12-16 01:57:06.582092,alice,192.168.24.1,Privilege abuse detected: bob,insider_threat,7
+2026-01-03 01:53:06.581082,user2,192.168.35.91,Admin account used from unusual location,insider_threat,7
+2025-12-31 16:27:06.583091,user2,192.168.6.221,Privilege escalation detected for david,insider_threat,7
+2025-12-20 13:06:06.585691,alice,192.168.13.1,Unauthorized access to sensitive database,insider_threat,7
+2025-12-16 10:50:06.581082,david,192.168.15.91,Sensitive file download by system after hours,insider_threat,7
+2025-12-10 11:21:06.579084,eve,192.168.14.171,User user2 accessed HR records without authorization,insider_threat,7
+2026-01-02 20:39:06.579084,user2,192.168.28.21,Unauthorized database query by user1,insider_threat,7
+2026-01-05 11:06:06.585691,alice,192.168.45.41,Privilege escalation detected for system,insider_threat,7
+2025-12-26 08:50:06.581082,user1,192.168.36.11,Unauthorized database query by alice,insider_threat,7
+2025-12-14 04:35:06.585691,eve,192.168.5.161,User user2 accessed HR records without authorization,insider_threat,7
+2025-12-24 12:29:06.582092,user3,192.168.21.161,Confidential data accessed at 02:33,insider_threat,7
+2025-12-28 19:10:06.584186,bob,192.168.26.71,Privilege escalation detected for alice,insider_threat,7
+2025-12-18 15:25:06.585691,user3,192.168.23.91,Unauthorized database query by user1,insider_threat,7
+2025-12-10 20:02:06.584186,user3,192.168.9.81,Privilege abuse detected: user3,insider_threat,7
+2025-12-13 05:01:06.583091,user2,192.168.13.111,Privilege escalation detected for alice,insider_threat,7
+2025-12-16 12:54:06.580083,alice,192.168.21.201,Privilege abuse detected: user2,insider_threat,7
+2025-12-02 12:37:06.584186,charlie,192.168.6.11,Suspicious file access by privileged user,insider_threat,7
+2025-12-31 13:54:06.586686,user1,192.168.3.121,Suspicious file access by privileged user,insider_threat,7
+2025-12-04 22:52:06.580083,david,192.168.18.181,Sensitive file download by alice after hours,insider_threat,7
+2025-12-29 07:50:06.584186,user2,192.168.30.141,Privilege escalation detected for admin,insider_threat,7
+2025-12-09 10:20:06.582092,user1,192.168.16.61,Unauthorized access to sensitive database,insider_threat,7
+2025-12-18 06:19:06.583091,user1,192.168.3.201,Confidential data accessed at 09:21,insider_threat,7
+2025-12-28 18:07:06.582092,eve,192.168.37.161,Admin account used from unusual location,insider_threat,7
+2026-01-04 15:29:06.584186,system,192.168.20.201,Unauthorized database query by user3,insider_threat,7
+2026-01-02 02:31:06.581082,admin,192.168.31.71,Admin account used from unusual location,insider_threat,7
+2026-01-03 19:26:06.584186,user3,192.168.25.151,Privilege abuse detected: david,insider_threat,7
+2025-12-24 07:38:06.583091,bob,192.168.6.31,User charlie accessed HR records without authorization,insider_threat,7
+2025-12-26 18:29:06.582092,charlie,192.168.29.121,Suspicious file access by privileged user,insider_threat,7
+2025-12-05 02:25:06.582092,alice,192.168.2.131,Privilege abuse detected: admin,insider_threat,7
+2025-12-13 11:01:06.585691,david,192.168.40.181,Privilege abuse detected: eve,insider_threat,7
+2025-12-15 08:08:06.582092,user3,192.168.9.41,Privilege escalation detected for bob,insider_threat,7
+2025-12-24 15:23:06.582092,david,192.168.34.241,Admin accessed confidential files outside business hours,insider_threat,7
+2025-12-04 01:09:06.584186,alice,192.168.17.41,User bob accessed HR records without authorization,insider_threat,7
+2025-12-10 20:24:06.584186,charlie,192.168.19.111,Suspicious file access by privileged user,insider_threat,7
+2025-12-03 23:43:06.584186,user2,192.168.11.241,Confidential data accessed at 09:38,insider_threat,7
+2025-12-21 05:52:06.581082,user2,192.168.24.141,Unauthorized database query by bob,insider_threat,7
+2026-01-04 05:35:06.584186,david,192.168.7.1,Privilege abuse detected: user1,insider_threat,7
+2026-01-02 19:18:06.582092,user3,192.168.45.161,Confidential data accessed at 05:02,insider_threat,7
+2025-12-16 10:03:06.582092,alice,192.168.22.51,Admin accessed confidential files outside business hours,insider_threat,7
+2025-12-10 03:45:06.580083,alice,192.168.16.181,Unauthorized database query by eve,insider_threat,7
+2025-12-02 12:32:06.583091,user2,192.168.32.101,Privilege abuse detected: admin,insider_threat,7
+2025-12-03 05:25:06.585691,bob,192.168.30.111,Admin accessed confidential files outside business hours,insider_threat,7
+2025-12-01 19:42:06.586686,user1,192.168.6.171,Admin accessed confidential files outside business hours,insider_threat,7
+2025-12-06 19:21:06.582092,charlie,192.168.3.31,Privilege abuse detected: user2,insider_threat,7
+2025-12-14 04:31:06.584186,system,192.168.45.161,Suspicious file access by privileged user,insider_threat,7
+2025-12-19 19:00:06.580083,system,192.168.26.91,Unauthorized access to sensitive database,insider_threat,7
+2025-12-22 16:33:06.584186,user1,192.168.17.101,Unauthorized database query by alice,insider_threat,7
+2025-12-19 13:31:06.582092,alice,192.168.39.111,Sensitive file download by user2 after hours,insider_threat,7
+2025-12-20 00:46:06.586686,charlie,192.168.41.1,Suspicious file access by privileged user,insider_threat,7
+2025-12-21 14:15:06.582092,bob,192.168.15.181,Unauthorized access to sensitive database,insider_threat,7
+2025-12-23 21:03:06.580083,bob,192.168.18.41,Sensitive file download by user2 after hours,insider_threat,7
+2025-12-27 20:17:06.585691,david,192.168.48.181,Privilege abuse detected: bob,insider_threat,7
+2025-12-24 00:14:06.583091,user1,192.168.36.81,Sensitive file download by alice after hours,insider_threat,7
+2025-12-22 06:12:06.584186,user1,192.168.6.201,Confidential data accessed at 10:27,insider_threat,7
+2025-12-18 20:52:06.581082,bob,192.168.25.61,Privilege abuse detected: user1,insider_threat,7
+2025-12-10 12:36:06.585691,admin,192.168.22.101,Confidential data accessed at 22:20,insider_threat,7
+2025-12-18 16:05:06.581082,system,192.168.17.151,Admin accessed confidential files outside business hours,insider_threat,7
+2025-12-25 07:00:06.582092,eve,192.168.29.111,Confidential data accessed at 02:39,insider_threat,7
+2025-12-17 02:33:06.580083,alice,192.168.23.201,Privilege escalation detected for david,insider_threat,7
+2025-12-30 21:57:06.582092,user2,192.168.26.111,Privilege escalation detected for admin,insider_threat,7
+2025-12-24 20:39:06.584186,system,192.168.49.211,Suspicious file access by privileged user,insider_threat,7
+2025-12-06 11:33:06.583091,system,192.168.26.221,Unauthorized database query by system,insider_threat,7
+2025-12-29 03:02:06.581082,user2,192.168.2.101,Privilege escalation detected for system,insider_threat,7
+2025-12-14 23:58:06.583091,user3,192.168.41.141,Admin account used from unusual location,insider_threat,7
+2025-12-21 08:51:06.581082,bob,192.168.17.111,Suspicious file access by privileged user,insider_threat,7
+2025-12-25 02:51:06.580083,bob,192.168.39.11,Admin accessed confidential files outside business hours,insider_threat,7
+2025-12-12 21:19:06.580083,alice,192.168.29.71,Unauthorized access to sensitive database,insider_threat,7
+2025-12-05 09:08:06.581082,admin,192.168.36.191,Privilege abuse detected: charlie,insider_threat,7
+2025-12-16 03:14:06.582092,eve,192.168.4.41,Unauthorized database query by eve,insider_threat,7
+2025-12-29 08:46:06.584186,eve,192.168.32.101,Unauthorized access to sensitive database,insider_threat,7
+2025-12-29 21:40:06.584186,charlie,192.168.29.81,Suspicious file access by privileged user,insider_threat,7
+2025-12-15 10:05:06.584186,charlie,192.168.3.131,Confidential data accessed at 20:12,insider_threat,7
+2025-12-16 13:49:06.581082,user2,192.168.39.121,Unauthorized access to sensitive database,insider_threat,7
+2025-12-27 06:10:06.584186,user1,192.168.19.221,Admin account used from unusual location,insider_threat,7
+2025-12-11 09:44:06.583091,user1,192.168.41.181,Admin account used from unusual location,insider_threat,7
+2025-12-16 05:42:06.580083,system,192.168.49.141,Admin accessed confidential files outside business hours,insider_threat,7
+2025-12-22 05:09:06.585691,admin,192.168.34.231,Privilege abuse detected: bob,insider_threat,7
+2025-12-29 15:39:06.581082,bob,192.168.22.191,User eve accessed HR records without authorization,insider_threat,7
+2025-12-30 12:38:06.586686,system,192.168.4.221,Admin accessed confidential files outside business hours,insider_threat,7
+2026-01-02 08:06:06.586686,admin,192.168.28.181,Unauthorized database query by admin,insider_threat,7
+2025-12-14 12:07:06.585691,bob,192.168.35.21,Unauthorized database query by charlie,insider_threat,7
+2025-12-06 21:28:06.585691,charlie,192.168.35.211,Unauthorized access to sensitive database,insider_threat,7
+2025-12-13 05:39:06.583091,david,192.168.37.241,Privilege escalation detected for system,insider_threat,7
+2026-01-01 21:42:06.582092,bob,192.168.13.91,Unauthorized access to sensitive database,insider_threat,7
+2025-12-21 10:04:06.581082,david,192.168.27.41,Admin accessed confidential files outside business hours,insider_threat,7
+2025-12-06 09:59:06.586686,admin,192.168.10.21,Privilege abuse detected: david,insider_threat,7
+2025-12-24 01:31:06.584186,david,192.168.3.141,Sensitive file download by alice after hours,insider_threat,7
+2025-12-26 18:14:06.583091,admin,192.168.15.1,Confidential data accessed at 15:30,insider_threat,7
+2025-12-09 10:07:06.581082,eve,192.168.3.101,Admin accessed confidential files outside business hours,insider_threat,7
+2026-01-01 12:40:06.585691,alice,192.168.46.91,Confidential data accessed at 15:35,insider_threat,7
+2025-12-15 20:06:06.584186,david,192.168.47.151,User eve accessed HR records without authorization,insider_threat,7
+2025-12-05 00:08:06.584186,david,192.168.12.61,Sensitive file download by david after hours,insider_threat,7
+2025-12-14 17:49:06.584186,admin,192.168.30.81,Unauthorized access to sensitive database,insider_threat,7
+2025-12-25 05:07:06.580083,eve,192.168.15.51,Privilege abuse detected: david,insider_threat,7
+2025-12-30 07:49:06.586686,user1,192.168.5.141,Suspicious file access by privileged user,insider_threat,7
+2025-12-10 10:07:06.584186,user2,192.168.28.141,Privilege escalation detected for system,insider_threat,7
+2025-12-16 14:54:06.581082,david,192.168.14.61,Admin account used from unusual location,insider_threat,7
+2025-12-07 13:38:06.581082,david,192.168.29.51,Unauthorized database query by david,insider_threat,7
+2025-12-10 19:28:06.583091,user1,192.168.7.71,Sensitive file download by bob after hours,insider_threat,7
+2025-12-17 06:09:06.581082,user2,192.168.2.61,Admin account used from unusual location,insider_threat,7
+2025-12-30 21:51:06.582092,user3,192.168.25.91,Admin accessed confidential files outside business hours,insider_threat,7
+2025-12-29 06:31:06.584186,david,192.168.32.41,Unauthorized access to sensitive database,insider_threat,7
+2025-12-04 19:43:06.582092,bob,192.168.1.211,Privilege abuse detected: user2,insider_threat,7
+2025-12-06 12:17:06.580083,eve,192.168.42.101,Unauthorized database query by user2,insider_threat,7
+2025-12-26 16:13:06.582092,david,192.168.3.151,Confidential data accessed at 18:53,insider_threat,7
+2025-12-22 11:24:06.582092,eve,192.168.24.241,User user3 accessed HR records without authorization,insider_threat,7
+2025-12-09 08:48:06.582092,alice,192.168.7.221,Privilege abuse detected: system,insider_threat,7
+2025-12-30 17:47:06.584186,user2,192.168.1.1,Admin account used from unusual location,insider_threat,7
+2025-12-28 18:02:06.584186,eve,192.168.4.141,Privilege escalation detected for bob,insider_threat,7
+2025-12-25 09:21:06.582092,eve,192.168.47.71,User david accessed HR records without authorization,insider_threat,7
+2026-01-03 01:15:06.584186,system,192.168.31.161,Admin accessed confidential files outside business hours,insider_threat,7
+2025-12-14 03:34:06.586686,user3,192.168.36.121,Sensitive file download by david after hours,insider_threat,7
+2025-12-01 18:52:06.582092,eve,192.168.42.191,Unauthorized access to sensitive database,insider_threat,7
+2025-12-27 22:50:06.581082,user3,192.168.15.201,Admin accessed confidential files outside business hours,insider_threat,7
+2025-12-29 21:46:06.584186,charlie,192.168.32.71,Privilege abuse detected: user2,insider_threat,7
+2025-12-15 00:51:06.586686,david,192.168.16.131,Unauthorized access to sensitive database,insider_threat,7
+2025-12-22 09:47:06.586686,alice,192.168.2.141,Privilege abuse detected: charlie,insider_threat,7
+2026-01-04 02:31:06.585691,admin,192.168.11.101,Sensitive file download by user2 after hours,insider_threat,7
+2025-12-21 02:25:06.584186,user1,192.168.15.111,User charlie accessed HR records without authorization,insider_threat,7
+2026-01-03 08:26:06.581082,system,192.168.30.131,Admin accessed confidential files outside business hours,insider_threat,7
+2026-01-01 17:59:06.585691,charlie,192.168.5.91,Sensitive file download by david after hours,insider_threat,7
+2025-12-09 10:04:06.580083,user2,192.168.23.101,User eve accessed HR records without authorization,insider_threat,7
+2026-01-02 07:11:06.584186,david,192.168.9.161,Unauthorized access to sensitive database,insider_threat,7
+2025-12-16 21:35:06.584186,system,192.168.42.31,Admin accessed confidential files outside business hours,insider_threat,7
+2025-12-17 20:57:06.581082,system,192.168.7.151,Privilege escalation detected for alice,insider_threat,7
+2025-12-25 21:01:06.582092,user1,192.168.4.101,Confidential data accessed at 01:59,insider_threat,7
+2025-12-08 00:44:06.586686,eve,192.168.24.221,Sensitive file download by eve after hours,insider_threat,7
+2025-12-14 18:02:06.580083,charlie,192.168.46.121,User user3 accessed HR records without authorization,insider_threat,7
+2025-12-14 17:52:06.583091,user3,192.168.49.71,Admin accessed confidential files outside business hours,insider_threat,7
+2025-12-04 03:15:06.586686,user2,192.168.37.91,Privilege escalation detected for admin,insider_threat,7
+2025-12-03 10:40:06.583091,user1,192.168.12.191,Admin accessed confidential files outside business hours,insider_threat,7
+2025-12-14 19:35:06.586686,bob,192.168.34.41,Unauthorized access to sensitive database,insider_threat,7
+2025-12-26 18:52:06.581082,system,192.168.13.221,Sensitive file download by bob after hours,insider_threat,7
+2025-12-11 05:22:06.582092,user1,192.168.18.141,Sensitive file download by bob after hours,insider_threat,7
+2025-12-09 04:17:06.582092,eve,192.168.1.111,Confidential data accessed at 02:28,insider_threat,7
+2026-01-02 09:21:06.583091,user1,192.168.18.171,Admin account used from unusual location,insider_threat,7
+2025-12-18 20:42:06.582092,user2,192.168.15.31,Confidential data accessed at 13:24,insider_threat,7
+2025-12-30 21:03:06.584186,user2,192.168.39.221,User bob accessed HR records without authorization,insider_threat,7
+2025-12-16 20:02:06.582092,user3,192.168.26.121,Privilege escalation detected for alice,insider_threat,7
+2025-12-25 01:19:06.584186,charlie,192.168.10.161,Privilege escalation detected for user1,insider_threat,7
+2025-12-13 15:57:06.586686,user1,192.168.38.241,Admin accessed confidential files outside business hours,insider_threat,7
+2025-12-11 01:11:06.585691,admin,192.168.17.91,Admin accessed confidential files outside business hours,insider_threat,7
+2025-12-17 15:52:06.586686,charlie,192.168.48.111,Unauthorized access to sensitive database,insider_threat,7
+2025-12-24 08:23:06.583091,system,192.168.16.231,Unauthorized database query by system,insider_threat,7
+2025-12-09 06:31:06.581082,admin,192.168.41.1,Unauthorized database query by eve,insider_threat,7
+2025-12-04 15:08:06.586686,eve,192.168.18.161,Admin account used from unusual location,insider_threat,7
+2026-01-04 01:01:06.581082,user1,192.168.49.61,Unauthorized database query by user1,insider_threat,7
+2025-12-29 20:52:06.582092,system,192.168.20.151,User user2 accessed HR records without authorization,insider_threat,7
+2025-12-13 15:16:06.582092,admin,192.168.32.1,Confidential data accessed at 01:09,insider_threat,7
+2025-12-27 15:29:06.584186,bob,192.168.18.111,Privilege abuse detected: david,insider_threat,7
+2025-12-24 12:42:06.584186,admin,192.168.34.81,Sensitive file download by david after hours,insider_threat,7
+2025-12-28 03:03:06.584186,alice,192.168.22.51,Admin account used from unusual location,insider_threat,7
+2025-12-23 10:42:06.583091,user3,192.168.46.41,User admin accessed HR records without authorization,insider_threat,7
+2026-01-05 06:34:06.580083,user3,192.168.4.211,User eve accessed HR records without authorization,insider_threat,7
+2025-12-20 01:49:06.585691,eve,192.168.29.51,Privilege abuse detected: bob,insider_threat,7
+2025-12-24 18:28:06.583091,david,192.168.46.31,Privilege escalation detected for bob,insider_threat,7
+2026-01-01 20:53:06.585691,user3,192.168.37.1,Confidential data accessed at 20:17,insider_threat,7
+2025-12-03 07:52:06.581082,user1,192.168.6.191,Admin accessed confidential files outside business hours,insider_threat,7
+2026-01-01 23:36:06.584186,bob,192.168.36.201,Privilege abuse detected: system,insider_threat,7
+2025-12-18 16:48:06.582092,charlie,192.168.15.141,Admin accessed confidential files outside business hours,insider_threat,7
+2025-12-14 17:54:06.583091,eve,192.168.26.111,Admin account used from unusual location,insider_threat,7
+2025-12-21 08:27:06.582092,system,192.168.24.141,User user1 accessed HR records without authorization,insider_threat,7
+2025-12-20 00:07:06.585691,user2,192.168.49.41,Unauthorized access to sensitive database,insider_threat,7
+2025-12-24 13:27:06.584186,alice,192.168.33.41,Confidential data accessed at 02:55,insider_threat,7
+2026-01-02 08:50:06.581082,admin,192.168.19.81,Unauthorized access to sensitive database,insider_threat,7
+2025-12-21 13:55:06.583091,alice,192.168.30.101,Confidential data accessed at 07:41,insider_threat,7
+2025-12-19 18:45:06.586686,user3,192.168.35.231,Privilege abuse detected: charlie,insider_threat,7
+2025-12-13 14:52:06.584186,system,192.168.8.151,Admin account used from unusual location,insider_threat,7
+2025-12-17 17:00:06.581082,user3,192.168.39.91,Unauthorized access to sensitive database,insider_threat,7
+2025-12-07 01:07:06.583091,eve,192.168.12.71,Unauthorized access to sensitive database,insider_threat,7
+2025-12-14 05:35:06.586686,charlie,192.168.9.101,Privilege abuse detected: user2,insider_threat,7
+2025-12-27 02:35:06.584186,eve,192.168.30.11,User charlie accessed HR records without authorization,insider_threat,7
+2025-12-18 21:48:06.582092,charlie,192.168.43.81,Confidential data accessed at 09:51,insider_threat,7
+2025-12-07 04:21:06.585691,admin,192.168.23.231,Privilege escalation detected for charlie,insider_threat,7
+2025-12-05 11:30:06.586686,bob,192.168.29.91,Admin accessed confidential files outside business hours,insider_threat,7
+2025-12-27 16:50:06.580083,user1,192.168.22.51,Admin accessed confidential files outside business hours,insider_threat,7
+2025-12-12 19:29:06.582092,charlie,192.168.49.41,Admin account used from unusual location,insider_threat,7
+2025-12-24 07:26:06.584186,eve,192.168.41.41,Admin account used from unusual location,insider_threat,7
+2025-12-28 16:54:06.586686,user3,192.168.14.71,Privilege abuse detected: admin,insider_threat,7
+2026-01-01 23:18:06.580083,admin,192.168.38.51,Unauthorized database query by user3,insider_threat,7
+2025-12-09 18:12:06.580083,david,192.168.12.51,Privilege abuse detected: david,insider_threat,7
+2025-12-25 05:59:06.581082,charlie,192.168.46.11,Admin accessed confidential files outside business hours,insider_threat,7
+2026-01-02 06:41:06.584186,david,192.168.4.231,Admin accessed confidential files outside business hours,insider_threat,7
+2025-12-06 08:29:06.586686,system,192.168.29.61,Privilege escalation detected for admin,insider_threat,7
+2025-12-09 16:56:06.586686,charlie,192.168.25.71,Privilege abuse detected: david,insider_threat,7
+2025-12-14 00:29:06.580083,eve,192.168.26.21,Sensitive file download by user3 after hours,insider_threat,7
+2025-12-15 03:09:06.584186,user2,192.168.41.201,Unauthorized access to sensitive database,insider_threat,7
+2025-12-10 01:07:06.586686,admin,192.168.40.131,Unauthorized access to sensitive database,insider_threat,7
+2025-12-29 16:53:06.584186,system,192.168.46.71,Unauthorized access to sensitive database,insider_threat,7
+2025-12-16 11:20:06.585691,bob,192.168.27.211,Privilege escalation detected for bob,insider_threat,7
+2025-12-21 11:44:06.582092,user2,192.168.48.91,Unauthorized database query by user2,insider_threat,7
+2025-12-16 22:18:06.584186,user3,192.168.15.211,Confidential data accessed at 22:04,insider_threat,7
+2025-12-24 10:51:06.585691,system,192.168.27.31,Unauthorized access to sensitive database,insider_threat,7
+2025-12-02 22:35:06.586686,bob,192.168.40.171,Admin account used from unusual location,insider_threat,7
+2026-01-01 18:51:06.583091,user2,192.168.22.151,Unauthorized access to sensitive database,insider_threat,7
+2025-12-18 01:42:06.584186,user1,192.168.46.161,Privilege escalation detected for admin,insider_threat,7
+2025-12-07 19:49:06.584186,admin,192.168.18.101,Admin account used from unusual location,insider_threat,7
+2025-12-17 21:30:06.584186,david,192.168.48.211,Admin accessed confidential files outside business hours,insider_threat,7
+2025-12-29 13:01:06.586686,alice,192.168.13.141,Sensitive file download by bob after hours,insider_threat,7
+2025-12-17 08:14:06.585691,eve,192.168.29.121,Sensitive file download by user1 after hours,insider_threat,7
+2025-12-11 13:14:06.581082,eve,192.168.30.51,Confidential data accessed at 03:11,insider_threat,7
+2025-12-23 02:54:06.583091,user3,192.168.4.141,Unauthorized database query by user3,insider_threat,7
+2026-01-01 20:08:06.581082,user2,192.168.31.131,User bob accessed HR records without authorization,insider_threat,7
+2025-12-21 17:09:06.582092,system,192.168.12.211,User system accessed HR records without authorization,insider_threat,7
+2025-12-28 12:30:06.586686,eve,192.168.9.221,Sensitive file download by bob after hours,insider_threat,7
+2025-12-29 15:52:06.582092,bob,192.168.47.71,Admin accessed confidential files outside business hours,insider_threat,7
+2025-12-23 09:39:06.584186,bob,192.168.8.121,Unauthorized database query by admin,insider_threat,7
+2025-12-19 22:55:06.583091,user1,192.168.11.71,Unauthorized database query by user3,insider_threat,7
+2025-12-30 13:44:06.583091,admin,192.168.44.211,Admin accessed confidential files outside business hours,insider_threat,7
+2025-12-07 22:31:06.582092,admin,192.168.3.61,Admin account used from unusual location,insider_threat,7
+2026-01-04 09:16:06.580083,admin,192.168.16.151,Privilege escalation detected for admin,insider_threat,7
+2025-12-07 02:17:06.582092,user2,192.168.10.161,Sensitive file download by david after hours,insider_threat,7
+2025-12-22 19:28:06.582092,david,192.168.47.31,Admin account used from unusual location,insider_threat,7
+2026-01-03 15:30:06.586686,system,192.168.29.191,Privilege abuse detected: alice,insider_threat,7
+2025-12-17 08:11:06.581082,user2,192.168.46.231,Suspicious file access by privileged user,insider_threat,7
+2025-12-30 09:51:06.583091,user1,192.168.48.181,Confidential data accessed at 05:08,insider_threat,7
+2025-12-04 00:47:06.580083,bob,192.168.15.51,Suspicious file access by privileged user,insider_threat,7
+2025-12-05 07:54:06.581082,charlie,192.168.16.141,Privilege escalation detected for eve,insider_threat,7
+2025-12-09 06:16:06.585691,alice,192.168.4.141,Admin accessed confidential files outside business hours,insider_threat,7
+2025-12-22 00:13:06.583091,user3,192.168.13.1,Privilege escalation detected for system,insider_threat,7
+2026-01-01 11:07:06.584186,alice,192.168.14.211,Sensitive file download by charlie after hours,insider_threat,7
+2025-12-08 22:20:06.585691,bob,192.168.46.11,User eve accessed HR records without authorization,insider_threat,7
+2025-12-14 20:29:06.583091,eve,192.168.2.121,Admin account used from unusual location,insider_threat,7
+2026-01-02 05:22:06.584186,user2,192.168.45.131,Unauthorized access to sensitive database,insider_threat,7
+2025-12-27 22:15:06.584186,system,192.168.4.181,Privilege escalation detected for charlie,insider_threat,7
+2025-12-28 05:29:06.586686,system,192.168.6.41,Unauthorized access to sensitive database,insider_threat,7
+2025-12-24 14:34:06.586686,user2,192.168.8.221,Privilege abuse detected: bob,insider_threat,7
+2025-12-04 00:42:06.585691,charlie,192.168.40.231,Admin accessed confidential files outside business hours,insider_threat,7
+2026-01-05 06:44:06.582092,bob,192.168.31.121,Unauthorized access to sensitive database,insider_threat,7
+2025-12-03 23:25:06.585691,alice,192.168.16.31,Privilege abuse detected: user2,insider_threat,7
+2026-01-03 06:15:06.586686,user1,192.168.15.21,Suspicious file access by privileged user,insider_threat,7
+2025-12-05 03:49:06.586686,eve,192.168.40.61,Suspicious file access by privileged user,insider_threat,7
+2025-12-23 05:16:06.586686,david,192.168.5.51,Sensitive file download by alice after hours,insider_threat,7
+2025-12-07 21:56:06.582092,eve,192.168.42.161,Confidential data accessed at 10:15,insider_threat,7
+2025-12-21 08:27:06.585691,eve,192.168.6.51,User eve accessed HR records without authorization,insider_threat,7
+2026-01-01 02:46:06.581082,alice,192.168.49.181,Admin accessed confidential files outside business hours,insider_threat,7
+2025-12-16 05:33:06.584186,user3,192.168.47.101,Unauthorized access to sensitive database,insider_threat,7
+2025-12-02 23:45:06.585691,bob,192.168.15.111,Privilege escalation detected for user3,insider_threat,7
+2026-01-02 03:59:06.584186,admin,192.168.31.31,Privilege escalation detected for eve,insider_threat,7
+2025-12-12 04:01:06.586686,charlie,192.168.44.121,Privilege escalation detected for eve,insider_threat,7
+2025-12-19 11:39:06.582092,charlie,192.168.39.41,Unauthorized database query by user1,insider_threat,7
+2026-01-01 13:03:06.585691,charlie,192.168.32.101,Admin account used from unusual location,insider_threat,7
+2025-12-07 14:04:06.584186,bob,192.168.11.181,Admin account used from unusual location,insider_threat,7
+2025-12-09 10:40:06.584186,system,192.168.26.121,Admin accessed confidential files outside business hours,insider_threat,7
+2025-12-26 16:50:06.582092,alice,192.168.14.151,Admin accessed confidential files outside business hours,insider_threat,7
+2025-12-25 10:21:06.585691,admin,192.168.4.211,User user1 accessed HR records without authorization,insider_threat,7
+2026-01-05 00:24:06.584186,user2,192.168.23.231,Unauthorized access to sensitive database,insider_threat,7
+2025-12-08 16:20:06.586686,user3,192.168.49.41,Confidential data accessed at 19:41,insider_threat,7
+2025-12-16 05:38:06.584186,bob,192.168.2.21,Unauthorized access to sensitive database,insider_threat,7
+2025-12-21 07:48:06.583091,user2,192.168.1.111,Privilege escalation detected for user1,insider_threat,7
+2026-01-01 08:01:06.582092,bob,192.168.32.51,Unauthorized access to sensitive database,insider_threat,7
+2025-12-13 18:41:06.586686,alice,192.168.48.31,Privilege abuse detected: admin,insider_threat,7
+2025-12-02 15:37:06.581082,admin,192.168.26.81,User admin accessed HR records without authorization,insider_threat,7
+2025-12-12 01:25:06.584186,user1,192.168.6.101,Admin accessed confidential files outside business hours,insider_threat,7
+2025-12-20 20:41:06.580083,charlie,192.168.40.151,Privilege escalation detected for alice,insider_threat,7
+2025-12-06 22:43:06.586686,system,192.168.25.91,User user1 accessed HR records without authorization,insider_threat,7
+2026-01-03 01:13:06.582092,bob,192.168.12.91,Admin accessed confidential files outside business hours,insider_threat,7
+2025-12-11 12:26:06.583091,alice,192.168.41.101,Privilege escalation detected for david,insider_threat,7
+2026-01-05 08:56:06.581082,david,192.168.22.241,Privilege abuse detected: eve,insider_threat,7
+2025-12-16 09:59:06.584186,admin,192.168.13.1,Suspicious file access by privileged user,insider_threat,7
+2025-12-30 00:25:06.581082,system,192.168.24.151,Privilege escalation detected for eve,insider_threat,7
+2025-12-07 17:12:06.585691,bob,192.168.16.121,Confidential data accessed at 11:39,insider_threat,7
+2025-12-22 20:13:06.581082,alice,192.168.43.151,Admin account used from unusual location,insider_threat,7
+2025-12-29 17:26:06.583091,admin,192.168.24.71,Admin account used from unusual location,insider_threat,7
+2025-12-23 14:17:06.584186,charlie,192.168.46.181,Unauthorized database query by alice,insider_threat,7
+2025-12-25 19:35:06.582092,admin,192.168.14.181,User alice accessed HR records without authorization,insider_threat,7
+2025-12-16 07:37:06.583091,bob,192.168.6.131,Unauthorized database query by user1,insider_threat,7
+2026-01-04 19:51:06.583091,bob,192.168.47.181,Unauthorized access to sensitive database,insider_threat,7
+2025-12-24 14:04:06.583091,admin,192.168.30.161,User eve accessed HR records without authorization,insider_threat,7
+2025-12-14 02:35:06.580083,charlie,192.168.18.71,Admin account used from unusual location,insider_threat,7
+2025-12-06 15:53:06.585691,bob,192.168.15.161,Confidential data accessed at 02:03,insider_threat,7
+2025-12-19 04:31:06.583091,alice,192.168.25.141,Admin account used from unusual location,insider_threat,7
+2025-12-05 07:06:06.586686,david,192.168.43.131,Admin account used from unusual location,insider_threat,7
+2025-12-02 13:20:06.581082,system,192.168.5.201,Privilege escalation detected for admin,insider_threat,7
+2025-12-23 02:39:06.584186,charlie,192.168.41.61,Privilege escalation detected for user3,insider_threat,7
+2025-12-31 20:15:06.581082,alice,192.168.49.21,User alice accessed HR records without authorization,insider_threat,7
+2025-12-09 12:08:06.580083,eve,192.168.48.81,Privilege abuse detected: user2,insider_threat,7
+2025-12-06 14:55:06.582092,user1,192.168.42.31,Admin accessed confidential files outside business hours,insider_threat,7
+2025-12-06 03:41:06.580083,david,192.168.17.161,Privilege escalation detected for system,insider_threat,7
+2025-12-28 17:47:06.584186,admin,192.168.1.141,Privilege escalation detected for user2,insider_threat,7
+2026-01-04 05:46:06.582092,system,192.168.45.221,User system accessed HR records without authorization,insider_threat,7
+2025-12-09 15:46:06.586686,david,192.168.24.51,Unauthorized access to sensitive database,insider_threat,7
+2025-12-29 13:13:06.582092,charlie,192.168.28.231,Privilege abuse detected: eve,insider_threat,7
+2025-12-07 12:30:06.583091,alice,192.168.26.11,Admin account used from unusual location,insider_threat,7
+2025-12-27 14:36:06.581082,charlie,192.168.3.41,Admin accessed confidential files outside business hours,insider_threat,7
+2025-12-08 13:43:06.584186,alice,192.168.31.231,Confidential data accessed at 07:34,insider_threat,7
+2025-12-09 03:24:06.585691,system,192.168.25.211,Privilege escalation detected for user3,insider_threat,7
+2025-12-30 00:06:06.586686,system,192.168.13.41,Admin account used from unusual location,insider_threat,7
+2025-12-06 08:50:06.582092,user1,192.168.44.101,Admin account used from unusual location,insider_threat,7
+2025-12-08 15:15:06.584186,bob,192.168.2.161,Confidential data accessed at 10:03,insider_threat,7
+2025-12-14 16:16:06.585691,david,192.168.35.191,Unauthorized access to sensitive database,insider_threat,7
+2025-12-26 22:15:06.586686,user1,192.168.49.31,Admin accessed confidential files outside business hours,insider_threat,7
+2025-12-03 14:29:06.582092,user1,192.168.30.11,Confidential data accessed at 22:54,insider_threat,7
+2026-01-04 09:45:06.580083,user3,192.168.47.201,Unauthorized database query by user3,insider_threat,7
+2025-12-14 08:09:06.581082,user3,192.168.21.221,Sensitive file download by charlie after hours,insider_threat,7
+2025-12-07 16:13:06.583091,eve,192.168.32.101,Privilege abuse detected: charlie,insider_threat,7
+2025-12-30 18:11:06.582092,alice,192.168.15.241,Admin accessed confidential files outside business hours,insider_threat,7
+2025-12-05 01:28:06.584186,charlie,192.168.49.71,Admin account used from unusual location,insider_threat,7
+2026-01-03 05:28:06.585691,system,192.168.11.131,Privilege abuse detected: admin,insider_threat,7
+2025-12-09 08:07:06.586686,user3,192.168.3.71,Suspicious file access by privileged user,insider_threat,7
+2025-12-27 04:09:06.586686,david,192.168.21.141,Privilege escalation detected for eve,insider_threat,7
+2025-12-08 17:17:06.584186,david,192.168.24.11,Suspicious file access by privileged user,insider_threat,7
+2026-01-04 08:22:06.585691,bob,192.168.15.181,Unauthorized database query by user1,insider_threat,7
+2025-12-09 02:27:06.579084,bob,192.168.34.161,Unauthorized database query by user3,insider_threat,7
+2025-12-28 01:04:06.585691,charlie,192.168.24.181,Unauthorized access to sensitive database,insider_threat,7
+2025-12-04 08:15:06.586686,eve,192.168.1.241,Privilege abuse detected: admin,insider_threat,7
+2026-01-01 00:23:06.586686,alice,192.168.21.31,Privilege escalation detected for charlie,insider_threat,7
+2025-12-08 10:58:06.582092,charlie,192.168.26.121,Admin account used from unusual location,insider_threat,7
+2026-01-04 01:08:06.582092,system,192.168.49.21,Sensitive file download by admin after hours,insider_threat,7
+2025-12-04 21:08:06.580083,user3,192.168.46.91,Admin account used from unusual location,insider_threat,7
+2025-12-06 08:54:06.580083,david,192.168.3.101,Unauthorized database query by user1,insider_threat,7
+2025-12-22 22:30:06.581082,bob,192.168.8.81,Privilege escalation detected for user2,insider_threat,7
+2025-12-21 16:06:06.583091,user1,192.168.35.201,Privilege abuse detected: system,insider_threat,7
+2025-12-06 00:26:06.584186,admin,192.168.47.101,Unauthorized access to sensitive database,insider_threat,7
+2025-12-23 21:20:06.582092,charlie,192.168.1.181,Unauthorized access to sensitive database,insider_threat,7
+2025-12-07 14:43:06.584186,david,192.168.8.181,Admin accessed confidential files outside business hours,insider_threat,7
+2025-12-13 03:24:06.580083,david,192.168.37.121,Unauthorized access to sensitive database,insider_threat,7
+2026-01-01 07:01:06.583091,admin,192.168.23.151,Sensitive file download by charlie after hours,insider_threat,7
+2025-12-13 06:01:06.583091,admin,192.168.1.211,Privilege escalation detected for alice,insider_threat,7
+2025-12-12 05:31:06.581082,user3,192.168.29.1,Privilege escalation detected for charlie,insider_threat,7
+2026-01-03 06:09:06.581082,charlie,192.168.34.1,User admin accessed HR records without authorization,insider_threat,7
+2025-12-01 20:20:06.581082,user1,192.168.4.71,Confidential data accessed at 06:31,insider_threat,7
+2025-12-20 18:52:06.584186,charlie,192.168.28.191,Admin account used from unusual location,insider_threat,7
+2025-12-18 15:48:06.581082,david,192.168.18.221,User david accessed HR records without authorization,insider_threat,7
+2025-12-07 05:53:06.583091,system,192.168.21.1,Privilege abuse detected: user1,insider_threat,7
+2025-12-07 07:44:06.581082,eve,192.168.37.201,Sensitive file download by eve after hours,insider_threat,7
+2025-12-07 03:18:06.583091,david,192.168.31.241,Privilege abuse detected: system,insider_threat,7
+2025-12-07 05:16:06.580083,user3,192.168.30.211,Privilege abuse detected: admin,insider_threat,7
+2025-12-25 05:54:06.584186,system,192.168.35.21,Unauthorized database query by admin,insider_threat,7
+2025-12-19 08:36:06.585691,bob,192.168.33.61,Privilege escalation detected for eve,insider_threat,7
+2025-12-21 15:24:06.580083,alice,192.168.9.241,Unauthorized database query by admin,insider_threat,7
+2025-12-27 01:20:06.586686,user3,192.168.37.211,Unauthorized database query by alice,insider_threat,7
+2025-12-27 20:53:06.586686,bob,192.168.36.21,User system accessed HR records without authorization,insider_threat,7
+2025-12-12 23:44:06.584186,user3,192.168.29.211,Confidential data accessed at 23:43,insider_threat,7
+2025-12-08 02:48:06.584186,eve,192.168.16.21,Unauthorized access to sensitive database,insider_threat,7
+2025-12-20 18:14:06.581082,david,192.168.6.221,Privilege escalation detected for bob,insider_threat,7
+2025-12-04 21:47:06.583091,alice,192.168.21.31,Admin accessed confidential files outside business hours,insider_threat,7
+2025-12-16 15:38:06.581082,david,192.168.41.181,Admin account used from unusual location,insider_threat,7
+2025-12-23 02:00:06.583091,david,192.168.12.221,Privilege escalation detected for user2,insider_threat,7
+2025-12-23 11:19:06.581082,eve,192.168.12.51,Privilege abuse detected: david,insider_threat,7
+2025-12-29 10:22:06.582092,admin,192.168.8.71,User charlie accessed HR records without authorization,insider_threat,7
+2025-12-22 01:36:06.581082,charlie,192.168.9.221,User charlie accessed HR records without authorization,insider_threat,7
+2025-12-23 22:50:06.582092,eve,192.168.36.21,Privilege escalation detected for eve,insider_threat,7
+2025-12-16 03:32:06.582092,admin,192.168.16.121,Suspicious file access by privileged user,insider_threat,7
+2025-12-19 00:20:06.580083,alice,192.168.19.91,Confidential data accessed at 10:34,insider_threat,7
+2025-12-13 07:40:06.581082,charlie,192.168.14.131,Privilege abuse detected: user1,insider_threat,7
+2025-12-26 05:54:06.584186,user1,192.168.39.231,Privilege escalation detected for user1,insider_threat,7
+2025-12-24 18:17:06.580083,charlie,192.168.32.81,Privilege abuse detected: charlie,insider_threat,7
+2025-12-04 03:23:06.581082,eve,192.168.39.141,Confidential data accessed at 05:52,insider_threat,7
+2025-12-27 09:22:06.582092,user3,192.168.42.241,Unauthorized access to sensitive database,insider_threat,7
+2025-12-27 01:34:06.581082,eve,192.168.15.71,Admin account used from unusual location,insider_threat,7
+2025-12-19 03:13:06.584186,alice,192.168.18.171,Confidential data accessed at 07:09,insider_threat,7
+2025-12-13 09:02:06.583091,user2,192.168.19.201,User david accessed HR records without authorization,insider_threat,7
+2026-01-02 10:03:06.585691,admin,192.168.27.81,Suspicious file access by privileged user,insider_threat,7
+2025-12-19 20:52:06.582092,eve,192.168.18.81,User eve accessed HR records without authorization,insider_threat,7
+2025-12-19 08:38:06.585691,charlie,192.168.13.171,User alice accessed HR records without authorization,insider_threat,7
+2025-12-08 22:26:06.582092,alice,192.168.43.51,Admin accessed confidential files outside business hours,insider_threat,7
+2025-12-18 10:53:06.585691,david,192.168.40.161,Sensitive file download by charlie after hours,insider_threat,7
+2026-01-04 15:31:06.582092,bob,192.168.24.171,Unauthorized access to sensitive database,insider_threat,7
+2025-12-19 16:06:06.582092,admin,192.168.14.21,Unauthorized database query by david,insider_threat,7
+2026-01-01 06:32:06.585691,user1,192.168.25.81,Admin accessed confidential files outside business hours,insider_threat,7
+2025-12-12 08:56:06.580083,alice,192.168.2.181,Unauthorized database query by user3,insider_threat,7
+2025-12-21 08:28:06.581082,user2,192.168.2.231,Privilege escalation detected for user2,insider_threat,7
+2026-01-04 22:44:06.586686,system,192.168.31.141,User david accessed HR records without authorization,insider_threat,7
+2025-12-23 02:00:06.583091,charlie,192.168.13.61,Suspicious file access by privileged user,insider_threat,7
+2025-12-12 04:49:06.580083,bob,192.168.4.81,Unauthorized access to sensitive database,insider_threat,7
+2025-12-08 02:33:06.581082,user3,192.168.27.221,User user1 accessed HR records without authorization,insider_threat,7
+2025-12-03 13:10:06.586686,user2,192.168.8.41,Admin account used from unusual location,insider_threat,7
+2025-12-31 06:13:06.581082,bob,192.168.11.121,Confidential data accessed at 08:31,insider_threat,7
+2025-12-19 01:26:06.584186,system,192.168.40.161,Unauthorized access to sensitive database,insider_threat,7
+2025-12-28 02:07:06.582092,charlie,192.168.45.11,Admin accessed confidential files outside business hours,insider_threat,7
+2025-12-10 11:41:06.586686,user2,192.168.15.101,Admin accessed confidential files outside business hours,insider_threat,7
+2025-12-29 20:56:06.582092,david,192.168.36.31,User admin accessed HR records without authorization,insider_threat,7
+2025-12-30 19:40:06.582092,user2,192.168.16.161,Unauthorized access to sensitive database,insider_threat,7
+2025-12-07 17:38:06.581082,david,192.168.26.211,Privilege abuse detected: user1,insider_threat,7
+2026-01-02 17:04:06.580083,bob,192.168.46.241,Unauthorized access to sensitive database,insider_threat,7
+2025-12-21 03:38:06.586686,bob,192.168.30.31,Sensitive file download by user3 after hours,insider_threat,7
+2025-12-24 10:03:06.583091,admin,192.168.48.1,Admin account used from unusual location,insider_threat,7
+2025-12-07 17:10:06.583091,user1,192.168.14.191,Sensitive file download by bob after hours,insider_threat,7
+2025-12-23 22:50:06.583091,admin,192.168.6.1,Admin accessed confidential files outside business hours,insider_threat,7
+2026-01-03 16:01:06.582092,user1,192.168.40.191,Suspicious file access by privileged user,insider_threat,7
+2025-12-21 11:16:06.585691,user1,192.168.2.101,Privilege abuse detected: system,insider_threat,7
+2025-12-25 17:31:06.584186,user2,192.168.24.91,Admin accessed confidential files outside business hours,insider_threat,7
+2025-12-30 16:12:06.584186,user1,192.168.39.111,Suspicious file access by privileged user,insider_threat,7
+2025-12-27 04:44:06.582092,eve,192.168.46.201,Sensitive file download by eve after hours,insider_threat,7
+2025-12-01 23:09:06.579084,alice,192.168.25.121,Privilege abuse detected: user3,insider_threat,7
+2025-12-20 23:23:06.584186,system,192.168.22.41,Unauthorized access to sensitive database,insider_threat,7
+2025-12-07 04:04:06.584186,charlie,192.168.11.211,Sensitive file download by charlie after hours,insider_threat,7
+2025-12-16 08:00:06.584186,system,192.168.31.101,Privilege escalation detected for charlie,insider_threat,7
+2026-01-05 08:52:06.586686,system,192.168.27.131,Admin accessed confidential files outside business hours,insider_threat,7
+2025-12-22 12:15:06.580083,alice,192.168.27.141,Privilege abuse detected: system,insider_threat,7
+2026-01-04 09:45:06.580083,eve,192.168.16.151,Admin accessed confidential files outside business hours,insider_threat,7
+2025-12-29 00:25:06.580083,david,192.168.18.71,User admin accessed HR records without authorization,insider_threat,7
+2025-12-09 03:47:06.581082,charlie,192.168.34.191,Privilege abuse detected: user2,insider_threat,7
+2025-12-31 17:11:06.581082,bob,192.168.33.151,Admin account used from unusual location,insider_threat,7
+2025-12-11 19:01:06.581082,david,192.168.14.171,Unauthorized access to sensitive database,insider_threat,7
+2025-12-10 08:25:06.582092,user1,192.168.23.1,Admin account used from unusual location,insider_threat,7
+2025-12-22 04:17:06.586686,bob,192.168.13.171,Admin account used from unusual location,insider_threat,7
+2026-01-04 02:33:06.583091,user1,192.168.18.131,Sensitive file download by system after hours,insider_threat,7
+2025-12-15 12:55:06.586686,eve,192.168.48.241,Admin accessed confidential files outside business hours,insider_threat,7
+2025-12-14 23:35:06.584186,system,192.168.12.91,Admin accessed confidential files outside business hours,insider_threat,7
+2025-12-21 02:28:06.584186,user1,192.168.44.191,Confidential data accessed at 18:46,insider_threat,7
+2025-12-17 11:32:06.585691,charlie,192.168.17.171,Admin accessed confidential files outside business hours,insider_threat,7
+2025-12-27 00:55:06.585691,admin,192.168.48.81,Unauthorized database query by admin,insider_threat,7
+2025-12-05 01:16:06.586686,charlie,192.168.49.121,Privilege abuse detected: user3,insider_threat,7
+2025-12-21 15:27:06.582092,system,192.168.40.171,Sensitive file download by system after hours,insider_threat,7
+2025-12-02 11:05:06.586686,admin,192.168.47.1,User david accessed HR records without authorization,insider_threat,7
+2025-12-05 06:33:06.584186,admin,192.168.30.231,Confidential data accessed at 19:23,insider_threat,7
+2025-12-24 00:26:06.580083,eve,192.168.13.81,Privilege escalation detected for admin,insider_threat,7
+2026-01-04 00:25:06.583091,system,192.168.9.81,Admin accessed confidential files outside business hours,insider_threat,7
+2025-12-28 11:51:06.586686,eve,192.168.20.211,User bob accessed HR records without authorization,insider_threat,7
+2025-12-13 01:44:06.585691,david,192.168.24.31,Admin accessed confidential files outside business hours,insider_threat,7
+2025-12-23 00:51:06.584186,admin,192.168.9.61,Privilege abuse detected: david,insider_threat,7
+2025-12-24 14:22:06.584186,bob,192.168.17.161,Admin account used from unusual location,insider_threat,7
+2025-12-14 04:56:06.586686,system,192.168.29.1,Suspicious file access by privileged user,insider_threat,7
+2025-12-29 11:10:06.585691,david,192.168.42.201,Admin account used from unusual location,insider_threat,7
+2025-12-22 19:17:06.585691,user1,192.168.17.101,Unauthorized access to sensitive database,insider_threat,7
+2026-01-01 00:57:06.583091,user1,192.168.29.51,Confidential data accessed at 03:24,insider_threat,7
+2025-12-25 18:50:06.583091,system,192.168.29.51,Suspicious file access by privileged user,insider_threat,7
+2025-12-03 19:49:06.581082,charlie,192.168.49.21,User alice accessed HR records without authorization,insider_threat,7
+2025-12-14 20:18:06.585691,eve,192.168.18.171,Unauthorized database query by eve,insider_threat,7
+2025-12-30 05:55:06.580083,bob,192.168.36.101,Privilege escalation detected for user1,insider_threat,7
+2025-12-13 21:34:06.586686,user1,192.168.2.81,Privilege abuse detected: charlie,insider_threat,7
+2025-12-03 21:36:06.584186,admin,192.168.30.231,Admin account used from unusual location,insider_threat,7
+2026-01-01 12:38:06.586686,charlie,192.168.5.161,Confidential data accessed at 15:26,insider_threat,7
+2025-12-21 20:35:06.580083,user1,192.168.3.221,Unauthorized access to sensitive database,insider_threat,7
+2026-01-02 09:41:06.583091,user1,192.168.16.171,Unauthorized access to sensitive database,insider_threat,7
+2025-12-09 11:54:06.581082,user3,192.168.30.131,Confidential data accessed at 19:59,insider_threat,7
+2025-12-31 15:29:06.585691,admin,192.168.1.101,Unauthorized access to sensitive database,insider_threat,7
+2025-12-09 00:04:06.586686,user1,192.168.18.51,User admin accessed HR records without authorization,insider_threat,7
+2026-01-02 20:44:06.582092,charlie,192.168.32.231,Confidential data accessed at 05:25,insider_threat,7
+2025-12-08 00:32:06.584186,user2,192.168.35.141,Privilege escalation detected for david,insider_threat,7
+2025-12-22 14:22:06.585691,user1,192.168.14.71,Confidential data accessed at 14:55,insider_threat,7
+2025-12-24 11:31:06.585691,user3,192.168.34.161,Privilege escalation detected for eve,insider_threat,7
+2025-12-29 23:24:06.583091,eve,192.168.35.31,User user2 accessed HR records without authorization,insider_threat,7
+2025-12-16 12:17:06.583091,user3,192.168.22.211,Unauthorized access to sensitive database,insider_threat,7
+2025-12-25 02:19:06.583091,bob,192.168.28.181,Confidential data accessed at 14:07,insider_threat,7
+2026-01-01 17:31:06.586686,alice,192.168.46.41,Admin account used from unusual location,insider_threat,7
+2025-12-08 21:28:06.586686,charlie,192.168.42.41,Privilege escalation detected for system,insider_threat,7
+2025-12-16 12:24:06.584186,david,192.168.12.141,Unauthorized database query by charlie,insider_threat,7
+2025-12-21 03:58:06.583091,bob,192.168.12.221,Privilege escalation detected for alice,insider_threat,7
+2025-12-16 13:29:06.585691,charlie,192.168.21.111,Confidential data accessed at 04:54,insider_threat,7
+2025-12-03 08:51:06.580083,user2,192.168.47.131,Sensitive file download by user2 after hours,insider_threat,7
+2026-01-01 21:58:06.584186,charlie,192.168.46.31,Unauthorized access to sensitive database,insider_threat,7
+2025-12-25 08:00:06.582092,charlie,192.168.41.31,Privilege escalation detected for user1,insider_threat,7
+2025-12-16 13:12:06.581082,charlie,192.168.40.41,Unauthorized database query by system,insider_threat,7
+2025-12-19 14:53:06.580083,alice,192.168.18.221,Unauthorized access to sensitive database,insider_threat,7
+2026-01-04 07:28:06.581082,admin,192.168.11.31,Privilege abuse detected: david,insider_threat,7
+2025-12-12 00:54:06.581082,david,192.168.9.241,Admin accessed confidential files outside business hours,insider_threat,7
+2025-12-03 00:25:06.581082,david,192.168.37.121,Privilege escalation detected for david,insider_threat,7
+2025-12-20 11:54:06.585691,bob,192.168.47.111,Admin account used from unusual location,insider_threat,7
+2025-12-15 03:58:06.584186,david,192.168.16.41,Sensitive file download by system after hours,insider_threat,7
+2025-12-04 21:34:06.584186,eve,192.168.4.111,Admin accessed confidential files outside business hours,insider_threat,7
+2025-12-26 03:36:06.584186,david,192.168.33.151,Unauthorized database query by david,insider_threat,7
+2025-12-02 22:50:06.580083,user3,192.168.33.161,Unauthorized access to sensitive database,insider_threat,7
+2025-12-16 20:33:06.580083,user2,192.168.1.121,Unauthorized database query by admin,insider_threat,7
+2025-12-22 15:15:06.583091,alice,192.168.31.241,Confidential data accessed at 03:06,insider_threat,7
+2025-12-16 00:32:06.585691,alice,192.168.20.221,Unauthorized database query by user3,insider_threat,7
+2025-12-24 18:56:06.580083,david,192.168.47.101,Privilege abuse detected: eve,insider_threat,7
+2025-12-07 16:48:06.584186,charlie,192.168.13.11,Privilege escalation detected for eve,insider_threat,7
+2025-12-26 16:32:06.585691,david,192.168.28.191,Confidential data accessed at 12:26,insider_threat,7
+2025-12-02 22:25:06.584186,eve,192.168.18.111,Confidential data accessed at 10:31,insider_threat,7
+2025-12-30 15:53:06.584186,david,192.168.14.221,Admin account used from unusual location,insider_threat,7
+2025-12-21 23:47:06.583091,charlie,192.168.41.101,User admin accessed HR records without authorization,insider_threat,7
+2025-12-09 05:01:06.585691,david,192.168.32.221,Sensitive file download by user2 after hours,insider_threat,7
+2025-12-08 22:05:06.584186,charlie,192.168.21.191,User user2 accessed HR records without authorization,insider_threat,7
+2025-12-30 20:38:06.582092,bob,192.168.18.131,Unauthorized access to sensitive database,insider_threat,7

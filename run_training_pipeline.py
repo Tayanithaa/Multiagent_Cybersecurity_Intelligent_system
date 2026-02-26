@@ -33,7 +33,7 @@ def main():
     # Step 1: Generate training data
     run_command(
         "Step 1/4: Generate 8,000 labeled training samples",
-        "python data/generate_training_data.py"
+        "python data/training/scripts/generate_training_data.py"
     )
     
     # Step 2: Train model

@@ -23,7 +23,7 @@ from datetime import datetime
 # CONFIGURATION
 # ==============================================================================
 CONFIG = {
-    "data_path": "data/training/full_dataset.csv",
+    "data_path": "data/training/csv/full/full_dataset.csv",
     "model_name": "distilbert-base-uncased",
     "output_dir": "models/distilbert_log_classifier",
     "max_length": 128,

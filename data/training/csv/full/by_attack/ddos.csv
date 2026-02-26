@@ -1,0 +1,1001 @@
+timestamp,user,ip,raw_message,label,label_id
+2025-12-27 18:01:06.558628,user1,192.168.7.91,UDP flood detected: source 192.168.35.181,ddos,4
+2025-12-05 12:03:06.556631,eve,192.168.43.231,Abnormal request rate: 29105 req/s,ddos,4
+2025-12-27 15:54:06.558628,eve,192.168.38.191,DDoS attack detected: 25520 requests/sec from 192.168.49.11,ddos,4
+2025-12-15 07:01:06.558628,bob,192.168.44.191,High volume of requests detected from single IP,ddos,4
+2025-12-23 00:29:06.559627,user3,192.168.26.161,Connection flood from 192.168.28.171,ddos,4
+2025-12-24 02:05:06.563627,user2,192.168.44.131,Unusual traffic spike from 192.168.9.11,ddos,4
+2025-12-04 21:11:06.562627,user3,192.168.42.141,SYN flood detected from 192.168.18.181,ddos,4
+2025-12-08 13:51:06.563627,user1,192.168.49.231,SYN flood detected from 192.168.22.231,ddos,4
+2025-12-24 23:01:06.556631,admin,192.168.2.1,Abnormal request rate: 24033 req/s,ddos,4
+2026-01-02 18:15:06.558628,user2,192.168.25.191,HTTP flood attack in progress,ddos,4
+2025-12-16 04:53:06.563627,david,192.168.34.81,Connection flood from 192.168.30.131,ddos,4
+2025-12-12 23:29:06.557630,admin,192.168.22.101,UDP flood detected: source 192.168.26.181,ddos,4
+2025-12-16 22:56:06.558628,user2,192.168.18.171,Abnormal request rate: 43126 req/s,ddos,4
+2025-12-07 21:22:06.559627,charlie,192.168.24.1,Distributed denial of service detected,ddos,4
+2025-12-18 14:48:06.559627,user3,192.168.3.31,High volume of requests detected from single IP,ddos,4
+2025-12-31 22:17:06.562627,user1,192.168.24.121,High volume of requests detected from single IP,ddos,4
+2025-12-12 09:22:06.559627,david,192.168.40.121,Abnormal request rate: 44766 req/s,ddos,4
+2025-12-30 07:07:06.558628,bob,192.168.23.51,Abnormal request rate: 17758 req/s,ddos,4
+2025-12-06 13:43:06.563627,david,192.168.15.61,High volume of requests detected from single IP,ddos,4
+2025-12-09 09:16:06.561627,david,192.168.39.41,UDP flood detected: source 192.168.28.131,ddos,4
+2025-12-18 21:34:06.561627,user2,192.168.35.211,Connection flood from 192.168.39.61,ddos,4
+2025-12-15 05:21:06.556631,user1,192.168.9.1,UDP flood detected: source 192.168.5.1,ddos,4
+2025-12-08 10:56:06.563627,charlie,192.168.16.1,Abnormal request rate: 48961 req/s,ddos,4
+2025-12-12 09:19:06.561627,eve,192.168.18.161,Network bandwidth saturated from 192.168.17.71,ddos,4
+2025-12-17 06:40:06.559627,system,192.168.4.81,Distributed denial of service detected,ddos,4
+2025-12-06 19:23:06.558628,admin,192.168.46.191,Network bandwidth saturated from 192.168.28.91,ddos,4
+2025-12-26 02:37:06.562627,david,192.168.19.71,Network bandwidth saturated from 192.168.18.171,ddos,4
+2025-12-05 21:53:06.559627,admin,192.168.9.91,HTTP flood attack in progress,ddos,4
+2025-12-12 05:06:06.560627,charlie,192.168.4.71,HTTP flood attack in progress,ddos,4
+2025-12-28 00:10:06.558628,user2,192.168.34.171,HTTP flood attack in progress,ddos,4
+2025-12-22 18:01:06.556631,admin,192.168.49.51,DDoS attack detected: 3798 requests/sec from 192.168.41.1,ddos,4
+2025-12-22 20:43:06.557630,user2,192.168.7.71,HTTP flood attack in progress,ddos,4
+2025-12-16 20:42:06.561627,david,192.168.11.11,Network bandwidth saturated from 192.168.10.211,ddos,4
+2025-12-16 04:18:06.561627,charlie,192.168.2.211,UDP flood detected: source 192.168.32.21,ddos,4
+2026-01-02 12:18:06.561627,bob,192.168.48.41,HTTP flood attack in progress,ddos,4
+2025-12-30 14:43:06.558628,alice,192.168.1.241,UDP flood detected: source 192.168.2.11,ddos,4
+2025-12-21 01:40:06.557630,alice,192.168.2.101,High volume of requests detected from single IP,ddos,4
+2025-12-02 17:49:06.557630,user1,192.168.45.61,Unusual traffic spike from 192.168.3.21,ddos,4
+2025-12-21 00:58:06.558628,alice,192.168.12.191,HTTP flood attack in progress,ddos,4
+2025-12-11 14:00:06.558628,admin,192.168.33.211,High volume of requests detected from single IP,ddos,4
+2025-12-19 15:25:06.558628,user2,192.168.9.171,UDP flood detected: source 192.168.39.191,ddos,4
+2025-12-23 10:40:06.560627,user1,192.168.37.111,Unusual traffic spike from 192.168.13.91,ddos,4
+2025-12-10 21:58:06.560627,user3,192.168.2.241,Network bandwidth saturated from 192.168.31.101,ddos,4
+2025-12-13 13:56:06.562627,user1,192.168.45.111,SYN flood detected from 192.168.46.241,ddos,4
+2025-12-05 09:50:06.556631,eve,192.168.3.241,UDP flood detected: source 192.168.44.1,ddos,4
+2025-12-17 22:56:06.561627,user2,192.168.14.131,Network bandwidth saturated from 192.168.22.81,ddos,4
+2025-12-30 00:19:06.561627,bob,192.168.3.201,DDoS attack detected: 42538 requests/sec from 192.168.12.11,ddos,4
+2025-12-18 22:15:06.561627,charlie,192.168.39.201,DDoS attack detected: 38149 requests/sec from 192.168.18.141,ddos,4
+2026-01-04 09:05:06.562627,david,192.168.28.51,Network bandwidth saturated from 192.168.45.161,ddos,4
+2025-12-03 12:10:06.557630,charlie,192.168.11.181,Connection flood from 192.168.49.161,ddos,4
+2025-12-11 02:39:06.558628,user3,192.168.29.121,Network bandwidth saturated from 192.168.25.111,ddos,4
+2025-12-09 18:47:06.560627,eve,192.168.37.61,Connection flood from 192.168.2.161,ddos,4
+2025-12-30 18:37:06.560627,system,192.168.13.201,DDoS attack detected: 2770 requests/sec from 192.168.20.111,ddos,4
+2025-12-18 10:54:06.560627,admin,192.168.15.131,Connection flood from 192.168.39.31,ddos,4
+2025-12-29 01:44:06.562627,alice,192.168.33.41,Connection flood from 192.168.40.231,ddos,4
+2025-12-06 13:37:06.560627,alice,192.168.25.121,DDoS attack detected: 3513 requests/sec from 192.168.10.131,ddos,4
+2025-12-27 06:44:06.562627,user2,192.168.10.71,Abnormal request rate: 41162 req/s,ddos,4
+2026-01-03 07:32:06.558628,charlie,192.168.45.151,Connection flood from 192.168.1.231,ddos,4
+2025-12-21 11:58:06.560627,eve,192.168.48.231,Distributed denial of service detected,ddos,4
+2025-12-26 07:14:06.560627,charlie,192.168.40.1,Network bandwidth saturated from 192.168.19.71,ddos,4
+2025-12-26 11:12:06.562627,eve,192.168.3.21,Abnormal request rate: 43253 req/s,ddos,4
+2025-12-03 21:04:06.561627,user3,192.168.34.171,Abnormal request rate: 36424 req/s,ddos,4
+2025-12-07 05:19:06.560627,admin,192.168.35.21,HTTP flood attack in progress,ddos,4
+2025-12-07 01:17:06.561627,user1,192.168.8.231,Network bandwidth saturated from 192.168.43.41,ddos,4
+2025-12-12 03:42:06.561627,eve,192.168.21.221,Unusual traffic spike from 192.168.33.21,ddos,4
+2025-12-13 04:25:06.563627,user1,192.168.8.51,HTTP flood attack in progress,ddos,4
+2026-01-04 14:51:06.557630,user3,192.168.22.11,DDoS attack detected: 46139 requests/sec from 192.168.33.51,ddos,4
+2025-12-14 19:55:06.561627,user3,192.168.1.101,SYN flood detected from 192.168.40.161,ddos,4
+2025-12-11 12:37:06.559627,user2,192.168.18.111,DDoS attack detected: 5430 requests/sec from 192.168.37.151,ddos,4
+2025-12-18 01:15:06.556631,system,192.168.39.1,High volume of requests detected from single IP,ddos,4
+2025-12-19 19:11:06.560627,user2,192.168.9.241,UDP flood detected: source 192.168.21.201,ddos,4
+2025-12-21 05:21:06.560627,admin,192.168.1.121,SYN flood detected from 192.168.37.141,ddos,4
+2025-12-29 10:33:06.558628,alice,192.168.8.1,Abnormal request rate: 44998 req/s,ddos,4
+2025-12-22 21:50:06.560627,charlie,192.168.33.191,Unusual traffic spike from 192.168.37.241,ddos,4
+2025-12-14 06:15:06.563627,user2,192.168.17.191,Network bandwidth saturated from 192.168.11.141,ddos,4
+2025-12-04 10:05:06.559627,charlie,192.168.34.131,HTTP flood attack in progress,ddos,4
+2025-12-15 19:02:06.559627,user1,192.168.10.211,High volume of requests detected from single IP,ddos,4
+2025-12-13 09:56:06.561627,david,192.168.38.221,Network bandwidth saturated from 192.168.6.201,ddos,4
+2026-01-04 02:31:06.562627,admin,192.168.43.191,Distributed denial of service detected,ddos,4
+2025-12-09 20:20:06.561627,user3,192.168.38.1,Network bandwidth saturated from 192.168.47.41,ddos,4
+2025-12-11 07:56:06.562627,user3,192.168.4.241,High volume of requests detected from single IP,ddos,4
+2025-12-19 01:14:06.561627,alice,192.168.20.61,Distributed denial of service detected,ddos,4
+2025-12-22 20:13:06.557630,user3,192.168.21.81,Connection flood from 192.168.2.211,ddos,4
+2025-12-23 15:09:06.560627,user1,192.168.17.21,Distributed denial of service detected,ddos,4
+2026-01-03 04:18:06.557630,bob,192.168.40.221,SYN flood detected from 192.168.11.101,ddos,4
+2025-12-07 22:54:06.561627,user1,192.168.25.131,HTTP flood attack in progress,ddos,4
+2025-12-09 17:32:06.563627,david,192.168.8.31,UDP flood detected: source 192.168.45.81,ddos,4
+2025-12-19 20:34:06.561627,bob,192.168.32.181,Abnormal request rate: 36556 req/s,ddos,4
+2025-12-11 09:31:06.560627,bob,192.168.2.31,HTTP flood attack in progress,ddos,4
+2025-12-24 01:30:06.557630,alice,192.168.5.111,Abnormal request rate: 22383 req/s,ddos,4
+2025-12-27 17:34:06.563627,eve,192.168.23.241,DDoS attack detected: 33155 requests/sec from 192.168.11.51,ddos,4
+2025-12-28 22:19:06.558628,user1,192.168.46.131,HTTP flood attack in progress,ddos,4
+2025-12-08 00:08:06.560627,charlie,192.168.38.101,Unusual traffic spike from 192.168.21.131,ddos,4
+2025-12-28 20:13:06.556631,admin,192.168.20.121,DDoS attack detected: 38917 requests/sec from 192.168.43.221,ddos,4
+2025-12-31 21:23:06.558628,david,192.168.7.231,Network bandwidth saturated from 192.168.32.131,ddos,4
+2025-12-25 05:00:06.560627,system,192.168.23.101,Network bandwidth saturated from 192.168.10.141,ddos,4
+2026-01-04 16:52:06.558628,alice,192.168.23.131,Network bandwidth saturated from 192.168.6.131,ddos,4
+2025-12-08 09:22:06.561627,eve,192.168.21.141,Connection flood from 192.168.49.71,ddos,4
+2025-12-03 17:25:06.559627,charlie,192.168.33.201,Network bandwidth saturated from 192.168.22.131,ddos,4
+2025-12-06 19:30:06.562627,user2,192.168.10.31,Network bandwidth saturated from 192.168.16.71,ddos,4
+2026-01-04 02:32:06.560627,david,192.168.4.201,Abnormal request rate: 11135 req/s,ddos,4
+2025-12-31 12:20:06.556631,user1,192.168.46.241,Connection flood from 192.168.42.161,ddos,4
+2025-12-08 03:40:06.558628,david,192.168.44.51,Network bandwidth saturated from 192.168.36.131,ddos,4
+2025-12-16 14:57:06.562627,alice,192.168.27.241,Abnormal request rate: 23878 req/s,ddos,4
+2025-12-14 17:01:06.559627,alice,192.168.20.91,Distributed denial of service detected,ddos,4
+2025-12-09 06:04:06.556631,user1,192.168.34.181,Abnormal request rate: 8125 req/s,ddos,4
+2025-12-28 14:47:06.563627,system,192.168.28.21,HTTP flood attack in progress,ddos,4
+2025-12-06 11:09:06.556631,user2,192.168.13.191,Abnormal request rate: 18062 req/s,ddos,4
+2025-12-17 08:27:06.559627,user3,192.168.35.11,DDoS attack detected: 45928 requests/sec from 192.168.22.51,ddos,4
+2025-12-08 13:47:06.556631,alice,192.168.2.81,UDP flood detected: source 192.168.18.241,ddos,4
+2025-12-04 23:30:06.563627,system,192.168.35.191,Network bandwidth saturated from 192.168.7.121,ddos,4
+2025-12-25 08:58:06.556631,admin,192.168.8.91,Connection flood from 192.168.27.111,ddos,4
+2025-12-27 15:30:06.557630,system,192.168.1.241,UDP flood detected: source 192.168.38.221,ddos,4
+2025-12-03 14:24:06.562627,charlie,192.168.21.171,Unusual traffic spike from 192.168.21.11,ddos,4
+2026-01-03 16:03:06.557630,user1,192.168.35.211,Connection flood from 192.168.6.111,ddos,4
+2025-12-26 04:07:06.557630,user1,192.168.14.171,UDP flood detected: source 192.168.10.111,ddos,4
+2025-12-17 10:56:06.563627,user3,192.168.3.171,SYN flood detected from 192.168.32.171,ddos,4
+2026-01-04 04:34:06.559627,alice,192.168.16.61,UDP flood detected: source 192.168.44.151,ddos,4
+2025-12-03 12:37:06.561627,user2,192.168.32.151,DDoS attack detected: 44175 requests/sec from 192.168.18.81,ddos,4
+2025-12-15 02:47:06.561627,charlie,192.168.13.111,Network bandwidth saturated from 192.168.16.11,ddos,4
+2025-12-11 15:22:06.559627,user2,192.168.26.141,High volume of requests detected from single IP,ddos,4
+2025-12-03 04:30:06.559627,david,192.168.6.221,DDoS attack detected: 16932 requests/sec from 192.168.30.141,ddos,4
+2025-12-28 00:06:06.557630,alice,192.168.12.171,Distributed denial of service detected,ddos,4
+2025-12-28 08:39:06.563627,bob,192.168.25.21,SYN flood detected from 192.168.13.171,ddos,4
+2025-12-08 13:04:06.559627,user3,192.168.35.51,UDP flood detected: source 192.168.32.71,ddos,4
+2026-01-04 17:54:06.560627,david,192.168.35.51,Connection flood from 192.168.41.111,ddos,4
+2025-12-18 09:23:06.558628,david,192.168.25.151,DDoS attack detected: 24521 requests/sec from 192.168.18.11,ddos,4
+2025-12-16 11:55:06.561627,charlie,192.168.33.91,Connection flood from 192.168.23.121,ddos,4
+2025-12-26 22:15:06.561627,bob,192.168.41.1,Distributed denial of service detected,ddos,4
+2025-12-29 12:11:06.563627,user3,192.168.4.191,Unusual traffic spike from 192.168.29.161,ddos,4
+2025-12-25 09:27:06.560627,david,192.168.27.81,Distributed denial of service detected,ddos,4
+2025-12-12 12:17:06.561627,user3,192.168.35.231,Connection flood from 192.168.12.241,ddos,4
+2025-12-08 16:36:06.562627,user2,192.168.34.181,SYN flood detected from 192.168.34.151,ddos,4
+2025-12-25 19:05:06.561627,system,192.168.35.1,Abnormal request rate: 32366 req/s,ddos,4
+2025-12-31 13:45:06.559627,alice,192.168.46.191,Unusual traffic spike from 192.168.44.1,ddos,4
+2025-12-22 15:03:06.556631,charlie,192.168.49.141,Connection flood from 192.168.40.111,ddos,4
+2025-12-20 08:31:06.560627,user3,192.168.37.121,DDoS attack detected: 14466 requests/sec from 192.168.10.51,ddos,4
+2025-12-04 22:59:06.558628,bob,192.168.29.141,UDP flood detected: source 192.168.1.11,ddos,4
+2025-12-08 14:44:06.562627,alice,192.168.44.51,High volume of requests detected from single IP,ddos,4
+2025-12-04 20:04:06.558628,charlie,192.168.31.61,Unusual traffic spike from 192.168.14.51,ddos,4
+2025-12-29 18:09:06.557630,david,192.168.20.171,Distributed denial of service detected,ddos,4
+2025-12-10 01:24:06.558628,user2,192.168.16.41,Unusual traffic spike from 192.168.42.221,ddos,4
+2025-12-25 20:46:06.557630,system,192.168.47.111,UDP flood detected: source 192.168.27.81,ddos,4
+2026-01-05 02:48:06.560627,user3,192.168.26.101,SYN flood detected from 192.168.2.11,ddos,4
+2026-01-02 19:27:06.558628,user3,192.168.34.41,SYN flood detected from 192.168.35.121,ddos,4
+2025-12-13 04:06:06.558628,admin,192.168.14.91,High volume of requests detected from single IP,ddos,4
+2025-12-10 03:39:06.562627,david,192.168.31.101,Network bandwidth saturated from 192.168.2.191,ddos,4
+2025-12-21 20:21:06.556631,user2,192.168.16.241,SYN flood detected from 192.168.38.121,ddos,4
+2026-01-03 16:40:06.557630,david,192.168.7.81,HTTP flood attack in progress,ddos,4
+2025-12-11 23:37:06.559627,alice,192.168.35.41,SYN flood detected from 192.168.38.231,ddos,4
+2025-12-07 07:35:06.558628,system,192.168.48.221,Distributed denial of service detected,ddos,4
+2025-12-09 10:44:06.562627,bob,192.168.9.11,Network bandwidth saturated from 192.168.49.51,ddos,4
+2025-12-06 16:43:06.559627,user3,192.168.26.161,SYN flood detected from 192.168.28.111,ddos,4
+2025-12-09 14:52:06.559627,user2,192.168.12.151,Unusual traffic spike from 192.168.37.231,ddos,4
+2025-12-05 23:51:06.558628,david,192.168.26.171,Distributed denial of service detected,ddos,4
+2025-12-19 07:46:06.561627,david,192.168.28.191,DDoS attack detected: 11374 requests/sec from 192.168.28.201,ddos,4
+2025-12-04 20:45:06.556631,admin,192.168.48.41,Abnormal request rate: 9498 req/s,ddos,4
+2025-12-22 00:04:06.559627,admin,192.168.44.191,UDP flood detected: source 192.168.30.211,ddos,4
+2025-12-18 18:42:06.563627,admin,192.168.46.151,SYN flood detected from 192.168.33.191,ddos,4
+2025-12-27 08:50:06.562627,bob,192.168.13.221,Distributed denial of service detected,ddos,4
+2025-12-02 07:44:06.556631,user1,192.168.24.1,HTTP flood attack in progress,ddos,4
+2025-12-06 22:28:06.563627,user1,192.168.11.241,Unusual traffic spike from 192.168.40.151,ddos,4
+2025-12-19 05:37:06.561627,admin,192.168.33.161,Network bandwidth saturated from 192.168.3.71,ddos,4
+2025-12-11 11:02:06.560627,alice,192.168.24.111,HTTP flood attack in progress,ddos,4
+2025-12-22 17:26:06.562627,bob,192.168.36.21,DDoS attack detected: 35879 requests/sec from 192.168.14.231,ddos,4
+2025-12-16 18:28:06.557630,user2,192.168.18.171,High volume of requests detected from single IP,ddos,4
+2025-12-22 04:51:06.562627,eve,192.168.12.51,High volume of requests detected from single IP,ddos,4
+2025-12-03 14:57:06.561627,user1,192.168.49.211,Network bandwidth saturated from 192.168.29.31,ddos,4
+2025-12-08 10:13:06.561627,bob,192.168.38.1,Abnormal request rate: 23731 req/s,ddos,4
+2025-12-11 17:23:06.559627,user2,192.168.45.221,Connection flood from 192.168.26.201,ddos,4
+2025-12-30 07:43:06.561627,system,192.168.33.181,UDP flood detected: source 192.168.43.101,ddos,4
+2026-01-02 17:00:06.558628,alice,192.168.8.241,Connection flood from 192.168.35.221,ddos,4
+2025-12-07 00:33:06.563627,david,192.168.5.191,Unusual traffic spike from 192.168.47.91,ddos,4
+2025-12-29 00:01:06.557630,bob,192.168.38.241,UDP flood detected: source 192.168.2.81,ddos,4
+2025-12-21 18:05:06.562627,alice,192.168.15.241,Connection flood from 192.168.44.211,ddos,4
+2025-12-17 10:11:06.560627,user3,192.168.5.81,DDoS attack detected: 30891 requests/sec from 192.168.23.11,ddos,4
+2025-12-29 00:52:06.560627,admin,192.168.28.191,Abnormal request rate: 39402 req/s,ddos,4
+2025-12-26 00:23:06.562627,charlie,192.168.22.241,HTTP flood attack in progress,ddos,4
+2025-12-25 03:01:06.561627,bob,192.168.38.111,SYN flood detected from 192.168.1.91,ddos,4
+2025-12-27 18:46:06.560627,eve,192.168.10.231,Connection flood from 192.168.38.111,ddos,4
+2026-01-03 16:37:06.562627,bob,192.168.6.151,Unusual traffic spike from 192.168.39.41,ddos,4
+2025-12-29 17:46:06.558628,david,192.168.2.91,SYN flood detected from 192.168.28.201,ddos,4
+2025-12-18 05:26:06.561627,bob,192.168.1.61,Unusual traffic spike from 192.168.17.11,ddos,4
+2025-12-05 01:49:06.560627,user3,192.168.2.191,High volume of requests detected from single IP,ddos,4
+2026-01-03 06:04:06.561627,system,192.168.4.211,High volume of requests detected from single IP,ddos,4
+2025-12-16 00:18:06.561627,bob,192.168.29.131,DDoS attack detected: 5097 requests/sec from 192.168.31.211,ddos,4
+2025-12-27 15:04:06.558628,charlie,192.168.25.231,Abnormal request rate: 27392 req/s,ddos,4
+2025-12-27 19:44:06.557630,alice,192.168.49.241,Unusual traffic spike from 192.168.25.191,ddos,4
+2025-12-16 20:50:06.563627,admin,192.168.37.71,High volume of requests detected from single IP,ddos,4
+2025-12-10 15:37:06.559627,charlie,192.168.37.51,Abnormal request rate: 8751 req/s,ddos,4
+2025-12-15 22:57:06.557630,system,192.168.6.161,Unusual traffic spike from 192.168.49.91,ddos,4
+2025-12-17 12:04:06.562627,david,192.168.47.211,HTTP flood attack in progress,ddos,4
+2025-12-21 01:56:06.559627,alice,192.168.6.41,UDP flood detected: source 192.168.29.1,ddos,4
+2025-12-18 02:13:06.562627,david,192.168.13.221,Distributed denial of service detected,ddos,4
+2025-12-13 05:37:06.558628,bob,192.168.39.131,HTTP flood attack in progress,ddos,4
+2026-01-01 07:07:06.558628,bob,192.168.24.101,HTTP flood attack in progress,ddos,4
+2025-12-05 10:11:06.559627,user3,192.168.33.191,Connection flood from 192.168.14.61,ddos,4
+2025-12-05 09:20:06.561627,eve,192.168.47.201,Distributed denial of service detected,ddos,4
+2025-12-03 19:49:06.560627,user1,192.168.46.221,SYN flood detected from 192.168.18.51,ddos,4
+2025-12-10 19:55:06.563627,alice,192.168.15.131,Unusual traffic spike from 192.168.33.51,ddos,4
+2025-12-26 18:26:06.563627,bob,192.168.30.201,Abnormal request rate: 27185 req/s,ddos,4
+2025-12-19 16:31:06.560627,charlie,192.168.19.171,Distributed denial of service detected,ddos,4
+2025-12-07 11:52:06.558628,user1,192.168.26.61,DDoS attack detected: 8570 requests/sec from 192.168.35.131,ddos,4
+2025-12-08 10:23:06.563627,bob,192.168.10.61,SYN flood detected from 192.168.32.51,ddos,4
+2025-12-18 02:20:06.559627,alice,192.168.29.201,Unusual traffic spike from 192.168.20.11,ddos,4
+2025-12-16 05:21:06.562627,david,192.168.1.91,Network bandwidth saturated from 192.168.37.11,ddos,4
+2025-12-24 09:29:06.556631,system,192.168.40.91,UDP flood detected: source 192.168.9.111,ddos,4
+2025-12-21 06:53:06.561627,user3,192.168.49.101,Unusual traffic spike from 192.168.7.181,ddos,4
+2025-12-15 23:10:06.558628,alice,192.168.2.11,Unusual traffic spike from 192.168.40.91,ddos,4
+2025-12-16 02:52:06.557630,alice,192.168.22.31,Abnormal request rate: 43168 req/s,ddos,4
+2025-12-16 21:37:06.559627,bob,192.168.3.31,High volume of requests detected from single IP,ddos,4
+2025-12-07 10:16:06.559627,user3,192.168.6.11,Distributed denial of service detected,ddos,4
+2025-12-09 14:14:06.560627,eve,192.168.38.171,UDP flood detected: source 192.168.41.81,ddos,4
+2025-12-29 02:59:06.562627,system,192.168.8.141,HTTP flood attack in progress,ddos,4
+2025-12-20 17:55:06.557630,user2,192.168.5.61,Connection flood from 192.168.14.1,ddos,4
+2025-12-29 06:39:06.560627,eve,192.168.36.71,Connection flood from 192.168.24.11,ddos,4
+2025-12-21 19:41:06.562627,charlie,192.168.15.201,Unusual traffic spike from 192.168.35.181,ddos,4
+2025-12-21 17:11:06.558628,user1,192.168.43.221,Abnormal request rate: 6225 req/s,ddos,4
+2025-12-09 04:31:06.560627,admin,192.168.36.171,Unusual traffic spike from 192.168.23.51,ddos,4
+2025-12-07 22:33:06.561627,bob,192.168.7.181,Unusual traffic spike from 192.168.25.31,ddos,4
+2025-12-05 11:32:06.559627,david,192.168.49.71,High volume of requests detected from single IP,ddos,4
+2025-12-18 08:51:06.557630,alice,192.168.36.81,Abnormal request rate: 25922 req/s,ddos,4
+2025-12-04 19:04:06.563627,bob,192.168.45.101,DDoS attack detected: 38078 requests/sec from 192.168.41.231,ddos,4
+2025-12-27 09:57:06.556631,user1,192.168.29.51,DDoS attack detected: 13405 requests/sec from 192.168.10.51,ddos,4
+2025-12-30 02:29:06.557630,alice,192.168.44.101,Network bandwidth saturated from 192.168.7.1,ddos,4
+2025-12-05 19:46:06.563627,system,192.168.39.71,Unusual traffic spike from 192.168.21.231,ddos,4
+2025-12-02 02:26:06.560627,user2,192.168.34.11,HTTP flood attack in progress,ddos,4
+2025-12-04 15:07:06.561627,charlie,192.168.42.151,Connection flood from 192.168.18.1,ddos,4
+2025-12-09 21:36:06.559627,user3,192.168.46.71,Network bandwidth saturated from 192.168.37.131,ddos,4
+2025-12-22 00:31:06.561627,user3,192.168.14.111,HTTP flood attack in progress,ddos,4
+2025-12-07 22:39:06.557630,eve,192.168.21.1,Network bandwidth saturated from 192.168.25.131,ddos,4
+2025-12-25 01:29:06.560627,system,192.168.32.61,DDoS attack detected: 43914 requests/sec from 192.168.45.151,ddos,4
+2025-12-25 00:33:06.559627,admin,192.168.25.1,DDoS attack detected: 13101 requests/sec from 192.168.9.111,ddos,4
+2026-01-01 20:26:06.562627,user1,192.168.18.21,Distributed denial of service detected,ddos,4
+2026-01-02 12:05:06.557630,david,192.168.46.171,Distributed denial of service detected,ddos,4
+2025-12-23 00:06:06.557630,admin,192.168.33.231,HTTP flood attack in progress,ddos,4
+2025-12-30 09:08:06.562627,user2,192.168.8.161,SYN flood detected from 192.168.47.11,ddos,4
+2025-12-24 06:12:06.560627,admin,192.168.30.171,HTTP flood attack in progress,ddos,4
+2025-12-21 18:19:06.559627,system,192.168.32.121,HTTP flood attack in progress,ddos,4
+2025-12-22 06:46:06.556631,system,192.168.4.121,UDP flood detected: source 192.168.7.161,ddos,4
+2025-12-21 20:06:06.559627,system,192.168.15.161,Unusual traffic spike from 192.168.23.131,ddos,4
+2025-12-12 13:46:06.561627,user2,192.168.35.201,Distributed denial of service detected,ddos,4
+2025-12-09 23:18:06.561627,user1,192.168.37.111,UDP flood detected: source 192.168.45.151,ddos,4
+2025-12-10 08:49:06.560627,user2,192.168.31.151,Distributed denial of service detected,ddos,4
+2025-12-31 21:33:06.562627,admin,192.168.38.241,HTTP flood attack in progress,ddos,4
+2025-12-02 07:04:06.561627,admin,192.168.27.1,HTTP flood attack in progress,ddos,4
+2025-12-26 07:16:06.562627,system,192.168.45.21,DDoS attack detected: 10697 requests/sec from 192.168.35.1,ddos,4
+2025-12-08 02:39:06.556631,user1,192.168.28.221,Abnormal request rate: 9687 req/s,ddos,4
+2025-12-08 11:42:06.563627,alice,192.168.18.151,High volume of requests detected from single IP,ddos,4
+2025-12-15 23:18:06.559627,bob,192.168.28.81,HTTP flood attack in progress,ddos,4
+2026-01-04 23:53:06.559627,user3,192.168.40.141,Connection flood from 192.168.31.201,ddos,4
+2025-12-10 04:15:06.559627,charlie,192.168.18.41,Connection flood from 192.168.35.141,ddos,4
+2026-01-02 22:13:06.558628,charlie,192.168.29.171,Unusual traffic spike from 192.168.21.91,ddos,4
+2026-01-01 22:19:06.560627,bob,192.168.36.231,Network bandwidth saturated from 192.168.35.101,ddos,4
+2025-12-08 10:54:06.559627,alice,192.168.10.21,Abnormal request rate: 22556 req/s,ddos,4
+2025-12-19 22:40:06.558628,system,192.168.31.191,Network bandwidth saturated from 192.168.40.171,ddos,4
+2026-01-04 09:22:06.560627,eve,192.168.27.201,Network bandwidth saturated from 192.168.49.1,ddos,4
+2025-12-16 00:50:06.560627,user1,192.168.22.111,SYN flood detected from 192.168.18.241,ddos,4
+2025-12-27 13:40:06.558628,charlie,192.168.23.151,UDP flood detected: source 192.168.37.61,ddos,4
+2025-12-18 17:10:06.561627,user1,192.168.25.141,Unusual traffic spike from 192.168.43.91,ddos,4
+2026-01-04 20:14:06.558628,system,192.168.36.51,High volume of requests detected from single IP,ddos,4
+2025-12-18 02:21:06.556631,david,192.168.14.101,SYN flood detected from 192.168.20.31,ddos,4
+2026-01-05 07:20:06.556631,admin,192.168.28.61,SYN flood detected from 192.168.28.161,ddos,4
+2026-01-01 09:37:06.559627,user1,192.168.30.211,High volume of requests detected from single IP,ddos,4
+2025-12-16 04:55:06.558628,user2,192.168.45.41,Abnormal request rate: 2657 req/s,ddos,4
+2025-12-20 15:37:06.563627,alice,192.168.24.241,Connection flood from 192.168.10.71,ddos,4
+2025-12-27 13:34:06.563627,david,192.168.47.221,HTTP flood attack in progress,ddos,4
+2025-12-06 09:48:06.556631,bob,192.168.19.21,Abnormal request rate: 28130 req/s,ddos,4
+2025-12-22 01:41:06.557630,user2,192.168.12.131,Unusual traffic spike from 192.168.48.131,ddos,4
+2025-12-06 15:41:06.558628,alice,192.168.25.101,Network bandwidth saturated from 192.168.43.121,ddos,4
+2025-12-26 23:15:06.558628,user2,192.168.12.141,UDP flood detected: source 192.168.29.81,ddos,4
+2025-12-28 16:54:06.562627,eve,192.168.8.141,Unusual traffic spike from 192.168.19.81,ddos,4
+2025-12-30 20:20:06.557630,charlie,192.168.44.181,Abnormal request rate: 40032 req/s,ddos,4
+2025-12-17 12:57:06.557630,user3,192.168.21.1,High volume of requests detected from single IP,ddos,4
+2025-12-30 06:21:06.558628,user1,192.168.8.131,Connection flood from 192.168.12.81,ddos,4
+2025-12-11 23:48:06.560627,eve,192.168.8.81,Network bandwidth saturated from 192.168.41.21,ddos,4
+2025-12-11 08:16:06.557630,system,192.168.39.21,SYN flood detected from 192.168.49.1,ddos,4
+2025-12-29 11:53:06.559627,user2,192.168.19.1,Distributed denial of service detected,ddos,4
+2025-12-13 07:07:06.559627,eve,192.168.24.141,Distributed denial of service detected,ddos,4
+2026-01-04 14:20:06.561627,admin,192.168.16.111,SYN flood detected from 192.168.26.191,ddos,4
+2025-12-26 11:36:06.558628,user2,192.168.45.231,Abnormal request rate: 32595 req/s,ddos,4
+2026-01-04 15:38:06.562627,system,192.168.19.111,UDP flood detected: source 192.168.48.131,ddos,4
+2025-12-12 00:45:06.557630,eve,192.168.45.31,High volume of requests detected from single IP,ddos,4
+2026-01-02 15:01:06.561627,user1,192.168.24.31,DDoS attack detected: 28689 requests/sec from 192.168.44.71,ddos,4
+2025-12-31 10:44:06.560627,user1,192.168.26.1,DDoS attack detected: 49841 requests/sec from 192.168.24.181,ddos,4
+2025-12-11 13:42:06.563627,charlie,192.168.30.111,Connection flood from 192.168.2.41,ddos,4
+2025-12-10 23:29:06.561627,david,192.168.2.181,Unusual traffic spike from 192.168.38.51,ddos,4
+2025-12-11 20:43:06.562627,user1,192.168.27.241,Distributed denial of service detected,ddos,4
+2025-12-29 04:19:06.562627,alice,192.168.10.211,Network bandwidth saturated from 192.168.25.131,ddos,4
+2026-01-02 02:48:06.559627,system,192.168.2.41,High volume of requests detected from single IP,ddos,4
+2025-12-26 16:28:06.562627,eve,192.168.31.91,Distributed denial of service detected,ddos,4
+2025-12-23 00:08:06.560627,system,192.168.31.151,High volume of requests detected from single IP,ddos,4
+2025-12-21 06:38:06.560627,bob,192.168.1.161,UDP flood detected: source 192.168.25.11,ddos,4
+2025-12-14 02:56:06.559627,user1,192.168.29.101,Network bandwidth saturated from 192.168.4.51,ddos,4
+2025-12-04 23:40:06.562627,user1,192.168.17.221,Unusual traffic spike from 192.168.1.231,ddos,4
+2025-12-20 05:08:06.558628,user3,192.168.49.91,Connection flood from 192.168.47.161,ddos,4
+2025-12-12 10:03:06.563627,charlie,192.168.28.111,UDP flood detected: source 192.168.7.31,ddos,4
+2025-12-17 03:15:06.559627,charlie,192.168.14.121,HTTP flood attack in progress,ddos,4
+2025-12-06 18:54:06.561627,user3,192.168.19.131,Distributed denial of service detected,ddos,4
+2025-12-08 07:39:06.562627,user1,192.168.34.191,Distributed denial of service detected,ddos,4
+2025-12-14 07:29:06.560627,alice,192.168.44.171,Unusual traffic spike from 192.168.3.81,ddos,4
+2025-12-14 21:31:06.560627,user3,192.168.43.191,SYN flood detected from 192.168.19.121,ddos,4
+2025-12-02 04:36:06.561627,admin,192.168.4.151,Network bandwidth saturated from 192.168.28.161,ddos,4
+2025-12-02 15:30:06.557630,eve,192.168.28.171,Abnormal request rate: 48293 req/s,ddos,4
+2025-12-25 06:48:06.557630,admin,192.168.40.141,UDP flood detected: source 192.168.38.61,ddos,4
+2025-12-23 04:37:06.558628,admin,192.168.40.1,High volume of requests detected from single IP,ddos,4
+2025-12-24 09:56:06.558628,david,192.168.22.161,Distributed denial of service detected,ddos,4
+2025-12-31 08:11:06.561627,user1,192.168.39.121,HTTP flood attack in progress,ddos,4
+2025-12-29 20:35:06.561627,bob,192.168.18.71,SYN flood detected from 192.168.33.191,ddos,4
+2025-12-24 04:39:06.563627,eve,192.168.13.161,Connection flood from 192.168.35.91,ddos,4
+2025-12-30 15:25:06.558628,bob,192.168.39.221,DDoS attack detected: 11729 requests/sec from 192.168.2.211,ddos,4
+2025-12-08 03:32:06.560627,system,192.168.49.1,Abnormal request rate: 22881 req/s,ddos,4
+2025-12-28 17:56:06.558628,bob,192.168.42.101,SYN flood detected from 192.168.24.141,ddos,4
+2025-12-15 09:02:06.558628,alice,192.168.45.51,Unusual traffic spike from 192.168.8.71,ddos,4
+2025-12-06 07:14:06.560627,bob,192.168.22.181,Connection flood from 192.168.4.181,ddos,4
+2025-12-20 00:50:06.561627,user2,192.168.19.201,High volume of requests detected from single IP,ddos,4
+2025-12-11 14:10:06.560627,david,192.168.15.121,Connection flood from 192.168.46.31,ddos,4
+2025-12-12 03:33:06.561627,david,192.168.7.171,SYN flood detected from 192.168.26.41,ddos,4
+2025-12-21 11:40:06.559627,charlie,192.168.6.101,Unusual traffic spike from 192.168.43.241,ddos,4
+2025-12-30 00:10:06.561627,admin,192.168.43.241,SYN flood detected from 192.168.47.41,ddos,4
+2026-01-04 15:29:06.562627,bob,192.168.25.171,Abnormal request rate: 4593 req/s,ddos,4
+2025-12-02 14:46:06.562627,david,192.168.42.61,HTTP flood attack in progress,ddos,4
+2026-01-01 06:57:06.560627,user3,192.168.1.181,Connection flood from 192.168.43.191,ddos,4
+2026-01-05 09:29:06.560627,user1,192.168.14.141,DDoS attack detected: 14472 requests/sec from 192.168.31.31,ddos,4
+2025-12-16 11:06:06.562627,alice,192.168.40.221,HTTP flood attack in progress,ddos,4
+2025-12-08 18:17:06.558628,user3,192.168.11.61,Connection flood from 192.168.15.11,ddos,4
+2025-12-24 18:56:06.558628,charlie,192.168.22.51,SYN flood detected from 192.168.42.151,ddos,4
+2025-12-01 21:16:06.556631,user2,192.168.6.11,Connection flood from 192.168.9.211,ddos,4
+2025-12-19 13:16:06.559627,alice,192.168.35.241,SYN flood detected from 192.168.36.101,ddos,4
+2025-12-09 05:35:06.561627,system,192.168.35.121,High volume of requests detected from single IP,ddos,4
+2025-12-11 15:20:06.558628,user1,192.168.5.91,Distributed denial of service detected,ddos,4
+2025-12-16 10:00:06.560627,user3,192.168.38.161,Abnormal request rate: 25882 req/s,ddos,4
+2025-12-28 02:50:06.562627,charlie,192.168.33.121,Connection flood from 192.168.3.11,ddos,4
+2025-12-06 03:09:06.559627,user3,192.168.25.171,Network bandwidth saturated from 192.168.4.201,ddos,4
+2025-12-02 18:37:06.561627,alice,192.168.20.71,Unusual traffic spike from 192.168.13.161,ddos,4
+2026-01-04 10:40:06.558628,user2,192.168.32.171,SYN flood detected from 192.168.34.211,ddos,4
+2025-12-19 11:30:06.563627,charlie,192.168.5.211,SYN flood detected from 192.168.18.51,ddos,4
+2025-12-25 10:17:06.559627,user3,192.168.37.201,Connection flood from 192.168.46.51,ddos,4
+2025-12-19 15:38:06.560627,user2,192.168.42.221,SYN flood detected from 192.168.37.161,ddos,4
+2025-12-08 13:56:06.562627,user2,192.168.27.221,Unusual traffic spike from 192.168.30.161,ddos,4
+2025-12-22 00:36:06.557630,bob,192.168.29.201,Distributed denial of service detected,ddos,4
+2025-12-25 12:59:06.559627,user3,192.168.25.221,Distributed denial of service detected,ddos,4
+2025-12-09 15:52:06.556631,charlie,192.168.33.61,Unusual traffic spike from 192.168.4.141,ddos,4
+2025-12-11 12:16:06.557630,admin,192.168.26.141,Unusual traffic spike from 192.168.21.171,ddos,4
+2026-01-04 04:08:06.559627,user1,192.168.17.131,Unusual traffic spike from 192.168.39.191,ddos,4
+2026-01-01 17:34:06.556631,bob,192.168.12.201,DDoS attack detected: 19364 requests/sec from 192.168.15.41,ddos,4
+2025-12-19 22:47:06.558628,alice,192.168.12.61,UDP flood detected: source 192.168.33.221,ddos,4
+2025-12-02 15:51:06.562627,user2,192.168.42.171,High volume of requests detected from single IP,ddos,4
+2026-01-04 20:46:06.560627,user2,192.168.14.41,Abnormal request rate: 43636 req/s,ddos,4
+2025-12-01 18:29:06.560627,user1,192.168.14.151,Abnormal request rate: 36558 req/s,ddos,4
+2025-12-06 08:25:06.560627,admin,192.168.13.121,HTTP flood attack in progress,ddos,4
+2026-01-04 07:43:06.561627,bob,192.168.4.51,HTTP flood attack in progress,ddos,4
+2025-12-02 08:53:06.561627,david,192.168.31.191,Abnormal request rate: 16443 req/s,ddos,4
+2025-12-16 02:18:06.556631,eve,192.168.22.171,Unusual traffic spike from 192.168.5.71,ddos,4
+2025-12-12 12:27:06.558628,user2,192.168.24.201,SYN flood detected from 192.168.48.71,ddos,4
+2025-12-31 05:40:06.556631,user1,192.168.4.241,Distributed denial of service detected,ddos,4
+2025-12-21 14:14:06.562627,user3,192.168.36.21,High volume of requests detected from single IP,ddos,4
+2025-12-27 03:03:06.562627,user3,192.168.39.191,Distributed denial of service detected,ddos,4
+2025-12-06 10:46:06.560627,charlie,192.168.24.41,SYN flood detected from 192.168.39.211,ddos,4
+2025-12-12 18:14:06.561627,user1,192.168.12.231,Network bandwidth saturated from 192.168.29.81,ddos,4
+2025-12-21 07:23:06.562627,admin,192.168.24.221,Distributed denial of service detected,ddos,4
+2026-01-03 10:33:06.562627,admin,192.168.32.91,UDP flood detected: source 192.168.15.211,ddos,4
+2025-12-21 18:08:06.560627,bob,192.168.11.211,SYN flood detected from 192.168.36.61,ddos,4
+2026-01-04 18:20:06.556631,bob,192.168.17.201,SYN flood detected from 192.168.25.101,ddos,4
+2025-12-19 03:22:06.562627,user1,192.168.27.111,DDoS attack detected: 24185 requests/sec from 192.168.7.191,ddos,4
+2025-12-23 16:47:06.556631,user2,192.168.34.11,SYN flood detected from 192.168.20.181,ddos,4
+2025-12-14 01:29:06.562627,user1,192.168.4.151,Network bandwidth saturated from 192.168.23.51,ddos,4
+2025-12-30 06:00:06.557630,bob,192.168.49.161,High volume of requests detected from single IP,ddos,4
+2025-12-16 08:08:06.563627,user2,192.168.47.231,HTTP flood attack in progress,ddos,4
+2025-12-02 01:45:06.558628,charlie,192.168.25.241,HTTP flood attack in progress,ddos,4
+2025-12-27 18:43:06.561627,user1,192.168.11.11,SYN flood detected from 192.168.37.131,ddos,4
+2025-12-24 08:52:06.562627,admin,192.168.31.191,Abnormal request rate: 41077 req/s,ddos,4
+2025-12-06 15:39:06.559627,eve,192.168.49.151,Network bandwidth saturated from 192.168.25.231,ddos,4
+2025-12-09 20:08:06.561627,alice,192.168.17.141,HTTP flood attack in progress,ddos,4
+2025-12-17 17:28:06.561627,user2,192.168.25.91,HTTP flood attack in progress,ddos,4
+2026-01-05 06:03:06.557630,bob,192.168.38.201,Connection flood from 192.168.30.171,ddos,4
+2025-12-10 01:09:06.556631,charlie,192.168.18.141,UDP flood detected: source 192.168.5.31,ddos,4
+2025-12-30 16:13:06.557630,admin,192.168.17.191,UDP flood detected: source 192.168.12.201,ddos,4
+2026-01-01 07:35:06.561627,charlie,192.168.14.101,Unusual traffic spike from 192.168.4.191,ddos,4
+2025-12-30 16:50:06.561627,system,192.168.3.181,SYN flood detected from 192.168.22.81,ddos,4
+2025-12-04 09:56:06.558628,david,192.168.16.131,High volume of requests detected from single IP,ddos,4
+2026-01-04 00:55:06.561627,bob,192.168.4.31,Unusual traffic spike from 192.168.46.91,ddos,4
+2025-12-30 10:37:06.558628,user1,192.168.27.111,DDoS attack detected: 39418 requests/sec from 192.168.17.131,ddos,4
+2025-12-02 22:21:06.561627,system,192.168.27.11,Unusual traffic spike from 192.168.15.201,ddos,4
+2025-12-03 20:23:06.559627,system,192.168.19.81,SYN flood detected from 192.168.48.191,ddos,4
+2025-12-30 10:40:06.558628,user3,192.168.23.131,Distributed denial of service detected,ddos,4
+2025-12-13 14:22:06.561627,charlie,192.168.7.81,Network bandwidth saturated from 192.168.16.111,ddos,4
+2025-12-12 23:25:06.560627,user1,192.168.16.141,Unusual traffic spike from 192.168.24.11,ddos,4
+2025-12-24 15:11:06.562627,charlie,192.168.4.121,SYN flood detected from 192.168.4.31,ddos,4
+2025-12-05 12:37:06.556631,admin,192.168.42.151,DDoS attack detected: 8904 requests/sec from 192.168.20.181,ddos,4
+2026-01-04 18:30:06.560627,admin,192.168.20.241,Network bandwidth saturated from 192.168.10.131,ddos,4
+2025-12-31 08:26:06.560627,user3,192.168.25.41,DDoS attack detected: 2686 requests/sec from 192.168.48.171,ddos,4
+2025-12-13 12:58:06.561627,charlie,192.168.9.81,UDP flood detected: source 192.168.31.221,ddos,4
+2025-12-14 13:12:06.559627,david,192.168.5.131,HTTP flood attack in progress,ddos,4
+2025-12-29 05:11:06.562627,eve,192.168.41.41,HTTP flood attack in progress,ddos,4
+2025-12-21 23:09:06.560627,bob,192.168.20.121,Distributed denial of service detected,ddos,4
+2025-12-06 01:04:06.560627,bob,192.168.38.211,Unusual traffic spike from 192.168.16.171,ddos,4
+2025-12-04 13:06:06.562627,admin,192.168.9.41,High volume of requests detected from single IP,ddos,4
+2025-12-30 08:01:06.561627,eve,192.168.30.11,HTTP flood attack in progress,ddos,4
+2025-12-22 17:04:06.560627,david,192.168.32.121,Connection flood from 192.168.43.81,ddos,4
+2025-12-27 18:40:06.559627,alice,192.168.47.121,Unusual traffic spike from 192.168.47.51,ddos,4
+2025-12-26 03:25:06.558628,system,192.168.19.111,Abnormal request rate: 28745 req/s,ddos,4
+2025-12-07 22:54:06.560627,user2,192.168.37.81,HTTP flood attack in progress,ddos,4
+2025-12-03 19:18:06.560627,charlie,192.168.19.131,Abnormal request rate: 31606 req/s,ddos,4
+2026-01-03 19:26:06.558628,eve,192.168.11.181,Abnormal request rate: 27127 req/s,ddos,4
+2025-12-25 13:27:06.559627,system,192.168.46.221,Unusual traffic spike from 192.168.11.171,ddos,4
+2026-01-03 12:15:06.559627,charlie,192.168.11.71,Network bandwidth saturated from 192.168.32.41,ddos,4
+2025-12-15 15:15:06.557630,david,192.168.32.71,UDP flood detected: source 192.168.44.231,ddos,4
+2025-12-09 15:45:06.557630,bob,192.168.12.171,HTTP flood attack in progress,ddos,4
+2025-12-13 13:44:06.556631,admin,192.168.19.161,Distributed denial of service detected,ddos,4
+2026-01-05 01:03:06.560627,user1,192.168.13.221,UDP flood detected: source 192.168.8.241,ddos,4
+2025-12-14 11:54:06.560627,user1,192.168.35.1,Distributed denial of service detected,ddos,4
+2025-12-05 04:36:06.556631,alice,192.168.27.91,Abnormal request rate: 23526 req/s,ddos,4
+2025-12-02 04:30:06.562627,david,192.168.48.201,UDP flood detected: source 192.168.9.121,ddos,4
+2025-12-08 07:34:06.557630,user1,192.168.39.201,Abnormal request rate: 18517 req/s,ddos,4
+2025-12-10 00:03:06.558628,user3,192.168.21.51,Distributed denial of service detected,ddos,4
+2025-12-20 12:23:06.557630,charlie,192.168.18.111,Connection flood from 192.168.29.151,ddos,4
+2025-12-12 02:22:06.563627,user1,192.168.31.221,Network bandwidth saturated from 192.168.44.241,ddos,4
+2025-12-29 10:22:06.562627,bob,192.168.32.121,DDoS attack detected: 26065 requests/sec from 192.168.28.201,ddos,4
+2025-12-22 11:57:06.562627,admin,192.168.19.221,Unusual traffic spike from 192.168.40.211,ddos,4
+2026-01-05 05:16:06.560627,user2,192.168.23.141,UDP flood detected: source 192.168.19.121,ddos,4
+2025-12-15 07:01:06.561627,eve,192.168.2.101,Distributed denial of service detected,ddos,4
+2025-12-24 04:42:06.560627,alice,192.168.2.181,Network bandwidth saturated from 192.168.25.131,ddos,4
+2025-12-17 02:12:06.561627,alice,192.168.9.161,Abnormal request rate: 9831 req/s,ddos,4
+2026-01-04 16:53:06.561627,bob,192.168.34.61,Unusual traffic spike from 192.168.41.11,ddos,4
+2025-12-05 13:31:06.559627,bob,192.168.9.11,High volume of requests detected from single IP,ddos,4
+2025-12-13 07:14:06.557630,user3,192.168.41.241,Unusual traffic spike from 192.168.34.131,ddos,4
+2025-12-18 11:34:06.560627,eve,192.168.14.71,Network bandwidth saturated from 192.168.8.31,ddos,4
+2025-12-21 03:31:06.562627,user3,192.168.7.131,DDoS attack detected: 41888 requests/sec from 192.168.34.181,ddos,4
+2025-12-02 02:07:06.558628,system,192.168.43.111,Unusual traffic spike from 192.168.44.11,ddos,4
+2025-12-04 23:54:06.558628,system,192.168.15.1,SYN flood detected from 192.168.7.101,ddos,4
+2025-12-19 14:21:06.557630,system,192.168.37.41,Abnormal request rate: 29224 req/s,ddos,4
+2025-12-26 00:29:06.559627,user1,192.168.24.111,Network bandwidth saturated from 192.168.2.21,ddos,4
+2025-12-15 00:12:06.558628,alice,192.168.45.231,Abnormal request rate: 44422 req/s,ddos,4
+2025-12-31 13:02:06.560627,user3,192.168.22.81,Distributed denial of service detected,ddos,4
+2025-12-18 10:08:06.558628,user2,192.168.37.121,High volume of requests detected from single IP,ddos,4
+2025-12-28 10:25:06.559627,user2,192.168.36.231,DDoS attack detected: 2204 requests/sec from 192.168.24.81,ddos,4
+2026-01-02 02:10:06.560627,user3,192.168.6.51,SYN flood detected from 192.168.34.1,ddos,4
+2025-12-11 18:52:06.563627,admin,192.168.8.211,HTTP flood attack in progress,ddos,4
+2025-12-25 05:29:06.557630,eve,192.168.32.191,Network bandwidth saturated from 192.168.4.161,ddos,4
+2025-12-04 00:33:06.561627,charlie,192.168.15.71,Network bandwidth saturated from 192.168.29.21,ddos,4
+2025-12-19 23:52:06.563627,charlie,192.168.31.141,DDoS attack detected: 21685 requests/sec from 192.168.11.191,ddos,4
+2025-12-05 22:13:06.562627,user3,192.168.36.31,DDoS attack detected: 41431 requests/sec from 192.168.26.51,ddos,4
+2025-12-26 04:27:06.557630,user2,192.168.6.211,HTTP flood attack in progress,ddos,4
+2026-01-04 08:48:06.558628,admin,192.168.8.51,High volume of requests detected from single IP,ddos,4
+2025-12-20 23:24:06.557630,user2,192.168.2.151,Abnormal request rate: 7246 req/s,ddos,4
+2026-01-02 22:32:06.559627,bob,192.168.14.111,SYN flood detected from 192.168.32.21,ddos,4
+2025-12-16 14:28:06.557630,system,192.168.5.211,UDP flood detected: source 192.168.32.231,ddos,4
+2025-12-07 01:54:06.558628,user3,192.168.34.61,UDP flood detected: source 192.168.44.31,ddos,4
+2025-12-14 06:31:06.562627,charlie,192.168.18.21,Unusual traffic spike from 192.168.47.31,ddos,4
+2025-12-03 09:22:06.562627,admin,192.168.16.11,Connection flood from 192.168.36.131,ddos,4
+2026-01-05 10:45:06.561627,alice,192.168.42.111,Connection flood from 192.168.46.31,ddos,4
+2026-01-01 15:50:06.562627,alice,192.168.17.201,DDoS attack detected: 28589 requests/sec from 192.168.19.51,ddos,4
+2025-12-01 18:23:06.557630,user3,192.168.27.1,DDoS attack detected: 33205 requests/sec from 192.168.47.121,ddos,4
+2025-12-05 03:16:06.559627,charlie,192.168.17.1,Network bandwidth saturated from 192.168.2.131,ddos,4
+2026-01-04 10:00:06.562627,alice,192.168.1.61,Network bandwidth saturated from 192.168.30.41,ddos,4
+2025-12-11 15:50:06.561627,admin,192.168.18.201,Distributed denial of service detected,ddos,4
+2026-01-03 18:51:06.557630,user3,192.168.7.91,Abnormal request rate: 28426 req/s,ddos,4
+2025-12-21 09:36:06.560627,user3,192.168.42.231,UDP flood detected: source 192.168.26.71,ddos,4
+2025-12-04 05:01:06.556631,bob,192.168.40.141,HTTP flood attack in progress,ddos,4
+2025-12-14 02:19:06.557630,david,192.168.23.131,Distributed denial of service detected,ddos,4
+2025-12-07 05:35:06.556631,system,192.168.21.211,Unusual traffic spike from 192.168.27.31,ddos,4
+2025-12-08 03:54:06.560627,user2,192.168.18.161,Unusual traffic spike from 192.168.43.161,ddos,4
+2025-12-12 14:22:06.556631,user3,192.168.27.201,High volume of requests detected from single IP,ddos,4
+2026-01-05 07:20:06.560627,charlie,192.168.32.171,HTTP flood attack in progress,ddos,4
+2025-12-17 14:55:06.559627,alice,192.168.15.211,UDP flood detected: source 192.168.49.71,ddos,4
+2025-12-19 17:32:06.562627,admin,192.168.34.111,Distributed denial of service detected,ddos,4
+2025-12-19 05:09:06.561627,alice,192.168.9.231,DDoS attack detected: 33746 requests/sec from 192.168.11.101,ddos,4
+2025-12-17 20:41:06.561627,system,192.168.43.121,Network bandwidth saturated from 192.168.8.241,ddos,4
+2025-12-16 03:28:06.562627,admin,192.168.48.51,High volume of requests detected from single IP,ddos,4
+2025-12-23 06:43:06.556631,david,192.168.28.121,SYN flood detected from 192.168.43.61,ddos,4
+2025-12-02 22:59:06.560627,alice,192.168.18.191,HTTP flood attack in progress,ddos,4
+2025-12-28 10:20:06.557630,alice,192.168.31.141,High volume of requests detected from single IP,ddos,4
+2025-12-31 17:46:06.557630,alice,192.168.6.91,UDP flood detected: source 192.168.34.171,ddos,4
+2025-12-29 23:46:06.558628,admin,192.168.47.91,SYN flood detected from 192.168.40.241,ddos,4
+2025-12-14 01:37:06.559627,bob,192.168.1.191,UDP flood detected: source 192.168.28.101,ddos,4
+2026-01-01 20:31:06.562627,charlie,192.168.3.81,High volume of requests detected from single IP,ddos,4
+2025-12-25 10:33:06.561627,admin,192.168.6.1,Network bandwidth saturated from 192.168.40.181,ddos,4
+2025-12-23 16:54:06.557630,david,192.168.31.21,Abnormal request rate: 19407 req/s,ddos,4
+2025-12-27 18:00:06.562627,user3,192.168.18.231,SYN flood detected from 192.168.8.41,ddos,4
+2025-12-21 00:48:06.556631,user1,192.168.37.181,Abnormal request rate: 16519 req/s,ddos,4
+2025-12-24 04:48:06.563627,bob,192.168.42.181,Distributed denial of service detected,ddos,4
+2025-12-29 01:23:06.560627,user3,192.168.43.161,Unusual traffic spike from 192.168.42.221,ddos,4
+2025-12-06 08:17:06.557630,alice,192.168.1.61,HTTP flood attack in progress,ddos,4
+2026-01-02 20:35:06.559627,system,192.168.12.61,HTTP flood attack in progress,ddos,4
+2026-01-04 06:25:06.559627,user2,192.168.26.111,HTTP flood attack in progress,ddos,4
+2025-12-24 17:06:06.559627,david,192.168.41.151,Connection flood from 192.168.22.151,ddos,4
+2026-01-04 22:11:06.563627,david,192.168.18.121,Connection flood from 192.168.37.191,ddos,4
+2026-01-01 05:28:06.559627,system,192.168.16.21,DDoS attack detected: 2238 requests/sec from 192.168.1.241,ddos,4
+2026-01-04 23:28:06.560627,alice,192.168.24.51,HTTP flood attack in progress,ddos,4
+2025-12-10 22:22:06.562627,user2,192.168.43.131,Distributed denial of service detected,ddos,4
+2026-01-02 12:20:06.559627,user2,192.168.35.61,Distributed denial of service detected,ddos,4
+2025-12-26 17:56:06.558628,david,192.168.48.221,DDoS attack detected: 23027 requests/sec from 192.168.40.1,ddos,4
+2025-12-15 09:37:06.556631,bob,192.168.15.171,Connection flood from 192.168.4.31,ddos,4
+2026-01-03 04:08:06.556631,user1,192.168.4.181,UDP flood detected: source 192.168.1.151,ddos,4
+2026-01-03 11:28:06.563627,admin,192.168.11.51,DDoS attack detected: 43991 requests/sec from 192.168.6.191,ddos,4
+2025-12-06 03:18:06.557630,system,192.168.22.111,Unusual traffic spike from 192.168.26.151,ddos,4
+2025-12-15 11:27:06.561627,user1,192.168.10.201,DDoS attack detected: 48589 requests/sec from 192.168.44.201,ddos,4
+2025-12-27 01:39:06.562627,david,192.168.26.1,Network bandwidth saturated from 192.168.22.201,ddos,4
+2025-12-01 19:57:06.557630,bob,192.168.26.231,SYN flood detected from 192.168.15.91,ddos,4
+2025-12-07 12:17:06.560627,user3,192.168.3.141,High volume of requests detected from single IP,ddos,4
+2025-12-05 16:14:06.559627,alice,192.168.8.71,Unusual traffic spike from 192.168.30.81,ddos,4
+2025-12-17 01:20:06.558628,charlie,192.168.16.61,UDP flood detected: source 192.168.43.1,ddos,4
+2025-12-30 16:23:06.559627,charlie,192.168.24.221,High volume of requests detected from single IP,ddos,4
+2025-12-27 11:10:06.559627,user3,192.168.9.81,DDoS attack detected: 18271 requests/sec from 192.168.20.211,ddos,4
+2025-12-20 11:40:06.563627,david,192.168.47.201,Distributed denial of service detected,ddos,4
+2025-12-14 14:57:06.563627,user2,192.168.15.121,SYN flood detected from 192.168.3.221,ddos,4
+2025-12-12 03:39:06.558628,user2,192.168.30.231,Distributed denial of service detected,ddos,4
+2025-12-23 07:03:06.559627,bob,192.168.19.181,SYN flood detected from 192.168.34.91,ddos,4
+2025-12-07 08:42:06.561627,david,192.168.7.111,DDoS attack detected: 39836 requests/sec from 192.168.16.151,ddos,4
+2025-12-28 00:55:06.561627,bob,192.168.9.171,DDoS attack detected: 43529 requests/sec from 192.168.47.101,ddos,4
+2025-12-05 20:47:06.557630,user2,192.168.10.241,Network bandwidth saturated from 192.168.21.231,ddos,4
+2025-12-12 01:24:06.557630,david,192.168.9.101,DDoS attack detected: 32745 requests/sec from 192.168.46.71,ddos,4
+2025-12-24 00:14:06.562627,system,192.168.36.101,HTTP flood attack in progress,ddos,4
+2025-12-11 17:55:06.557630,alice,192.168.11.181,Unusual traffic spike from 192.168.49.91,ddos,4
+2025-12-03 01:47:06.562627,user3,192.168.42.191,Connection flood from 192.168.25.201,ddos,4
+2025-12-10 03:16:06.557630,system,192.168.16.21,Network bandwidth saturated from 192.168.39.101,ddos,4
+2025-12-12 04:46:06.560627,david,192.168.17.181,Abnormal request rate: 16642 req/s,ddos,4
+2025-12-30 19:58:06.560627,alice,192.168.17.241,UDP flood detected: source 192.168.13.21,ddos,4
+2025-12-14 15:35:06.559627,user1,192.168.40.141,Network bandwidth saturated from 192.168.49.131,ddos,4
+2025-12-25 01:27:06.563627,user3,192.168.41.31,UDP flood detected: source 192.168.24.11,ddos,4
+2025-12-03 15:14:06.559627,charlie,192.168.2.201,High volume of requests detected from single IP,ddos,4
+2025-12-09 06:26:06.556631,charlie,192.168.1.101,UDP flood detected: source 192.168.9.1,ddos,4
+2025-12-29 14:02:06.561627,david,192.168.8.181,HTTP flood attack in progress,ddos,4
+2025-12-05 12:49:06.556631,bob,192.168.14.111,Distributed denial of service detected,ddos,4
+2025-12-11 14:57:06.558628,user1,192.168.44.161,Unusual traffic spike from 192.168.43.231,ddos,4
+2025-12-15 03:52:06.559627,user1,192.168.29.21,HTTP flood attack in progress,ddos,4
+2025-12-19 20:44:06.559627,charlie,192.168.20.231,HTTP flood attack in progress,ddos,4
+2025-12-27 02:03:06.560627,user3,192.168.29.191,DDoS attack detected: 27172 requests/sec from 192.168.45.31,ddos,4
+2025-12-05 00:05:06.558628,user1,192.168.19.151,UDP flood detected: source 192.168.7.151,ddos,4
+2025-12-16 14:04:06.558628,user1,192.168.37.21,Unusual traffic spike from 192.168.14.211,ddos,4
+2025-12-31 18:18:06.558628,user1,192.168.9.181,Distributed denial of service detected,ddos,4
+2026-01-03 08:06:06.560627,user2,192.168.2.151,Distributed denial of service detected,ddos,4
+2025-12-02 05:06:06.562627,user3,192.168.45.71,SYN flood detected from 192.168.10.151,ddos,4
+2025-12-23 20:08:06.557630,user1,192.168.10.71,Distributed denial of service detected,ddos,4
+2025-12-06 21:06:06.558628,user2,192.168.31.181,Unusual traffic spike from 192.168.32.151,ddos,4
+2025-12-25 10:19:06.561627,bob,192.168.49.211,DDoS attack detected: 17021 requests/sec from 192.168.18.11,ddos,4
+2025-12-23 17:29:06.561627,system,192.168.41.191,UDP flood detected: source 192.168.7.141,ddos,4
+2025-12-18 22:28:06.556631,david,192.168.16.1,Connection flood from 192.168.48.221,ddos,4
+2025-12-21 04:29:06.556631,user2,192.168.11.101,UDP flood detected: source 192.168.45.11,ddos,4
+2025-12-13 20:56:06.559627,admin,192.168.41.91,Abnormal request rate: 36932 req/s,ddos,4
+2025-12-23 17:49:06.559627,admin,192.168.10.221,Connection flood from 192.168.7.221,ddos,4
+2025-12-24 23:54:06.562627,bob,192.168.20.161,DDoS attack detected: 11966 requests/sec from 192.168.38.31,ddos,4
+2025-12-31 22:10:06.557630,bob,192.168.4.61,Abnormal request rate: 37671 req/s,ddos,4
+2025-12-30 15:17:06.560627,bob,192.168.26.11,High volume of requests detected from single IP,ddos,4
+2025-12-09 13:10:06.557630,system,192.168.45.91,DDoS attack detected: 11249 requests/sec from 192.168.5.221,ddos,4
+2026-01-02 15:54:06.563627,charlie,192.168.23.151,DDoS attack detected: 17989 requests/sec from 192.168.14.161,ddos,4
+2025-12-30 14:57:06.556631,charlie,192.168.11.231,High volume of requests detected from single IP,ddos,4
+2025-12-14 14:36:06.561627,system,192.168.13.241,DDoS attack detected: 44743 requests/sec from 192.168.22.71,ddos,4
+2025-12-22 20:09:06.557630,admin,192.168.33.31,High volume of requests detected from single IP,ddos,4
+2025-12-07 01:58:06.563627,alice,192.168.43.91,Distributed denial of service detected,ddos,4
+2025-12-06 14:25:06.563627,charlie,192.168.14.191,Distributed denial of service detected,ddos,4
+2025-12-16 08:34:06.562627,admin,192.168.17.201,Unusual traffic spike from 192.168.35.171,ddos,4
+2025-12-09 04:29:06.562627,system,192.168.47.1,Connection flood from 192.168.8.51,ddos,4
+2025-12-06 06:57:06.563627,user1,192.168.30.51,Abnormal request rate: 36904 req/s,ddos,4
+2025-12-07 02:51:06.561627,eve,192.168.4.111,Network bandwidth saturated from 192.168.18.51,ddos,4
+2025-12-13 20:18:06.559627,user1,192.168.39.101,Unusual traffic spike from 192.168.38.211,ddos,4
+2025-12-25 13:12:06.558628,user3,192.168.7.121,DDoS attack detected: 36361 requests/sec from 192.168.9.31,ddos,4
+2025-12-04 14:15:06.560627,david,192.168.47.61,HTTP flood attack in progress,ddos,4
+2025-12-16 13:03:06.562627,david,192.168.33.211,SYN flood detected from 192.168.8.71,ddos,4
+2025-12-25 23:52:06.561627,bob,192.168.20.121,SYN flood detected from 192.168.25.71,ddos,4
+2026-01-01 05:17:06.558628,david,192.168.12.151,Distributed denial of service detected,ddos,4
+2025-12-26 19:22:06.563627,bob,192.168.6.211,SYN flood detected from 192.168.35.31,ddos,4
+2025-12-26 01:36:06.557630,admin,192.168.41.111,SYN flood detected from 192.168.5.181,ddos,4
+2025-12-31 05:03:06.559627,user2,192.168.23.191,Distributed denial of service detected,ddos,4
+2025-12-27 12:46:06.559627,charlie,192.168.11.111,SYN flood detected from 192.168.7.241,ddos,4
+2025-12-10 14:10:06.560627,admin,192.168.21.161,Unusual traffic spike from 192.168.24.41,ddos,4
+2025-12-13 01:46:06.558628,system,192.168.19.241,HTTP flood attack in progress,ddos,4
+2025-12-06 00:25:06.559627,bob,192.168.45.241,UDP flood detected: source 192.168.27.171,ddos,4
+2025-12-06 13:42:06.560627,bob,192.168.25.11,SYN flood detected from 192.168.12.151,ddos,4
+2025-12-22 09:34:06.562627,system,192.168.24.111,Connection flood from 192.168.46.61,ddos,4
+2025-12-10 20:23:06.562627,user1,192.168.40.211,Network bandwidth saturated from 192.168.40.181,ddos,4
+2025-12-13 20:21:06.560627,alice,192.168.32.241,UDP flood detected: source 192.168.22.31,ddos,4
+2025-12-05 21:07:06.561627,charlie,192.168.15.181,DDoS attack detected: 26732 requests/sec from 192.168.33.31,ddos,4
+2025-12-20 15:25:06.557630,alice,192.168.25.91,HTTP flood attack in progress,ddos,4
+2026-01-05 06:49:06.557630,eve,192.168.17.141,SYN flood detected from 192.168.16.191,ddos,4
+2025-12-21 02:07:06.557630,user3,192.168.29.111,Abnormal request rate: 39261 req/s,ddos,4
+2025-12-03 21:03:06.558628,eve,192.168.22.121,High volume of requests detected from single IP,ddos,4
+2025-12-24 16:42:06.563627,eve,192.168.16.121,Connection flood from 192.168.25.171,ddos,4
+2025-12-23 20:17:06.558628,user1,192.168.48.191,HTTP flood attack in progress,ddos,4
+2025-12-13 15:56:06.563627,charlie,192.168.49.11,HTTP flood attack in progress,ddos,4
+2025-12-22 16:08:06.556631,david,192.168.28.31,Unusual traffic spike from 192.168.47.231,ddos,4
+2025-12-08 14:24:06.562627,admin,192.168.38.241,Abnormal request rate: 5189 req/s,ddos,4
+2025-12-24 17:33:06.562627,charlie,192.168.17.231,High volume of requests detected from single IP,ddos,4
+2025-12-08 14:48:06.558628,bob,192.168.21.241,SYN flood detected from 192.168.20.11,ddos,4
+2026-01-04 23:53:06.557630,user3,192.168.12.211,Abnormal request rate: 38904 req/s,ddos,4
+2026-01-01 22:56:06.557630,user2,192.168.47.151,SYN flood detected from 192.168.12.211,ddos,4
+2025-12-20 06:28:06.561627,alice,192.168.38.211,UDP flood detected: source 192.168.23.121,ddos,4
+2026-01-02 04:17:06.558628,david,192.168.31.231,HTTP flood attack in progress,ddos,4
+2026-01-05 04:58:06.556631,user2,192.168.42.161,DDoS attack detected: 8053 requests/sec from 192.168.37.51,ddos,4
+2025-12-03 11:16:06.561627,bob,192.168.22.11,DDoS attack detected: 39244 requests/sec from 192.168.42.31,ddos,4
+2025-12-11 01:46:06.563627,system,192.168.28.161,DDoS attack detected: 44785 requests/sec from 192.168.21.81,ddos,4
+2025-12-13 15:58:06.562627,admin,192.168.39.151,SYN flood detected from 192.168.31.201,ddos,4
+2025-12-10 21:06:06.557630,admin,192.168.3.171,Connection flood from 192.168.35.21,ddos,4
+2025-12-02 23:18:06.562627,charlie,192.168.19.11,High volume of requests detected from single IP,ddos,4
+2025-12-07 07:04:06.563627,charlie,192.168.44.31,DDoS attack detected: 18348 requests/sec from 192.168.33.221,ddos,4
+2025-12-14 00:49:06.561627,user3,192.168.29.151,High volume of requests detected from single IP,ddos,4
+2025-12-02 03:10:06.560627,alice,192.168.10.201,UDP flood detected: source 192.168.18.211,ddos,4
+2025-12-28 11:37:06.559627,charlie,192.168.37.61,Distributed denial of service detected,ddos,4
+2025-12-22 13:14:06.559627,system,192.168.41.11,HTTP flood attack in progress,ddos,4
+2025-12-07 23:01:06.559627,eve,192.168.18.81,High volume of requests detected from single IP,ddos,4
+2025-12-09 17:44:06.558628,charlie,192.168.7.241,Abnormal request rate: 9547 req/s,ddos,4
+2025-12-04 07:46:06.560627,system,192.168.30.111,UDP flood detected: source 192.168.34.191,ddos,4
+2025-12-15 01:12:06.560627,alice,192.168.43.71,High volume of requests detected from single IP,ddos,4
+2025-12-10 05:35:06.561627,admin,192.168.14.21,Unusual traffic spike from 192.168.18.171,ddos,4
+2025-12-13 01:43:06.557630,bob,192.168.27.51,UDP flood detected: source 192.168.12.231,ddos,4
+2025-12-10 07:00:06.559627,bob,192.168.9.71,Network bandwidth saturated from 192.168.40.71,ddos,4
+2026-01-03 03:22:06.560627,user1,192.168.34.141,SYN flood detected from 192.168.16.41,ddos,4
+2025-12-03 22:51:06.563627,system,192.168.7.241,Distributed denial of service detected,ddos,4
+2025-12-24 06:59:06.560627,bob,192.168.40.31,High volume of requests detected from single IP,ddos,4
+2025-12-16 20:05:06.560627,david,192.168.10.51,Distributed denial of service detected,ddos,4
+2026-01-02 16:27:06.559627,david,192.168.12.191,Unusual traffic spike from 192.168.1.141,ddos,4
+2025-12-17 18:24:06.562627,bob,192.168.35.241,Network bandwidth saturated from 192.168.20.91,ddos,4
+2026-01-04 03:17:06.560627,eve,192.168.34.241,SYN flood detected from 192.168.24.81,ddos,4
+2025-12-19 07:06:06.563627,bob,192.168.18.221,SYN flood detected from 192.168.32.171,ddos,4
+2025-12-14 21:30:06.559627,charlie,192.168.29.11,Distributed denial of service detected,ddos,4
+2025-12-18 13:49:06.561627,eve,192.168.6.31,Network bandwidth saturated from 192.168.13.181,ddos,4
+2025-12-16 09:08:06.563627,eve,192.168.24.171,Distributed denial of service detected,ddos,4
+2025-12-21 08:06:06.560627,user1,192.168.42.151,Connection flood from 192.168.15.191,ddos,4
+2025-12-11 01:58:06.558628,user1,192.168.10.121,Unusual traffic spike from 192.168.24.131,ddos,4
+2025-12-26 00:56:06.559627,system,192.168.26.171,DDoS attack detected: 19130 requests/sec from 192.168.1.121,ddos,4
+2025-12-20 04:42:06.558628,user3,192.168.27.131,Connection flood from 192.168.17.241,ddos,4
+2025-12-14 08:20:06.563627,alice,192.168.3.121,DDoS attack detected: 23326 requests/sec from 192.168.46.111,ddos,4
+2025-12-16 08:35:06.561627,admin,192.168.12.211,Abnormal request rate: 47737 req/s,ddos,4
+2025-12-27 21:36:06.561627,user1,192.168.46.1,Unusual traffic spike from 192.168.45.51,ddos,4
+2025-12-26 00:44:06.561627,charlie,192.168.34.241,HTTP flood attack in progress,ddos,4
+2026-01-01 04:54:06.561627,user2,192.168.18.141,Abnormal request rate: 13964 req/s,ddos,4
+2025-12-15 15:20:06.558628,user1,192.168.14.151,Unusual traffic spike from 192.168.18.81,ddos,4
+2025-12-07 13:01:06.557630,alice,192.168.9.11,High volume of requests detected from single IP,ddos,4
+2025-12-01 18:24:06.558628,alice,192.168.2.101,High volume of requests detected from single IP,ddos,4
+2026-01-02 17:11:06.563627,admin,192.168.38.211,HTTP flood attack in progress,ddos,4
+2025-12-22 09:04:06.557630,charlie,192.168.43.241,Abnormal request rate: 49757 req/s,ddos,4
+2025-12-22 15:28:06.557630,admin,192.168.12.121,UDP flood detected: source 192.168.26.81,ddos,4
+2025-12-10 06:41:06.560627,user1,192.168.16.61,UDP flood detected: source 192.168.41.211,ddos,4
+2025-12-06 19:36:06.558628,system,192.168.34.151,SYN flood detected from 192.168.38.21,ddos,4
+2025-12-18 20:41:06.562627,charlie,192.168.6.221,Unusual traffic spike from 192.168.9.131,ddos,4
+2025-12-02 12:26:06.558628,system,192.168.31.201,Abnormal request rate: 44396 req/s,ddos,4
+2025-12-06 18:26:06.561627,bob,192.168.45.121,DDoS attack detected: 29795 requests/sec from 192.168.25.31,ddos,4
+2025-12-05 01:20:06.556631,system,192.168.35.31,Network bandwidth saturated from 192.168.28.91,ddos,4
+2025-12-02 19:25:06.557630,charlie,192.168.20.151,Network bandwidth saturated from 192.168.32.11,ddos,4
+2025-12-24 03:40:06.563627,david,192.168.41.71,Network bandwidth saturated from 192.168.10.151,ddos,4
+2025-12-12 07:37:06.556631,david,192.168.42.61,Unusual traffic spike from 192.168.42.171,ddos,4
+2025-12-04 07:35:06.562627,user1,192.168.32.141,Unusual traffic spike from 192.168.29.41,ddos,4
+2025-12-05 17:30:06.557630,user3,192.168.10.151,DDoS attack detected: 23130 requests/sec from 192.168.30.121,ddos,4
+2026-01-04 00:38:06.560627,bob,192.168.9.171,SYN flood detected from 192.168.10.201,ddos,4
+2025-12-15 14:18:06.558628,system,192.168.46.211,Abnormal request rate: 12981 req/s,ddos,4
+2026-01-01 12:50:06.557630,charlie,192.168.8.131,DDoS attack detected: 13846 requests/sec from 192.168.40.221,ddos,4
+2025-12-10 18:08:06.563627,system,192.168.40.41,Abnormal request rate: 43624 req/s,ddos,4
+2025-12-10 19:51:06.557630,charlie,192.168.15.201,UDP flood detected: source 192.168.45.171,ddos,4
+2026-01-02 18:21:06.557630,user1,192.168.32.121,DDoS attack detected: 30888 requests/sec from 192.168.8.201,ddos,4
+2025-12-28 11:59:06.561627,user2,192.168.26.51,High volume of requests detected from single IP,ddos,4
+2026-01-01 16:11:06.562627,user2,192.168.29.171,UDP flood detected: source 192.168.17.151,ddos,4
+2026-01-04 04:37:06.559627,alice,192.168.5.91,Distributed denial of service detected,ddos,4
+2025-12-04 11:02:06.560627,bob,192.168.43.111,HTTP flood attack in progress,ddos,4
+2025-12-15 04:24:06.560627,david,192.168.4.91,Distributed denial of service detected,ddos,4
+2025-12-20 08:02:06.558628,user1,192.168.14.121,Connection flood from 192.168.4.131,ddos,4
+2025-12-20 16:56:06.558628,user2,192.168.2.231,HTTP flood attack in progress,ddos,4
+2025-12-11 04:37:06.558628,eve,192.168.13.241,Network bandwidth saturated from 192.168.38.121,ddos,4
+2025-12-02 23:38:06.557630,user1,192.168.36.101,UDP flood detected: source 192.168.19.81,ddos,4
+2025-12-19 19:57:06.562627,charlie,192.168.32.111,SYN flood detected from 192.168.32.31,ddos,4
+2025-12-17 16:40:06.558628,david,192.168.17.111,Network bandwidth saturated from 192.168.11.61,ddos,4
+2025-12-25 10:23:06.556631,user3,192.168.39.11,Connection flood from 192.168.40.11,ddos,4
+2025-12-08 13:35:06.557630,alice,192.168.3.211,SYN flood detected from 192.168.24.91,ddos,4
+2025-12-12 09:57:06.559627,alice,192.168.31.161,Unusual traffic spike from 192.168.26.181,ddos,4
+2025-12-06 04:00:06.563627,user1,192.168.29.1,Connection flood from 192.168.20.181,ddos,4
+2025-12-16 06:03:06.560627,system,192.168.6.111,High volume of requests detected from single IP,ddos,4
+2025-12-28 18:32:06.556631,david,192.168.37.161,SYN flood detected from 192.168.10.1,ddos,4
+2025-12-23 07:57:06.561627,user3,192.168.13.61,Distributed denial of service detected,ddos,4
+2025-12-14 11:26:06.559627,bob,192.168.31.211,Network bandwidth saturated from 192.168.31.21,ddos,4
+2025-12-05 18:25:06.559627,admin,192.168.31.51,HTTP flood attack in progress,ddos,4
+2025-12-19 12:24:06.557630,user2,192.168.14.91,Unusual traffic spike from 192.168.37.171,ddos,4
+2025-12-11 02:40:06.557630,eve,192.168.28.141,Network bandwidth saturated from 192.168.26.151,ddos,4
+2025-12-13 06:10:06.559627,user2,192.168.48.151,HTTP flood attack in progress,ddos,4
+2025-12-12 06:23:06.562627,bob,192.168.23.181,Unusual traffic spike from 192.168.28.201,ddos,4
+2025-12-05 01:57:06.556631,charlie,192.168.47.41,High volume of requests detected from single IP,ddos,4
+2025-12-16 07:54:06.559627,bob,192.168.39.61,Unusual traffic spike from 192.168.10.171,ddos,4
+2025-12-31 20:10:06.561627,user3,192.168.5.151,Distributed denial of service detected,ddos,4
+2026-01-01 22:52:06.561627,eve,192.168.19.81,Unusual traffic spike from 192.168.25.151,ddos,4
+2025-12-14 18:03:06.557630,david,192.168.45.181,Network bandwidth saturated from 192.168.48.191,ddos,4
+2025-12-10 00:03:06.563627,eve,192.168.37.61,HTTP flood attack in progress,ddos,4
+2025-12-25 01:12:06.562627,user3,192.168.22.101,Distributed denial of service detected,ddos,4
+2025-12-16 17:30:06.559627,david,192.168.39.151,Distributed denial of service detected,ddos,4
+2025-12-13 19:25:06.556631,user2,192.168.25.1,DDoS attack detected: 12479 requests/sec from 192.168.43.221,ddos,4
+2025-12-18 12:16:06.562627,system,192.168.14.41,Distributed denial of service detected,ddos,4
+2025-12-20 07:06:06.562627,admin,192.168.40.11,UDP flood detected: source 192.168.1.11,ddos,4
+2025-12-03 20:23:06.559627,system,192.168.40.211,DDoS attack detected: 42796 requests/sec from 192.168.14.211,ddos,4
+2026-01-01 18:25:06.559627,bob,192.168.33.31,UDP flood detected: source 192.168.25.61,ddos,4
+2025-12-13 02:45:06.563627,david,192.168.44.81,High volume of requests detected from single IP,ddos,4
+2025-12-21 12:51:06.559627,david,192.168.39.151,Distributed denial of service detected,ddos,4
+2025-12-27 08:12:06.561627,alice,192.168.15.41,Distributed denial of service detected,ddos,4
+2025-12-20 13:02:06.559627,system,192.168.33.81,Network bandwidth saturated from 192.168.30.101,ddos,4
+2025-12-27 05:21:06.557630,alice,192.168.25.221,Network bandwidth saturated from 192.168.33.221,ddos,4
+2026-01-04 10:36:06.557630,system,192.168.3.221,UDP flood detected: source 192.168.10.191,ddos,4
+2025-12-25 14:12:06.560627,bob,192.168.5.61,Network bandwidth saturated from 192.168.45.101,ddos,4
+2025-12-27 05:35:06.562627,charlie,192.168.9.71,High volume of requests detected from single IP,ddos,4
+2025-12-09 02:21:06.562627,system,192.168.15.221,HTTP flood attack in progress,ddos,4
+2025-12-14 19:27:06.559627,user3,192.168.17.221,Abnormal request rate: 11051 req/s,ddos,4
+2025-12-14 08:14:06.556631,system,192.168.5.171,Network bandwidth saturated from 192.168.39.171,ddos,4
+2025-12-12 05:17:06.557630,charlie,192.168.46.101,Connection flood from 192.168.9.151,ddos,4
+2025-12-29 03:18:06.559627,bob,192.168.10.61,DDoS attack detected: 19487 requests/sec from 192.168.43.181,ddos,4
+2025-12-25 20:04:06.559627,admin,192.168.8.11,UDP flood detected: source 192.168.24.141,ddos,4
+2025-12-24 14:28:06.556631,user2,192.168.46.21,DDoS attack detected: 6763 requests/sec from 192.168.11.31,ddos,4
+2025-12-26 21:45:06.560627,user3,192.168.45.61,HTTP flood attack in progress,ddos,4
+2025-12-10 23:55:06.558628,user3,192.168.26.81,Distributed denial of service detected,ddos,4
+2025-12-04 13:08:06.563627,charlie,192.168.21.111,Distributed denial of service detected,ddos,4
+2025-12-18 00:15:06.559627,alice,192.168.23.31,SYN flood detected from 192.168.34.151,ddos,4
+2025-12-21 12:28:06.556631,bob,192.168.35.11,DDoS attack detected: 18988 requests/sec from 192.168.1.231,ddos,4
+2025-12-24 11:50:06.559627,user3,192.168.27.71,DDoS attack detected: 34873 requests/sec from 192.168.45.51,ddos,4
+2025-12-21 17:30:06.560627,user1,192.168.26.161,SYN flood detected from 192.168.2.161,ddos,4
+2025-12-04 04:23:06.559627,charlie,192.168.13.101,SYN flood detected from 192.168.35.141,ddos,4
+2025-12-18 18:21:06.561627,admin,192.168.6.231,Network bandwidth saturated from 192.168.21.91,ddos,4
+2025-12-10 17:34:06.556631,eve,192.168.2.231,Connection flood from 192.168.8.161,ddos,4
+2025-12-04 18:31:06.560627,bob,192.168.48.91,Connection flood from 192.168.32.21,ddos,4
+2025-12-04 04:31:06.561627,user2,192.168.10.181,Unusual traffic spike from 192.168.33.161,ddos,4
+2025-12-07 21:40:06.558628,alice,192.168.15.111,Distributed denial of service detected,ddos,4
+2025-12-16 06:17:06.562627,system,192.168.46.141,Abnormal request rate: 36724 req/s,ddos,4
+2025-12-14 00:48:06.556631,user2,192.168.49.171,Unusual traffic spike from 192.168.3.221,ddos,4
+2026-01-02 07:43:06.559627,system,192.168.11.181,SYN flood detected from 192.168.31.241,ddos,4
+2026-01-01 22:10:06.561627,eve,192.168.37.51,Abnormal request rate: 8499 req/s,ddos,4
+2025-12-24 10:41:06.560627,user3,192.168.20.41,HTTP flood attack in progress,ddos,4
+2025-12-02 07:58:06.557630,admin,192.168.27.1,Connection flood from 192.168.31.111,ddos,4
+2025-12-21 01:25:06.561627,alice,192.168.27.101,Unusual traffic spike from 192.168.38.181,ddos,4
+2025-12-18 09:55:06.562627,bob,192.168.18.241,SYN flood detected from 192.168.13.61,ddos,4
+2025-12-05 03:19:06.557630,bob,192.168.21.61,Abnormal request rate: 18769 req/s,ddos,4
+2025-12-05 07:40:06.563627,david,192.168.34.51,Distributed denial of service detected,ddos,4
+2025-12-11 22:02:06.562627,eve,192.168.14.171,SYN flood detected from 192.168.5.131,ddos,4
+2025-12-16 14:31:06.558628,system,192.168.22.231,DDoS attack detected: 36183 requests/sec from 192.168.22.161,ddos,4
+2026-01-02 09:07:06.556631,eve,192.168.47.181,Unusual traffic spike from 192.168.18.201,ddos,4
+2025-12-17 10:24:06.558628,system,192.168.48.61,Connection flood from 192.168.11.201,ddos,4
+2026-01-03 00:55:06.561627,system,192.168.45.51,Unusual traffic spike from 192.168.18.41,ddos,4
+2025-12-06 17:27:06.557630,user3,192.168.29.141,Distributed denial of service detected,ddos,4
+2025-12-18 08:33:06.559627,david,192.168.39.171,Abnormal request rate: 8658 req/s,ddos,4
+2025-12-02 16:34:06.559627,alice,192.168.19.121,Distributed denial of service detected,ddos,4
+2025-12-02 11:30:06.557630,david,192.168.6.181,Connection flood from 192.168.15.101,ddos,4
+2025-12-17 20:10:06.556631,bob,192.168.49.71,DDoS attack detected: 27098 requests/sec from 192.168.40.191,ddos,4
+2025-12-16 13:53:06.557630,user3,192.168.1.241,Connection flood from 192.168.2.191,ddos,4
+2025-12-04 17:41:06.562627,alice,192.168.45.71,HTTP flood attack in progress,ddos,4
+2025-12-14 23:08:06.561627,user1,192.168.32.151,Connection flood from 192.168.24.221,ddos,4
+2025-12-03 16:22:06.562627,admin,192.168.46.171,DDoS attack detected: 48539 requests/sec from 192.168.24.181,ddos,4
+2025-12-25 02:44:06.560627,charlie,192.168.26.61,HTTP flood attack in progress,ddos,4
+2025-12-27 06:08:06.561627,admin,192.168.34.241,HTTP flood attack in progress,ddos,4
+2025-12-17 06:21:06.561627,user1,192.168.33.51,High volume of requests detected from single IP,ddos,4
+2025-12-09 22:12:06.560627,alice,192.168.10.111,Connection flood from 192.168.29.71,ddos,4
+2025-12-23 05:22:06.560627,user3,192.168.7.1,DDoS attack detected: 7430 requests/sec from 192.168.47.91,ddos,4
+2025-12-17 18:41:06.562627,admin,192.168.16.171,UDP flood detected: source 192.168.1.241,ddos,4
+2025-12-29 17:39:06.558628,system,192.168.29.21,Unusual traffic spike from 192.168.39.211,ddos,4
+2025-12-02 22:17:06.558628,user2,192.168.31.51,Network bandwidth saturated from 192.168.1.191,ddos,4
+2025-12-09 11:27:06.556631,admin,192.168.11.141,Unusual traffic spike from 192.168.43.1,ddos,4
+2025-12-23 01:25:06.560627,system,192.168.34.81,HTTP flood attack in progress,ddos,4
+2025-12-16 07:34:06.557630,eve,192.168.49.201,UDP flood detected: source 192.168.26.201,ddos,4
+2025-12-25 11:08:06.557630,system,192.168.8.211,SYN flood detected from 192.168.1.11,ddos,4
+2025-12-20 03:45:06.558628,alice,192.168.47.31,Unusual traffic spike from 192.168.6.211,ddos,4
+2025-12-09 12:39:06.561627,david,192.168.47.191,Abnormal request rate: 17905 req/s,ddos,4
+2025-12-14 23:12:06.562627,user1,192.168.19.211,High volume of requests detected from single IP,ddos,4
+2025-12-25 10:44:06.556631,charlie,192.168.46.11,HTTP flood attack in progress,ddos,4
+2025-12-18 17:34:06.558628,bob,192.168.47.121,Network bandwidth saturated from 192.168.20.201,ddos,4
+2025-12-22 21:14:06.558628,user1,192.168.34.171,HTTP flood attack in progress,ddos,4
+2025-12-04 14:11:06.562627,alice,192.168.39.1,Abnormal request rate: 19171 req/s,ddos,4
+2025-12-28 12:14:06.556631,system,192.168.3.31,Connection flood from 192.168.43.151,ddos,4
+2025-12-04 05:33:06.560627,system,192.168.40.141,SYN flood detected from 192.168.5.191,ddos,4
+2025-12-03 17:12:06.559627,user3,192.168.15.141,DDoS attack detected: 43396 requests/sec from 192.168.5.241,ddos,4
+2025-12-10 08:08:06.559627,david,192.168.13.61,Connection flood from 192.168.4.171,ddos,4
+2025-12-16 03:33:06.559627,david,192.168.10.141,High volume of requests detected from single IP,ddos,4
+2026-01-04 21:21:06.559627,system,192.168.47.111,Unusual traffic spike from 192.168.31.171,ddos,4
+2026-01-05 06:11:06.562627,user2,192.168.42.41,DDoS attack detected: 44438 requests/sec from 192.168.10.121,ddos,4
+2025-12-05 16:11:06.560627,admin,192.168.7.211,Connection flood from 192.168.38.131,ddos,4
+2025-12-20 00:30:06.558628,user3,192.168.20.1,UDP flood detected: source 192.168.38.41,ddos,4
+2025-12-08 14:00:06.557630,admin,192.168.2.241,Unusual traffic spike from 192.168.26.71,ddos,4
+2025-12-08 18:48:06.559627,bob,192.168.20.71,DDoS attack detected: 21830 requests/sec from 192.168.30.31,ddos,4
+2025-12-12 07:51:06.558628,charlie,192.168.36.241,Unusual traffic spike from 192.168.5.211,ddos,4
+2025-12-06 13:24:06.560627,user1,192.168.39.131,High volume of requests detected from single IP,ddos,4
+2025-12-30 09:00:06.562627,admin,192.168.47.41,HTTP flood attack in progress,ddos,4
+2025-12-26 02:46:06.558628,charlie,192.168.2.31,DDoS attack detected: 40479 requests/sec from 192.168.11.211,ddos,4
+2025-12-25 16:20:06.559627,david,192.168.15.41,Unusual traffic spike from 192.168.49.201,ddos,4
+2026-01-02 10:39:06.558628,charlie,192.168.18.91,HTTP flood attack in progress,ddos,4
+2025-12-12 18:21:06.562627,user3,192.168.45.201,Network bandwidth saturated from 192.168.39.201,ddos,4
+2025-12-06 20:52:06.556631,charlie,192.168.33.171,UDP flood detected: source 192.168.32.61,ddos,4
+2025-12-16 00:19:06.557630,user1,192.168.1.231,Network bandwidth saturated from 192.168.33.181,ddos,4
+2025-12-07 08:05:06.557630,bob,192.168.31.211,High volume of requests detected from single IP,ddos,4
+2025-12-05 17:52:06.558628,user2,192.168.10.181,Distributed denial of service detected,ddos,4
+2025-12-20 23:22:06.559627,charlie,192.168.25.1,Connection flood from 192.168.9.41,ddos,4
+2025-12-30 08:34:06.560627,user1,192.168.23.61,Distributed denial of service detected,ddos,4
+2025-12-11 22:46:06.562627,admin,192.168.30.141,Abnormal request rate: 29652 req/s,ddos,4
+2025-12-16 07:20:06.557630,david,192.168.41.221,SYN flood detected from 192.168.33.141,ddos,4
+2025-12-10 11:46:06.557630,system,192.168.40.101,Abnormal request rate: 36919 req/s,ddos,4
+2025-12-14 06:22:06.562627,alice,192.168.1.201,HTTP flood attack in progress,ddos,4
+2025-12-17 21:15:06.562627,alice,192.168.41.51,HTTP flood attack in progress,ddos,4
+2025-12-03 07:08:06.562627,bob,192.168.45.211,Network bandwidth saturated from 192.168.17.141,ddos,4
+2025-12-27 14:52:06.558628,user2,192.168.43.221,DDoS attack detected: 27389 requests/sec from 192.168.42.51,ddos,4
+2025-12-24 12:50:06.562627,user3,192.168.43.201,UDP flood detected: source 192.168.43.191,ddos,4
+2025-12-23 21:14:06.556631,eve,192.168.16.81,Abnormal request rate: 47916 req/s,ddos,4
+2025-12-29 07:38:06.561627,charlie,192.168.48.191,DDoS attack detected: 32687 requests/sec from 192.168.43.171,ddos,4
+2025-12-11 06:14:06.560627,user2,192.168.30.221,Abnormal request rate: 49387 req/s,ddos,4
+2025-12-31 07:36:06.562627,admin,192.168.7.1,UDP flood detected: source 192.168.33.151,ddos,4
+2025-12-22 19:34:06.558628,admin,192.168.12.41,Network bandwidth saturated from 192.168.14.31,ddos,4
+2025-12-08 22:23:06.561627,bob,192.168.2.241,High volume of requests detected from single IP,ddos,4
+2025-12-21 21:51:06.560627,user1,192.168.43.231,Unusual traffic spike from 192.168.10.211,ddos,4
+2025-12-28 02:49:06.562627,system,192.168.9.181,UDP flood detected: source 192.168.13.21,ddos,4
+2025-12-01 20:08:06.562627,system,192.168.1.21,Distributed denial of service detected,ddos,4
+2025-12-29 06:10:06.557630,eve,192.168.26.11,SYN flood detected from 192.168.38.81,ddos,4
+2025-12-15 11:05:06.558628,alice,192.168.30.1,Network bandwidth saturated from 192.168.27.31,ddos,4
+2025-12-07 03:16:06.559627,user3,192.168.27.101,HTTP flood attack in progress,ddos,4
+2025-12-02 04:38:06.558628,charlie,192.168.37.161,HTTP flood attack in progress,ddos,4
+2025-12-18 01:14:06.560627,user3,192.168.20.141,SYN flood detected from 192.168.14.101,ddos,4
+2025-12-08 16:14:06.559627,bob,192.168.23.201,HTTP flood attack in progress,ddos,4
+2025-12-27 01:32:06.556631,admin,192.168.47.81,Unusual traffic spike from 192.168.21.101,ddos,4
+2025-12-29 19:00:06.562627,bob,192.168.10.231,SYN flood detected from 192.168.17.181,ddos,4
+2025-12-18 04:48:06.562627,eve,192.168.44.201,SYN flood detected from 192.168.38.51,ddos,4
+2025-12-18 12:37:06.557630,eve,192.168.14.101,Connection flood from 192.168.44.211,ddos,4
+2025-12-14 08:05:06.563627,charlie,192.168.36.121,UDP flood detected: source 192.168.36.221,ddos,4
+2025-12-27 05:48:06.560627,user1,192.168.28.201,Connection flood from 192.168.39.81,ddos,4
+2025-12-28 10:24:06.559627,user1,192.168.1.121,Unusual traffic spike from 192.168.37.81,ddos,4
+2026-01-01 16:09:06.558628,admin,192.168.7.51,UDP flood detected: source 192.168.49.221,ddos,4
+2025-12-04 18:28:06.563627,admin,192.168.19.21,Network bandwidth saturated from 192.168.7.181,ddos,4
+2026-01-04 22:12:06.561627,user1,192.168.17.191,Unusual traffic spike from 192.168.36.71,ddos,4
+2025-12-31 20:55:06.562627,user2,192.168.49.71,Network bandwidth saturated from 192.168.2.211,ddos,4
+2025-12-28 13:16:06.557630,system,192.168.25.221,SYN flood detected from 192.168.7.241,ddos,4
+2025-12-24 03:01:06.561627,eve,192.168.44.61,Connection flood from 192.168.20.111,ddos,4
+2025-12-08 04:06:06.563627,user1,192.168.40.231,SYN flood detected from 192.168.29.91,ddos,4
+2026-01-01 23:17:06.557630,user2,192.168.16.21,High volume of requests detected from single IP,ddos,4
+2025-12-11 00:17:06.561627,system,192.168.29.161,Abnormal request rate: 6645 req/s,ddos,4
+2025-12-05 19:08:06.556631,system,192.168.39.11,Abnormal request rate: 22090 req/s,ddos,4
+2025-12-06 17:29:06.559627,alice,192.168.32.241,HTTP flood attack in progress,ddos,4
+2025-12-08 23:51:06.562627,alice,192.168.47.11,Distributed denial of service detected,ddos,4
+2025-12-02 11:14:06.557630,user2,192.168.16.241,SYN flood detected from 192.168.43.151,ddos,4
+2025-12-21 03:44:06.558628,user2,192.168.28.161,High volume of requests detected from single IP,ddos,4
+2025-12-30 05:28:06.560627,user2,192.168.15.141,Unusual traffic spike from 192.168.30.161,ddos,4
+2025-12-29 01:11:06.556631,eve,192.168.12.121,HTTP flood attack in progress,ddos,4
+2025-12-16 19:54:06.562627,system,192.168.7.221,DDoS attack detected: 18849 requests/sec from 192.168.41.201,ddos,4
+2026-01-01 10:27:06.556631,bob,192.168.19.191,UDP flood detected: source 192.168.38.141,ddos,4
+2025-12-05 20:39:06.561627,system,192.168.16.121,High volume of requests detected from single IP,ddos,4
+2025-12-25 12:49:06.561627,david,192.168.29.81,High volume of requests detected from single IP,ddos,4
+2025-12-28 12:57:06.558628,user1,192.168.41.41,HTTP flood attack in progress,ddos,4
+2025-12-24 00:18:06.562627,charlie,192.168.35.71,Abnormal request rate: 33504 req/s,ddos,4
+2025-12-20 04:15:06.559627,eve,192.168.25.161,Abnormal request rate: 34320 req/s,ddos,4
+2025-12-13 02:20:06.556631,admin,192.168.44.181,Abnormal request rate: 28788 req/s,ddos,4
+2025-12-01 23:15:06.562627,user2,192.168.20.121,UDP flood detected: source 192.168.35.41,ddos,4
+2025-12-06 16:44:06.558628,charlie,192.168.9.111,UDP flood detected: source 192.168.18.31,ddos,4
+2025-12-17 05:12:06.559627,charlie,192.168.20.91,Distributed denial of service detected,ddos,4
+2025-12-07 22:20:06.561627,alice,192.168.37.141,High volume of requests detected from single IP,ddos,4
+2025-12-02 19:11:06.561627,system,192.168.12.151,Distributed denial of service detected,ddos,4
+2026-01-01 11:18:06.557630,user3,192.168.44.211,Connection flood from 192.168.24.151,ddos,4
+2025-12-02 19:55:06.560627,user1,192.168.33.151,Unusual traffic spike from 192.168.35.231,ddos,4
+2025-12-07 23:44:06.558628,user3,192.168.37.191,HTTP flood attack in progress,ddos,4
+2025-12-07 02:10:06.557630,system,192.168.48.171,Network bandwidth saturated from 192.168.1.201,ddos,4
+2025-12-05 20:25:06.558628,eve,192.168.15.131,Connection flood from 192.168.38.71,ddos,4
+2025-12-06 21:52:06.556631,eve,192.168.6.21,SYN flood detected from 192.168.22.41,ddos,4
+2025-12-29 18:52:06.561627,system,192.168.22.171,DDoS attack detected: 32074 requests/sec from 192.168.47.221,ddos,4
+2025-12-19 09:01:06.557630,user3,192.168.11.81,Abnormal request rate: 33948 req/s,ddos,4
+2025-12-19 12:12:06.560627,user3,192.168.14.231,Abnormal request rate: 7866 req/s,ddos,4
+2025-12-08 22:56:06.560627,system,192.168.41.71,DDoS attack detected: 7547 requests/sec from 192.168.24.221,ddos,4
+2025-12-13 05:42:06.563627,bob,192.168.2.11,HTTP flood attack in progress,ddos,4
+2025-12-31 16:56:06.560627,user1,192.168.11.101,UDP flood detected: source 192.168.14.201,ddos,4
+2025-12-28 06:47:06.557630,system,192.168.16.231,SYN flood detected from 192.168.8.131,ddos,4
+2025-12-08 22:49:06.560627,user3,192.168.35.1,Connection flood from 192.168.26.231,ddos,4
+2025-12-22 20:57:06.562627,user3,192.168.26.31,Network bandwidth saturated from 192.168.5.11,ddos,4
+2026-01-02 15:54:06.561627,admin,192.168.12.241,UDP flood detected: source 192.168.18.181,ddos,4
+2026-01-04 08:09:06.559627,david,192.168.26.211,Abnormal request rate: 10708 req/s,ddos,4
+2025-12-30 16:48:06.557630,alice,192.168.47.21,Connection flood from 192.168.22.131,ddos,4
+2025-12-07 08:14:06.557630,system,192.168.31.201,UDP flood detected: source 192.168.26.241,ddos,4
+2025-12-16 14:37:06.561627,eve,192.168.7.71,UDP flood detected: source 192.168.47.91,ddos,4
+2025-12-16 05:36:06.557630,user2,192.168.30.171,UDP flood detected: source 192.168.40.171,ddos,4
+2025-12-24 22:19:06.557630,charlie,192.168.9.61,Abnormal request rate: 14712 req/s,ddos,4
+2025-12-19 16:24:06.559627,charlie,192.168.4.221,Unusual traffic spike from 192.168.31.21,ddos,4
+2025-12-15 07:53:06.556631,david,192.168.46.111,Distributed denial of service detected,ddos,4
+2025-12-10 22:39:06.557630,alice,192.168.1.211,Unusual traffic spike from 192.168.31.121,ddos,4
+2025-12-23 22:34:06.558628,david,192.168.44.1,DDoS attack detected: 18612 requests/sec from 192.168.42.221,ddos,4
+2025-12-07 18:20:06.557630,admin,192.168.46.91,SYN flood detected from 192.168.10.151,ddos,4
+2026-01-02 17:09:06.562627,admin,192.168.12.51,High volume of requests detected from single IP,ddos,4
+2025-12-05 03:57:06.562627,admin,192.168.4.181,Unusual traffic spike from 192.168.21.51,ddos,4
+2025-12-19 04:16:06.561627,bob,192.168.46.221,Unusual traffic spike from 192.168.31.171,ddos,4
+2025-12-26 07:42:06.558628,charlie,192.168.48.241,Distributed denial of service detected,ddos,4
+2025-12-29 17:14:06.558628,alice,192.168.35.191,Connection flood from 192.168.36.31,ddos,4
+2025-12-13 01:51:06.560627,user1,192.168.46.121,Connection flood from 192.168.32.161,ddos,4
+2025-12-20 05:24:06.560627,david,192.168.8.121,DDoS attack detected: 31185 requests/sec from 192.168.16.171,ddos,4
+2025-12-18 15:35:06.561627,eve,192.168.14.61,SYN flood detected from 192.168.35.91,ddos,4
+2025-12-02 00:23:06.561627,bob,192.168.38.201,Abnormal request rate: 14462 req/s,ddos,4
+2025-12-16 17:01:06.562627,bob,192.168.3.91,SYN flood detected from 192.168.32.81,ddos,4
+2025-12-04 03:24:06.559627,admin,192.168.43.201,High volume of requests detected from single IP,ddos,4
+2025-12-18 09:38:06.560627,eve,192.168.8.181,Distributed denial of service detected,ddos,4
+2025-12-26 00:03:06.560627,charlie,192.168.10.81,Unusual traffic spike from 192.168.42.111,ddos,4
+2025-12-06 22:50:06.557630,user3,192.168.9.151,Unusual traffic spike from 192.168.38.41,ddos,4
+2025-12-19 04:31:06.562627,user1,192.168.47.71,SYN flood detected from 192.168.36.131,ddos,4
+2025-12-07 18:19:06.560627,david,192.168.20.131,Distributed denial of service detected,ddos,4
+2025-12-06 18:15:06.560627,user3,192.168.23.81,Connection flood from 192.168.1.171,ddos,4
+2025-12-28 21:41:06.562627,user3,192.168.21.81,Abnormal request rate: 2377 req/s,ddos,4
+2025-12-27 18:26:06.557630,system,192.168.49.41,HTTP flood attack in progress,ddos,4
+2025-12-03 04:09:06.563627,user1,192.168.9.71,Unusual traffic spike from 192.168.43.101,ddos,4
+2025-12-17 19:00:06.559627,bob,192.168.3.241,Unusual traffic spike from 192.168.4.171,ddos,4
+2025-12-19 06:36:06.563627,user1,192.168.37.211,HTTP flood attack in progress,ddos,4
+2026-01-01 13:59:06.562627,user2,192.168.4.1,Abnormal request rate: 14872 req/s,ddos,4
+2025-12-23 00:08:06.559627,charlie,192.168.21.121,DDoS attack detected: 29426 requests/sec from 192.168.26.61,ddos,4
+2025-12-19 09:31:06.562627,user1,192.168.9.91,DDoS attack detected: 28909 requests/sec from 192.168.46.191,ddos,4
+2025-12-27 23:56:06.557630,user1,192.168.26.191,DDoS attack detected: 47991 requests/sec from 192.168.4.31,ddos,4
+2025-12-06 09:35:06.563627,bob,192.168.27.241,Network bandwidth saturated from 192.168.38.11,ddos,4
+2025-12-11 07:08:06.559627,alice,192.168.4.191,Abnormal request rate: 18098 req/s,ddos,4
+2025-12-15 03:41:06.558628,david,192.168.7.51,DDoS attack detected: 2544 requests/sec from 192.168.4.71,ddos,4
+2025-12-18 19:44:06.557630,user3,192.168.40.141,Abnormal request rate: 41488 req/s,ddos,4
+2025-12-16 16:46:06.562627,user3,192.168.36.191,Distributed denial of service detected,ddos,4
+2025-12-07 02:49:06.558628,eve,192.168.1.111,SYN flood detected from 192.168.1.21,ddos,4
+2025-12-14 19:07:06.563627,charlie,192.168.40.141,DDoS attack detected: 20924 requests/sec from 192.168.37.111,ddos,4
+2025-12-11 12:43:06.562627,user1,192.168.33.111,Abnormal request rate: 21884 req/s,ddos,4
+2025-12-06 04:27:06.561627,david,192.168.8.241,HTTP flood attack in progress,ddos,4
+2026-01-03 16:51:06.558628,admin,192.168.49.91,Abnormal request rate: 8929 req/s,ddos,4
+2025-12-31 18:45:06.557630,eve,192.168.14.61,Distributed denial of service detected,ddos,4
+2025-12-14 10:37:06.557630,user2,192.168.17.211,UDP flood detected: source 192.168.41.111,ddos,4
+2025-12-10 15:31:06.558628,eve,192.168.44.151,High volume of requests detected from single IP,ddos,4
+2026-01-01 00:02:06.562627,charlie,192.168.3.171,SYN flood detected from 192.168.47.231,ddos,4
+2025-12-12 10:29:06.558628,alice,192.168.34.181,HTTP flood attack in progress,ddos,4
+2025-12-15 10:17:06.559627,bob,192.168.20.11,Network bandwidth saturated from 192.168.41.11,ddos,4
+2025-12-19 16:31:06.563627,user3,192.168.35.171,DDoS attack detected: 16817 requests/sec from 192.168.48.111,ddos,4
+2025-12-23 19:58:06.563627,admin,192.168.49.61,UDP flood detected: source 192.168.17.131,ddos,4
+2025-12-13 01:33:06.559627,eve,192.168.6.131,DDoS attack detected: 42936 requests/sec from 192.168.15.201,ddos,4
+2026-01-01 20:26:06.557630,alice,192.168.36.211,Network bandwidth saturated from 192.168.41.131,ddos,4
+2025-12-28 18:44:06.559627,user1,192.168.33.131,Unusual traffic spike from 192.168.18.131,ddos,4
+2026-01-02 02:29:06.563627,admin,192.168.35.221,HTTP flood attack in progress,ddos,4
+2025-12-14 05:52:06.557630,user1,192.168.48.221,Unusual traffic spike from 192.168.31.151,ddos,4
+2025-12-11 20:05:06.556631,bob,192.168.29.241,Connection flood from 192.168.22.11,ddos,4
+2025-12-08 14:40:06.557630,eve,192.168.25.121,SYN flood detected from 192.168.25.241,ddos,4
+2025-12-23 16:12:06.557630,alice,192.168.18.71,Distributed denial of service detected,ddos,4
+2025-12-05 09:47:06.559627,user2,192.168.42.51,Abnormal request rate: 13477 req/s,ddos,4
+2025-12-31 08:06:06.556631,eve,192.168.40.11,Distributed denial of service detected,ddos,4
+2025-12-26 03:08:06.560627,charlie,192.168.47.61,DDoS attack detected: 12838 requests/sec from 192.168.30.61,ddos,4
+2025-12-28 08:42:06.560627,user1,192.168.12.1,Unusual traffic spike from 192.168.43.181,ddos,4
+2026-01-03 13:22:06.559627,david,192.168.49.111,High volume of requests detected from single IP,ddos,4
+2025-12-05 19:08:06.561627,charlie,192.168.45.111,Abnormal request rate: 14328 req/s,ddos,4
+2025-12-25 13:48:06.556631,user2,192.168.21.121,UDP flood detected: source 192.168.11.61,ddos,4
+2025-12-06 15:01:06.558628,admin,192.168.12.11,HTTP flood attack in progress,ddos,4
+2025-12-18 04:54:06.562627,system,192.168.28.71,DDoS attack detected: 18783 requests/sec from 192.168.21.101,ddos,4
+2025-12-11 14:08:06.556631,david,192.168.7.91,DDoS attack detected: 24156 requests/sec from 192.168.14.161,ddos,4
+2025-12-25 02:30:06.563627,admin,192.168.46.81,UDP flood detected: source 192.168.14.191,ddos,4
+2025-12-24 04:23:06.560627,david,192.168.44.71,Distributed denial of service detected,ddos,4
+2026-01-05 03:48:06.561627,charlie,192.168.40.61,Distributed denial of service detected,ddos,4
+2025-12-20 19:36:06.561627,user2,192.168.16.151,HTTP flood attack in progress,ddos,4
+2025-12-03 13:29:06.559627,system,192.168.38.221,HTTP flood attack in progress,ddos,4
+2025-12-07 16:51:06.559627,user1,192.168.1.91,UDP flood detected: source 192.168.34.101,ddos,4
+2026-01-03 09:21:06.557630,user3,192.168.24.131,Abnormal request rate: 35616 req/s,ddos,4
+2025-12-19 10:27:06.562627,user2,192.168.45.181,HTTP flood attack in progress,ddos,4
+2025-12-08 15:48:06.563627,alice,192.168.49.101,High volume of requests detected from single IP,ddos,4
+2025-12-29 17:57:06.561627,alice,192.168.32.171,High volume of requests detected from single IP,ddos,4
+2025-12-27 13:43:06.557630,bob,192.168.12.141,Distributed denial of service detected,ddos,4
+2025-12-28 22:14:06.563627,user1,192.168.26.161,Connection flood from 192.168.38.81,ddos,4
+2025-12-13 17:29:06.560627,david,192.168.33.41,DDoS attack detected: 39176 requests/sec from 192.168.33.71,ddos,4
+2025-12-31 12:16:06.557630,user2,192.168.47.71,SYN flood detected from 192.168.30.51,ddos,4
+2025-12-18 07:48:06.562627,alice,192.168.33.161,HTTP flood attack in progress,ddos,4
+2025-12-08 05:24:06.557630,user3,192.168.40.61,High volume of requests detected from single IP,ddos,4
+2025-12-04 13:19:06.558628,bob,192.168.21.81,Network bandwidth saturated from 192.168.26.61,ddos,4
+2025-12-12 08:46:06.556631,user3,192.168.34.81,Network bandwidth saturated from 192.168.48.1,ddos,4
+2025-12-02 14:41:06.561627,user2,192.168.43.241,Unusual traffic spike from 192.168.31.11,ddos,4
+2026-01-01 10:51:06.558628,admin,192.168.17.31,DDoS attack detected: 10176 requests/sec from 192.168.32.11,ddos,4
+2025-12-24 13:45:06.561627,user2,192.168.14.191,Connection flood from 192.168.5.121,ddos,4
+2025-12-16 11:20:06.561627,user3,192.168.2.111,DDoS attack detected: 4627 requests/sec from 192.168.14.161,ddos,4
+2025-12-23 21:28:06.562627,alice,192.168.46.11,DDoS attack detected: 43698 requests/sec from 192.168.40.81,ddos,4
+2025-12-08 11:35:06.560627,system,192.168.14.111,Unusual traffic spike from 192.168.21.81,ddos,4
+2025-12-08 16:11:06.561627,user1,192.168.16.111,Connection flood from 192.168.26.231,ddos,4
+2025-12-13 09:58:06.556631,system,192.168.29.121,Distributed denial of service detected,ddos,4
+2025-12-28 23:28:06.559627,admin,192.168.5.101,Network bandwidth saturated from 192.168.1.221,ddos,4
+2025-12-26 10:27:06.563627,eve,192.168.48.61,Distributed denial of service detected,ddos,4
+2025-12-23 01:03:06.557630,user1,192.168.37.131,Network bandwidth saturated from 192.168.5.101,ddos,4
+2025-12-03 14:05:06.561627,eve,192.168.12.221,Distributed denial of service detected,ddos,4
+2025-12-19 04:44:06.561627,eve,192.168.42.151,UDP flood detected: source 192.168.30.51,ddos,4
+2025-12-27 07:43:06.560627,david,192.168.23.181,Connection flood from 192.168.31.171,ddos,4
+2025-12-17 18:20:06.557630,admin,192.168.45.241,SYN flood detected from 192.168.19.21,ddos,4
+2025-12-03 13:28:06.560627,david,192.168.26.161,Abnormal request rate: 20221 req/s,ddos,4
+2025-12-11 23:47:06.563627,user1,192.168.46.241,Distributed denial of service detected,ddos,4
+2025-12-15 22:29:06.556631,david,192.168.41.171,Distributed denial of service detected,ddos,4
+2025-12-22 21:53:06.561627,eve,192.168.49.21,Abnormal request rate: 43438 req/s,ddos,4
+2025-12-21 13:32:06.558628,admin,192.168.40.21,DDoS attack detected: 36142 requests/sec from 192.168.21.211,ddos,4
+2025-12-10 11:18:06.559627,eve,192.168.24.101,Abnormal request rate: 47453 req/s,ddos,4
+2025-12-24 13:01:06.560627,alice,192.168.14.61,DDoS attack detected: 42452 requests/sec from 192.168.36.141,ddos,4
+2025-12-24 01:13:06.558628,david,192.168.4.21,Abnormal request rate: 41827 req/s,ddos,4
+2025-12-29 13:41:06.563627,eve,192.168.34.191,Abnormal request rate: 49714 req/s,ddos,4
+2026-01-01 06:44:06.561627,david,192.168.1.81,SYN flood detected from 192.168.26.81,ddos,4
+2025-12-10 00:59:06.557630,user2,192.168.34.31,Abnormal request rate: 10813 req/s,ddos,4
+2026-01-02 02:43:06.561627,david,192.168.15.121,Distributed denial of service detected,ddos,4
+2025-12-07 14:50:06.562627,david,192.168.42.71,Abnormal request rate: 48221 req/s,ddos,4
+2025-12-04 21:13:06.559627,user3,192.168.16.171,SYN flood detected from 192.168.7.71,ddos,4
+2025-12-25 12:15:06.561627,user3,192.168.8.221,Distributed denial of service detected,ddos,4
+2025-12-28 19:08:06.556631,charlie,192.168.2.71,Abnormal request rate: 29494 req/s,ddos,4
+2025-12-30 06:24:06.562627,user2,192.168.32.11,Network bandwidth saturated from 192.168.32.131,ddos,4
+2025-12-19 01:57:06.561627,user1,192.168.37.171,Connection flood from 192.168.16.1,ddos,4
+2025-12-28 01:23:06.557630,bob,192.168.45.91,Network bandwidth saturated from 192.168.22.31,ddos,4
+2025-12-11 20:18:06.559627,bob,192.168.36.171,High volume of requests detected from single IP,ddos,4
+2026-01-04 17:15:06.559627,charlie,192.168.48.21,Abnormal request rate: 4398 req/s,ddos,4
+2025-12-16 04:47:06.560627,alice,192.168.16.121,SYN flood detected from 192.168.38.101,ddos,4
+2025-12-13 04:49:06.562627,david,192.168.31.221,Abnormal request rate: 27346 req/s,ddos,4
+2025-12-21 22:42:06.559627,system,192.168.31.161,HTTP flood attack in progress,ddos,4
+2026-01-01 06:19:06.560627,bob,192.168.27.101,Network bandwidth saturated from 192.168.25.81,ddos,4
+2025-12-06 14:47:06.562627,system,192.168.30.11,SYN flood detected from 192.168.44.211,ddos,4
+2025-12-17 19:33:06.562627,user2,192.168.21.211,Distributed denial of service detected,ddos,4
+2026-01-04 09:22:06.560627,bob,192.168.38.31,Connection flood from 192.168.18.11,ddos,4
+2025-12-29 11:23:06.562627,admin,192.168.35.11,SYN flood detected from 192.168.37.201,ddos,4
+2025-12-15 20:34:06.558628,david,192.168.11.211,High volume of requests detected from single IP,ddos,4
+2025-12-12 03:28:06.562627,user2,192.168.39.191,Distributed denial of service detected,ddos,4
+2025-12-23 05:09:06.556631,user3,192.168.28.1,Network bandwidth saturated from 192.168.49.131,ddos,4
+2025-12-07 05:51:06.561627,admin,192.168.23.41,High volume of requests detected from single IP,ddos,4
+2025-12-13 20:34:06.562627,charlie,192.168.1.41,DDoS attack detected: 38412 requests/sec from 192.168.22.11,ddos,4
+2026-01-05 05:50:06.557630,system,192.168.15.81,SYN flood detected from 192.168.16.131,ddos,4
+2025-12-28 12:44:06.560627,user2,192.168.28.181,Unusual traffic spike from 192.168.21.211,ddos,4
+2025-12-28 19:55:06.559627,alice,192.168.5.241,HTTP flood attack in progress,ddos,4

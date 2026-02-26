@@ -1,0 +1,1001 @@
+timestamp,user,ip,raw_message,label,label_id
+2025-12-09 00:29:06.538628,bob,192.168.22.221,Multiple failed login attempts detected,brute_force,1
+2025-12-10 22:01:06.539627,eve,192.168.37.31,Multiple failed login attempts detected,brute_force,1
+2025-12-19 06:14:06.534631,user1,192.168.19.41,Account locked due to multiple failures,brute_force,1
+2026-01-02 03:10:06.537629,bob,192.168.47.131,Failed login attempt #3 for user david,brute_force,1
+2025-12-19 04:05:06.538628,bob,192.168.18.11,Multiple failed login attempts detected,brute_force,1
+2025-12-03 19:55:06.533628,alice,192.168.42.71,Repeated login failures: alice@192.168.33.61,brute_force,1
+2025-12-09 23:32:06.533628,eve,192.168.21.101,Suspicious login pattern detected from 192.168.16.11,brute_force,1
+2025-12-07 12:09:06.534631,bob,192.168.3.241,Account locked due to multiple failures,brute_force,1
+2025-12-18 01:07:06.536627,admin,192.168.46.1,Invalid credentials provided for admin,brute_force,1
+2025-12-21 03:18:06.537629,bob,192.168.41.181,Suspicious login pattern detected from 192.168.8.61,brute_force,1
+2026-01-02 14:04:06.539627,charlie,192.168.25.11,Invalid credentials provided for user3,brute_force,1
+2025-12-27 11:26:06.534631,david,192.168.32.151,Authentication failed: invalid password,brute_force,1
+2025-12-19 22:58:06.533628,bob,192.168.11.21,Invalid credentials provided for bob,brute_force,1
+2025-12-04 11:57:06.536627,david,192.168.17.11,Password authentication failed for user2,brute_force,1
+2025-12-30 01:53:06.533628,system,192.168.33.151,Failed login attempt #3 for user user2,brute_force,1
+2025-12-28 00:43:06.534631,user1,192.168.26.31,Suspicious login pattern detected from 192.168.26.111,brute_force,1
+2025-12-10 17:23:06.536627,eve,192.168.18.181,Brute force attack detected from 192.168.6.191,brute_force,1
+2025-12-26 16:42:06.537629,user1,192.168.32.131,Authentication failed: invalid password,brute_force,1
+2025-12-22 21:42:06.540627,eve,192.168.40.241,Failed login attempt #9 for user charlie,brute_force,1
+2025-12-15 19:18:06.533628,charlie,192.168.13.1,Authentication failed: invalid password,brute_force,1
+2025-12-30 06:58:06.534631,user3,192.168.34.81,Password authentication failed for bob,brute_force,1
+2025-12-02 12:40:06.540627,user3,192.168.25.31,Invalid credentials provided for user3,brute_force,1
+2025-12-17 18:12:06.538628,user2,192.168.16.31,Invalid credentials provided for bob,brute_force,1
+2025-12-09 20:02:06.539627,system,192.168.46.41,Repeated login failures: alice@192.168.32.151,brute_force,1
+2026-01-04 18:28:06.540627,bob,192.168.33.221,Login rate limit exceeded from 192.168.7.181,brute_force,1
+2026-01-01 06:22:06.537629,user3,192.168.27.81,Invalid credentials provided for user1,brute_force,1
+2025-12-30 03:34:06.540627,admin,192.168.47.41,Repeated login failures: system@192.168.49.241,brute_force,1
+2025-12-05 19:57:06.537629,user1,192.168.13.1,Login rate limit exceeded from 192.168.20.31,brute_force,1
+2025-12-31 16:11:06.536627,david,192.168.39.1,Login rate limit exceeded from 192.168.9.101,brute_force,1
+2025-12-12 02:24:06.533628,eve,192.168.25.71,Invalid credentials provided for user2,brute_force,1
+2025-12-11 21:32:06.538628,admin,192.168.42.31,Repeated login failures: alice@192.168.44.1,brute_force,1
+2025-12-15 11:07:06.534631,alice,192.168.33.221,Multiple failed login attempts detected,brute_force,1
+2026-01-01 19:42:06.536627,admin,192.168.13.131,Brute force attack detected from 192.168.12.171,brute_force,1
+2025-12-28 09:22:06.536627,bob,192.168.30.1,Login rate limit exceeded from 192.168.20.91,brute_force,1
+2025-12-05 23:26:06.540627,charlie,192.168.1.171,Brute force attack detected from 192.168.3.181,brute_force,1
+2025-12-22 11:54:06.539627,eve,192.168.44.241,Repeated login failures: user3@192.168.43.161,brute_force,1
+2025-12-01 18:33:06.535629,user1,192.168.2.71,Authentication failed: invalid password,brute_force,1
+2025-12-15 14:16:06.534631,admin,192.168.44.81,Brute force attack detected from 192.168.49.51,brute_force,1
+2025-12-22 08:08:06.536627,user1,192.168.29.91,Account locked due to multiple failures,brute_force,1
+2025-12-17 19:08:06.540627,eve,192.168.36.91,Account locked due to multiple failures,brute_force,1
+2026-01-02 11:02:06.535629,eve,192.168.3.41,Failed login attempt #17 for user user3,brute_force,1
+2025-12-18 23:48:06.536627,david,192.168.47.151,Failed login attempt #1 for user system,brute_force,1
+2025-12-16 06:46:06.540627,user1,192.168.32.191,Brute force attack detected from 192.168.37.201,brute_force,1
+2025-12-31 21:57:06.533628,system,192.168.7.191,Failed SSH login attempt from 192.168.30.221,brute_force,1
+2025-12-03 05:25:06.533628,bob,192.168.46.71,Brute force attack detected from 192.168.4.51,brute_force,1
+2025-12-15 06:37:06.538628,bob,192.168.39.81,Authentication failed: invalid password,brute_force,1
+2025-12-29 04:44:06.537629,user1,192.168.12.201,Brute force attack detected from 192.168.4.1,brute_force,1
+2026-01-05 11:03:06.540627,eve,192.168.48.51,Failed SSH login attempt from 192.168.6.71,brute_force,1
+2025-12-25 13:39:06.538628,alice,192.168.45.181,Authentication failed: invalid password,brute_force,1
+2025-12-20 21:15:06.539627,alice,192.168.48.221,Invalid credentials provided for user2,brute_force,1
+2025-12-24 09:19:06.533628,user1,192.168.48.131,Multiple failed login attempts detected,brute_force,1
+2025-12-10 19:03:06.537629,bob,192.168.22.21,Failed SSH login attempt from 192.168.45.161,brute_force,1
+2025-12-01 22:39:06.535629,eve,192.168.8.211,Authentication failed: invalid password,brute_force,1
+2025-12-22 06:10:06.539627,eve,192.168.14.211,Login rate limit exceeded from 192.168.10.61,brute_force,1
+2025-12-09 08:44:06.540627,user2,192.168.37.91,Brute force attack detected from 192.168.41.171,brute_force,1
+2026-01-01 11:02:06.535629,admin,192.168.6.111,Password authentication failed for bob,brute_force,1
+2025-12-28 04:06:06.539627,david,192.168.22.191,Account locked due to multiple failures,brute_force,1
+2025-12-26 14:33:06.534631,admin,192.168.6.201,Authentication failed: invalid password,brute_force,1
+2025-12-15 00:51:06.540627,user1,192.168.34.11,Repeated login failures: alice@192.168.46.181,brute_force,1
+2025-12-23 14:36:06.533628,david,192.168.42.11,Suspicious login pattern detected from 192.168.49.121,brute_force,1
+2025-12-24 09:48:06.536627,alice,192.168.24.71,Suspicious login pattern detected from 192.168.1.41,brute_force,1
+2025-12-08 12:29:06.535629,david,192.168.20.51,Password authentication failed for user1,brute_force,1
+2025-12-05 23:49:06.536627,alice,192.168.2.161,Failed login attempt #3 for user user2,brute_force,1
+2025-12-14 00:40:06.540627,admin,192.168.6.211,Failed login attempt #19 for user user2,brute_force,1
+2026-01-02 05:35:06.537629,user3,192.168.43.21,Failed login attempt #1 for user user3,brute_force,1
+2025-12-12 21:49:06.538628,user3,192.168.21.81,Failed login attempt #15 for user system,brute_force,1
+2025-12-17 12:35:06.539627,system,192.168.46.191,Failed login attempt #7 for user system,brute_force,1
+2025-12-06 21:25:06.535629,david,192.168.27.31,Suspicious login pattern detected from 192.168.47.81,brute_force,1
+2025-12-19 06:02:06.535629,system,192.168.12.31,Suspicious login pattern detected from 192.168.1.241,brute_force,1
+2026-01-03 13:01:06.536627,bob,192.168.16.81,Repeated login failures: bob@192.168.23.151,brute_force,1
+2026-01-03 06:06:06.534631,user3,192.168.9.151,Failed SSH login attempt from 192.168.20.231,brute_force,1
+2025-12-22 04:19:06.534631,alice,192.168.48.211,Authentication failed: invalid password,brute_force,1
+2025-12-04 08:21:06.539627,bob,192.168.21.11,Suspicious login pattern detected from 192.168.18.111,brute_force,1
+2026-01-04 12:49:06.539627,david,192.168.26.111,Password authentication failed for alice,brute_force,1
+2025-12-17 16:19:06.538628,eve,192.168.40.231,Suspicious login pattern detected from 192.168.11.181,brute_force,1
+2025-12-16 21:38:06.539627,david,192.168.45.41,Login denied: too many failed attempts,brute_force,1
+2025-12-14 12:33:06.533628,user1,192.168.29.121,Login rate limit exceeded from 192.168.48.161,brute_force,1
+2025-12-21 01:39:06.540627,system,192.168.4.101,Multiple failed login attempts detected,brute_force,1
+2026-01-03 19:06:06.537629,user1,192.168.27.221,Suspicious login pattern detected from 192.168.24.11,brute_force,1
+2025-12-18 10:24:06.536627,system,192.168.26.171,Invalid credentials provided for eve,brute_force,1
+2025-12-20 21:46:06.539627,david,192.168.25.231,Authentication failed: invalid password,brute_force,1
+2026-01-05 07:25:06.535629,system,192.168.23.131,Invalid credentials provided for eve,brute_force,1
+2025-12-09 16:41:06.537629,user2,192.168.3.171,Failed login attempt #17 for user user1,brute_force,1
+2025-12-05 20:05:06.537629,alice,192.168.31.131,Login denied: too many failed attempts,brute_force,1
+2025-12-13 05:24:06.538628,user3,192.168.19.21,Authentication failed: invalid password,brute_force,1
+2025-12-30 14:22:06.535629,eve,192.168.5.71,Failed login attempt #17 for user bob,brute_force,1
+2025-12-26 09:14:06.539627,user3,192.168.32.11,Failed login attempt #6 for user admin,brute_force,1
+2025-12-21 09:06:06.539627,user1,192.168.36.101,Failed login attempt #10 for user system,brute_force,1
+2025-12-26 20:13:06.533628,system,192.168.43.191,Account locked due to multiple failures,brute_force,1
+2026-01-02 04:05:06.536627,admin,192.168.2.121,Login denied: too many failed attempts,brute_force,1
+2025-12-12 06:18:06.535629,user2,192.168.20.91,Login denied: too many failed attempts,brute_force,1
+2025-12-06 01:21:06.536627,user3,192.168.24.91,Password authentication failed for admin,brute_force,1
+2025-12-29 03:31:06.534631,user3,192.168.11.1,Login rate limit exceeded from 192.168.26.171,brute_force,1
+2025-12-03 10:15:06.538628,user1,192.168.23.1,Login rate limit exceeded from 192.168.39.181,brute_force,1
+2025-12-29 13:23:06.539627,bob,192.168.15.181,Brute force attack detected from 192.168.9.171,brute_force,1
+2025-12-09 13:20:06.538628,david,192.168.28.91,Brute force attack detected from 192.168.45.181,brute_force,1
+2025-12-22 12:08:06.539627,admin,192.168.30.201,Suspicious login pattern detected from 192.168.38.1,brute_force,1
+2025-12-23 07:01:06.539627,bob,192.168.19.81,Repeated login failures: david@192.168.5.151,brute_force,1
+2025-12-13 16:18:06.535629,user2,192.168.31.21,Suspicious login pattern detected from 192.168.6.191,brute_force,1
+2025-12-20 08:23:06.535629,system,192.168.20.221,Repeated login failures: user1@192.168.24.191,brute_force,1
+2025-12-24 04:42:06.535629,admin,192.168.43.11,Repeated login failures: david@192.168.31.161,brute_force,1
+2025-12-25 20:32:06.536627,user3,192.168.3.181,Password authentication failed for charlie,brute_force,1
+2025-12-22 21:50:06.533628,bob,192.168.5.71,Login rate limit exceeded from 192.168.11.191,brute_force,1
+2025-12-08 08:41:06.538628,bob,192.168.38.211,Repeated login failures: charlie@192.168.31.91,brute_force,1
+2025-12-16 23:27:06.534631,bob,192.168.38.121,Failed login attempt #9 for user user2,brute_force,1
+2025-12-02 00:25:06.537629,system,192.168.6.41,Failed login attempt #5 for user alice,brute_force,1
+2025-12-22 19:58:06.537629,bob,192.168.36.41,Multiple failed login attempts detected,brute_force,1
+2025-12-15 15:54:06.534631,admin,192.168.41.91,Password authentication failed for user2,brute_force,1
+2025-12-25 00:44:06.537629,user2,192.168.35.101,Failed login attempt #13 for user alice,brute_force,1
+2025-12-19 04:51:06.538628,admin,192.168.18.221,Account locked due to multiple failures,brute_force,1
+2025-12-22 06:31:06.540627,charlie,192.168.20.141,Invalid credentials provided for user2,brute_force,1
+2025-12-09 19:36:06.537629,charlie,192.168.4.71,Password authentication failed for system,brute_force,1
+2025-12-02 14:29:06.534631,system,192.168.26.81,Login rate limit exceeded from 192.168.13.151,brute_force,1
+2025-12-17 04:39:06.536627,user3,192.168.28.41,Brute force attack detected from 192.168.14.121,brute_force,1
+2026-01-05 02:38:06.539627,bob,192.168.24.241,Invalid credentials provided for admin,brute_force,1
+2025-12-05 08:05:06.534631,eve,192.168.10.91,Login rate limit exceeded from 192.168.23.1,brute_force,1
+2025-12-15 05:09:06.536627,alice,192.168.26.171,Authentication failed: invalid password,brute_force,1
+2025-12-16 17:53:06.534631,user3,192.168.26.71,Account locked due to multiple failures,brute_force,1
+2025-12-12 02:50:06.537629,system,192.168.35.161,Login denied: too many failed attempts,brute_force,1
+2025-12-20 17:11:06.538628,user3,192.168.20.71,Login denied: too many failed attempts,brute_force,1
+2025-12-29 17:40:06.539627,user2,192.168.49.121,Login rate limit exceeded from 192.168.31.181,brute_force,1
+2025-12-03 16:36:06.535629,admin,192.168.5.91,Login denied: too many failed attempts,brute_force,1
+2025-12-20 02:02:06.537629,system,192.168.10.121,Account locked due to multiple failures,brute_force,1
+2026-01-03 15:30:06.537629,alice,192.168.16.31,Password authentication failed for admin,brute_force,1
+2025-12-17 02:22:06.537629,david,192.168.35.161,Suspicious login pattern detected from 192.168.19.31,brute_force,1
+2026-01-02 09:52:06.537629,alice,192.168.46.231,Login denied: too many failed attempts,brute_force,1
+2025-12-23 00:38:06.540627,eve,192.168.25.61,Login denied: too many failed attempts,brute_force,1
+2025-12-14 04:56:06.539627,david,192.168.49.1,Account locked due to multiple failures,brute_force,1
+2025-12-14 07:59:06.535629,david,192.168.49.81,Login denied: too many failed attempts,brute_force,1
+2026-01-03 19:47:06.536627,system,192.168.7.191,Invalid credentials provided for user3,brute_force,1
+2025-12-21 01:02:06.540627,user2,192.168.18.41,Repeated login failures: user2@192.168.28.51,brute_force,1
+2025-12-31 01:32:06.539627,system,192.168.3.11,Invalid credentials provided for admin,brute_force,1
+2026-01-05 04:21:06.538628,admin,192.168.42.101,Failed login attempt #19 for user user1,brute_force,1
+2025-12-12 12:22:06.536627,eve,192.168.21.221,Failed SSH login attempt from 192.168.35.81,brute_force,1
+2025-12-27 07:56:06.534631,user1,192.168.17.201,Authentication failed: invalid password,brute_force,1
+2025-12-07 17:53:06.540627,user2,192.168.34.131,Authentication failed: invalid password,brute_force,1
+2025-12-28 01:38:06.540627,system,192.168.21.1,Login denied: too many failed attempts,brute_force,1
+2025-12-29 14:57:06.539627,user2,192.168.35.81,Multiple failed login attempts detected,brute_force,1
+2025-12-04 12:13:06.540627,alice,192.168.3.131,Repeated login failures: alice@192.168.9.181,brute_force,1
+2025-12-07 07:54:06.538628,david,192.168.42.171,Failed SSH login attempt from 192.168.29.131,brute_force,1
+2025-12-04 00:06:06.537629,admin,192.168.40.61,Failed SSH login attempt from 192.168.1.121,brute_force,1
+2025-12-30 17:15:06.540627,user1,192.168.36.101,Authentication failed: invalid password,brute_force,1
+2025-12-24 15:19:06.535629,bob,192.168.28.131,Failed SSH login attempt from 192.168.48.21,brute_force,1
+2025-12-15 16:32:06.536627,david,192.168.1.91,Brute force attack detected from 192.168.5.241,brute_force,1
+2025-12-05 19:24:06.538628,alice,192.168.6.71,Brute force attack detected from 192.168.45.181,brute_force,1
+2025-12-08 07:30:06.536627,eve,192.168.27.191,Multiple failed login attempts detected,brute_force,1
+2025-12-15 14:08:06.540627,eve,192.168.39.231,Repeated login failures: system@192.168.29.151,brute_force,1
+2025-12-18 15:38:06.536627,admin,192.168.5.41,Authentication failed: invalid password,brute_force,1
+2025-12-03 21:06:06.537629,user2,192.168.42.221,Brute force attack detected from 192.168.48.181,brute_force,1
+2025-12-14 23:16:06.536627,alice,192.168.33.111,Login rate limit exceeded from 192.168.2.141,brute_force,1
+2025-12-04 18:43:06.541628,user1,192.168.24.181,Suspicious login pattern detected from 192.168.20.61,brute_force,1
+2025-12-19 20:38:06.535629,admin,192.168.19.141,Password authentication failed for david,brute_force,1
+2025-12-14 20:38:06.539627,bob,192.168.14.201,Multiple failed login attempts detected,brute_force,1
+2025-12-11 03:08:06.535629,user1,192.168.44.231,Invalid credentials provided for system,brute_force,1
+2025-12-21 02:26:06.538628,user2,192.168.9.171,Repeated login failures: david@192.168.19.121,brute_force,1
+2025-12-04 12:35:06.538628,charlie,192.168.26.71,Invalid credentials provided for user2,brute_force,1
+2025-12-13 18:27:06.535629,bob,192.168.42.141,Password authentication failed for charlie,brute_force,1
+2025-12-30 20:22:06.533628,charlie,192.168.28.71,Suspicious login pattern detected from 192.168.26.131,brute_force,1
+2025-12-04 21:28:06.538628,eve,192.168.1.11,Account locked due to multiple failures,brute_force,1
+2025-12-30 01:54:06.534631,user2,192.168.2.201,Login denied: too many failed attempts,brute_force,1
+2025-12-19 05:54:06.535629,user3,192.168.22.81,Password authentication failed for david,brute_force,1
+2025-12-27 06:09:06.538628,user2,192.168.35.191,Password authentication failed for system,brute_force,1
+2025-12-27 02:19:06.541628,user1,192.168.14.101,Brute force attack detected from 192.168.7.111,brute_force,1
+2025-12-16 20:29:06.535629,user2,192.168.38.211,Failed SSH login attempt from 192.168.33.61,brute_force,1
+2025-12-30 18:07:06.537629,user2,192.168.40.31,Login rate limit exceeded from 192.168.19.211,brute_force,1
+2025-12-25 06:17:06.540627,admin,192.168.19.41,Suspicious login pattern detected from 192.168.10.151,brute_force,1
+2025-12-26 05:09:06.533628,alice,192.168.30.191,Brute force attack detected from 192.168.22.21,brute_force,1
+2025-12-24 11:50:06.536627,admin,192.168.36.41,Multiple failed login attempts detected,brute_force,1
+2025-12-04 18:43:06.533628,charlie,192.168.49.31,Account locked due to multiple failures,brute_force,1
+2025-12-07 12:17:06.536627,user3,192.168.32.221,Suspicious login pattern detected from 192.168.23.161,brute_force,1
+2025-12-04 22:30:06.534631,bob,192.168.21.31,Authentication failed: invalid password,brute_force,1
+2025-12-20 22:07:06.539627,user2,192.168.25.241,Suspicious login pattern detected from 192.168.10.81,brute_force,1
+2025-12-31 19:55:06.535629,alice,192.168.25.181,Authentication failed: invalid password,brute_force,1
+2025-12-22 08:10:06.539627,charlie,192.168.38.151,Multiple failed login attempts detected,brute_force,1
+2025-12-13 12:44:06.537629,charlie,192.168.30.111,Repeated login failures: eve@192.168.20.141,brute_force,1
+2025-12-16 09:01:06.535629,user1,192.168.21.171,Password authentication failed for user3,brute_force,1
+2025-12-04 15:13:06.537629,user2,192.168.44.11,Invalid credentials provided for bob,brute_force,1
+2025-12-05 14:06:06.541628,alice,192.168.35.91,Password authentication failed for system,brute_force,1
+2025-12-23 02:57:06.537629,system,192.168.31.151,Failed SSH login attempt from 192.168.19.171,brute_force,1
+2026-01-01 02:07:06.538628,user2,192.168.43.31,Invalid credentials provided for david,brute_force,1
+2025-12-13 01:16:06.540627,eve,192.168.23.191,Brute force attack detected from 192.168.45.241,brute_force,1
+2025-12-07 09:24:06.533628,user3,192.168.44.181,Brute force attack detected from 192.168.43.161,brute_force,1
+2025-12-14 18:58:06.535629,david,192.168.17.131,Repeated login failures: admin@192.168.18.1,brute_force,1
+2025-12-09 04:39:06.534631,user3,192.168.36.241,Account locked due to multiple failures,brute_force,1
+2025-12-30 19:00:06.539627,bob,192.168.35.131,Suspicious login pattern detected from 192.168.23.241,brute_force,1
+2025-12-16 13:55:06.535629,user1,192.168.40.181,Brute force attack detected from 192.168.37.211,brute_force,1
+2025-12-09 19:59:06.534631,alice,192.168.37.191,Login denied: too many failed attempts,brute_force,1
+2025-12-13 19:12:06.534631,eve,192.168.48.141,Suspicious login pattern detected from 192.168.14.81,brute_force,1
+2026-01-02 22:16:06.536627,alice,192.168.32.211,Multiple failed login attempts detected,brute_force,1
+2025-12-06 06:35:06.538628,user1,192.168.42.51,Login rate limit exceeded from 192.168.35.1,brute_force,1
+2025-12-15 15:34:06.537629,user2,192.168.46.221,Repeated login failures: bob@192.168.22.51,brute_force,1
+2025-12-13 10:40:06.536627,bob,192.168.26.61,Failed login attempt #20 for user alice,brute_force,1
+2026-01-01 08:21:06.540627,user1,192.168.15.181,Multiple failed login attempts detected,brute_force,1
+2025-12-18 23:49:06.539627,eve,192.168.44.141,Suspicious login pattern detected from 192.168.18.211,brute_force,1
+2025-12-19 09:57:06.539627,user3,192.168.19.101,Authentication failed: invalid password,brute_force,1
+2025-12-24 12:24:06.533628,user3,192.168.7.111,Brute force attack detected from 192.168.20.51,brute_force,1
+2025-12-19 08:21:06.539627,admin,192.168.22.121,Authentication failed: invalid password,brute_force,1
+2026-01-02 10:32:06.537629,user2,192.168.43.211,Failed SSH login attempt from 192.168.21.101,brute_force,1
+2025-12-13 14:05:06.538628,charlie,192.168.25.171,Brute force attack detected from 192.168.4.151,brute_force,1
+2025-12-18 00:25:06.539627,charlie,192.168.25.211,Invalid credentials provided for user3,brute_force,1
+2025-12-19 00:20:06.538628,user3,192.168.38.61,Login rate limit exceeded from 192.168.3.241,brute_force,1
+2025-12-27 09:55:06.533628,eve,192.168.11.1,Failed SSH login attempt from 192.168.16.141,brute_force,1
+2025-12-29 11:18:06.536627,system,192.168.45.211,Authentication failed: invalid password,brute_force,1
+2025-12-13 07:48:06.538628,charlie,192.168.21.151,Suspicious login pattern detected from 192.168.29.241,brute_force,1
+2025-12-21 00:10:06.535629,bob,192.168.42.211,Invalid credentials provided for charlie,brute_force,1
+2025-12-19 04:55:06.536627,alice,192.168.4.31,Multiple failed login attempts detected,brute_force,1
+2025-12-16 23:02:06.537629,system,192.168.49.181,Invalid credentials provided for admin,brute_force,1
+2025-12-02 13:12:06.541628,user1,192.168.34.141,Login rate limit exceeded from 192.168.43.81,brute_force,1
+2025-12-10 04:31:06.537629,bob,192.168.17.151,Failed login attempt #8 for user user1,brute_force,1
+2025-12-07 14:09:06.539627,charlie,192.168.13.61,Repeated login failures: user1@192.168.40.111,brute_force,1
+2025-12-06 13:00:06.534631,alice,192.168.18.191,Failed login attempt #4 for user charlie,brute_force,1
+2026-01-01 16:58:06.539627,david,192.168.16.151,Repeated login failures: admin@192.168.4.21,brute_force,1
+2025-12-26 18:51:06.539627,david,192.168.10.41,Failed login attempt #4 for user david,brute_force,1
+2025-12-24 02:53:06.540627,system,192.168.5.111,Repeated login failures: bob@192.168.10.151,brute_force,1
+2025-12-31 07:12:06.539627,user3,192.168.3.31,Password authentication failed for bob,brute_force,1
+2025-12-13 05:02:06.536627,system,192.168.36.1,Failed login attempt #6 for user charlie,brute_force,1
+2025-12-05 00:37:06.540627,user2,192.168.41.221,Invalid credentials provided for user2,brute_force,1
+2025-12-19 22:20:06.540627,user1,192.168.5.181,Invalid credentials provided for david,brute_force,1
+2025-12-08 15:37:06.539627,charlie,192.168.3.91,Brute force attack detected from 192.168.25.51,brute_force,1
+2025-12-03 00:04:06.540627,bob,192.168.32.91,Account locked due to multiple failures,brute_force,1
+2025-12-29 08:30:06.534631,david,192.168.23.81,Suspicious login pattern detected from 192.168.8.101,brute_force,1
+2025-12-24 02:04:06.534631,user1,192.168.42.241,Repeated login failures: user1@192.168.24.211,brute_force,1
+2026-01-02 20:38:06.537629,system,192.168.32.171,Suspicious login pattern detected from 192.168.2.161,brute_force,1
+2025-12-07 07:24:06.538628,user2,192.168.34.11,Failed login attempt #18 for user system,brute_force,1
+2026-01-05 02:37:06.537629,eve,192.168.23.121,Login rate limit exceeded from 192.168.23.211,brute_force,1
+2025-12-24 16:10:06.537629,admin,192.168.24.11,Brute force attack detected from 192.168.11.41,brute_force,1
+2025-12-19 12:42:06.537629,david,192.168.15.131,Invalid credentials provided for alice,brute_force,1
+2025-12-26 23:24:06.537629,alice,192.168.38.111,Failed login attempt #15 for user alice,brute_force,1
+2025-12-09 05:49:06.533628,alice,192.168.24.231,Failed SSH login attempt from 192.168.48.21,brute_force,1
+2025-12-25 04:17:06.534631,eve,192.168.4.161,Login rate limit exceeded from 192.168.29.91,brute_force,1
+2025-12-26 17:01:06.536627,user3,192.168.14.151,Multiple failed login attempts detected,brute_force,1
+2025-12-27 15:33:06.536627,bob,192.168.32.241,Account locked due to multiple failures,brute_force,1
+2025-12-06 06:48:06.536627,bob,192.168.37.221,Password authentication failed for david,brute_force,1
+2025-12-24 05:12:06.536627,user2,192.168.14.41,Login denied: too many failed attempts,brute_force,1
+2025-12-12 03:28:06.534631,admin,192.168.35.231,Account locked due to multiple failures,brute_force,1
+2025-12-14 21:54:06.535629,user1,192.168.28.11,Multiple failed login attempts detected,brute_force,1
+2025-12-15 21:22:06.535629,eve,192.168.17.81,Authentication failed: invalid password,brute_force,1
+2026-01-03 05:14:06.540627,david,192.168.8.171,Repeated login failures: system@192.168.14.171,brute_force,1
+2026-01-02 06:23:06.539627,eve,192.168.18.231,Brute force attack detected from 192.168.20.41,brute_force,1
+2025-12-09 09:34:06.534631,user2,192.168.7.31,Login denied: too many failed attempts,brute_force,1
+2025-12-12 16:25:06.540627,david,192.168.41.21,Login rate limit exceeded from 192.168.30.131,brute_force,1
+2025-12-29 21:48:06.540627,bob,192.168.2.31,Password authentication failed for user1,brute_force,1
+2025-12-24 12:45:06.537629,alice,192.168.2.191,Password authentication failed for user2,brute_force,1
+2025-12-07 00:54:06.540627,david,192.168.49.161,Account locked due to multiple failures,brute_force,1
+2025-12-28 19:51:06.538628,admin,192.168.3.131,Password authentication failed for user1,brute_force,1
+2025-12-28 02:37:06.534631,system,192.168.12.181,Failed login attempt #1 for user user3,brute_force,1
+2025-12-23 02:24:06.535629,user3,192.168.33.31,Account locked due to multiple failures,brute_force,1
+2026-01-04 07:27:06.537629,user3,192.168.27.241,Multiple failed login attempts detected,brute_force,1
+2025-12-23 06:49:06.535629,system,192.168.34.171,Brute force attack detected from 192.168.15.221,brute_force,1
+2025-12-22 01:53:06.537629,eve,192.168.30.141,Failed login attempt #2 for user eve,brute_force,1
+2026-01-02 07:27:06.537629,admin,192.168.13.201,Account locked due to multiple failures,brute_force,1
+2025-12-15 00:04:06.535629,alice,192.168.4.61,Failed login attempt #4 for user alice,brute_force,1
+2025-12-28 18:39:06.537629,user1,192.168.5.61,Failed login attempt #9 for user system,brute_force,1
+2025-12-08 19:00:06.537629,user2,192.168.14.141,Failed login attempt #4 for user alice,brute_force,1
+2025-12-27 00:31:06.535629,david,192.168.20.51,Password authentication failed for charlie,brute_force,1
+2025-12-18 08:37:06.537629,alice,192.168.31.131,Multiple failed login attempts detected,brute_force,1
+2025-12-29 17:49:06.538628,user2,192.168.23.61,Suspicious login pattern detected from 192.168.19.131,brute_force,1
+2026-01-02 08:44:06.540627,admin,192.168.28.71,Multiple failed login attempts detected,brute_force,1
+2025-12-15 15:22:06.538628,system,192.168.43.11,Multiple failed login attempts detected,brute_force,1
+2026-01-03 01:56:06.540627,david,192.168.18.1,Failed SSH login attempt from 192.168.10.221,brute_force,1
+2025-12-20 19:16:06.537629,alice,192.168.45.21,Password authentication failed for eve,brute_force,1
+2025-12-06 10:04:06.538628,user1,192.168.45.231,Failed SSH login attempt from 192.168.38.161,brute_force,1
+2025-12-29 02:17:06.538628,system,192.168.4.221,Invalid credentials provided for user1,brute_force,1
+2025-12-19 10:15:06.540627,user1,192.168.37.31,Multiple failed login attempts detected,brute_force,1
+2025-12-17 17:57:06.538628,david,192.168.17.1,Invalid credentials provided for system,brute_force,1
+2025-12-22 05:55:06.535629,david,192.168.35.11,Password authentication failed for user2,brute_force,1
+2025-12-19 03:21:06.540627,admin,192.168.15.241,Failed SSH login attempt from 192.168.10.171,brute_force,1
+2025-12-07 09:07:06.533628,user1,192.168.42.211,Invalid credentials provided for david,brute_force,1
+2025-12-06 12:15:06.539627,user2,192.168.8.61,Failed login attempt #3 for user eve,brute_force,1
+2025-12-08 15:08:06.535629,user1,192.168.36.161,Brute force attack detected from 192.168.25.71,brute_force,1
+2025-12-09 05:31:06.537629,alice,192.168.45.221,Repeated login failures: system@192.168.26.221,brute_force,1
+2025-12-10 11:40:06.534631,user2,192.168.28.121,Login rate limit exceeded from 192.168.47.21,brute_force,1
+2025-12-14 22:33:06.537629,charlie,192.168.10.231,Suspicious login pattern detected from 192.168.1.231,brute_force,1
+2025-12-26 19:35:06.539627,charlie,192.168.42.211,Failed SSH login attempt from 192.168.21.61,brute_force,1
+2026-01-05 04:46:06.539627,david,192.168.17.101,Failed login attempt #5 for user eve,brute_force,1
+2025-12-13 07:54:06.537629,david,192.168.1.111,Suspicious login pattern detected from 192.168.23.181,brute_force,1
+2025-12-31 10:53:06.540627,charlie,192.168.35.121,Login rate limit exceeded from 192.168.14.161,brute_force,1
+2025-12-16 00:49:06.540627,user2,192.168.30.161,Authentication failed: invalid password,brute_force,1
+2025-12-27 11:22:06.540627,bob,192.168.25.71,Authentication failed: invalid password,brute_force,1
+2025-12-16 07:02:06.539627,david,192.168.18.81,Multiple failed login attempts detected,brute_force,1
+2026-01-05 07:17:06.539627,david,192.168.43.121,Failed login attempt #17 for user eve,brute_force,1
+2025-12-21 04:31:06.536627,admin,192.168.19.201,Account locked due to multiple failures,brute_force,1
+2025-12-25 00:25:06.536627,alice,192.168.34.151,Repeated login failures: bob@192.168.12.181,brute_force,1
+2025-12-14 10:22:06.536627,eve,192.168.43.231,Invalid credentials provided for user3,brute_force,1
+2025-12-20 07:04:06.537629,admin,192.168.46.201,Login denied: too many failed attempts,brute_force,1
+2025-12-23 12:45:06.537629,admin,192.168.10.241,Failed SSH login attempt from 192.168.26.231,brute_force,1
+2025-12-02 00:49:06.535629,admin,192.168.6.161,Failed SSH login attempt from 192.168.12.31,brute_force,1
+2025-12-03 07:00:06.534631,system,192.168.34.151,Multiple failed login attempts detected,brute_force,1
+2025-12-06 08:15:06.538628,user2,192.168.42.71,Password authentication failed for david,brute_force,1
+2026-01-02 18:11:06.536627,user1,192.168.43.11,Login rate limit exceeded from 192.168.48.141,brute_force,1
+2025-12-06 08:40:06.539627,david,192.168.38.91,Failed SSH login attempt from 192.168.40.151,brute_force,1
+2025-12-20 16:55:06.534631,eve,192.168.21.31,Failed login attempt #1 for user alice,brute_force,1
+2025-12-26 12:43:06.540627,alice,192.168.23.171,Multiple failed login attempts detected,brute_force,1
+2025-12-21 03:04:06.536627,bob,192.168.4.61,Suspicious login pattern detected from 192.168.31.231,brute_force,1
+2025-12-30 18:12:06.537629,system,192.168.40.71,Multiple failed login attempts detected,brute_force,1
+2025-12-20 05:19:06.534631,system,192.168.3.61,Repeated login failures: user2@192.168.24.141,brute_force,1
+2025-12-31 22:40:06.536627,bob,192.168.41.21,Repeated login failures: system@192.168.26.11,brute_force,1
+2025-12-03 17:33:06.535629,charlie,192.168.46.91,Failed login attempt #12 for user user3,brute_force,1
+2026-01-03 22:23:06.540627,user2,192.168.45.31,Brute force attack detected from 192.168.12.121,brute_force,1
+2025-12-17 04:18:06.534631,user3,192.168.7.171,Repeated login failures: user2@192.168.44.51,brute_force,1
+2025-12-19 09:11:06.539627,david,192.168.36.121,Password authentication failed for admin,brute_force,1
+2025-12-02 17:38:06.540627,david,192.168.41.161,Login rate limit exceeded from 192.168.27.111,brute_force,1
+2025-12-26 09:50:06.533628,bob,192.168.4.141,Suspicious login pattern detected from 192.168.42.211,brute_force,1
+2025-12-16 06:41:06.540627,charlie,192.168.13.201,Login denied: too many failed attempts,brute_force,1
+2025-12-02 15:35:06.538628,alice,192.168.21.71,Login rate limit exceeded from 192.168.24.241,brute_force,1
+2025-12-10 13:17:06.539627,david,192.168.40.181,Login denied: too many failed attempts,brute_force,1
+2025-12-08 02:18:06.540627,david,192.168.7.121,Login rate limit exceeded from 192.168.8.41,brute_force,1
+2025-12-19 01:41:06.539627,charlie,192.168.8.61,Login rate limit exceeded from 192.168.24.141,brute_force,1
+2025-12-09 06:55:06.540627,david,192.168.21.151,Invalid credentials provided for charlie,brute_force,1
+2025-12-22 06:11:06.536627,alice,192.168.42.241,Account locked due to multiple failures,brute_force,1
+2025-12-22 01:33:06.538628,bob,192.168.24.11,Repeated login failures: user3@192.168.23.191,brute_force,1
+2025-12-27 13:54:06.538628,admin,192.168.45.171,Invalid credentials provided for david,brute_force,1
+2025-12-21 03:51:06.537629,bob,192.168.4.101,Suspicious login pattern detected from 192.168.23.131,brute_force,1
+2025-12-10 09:28:06.539627,user3,192.168.22.11,Login denied: too many failed attempts,brute_force,1
+2026-01-01 10:32:06.536627,alice,192.168.26.181,Failed login attempt #16 for user system,brute_force,1
+2025-12-08 19:17:06.534631,user3,192.168.35.101,Repeated login failures: user2@192.168.23.161,brute_force,1
+2025-12-28 20:49:06.537629,system,192.168.18.81,Login denied: too many failed attempts,brute_force,1
+2026-01-04 14:40:06.536627,alice,192.168.45.131,Invalid credentials provided for charlie,brute_force,1
+2025-12-03 06:45:06.535629,user2,192.168.9.71,Login rate limit exceeded from 192.168.17.111,brute_force,1
+2025-12-24 18:42:06.535629,bob,192.168.6.51,Invalid credentials provided for david,brute_force,1
+2025-12-11 06:49:06.538628,user1,192.168.2.81,Password authentication failed for alice,brute_force,1
+2025-12-03 07:28:06.535629,eve,192.168.31.81,Failed login attempt #13 for user alice,brute_force,1
+2025-12-23 01:11:06.538628,user3,192.168.13.31,Login denied: too many failed attempts,brute_force,1
+2025-12-14 11:11:06.535629,admin,192.168.31.181,Account locked due to multiple failures,brute_force,1
+2025-12-30 06:26:06.540627,bob,192.168.44.101,Account locked due to multiple failures,brute_force,1
+2025-12-03 14:37:06.540627,alice,192.168.49.51,Failed login attempt #2 for user user1,brute_force,1
+2025-12-17 00:43:06.534631,alice,192.168.18.131,Suspicious login pattern detected from 192.168.16.241,brute_force,1
+2025-12-25 01:01:06.536627,user3,192.168.45.11,Authentication failed: invalid password,brute_force,1
+2025-12-15 11:37:06.533628,user2,192.168.13.51,Password authentication failed for bob,brute_force,1
+2025-12-21 18:19:06.537629,admin,192.168.26.81,Invalid credentials provided for system,brute_force,1
+2025-12-13 15:07:06.535629,bob,192.168.2.221,Failed SSH login attempt from 192.168.34.141,brute_force,1
+2025-12-10 13:09:06.536627,david,192.168.42.191,Repeated login failures: david@192.168.47.21,brute_force,1
+2025-12-26 15:43:06.537629,charlie,192.168.12.161,Invalid credentials provided for user2,brute_force,1
+2025-12-22 12:19:06.535629,admin,192.168.20.131,Brute force attack detected from 192.168.13.111,brute_force,1
+2025-12-07 07:32:06.539627,alice,192.168.41.111,Account locked due to multiple failures,brute_force,1
+2025-12-03 23:44:06.538628,eve,192.168.31.111,Login rate limit exceeded from 192.168.6.31,brute_force,1
+2025-12-30 14:01:06.537629,bob,192.168.11.1,Invalid credentials provided for admin,brute_force,1
+2025-12-30 08:51:06.539627,bob,192.168.12.31,Password authentication failed for bob,brute_force,1
+2025-12-25 01:36:06.535629,eve,192.168.9.221,Suspicious login pattern detected from 192.168.2.141,brute_force,1
+2025-12-05 00:30:06.535629,alice,192.168.29.71,Multiple failed login attempts detected,brute_force,1
+2025-12-29 03:16:06.536627,bob,192.168.39.171,Authentication failed: invalid password,brute_force,1
+2025-12-10 07:35:06.540627,user1,192.168.10.221,Multiple failed login attempts detected,brute_force,1
+2026-01-03 10:06:06.539627,charlie,192.168.25.121,Invalid credentials provided for user2,brute_force,1
+2025-12-04 08:18:06.535629,eve,192.168.49.151,Failed login attempt #2 for user admin,brute_force,1
+2025-12-23 03:07:06.535629,system,192.168.27.151,Brute force attack detected from 192.168.20.41,brute_force,1
+2025-12-29 14:41:06.534631,system,192.168.34.221,Password authentication failed for system,brute_force,1
+2026-01-04 05:26:06.534631,david,192.168.43.71,Invalid credentials provided for eve,brute_force,1
+2025-12-10 02:33:06.539627,eve,192.168.12.21,Failed login attempt #3 for user user3,brute_force,1
+2025-12-12 03:51:06.536627,alice,192.168.6.101,Login rate limit exceeded from 192.168.25.111,brute_force,1
+2025-12-28 12:11:06.537629,charlie,192.168.34.51,Brute force attack detected from 192.168.12.141,brute_force,1
+2025-12-08 14:28:06.534631,system,192.168.1.111,Login rate limit exceeded from 192.168.31.241,brute_force,1
+2025-12-12 22:44:06.535629,system,192.168.33.161,Failed login attempt #5 for user user3,brute_force,1
+2025-12-30 13:20:06.537629,bob,192.168.44.31,Multiple failed login attempts detected,brute_force,1
+2025-12-27 07:57:06.535629,system,192.168.15.171,Failed SSH login attempt from 192.168.6.141,brute_force,1
+2025-12-05 11:15:06.539627,user2,192.168.23.171,Invalid credentials provided for alice,brute_force,1
+2025-12-21 05:50:06.537629,admin,192.168.44.211,Invalid credentials provided for system,brute_force,1
+2025-12-31 08:38:06.537629,david,192.168.24.191,Multiple failed login attempts detected,brute_force,1
+2025-12-27 23:56:06.539627,bob,192.168.39.211,Invalid credentials provided for admin,brute_force,1
+2025-12-25 14:40:06.536627,eve,192.168.29.21,Login rate limit exceeded from 192.168.43.91,brute_force,1
+2025-12-16 10:46:06.540627,bob,192.168.24.161,Login denied: too many failed attempts,brute_force,1
+2025-12-02 04:17:06.535629,user2,192.168.30.121,Repeated login failures: system@192.168.18.111,brute_force,1
+2026-01-04 20:43:06.539627,user1,192.168.20.1,Suspicious login pattern detected from 192.168.36.21,brute_force,1
+2025-12-18 01:44:06.535629,user1,192.168.29.81,Authentication failed: invalid password,brute_force,1
+2025-12-23 10:54:06.538628,user1,192.168.6.151,Failed SSH login attempt from 192.168.29.111,brute_force,1
+2025-12-14 04:07:06.538628,bob,192.168.13.71,Brute force attack detected from 192.168.30.31,brute_force,1
+2025-12-19 04:11:06.534631,user2,192.168.48.41,Multiple failed login attempts detected,brute_force,1
+2025-12-13 12:34:06.538628,eve,192.168.46.221,Repeated login failures: bob@192.168.31.151,brute_force,1
+2025-12-11 04:50:06.540627,bob,192.168.13.1,Password authentication failed for bob,brute_force,1
+2025-12-06 03:17:06.538628,user2,192.168.7.191,Password authentication failed for david,brute_force,1
+2025-12-18 22:00:06.539627,user1,192.168.15.151,Authentication failed: invalid password,brute_force,1
+2025-12-27 09:29:06.536627,eve,192.168.49.151,Multiple failed login attempts detected,brute_force,1
+2025-12-09 21:11:06.539627,eve,192.168.22.21,Account locked due to multiple failures,brute_force,1
+2025-12-29 03:28:06.535629,david,192.168.31.71,Invalid credentials provided for user3,brute_force,1
+2026-01-03 03:33:06.534631,eve,192.168.10.101,Suspicious login pattern detected from 192.168.28.141,brute_force,1
+2025-12-12 17:15:06.536627,alice,192.168.22.41,Login rate limit exceeded from 192.168.8.181,brute_force,1
+2025-12-23 19:49:06.537629,user1,192.168.6.191,Password authentication failed for user1,brute_force,1
+2025-12-13 09:14:06.540627,user2,192.168.12.71,Failed login attempt #20 for user admin,brute_force,1
+2025-12-02 12:16:06.540627,system,192.168.40.91,Multiple failed login attempts detected,brute_force,1
+2025-12-13 19:01:06.540627,system,192.168.37.221,Brute force attack detected from 192.168.26.121,brute_force,1
+2025-12-08 13:21:06.533628,david,192.168.5.241,Login rate limit exceeded from 192.168.44.121,brute_force,1
+2025-12-16 20:42:06.534631,eve,192.168.24.181,Suspicious login pattern detected from 192.168.48.1,brute_force,1
+2026-01-03 17:41:06.539627,user1,192.168.37.141,Authentication failed: invalid password,brute_force,1
+2025-12-27 00:10:06.539627,bob,192.168.8.141,Login rate limit exceeded from 192.168.16.51,brute_force,1
+2025-12-19 14:15:06.534631,admin,192.168.37.161,Multiple failed login attempts detected,brute_force,1
+2025-12-17 01:20:06.538628,system,192.168.13.241,Password authentication failed for bob,brute_force,1
+2025-12-02 21:15:06.535629,admin,192.168.18.111,Account locked due to multiple failures,brute_force,1
+2025-12-30 04:55:06.539627,user2,192.168.11.161,Suspicious login pattern detected from 192.168.49.91,brute_force,1
+2025-12-27 07:34:06.534631,david,192.168.33.61,Failed login attempt #4 for user eve,brute_force,1
+2025-12-11 16:07:06.534631,david,192.168.49.201,Failed SSH login attempt from 192.168.35.221,brute_force,1
+2025-12-13 17:51:06.536627,user2,192.168.48.211,Repeated login failures: charlie@192.168.48.241,brute_force,1
+2025-12-06 05:52:06.537629,alice,192.168.17.221,Repeated login failures: user1@192.168.42.11,brute_force,1
+2025-12-09 18:28:06.539627,alice,192.168.46.71,Brute force attack detected from 192.168.30.161,brute_force,1
+2025-12-31 20:26:06.538628,user3,192.168.44.1,Login denied: too many failed attempts,brute_force,1
+2025-12-23 21:17:06.539627,user2,192.168.18.11,Brute force attack detected from 192.168.3.231,brute_force,1
+2026-01-04 04:52:06.538628,user3,192.168.18.201,Repeated login failures: david@192.168.32.11,brute_force,1
+2026-01-02 15:12:06.536627,david,192.168.6.31,Invalid credentials provided for alice,brute_force,1
+2025-12-25 15:24:06.538628,system,192.168.23.141,Login denied: too many failed attempts,brute_force,1
+2025-12-10 01:31:06.535629,user2,192.168.25.201,Failed SSH login attempt from 192.168.9.171,brute_force,1
+2025-12-21 11:43:06.535629,user3,192.168.22.61,Authentication failed: invalid password,brute_force,1
+2025-12-08 05:13:06.540627,system,192.168.23.151,Repeated login failures: user1@192.168.29.181,brute_force,1
+2025-12-12 07:52:06.534631,charlie,192.168.27.1,Invalid credentials provided for user1,brute_force,1
+2025-12-16 22:29:06.538628,david,192.168.41.111,Brute force attack detected from 192.168.37.241,brute_force,1
+2026-01-03 23:21:06.538628,user3,192.168.46.21,Suspicious login pattern detected from 192.168.45.91,brute_force,1
+2025-12-18 16:03:06.534631,alice,192.168.5.171,Invalid credentials provided for user1,brute_force,1
+2025-12-11 15:00:06.535629,alice,192.168.27.81,Account locked due to multiple failures,brute_force,1
+2025-12-30 06:35:06.538628,bob,192.168.24.21,Account locked due to multiple failures,brute_force,1
+2025-12-27 16:23:06.536627,alice,192.168.15.91,Authentication failed: invalid password,brute_force,1
+2025-12-15 01:10:06.539627,user1,192.168.47.31,Suspicious login pattern detected from 192.168.2.91,brute_force,1
+2025-12-13 23:34:06.539627,eve,192.168.36.181,Repeated login failures: charlie@192.168.42.111,brute_force,1
+2025-12-27 09:30:06.535629,charlie,192.168.4.71,Brute force attack detected from 192.168.39.11,brute_force,1
+2025-12-06 07:08:06.535629,system,192.168.3.91,Password authentication failed for eve,brute_force,1
+2025-12-28 12:32:06.540627,system,192.168.6.31,Login denied: too many failed attempts,brute_force,1
+2025-12-02 20:45:06.534631,alice,192.168.43.231,Login rate limit exceeded from 192.168.10.201,brute_force,1
+2025-12-25 21:34:06.537629,alice,192.168.36.151,Password authentication failed for david,brute_force,1
+2025-12-20 00:12:06.537629,admin,192.168.1.141,Invalid credentials provided for david,brute_force,1
+2025-12-20 04:05:06.540627,alice,192.168.1.91,Account locked due to multiple failures,brute_force,1
+2025-12-11 23:04:06.539627,bob,192.168.20.181,Authentication failed: invalid password,brute_force,1
+2025-12-23 16:44:06.541628,david,192.168.17.101,Login denied: too many failed attempts,brute_force,1
+2025-12-21 12:07:06.535629,user2,192.168.37.131,Repeated login failures: user3@192.168.30.21,brute_force,1
+2025-12-09 09:36:06.535629,bob,192.168.18.201,Password authentication failed for system,brute_force,1
+2025-12-06 02:12:06.538628,david,192.168.31.171,Account locked due to multiple failures,brute_force,1
+2025-12-21 07:29:06.534631,system,192.168.5.61,Brute force attack detected from 192.168.1.161,brute_force,1
+2025-12-17 17:55:06.539627,user1,192.168.3.181,Login rate limit exceeded from 192.168.31.151,brute_force,1
+2025-12-11 00:07:06.534631,user1,192.168.23.1,Account locked due to multiple failures,brute_force,1
+2025-12-26 07:41:06.535629,charlie,192.168.12.111,Suspicious login pattern detected from 192.168.43.1,brute_force,1
+2025-12-12 04:41:06.537629,user1,192.168.21.141,Login rate limit exceeded from 192.168.32.21,brute_force,1
+2025-12-21 12:28:06.533628,eve,192.168.37.171,Failed SSH login attempt from 192.168.26.91,brute_force,1
+2025-12-18 14:01:06.537629,system,192.168.32.131,Login rate limit exceeded from 192.168.48.61,brute_force,1
+2025-12-31 07:07:06.539627,david,192.168.31.181,Multiple failed login attempts detected,brute_force,1
+2026-01-01 09:24:06.534631,user2,192.168.30.151,Multiple failed login attempts detected,brute_force,1
+2025-12-13 19:52:06.540627,user1,192.168.7.51,Invalid credentials provided for eve,brute_force,1
+2025-12-19 12:48:06.538628,bob,192.168.12.211,Authentication failed: invalid password,brute_force,1
+2025-12-03 01:57:06.539627,david,192.168.49.21,Login rate limit exceeded from 192.168.46.181,brute_force,1
+2025-12-31 22:05:06.533628,system,192.168.2.51,Repeated login failures: admin@192.168.33.11,brute_force,1
+2025-12-20 00:59:06.535629,david,192.168.8.231,Brute force attack detected from 192.168.28.1,brute_force,1
+2025-12-09 13:29:06.539627,user3,192.168.44.151,Authentication failed: invalid password,brute_force,1
+2025-12-24 06:55:06.536627,bob,192.168.4.91,Multiple failed login attempts detected,brute_force,1
+2025-12-26 06:26:06.538628,admin,192.168.43.231,Failed login attempt #15 for user user1,brute_force,1
+2025-12-29 19:33:06.534631,charlie,192.168.16.191,Password authentication failed for eve,brute_force,1
+2025-12-07 10:56:06.539627,alice,192.168.26.211,Multiple failed login attempts detected,brute_force,1
+2026-01-03 09:00:06.538628,charlie,192.168.9.171,Multiple failed login attempts detected,brute_force,1
+2025-12-19 16:59:06.535629,eve,192.168.27.81,Login denied: too many failed attempts,brute_force,1
+2026-01-03 20:41:06.540627,david,192.168.25.151,Failed login attempt #10 for user user3,brute_force,1
+2025-12-08 15:47:06.539627,david,192.168.30.121,Authentication failed: invalid password,brute_force,1
+2025-12-09 05:37:06.536627,admin,192.168.22.241,Failed SSH login attempt from 192.168.21.91,brute_force,1
+2026-01-04 02:57:06.540627,user3,192.168.41.31,Account locked due to multiple failures,brute_force,1
+2025-12-30 15:14:06.535629,alice,192.168.17.41,Failed login attempt #13 for user user2,brute_force,1
+2025-12-03 23:28:06.536627,admin,192.168.47.31,Brute force attack detected from 192.168.33.1,brute_force,1
+2025-12-16 14:42:06.537629,system,192.168.8.241,Authentication failed: invalid password,brute_force,1
+2025-12-14 00:05:06.537629,admin,192.168.41.191,Login rate limit exceeded from 192.168.7.121,brute_force,1
+2026-01-01 11:56:06.536627,user1,192.168.16.51,Failed SSH login attempt from 192.168.29.171,brute_force,1
+2025-12-08 10:07:06.538628,user1,192.168.41.111,Account locked due to multiple failures,brute_force,1
+2025-12-29 21:04:06.537629,alice,192.168.5.111,Repeated login failures: eve@192.168.7.191,brute_force,1
+2025-12-14 00:27:06.537629,user2,192.168.47.91,Invalid credentials provided for bob,brute_force,1
+2025-12-10 05:31:06.539627,charlie,192.168.2.131,Suspicious login pattern detected from 192.168.49.151,brute_force,1
+2025-12-14 18:06:06.539627,user1,192.168.28.141,Account locked due to multiple failures,brute_force,1
+2025-12-13 01:34:06.535629,eve,192.168.28.241,Invalid credentials provided for alice,brute_force,1
+2025-12-02 15:08:06.533628,user1,192.168.48.161,Failed login attempt #18 for user charlie,brute_force,1
+2026-01-03 10:09:06.537629,user2,192.168.1.21,Suspicious login pattern detected from 192.168.22.241,brute_force,1
+2025-12-07 09:17:06.539627,bob,192.168.34.1,Account locked due to multiple failures,brute_force,1
+2025-12-19 23:16:06.535629,user2,192.168.22.201,Suspicious login pattern detected from 192.168.1.101,brute_force,1
+2026-01-03 23:49:06.534631,user3,192.168.26.241,Brute force attack detected from 192.168.13.101,brute_force,1
+2025-12-07 12:32:06.537629,charlie,192.168.6.191,Brute force attack detected from 192.168.36.21,brute_force,1
+2025-12-12 06:24:06.540627,david,192.168.49.231,Invalid credentials provided for alice,brute_force,1
+2025-12-09 12:19:06.538628,bob,192.168.40.11,Login rate limit exceeded from 192.168.30.1,brute_force,1
+2025-12-25 19:52:06.537629,system,192.168.33.181,Failed SSH login attempt from 192.168.49.81,brute_force,1
+2025-12-17 00:59:06.536627,david,192.168.10.111,Brute force attack detected from 192.168.36.121,brute_force,1
+2025-12-06 03:30:06.537629,admin,192.168.15.181,Account locked due to multiple failures,brute_force,1
+2025-12-11 10:06:06.535629,user2,192.168.15.231,Invalid credentials provided for bob,brute_force,1
+2025-12-15 07:50:06.537629,user1,192.168.43.1,Login denied: too many failed attempts,brute_force,1
+2026-01-03 06:49:06.537629,user1,192.168.12.1,Password authentication failed for user2,brute_force,1
+2025-12-19 19:58:06.540627,system,192.168.37.151,Authentication failed: invalid password,brute_force,1
+2025-12-19 07:43:06.535629,admin,192.168.7.91,Account locked due to multiple failures,brute_force,1
+2026-01-05 01:13:06.540627,charlie,192.168.34.161,Multiple failed login attempts detected,brute_force,1
+2025-12-09 05:24:06.540627,system,192.168.9.121,Login denied: too many failed attempts,brute_force,1
+2026-01-04 18:47:06.534631,bob,192.168.3.181,Multiple failed login attempts detected,brute_force,1
+2025-12-30 19:43:06.540627,bob,192.168.49.141,Multiple failed login attempts detected,brute_force,1
+2026-01-03 09:32:06.534631,alice,192.168.1.21,Login denied: too many failed attempts,brute_force,1
+2025-12-24 23:57:06.534631,david,192.168.45.51,Password authentication failed for charlie,brute_force,1
+2025-12-28 14:32:06.538628,system,192.168.41.151,Failed login attempt #20 for user user2,brute_force,1
+2025-12-30 10:20:06.534631,alice,192.168.25.201,Failed SSH login attempt from 192.168.18.101,brute_force,1
+2025-12-24 12:26:06.534631,user1,192.168.3.61,Password authentication failed for user1,brute_force,1
+2025-12-22 13:37:06.539627,user1,192.168.12.71,Password authentication failed for david,brute_force,1
+2025-12-03 16:59:06.538628,alice,192.168.3.181,Multiple failed login attempts detected,brute_force,1
+2025-12-17 12:23:06.538628,admin,192.168.16.91,Failed SSH login attempt from 192.168.24.201,brute_force,1
+2025-12-25 20:21:06.539627,charlie,192.168.43.51,Login denied: too many failed attempts,brute_force,1
+2025-12-22 15:41:06.537629,eve,192.168.39.121,Suspicious login pattern detected from 192.168.26.181,brute_force,1
+2025-12-20 15:52:06.534631,admin,192.168.44.161,Password authentication failed for charlie,brute_force,1
+2025-12-16 22:11:06.540627,user2,192.168.27.131,Brute force attack detected from 192.168.34.71,brute_force,1
+2025-12-30 01:28:06.541628,user3,192.168.14.181,Password authentication failed for eve,brute_force,1
+2025-12-22 01:30:06.537629,charlie,192.168.18.111,Brute force attack detected from 192.168.35.151,brute_force,1
+2025-12-17 05:39:06.541628,admin,192.168.6.211,Login denied: too many failed attempts,brute_force,1
+2025-12-20 18:24:06.539627,david,192.168.29.151,Login denied: too many failed attempts,brute_force,1
+2025-12-14 13:17:06.537629,david,192.168.20.1,Multiple failed login attempts detected,brute_force,1
+2025-12-13 19:47:06.540627,user1,192.168.44.141,Multiple failed login attempts detected,brute_force,1
+2025-12-25 16:28:06.536627,alice,192.168.28.11,Authentication failed: invalid password,brute_force,1
+2025-12-07 17:35:06.536627,user2,192.168.26.71,Login rate limit exceeded from 192.168.35.141,brute_force,1
+2025-12-11 18:00:06.537629,eve,192.168.15.61,Invalid credentials provided for alice,brute_force,1
+2025-12-24 17:05:06.535629,system,192.168.21.21,Failed login attempt #14 for user eve,brute_force,1
+2025-12-10 09:14:06.540627,user3,192.168.25.51,Brute force attack detected from 192.168.32.181,brute_force,1
+2025-12-28 03:15:06.534631,bob,192.168.28.101,Authentication failed: invalid password,brute_force,1
+2025-12-16 06:33:06.535629,eve,192.168.34.141,Multiple failed login attempts detected,brute_force,1
+2025-12-23 13:04:06.537629,eve,192.168.4.241,Authentication failed: invalid password,brute_force,1
+2025-12-15 03:09:06.534631,eve,192.168.4.201,Account locked due to multiple failures,brute_force,1
+2025-12-02 16:21:06.538628,user2,192.168.9.51,Suspicious login pattern detected from 192.168.46.201,brute_force,1
+2025-12-31 00:27:06.538628,admin,192.168.42.1,Repeated login failures: user3@192.168.28.191,brute_force,1
+2025-12-12 05:20:06.540627,user2,192.168.22.1,Suspicious login pattern detected from 192.168.41.181,brute_force,1
+2025-12-03 23:18:06.535629,david,192.168.43.91,Brute force attack detected from 192.168.10.201,brute_force,1
+2025-12-18 12:26:06.536627,user1,192.168.2.161,Brute force attack detected from 192.168.37.231,brute_force,1
+2025-12-25 22:40:06.534631,user1,192.168.26.241,Multiple failed login attempts detected,brute_force,1
+2025-12-18 02:48:06.540627,admin,192.168.6.181,Login rate limit exceeded from 192.168.1.131,brute_force,1
+2025-12-10 01:11:06.538628,admin,192.168.17.31,Login denied: too many failed attempts,brute_force,1
+2026-01-01 11:30:06.534631,david,192.168.4.71,Failed login attempt #1 for user user1,brute_force,1
+2025-12-16 19:31:06.537629,eve,192.168.43.101,Login denied: too many failed attempts,brute_force,1
+2025-12-18 20:40:06.539627,eve,192.168.47.131,Invalid credentials provided for user1,brute_force,1
+2025-12-29 04:53:06.538628,admin,192.168.14.41,Login rate limit exceeded from 192.168.9.141,brute_force,1
+2025-12-23 08:08:06.539627,david,192.168.48.11,Brute force attack detected from 192.168.41.111,brute_force,1
+2025-12-10 07:55:06.533628,user2,192.168.40.51,Account locked due to multiple failures,brute_force,1
+2025-12-26 12:47:06.537629,user1,192.168.24.211,Authentication failed: invalid password,brute_force,1
+2025-12-27 19:07:06.540627,system,192.168.26.221,Failed SSH login attempt from 192.168.30.161,brute_force,1
+2025-12-26 16:23:06.534631,eve,192.168.17.31,Password authentication failed for eve,brute_force,1
+2025-12-17 11:25:06.538628,system,192.168.17.241,Repeated login failures: admin@192.168.2.61,brute_force,1
+2025-12-17 10:42:06.536627,david,192.168.23.141,Login rate limit exceeded from 192.168.34.11,brute_force,1
+2025-12-05 11:05:06.539627,user1,192.168.40.111,Repeated login failures: david@192.168.27.91,brute_force,1
+2025-12-05 02:11:06.537629,david,192.168.45.81,Login denied: too many failed attempts,brute_force,1
+2025-12-01 18:40:06.537629,user1,192.168.10.181,Brute force attack detected from 192.168.43.111,brute_force,1
+2025-12-02 13:53:06.539627,user2,192.168.22.171,Suspicious login pattern detected from 192.168.20.241,brute_force,1
+2025-12-02 14:22:06.539627,david,192.168.30.231,Login rate limit exceeded from 192.168.1.141,brute_force,1
+2025-12-16 09:55:06.535629,bob,192.168.34.231,Login denied: too many failed attempts,brute_force,1
+2025-12-25 23:56:06.540627,user2,192.168.18.171,Failed SSH login attempt from 192.168.15.71,brute_force,1
+2026-01-01 04:44:06.537629,user1,192.168.42.81,Brute force attack detected from 192.168.34.161,brute_force,1
+2025-12-08 03:08:06.536627,charlie,192.168.7.101,Failed login attempt #20 for user system,brute_force,1
+2025-12-10 10:29:06.533628,user1,192.168.22.181,Authentication failed: invalid password,brute_force,1
+2025-12-20 19:51:06.538628,charlie,192.168.28.211,Failed SSH login attempt from 192.168.3.61,brute_force,1
+2025-12-23 02:41:06.540627,charlie,192.168.34.91,Login denied: too many failed attempts,brute_force,1
+2026-01-01 03:37:06.534631,david,192.168.28.151,Authentication failed: invalid password,brute_force,1
+2025-12-11 08:49:06.535629,charlie,192.168.4.141,Account locked due to multiple failures,brute_force,1
+2025-12-10 13:04:06.535629,user3,192.168.44.201,Password authentication failed for charlie,brute_force,1
+2026-01-01 00:06:06.538628,user3,192.168.23.151,Repeated login failures: user3@192.168.20.161,brute_force,1
+2025-12-25 18:47:06.538628,charlie,192.168.14.1,Invalid credentials provided for eve,brute_force,1
+2026-01-02 22:35:06.538628,admin,192.168.31.61,Authentication failed: invalid password,brute_force,1
+2025-12-12 01:17:06.535629,user2,192.168.31.111,Invalid credentials provided for admin,brute_force,1
+2025-12-07 08:09:06.537629,user1,192.168.46.21,Suspicious login pattern detected from 192.168.4.111,brute_force,1
+2025-12-31 02:45:06.536627,user2,192.168.33.21,Password authentication failed for david,brute_force,1
+2025-12-04 23:10:06.539627,charlie,192.168.17.21,Authentication failed: invalid password,brute_force,1
+2026-01-01 01:44:06.538628,user3,192.168.31.41,Repeated login failures: system@192.168.49.61,brute_force,1
+2025-12-10 12:29:06.534631,user1,192.168.34.1,Authentication failed: invalid password,brute_force,1
+2025-12-23 13:16:06.535629,user1,192.168.31.91,Brute force attack detected from 192.168.9.111,brute_force,1
+2025-12-08 06:36:06.535629,user2,192.168.28.21,Invalid credentials provided for user2,brute_force,1
+2025-12-27 08:32:06.541628,admin,192.168.42.231,Failed login attempt #10 for user admin,brute_force,1
+2025-12-19 07:53:06.534631,eve,192.168.20.91,Suspicious login pattern detected from 192.168.24.151,brute_force,1
+2025-12-25 04:43:06.540627,user3,192.168.16.31,Brute force attack detected from 192.168.14.231,brute_force,1
+2026-01-04 11:10:06.538628,admin,192.168.9.1,Account locked due to multiple failures,brute_force,1
+2025-12-26 17:21:06.535629,user1,192.168.32.141,Password authentication failed for user1,brute_force,1
+2026-01-03 03:57:06.537629,alice,192.168.26.191,Failed login attempt #18 for user alice,brute_force,1
+2025-12-03 02:08:06.534631,bob,192.168.47.31,Suspicious login pattern detected from 192.168.14.241,brute_force,1
+2025-12-09 03:11:06.540627,eve,192.168.17.81,Account locked due to multiple failures,brute_force,1
+2025-12-29 13:11:06.535629,user2,192.168.35.111,Login rate limit exceeded from 192.168.37.61,brute_force,1
+2025-12-30 14:28:06.534631,charlie,192.168.17.191,Account locked due to multiple failures,brute_force,1
+2025-12-06 17:06:06.535629,eve,192.168.23.1,Suspicious login pattern detected from 192.168.34.61,brute_force,1
+2025-12-28 09:28:06.538628,user1,192.168.4.231,Invalid credentials provided for bob,brute_force,1
+2025-12-18 10:37:06.537629,eve,192.168.4.241,Password authentication failed for charlie,brute_force,1
+2025-12-18 23:58:06.537629,david,192.168.26.181,Multiple failed login attempts detected,brute_force,1
+2026-01-01 21:05:06.540627,alice,192.168.42.221,Failed login attempt #16 for user user1,brute_force,1
+2025-12-03 14:14:06.535629,david,192.168.25.51,Password authentication failed for user1,brute_force,1
+2025-12-27 15:37:06.535629,user2,192.168.10.241,Login rate limit exceeded from 192.168.12.221,brute_force,1
+2025-12-28 12:00:06.536627,user1,192.168.39.51,Multiple failed login attempts detected,brute_force,1
+2025-12-25 23:38:06.537629,user2,192.168.32.51,Suspicious login pattern detected from 192.168.38.101,brute_force,1
+2025-12-15 10:12:06.534631,eve,192.168.32.181,Repeated login failures: user3@192.168.17.101,brute_force,1
+2025-12-24 02:32:06.539627,user1,192.168.26.1,Suspicious login pattern detected from 192.168.24.231,brute_force,1
+2025-12-16 21:53:06.540627,alice,192.168.4.171,Login rate limit exceeded from 192.168.49.71,brute_force,1
+2025-12-17 05:00:06.537629,eve,192.168.47.51,Authentication failed: invalid password,brute_force,1
+2025-12-09 12:00:06.540627,user2,192.168.17.221,Authentication failed: invalid password,brute_force,1
+2025-12-27 05:04:06.534631,eve,192.168.19.21,Authentication failed: invalid password,brute_force,1
+2025-12-24 14:49:06.535629,charlie,192.168.39.121,Repeated login failures: david@192.168.28.211,brute_force,1
+2025-12-25 08:59:06.538628,user3,192.168.12.1,Login rate limit exceeded from 192.168.32.1,brute_force,1
+2025-12-25 21:04:06.540627,user1,192.168.11.71,Account locked due to multiple failures,brute_force,1
+2025-12-10 23:31:06.540627,charlie,192.168.31.111,Suspicious login pattern detected from 192.168.21.131,brute_force,1
+2025-12-01 18:38:06.539627,alice,192.168.10.231,Login rate limit exceeded from 192.168.36.241,brute_force,1
+2025-12-21 08:01:06.536627,alice,192.168.31.191,Brute force attack detected from 192.168.22.211,brute_force,1
+2025-12-26 08:27:06.539627,user1,192.168.43.201,Multiple failed login attempts detected,brute_force,1
+2025-12-17 18:50:06.539627,alice,192.168.24.191,Account locked due to multiple failures,brute_force,1
+2025-12-08 08:57:06.534631,admin,192.168.7.191,Repeated login failures: system@192.168.25.201,brute_force,1
+2025-12-14 05:01:06.535629,david,192.168.31.181,Authentication failed: invalid password,brute_force,1
+2025-12-21 11:15:06.536627,bob,192.168.21.71,Login denied: too many failed attempts,brute_force,1
+2025-12-14 08:20:06.537629,david,192.168.26.51,Failed SSH login attempt from 192.168.15.81,brute_force,1
+2025-12-09 10:40:06.538628,user3,192.168.11.51,Login rate limit exceeded from 192.168.47.41,brute_force,1
+2025-12-31 22:49:06.540627,user2,192.168.36.231,Multiple failed login attempts detected,brute_force,1
+2025-12-04 13:56:06.534631,david,192.168.10.101,Suspicious login pattern detected from 192.168.32.141,brute_force,1
+2025-12-01 23:52:06.535629,eve,192.168.23.11,Multiple failed login attempts detected,brute_force,1
+2025-12-16 17:15:06.540627,user1,192.168.1.31,Account locked due to multiple failures,brute_force,1
+2025-12-12 02:06:06.540627,bob,192.168.33.1,Password authentication failed for user3,brute_force,1
+2025-12-14 11:48:06.537629,admin,192.168.21.151,Repeated login failures: user3@192.168.14.71,brute_force,1
+2025-12-28 07:36:06.535629,charlie,192.168.10.81,Invalid credentials provided for david,brute_force,1
+2025-12-19 14:50:06.537629,user1,192.168.25.71,Suspicious login pattern detected from 192.168.3.211,brute_force,1
+2025-12-17 06:22:06.534631,charlie,192.168.33.231,Repeated login failures: user3@192.168.28.201,brute_force,1
+2025-12-22 07:06:06.534631,bob,192.168.21.101,Repeated login failures: charlie@192.168.11.101,brute_force,1
+2026-01-01 09:57:06.540627,user2,192.168.11.21,Failed SSH login attempt from 192.168.36.141,brute_force,1
+2025-12-07 18:48:06.540627,user1,192.168.35.31,Brute force attack detected from 192.168.38.131,brute_force,1
+2025-12-22 18:00:06.536627,admin,192.168.28.201,Brute force attack detected from 192.168.26.31,brute_force,1
+2026-01-03 11:07:06.534631,david,192.168.33.221,Repeated login failures: system@192.168.8.181,brute_force,1
+2025-12-02 01:41:06.539627,user2,192.168.2.1,Repeated login failures: eve@192.168.3.61,brute_force,1
+2025-12-15 01:55:06.536627,user1,192.168.20.51,Suspicious login pattern detected from 192.168.34.201,brute_force,1
+2025-12-06 08:50:06.538628,bob,192.168.41.141,Repeated login failures: david@192.168.37.201,brute_force,1
+2025-12-04 09:07:06.534631,alice,192.168.14.241,Login rate limit exceeded from 192.168.1.11,brute_force,1
+2025-12-25 01:40:06.534631,bob,192.168.8.81,Repeated login failures: david@192.168.20.31,brute_force,1
+2025-12-13 07:04:06.538628,system,192.168.38.141,Login rate limit exceeded from 192.168.16.101,brute_force,1
+2026-01-04 12:22:06.539627,alice,192.168.38.21,Invalid credentials provided for eve,brute_force,1
+2025-12-13 07:54:06.536627,eve,192.168.32.201,Account locked due to multiple failures,brute_force,1
+2025-12-13 12:14:06.538628,admin,192.168.15.201,Login rate limit exceeded from 192.168.21.191,brute_force,1
+2025-12-27 19:34:06.540627,user2,192.168.39.151,Failed login attempt #20 for user user2,brute_force,1
+2025-12-31 03:30:06.539627,david,192.168.27.31,Failed login attempt #1 for user charlie,brute_force,1
+2025-12-25 18:00:06.540627,bob,192.168.11.151,Password authentication failed for user2,brute_force,1
+2025-12-27 15:27:06.539627,eve,192.168.32.161,Repeated login failures: user1@192.168.22.21,brute_force,1
+2025-12-11 06:59:06.533628,eve,192.168.26.71,Suspicious login pattern detected from 192.168.33.1,brute_force,1
+2025-12-16 13:42:06.534631,bob,192.168.8.51,Account locked due to multiple failures,brute_force,1
+2025-12-06 21:38:06.541628,eve,192.168.10.211,Login denied: too many failed attempts,brute_force,1
+2025-12-11 22:37:06.539627,user3,192.168.29.1,Account locked due to multiple failures,brute_force,1
+2025-12-24 13:47:06.534631,user2,192.168.11.151,Invalid credentials provided for david,brute_force,1
+2025-12-08 15:08:06.539627,admin,192.168.18.61,Brute force attack detected from 192.168.34.101,brute_force,1
+2025-12-27 18:58:06.537629,system,192.168.49.151,Invalid credentials provided for user2,brute_force,1
+2026-01-04 20:16:06.537629,user1,192.168.45.91,Account locked due to multiple failures,brute_force,1
+2025-12-06 01:27:06.540627,alice,192.168.19.21,Failed login attempt #6 for user admin,brute_force,1
+2025-12-11 23:27:06.535629,user3,192.168.19.201,Login rate limit exceeded from 192.168.13.241,brute_force,1
+2025-12-27 18:39:06.536627,eve,192.168.45.171,Password authentication failed for system,brute_force,1
+2025-12-27 14:17:06.538628,admin,192.168.21.101,Suspicious login pattern detected from 192.168.13.101,brute_force,1
+2026-01-02 17:52:06.540627,system,192.168.8.41,Authentication failed: invalid password,brute_force,1
+2025-12-27 11:03:06.537629,alice,192.168.29.121,Suspicious login pattern detected from 192.168.5.141,brute_force,1
+2025-12-29 04:52:06.540627,david,192.168.24.71,Authentication failed: invalid password,brute_force,1
+2025-12-01 20:22:06.537629,admin,192.168.43.51,Account locked due to multiple failures,brute_force,1
+2025-12-03 08:11:06.540627,admin,192.168.25.221,Multiple failed login attempts detected,brute_force,1
+2025-12-16 04:05:06.540627,eve,192.168.29.231,Repeated login failures: user2@192.168.9.211,brute_force,1
+2025-12-05 07:07:06.535629,system,192.168.48.231,Authentication failed: invalid password,brute_force,1
+2025-12-21 08:08:06.539627,user3,192.168.26.161,Login denied: too many failed attempts,brute_force,1
+2025-12-16 23:07:06.533628,david,192.168.3.151,Failed login attempt #2 for user system,brute_force,1
+2026-01-05 02:58:06.536627,alice,192.168.6.21,Invalid credentials provided for charlie,brute_force,1
+2025-12-25 02:14:06.538628,user1,192.168.6.11,Account locked due to multiple failures,brute_force,1
+2025-12-03 20:24:06.535629,bob,192.168.49.151,Invalid credentials provided for alice,brute_force,1
+2025-12-30 09:26:06.534631,charlie,192.168.16.161,Login denied: too many failed attempts,brute_force,1
+2025-12-22 19:17:06.534631,user1,192.168.23.21,Password authentication failed for admin,brute_force,1
+2025-12-09 23:13:06.533628,charlie,192.168.35.211,Brute force attack detected from 192.168.12.181,brute_force,1
+2025-12-31 16:49:06.540627,alice,192.168.37.11,Failed SSH login attempt from 192.168.7.241,brute_force,1
+2025-12-13 20:23:06.536627,user2,192.168.12.71,Repeated login failures: david@192.168.48.31,brute_force,1
+2025-12-24 15:03:06.534631,alice,192.168.9.171,Login denied: too many failed attempts,brute_force,1
+2025-12-28 05:59:06.539627,system,192.168.48.171,Login denied: too many failed attempts,brute_force,1
+2026-01-03 06:51:06.533628,david,192.168.19.31,Login rate limit exceeded from 192.168.35.171,brute_force,1
+2025-12-04 01:16:06.537629,alice,192.168.48.181,Multiple failed login attempts detected,brute_force,1
+2025-12-21 19:39:06.535629,david,192.168.45.61,Repeated login failures: user2@192.168.47.151,brute_force,1
+2025-12-06 16:00:06.538628,charlie,192.168.38.221,Password authentication failed for eve,brute_force,1
+2025-12-26 03:47:06.536627,eve,192.168.35.31,Failed login attempt #17 for user bob,brute_force,1
+2025-12-08 20:23:06.537629,user3,192.168.17.121,Suspicious login pattern detected from 192.168.2.161,brute_force,1
+2025-12-24 19:15:06.536627,admin,192.168.44.71,Multiple failed login attempts detected,brute_force,1
+2025-12-15 06:35:06.538628,alice,192.168.15.171,Login rate limit exceeded from 192.168.6.111,brute_force,1
+2025-12-20 21:54:06.535629,user1,192.168.34.81,Login denied: too many failed attempts,brute_force,1
+2025-12-25 08:18:06.538628,eve,192.168.5.221,Login denied: too many failed attempts,brute_force,1
+2025-12-23 20:51:06.533628,eve,192.168.35.71,Password authentication failed for user1,brute_force,1
+2025-12-25 23:09:06.537629,david,192.168.16.131,Login denied: too many failed attempts,brute_force,1
+2025-12-25 22:51:06.539627,charlie,192.168.9.101,Failed SSH login attempt from 192.168.22.181,brute_force,1
+2026-01-04 03:22:06.537629,user1,192.168.10.31,Invalid credentials provided for user2,brute_force,1
+2025-12-02 09:55:06.537629,admin,192.168.7.181,Account locked due to multiple failures,brute_force,1
+2025-12-24 15:05:06.536627,bob,192.168.1.121,Login denied: too many failed attempts,brute_force,1
+2025-12-19 11:05:06.536627,alice,192.168.20.211,Repeated login failures: user1@192.168.4.241,brute_force,1
+2025-12-28 05:35:06.538628,system,192.168.31.71,Login denied: too many failed attempts,brute_force,1
+2025-12-16 21:58:06.535629,user3,192.168.2.201,Authentication failed: invalid password,brute_force,1
+2025-12-26 11:31:06.540627,system,192.168.16.211,Invalid credentials provided for user1,brute_force,1
+2025-12-08 02:16:06.540627,user1,192.168.13.161,Authentication failed: invalid password,brute_force,1
+2025-12-02 17:37:06.540627,admin,192.168.46.91,Failed login attempt #2 for user eve,brute_force,1
+2025-12-14 09:39:06.533628,user3,192.168.46.131,Suspicious login pattern detected from 192.168.42.61,brute_force,1
+2025-12-27 00:44:06.540627,admin,192.168.35.181,Invalid credentials provided for david,brute_force,1
+2025-12-08 20:08:06.534631,user2,192.168.27.31,Repeated login failures: alice@192.168.10.171,brute_force,1
+2025-12-29 16:53:06.539627,user1,192.168.42.131,Multiple failed login attempts detected,brute_force,1
+2025-12-21 19:24:06.537629,user1,192.168.6.221,Brute force attack detected from 192.168.36.221,brute_force,1
+2025-12-31 03:47:06.538628,user1,192.168.32.121,Password authentication failed for eve,brute_force,1
+2026-01-01 07:45:06.539627,alice,192.168.39.211,Repeated login failures: bob@192.168.31.121,brute_force,1
+2026-01-03 13:43:06.538628,charlie,192.168.44.171,Account locked due to multiple failures,brute_force,1
+2025-12-31 08:03:06.537629,bob,192.168.2.41,Repeated login failures: user3@192.168.20.231,brute_force,1
+2025-12-27 18:04:06.539627,user2,192.168.12.121,Password authentication failed for alice,brute_force,1
+2026-01-03 21:34:06.537629,charlie,192.168.45.221,Failed login attempt #19 for user charlie,brute_force,1
+2025-12-11 06:34:06.535629,user3,192.168.16.81,Multiple failed login attempts detected,brute_force,1
+2025-12-31 20:10:06.539627,user1,192.168.3.201,Authentication failed: invalid password,brute_force,1
+2025-12-19 05:05:06.535629,david,192.168.12.181,Failed SSH login attempt from 192.168.38.11,brute_force,1
+2025-12-07 23:51:06.534631,bob,192.168.31.221,Failed login attempt #2 for user eve,brute_force,1
+2025-12-29 04:14:06.535629,eve,192.168.8.21,Password authentication failed for david,brute_force,1
+2025-12-14 15:12:06.538628,user1,192.168.44.121,Authentication failed: invalid password,brute_force,1
+2025-12-25 19:32:06.536627,bob,192.168.10.101,Failed SSH login attempt from 192.168.33.41,brute_force,1
+2025-12-13 02:36:06.534631,user1,192.168.10.231,Authentication failed: invalid password,brute_force,1
+2025-12-31 21:07:06.537629,eve,192.168.41.171,Authentication failed: invalid password,brute_force,1
+2025-12-02 06:16:06.535629,alice,192.168.38.41,Failed login attempt #3 for user user3,brute_force,1
+2026-01-03 16:53:06.538628,user2,192.168.24.191,Failed SSH login attempt from 192.168.36.31,brute_force,1
+2025-12-25 14:42:06.537629,system,192.168.38.201,Suspicious login pattern detected from 192.168.10.81,brute_force,1
+2026-01-02 11:44:06.534631,alice,192.168.34.171,Repeated login failures: david@192.168.3.121,brute_force,1
+2025-12-30 00:22:06.538628,charlie,192.168.23.141,Authentication failed: invalid password,brute_force,1
+2025-12-21 12:02:06.536627,eve,192.168.17.61,Failed SSH login attempt from 192.168.6.111,brute_force,1
+2025-12-19 17:49:06.540627,charlie,192.168.26.21,Brute force attack detected from 192.168.17.161,brute_force,1
+2025-12-28 10:03:06.539627,david,192.168.10.61,Repeated login failures: bob@192.168.22.91,brute_force,1
+2025-12-20 17:00:06.537629,charlie,192.168.11.101,Account locked due to multiple failures,brute_force,1
+2025-12-04 08:25:06.535629,user1,192.168.15.11,Failed SSH login attempt from 192.168.1.161,brute_force,1
+2026-01-05 02:54:06.538628,charlie,192.168.47.91,Authentication failed: invalid password,brute_force,1
+2025-12-20 03:48:06.538628,user2,192.168.6.71,Invalid credentials provided for alice,brute_force,1
+2025-12-25 22:31:06.533628,system,192.168.18.11,Failed SSH login attempt from 192.168.38.241,brute_force,1
+2025-12-27 09:18:06.535629,charlie,192.168.27.141,Password authentication failed for eve,brute_force,1
+2025-12-23 03:29:06.540627,david,192.168.17.131,Brute force attack detected from 192.168.8.151,brute_force,1
+2025-12-07 03:02:06.533628,admin,192.168.25.51,Login rate limit exceeded from 192.168.10.231,brute_force,1
+2026-01-02 06:40:06.537629,eve,192.168.45.171,Login rate limit exceeded from 192.168.30.201,brute_force,1
+2025-12-31 12:16:06.538628,david,192.168.2.221,Account locked due to multiple failures,brute_force,1
+2025-12-19 12:11:06.536627,user1,192.168.18.201,Failed login attempt #10 for user bob,brute_force,1
+2025-12-08 07:18:06.533628,user2,192.168.23.81,Repeated login failures: bob@192.168.2.61,brute_force,1
+2025-12-09 02:40:06.538628,user2,192.168.23.101,Login rate limit exceeded from 192.168.21.21,brute_force,1
+2025-12-11 09:04:06.538628,user3,192.168.38.211,Brute force attack detected from 192.168.29.171,brute_force,1
+2025-12-28 01:32:06.536627,admin,192.168.26.231,Login rate limit exceeded from 192.168.31.11,brute_force,1
+2026-01-04 17:04:06.536627,admin,192.168.12.211,Authentication failed: invalid password,brute_force,1
+2025-12-21 10:39:06.535629,alice,192.168.15.141,Repeated login failures: eve@192.168.10.61,brute_force,1
+2025-12-28 12:05:06.537629,admin,192.168.47.161,Failed login attempt #6 for user charlie,brute_force,1
+2025-12-07 16:06:06.539627,bob,192.168.30.1,Account locked due to multiple failures,brute_force,1
+2025-12-04 10:43:06.533628,admin,192.168.46.91,Login denied: too many failed attempts,brute_force,1
+2025-12-17 16:57:06.536627,system,192.168.13.231,Failed SSH login attempt from 192.168.4.91,brute_force,1
+2025-12-29 22:13:06.535629,eve,192.168.35.101,Invalid credentials provided for user2,brute_force,1
+2025-12-17 00:16:06.535629,user3,192.168.44.91,Account locked due to multiple failures,brute_force,1
+2026-01-03 11:55:06.533628,system,192.168.4.1,Password authentication failed for david,brute_force,1
+2025-12-17 22:08:06.535629,alice,192.168.2.211,Brute force attack detected from 192.168.4.161,brute_force,1
+2025-12-13 20:46:06.533628,alice,192.168.43.21,Brute force attack detected from 192.168.42.41,brute_force,1
+2025-12-17 04:08:06.534631,eve,192.168.42.61,Account locked due to multiple failures,brute_force,1
+2025-12-11 05:42:06.533628,user1,192.168.16.131,Password authentication failed for admin,brute_force,1
+2026-01-04 21:06:06.536627,david,192.168.26.61,Account locked due to multiple failures,brute_force,1
+2025-12-20 23:27:06.540627,alice,192.168.38.41,Account locked due to multiple failures,brute_force,1
+2025-12-15 00:46:06.535629,alice,192.168.9.161,Password authentication failed for user3,brute_force,1
+2025-12-17 06:44:06.539627,system,192.168.2.221,Authentication failed: invalid password,brute_force,1
+2025-12-20 11:20:06.536627,user1,192.168.7.41,Invalid credentials provided for alice,brute_force,1
+2025-12-10 19:36:06.538628,eve,192.168.8.171,Authentication failed: invalid password,brute_force,1
+2025-12-27 04:56:06.538628,david,192.168.39.91,Brute force attack detected from 192.168.20.31,brute_force,1
+2025-12-19 06:54:06.535629,user2,192.168.49.131,Login denied: too many failed attempts,brute_force,1
+2025-12-16 20:07:06.535629,user3,192.168.39.181,Multiple failed login attempts detected,brute_force,1
+2025-12-07 22:15:06.541628,bob,192.168.1.81,Account locked due to multiple failures,brute_force,1
+2025-12-29 23:01:06.537629,alice,192.168.1.61,Invalid credentials provided for alice,brute_force,1
+2026-01-04 03:41:06.535629,admin,192.168.20.41,Suspicious login pattern detected from 192.168.30.91,brute_force,1
+2025-12-07 10:30:06.536627,charlie,192.168.39.221,Brute force attack detected from 192.168.44.111,brute_force,1
+2025-12-10 16:15:06.539627,admin,192.168.31.241,Authentication failed: invalid password,brute_force,1
+2025-12-22 16:37:06.537629,user2,192.168.5.11,Login denied: too many failed attempts,brute_force,1
+2025-12-13 08:50:06.535629,alice,192.168.3.141,Authentication failed: invalid password,brute_force,1
+2025-12-17 12:49:06.539627,admin,192.168.10.161,Suspicious login pattern detected from 192.168.8.1,brute_force,1
+2025-12-05 21:07:06.541628,alice,192.168.30.31,Authentication failed: invalid password,brute_force,1
+2025-12-20 22:34:06.541628,david,192.168.34.221,Invalid credentials provided for charlie,brute_force,1
+2025-12-22 12:48:06.540627,user1,192.168.30.231,Multiple failed login attempts detected,brute_force,1
+2026-01-01 10:34:06.535629,eve,192.168.31.231,Login rate limit exceeded from 192.168.49.1,brute_force,1
+2025-12-03 19:22:06.534631,admin,192.168.8.211,Login denied: too many failed attempts,brute_force,1
+2026-01-02 11:55:06.539627,david,192.168.19.201,Password authentication failed for charlie,brute_force,1
+2026-01-03 02:46:06.537629,bob,192.168.36.21,Failed login attempt #12 for user alice,brute_force,1
+2026-01-05 06:14:06.540627,user2,192.168.46.51,Suspicious login pattern detected from 192.168.41.111,brute_force,1
+2025-12-08 04:25:06.539627,admin,192.168.28.1,Multiple failed login attempts detected,brute_force,1
+2025-12-21 18:04:06.540627,charlie,192.168.12.171,Failed login attempt #6 for user admin,brute_force,1
+2025-12-11 07:53:06.538628,charlie,192.168.48.101,Authentication failed: invalid password,brute_force,1
+2025-12-03 00:25:06.538628,user2,192.168.42.71,Account locked due to multiple failures,brute_force,1
+2025-12-16 11:29:06.539627,admin,192.168.36.21,Suspicious login pattern detected from 192.168.46.21,brute_force,1
+2025-12-24 13:08:06.540627,system,192.168.31.201,Invalid credentials provided for system,brute_force,1
+2025-12-08 23:29:06.533628,admin,192.168.23.221,Failed SSH login attempt from 192.168.48.91,brute_force,1
+2025-12-18 13:02:06.538628,system,192.168.18.201,Password authentication failed for eve,brute_force,1
+2025-12-18 20:06:06.539627,system,192.168.17.161,Failed SSH login attempt from 192.168.8.161,brute_force,1
+2025-12-31 14:23:06.540627,alice,192.168.25.81,Suspicious login pattern detected from 192.168.41.51,brute_force,1
+2026-01-04 16:51:06.541628,user2,192.168.26.161,Login denied: too many failed attempts,brute_force,1
+2025-12-27 18:17:06.534631,charlie,192.168.11.131,Failed login attempt #3 for user david,brute_force,1
+2025-12-15 16:48:06.537629,user3,192.168.13.141,Failed login attempt #20 for user admin,brute_force,1
+2025-12-08 01:06:06.533628,david,192.168.17.121,Failed login attempt #16 for user user1,brute_force,1
+2025-12-19 06:22:06.535629,system,192.168.6.181,Account locked due to multiple failures,brute_force,1
+2025-12-13 22:12:06.535629,alice,192.168.43.61,Repeated login failures: system@192.168.16.161,brute_force,1
+2025-12-08 20:25:06.537629,bob,192.168.23.11,Login rate limit exceeded from 192.168.9.21,brute_force,1
+2025-12-22 21:01:06.535629,eve,192.168.5.221,Failed login attempt #13 for user user3,brute_force,1
+2025-12-10 03:38:06.533628,admin,192.168.17.231,Repeated login failures: david@192.168.13.181,brute_force,1
+2025-12-04 19:02:06.538628,user3,192.168.41.131,Brute force attack detected from 192.168.42.1,brute_force,1
+2025-12-15 14:19:06.541628,eve,192.168.48.1,Account locked due to multiple failures,brute_force,1
+2025-12-11 19:34:06.537629,user1,192.168.30.211,Brute force attack detected from 192.168.11.181,brute_force,1
+2025-12-22 16:32:06.539627,alice,192.168.48.231,Multiple failed login attempts detected,brute_force,1
+2025-12-23 03:17:06.539627,system,192.168.32.41,Suspicious login pattern detected from 192.168.44.131,brute_force,1
+2025-12-23 23:47:06.535629,bob,192.168.2.171,Brute force attack detected from 192.168.48.61,brute_force,1
+2026-01-03 10:11:06.538628,system,192.168.12.211,Password authentication failed for alice,brute_force,1
+2025-12-26 18:06:06.539627,user3,192.168.46.181,Brute force attack detected from 192.168.27.151,brute_force,1
+2025-12-22 02:40:06.536627,bob,192.168.5.141,Failed login attempt #19 for user alice,brute_force,1
+2025-12-28 14:22:06.537629,system,192.168.47.121,Password authentication failed for system,brute_force,1
+2025-12-29 05:45:06.536627,user3,192.168.36.71,Login rate limit exceeded from 192.168.18.1,brute_force,1
+2025-12-15 12:00:06.538628,alice,192.168.35.141,Password authentication failed for eve,brute_force,1
+2025-12-18 03:48:06.535629,alice,192.168.32.211,Suspicious login pattern detected from 192.168.2.171,brute_force,1
+2025-12-21 16:21:06.536627,user3,192.168.42.1,Failed login attempt #10 for user admin,brute_force,1
+2025-12-13 01:49:06.540627,admin,192.168.26.41,Failed SSH login attempt from 192.168.23.141,brute_force,1
+2025-12-24 08:14:06.540627,charlie,192.168.44.71,Suspicious login pattern detected from 192.168.40.211,brute_force,1
+2025-12-04 09:38:06.538628,charlie,192.168.24.121,Login rate limit exceeded from 192.168.40.21,brute_force,1
+2025-12-17 19:23:06.540627,system,192.168.34.21,Failed login attempt #6 for user user3,brute_force,1
+2025-12-09 16:17:06.539627,user1,192.168.21.161,Account locked due to multiple failures,brute_force,1
+2025-12-17 03:46:06.536627,bob,192.168.4.81,Invalid credentials provided for admin,brute_force,1
+2025-12-09 21:22:06.540627,user1,192.168.7.71,Invalid credentials provided for system,brute_force,1
+2025-12-18 23:49:06.537629,bob,192.168.40.191,Login rate limit exceeded from 192.168.42.31,brute_force,1
+2025-12-29 02:45:06.534631,charlie,192.168.47.51,Repeated login failures: user2@192.168.3.41,brute_force,1
+2025-12-23 23:59:06.535629,eve,192.168.49.221,Failed SSH login attempt from 192.168.42.41,brute_force,1
+2025-12-13 00:19:06.539627,bob,192.168.22.71,Repeated login failures: admin@192.168.25.71,brute_force,1
+2026-01-04 02:13:06.539627,eve,192.168.18.241,Login rate limit exceeded from 192.168.29.21,brute_force,1
+2025-12-16 00:47:06.534631,user2,192.168.31.81,Login rate limit exceeded from 192.168.28.121,brute_force,1
+2025-12-18 12:04:06.535629,user3,192.168.5.51,Suspicious login pattern detected from 192.168.6.161,brute_force,1
+2025-12-22 20:09:06.537629,david,192.168.41.31,Brute force attack detected from 192.168.23.191,brute_force,1
+2026-01-03 05:53:06.537629,alice,192.168.36.81,Failed SSH login attempt from 192.168.28.211,brute_force,1
+2025-12-14 14:36:06.539627,user1,192.168.29.101,Login rate limit exceeded from 192.168.43.181,brute_force,1
+2025-12-25 06:10:06.536627,user1,192.168.21.151,Multiple failed login attempts detected,brute_force,1
+2025-12-25 22:14:06.537629,eve,192.168.26.111,Failed SSH login attempt from 192.168.20.211,brute_force,1
+2025-12-07 06:02:06.535629,admin,192.168.5.21,Account locked due to multiple failures,brute_force,1
+2025-12-19 06:24:06.537629,user3,192.168.2.71,Account locked due to multiple failures,brute_force,1
+2025-12-30 09:05:06.539627,system,192.168.29.221,Password authentication failed for charlie,brute_force,1
+2025-12-29 12:08:06.539627,system,192.168.40.131,Login rate limit exceeded from 192.168.28.221,brute_force,1
+2025-12-05 03:44:06.536627,user2,192.168.48.81,Multiple failed login attempts detected,brute_force,1
+2025-12-05 16:14:06.534631,charlie,192.168.22.81,Failed SSH login attempt from 192.168.35.51,brute_force,1
+2025-12-19 11:47:06.536627,charlie,192.168.20.141,Authentication failed: invalid password,brute_force,1
+2026-01-03 07:44:06.539627,user2,192.168.38.21,Repeated login failures: user2@192.168.27.141,brute_force,1
+2025-12-16 13:51:06.538628,user2,192.168.17.201,Login denied: too many failed attempts,brute_force,1
+2025-12-11 02:51:06.535629,user1,192.168.13.51,Login rate limit exceeded from 192.168.46.61,brute_force,1
+2025-12-05 00:19:06.535629,david,192.168.48.231,Failed login attempt #11 for user eve,brute_force,1
+2025-12-30 11:14:06.536627,system,192.168.4.31,Login denied: too many failed attempts,brute_force,1
+2025-12-18 15:40:06.535629,admin,192.168.9.201,Login rate limit exceeded from 192.168.1.171,brute_force,1
+2025-12-23 22:53:06.537629,admin,192.168.20.141,Password authentication failed for alice,brute_force,1
+2025-12-03 05:40:06.540627,user2,192.168.22.231,Password authentication failed for charlie,brute_force,1
+2026-01-02 17:19:06.535629,bob,192.168.23.121,Repeated login failures: user1@192.168.2.51,brute_force,1
+2025-12-12 00:12:06.536627,user3,192.168.28.191,Failed login attempt #9 for user alice,brute_force,1
+2025-12-05 12:14:06.540627,user1,192.168.24.31,Login rate limit exceeded from 192.168.26.71,brute_force,1
+2025-12-18 09:11:06.537629,eve,192.168.5.51,Invalid credentials provided for admin,brute_force,1
+2025-12-25 21:46:06.539627,system,192.168.38.171,Failed SSH login attempt from 192.168.7.181,brute_force,1
+2025-12-13 09:29:06.539627,admin,192.168.11.101,Failed login attempt #17 for user bob,brute_force,1
+2025-12-05 19:57:06.541628,david,192.168.34.111,Failed login attempt #15 for user admin,brute_force,1
+2025-12-03 07:56:06.536627,charlie,192.168.44.201,Suspicious login pattern detected from 192.168.2.181,brute_force,1
+2025-12-23 04:44:06.540627,system,192.168.11.231,Login denied: too many failed attempts,brute_force,1
+2025-12-20 20:27:06.535629,charlie,192.168.9.1,Brute force attack detected from 192.168.2.1,brute_force,1
+2025-12-27 22:56:06.538628,user1,192.168.43.31,Suspicious login pattern detected from 192.168.32.51,brute_force,1
+2025-12-29 19:31:06.539627,user3,192.168.19.161,Account locked due to multiple failures,brute_force,1
+2026-01-01 01:21:06.538628,alice,192.168.23.21,Login rate limit exceeded from 192.168.28.161,brute_force,1
+2025-12-28 15:28:06.539627,admin,192.168.13.101,Login denied: too many failed attempts,brute_force,1
+2025-12-08 03:28:06.540627,user1,192.168.10.201,Suspicious login pattern detected from 192.168.30.141,brute_force,1
+2025-12-07 17:38:06.540627,user3,192.168.2.131,Failed login attempt #6 for user user3,brute_force,1
+2025-12-28 05:22:06.534631,david,192.168.46.181,Password authentication failed for eve,brute_force,1
+2025-12-21 10:39:06.535629,admin,192.168.24.161,Failed SSH login attempt from 192.168.15.41,brute_force,1
+2025-12-21 23:26:06.535629,user3,192.168.19.171,Failed login attempt #13 for user alice,brute_force,1
+2025-12-03 14:02:06.540627,admin,192.168.24.201,Password authentication failed for system,brute_force,1
+2025-12-24 06:59:06.541628,bob,192.168.34.61,Invalid credentials provided for charlie,brute_force,1
+2025-12-27 01:56:06.535629,system,192.168.47.91,Password authentication failed for user3,brute_force,1
+2025-12-27 02:29:06.536627,user2,192.168.13.91,Login rate limit exceeded from 192.168.25.201,brute_force,1
+2025-12-01 18:10:06.540627,user1,192.168.18.41,Login denied: too many failed attempts,brute_force,1
+2025-12-23 01:56:06.534631,david,192.168.7.31,Authentication failed: invalid password,brute_force,1
+2025-12-21 08:34:06.536627,eve,192.168.28.1,Login denied: too many failed attempts,brute_force,1
+2025-12-12 16:38:06.540627,user1,192.168.18.31,Suspicious login pattern detected from 192.168.35.161,brute_force,1
+2026-01-01 05:33:06.538628,user1,192.168.38.171,Account locked due to multiple failures,brute_force,1
+2025-12-30 17:40:06.534631,alice,192.168.32.11,Password authentication failed for user1,brute_force,1
+2025-12-30 06:26:06.541628,user3,192.168.34.191,Authentication failed: invalid password,brute_force,1
+2025-12-06 09:46:06.536627,charlie,192.168.11.31,Brute force attack detected from 192.168.34.11,brute_force,1
+2025-12-17 20:06:06.538628,user2,192.168.12.51,Login rate limit exceeded from 192.168.33.11,brute_force,1
+2025-12-26 17:17:06.538628,bob,192.168.14.131,Suspicious login pattern detected from 192.168.10.71,brute_force,1
+2026-01-03 01:05:06.540627,user1,192.168.45.141,Multiple failed login attempts detected,brute_force,1
+2025-12-02 03:49:06.539627,user1,192.168.20.171,Failed login attempt #11 for user admin,brute_force,1
+2025-12-19 07:11:06.538628,admin,192.168.7.111,Failed login attempt #7 for user alice,brute_force,1
+2025-12-03 17:10:06.534631,david,192.168.36.91,Suspicious login pattern detected from 192.168.47.181,brute_force,1
+2025-12-18 05:21:06.534631,charlie,192.168.25.11,Password authentication failed for user2,brute_force,1
+2025-12-01 21:24:06.534631,admin,192.168.42.221,Account locked due to multiple failures,brute_force,1
+2025-12-11 19:20:06.538628,david,192.168.49.121,Failed login attempt #7 for user user2,brute_force,1
+2025-12-23 07:04:06.536627,charlie,192.168.42.241,Repeated login failures: system@192.168.25.41,brute_force,1
+2025-12-24 03:30:06.540627,system,192.168.14.31,Suspicious login pattern detected from 192.168.23.161,brute_force,1
+2025-12-10 17:25:06.539627,charlie,192.168.34.191,Invalid credentials provided for bob,brute_force,1
+2025-12-19 09:46:06.537629,system,192.168.28.151,Failed login attempt #9 for user admin,brute_force,1
+2025-12-26 22:29:06.534631,david,192.168.31.151,Suspicious login pattern detected from 192.168.49.101,brute_force,1
+2026-01-04 06:33:06.538628,user3,192.168.30.181,Failed SSH login attempt from 192.168.3.61,brute_force,1
+2025-12-15 16:26:06.535629,admin,192.168.24.161,Failed SSH login attempt from 192.168.28.111,brute_force,1
+2025-12-23 15:04:06.541628,bob,192.168.8.111,Suspicious login pattern detected from 192.168.16.61,brute_force,1
+2025-12-09 18:08:06.538628,user2,192.168.7.31,Brute force attack detected from 192.168.13.121,brute_force,1
+2025-12-29 14:06:06.535629,alice,192.168.30.191,Multiple failed login attempts detected,brute_force,1
+2025-12-25 21:29:06.539627,user3,192.168.35.201,Failed SSH login attempt from 192.168.43.81,brute_force,1
+2025-12-13 01:49:06.540627,user2,192.168.25.71,Password authentication failed for charlie,brute_force,1
+2025-12-14 21:15:06.540627,david,192.168.41.151,Password authentication failed for user3,brute_force,1
+2025-12-03 04:10:06.540627,user1,192.168.5.241,Invalid credentials provided for admin,brute_force,1
+2026-01-03 03:32:06.539627,system,192.168.48.141,Login denied: too many failed attempts,brute_force,1
+2026-01-03 11:33:06.540627,eve,192.168.17.121,Repeated login failures: system@192.168.10.121,brute_force,1
+2025-12-11 12:21:06.536627,eve,192.168.17.91,Suspicious login pattern detected from 192.168.45.61,brute_force,1
+2026-01-03 14:43:06.536627,system,192.168.14.121,Authentication failed: invalid password,brute_force,1
+2025-12-06 07:22:06.536627,david,192.168.3.151,Multiple failed login attempts detected,brute_force,1
+2025-12-24 00:57:06.535629,david,192.168.18.41,Repeated login failures: system@192.168.24.61,brute_force,1
+2025-12-07 07:14:06.540627,user1,192.168.14.111,Suspicious login pattern detected from 192.168.3.161,brute_force,1
+2025-12-09 21:16:06.534631,alice,192.168.38.241,Failed login attempt #11 for user user3,brute_force,1
+2025-12-15 08:45:06.541628,david,192.168.37.31,Password authentication failed for user1,brute_force,1
+2026-01-03 19:19:06.538628,admin,192.168.17.111,Invalid credentials provided for alice,brute_force,1
+2025-12-10 14:29:06.539627,system,192.168.11.41,Failed login attempt #16 for user david,brute_force,1
+2025-12-20 23:06:06.537629,eve,192.168.27.201,Account locked due to multiple failures,brute_force,1
+2025-12-10 00:12:06.538628,user1,192.168.16.101,Password authentication failed for user1,brute_force,1
+2025-12-23 12:44:06.538628,eve,192.168.1.41,Login denied: too many failed attempts,brute_force,1
+2025-12-07 23:31:06.539627,user1,192.168.1.131,Login denied: too many failed attempts,brute_force,1
+2026-01-03 12:41:06.540627,user1,192.168.32.91,Password authentication failed for alice,brute_force,1
+2025-12-17 03:10:06.539627,admin,192.168.39.241,Failed SSH login attempt from 192.168.15.21,brute_force,1
+2025-12-07 05:50:06.538628,charlie,192.168.18.51,Failed login attempt #2 for user bob,brute_force,1
+2025-12-13 08:21:06.534631,system,192.168.5.21,Repeated login failures: david@192.168.40.61,brute_force,1
+2025-12-13 03:17:06.536627,system,192.168.12.141,Repeated login failures: admin@192.168.16.111,brute_force,1
+2025-12-23 02:09:06.536627,system,192.168.1.211,Repeated login failures: david@192.168.20.21,brute_force,1
+2025-12-16 07:12:06.535629,bob,192.168.30.161,Suspicious login pattern detected from 192.168.22.21,brute_force,1
+2025-12-09 20:37:06.535629,bob,192.168.40.191,Invalid credentials provided for user3,brute_force,1
+2025-12-22 08:25:06.540627,alice,192.168.32.1,Invalid credentials provided for charlie,brute_force,1
+2025-12-11 03:19:06.537629,david,192.168.10.71,Account locked due to multiple failures,brute_force,1
+2025-12-28 07:57:06.535629,admin,192.168.2.31,Multiple failed login attempts detected,brute_force,1
+2025-12-21 13:54:06.541628,user1,192.168.5.61,Login denied: too many failed attempts,brute_force,1
+2025-12-20 19:57:06.540627,user2,192.168.29.91,Repeated login failures: alice@192.168.26.131,brute_force,1
+2025-12-09 21:54:06.536627,charlie,192.168.32.111,Password authentication failed for user2,brute_force,1
+2025-12-09 06:34:06.539627,system,192.168.20.111,Account locked due to multiple failures,brute_force,1
+2025-12-04 00:13:06.539627,user1,192.168.12.71,Failed login attempt #9 for user eve,brute_force,1
+2025-12-27 22:05:06.534631,charlie,192.168.37.31,Brute force attack detected from 192.168.26.91,brute_force,1
+2025-12-22 06:49:06.536627,user1,192.168.31.61,Account locked due to multiple failures,brute_force,1
+2025-12-13 10:06:06.538628,charlie,192.168.20.231,Login denied: too many failed attempts,brute_force,1
+2025-12-16 19:04:06.540627,system,192.168.9.61,Suspicious login pattern detected from 192.168.7.41,brute_force,1
+2025-12-15 23:02:06.536627,bob,192.168.22.51,Password authentication failed for alice,brute_force,1
+2025-12-20 08:16:06.537629,user2,192.168.42.81,Failed SSH login attempt from 192.168.5.131,brute_force,1
+2025-12-19 10:17:06.535629,david,192.168.4.231,Repeated login failures: user1@192.168.27.191,brute_force,1
+2025-12-02 02:47:06.535629,admin,192.168.3.161,Failed login attempt #7 for user admin,brute_force,1
+2025-12-17 08:57:06.537629,system,192.168.9.171,Failed login attempt #2 for user eve,brute_force,1
+2025-12-27 11:01:06.534631,user3,192.168.26.151,Login denied: too many failed attempts,brute_force,1
+2025-12-24 02:30:06.534631,david,192.168.28.221,Repeated login failures: charlie@192.168.47.1,brute_force,1
+2025-12-21 07:54:06.534631,system,192.168.39.221,Multiple failed login attempts detected,brute_force,1
+2025-12-02 07:19:06.539627,user2,192.168.33.31,Login denied: too many failed attempts,brute_force,1
+2025-12-03 18:30:06.536627,system,192.168.19.161,Failed SSH login attempt from 192.168.11.1,brute_force,1
+2025-12-22 00:20:06.538628,user1,192.168.32.41,Invalid credentials provided for bob,brute_force,1
+2025-12-23 02:08:06.534631,eve,192.168.3.181,Repeated login failures: charlie@192.168.12.171,brute_force,1
+2025-12-06 15:07:06.537629,alice,192.168.42.101,Login rate limit exceeded from 192.168.30.151,brute_force,1
+2025-12-09 13:57:06.538628,david,192.168.41.181,Failed login attempt #1 for user alice,brute_force,1
+2025-12-28 15:11:06.534631,user3,192.168.40.191,Invalid credentials provided for eve,brute_force,1
+2026-01-03 18:15:06.538628,bob,192.168.21.101,Repeated login failures: system@192.168.27.1,brute_force,1
+2025-12-05 08:41:06.538628,eve,192.168.9.211,Invalid credentials provided for alice,brute_force,1
+2025-12-13 02:40:06.536627,user1,192.168.37.161,Brute force attack detected from 192.168.4.191,brute_force,1
+2026-01-02 04:56:06.533628,user1,192.168.35.171,Login rate limit exceeded from 192.168.47.51,brute_force,1
+2025-12-02 22:51:06.538628,admin,192.168.47.141,Login denied: too many failed attempts,brute_force,1
+2026-01-04 01:32:06.538628,david,192.168.13.151,Authentication failed: invalid password,brute_force,1
+2025-12-05 04:53:06.538628,david,192.168.13.71,Failed SSH login attempt from 192.168.16.191,brute_force,1
+2025-12-19 20:15:06.537629,charlie,192.168.43.71,Password authentication failed for admin,brute_force,1
+2025-12-20 09:59:06.534631,david,192.168.3.181,Repeated login failures: charlie@192.168.43.51,brute_force,1
+2025-12-21 15:00:06.538628,user2,192.168.29.151,Failed SSH login attempt from 192.168.23.81,brute_force,1
+2026-01-04 19:22:06.533628,system,192.168.23.231,Multiple failed login attempts detected,brute_force,1
+2025-12-31 17:35:06.540627,user3,192.168.44.181,Login rate limit exceeded from 192.168.30.51,brute_force,1
+2025-12-11 14:46:06.534631,eve,192.168.12.181,Multiple failed login attempts detected,brute_force,1
+2025-12-27 18:07:06.539627,user3,192.168.2.11,Failed login attempt #17 for user eve,brute_force,1
+2026-01-02 22:36:06.534631,bob,192.168.35.21,Failed login attempt #9 for user eve,brute_force,1
+2025-12-07 22:38:06.541628,user3,192.168.23.111,Brute force attack detected from 192.168.37.211,brute_force,1
+2025-12-14 21:14:06.534631,system,192.168.41.161,Invalid credentials provided for system,brute_force,1
+2025-12-16 22:18:06.540627,alice,192.168.40.1,Suspicious login pattern detected from 192.168.22.121,brute_force,1
+2025-12-21 22:35:06.536627,bob,192.168.5.71,Password authentication failed for bob,brute_force,1
+2026-01-04 10:13:06.538628,eve,192.168.34.211,Failed SSH login attempt from 192.168.17.91,brute_force,1
+2025-12-23 01:00:06.540627,bob,192.168.17.171,Failed SSH login attempt from 192.168.49.191,brute_force,1
+2026-01-02 20:59:06.539627,user1,192.168.33.21,Login denied: too many failed attempts,brute_force,1
+2025-12-25 21:19:06.534631,charlie,192.168.24.101,Login rate limit exceeded from 192.168.15.81,brute_force,1
+2025-12-14 03:20:06.534631,bob,192.168.1.91,Account locked due to multiple failures,brute_force,1
+2025-12-22 15:14:06.534631,user3,192.168.20.191,Failed SSH login attempt from 192.168.11.171,brute_force,1
+2025-12-02 16:53:06.535629,user1,192.168.42.171,Password authentication failed for charlie,brute_force,1
+2025-12-18 11:25:06.538628,system,192.168.43.41,Multiple failed login attempts detected,brute_force,1
+2025-12-10 21:03:06.533628,charlie,192.168.49.61,Suspicious login pattern detected from 192.168.21.61,brute_force,1
+2025-12-21 12:53:06.535629,david,192.168.1.221,Account locked due to multiple failures,brute_force,1
+2025-12-27 03:49:06.537629,user1,192.168.23.41,Brute force attack detected from 192.168.42.141,brute_force,1
+2025-12-14 14:57:06.535629,user3,192.168.33.161,Invalid credentials provided for admin,brute_force,1
+2025-12-14 16:37:06.537629,alice,192.168.29.151,Suspicious login pattern detected from 192.168.39.41,brute_force,1
+2025-12-22 08:58:06.538628,admin,192.168.7.91,Failed SSH login attempt from 192.168.2.91,brute_force,1
+2025-12-22 09:47:06.538628,bob,192.168.13.71,Brute force attack detected from 192.168.30.181,brute_force,1
+2025-12-19 13:24:06.534631,admin,192.168.26.41,Password authentication failed for eve,brute_force,1
+2025-12-26 17:37:06.538628,user3,192.168.33.61,Password authentication failed for system,brute_force,1
+2025-12-15 20:16:06.539627,system,192.168.44.161,Brute force attack detected from 192.168.44.31,brute_force,1
+2025-12-08 09:58:06.540627,eve,192.168.34.211,Failed SSH login attempt from 192.168.19.211,brute_force,1
+2026-01-04 07:28:06.540627,bob,192.168.4.131,Failed SSH login attempt from 192.168.44.131,brute_force,1
+2025-12-02 05:27:06.539627,admin,192.168.36.1,Brute force attack detected from 192.168.23.121,brute_force,1
+2025-12-28 05:39:06.541628,alice,192.168.12.241,Repeated login failures: user1@192.168.16.1,brute_force,1
+2025-12-19 05:53:06.536627,user3,192.168.48.11,Failed SSH login attempt from 192.168.5.111,brute_force,1
+2026-01-01 15:29:06.539627,user1,192.168.4.131,Brute force attack detected from 192.168.7.41,brute_force,1
+2025-12-16 02:38:06.534631,user2,192.168.25.61,Repeated login failures: user3@192.168.32.141,brute_force,1
+2025-12-17 16:54:06.540627,eve,192.168.3.21,Invalid credentials provided for charlie,brute_force,1
+2025-12-28 05:16:06.539627,david,192.168.9.81,Invalid credentials provided for alice,brute_force,1
+2026-01-03 22:09:06.539627,user1,192.168.18.121,Login rate limit exceeded from 192.168.12.61,brute_force,1
+2025-12-11 06:31:06.538628,charlie,192.168.32.141,Suspicious login pattern detected from 192.168.37.161,brute_force,1
+2026-01-02 09:29:06.535629,david,192.168.12.241,Password authentication failed for system,brute_force,1
+2025-12-28 04:37:06.540627,bob,192.168.44.1,Login denied: too many failed attempts,brute_force,1
+2025-12-19 18:53:06.541628,user1,192.168.18.61,Brute force attack detected from 192.168.24.161,brute_force,1
+2026-01-05 03:23:06.535629,charlie,192.168.16.131,Multiple failed login attempts detected,brute_force,1
+2025-12-24 01:46:06.535629,system,192.168.24.111,Failed SSH login attempt from 192.168.15.31,brute_force,1
+2025-12-23 18:30:06.537629,user1,192.168.5.41,Authentication failed: invalid password,brute_force,1
+2025-12-13 23:25:06.538628,user2,192.168.34.121,Repeated login failures: bob@192.168.4.241,brute_force,1
+2025-12-28 00:57:06.538628,user2,192.168.21.241,Password authentication failed for user1,brute_force,1
+2025-12-27 14:33:06.539627,charlie,192.168.15.161,Repeated login failures: user3@192.168.1.181,brute_force,1
+2026-01-02 06:22:06.534631,bob,192.168.43.191,Login rate limit exceeded from 192.168.12.231,brute_force,1
+2026-01-01 17:57:06.538628,user3,192.168.11.131,Multiple failed login attempts detected,brute_force,1
+2025-12-20 15:53:06.539627,bob,192.168.44.191,Repeated login failures: charlie@192.168.15.101,brute_force,1
+2025-12-17 12:27:06.537629,user1,192.168.9.81,Multiple failed login attempts detected,brute_force,1
+2025-12-24 13:47:06.533628,user3,192.168.42.241,Authentication failed: invalid password,brute_force,1
+2025-12-10 01:50:06.538628,user3,192.168.11.101,Failed SSH login attempt from 192.168.15.121,brute_force,1
+2025-12-15 07:54:06.537629,user2,192.168.24.101,Brute force attack detected from 192.168.33.131,brute_force,1
+2025-12-03 23:08:06.534631,admin,192.168.49.151,Account locked due to multiple failures,brute_force,1
+2025-12-16 01:25:06.533628,admin,192.168.27.111,Account locked due to multiple failures,brute_force,1
+2026-01-01 10:30:06.535629,charlie,192.168.2.111,Failed SSH login attempt from 192.168.25.131,brute_force,1
+2025-12-11 13:09:06.541628,admin,192.168.18.31,Login denied: too many failed attempts,brute_force,1
+2025-12-23 07:04:06.537629,charlie,192.168.11.121,Multiple failed login attempts detected,brute_force,1
+2026-01-04 17:40:06.533628,david,192.168.31.91,Failed login attempt #6 for user user1,brute_force,1
+2025-12-12 06:38:06.538628,admin,192.168.28.111,Login rate limit exceeded from 192.168.7.211,brute_force,1
+2025-12-13 20:26:06.540627,user1,192.168.24.191,Failed SSH login attempt from 192.168.40.141,brute_force,1
+2025-12-04 07:44:06.537629,admin,192.168.32.151,Login rate limit exceeded from 192.168.20.91,brute_force,1
+2025-12-09 13:36:06.536627,admin,192.168.11.121,Account locked due to multiple failures,brute_force,1
+2026-01-05 10:03:06.537629,david,192.168.24.141,Login denied: too many failed attempts,brute_force,1
+2025-12-08 23:13:06.535629,user3,192.168.45.171,Login denied: too many failed attempts,brute_force,1
+2025-12-02 13:24:06.540627,user1,192.168.35.1,Suspicious login pattern detected from 192.168.4.131,brute_force,1
+2025-12-19 10:32:06.539627,david,192.168.33.211,Login rate limit exceeded from 192.168.3.221,brute_force,1
+2025-12-11 14:22:06.534631,alice,192.168.26.111,Brute force attack detected from 192.168.20.211,brute_force,1
+2025-12-13 23:30:06.535629,eve,192.168.42.161,Authentication failed: invalid password,brute_force,1
+2025-12-21 19:09:06.538628,david,192.168.32.111,Brute force attack detected from 192.168.37.61,brute_force,1

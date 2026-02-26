@@ -1,0 +1,1001 @@
+timestamp,user,ip,raw_message,label,label_id
+2025-12-30 08:30:06.548627,alice,192.168.2.101,Suspicious URL in email: http://phishing-site-351.com,phishing,3
+2025-12-18 01:41:06.554630,charlie,192.168.5.131,Phishing attempt detected: fake login page,phishing,3
+2026-01-04 00:18:06.555629,eve,192.168.21.91,Malicious attachment in email from hr@company.com,phishing,3
+2025-12-10 11:00:06.549628,eve,192.168.14.61,Email impersonation detected,phishing,3
+2025-12-18 02:06:06.550628,eve,192.168.3.31,Email contains malicious link asking for credentials,phishing,3
+2026-01-03 09:26:06.549628,david,192.168.39.21,Email contains malicious link asking for credentials,phishing,3
+2025-12-11 13:44:06.551627,bob,192.168.48.41,Malicious attachment in email from admin@corp.com,phishing,3
+2025-12-21 22:30:06.555629,admin,192.168.43.51,Spear phishing attempt targeting user1,phishing,3
+2025-12-25 21:01:06.550628,bob,192.168.26.221,Phishing attempt detected: fake login page,phishing,3
+2025-12-02 10:54:06.554630,bob,192.168.45.31,Email contains malicious link asking for credentials,phishing,3
+2025-12-09 18:48:06.555629,eve,192.168.38.51,Suspicious URL in email: http://phishing-site-94.com,phishing,3
+2025-12-23 23:55:06.550628,user2,192.168.31.61,Spear phishing attempt targeting user2,phishing,3
+2026-01-05 04:58:06.554630,system,192.168.37.111,Email impersonation detected,phishing,3
+2025-12-25 20:15:06.551627,charlie,192.168.44.21,Fake invoice email detected,phishing,3
+2025-12-18 10:31:06.550628,charlie,192.168.5.241,Credential harvesting attempt detected,phishing,3
+2025-12-16 00:24:06.550628,user3,192.168.3.21,Malicious attachment in email from security@company.com,phishing,3
+2025-12-21 03:44:06.551627,bob,192.168.9.51,Malicious attachment in email from hr@company.com,phishing,3
+2025-12-03 02:35:06.553630,system,192.168.25.51,Credential harvesting attempt detected,phishing,3
+2026-01-03 04:22:06.550628,david,192.168.39.161,Credential harvesting attempt detected,phishing,3
+2025-12-17 04:01:06.552628,charlie,192.168.46.151,Email with spoofed sender detected,phishing,3
+2025-12-18 22:39:06.550628,user3,192.168.44.81,Spear phishing attempt targeting user2,phishing,3
+2025-12-08 20:44:06.552628,bob,192.168.47.131,Phishing link clicked by user system,phishing,3
+2025-12-19 11:14:06.554630,admin,192.168.31.171,Phishing link clicked by user admin,phishing,3
+2026-01-02 15:00:06.551627,user1,192.168.15.1,Email with spoofed sender detected,phishing,3
+2025-12-06 19:09:06.553630,bob,192.168.8.1,Email impersonation detected,phishing,3
+2026-01-02 17:00:06.552628,charlie,192.168.14.121,Phishing attempt detected: fake login page,phishing,3
+2025-12-21 00:23:06.552628,charlie,192.168.22.211,Email with spoofed sender detected,phishing,3
+2025-12-21 22:41:06.550628,user2,192.168.29.11,Email impersonation detected,phishing,3
+2025-12-12 12:58:06.550628,admin,192.168.31.141,Malicious attachment in email from it@company.com,phishing,3
+2025-12-05 00:32:06.555629,admin,192.168.14.51,Email with spoofed sender detected,phishing,3
+2025-12-19 03:29:06.554630,user3,192.168.1.191,Fake invoice email detected,phishing,3
+2025-12-15 04:17:06.555629,charlie,192.168.23.81,Suspicious URL in email: http://phishing-site-281.com,phishing,3
+2025-12-19 01:52:06.551627,charlie,192.168.14.21,Phishing attempt detected: fake login page,phishing,3
+2025-12-16 05:07:06.552628,bob,192.168.6.111,Suspicious email from security@company.com with credential request,phishing,3
+2025-12-03 11:06:06.549628,alice,192.168.35.41,Phishing attempt detected: fake login page,phishing,3
+2025-12-08 23:27:06.549628,user3,192.168.32.211,Email with spoofed sender detected,phishing,3
+2025-12-09 09:12:06.555629,charlie,192.168.48.211,Malicious attachment in email from admin@corp.com,phishing,3
+2025-12-07 17:55:06.553630,charlie,192.168.17.31,Malicious attachment in email from admin@corp.com,phishing,3
+2025-12-18 07:40:06.550628,system,192.168.20.241,Suspicious email from hr@company.com with credential request,phishing,3
+2025-12-25 15:27:06.553630,user2,192.168.39.211,Credential harvesting attempt detected,phishing,3
+2025-12-23 12:28:06.549628,user1,192.168.38.51,Phishing attempt detected: fake login page,phishing,3
+2025-12-10 07:33:06.553630,admin,192.168.46.201,Email with spoofed sender detected,phishing,3
+2025-12-18 01:29:06.552628,user2,192.168.28.201,Email contains malicious link asking for credentials,phishing,3
+2025-12-05 17:44:06.554630,charlie,192.168.42.51,Email contains malicious link asking for credentials,phishing,3
+2025-12-13 18:00:06.551627,admin,192.168.23.191,Phishing attempt detected: fake login page,phishing,3
+2025-12-17 12:34:06.552628,bob,192.168.44.171,Suspicious URL in email: http://phishing-site-646.com,phishing,3
+2025-12-08 23:08:06.550628,eve,192.168.48.131,Malicious attachment in email from admin@corp.com,phishing,3
+2025-12-27 09:59:06.550628,admin,192.168.17.181,Malicious attachment in email from hr@company.com,phishing,3
+2025-12-26 10:23:06.550628,alice,192.168.4.231,Spear phishing attempt targeting admin,phishing,3
+2025-12-29 09:50:06.551627,user1,192.168.46.41,Email impersonation detected,phishing,3
+2025-12-21 05:38:06.555629,charlie,192.168.41.161,Email with spoofed sender detected,phishing,3
+2025-12-27 05:45:06.552628,user3,192.168.16.161,Suspicious URL in email: http://phishing-site-243.com,phishing,3
+2025-12-27 13:35:06.554630,bob,192.168.13.211,Email impersonation detected,phishing,3
+2025-12-19 04:15:06.553630,system,192.168.7.131,Email impersonation detected,phishing,3
+2025-12-02 05:34:06.551627,system,192.168.34.61,Spear phishing attempt targeting user3,phishing,3
+2025-12-06 21:50:06.550628,alice,192.168.7.221,Suspicious email from it@company.com with credential request,phishing,3
+2025-12-02 21:46:06.554630,bob,192.168.41.231,Suspicious email from it@company.com with credential request,phishing,3
+2025-12-28 08:14:06.555629,user1,192.168.38.151,Suspicious email from hr@company.com with credential request,phishing,3
+2025-12-22 21:30:06.555629,charlie,192.168.7.191,Malicious attachment in email from hr@company.com,phishing,3
+2025-12-09 00:26:06.551627,eve,192.168.45.1,Credential harvesting attempt detected,phishing,3
+2026-01-03 21:32:06.554630,user3,192.168.21.81,Phishing link clicked by user eve,phishing,3
+2025-12-08 03:40:06.548627,user1,192.168.28.31,Phishing attempt detected: fake login page,phishing,3
+2025-12-03 19:52:06.550628,user2,192.168.6.31,Suspicious email from security@company.com with credential request,phishing,3
+2025-12-27 20:38:06.551627,alice,192.168.3.171,Phishing attempt detected: fake login page,phishing,3
+2025-12-23 15:06:06.555629,admin,192.168.9.211,Spear phishing attempt targeting system,phishing,3
+2025-12-27 14:12:06.550628,charlie,192.168.19.191,Suspicious email from hr@company.com with credential request,phishing,3
+2025-12-09 06:27:06.551627,charlie,192.168.28.91,Suspicious email from admin@corp.com with credential request,phishing,3
+2025-12-12 23:13:06.549628,alice,192.168.27.41,Phishing attempt detected: fake login page,phishing,3
+2025-12-24 23:58:06.555629,admin,192.168.38.211,Email with spoofed sender detected,phishing,3
+2026-01-04 19:24:06.549628,user3,192.168.8.181,Spear phishing attempt targeting bob,phishing,3
+2025-12-06 16:59:06.552628,eve,192.168.47.91,Email with spoofed sender detected,phishing,3
+2025-12-23 08:11:06.550628,david,192.168.2.131,Email with spoofed sender detected,phishing,3
+2026-01-02 17:34:06.554630,system,192.168.4.191,Suspicious email from hr@company.com with credential request,phishing,3
+2025-12-13 21:22:06.552628,alice,192.168.44.191,Credential harvesting attempt detected,phishing,3
+2025-12-31 17:14:06.550628,david,192.168.15.121,Suspicious email from admin@corp.com with credential request,phishing,3
+2025-12-28 19:47:06.550628,bob,192.168.30.21,Phishing link clicked by user system,phishing,3
+2025-12-12 00:55:06.548627,charlie,192.168.34.61,Spear phishing attempt targeting david,phishing,3
+2025-12-14 21:28:06.552628,eve,192.168.28.91,Malicious attachment in email from admin@corp.com,phishing,3
+2025-12-21 17:02:06.550628,user2,192.168.31.201,Spear phishing attempt targeting david,phishing,3
+2025-12-14 18:34:06.555629,system,192.168.23.91,Email contains malicious link asking for credentials,phishing,3
+2025-12-03 00:17:06.553630,david,192.168.13.151,Email with spoofed sender detected,phishing,3
+2025-12-22 14:55:06.549628,bob,192.168.46.11,Malicious attachment in email from admin@corp.com,phishing,3
+2025-12-11 19:59:06.548627,eve,192.168.47.21,Fake invoice email detected,phishing,3
+2025-12-06 02:02:06.554630,david,192.168.15.91,Credential harvesting attempt detected,phishing,3
+2025-12-19 10:27:06.554630,charlie,192.168.15.101,Phishing link clicked by user user2,phishing,3
+2026-01-02 12:16:06.550628,system,192.168.38.211,Fake invoice email detected,phishing,3
+2025-12-29 00:49:06.555629,david,192.168.12.1,Spear phishing attempt targeting charlie,phishing,3
+2025-12-27 14:17:06.555629,admin,192.168.39.151,Phishing link clicked by user user2,phishing,3
+2025-12-05 00:33:06.555629,system,192.168.5.211,Email contains malicious link asking for credentials,phishing,3
+2025-12-28 14:53:06.553630,charlie,192.168.45.131,Suspicious email from admin@corp.com with credential request,phishing,3
+2025-12-31 21:07:06.551627,user1,192.168.11.201,Credential harvesting attempt detected,phishing,3
+2025-12-15 00:16:06.552628,eve,192.168.29.81,Malicious attachment in email from hr@company.com,phishing,3
+2025-12-09 06:15:06.552628,user3,192.168.44.131,Fake invoice email detected,phishing,3
+2025-12-21 05:34:06.551627,eve,192.168.25.231,Email contains malicious link asking for credentials,phishing,3
+2025-12-19 09:27:06.550628,user2,192.168.21.91,Suspicious URL in email: http://phishing-site-302.com,phishing,3
+2025-12-19 09:30:06.551627,alice,192.168.6.161,Credential harvesting attempt detected,phishing,3
+2025-12-22 02:43:06.549628,user3,192.168.41.141,Suspicious email from hr@company.com with credential request,phishing,3
+2025-12-19 00:48:06.551627,admin,192.168.25.61,Email impersonation detected,phishing,3
+2025-12-15 09:00:06.548627,user1,192.168.32.211,Suspicious URL in email: http://phishing-site-786.com,phishing,3
+2025-12-21 03:06:06.550628,david,192.168.37.61,Suspicious URL in email: http://phishing-site-593.com,phishing,3
+2025-12-30 12:54:06.552628,alice,192.168.10.211,Credential harvesting attempt detected,phishing,3
+2025-12-22 22:27:06.550628,david,192.168.47.171,Malicious attachment in email from it@company.com,phishing,3
+2025-12-13 21:37:06.555629,user2,192.168.10.51,Phishing link clicked by user user3,phishing,3
+2025-12-09 15:48:06.553630,bob,192.168.17.171,Email with spoofed sender detected,phishing,3
+2026-01-03 02:53:06.551627,eve,192.168.15.1,Email contains malicious link asking for credentials,phishing,3
+2025-12-05 14:03:06.549628,alice,192.168.24.141,Email with spoofed sender detected,phishing,3
+2025-12-07 17:27:06.549628,user1,192.168.46.121,Suspicious URL in email: http://phishing-site-969.com,phishing,3
+2025-12-22 21:32:06.551627,system,192.168.29.201,Spear phishing attempt targeting system,phishing,3
+2025-12-16 06:20:06.551627,user1,192.168.29.241,Suspicious URL in email: http://phishing-site-410.com,phishing,3
+2026-01-01 20:55:06.550628,user3,192.168.30.221,Malicious attachment in email from it@company.com,phishing,3
+2025-12-30 09:50:06.554630,bob,192.168.39.211,Malicious attachment in email from admin@corp.com,phishing,3
+2025-12-16 18:58:06.552628,user1,192.168.3.131,Malicious attachment in email from admin@corp.com,phishing,3
+2025-12-22 01:08:06.551627,system,192.168.22.1,Email with spoofed sender detected,phishing,3
+2025-12-13 19:23:06.552628,user2,192.168.47.161,Email impersonation detected,phishing,3
+2025-12-15 05:58:06.549628,user2,192.168.38.51,Phishing link clicked by user bob,phishing,3
+2025-12-29 18:43:06.550628,user2,192.168.4.111,Phishing attempt detected: fake login page,phishing,3
+2025-12-27 21:11:06.555629,user2,192.168.31.211,Email impersonation detected,phishing,3
+2025-12-02 00:17:06.554630,user2,192.168.49.201,Email impersonation detected,phishing,3
+2025-12-28 02:09:06.554630,admin,192.168.44.201,Suspicious email from admin@corp.com with credential request,phishing,3
+2025-12-02 15:29:06.551627,user1,192.168.14.1,Email contains malicious link asking for credentials,phishing,3
+2025-12-02 03:11:06.552628,user1,192.168.38.91,Spear phishing attempt targeting system,phishing,3
+2025-12-25 04:15:06.550628,bob,192.168.35.41,Malicious attachment in email from admin@corp.com,phishing,3
+2025-12-14 08:42:06.552628,user2,192.168.27.31,Email contains malicious link asking for credentials,phishing,3
+2025-12-24 01:18:06.551627,user1,192.168.44.191,Phishing link clicked by user eve,phishing,3
+2025-12-05 07:51:06.552628,charlie,192.168.12.11,Malicious attachment in email from it@company.com,phishing,3
+2025-12-07 20:51:06.552628,david,192.168.4.21,Email with spoofed sender detected,phishing,3
+2025-12-04 20:18:06.553630,david,192.168.40.151,Suspicious URL in email: http://phishing-site-449.com,phishing,3
+2025-12-11 13:51:06.551627,charlie,192.168.16.241,Email contains malicious link asking for credentials,phishing,3
+2025-12-16 02:50:06.551627,user1,192.168.42.51,Phishing link clicked by user system,phishing,3
+2025-12-14 14:29:06.550628,user3,192.168.36.51,Spear phishing attempt targeting system,phishing,3
+2025-12-15 07:40:06.549628,eve,192.168.46.71,Email impersonation detected,phishing,3
+2025-12-24 03:24:06.549628,alice,192.168.1.231,Email impersonation detected,phishing,3
+2026-01-03 03:54:06.552628,user1,192.168.5.21,Spear phishing attempt targeting user1,phishing,3
+2025-12-15 11:23:06.553630,user1,192.168.42.201,Spear phishing attempt targeting user3,phishing,3
+2025-12-26 05:41:06.555629,alice,192.168.37.221,Phishing link clicked by user alice,phishing,3
+2025-12-03 13:42:06.550628,bob,192.168.27.81,Phishing link clicked by user user2,phishing,3
+2025-12-27 08:43:06.554630,charlie,192.168.31.1,Suspicious URL in email: http://phishing-site-774.com,phishing,3
+2025-12-23 06:00:06.554630,system,192.168.26.61,Email with spoofed sender detected,phishing,3
+2025-12-29 02:49:06.551627,user1,192.168.42.71,Suspicious email from admin@corp.com with credential request,phishing,3
+2025-12-27 05:52:06.548627,user2,192.168.24.51,Fake invoice email detected,phishing,3
+2025-12-19 08:02:06.555629,charlie,192.168.47.231,Spear phishing attempt targeting charlie,phishing,3
+2025-12-12 19:19:06.555629,charlie,192.168.17.171,Spear phishing attempt targeting alice,phishing,3
+2025-12-29 10:16:06.554630,user1,192.168.21.71,Suspicious email from security@company.com with credential request,phishing,3
+2025-12-13 23:39:06.549628,alice,192.168.11.111,Suspicious email from admin@corp.com with credential request,phishing,3
+2025-12-30 07:50:06.549628,bob,192.168.15.201,Fake invoice email detected,phishing,3
+2025-12-12 23:55:06.549628,admin,192.168.11.241,Credential harvesting attempt detected,phishing,3
+2025-12-25 05:38:06.549628,eve,192.168.25.61,Email contains malicious link asking for credentials,phishing,3
+2025-12-15 23:17:06.554630,charlie,192.168.25.131,Suspicious URL in email: http://phishing-site-507.com,phishing,3
+2026-01-05 07:04:06.554630,admin,192.168.1.51,Credential harvesting attempt detected,phishing,3
+2025-12-24 08:20:06.551627,david,192.168.20.231,Suspicious URL in email: http://phishing-site-962.com,phishing,3
+2025-12-29 10:12:06.549628,charlie,192.168.13.11,Email impersonation detected,phishing,3
+2025-12-21 19:23:06.550628,system,192.168.27.141,Email contains malicious link asking for credentials,phishing,3
+2025-12-22 15:41:06.551627,user2,192.168.45.1,Suspicious URL in email: http://phishing-site-880.com,phishing,3
+2025-12-23 14:46:06.554630,user1,192.168.43.191,Suspicious email from it@company.com with credential request,phishing,3
+2025-12-06 23:31:06.551627,admin,192.168.24.1,Fake invoice email detected,phishing,3
+2025-12-27 05:10:06.550628,bob,192.168.31.71,Suspicious URL in email: http://phishing-site-364.com,phishing,3
+2026-01-04 14:03:06.553630,bob,192.168.12.121,Phishing attempt detected: fake login page,phishing,3
+2025-12-17 11:15:06.552628,user3,192.168.4.51,Credential harvesting attempt detected,phishing,3
+2025-12-11 16:58:06.555629,eve,192.168.36.181,Suspicious email from it@company.com with credential request,phishing,3
+2025-12-06 21:53:06.551627,eve,192.168.35.71,Suspicious URL in email: http://phishing-site-986.com,phishing,3
+2025-12-27 00:19:06.553630,system,192.168.16.211,Spear phishing attempt targeting admin,phishing,3
+2025-12-28 01:30:06.549628,alice,192.168.18.41,Phishing attempt detected: fake login page,phishing,3
+2025-12-20 12:19:06.549628,david,192.168.2.81,Phishing attempt detected: fake login page,phishing,3
+2025-12-29 06:02:06.552628,charlie,192.168.6.41,Malicious attachment in email from admin@corp.com,phishing,3
+2026-01-01 05:05:06.552628,user3,192.168.29.211,Email with spoofed sender detected,phishing,3
+2025-12-11 01:44:06.551627,admin,192.168.2.131,Email impersonation detected,phishing,3
+2025-12-12 00:10:06.549628,alice,192.168.2.71,Phishing attempt detected: fake login page,phishing,3
+2025-12-09 03:13:06.553630,charlie,192.168.2.191,Suspicious URL in email: http://phishing-site-429.com,phishing,3
+2025-12-26 05:34:06.548627,alice,192.168.12.41,Phishing attempt detected: fake login page,phishing,3
+2025-12-17 10:28:06.554630,david,192.168.22.121,Phishing link clicked by user charlie,phishing,3
+2025-12-16 16:43:06.551627,admin,192.168.8.21,Email impersonation detected,phishing,3
+2025-12-11 16:20:06.555629,user1,192.168.26.21,Email impersonation detected,phishing,3
+2025-12-06 04:56:06.554630,alice,192.168.1.61,Credential harvesting attempt detected,phishing,3
+2025-12-05 15:28:06.551627,system,192.168.30.11,Email with spoofed sender detected,phishing,3
+2025-12-28 00:23:06.554630,david,192.168.47.1,Fake invoice email detected,phishing,3
+2025-12-07 01:07:06.553630,system,192.168.19.41,Phishing attempt detected: fake login page,phishing,3
+2025-12-30 13:04:06.553630,alice,192.168.26.161,Malicious attachment in email from security@company.com,phishing,3
+2025-12-09 04:08:06.550628,admin,192.168.37.221,Phishing link clicked by user system,phishing,3
+2025-12-02 03:00:06.553630,user1,192.168.21.151,Email contains malicious link asking for credentials,phishing,3
+2025-12-15 10:31:06.552628,eve,192.168.20.191,Credential harvesting attempt detected,phishing,3
+2025-12-03 08:46:06.548627,charlie,192.168.14.211,Fake invoice email detected,phishing,3
+2025-12-11 02:58:06.552628,bob,192.168.10.151,Email impersonation detected,phishing,3
+2026-01-05 01:08:06.552628,david,192.168.3.211,Suspicious email from it@company.com with credential request,phishing,3
+2025-12-13 00:37:06.549628,david,192.168.37.161,Suspicious URL in email: http://phishing-site-988.com,phishing,3
+2025-12-09 07:01:06.553630,system,192.168.4.21,Fake invoice email detected,phishing,3
+2025-12-22 03:36:06.555629,charlie,192.168.26.221,Spear phishing attempt targeting bob,phishing,3
+2025-12-16 06:45:06.555629,david,192.168.47.91,Email impersonation detected,phishing,3
+2025-12-09 10:36:06.553630,user2,192.168.11.91,Spear phishing attempt targeting eve,phishing,3
+2025-12-17 20:10:06.553630,david,192.168.31.111,Suspicious URL in email: http://phishing-site-311.com,phishing,3
+2025-12-03 18:56:06.553630,admin,192.168.27.121,Suspicious email from it@company.com with credential request,phishing,3
+2026-01-01 16:36:06.549628,admin,192.168.12.61,Email with spoofed sender detected,phishing,3
+2025-12-02 07:12:06.550628,alice,192.168.33.241,Phishing link clicked by user user1,phishing,3
+2025-12-20 12:55:06.555629,user2,192.168.1.31,Email contains malicious link asking for credentials,phishing,3
+2025-12-07 13:17:06.551627,bob,192.168.14.201,Phishing link clicked by user admin,phishing,3
+2025-12-19 19:14:06.554630,eve,192.168.34.81,Suspicious email from hr@company.com with credential request,phishing,3
+2025-12-08 04:33:06.549628,admin,192.168.46.21,Suspicious URL in email: http://phishing-site-225.com,phishing,3
+2025-12-29 09:11:06.552628,user3,192.168.44.71,Suspicious email from it@company.com with credential request,phishing,3
+2025-12-13 01:28:06.549628,user1,192.168.20.61,Email impersonation detected,phishing,3
+2025-12-16 22:26:06.555629,bob,192.168.30.161,Credential harvesting attempt detected,phishing,3
+2025-12-05 06:13:06.554630,system,192.168.45.31,Spear phishing attempt targeting user3,phishing,3
+2026-01-01 13:54:06.550628,charlie,192.168.2.231,Phishing link clicked by user david,phishing,3
+2025-12-20 22:38:06.550628,user1,192.168.36.71,Phishing link clicked by user charlie,phishing,3
+2025-12-16 19:55:06.550628,user1,192.168.18.141,Phishing link clicked by user user3,phishing,3
+2025-12-14 14:00:06.553630,user3,192.168.48.121,Email impersonation detected,phishing,3
+2025-12-05 09:40:06.549628,david,192.168.21.131,Phishing attempt detected: fake login page,phishing,3
+2025-12-08 05:08:06.555629,david,192.168.21.151,Phishing attempt detected: fake login page,phishing,3
+2025-12-13 19:03:06.549628,user1,192.168.17.231,Email impersonation detected,phishing,3
+2025-12-11 05:02:06.553630,system,192.168.17.201,Credential harvesting attempt detected,phishing,3
+2025-12-25 07:11:06.551627,david,192.168.31.191,Email contains malicious link asking for credentials,phishing,3
+2025-12-04 05:57:06.551627,charlie,192.168.30.31,Email contains malicious link asking for credentials,phishing,3
+2025-12-25 05:44:06.553630,eve,192.168.10.121,Email contains malicious link asking for credentials,phishing,3
+2025-12-05 19:33:06.548627,system,192.168.16.111,Spear phishing attempt targeting user2,phishing,3
+2025-12-06 16:37:06.550628,eve,192.168.18.51,Email with spoofed sender detected,phishing,3
+2025-12-22 16:56:06.554630,eve,192.168.28.21,Email contains malicious link asking for credentials,phishing,3
+2025-12-08 20:02:06.551627,user1,192.168.27.231,Suspicious URL in email: http://phishing-site-270.com,phishing,3
+2026-01-03 17:48:06.551627,david,192.168.5.31,Suspicious URL in email: http://phishing-site-7.com,phishing,3
+2025-12-13 23:12:06.551627,user1,192.168.42.151,Spear phishing attempt targeting user3,phishing,3
+2025-12-08 22:42:06.549628,user1,192.168.21.221,Email impersonation detected,phishing,3
+2025-12-12 01:39:06.549628,charlie,192.168.9.151,Email contains malicious link asking for credentials,phishing,3
+2026-01-03 02:19:06.548627,admin,192.168.19.41,Suspicious email from security@company.com with credential request,phishing,3
+2025-12-27 16:45:06.555629,bob,192.168.33.241,Email impersonation detected,phishing,3
+2025-12-28 02:52:06.554630,david,192.168.30.131,Email with spoofed sender detected,phishing,3
+2025-12-18 00:30:06.554630,alice,192.168.7.181,Fake invoice email detected,phishing,3
+2025-12-09 05:34:06.555629,eve,192.168.38.51,Email with spoofed sender detected,phishing,3
+2025-12-16 15:40:06.554630,user2,192.168.24.141,Credential harvesting attempt detected,phishing,3
+2025-12-07 19:09:06.554630,user3,192.168.2.81,Phishing link clicked by user charlie,phishing,3
+2025-12-29 06:54:06.550628,user1,192.168.4.221,Phishing attempt detected: fake login page,phishing,3
+2025-12-08 10:09:06.552628,user3,192.168.49.21,Suspicious URL in email: http://phishing-site-810.com,phishing,3
+2025-12-08 22:38:06.549628,user2,192.168.7.161,Spear phishing attempt targeting admin,phishing,3
+2025-12-04 08:27:06.549628,user1,192.168.6.231,Malicious attachment in email from it@company.com,phishing,3
+2026-01-01 23:28:06.551627,user2,192.168.46.51,Suspicious email from admin@corp.com with credential request,phishing,3
+2025-12-10 03:53:06.553630,eve,192.168.33.151,Phishing link clicked by user alice,phishing,3
+2025-12-19 15:55:06.552628,system,192.168.28.11,Email with spoofed sender detected,phishing,3
+2025-12-05 01:25:06.555629,user2,192.168.48.231,Suspicious email from admin@corp.com with credential request,phishing,3
+2025-12-17 07:22:06.549628,user3,192.168.48.11,Suspicious URL in email: http://phishing-site-138.com,phishing,3
+2025-12-12 23:36:06.550628,system,192.168.8.21,Email contains malicious link asking for credentials,phishing,3
+2025-12-06 13:22:06.555629,system,192.168.39.181,Phishing attempt detected: fake login page,phishing,3
+2025-12-09 19:36:06.552628,alice,192.168.4.241,Credential harvesting attempt detected,phishing,3
+2025-12-11 17:54:06.549628,bob,192.168.36.191,Suspicious URL in email: http://phishing-site-691.com,phishing,3
+2025-12-19 22:02:06.550628,david,192.168.9.91,Email impersonation detected,phishing,3
+2025-12-05 15:36:06.553630,user3,192.168.26.81,Malicious attachment in email from it@company.com,phishing,3
+2025-12-30 06:50:06.555629,alice,192.168.37.141,Suspicious URL in email: http://phishing-site-597.com,phishing,3
+2025-12-15 18:36:06.548627,system,192.168.21.41,Phishing attempt detected: fake login page,phishing,3
+2026-01-01 22:51:06.555629,bob,192.168.3.21,Credential harvesting attempt detected,phishing,3
+2025-12-28 10:10:06.550628,system,192.168.47.51,Phishing link clicked by user system,phishing,3
+2026-01-04 07:08:06.553630,user3,192.168.19.41,Email with spoofed sender detected,phishing,3
+2025-12-13 11:33:06.554630,eve,192.168.21.81,Fake invoice email detected,phishing,3
+2026-01-01 17:26:06.554630,charlie,192.168.14.71,Email with spoofed sender detected,phishing,3
+2025-12-14 06:25:06.551627,user2,192.168.40.121,Email with spoofed sender detected,phishing,3
+2025-12-22 23:24:06.548627,user3,192.168.46.181,Email with spoofed sender detected,phishing,3
+2025-12-25 09:47:06.551627,admin,192.168.43.51,Malicious attachment in email from admin@corp.com,phishing,3
+2025-12-27 23:02:06.551627,eve,192.168.22.221,Suspicious email from admin@corp.com with credential request,phishing,3
+2025-12-10 08:39:06.551627,david,192.168.30.171,Malicious attachment in email from it@company.com,phishing,3
+2025-12-04 05:57:06.555629,admin,192.168.4.191,Phishing attempt detected: fake login page,phishing,3
+2025-12-21 03:08:06.554630,charlie,192.168.5.221,Suspicious URL in email: http://phishing-site-446.com,phishing,3
+2025-12-28 04:01:06.553630,alice,192.168.38.81,Phishing link clicked by user bob,phishing,3
+2025-12-30 06:50:06.549628,alice,192.168.29.1,Phishing link clicked by user system,phishing,3
+2025-12-24 02:21:06.554630,user3,192.168.5.201,Email contains malicious link asking for credentials,phishing,3
+2025-12-22 04:57:06.550628,alice,192.168.15.31,Credential harvesting attempt detected,phishing,3
+2025-12-22 14:26:06.549628,system,192.168.20.81,Email impersonation detected,phishing,3
+2025-12-17 06:41:06.550628,admin,192.168.39.131,Suspicious email from admin@corp.com with credential request,phishing,3
+2025-12-19 23:24:06.549628,user1,192.168.14.181,Phishing link clicked by user user2,phishing,3
+2025-12-15 12:43:06.548627,bob,192.168.42.101,Email contains malicious link asking for credentials,phishing,3
+2025-12-08 17:47:06.553630,user2,192.168.14.41,Fake invoice email detected,phishing,3
+2025-12-08 17:58:06.555629,alice,192.168.3.1,Suspicious URL in email: http://phishing-site-902.com,phishing,3
+2026-01-03 05:30:06.548627,admin,192.168.39.11,Credential harvesting attempt detected,phishing,3
+2025-12-09 22:13:06.550628,alice,192.168.34.241,Phishing attempt detected: fake login page,phishing,3
+2025-12-20 16:58:06.549628,eve,192.168.3.161,Email impersonation detected,phishing,3
+2025-12-22 23:29:06.549628,bob,192.168.7.131,Suspicious email from it@company.com with credential request,phishing,3
+2026-01-01 20:03:06.553630,user3,192.168.12.101,Fake invoice email detected,phishing,3
+2025-12-31 15:23:06.552628,eve,192.168.11.181,Phishing attempt detected: fake login page,phishing,3
+2025-12-21 05:31:06.555629,system,192.168.28.121,Email with spoofed sender detected,phishing,3
+2025-12-02 10:27:06.552628,system,192.168.25.161,Phishing link clicked by user user1,phishing,3
+2025-12-16 19:02:06.552628,user1,192.168.42.201,Phishing attempt detected: fake login page,phishing,3
+2025-12-24 23:50:06.551627,eve,192.168.23.21,Suspicious URL in email: http://phishing-site-923.com,phishing,3
+2025-12-30 22:33:06.548627,charlie,192.168.9.131,Fake invoice email detected,phishing,3
+2026-01-04 14:34:06.554630,david,192.168.15.61,Email contains malicious link asking for credentials,phishing,3
+2025-12-24 06:38:06.549628,charlie,192.168.29.221,Fake invoice email detected,phishing,3
+2025-12-16 12:39:06.554630,admin,192.168.31.111,Suspicious email from it@company.com with credential request,phishing,3
+2025-12-23 16:01:06.554630,admin,192.168.20.11,Email impersonation detected,phishing,3
+2025-12-03 17:38:06.554630,admin,192.168.44.91,Email with spoofed sender detected,phishing,3
+2025-12-04 08:51:06.548627,admin,192.168.11.31,Email impersonation detected,phishing,3
+2025-12-05 11:40:06.550628,user2,192.168.31.91,Malicious attachment in email from it@company.com,phishing,3
+2026-01-04 02:09:06.555629,admin,192.168.9.1,Malicious attachment in email from hr@company.com,phishing,3
+2025-12-27 20:40:06.554630,david,192.168.28.11,Suspicious URL in email: http://phishing-site-138.com,phishing,3
+2025-12-20 04:01:06.551627,user2,192.168.32.161,Phishing link clicked by user david,phishing,3
+2025-12-05 16:15:06.555629,charlie,192.168.23.31,Email with spoofed sender detected,phishing,3
+2026-01-01 04:45:06.549628,user1,192.168.9.41,Email with spoofed sender detected,phishing,3
+2025-12-19 12:09:06.554630,bob,192.168.44.231,Fake invoice email detected,phishing,3
+2025-12-24 16:49:06.548627,charlie,192.168.48.241,Phishing attempt detected: fake login page,phishing,3
+2025-12-30 17:41:06.555629,bob,192.168.22.1,Malicious attachment in email from it@company.com,phishing,3
+2026-01-02 11:15:06.549628,charlie,192.168.20.111,Credential harvesting attempt detected,phishing,3
+2025-12-16 11:45:06.550628,system,192.168.5.231,Phishing attempt detected: fake login page,phishing,3
+2025-12-30 11:22:06.548627,user1,192.168.46.101,Email impersonation detected,phishing,3
+2025-12-07 13:35:06.552628,charlie,192.168.41.91,Credential harvesting attempt detected,phishing,3
+2025-12-24 21:01:06.551627,charlie,192.168.31.11,Email impersonation detected,phishing,3
+2025-12-06 18:06:06.554630,user1,192.168.49.211,Email impersonation detected,phishing,3
+2025-12-21 20:52:06.551627,system,192.168.28.111,Email impersonation detected,phishing,3
+2025-12-08 21:50:06.549628,eve,192.168.44.161,Malicious attachment in email from security@company.com,phishing,3
+2025-12-21 15:03:06.554630,user3,192.168.10.171,Phishing link clicked by user eve,phishing,3
+2025-12-19 20:38:06.549628,system,192.168.7.41,Phishing attempt detected: fake login page,phishing,3
+2025-12-30 11:21:06.550628,admin,192.168.3.211,Phishing link clicked by user alice,phishing,3
+2025-12-18 18:47:06.549628,bob,192.168.19.201,Suspicious email from it@company.com with credential request,phishing,3
+2025-12-11 01:54:06.549628,user1,192.168.14.211,Spear phishing attempt targeting admin,phishing,3
+2025-12-07 05:30:06.549628,user2,192.168.10.11,Phishing link clicked by user bob,phishing,3
+2025-12-24 08:28:06.548627,user1,192.168.7.131,Suspicious URL in email: http://phishing-site-221.com,phishing,3
+2025-12-19 20:14:06.555629,system,192.168.41.141,Suspicious email from admin@corp.com with credential request,phishing,3
+2026-01-04 11:39:06.552628,user1,192.168.44.201,Spear phishing attempt targeting user1,phishing,3
+2025-12-25 22:59:06.553630,alice,192.168.39.171,Fake invoice email detected,phishing,3
+2025-12-21 23:09:06.548627,eve,192.168.42.171,Email impersonation detected,phishing,3
+2025-12-18 15:25:06.550628,david,192.168.39.231,Email impersonation detected,phishing,3
+2026-01-05 06:51:06.554630,alice,192.168.6.171,Phishing attempt detected: fake login page,phishing,3
+2026-01-04 15:47:06.555629,user3,192.168.24.151,Phishing link clicked by user bob,phishing,3
+2025-12-03 01:42:06.554630,alice,192.168.41.231,Malicious attachment in email from hr@company.com,phishing,3
+2025-12-22 03:13:06.555629,user1,192.168.49.171,Spear phishing attempt targeting charlie,phishing,3
+2025-12-19 06:19:06.554630,system,192.168.40.241,Phishing link clicked by user eve,phishing,3
+2025-12-04 07:36:06.553630,david,192.168.28.91,Suspicious email from security@company.com with credential request,phishing,3
+2025-12-12 03:37:06.549628,david,192.168.48.81,Phishing attempt detected: fake login page,phishing,3
+2025-12-30 18:43:06.554630,user1,192.168.11.31,Phishing link clicked by user bob,phishing,3
+2025-12-08 23:59:06.555629,charlie,192.168.23.51,Email contains malicious link asking for credentials,phishing,3
+2026-01-02 13:20:06.549628,user2,192.168.14.131,Phishing link clicked by user user2,phishing,3
+2025-12-21 02:40:06.549628,eve,192.168.3.201,Email with spoofed sender detected,phishing,3
+2025-12-11 01:00:06.551627,david,192.168.35.131,Suspicious email from hr@company.com with credential request,phishing,3
+2025-12-20 23:12:06.549628,eve,192.168.35.61,Suspicious URL in email: http://phishing-site-185.com,phishing,3
+2026-01-01 13:18:06.553630,bob,192.168.15.141,Phishing attempt detected: fake login page,phishing,3
+2026-01-02 10:45:06.555629,david,192.168.8.61,Email contains malicious link asking for credentials,phishing,3
+2025-12-28 20:08:06.551627,alice,192.168.45.161,Phishing link clicked by user user2,phishing,3
+2025-12-16 13:05:06.555629,user2,192.168.32.141,Suspicious URL in email: http://phishing-site-342.com,phishing,3
+2025-12-22 09:12:06.548627,system,192.168.47.11,Email contains malicious link asking for credentials,phishing,3
+2025-12-06 20:17:06.551627,user1,192.168.19.241,Fake invoice email detected,phishing,3
+2025-12-21 02:45:06.555629,admin,192.168.1.201,Suspicious URL in email: http://phishing-site-776.com,phishing,3
+2025-12-15 19:44:06.549628,charlie,192.168.12.31,Malicious attachment in email from admin@corp.com,phishing,3
+2025-12-06 10:08:06.548627,alice,192.168.28.111,Email with spoofed sender detected,phishing,3
+2025-12-27 22:23:06.550628,system,192.168.8.41,Spear phishing attempt targeting david,phishing,3
+2026-01-03 04:36:06.549628,eve,192.168.29.71,Spear phishing attempt targeting alice,phishing,3
+2025-12-13 13:29:06.553630,user3,192.168.3.61,Email impersonation detected,phishing,3
+2025-12-21 08:31:06.554630,user2,192.168.33.91,Phishing attempt detected: fake login page,phishing,3
+2025-12-25 02:00:06.549628,user1,192.168.34.81,Malicious attachment in email from admin@corp.com,phishing,3
+2026-01-04 23:38:06.553630,user1,192.168.14.221,Email impersonation detected,phishing,3
+2025-12-22 00:09:06.554630,eve,192.168.48.31,Fake invoice email detected,phishing,3
+2025-12-07 02:02:06.551627,david,192.168.46.11,Email with spoofed sender detected,phishing,3
+2025-12-11 18:15:06.555629,alice,192.168.44.151,Email with spoofed sender detected,phishing,3
+2026-01-03 06:15:06.555629,user2,192.168.12.81,Suspicious URL in email: http://phishing-site-602.com,phishing,3
+2025-12-23 04:58:06.552628,bob,192.168.29.111,Email contains malicious link asking for credentials,phishing,3
+2025-12-13 13:09:06.553630,eve,192.168.2.31,Credential harvesting attempt detected,phishing,3
+2025-12-21 03:17:06.553630,user2,192.168.28.141,Spear phishing attempt targeting admin,phishing,3
+2025-12-02 22:31:06.550628,charlie,192.168.44.81,Phishing attempt detected: fake login page,phishing,3
+2026-01-03 01:02:06.554630,eve,192.168.46.21,Email with spoofed sender detected,phishing,3
+2025-12-16 02:48:06.553630,user2,192.168.12.41,Credential harvesting attempt detected,phishing,3
+2025-12-05 14:15:06.552628,user2,192.168.4.71,Phishing link clicked by user admin,phishing,3
+2025-12-04 03:14:06.551627,user2,192.168.5.211,Phishing attempt detected: fake login page,phishing,3
+2025-12-13 00:47:06.554630,alice,192.168.7.11,Spear phishing attempt targeting user2,phishing,3
+2026-01-05 05:23:06.551627,user1,192.168.43.241,Email impersonation detected,phishing,3
+2025-12-10 08:17:06.552628,admin,192.168.25.221,Fake invoice email detected,phishing,3
+2025-12-03 20:05:06.555629,david,192.168.4.221,Suspicious URL in email: http://phishing-site-409.com,phishing,3
+2025-12-19 09:38:06.552628,eve,192.168.7.121,Spear phishing attempt targeting admin,phishing,3
+2025-12-17 08:23:06.551627,system,192.168.40.51,Credential harvesting attempt detected,phishing,3
+2025-12-17 09:43:06.550628,user1,192.168.36.141,Phishing attempt detected: fake login page,phishing,3
+2025-12-10 10:23:06.550628,user2,192.168.9.201,Credential harvesting attempt detected,phishing,3
+2025-12-17 14:45:06.553630,charlie,192.168.11.41,Email with spoofed sender detected,phishing,3
+2026-01-02 22:46:06.551627,eve,192.168.24.161,Phishing link clicked by user user3,phishing,3
+2026-01-02 16:57:06.554630,bob,192.168.24.111,Phishing link clicked by user system,phishing,3
+2026-01-05 02:41:06.555629,bob,192.168.13.111,Suspicious email from admin@corp.com with credential request,phishing,3
+2026-01-04 11:13:06.550628,user3,192.168.20.21,Email impersonation detected,phishing,3
+2025-12-20 15:00:06.554630,david,192.168.13.241,Phishing link clicked by user user1,phishing,3
+2025-12-11 01:55:06.552628,user2,192.168.48.121,Fake invoice email detected,phishing,3
+2025-12-20 11:39:06.552628,charlie,192.168.11.161,Suspicious URL in email: http://phishing-site-679.com,phishing,3
+2025-12-21 16:23:06.555629,charlie,192.168.33.101,Email contains malicious link asking for credentials,phishing,3
+2025-12-23 07:53:06.552628,charlie,192.168.10.181,Phishing link clicked by user admin,phishing,3
+2025-12-13 05:33:06.553630,alice,192.168.13.71,Phishing attempt detected: fake login page,phishing,3
+2025-12-19 00:36:06.552628,user2,192.168.39.21,Suspicious URL in email: http://phishing-site-199.com,phishing,3
+2025-12-23 06:00:06.552628,bob,192.168.43.71,Suspicious URL in email: http://phishing-site-530.com,phishing,3
+2025-12-04 19:59:06.553630,alice,192.168.34.81,Malicious attachment in email from admin@corp.com,phishing,3
+2026-01-03 15:41:06.551627,david,192.168.19.241,Malicious attachment in email from hr@company.com,phishing,3
+2025-12-03 06:33:06.555629,system,192.168.33.41,Malicious attachment in email from admin@corp.com,phishing,3
+2025-12-14 10:06:06.551627,alice,192.168.44.201,Email contains malicious link asking for credentials,phishing,3
+2026-01-01 12:14:06.553630,admin,192.168.28.101,Email with spoofed sender detected,phishing,3
+2025-12-13 09:54:06.549628,user2,192.168.26.61,Phishing link clicked by user admin,phishing,3
+2025-12-28 01:29:06.551627,system,192.168.29.201,Email with spoofed sender detected,phishing,3
+2025-12-30 22:34:06.548627,system,192.168.20.11,Email impersonation detected,phishing,3
+2025-12-10 14:52:06.549628,system,192.168.4.51,Email contains malicious link asking for credentials,phishing,3
+2025-12-13 22:56:06.553630,user3,192.168.32.91,Malicious attachment in email from hr@company.com,phishing,3
+2025-12-22 06:26:06.555629,system,192.168.9.121,Email with spoofed sender detected,phishing,3
+2025-12-02 01:53:06.549628,user1,192.168.45.21,Fake invoice email detected,phishing,3
+2025-12-20 11:09:06.555629,eve,192.168.49.41,Phishing link clicked by user charlie,phishing,3
+2025-12-11 11:57:06.555629,eve,192.168.49.61,Email contains malicious link asking for credentials,phishing,3
+2025-12-03 17:29:06.551627,user3,192.168.10.31,Suspicious email from it@company.com with credential request,phishing,3
+2025-12-19 06:52:06.551627,david,192.168.5.171,Phishing attempt detected: fake login page,phishing,3
+2025-12-23 16:23:06.553630,user2,192.168.33.31,Suspicious URL in email: http://phishing-site-646.com,phishing,3
+2025-12-17 08:20:06.554630,system,192.168.18.121,Malicious attachment in email from admin@corp.com,phishing,3
+2026-01-04 17:39:06.549628,alice,192.168.40.51,Email contains malicious link asking for credentials,phishing,3
+2025-12-14 12:59:06.548627,admin,192.168.44.131,Credential harvesting attempt detected,phishing,3
+2026-01-04 05:32:06.550628,eve,192.168.17.171,Email contains malicious link asking for credentials,phishing,3
+2025-12-03 02:17:06.553630,eve,192.168.17.151,Email with spoofed sender detected,phishing,3
+2025-12-21 03:10:06.552628,user1,192.168.27.41,Email contains malicious link asking for credentials,phishing,3
+2025-12-13 07:47:06.554630,eve,192.168.6.121,Phishing attempt detected: fake login page,phishing,3
+2025-12-04 16:04:06.555629,user1,192.168.42.41,Phishing link clicked by user user2,phishing,3
+2025-12-02 23:07:06.555629,bob,192.168.40.171,Email impersonation detected,phishing,3
+2025-12-01 18:31:06.555629,user3,192.168.9.181,Phishing attempt detected: fake login page,phishing,3
+2025-12-06 19:50:06.555629,user3,192.168.7.71,Email with spoofed sender detected,phishing,3
+2025-12-25 09:06:06.552628,charlie,192.168.24.191,Fake invoice email detected,phishing,3
+2025-12-21 09:38:06.552628,user1,192.168.46.11,Fake invoice email detected,phishing,3
+2025-12-03 22:09:06.550628,david,192.168.11.211,Phishing link clicked by user eve,phishing,3
+2026-01-02 20:07:06.554630,system,192.168.41.201,Fake invoice email detected,phishing,3
+2025-12-20 05:11:06.554630,user3,192.168.29.21,Credential harvesting attempt detected,phishing,3
+2025-12-02 02:44:06.550628,bob,192.168.28.81,Email with spoofed sender detected,phishing,3
+2025-12-13 07:29:06.549628,user1,192.168.25.211,Email with spoofed sender detected,phishing,3
+2025-12-07 09:18:06.555629,user2,192.168.45.221,Email with spoofed sender detected,phishing,3
+2025-12-18 13:07:06.551627,user2,192.168.27.101,Suspicious email from security@company.com with credential request,phishing,3
+2025-12-21 22:07:06.555629,charlie,192.168.8.51,Suspicious email from it@company.com with credential request,phishing,3
+2025-12-14 08:14:06.553630,user1,192.168.15.31,Suspicious email from security@company.com with credential request,phishing,3
+2025-12-12 15:12:06.549628,david,192.168.32.71,Phishing link clicked by user user1,phishing,3
+2026-01-02 03:10:06.552628,charlie,192.168.7.181,Email impersonation detected,phishing,3
+2025-12-23 19:16:06.549628,system,192.168.35.241,Email impersonation detected,phishing,3
+2025-12-02 08:45:06.554630,admin,192.168.24.101,Email with spoofed sender detected,phishing,3
+2025-12-09 12:25:06.553630,bob,192.168.40.131,Malicious attachment in email from hr@company.com,phishing,3
+2025-12-04 13:37:06.555629,david,192.168.34.191,Spear phishing attempt targeting david,phishing,3
+2025-12-14 05:09:06.549628,system,192.168.2.231,Credential harvesting attempt detected,phishing,3
+2026-01-01 04:41:06.555629,charlie,192.168.4.241,Fake invoice email detected,phishing,3
+2025-12-19 16:15:06.552628,david,192.168.28.241,Email impersonation detected,phishing,3
+2025-12-13 15:32:06.553630,user2,192.168.11.171,Phishing attempt detected: fake login page,phishing,3
+2025-12-15 19:48:06.552628,user2,192.168.26.171,Phishing attempt detected: fake login page,phishing,3
+2025-12-20 01:12:06.549628,system,192.168.13.11,Phishing link clicked by user user2,phishing,3
+2025-12-18 16:26:06.549628,bob,192.168.32.51,Credential harvesting attempt detected,phishing,3
+2025-12-15 07:05:06.555629,system,192.168.37.91,Credential harvesting attempt detected,phishing,3
+2025-12-18 17:53:06.555629,alice,192.168.21.21,Fake invoice email detected,phishing,3
+2025-12-02 18:39:06.550628,david,192.168.14.161,Suspicious email from security@company.com with credential request,phishing,3
+2025-12-30 13:07:06.550628,bob,192.168.32.1,Email impersonation detected,phishing,3
+2026-01-01 02:12:06.550628,admin,192.168.37.151,Malicious attachment in email from admin@corp.com,phishing,3
+2025-12-16 12:16:06.550628,user3,192.168.37.221,Credential harvesting attempt detected,phishing,3
+2025-12-09 22:17:06.549628,eve,192.168.2.41,Email impersonation detected,phishing,3
+2025-12-24 15:32:06.553630,bob,192.168.34.91,Email contains malicious link asking for credentials,phishing,3
+2025-12-09 07:06:06.551627,admin,192.168.18.61,Email contains malicious link asking for credentials,phishing,3
+2025-12-16 10:43:06.555629,charlie,192.168.19.161,Email impersonation detected,phishing,3
+2025-12-17 01:33:06.551627,user1,192.168.5.151,Malicious attachment in email from security@company.com,phishing,3
+2025-12-22 09:22:06.548627,eve,192.168.43.121,Suspicious email from admin@corp.com with credential request,phishing,3
+2025-12-11 13:14:06.553630,david,192.168.15.131,Malicious attachment in email from security@company.com,phishing,3
+2025-12-07 16:26:06.551627,user1,192.168.49.101,Suspicious email from security@company.com with credential request,phishing,3
+2025-12-24 08:10:06.555629,bob,192.168.3.91,Email contains malicious link asking for credentials,phishing,3
+2025-12-28 07:22:06.554630,user3,192.168.44.51,Email with spoofed sender detected,phishing,3
+2025-12-03 04:26:06.553630,user2,192.168.15.241,Spear phishing attempt targeting user2,phishing,3
+2025-12-10 17:06:06.550628,admin,192.168.28.141,Phishing link clicked by user david,phishing,3
+2025-12-30 03:01:06.552628,charlie,192.168.24.211,Email impersonation detected,phishing,3
+2026-01-05 04:02:06.550628,user1,192.168.10.221,Email impersonation detected,phishing,3
+2025-12-23 06:56:06.555629,bob,192.168.38.31,Credential harvesting attempt detected,phishing,3
+2025-12-05 11:39:06.552628,bob,192.168.46.81,Email contains malicious link asking for credentials,phishing,3
+2025-12-15 14:25:06.553630,user3,192.168.14.81,Fake invoice email detected,phishing,3
+2025-12-29 21:31:06.554630,bob,192.168.28.231,Phishing link clicked by user bob,phishing,3
+2025-12-12 12:23:06.555629,bob,192.168.2.51,Spear phishing attempt targeting user1,phishing,3
+2025-12-16 15:55:06.553630,user3,192.168.11.91,Fake invoice email detected,phishing,3
+2025-12-23 12:12:06.553630,david,192.168.49.201,Spear phishing attempt targeting system,phishing,3
+2025-12-21 14:28:06.551627,system,192.168.28.71,Email contains malicious link asking for credentials,phishing,3
+2025-12-25 08:54:06.550628,system,192.168.39.91,Suspicious email from admin@corp.com with credential request,phishing,3
+2026-01-03 21:36:06.553630,admin,192.168.45.101,Fake invoice email detected,phishing,3
+2025-12-02 12:38:06.550628,charlie,192.168.16.191,Phishing link clicked by user charlie,phishing,3
+2025-12-28 12:29:06.549628,user3,192.168.48.41,Credential harvesting attempt detected,phishing,3
+2025-12-09 10:57:06.551627,system,192.168.24.91,Credential harvesting attempt detected,phishing,3
+2025-12-06 10:43:06.552628,system,192.168.9.211,Email with spoofed sender detected,phishing,3
+2025-12-06 06:39:06.554630,user3,192.168.36.141,Fake invoice email detected,phishing,3
+2025-12-12 05:18:06.550628,eve,192.168.11.111,Suspicious email from it@company.com with credential request,phishing,3
+2025-12-09 18:11:06.550628,david,192.168.48.81,Email with spoofed sender detected,phishing,3
+2025-12-23 17:14:06.549628,alice,192.168.40.181,Suspicious URL in email: http://phishing-site-55.com,phishing,3
+2025-12-17 07:08:06.550628,user1,192.168.33.41,Email with spoofed sender detected,phishing,3
+2025-12-07 20:55:06.555629,user2,192.168.34.81,Credential harvesting attempt detected,phishing,3
+2025-12-21 03:45:06.555629,eve,192.168.24.81,Suspicious URL in email: http://phishing-site-207.com,phishing,3
+2025-12-01 20:19:06.550628,user3,192.168.8.1,Phishing link clicked by user eve,phishing,3
+2025-12-13 12:33:06.555629,charlie,192.168.28.151,Fake invoice email detected,phishing,3
+2025-12-28 01:03:06.549628,user3,192.168.9.201,Email with spoofed sender detected,phishing,3
+2026-01-04 09:26:06.551627,user3,192.168.32.41,Suspicious email from security@company.com with credential request,phishing,3
+2025-12-01 18:24:06.554630,user3,192.168.22.101,Email contains malicious link asking for credentials,phishing,3
+2025-12-23 17:29:06.549628,user1,192.168.23.51,Malicious attachment in email from hr@company.com,phishing,3
+2025-12-26 09:46:06.548627,charlie,192.168.14.221,Email impersonation detected,phishing,3
+2025-12-27 09:09:06.553630,bob,192.168.42.201,Suspicious email from hr@company.com with credential request,phishing,3
+2025-12-09 11:54:06.554630,charlie,192.168.18.61,Malicious attachment in email from admin@corp.com,phishing,3
+2026-01-05 05:07:06.550628,user3,192.168.1.241,Spear phishing attempt targeting charlie,phishing,3
+2025-12-02 01:47:06.550628,user1,192.168.16.211,Malicious attachment in email from security@company.com,phishing,3
+2025-12-13 00:19:06.551627,admin,192.168.47.131,Credential harvesting attempt detected,phishing,3
+2025-12-07 12:21:06.552628,charlie,192.168.23.221,Spear phishing attempt targeting david,phishing,3
+2026-01-03 21:38:06.553630,eve,192.168.15.191,Spear phishing attempt targeting bob,phishing,3
+2025-12-01 19:00:06.551627,charlie,192.168.33.131,Malicious attachment in email from security@company.com,phishing,3
+2025-12-09 12:05:06.549628,user3,192.168.22.81,Email with spoofed sender detected,phishing,3
+2025-12-11 00:54:06.549628,system,192.168.17.81,Phishing attempt detected: fake login page,phishing,3
+2025-12-07 04:48:06.549628,user1,192.168.15.211,Email with spoofed sender detected,phishing,3
+2025-12-22 20:30:06.554630,david,192.168.2.191,Malicious attachment in email from it@company.com,phishing,3
+2025-12-21 15:34:06.552628,charlie,192.168.15.21,Malicious attachment in email from admin@corp.com,phishing,3
+2025-12-28 02:34:06.554630,eve,192.168.40.151,Malicious attachment in email from hr@company.com,phishing,3
+2025-12-11 05:39:06.550628,eve,192.168.8.211,Email impersonation detected,phishing,3
+2025-12-25 08:33:06.552628,bob,192.168.29.21,Email with spoofed sender detected,phishing,3
+2025-12-09 02:47:06.553630,david,192.168.26.31,Phishing link clicked by user system,phishing,3
+2026-01-04 22:35:06.551627,charlie,192.168.34.201,Malicious attachment in email from admin@corp.com,phishing,3
+2025-12-19 15:09:06.554630,eve,192.168.21.71,Email with spoofed sender detected,phishing,3
+2025-12-13 11:30:06.553630,eve,192.168.43.121,Phishing link clicked by user alice,phishing,3
+2025-12-18 22:37:06.550628,bob,192.168.12.41,Email contains malicious link asking for credentials,phishing,3
+2025-12-19 01:11:06.552628,user2,192.168.34.11,Suspicious URL in email: http://phishing-site-485.com,phishing,3
+2025-12-28 14:03:06.552628,user1,192.168.32.111,Credential harvesting attempt detected,phishing,3
+2025-12-19 01:12:06.551627,bob,192.168.34.41,Suspicious email from hr@company.com with credential request,phishing,3
+2025-12-27 06:14:06.550628,user2,192.168.45.31,Email impersonation detected,phishing,3
+2025-12-16 20:15:06.555629,user3,192.168.38.61,Phishing attempt detected: fake login page,phishing,3
+2025-12-04 20:49:06.551627,alice,192.168.7.61,Email impersonation detected,phishing,3
+2025-12-28 11:18:06.550628,charlie,192.168.27.231,Credential harvesting attempt detected,phishing,3
+2025-12-19 11:17:06.555629,user1,192.168.8.151,Fake invoice email detected,phishing,3
+2025-12-10 07:33:06.550628,user3,192.168.43.11,Email contains malicious link asking for credentials,phishing,3
+2025-12-25 17:24:06.549628,bob,192.168.42.151,Email contains malicious link asking for credentials,phishing,3
+2025-12-10 13:33:06.552628,alice,192.168.7.131,Spear phishing attempt targeting user2,phishing,3
+2025-12-02 05:10:06.553630,user2,192.168.28.151,Email with spoofed sender detected,phishing,3
+2025-12-31 03:17:06.555629,david,192.168.47.181,Malicious attachment in email from admin@corp.com,phishing,3
+2025-12-28 14:30:06.554630,admin,192.168.16.61,Email with spoofed sender detected,phishing,3
+2025-12-26 13:35:06.555629,admin,192.168.38.121,Phishing link clicked by user charlie,phishing,3
+2025-12-18 11:57:06.554630,david,192.168.33.131,Malicious attachment in email from hr@company.com,phishing,3
+2025-12-23 12:00:06.550628,user3,192.168.14.171,Suspicious email from admin@corp.com with credential request,phishing,3
+2025-12-14 23:45:06.555629,user2,192.168.45.171,Malicious attachment in email from hr@company.com,phishing,3
+2025-12-08 11:02:06.554630,charlie,192.168.38.241,Fake invoice email detected,phishing,3
+2025-12-02 06:13:06.551627,bob,192.168.8.131,Email contains malicious link asking for credentials,phishing,3
+2026-01-01 05:30:06.550628,david,192.168.21.31,Email with spoofed sender detected,phishing,3
+2025-12-19 22:15:06.555629,bob,192.168.32.141,Phishing link clicked by user admin,phishing,3
+2025-12-27 15:35:06.550628,charlie,192.168.34.241,Suspicious URL in email: http://phishing-site-724.com,phishing,3
+2025-12-26 10:30:06.552628,alice,192.168.45.11,Suspicious email from hr@company.com with credential request,phishing,3
+2025-12-17 03:45:06.553630,admin,192.168.21.151,Malicious attachment in email from hr@company.com,phishing,3
+2025-12-21 07:55:06.554630,user2,192.168.33.241,Phishing attempt detected: fake login page,phishing,3
+2026-01-01 16:07:06.554630,alice,192.168.33.41,Credential harvesting attempt detected,phishing,3
+2025-12-12 00:13:06.552628,charlie,192.168.37.121,Malicious attachment in email from it@company.com,phishing,3
+2025-12-05 10:45:06.551627,charlie,192.168.14.161,Suspicious URL in email: http://phishing-site-121.com,phishing,3
+2025-12-14 16:11:06.549628,charlie,192.168.14.91,Malicious attachment in email from admin@corp.com,phishing,3
+2025-12-15 21:53:06.554630,user2,192.168.23.131,Spear phishing attempt targeting user1,phishing,3
+2025-12-05 00:56:06.555629,user3,192.168.33.31,Phishing link clicked by user user2,phishing,3
+2025-12-17 13:16:06.553630,user2,192.168.29.31,Credential harvesting attempt detected,phishing,3
+2026-01-05 05:36:06.551627,david,192.168.8.211,Email impersonation detected,phishing,3
+2025-12-02 01:36:06.551627,user1,192.168.44.151,Phishing link clicked by user user2,phishing,3
+2025-12-10 11:48:06.553630,charlie,192.168.40.111,Phishing link clicked by user user2,phishing,3
+2025-12-05 19:46:06.551627,alice,192.168.38.231,Email impersonation detected,phishing,3
+2025-12-26 21:32:06.552628,charlie,192.168.33.241,Credential harvesting attempt detected,phishing,3
+2025-12-19 05:44:06.554630,alice,192.168.11.11,Email contains malicious link asking for credentials,phishing,3
+2025-12-15 19:02:06.555629,admin,192.168.44.1,Spear phishing attempt targeting user3,phishing,3
+2026-01-03 00:46:06.549628,alice,192.168.1.141,Suspicious email from admin@corp.com with credential request,phishing,3
+2025-12-04 14:45:06.554630,bob,192.168.21.151,Spear phishing attempt targeting charlie,phishing,3
+2025-12-04 09:24:06.554630,alice,192.168.29.71,Phishing link clicked by user user1,phishing,3
+2025-12-17 01:00:06.552628,charlie,192.168.38.41,Phishing attempt detected: fake login page,phishing,3
+2025-12-06 04:05:06.554630,admin,192.168.22.71,Spear phishing attempt targeting charlie,phishing,3
+2025-12-02 04:02:06.552628,user3,192.168.2.91,Email impersonation detected,phishing,3
+2025-12-31 13:50:06.554630,system,192.168.40.21,Suspicious email from it@company.com with credential request,phishing,3
+2025-12-11 08:05:06.554630,charlie,192.168.10.11,Email with spoofed sender detected,phishing,3
+2025-12-08 22:57:06.550628,user3,192.168.36.41,Suspicious URL in email: http://phishing-site-116.com,phishing,3
+2025-12-31 15:49:06.553630,system,192.168.30.61,Malicious attachment in email from it@company.com,phishing,3
+2026-01-03 05:14:06.549628,bob,192.168.10.111,Credential harvesting attempt detected,phishing,3
+2025-12-06 07:33:06.554630,charlie,192.168.44.71,Email contains malicious link asking for credentials,phishing,3
+2026-01-02 14:56:06.549628,user2,192.168.45.1,Suspicious URL in email: http://phishing-site-863.com,phishing,3
+2025-12-15 10:56:06.553630,user2,192.168.16.201,Email impersonation detected,phishing,3
+2025-12-22 07:17:06.553630,admin,192.168.42.61,Credential harvesting attempt detected,phishing,3
+2025-12-27 07:23:06.550628,alice,192.168.11.111,Fake invoice email detected,phishing,3
+2025-12-25 11:50:06.553630,user3,192.168.1.241,Malicious attachment in email from security@company.com,phishing,3
+2025-12-06 09:37:06.554630,system,192.168.39.41,Spear phishing attempt targeting bob,phishing,3
+2025-12-12 02:19:06.550628,david,192.168.17.21,Email contains malicious link asking for credentials,phishing,3
+2025-12-12 12:33:06.551627,bob,192.168.20.71,Suspicious URL in email: http://phishing-site-589.com,phishing,3
+2025-12-21 01:05:06.549628,david,192.168.1.71,Credential harvesting attempt detected,phishing,3
+2025-12-27 06:55:06.551627,system,192.168.29.41,Phishing attempt detected: fake login page,phishing,3
+2025-12-10 20:23:06.553630,eve,192.168.34.61,Malicious attachment in email from admin@corp.com,phishing,3
+2025-12-28 01:14:06.552628,eve,192.168.16.1,Phishing attempt detected: fake login page,phishing,3
+2025-12-14 01:06:06.550628,eve,192.168.39.91,Credential harvesting attempt detected,phishing,3
+2026-01-04 09:14:06.550628,user1,192.168.11.201,Fake invoice email detected,phishing,3
+2025-12-29 01:00:06.551627,user2,192.168.22.201,Email with spoofed sender detected,phishing,3
+2025-12-29 13:48:06.550628,alice,192.168.13.151,Suspicious URL in email: http://phishing-site-653.com,phishing,3
+2026-01-02 06:46:06.551627,bob,192.168.30.81,Email impersonation detected,phishing,3
+2025-12-16 06:13:06.553630,system,192.168.18.151,Phishing attempt detected: fake login page,phishing,3
+2025-12-21 20:05:06.553630,user3,192.168.42.51,Fake invoice email detected,phishing,3
+2025-12-16 23:25:06.549628,user1,192.168.17.231,Fake invoice email detected,phishing,3
+2025-12-03 06:58:06.554630,user2,192.168.15.11,Email with spoofed sender detected,phishing,3
+2025-12-06 14:32:06.554630,david,192.168.19.201,Email with spoofed sender detected,phishing,3
+2025-12-17 07:53:06.553630,eve,192.168.42.191,Malicious attachment in email from hr@company.com,phishing,3
+2025-12-21 07:32:06.552628,bob,192.168.40.71,Phishing attempt detected: fake login page,phishing,3
+2025-12-10 03:47:06.555629,system,192.168.35.211,Email impersonation detected,phishing,3
+2025-12-28 15:17:06.550628,user2,192.168.49.201,Email with spoofed sender detected,phishing,3
+2025-12-07 07:57:06.551627,user2,192.168.22.141,Malicious attachment in email from security@company.com,phishing,3
+2025-12-19 13:06:06.554630,user3,192.168.48.221,Email with spoofed sender detected,phishing,3
+2025-12-11 20:44:06.555629,user2,192.168.39.231,Malicious attachment in email from it@company.com,phishing,3
+2025-12-13 00:13:06.553630,user1,192.168.47.21,Fake invoice email detected,phishing,3
+2025-12-13 16:42:06.553630,alice,192.168.17.181,Suspicious URL in email: http://phishing-site-366.com,phishing,3
+2025-12-05 15:07:06.554630,user1,192.168.4.101,Fake invoice email detected,phishing,3
+2026-01-03 20:47:06.555629,admin,192.168.35.1,Suspicious URL in email: http://phishing-site-410.com,phishing,3
+2025-12-19 16:27:06.553630,alice,192.168.7.231,Suspicious email from it@company.com with credential request,phishing,3
+2025-12-10 22:34:06.554630,eve,192.168.2.241,Email impersonation detected,phishing,3
+2025-12-04 03:02:06.550628,user1,192.168.35.61,Email with spoofed sender detected,phishing,3
+2025-12-13 05:16:06.554630,bob,192.168.18.211,Suspicious URL in email: http://phishing-site-344.com,phishing,3
+2025-12-27 15:19:06.552628,user3,192.168.12.241,Fake invoice email detected,phishing,3
+2025-12-16 10:46:06.552628,user2,192.168.14.211,Phishing link clicked by user charlie,phishing,3
+2025-12-16 10:17:06.554630,user1,192.168.26.101,Phishing link clicked by user user1,phishing,3
+2025-12-08 20:25:06.553630,eve,192.168.7.101,Email contains malicious link asking for credentials,phishing,3
+2025-12-29 16:30:06.553630,admin,192.168.33.181,Suspicious email from it@company.com with credential request,phishing,3
+2025-12-16 01:16:06.555629,charlie,192.168.2.111,Email contains malicious link asking for credentials,phishing,3
+2026-01-02 12:55:06.548627,bob,192.168.36.1,Suspicious email from it@company.com with credential request,phishing,3
+2026-01-04 03:02:06.553630,charlie,192.168.16.241,Email contains malicious link asking for credentials,phishing,3
+2025-12-01 19:45:06.550628,user2,192.168.14.221,Phishing attempt detected: fake login page,phishing,3
+2025-12-31 13:58:06.551627,user2,192.168.33.161,Email with spoofed sender detected,phishing,3
+2025-12-08 22:31:06.552628,user3,192.168.34.91,Suspicious URL in email: http://phishing-site-92.com,phishing,3
+2025-12-28 02:37:06.553630,charlie,192.168.26.41,Phishing attempt detected: fake login page,phishing,3
+2025-12-16 13:29:06.555629,system,192.168.44.1,Credential harvesting attempt detected,phishing,3
+2026-01-01 22:46:06.555629,bob,192.168.30.71,Email with spoofed sender detected,phishing,3
+2025-12-20 09:47:06.549628,system,192.168.29.81,Email with spoofed sender detected,phishing,3
+2025-12-01 19:54:06.554630,admin,192.168.43.41,Email with spoofed sender detected,phishing,3
+2025-12-08 14:16:06.550628,user1,192.168.7.221,Email with spoofed sender detected,phishing,3
+2025-12-31 00:58:06.552628,user1,192.168.21.141,Spear phishing attempt targeting alice,phishing,3
+2025-12-29 03:23:06.553630,user3,192.168.41.91,Email with spoofed sender detected,phishing,3
+2025-12-10 08:21:06.553630,user3,192.168.6.161,Suspicious email from it@company.com with credential request,phishing,3
+2025-12-31 16:32:06.549628,charlie,192.168.24.91,Email impersonation detected,phishing,3
+2026-01-02 11:01:06.553630,user2,192.168.45.131,Email contains malicious link asking for credentials,phishing,3
+2025-12-21 09:22:06.553630,admin,192.168.1.221,Email with spoofed sender detected,phishing,3
+2025-12-11 11:07:06.554630,user1,192.168.4.201,Email contains malicious link asking for credentials,phishing,3
+2025-12-25 15:42:06.550628,charlie,192.168.29.61,Email with spoofed sender detected,phishing,3
+2025-12-15 10:22:06.551627,eve,192.168.2.31,Suspicious email from it@company.com with credential request,phishing,3
+2025-12-04 22:07:06.551627,david,192.168.49.101,Email impersonation detected,phishing,3
+2025-12-29 11:45:06.552628,user2,192.168.28.71,Email impersonation detected,phishing,3
+2025-12-19 21:37:06.551627,user2,192.168.8.211,Credential harvesting attempt detected,phishing,3
+2026-01-03 20:05:06.550628,eve,192.168.6.71,Spear phishing attempt targeting admin,phishing,3
+2025-12-23 18:27:06.552628,eve,192.168.42.211,Suspicious URL in email: http://phishing-site-737.com,phishing,3
+2025-12-02 08:09:06.555629,user3,192.168.41.211,Fake invoice email detected,phishing,3
+2025-12-25 23:32:06.552628,admin,192.168.21.211,Malicious attachment in email from admin@corp.com,phishing,3
+2025-12-30 01:24:06.549628,user2,192.168.6.31,Email impersonation detected,phishing,3
+2025-12-23 16:58:06.555629,user3,192.168.23.111,Suspicious URL in email: http://phishing-site-779.com,phishing,3
+2025-12-13 22:30:06.554630,alice,192.168.40.181,Suspicious URL in email: http://phishing-site-605.com,phishing,3
+2025-12-08 23:44:06.554630,user1,192.168.31.231,Email with spoofed sender detected,phishing,3
+2025-12-21 08:50:06.553630,user1,192.168.43.211,Suspicious URL in email: http://phishing-site-384.com,phishing,3
+2025-12-09 13:58:06.552628,charlie,192.168.16.201,Email impersonation detected,phishing,3
+2025-12-05 19:16:06.552628,system,192.168.26.231,Phishing link clicked by user bob,phishing,3
+2025-12-23 13:44:06.555629,alice,192.168.42.161,Phishing link clicked by user charlie,phishing,3
+2025-12-05 03:51:06.550628,user1,192.168.20.51,Malicious attachment in email from it@company.com,phishing,3
+2025-12-23 03:10:06.553630,eve,192.168.38.241,Phishing link clicked by user user3,phishing,3
+2026-01-02 01:54:06.553630,eve,192.168.26.111,Email impersonation detected,phishing,3
+2025-12-21 15:32:06.554630,bob,192.168.9.91,Malicious attachment in email from hr@company.com,phishing,3
+2025-12-27 07:22:06.553630,david,192.168.32.11,Suspicious email from hr@company.com with credential request,phishing,3
+2025-12-21 07:36:06.551627,alice,192.168.22.71,Phishing attempt detected: fake login page,phishing,3
+2025-12-13 03:33:06.552628,alice,192.168.6.11,Email impersonation detected,phishing,3
+2025-12-25 08:56:06.549628,admin,192.168.1.51,Suspicious email from hr@company.com with credential request,phishing,3
+2025-12-30 23:34:06.551627,user1,192.168.31.181,Spear phishing attempt targeting user3,phishing,3
+2025-12-26 21:03:06.552628,system,192.168.23.21,Malicious attachment in email from security@company.com,phishing,3
+2025-12-24 10:57:06.550628,bob,192.168.13.231,Email contains malicious link asking for credentials,phishing,3
+2025-12-05 00:03:06.555629,alice,192.168.44.71,Suspicious URL in email: http://phishing-site-385.com,phishing,3
+2025-12-29 15:57:06.555629,system,192.168.26.211,Email contains malicious link asking for credentials,phishing,3
+2025-12-26 15:08:06.553630,user2,192.168.42.41,Spear phishing attempt targeting alice,phishing,3
+2025-12-11 04:28:06.552628,bob,192.168.16.11,Email with spoofed sender detected,phishing,3
+2025-12-20 17:53:06.554630,user2,192.168.38.131,Email contains malicious link asking for credentials,phishing,3
+2025-12-31 02:22:06.549628,alice,192.168.49.91,Malicious attachment in email from admin@corp.com,phishing,3
+2025-12-22 06:55:06.553630,bob,192.168.33.191,Fake invoice email detected,phishing,3
+2025-12-27 07:45:06.548627,user1,192.168.27.191,Suspicious email from it@company.com with credential request,phishing,3
+2025-12-15 07:54:06.550628,user1,192.168.30.151,Email contains malicious link asking for credentials,phishing,3
+2025-12-18 07:45:06.552628,user3,192.168.22.111,Phishing attempt detected: fake login page,phishing,3
+2026-01-05 08:41:06.548627,charlie,192.168.41.51,Suspicious email from hr@company.com with credential request,phishing,3
+2025-12-25 13:17:06.553630,eve,192.168.39.41,Credential harvesting attempt detected,phishing,3
+2026-01-02 05:15:06.554630,user1,192.168.34.231,Email impersonation detected,phishing,3
+2025-12-23 13:21:06.553630,eve,192.168.10.171,Credential harvesting attempt detected,phishing,3
+2025-12-23 21:24:06.555629,eve,192.168.43.21,Suspicious email from it@company.com with credential request,phishing,3
+2025-12-20 08:12:06.549628,david,192.168.32.1,Email impersonation detected,phishing,3
+2025-12-25 07:45:06.550628,david,192.168.35.141,Email impersonation detected,phishing,3
+2025-12-24 12:09:06.554630,system,192.168.25.201,Suspicious email from security@company.com with credential request,phishing,3
+2025-12-22 05:50:06.549628,user3,192.168.23.101,Credential harvesting attempt detected,phishing,3
+2025-12-08 20:11:06.553630,charlie,192.168.10.131,Spear phishing attempt targeting user1,phishing,3
+2025-12-17 16:11:06.555629,admin,192.168.43.231,Suspicious email from security@company.com with credential request,phishing,3
+2025-12-12 01:10:06.555629,admin,192.168.8.231,Malicious attachment in email from it@company.com,phishing,3
+2025-12-27 04:23:06.549628,user1,192.168.6.141,Fake invoice email detected,phishing,3
+2025-12-19 21:45:06.549628,david,192.168.11.21,Fake invoice email detected,phishing,3
+2025-12-02 05:29:06.551627,user1,192.168.27.141,Suspicious URL in email: http://phishing-site-528.com,phishing,3
+2025-12-24 18:40:06.555629,user2,192.168.17.51,Fake invoice email detected,phishing,3
+2025-12-07 21:08:06.554630,alice,192.168.45.131,Credential harvesting attempt detected,phishing,3
+2025-12-27 00:08:06.552628,user3,192.168.32.121,Credential harvesting attempt detected,phishing,3
+2026-01-03 00:04:06.548627,user2,192.168.5.11,Malicious attachment in email from hr@company.com,phishing,3
+2026-01-04 01:23:06.550628,charlie,192.168.13.71,Phishing link clicked by user admin,phishing,3
+2025-12-09 21:41:06.553630,charlie,192.168.42.91,Phishing link clicked by user charlie,phishing,3
+2025-12-31 06:30:06.550628,david,192.168.18.1,Phishing attempt detected: fake login page,phishing,3
+2025-12-06 19:39:06.549628,user2,192.168.41.61,Email impersonation detected,phishing,3
+2025-12-05 20:46:06.555629,user1,192.168.17.91,Spear phishing attempt targeting david,phishing,3
+2025-12-16 19:33:06.555629,eve,192.168.21.41,Suspicious URL in email: http://phishing-site-491.com,phishing,3
+2026-01-04 02:15:06.553630,charlie,192.168.2.211,Spear phishing attempt targeting user3,phishing,3
+2025-12-18 03:16:06.549628,user1,192.168.45.231,Phishing link clicked by user bob,phishing,3
+2025-12-20 13:39:06.551627,david,192.168.11.151,Phishing attempt detected: fake login page,phishing,3
+2026-01-04 07:21:06.553630,eve,192.168.5.171,Suspicious URL in email: http://phishing-site-828.com,phishing,3
+2025-12-22 11:22:06.550628,admin,192.168.2.111,Email impersonation detected,phishing,3
+2025-12-05 22:03:06.551627,user2,192.168.33.201,Suspicious URL in email: http://phishing-site-814.com,phishing,3
+2025-12-12 00:12:06.548627,admin,192.168.38.181,Credential harvesting attempt detected,phishing,3
+2025-12-06 04:52:06.551627,admin,192.168.43.31,Email impersonation detected,phishing,3
+2025-12-16 13:00:06.555629,david,192.168.43.1,Email impersonation detected,phishing,3
+2025-12-28 20:45:06.554630,charlie,192.168.35.81,Fake invoice email detected,phishing,3
+2025-12-10 17:41:06.548627,system,192.168.34.31,Email contains malicious link asking for credentials,phishing,3
+2025-12-19 20:21:06.551627,user3,192.168.38.31,Suspicious URL in email: http://phishing-site-882.com,phishing,3
+2025-12-06 07:34:06.555629,user2,192.168.16.131,Email contains malicious link asking for credentials,phishing,3
+2025-12-28 22:51:06.553630,admin,192.168.20.191,Email with spoofed sender detected,phishing,3
+2025-12-31 09:10:06.549628,alice,192.168.9.241,Phishing attempt detected: fake login page,phishing,3
+2025-12-14 22:52:06.550628,alice,192.168.37.71,Malicious attachment in email from security@company.com,phishing,3
+2025-12-07 13:03:06.550628,bob,192.168.37.231,Suspicious email from hr@company.com with credential request,phishing,3
+2025-12-05 11:55:06.550628,eve,192.168.31.171,Fake invoice email detected,phishing,3
+2025-12-27 04:49:06.553630,alice,192.168.19.71,Email impersonation detected,phishing,3
+2025-12-06 11:11:06.552628,david,192.168.44.151,Email with spoofed sender detected,phishing,3
+2025-12-30 20:08:06.555629,user3,192.168.27.231,Suspicious URL in email: http://phishing-site-342.com,phishing,3
+2025-12-29 18:23:06.550628,user2,192.168.15.121,Suspicious email from security@company.com with credential request,phishing,3
+2025-12-15 17:54:06.555629,eve,192.168.7.81,Fake invoice email detected,phishing,3
+2025-12-29 16:23:06.554630,bob,192.168.23.221,Email impersonation detected,phishing,3
+2026-01-01 12:12:06.552628,eve,192.168.7.141,Suspicious URL in email: http://phishing-site-218.com,phishing,3
+2025-12-10 17:57:06.549628,eve,192.168.23.1,Email contains malicious link asking for credentials,phishing,3
+2025-12-31 07:40:06.550628,charlie,192.168.8.71,Phishing attempt detected: fake login page,phishing,3
+2025-12-10 18:45:06.549628,system,192.168.4.61,Suspicious URL in email: http://phishing-site-683.com,phishing,3
+2025-12-27 23:25:06.551627,user2,192.168.12.111,Phishing link clicked by user charlie,phishing,3
+2025-12-23 03:17:06.555629,alice,192.168.33.91,Credential harvesting attempt detected,phishing,3
+2025-12-18 14:15:06.550628,admin,192.168.17.191,Email impersonation detected,phishing,3
+2026-01-04 00:26:06.554630,admin,192.168.19.231,Spear phishing attempt targeting charlie,phishing,3
+2026-01-03 20:18:06.549628,david,192.168.35.141,Email impersonation detected,phishing,3
+2025-12-24 16:36:06.553630,charlie,192.168.1.101,Spear phishing attempt targeting eve,phishing,3
+2026-01-02 03:04:06.553630,charlie,192.168.32.11,Phishing link clicked by user charlie,phishing,3
+2025-12-16 04:23:06.553630,admin,192.168.32.111,Phishing link clicked by user bob,phishing,3
+2025-12-07 00:07:06.554630,alice,192.168.49.231,Email with spoofed sender detected,phishing,3
+2025-12-25 11:06:06.555629,admin,192.168.15.211,Email impersonation detected,phishing,3
+2026-01-03 16:29:06.553630,user2,192.168.21.61,Suspicious URL in email: http://phishing-site-525.com,phishing,3
+2025-12-04 17:27:06.553630,bob,192.168.16.211,Malicious attachment in email from admin@corp.com,phishing,3
+2025-12-07 04:08:06.554630,user3,192.168.14.241,Phishing attempt detected: fake login page,phishing,3
+2025-12-26 05:25:06.551627,system,192.168.38.51,Phishing link clicked by user eve,phishing,3
+2025-12-17 15:04:06.553630,system,192.168.13.41,Email impersonation detected,phishing,3
+2025-12-21 07:12:06.553630,eve,192.168.31.171,Suspicious email from hr@company.com with credential request,phishing,3
+2025-12-22 05:09:06.555629,alice,192.168.48.201,Fake invoice email detected,phishing,3
+2026-01-02 01:56:06.549628,admin,192.168.2.11,Phishing link clicked by user user3,phishing,3
+2025-12-16 15:36:06.548627,david,192.168.26.111,Malicious attachment in email from admin@corp.com,phishing,3
+2025-12-06 16:47:06.549628,admin,192.168.14.111,Phishing link clicked by user admin,phishing,3
+2025-12-14 15:57:06.552628,david,192.168.7.81,Malicious attachment in email from it@company.com,phishing,3
+2025-12-23 06:53:06.552628,admin,192.168.43.41,Email with spoofed sender detected,phishing,3
+2025-12-29 19:32:06.554630,david,192.168.36.201,Credential harvesting attempt detected,phishing,3
+2025-12-15 04:30:06.554630,bob,192.168.21.51,Email contains malicious link asking for credentials,phishing,3
+2025-12-23 09:23:06.555629,user3,192.168.14.151,Fake invoice email detected,phishing,3
+2025-12-20 12:44:06.551627,user1,192.168.36.11,Suspicious URL in email: http://phishing-site-898.com,phishing,3
+2025-12-25 03:17:06.550628,eve,192.168.41.231,Suspicious email from security@company.com with credential request,phishing,3
+2025-12-31 00:44:06.555629,eve,192.168.42.171,Suspicious URL in email: http://phishing-site-821.com,phishing,3
+2025-12-09 06:52:06.553630,user3,192.168.40.181,Credential harvesting attempt detected,phishing,3
+2025-12-19 21:19:06.551627,user3,192.168.4.81,Fake invoice email detected,phishing,3
+2025-12-07 08:12:06.553630,user3,192.168.37.121,Credential harvesting attempt detected,phishing,3
+2025-12-17 22:55:06.553630,user3,192.168.16.171,Suspicious URL in email: http://phishing-site-645.com,phishing,3
+2025-12-30 11:10:06.550628,eve,192.168.12.31,Email contains malicious link asking for credentials,phishing,3
+2025-12-06 04:13:06.553630,user3,192.168.10.111,Suspicious email from admin@corp.com with credential request,phishing,3
+2025-12-18 15:46:06.555629,bob,192.168.46.121,Phishing attempt detected: fake login page,phishing,3
+2025-12-09 04:34:06.551627,david,192.168.7.221,Malicious attachment in email from it@company.com,phishing,3
+2025-12-13 08:58:06.554630,bob,192.168.43.31,Credential harvesting attempt detected,phishing,3
+2025-12-28 23:29:06.549628,system,192.168.17.11,Email with spoofed sender detected,phishing,3
+2025-12-05 09:35:06.549628,david,192.168.22.151,Email contains malicious link asking for credentials,phishing,3
+2025-12-06 21:34:06.550628,user1,192.168.15.41,Suspicious email from admin@corp.com with credential request,phishing,3
+2026-01-03 04:13:06.552628,eve,192.168.48.171,Email with spoofed sender detected,phishing,3
+2025-12-06 19:04:06.553630,david,192.168.12.161,Suspicious email from security@company.com with credential request,phishing,3
+2025-12-12 21:27:06.555629,admin,192.168.36.221,Email with spoofed sender detected,phishing,3
+2026-01-05 00:42:06.554630,charlie,192.168.48.131,Malicious attachment in email from it@company.com,phishing,3
+2025-12-22 19:30:06.555629,admin,192.168.4.161,Phishing attempt detected: fake login page,phishing,3
+2025-12-09 02:08:06.552628,user3,192.168.14.111,Malicious attachment in email from hr@company.com,phishing,3
+2025-12-21 18:12:06.551627,eve,192.168.15.101,Email with spoofed sender detected,phishing,3
+2025-12-18 21:05:06.555629,eve,192.168.31.1,Email contains malicious link asking for credentials,phishing,3
+2025-12-12 06:22:06.554630,system,192.168.43.191,Suspicious URL in email: http://phishing-site-366.com,phishing,3
+2025-12-21 03:33:06.552628,admin,192.168.23.1,Email contains malicious link asking for credentials,phishing,3
+2025-12-20 19:55:06.554630,charlie,192.168.26.11,Spear phishing attempt targeting system,phishing,3
+2026-01-05 04:39:06.550628,alice,192.168.31.31,Malicious attachment in email from hr@company.com,phishing,3
+2025-12-13 01:49:06.555629,charlie,192.168.16.181,Phishing attempt detected: fake login page,phishing,3
+2025-12-23 03:58:06.549628,user2,192.168.12.121,Suspicious URL in email: http://phishing-site-601.com,phishing,3
+2026-01-01 08:13:06.548627,user2,192.168.45.191,Malicious attachment in email from hr@company.com,phishing,3
+2025-12-23 06:43:06.551627,system,192.168.1.111,Suspicious email from hr@company.com with credential request,phishing,3
+2025-12-08 02:02:06.555629,user2,192.168.21.201,Malicious attachment in email from hr@company.com,phishing,3
+2025-12-24 08:21:06.553630,system,192.168.21.51,Phishing link clicked by user bob,phishing,3
+2026-01-05 04:26:06.549628,system,192.168.44.151,Email with spoofed sender detected,phishing,3
+2025-12-10 08:23:06.554630,alice,192.168.10.221,Spear phishing attempt targeting system,phishing,3
+2025-12-11 14:16:06.551627,bob,192.168.3.161,Email impersonation detected,phishing,3
+2025-12-18 02:47:06.552628,admin,192.168.38.221,Fake invoice email detected,phishing,3
+2025-12-04 07:54:06.551627,charlie,192.168.40.211,Phishing attempt detected: fake login page,phishing,3
+2025-12-21 09:57:06.552628,david,192.168.14.61,Phishing attempt detected: fake login page,phishing,3
+2025-12-03 17:59:06.554630,bob,192.168.23.231,Email with spoofed sender detected,phishing,3
+2025-12-28 14:17:06.552628,user2,192.168.21.61,Phishing attempt detected: fake login page,phishing,3
+2025-12-17 02:23:06.554630,admin,192.168.38.31,Suspicious URL in email: http://phishing-site-668.com,phishing,3
+2025-12-02 11:48:06.550628,charlie,192.168.18.241,Suspicious email from security@company.com with credential request,phishing,3
+2026-01-02 08:12:06.552628,alice,192.168.45.31,Malicious attachment in email from it@company.com,phishing,3
+2025-12-04 00:34:06.552628,charlie,192.168.33.21,Credential harvesting attempt detected,phishing,3
+2025-12-01 19:56:06.555629,user2,192.168.23.161,Phishing link clicked by user user1,phishing,3
+2025-12-14 12:46:06.550628,charlie,192.168.48.161,Email contains malicious link asking for credentials,phishing,3
+2025-12-27 11:22:06.549628,user2,192.168.19.41,Malicious attachment in email from admin@corp.com,phishing,3
+2025-12-28 15:46:06.554630,alice,192.168.33.201,Email with spoofed sender detected,phishing,3
+2025-12-06 04:40:06.555629,user2,192.168.45.161,Suspicious email from admin@corp.com with credential request,phishing,3
+2025-12-14 13:28:06.551627,user2,192.168.14.11,Credential harvesting attempt detected,phishing,3
+2025-12-02 02:46:06.553630,bob,192.168.4.11,Email contains malicious link asking for credentials,phishing,3
+2025-12-08 04:42:06.554630,user2,192.168.31.161,Email with spoofed sender detected,phishing,3
+2026-01-03 10:30:06.553630,system,192.168.49.221,Email impersonation detected,phishing,3
+2025-12-22 23:16:06.555629,admin,192.168.15.131,Phishing attempt detected: fake login page,phishing,3
+2026-01-01 13:53:06.553630,david,192.168.31.71,Email with spoofed sender detected,phishing,3
+2025-12-18 03:42:06.548627,user2,192.168.43.71,Suspicious email from admin@corp.com with credential request,phishing,3
+2025-12-04 05:20:06.549628,admin,192.168.40.71,Suspicious URL in email: http://phishing-site-492.com,phishing,3
+2025-12-09 10:02:06.552628,eve,192.168.48.101,Fake invoice email detected,phishing,3
+2025-12-03 21:38:06.552628,eve,192.168.30.171,Fake invoice email detected,phishing,3
+2025-12-08 11:46:06.555629,admin,192.168.1.51,Email impersonation detected,phishing,3
+2025-12-18 09:46:06.551627,user1,192.168.9.81,Email contains malicious link asking for credentials,phishing,3
+2025-12-23 10:03:06.554630,user3,192.168.26.31,Email with spoofed sender detected,phishing,3
+2025-12-05 16:57:06.553630,user2,192.168.37.191,Suspicious email from hr@company.com with credential request,phishing,3
+2025-12-15 12:01:06.548627,system,192.168.42.121,Malicious attachment in email from hr@company.com,phishing,3
+2025-12-26 03:45:06.555629,charlie,192.168.30.231,Phishing link clicked by user david,phishing,3
+2025-12-23 10:11:06.549628,eve,192.168.43.241,Phishing attempt detected: fake login page,phishing,3
+2026-01-03 10:47:06.551627,user1,192.168.33.61,Suspicious email from it@company.com with credential request,phishing,3
+2025-12-28 14:43:06.550628,charlie,192.168.28.31,Spear phishing attempt targeting user3,phishing,3
+2025-12-21 12:20:06.550628,david,192.168.27.151,Suspicious email from it@company.com with credential request,phishing,3
+2025-12-23 19:08:06.555629,charlie,192.168.14.151,Suspicious URL in email: http://phishing-site-226.com,phishing,3
+2025-12-30 07:03:06.550628,user3,192.168.12.61,Suspicious email from admin@corp.com with credential request,phishing,3
+2025-12-06 20:40:06.553630,user2,192.168.39.41,Spear phishing attempt targeting alice,phishing,3
+2025-12-04 04:25:06.551627,user2,192.168.47.31,Fake invoice email detected,phishing,3
+2025-12-05 05:28:06.553630,eve,192.168.11.171,Spear phishing attempt targeting user1,phishing,3
+2025-12-10 08:13:06.549628,admin,192.168.8.71,Fake invoice email detected,phishing,3
+2025-12-24 17:27:06.555629,david,192.168.37.231,Fake invoice email detected,phishing,3
+2025-12-04 18:08:06.550628,user3,192.168.48.211,Spear phishing attempt targeting user3,phishing,3
+2025-12-12 23:48:06.550628,charlie,192.168.12.71,Fake invoice email detected,phishing,3
+2025-12-13 20:53:06.549628,eve,192.168.29.201,Suspicious email from security@company.com with credential request,phishing,3
+2025-12-18 05:36:06.551627,david,192.168.1.101,Email impersonation detected,phishing,3
+2025-12-07 03:43:06.551627,user2,192.168.24.51,Fake invoice email detected,phishing,3
+2025-12-23 15:06:06.551627,user1,192.168.38.201,Spear phishing attempt targeting david,phishing,3
+2025-12-03 12:47:06.550628,david,192.168.34.231,Email with spoofed sender detected,phishing,3
+2026-01-03 13:30:06.549628,admin,192.168.26.181,Malicious attachment in email from security@company.com,phishing,3
+2025-12-26 11:18:06.552628,user3,192.168.29.121,Spear phishing attempt targeting system,phishing,3
+2025-12-03 14:44:06.551627,david,192.168.5.111,Email with spoofed sender detected,phishing,3
+2025-12-10 09:33:06.550628,user3,192.168.3.71,Email impersonation detected,phishing,3
+2025-12-21 01:27:06.553630,david,192.168.37.201,Email with spoofed sender detected,phishing,3
+2026-01-04 17:35:06.551627,charlie,192.168.28.161,Email impersonation detected,phishing,3
+2025-12-19 18:58:06.552628,bob,192.168.40.241,Fake invoice email detected,phishing,3
+2025-12-14 22:43:06.553630,user3,192.168.23.41,Credential harvesting attempt detected,phishing,3
+2025-12-12 00:10:06.552628,system,192.168.11.61,Phishing attempt detected: fake login page,phishing,3
+2025-12-24 06:42:06.552628,admin,192.168.20.211,Email contains malicious link asking for credentials,phishing,3
+2025-12-30 11:39:06.548627,david,192.168.1.231,Malicious attachment in email from security@company.com,phishing,3
+2025-12-09 11:09:06.551627,alice,192.168.38.231,Spear phishing attempt targeting alice,phishing,3
+2025-12-22 02:40:06.552628,charlie,192.168.19.211,Phishing attempt detected: fake login page,phishing,3
+2025-12-31 04:29:06.554630,charlie,192.168.48.151,Phishing link clicked by user bob,phishing,3
+2026-01-01 20:56:06.551627,bob,192.168.43.241,Spear phishing attempt targeting user2,phishing,3
+2025-12-15 04:08:06.551627,admin,192.168.40.101,Email with spoofed sender detected,phishing,3
+2025-12-12 04:46:06.552628,bob,192.168.9.191,Malicious attachment in email from it@company.com,phishing,3
+2025-12-28 09:17:06.551627,system,192.168.21.211,Phishing link clicked by user user1,phishing,3
+2025-12-12 05:40:06.549628,user3,192.168.47.211,Email impersonation detected,phishing,3
+2025-12-16 23:56:06.555629,admin,192.168.6.101,Email contains malicious link asking for credentials,phishing,3
+2025-12-05 14:15:06.552628,eve,192.168.47.141,Fake invoice email detected,phishing,3
+2025-12-16 14:10:06.550628,bob,192.168.39.1,Suspicious URL in email: http://phishing-site-645.com,phishing,3
+2025-12-31 16:46:06.550628,bob,192.168.9.171,Suspicious URL in email: http://phishing-site-22.com,phishing,3
+2025-12-03 10:17:06.551627,eve,192.168.35.101,Email impersonation detected,phishing,3
+2025-12-26 11:16:06.554630,user1,192.168.25.71,Phishing link clicked by user alice,phishing,3
+2025-12-22 17:11:06.550628,charlie,192.168.22.61,Email impersonation detected,phishing,3
+2025-12-05 06:54:06.549628,system,192.168.5.211,Phishing attempt detected: fake login page,phishing,3
+2025-12-05 20:26:06.549628,alice,192.168.41.121,Suspicious URL in email: http://phishing-site-349.com,phishing,3
+2025-12-30 10:04:06.553630,charlie,192.168.33.241,Email contains malicious link asking for credentials,phishing,3
+2025-12-27 18:42:06.549628,alice,192.168.49.201,Fake invoice email detected,phishing,3
+2025-12-05 01:18:06.554630,alice,192.168.45.31,Spear phishing attempt targeting user2,phishing,3
+2026-01-01 21:43:06.553630,admin,192.168.19.121,Phishing attempt detected: fake login page,phishing,3
+2025-12-13 13:32:06.554630,david,192.168.6.131,Phishing link clicked by user user1,phishing,3
+2025-12-27 23:04:06.551627,charlie,192.168.27.181,Credential harvesting attempt detected,phishing,3
+2025-12-07 11:57:06.552628,charlie,192.168.3.51,Credential harvesting attempt detected,phishing,3
+2025-12-03 14:26:06.553630,admin,192.168.40.231,Credential harvesting attempt detected,phishing,3
+2025-12-23 20:30:06.552628,system,192.168.9.241,Phishing link clicked by user system,phishing,3
+2025-12-27 04:14:06.553630,admin,192.168.38.41,Spear phishing attempt targeting user2,phishing,3
+2025-12-05 07:23:06.554630,charlie,192.168.34.21,Credential harvesting attempt detected,phishing,3
+2025-12-12 05:47:06.554630,alice,192.168.25.151,Fake invoice email detected,phishing,3
+2025-12-08 04:51:06.552628,admin,192.168.16.111,Credential harvesting attempt detected,phishing,3
+2025-12-28 00:26:06.551627,bob,192.168.29.201,Email contains malicious link asking for credentials,phishing,3
+2025-12-22 13:51:06.551627,david,192.168.25.231,Spear phishing attempt targeting bob,phishing,3
+2025-12-26 02:26:06.554630,admin,192.168.19.141,Malicious attachment in email from hr@company.com,phishing,3
+2025-12-18 11:15:06.552628,user2,192.168.17.51,Email impersonation detected,phishing,3
+2025-12-06 20:37:06.550628,user3,192.168.46.161,Email with spoofed sender detected,phishing,3
+2025-12-22 00:50:06.553630,user2,192.168.31.121,Email with spoofed sender detected,phishing,3
+2025-12-31 22:47:06.549628,user2,192.168.38.121,Credential harvesting attempt detected,phishing,3
+2025-12-03 05:17:06.551627,user3,192.168.4.21,Suspicious email from hr@company.com with credential request,phishing,3
+2025-12-06 17:40:06.550628,eve,192.168.10.171,Phishing attempt detected: fake login page,phishing,3
+2026-01-04 21:18:06.553630,charlie,192.168.46.141,Phishing link clicked by user bob,phishing,3
+2025-12-22 19:05:06.549628,user2,192.168.44.141,Email with spoofed sender detected,phishing,3
+2025-12-05 11:53:06.555629,user3,192.168.31.11,Suspicious email from admin@corp.com with credential request,phishing,3
+2025-12-24 11:10:06.549628,user3,192.168.16.221,Credential harvesting attempt detected,phishing,3
+2025-12-27 21:00:06.550628,alice,192.168.13.41,Phishing attempt detected: fake login page,phishing,3
+2025-12-22 14:06:06.554630,system,192.168.20.151,Email with spoofed sender detected,phishing,3
+2025-12-10 16:45:06.554630,user2,192.168.49.191,Email impersonation detected,phishing,3
+2025-12-30 11:20:06.548627,admin,192.168.27.21,Suspicious URL in email: http://phishing-site-259.com,phishing,3
+2025-12-15 16:24:06.552628,system,192.168.19.211,Email contains malicious link asking for credentials,phishing,3
+2025-12-05 22:58:06.552628,david,192.168.20.201,Email with spoofed sender detected,phishing,3
+2025-12-04 22:42:06.549628,david,192.168.17.221,Phishing link clicked by user alice,phishing,3
+2025-12-24 20:28:06.555629,user2,192.168.10.101,Credential harvesting attempt detected,phishing,3
+2025-12-02 17:12:06.550628,bob,192.168.29.11,Suspicious email from admin@corp.com with credential request,phishing,3
+2026-01-03 14:17:06.551627,david,192.168.13.181,Suspicious email from admin@corp.com with credential request,phishing,3
+2026-01-03 21:06:06.548627,user1,192.168.28.241,Email contains malicious link asking for credentials,phishing,3
+2025-12-17 04:47:06.555629,david,192.168.4.201,Malicious attachment in email from admin@corp.com,phishing,3
+2025-12-26 03:31:06.551627,alice,192.168.46.241,Phishing attempt detected: fake login page,phishing,3
+2025-12-20 06:19:06.555629,user3,192.168.47.51,Malicious attachment in email from it@company.com,phishing,3
+2025-12-12 07:21:06.549628,user2,192.168.6.151,Suspicious email from it@company.com with credential request,phishing,3
+2026-01-04 22:41:06.554630,admin,192.168.48.181,Email contains malicious link asking for credentials,phishing,3
+2025-12-12 19:28:06.548627,user2,192.168.11.161,Phishing link clicked by user user1,phishing,3
+2025-12-14 07:48:06.551627,user2,192.168.8.121,Email impersonation detected,phishing,3
+2026-01-05 10:53:06.553630,user2,192.168.18.151,Email with spoofed sender detected,phishing,3
+2025-12-09 15:36:06.552628,eve,192.168.15.41,Email contains malicious link asking for credentials,phishing,3
+2025-12-23 04:36:06.551627,eve,192.168.47.91,Email impersonation detected,phishing,3
+2025-12-05 17:09:06.552628,charlie,192.168.38.201,Spear phishing attempt targeting bob,phishing,3
+2025-12-20 04:50:06.550628,david,192.168.25.211,Suspicious URL in email: http://phishing-site-732.com,phishing,3
+2025-12-24 03:16:06.549628,eve,192.168.5.1,Suspicious URL in email: http://phishing-site-772.com,phishing,3
+2026-01-02 10:44:06.553630,charlie,192.168.48.91,Suspicious URL in email: http://phishing-site-977.com,phishing,3
+2025-12-18 05:49:06.552628,bob,192.168.11.151,Suspicious email from it@company.com with credential request,phishing,3
+2026-01-05 01:33:06.553630,user3,192.168.37.91,Malicious attachment in email from security@company.com,phishing,3
+2025-12-26 19:49:06.552628,eve,192.168.48.181,Malicious attachment in email from hr@company.com,phishing,3
+2025-12-16 04:33:06.549628,charlie,192.168.18.71,Fake invoice email detected,phishing,3
+2025-12-09 21:37:06.553630,david,192.168.20.191,Phishing attempt detected: fake login page,phishing,3
+2025-12-07 22:29:06.550628,system,192.168.24.201,Email with spoofed sender detected,phishing,3
+2025-12-07 10:53:06.550628,user1,192.168.30.231,Email impersonation detected,phishing,3
+2025-12-17 14:36:06.551627,user2,192.168.20.71,Phishing attempt detected: fake login page,phishing,3
+2025-12-22 07:23:06.550628,admin,192.168.32.61,Phishing attempt detected: fake login page,phishing,3
+2025-12-03 11:22:06.550628,alice,192.168.11.141,Phishing link clicked by user user3,phishing,3
+2025-12-13 04:22:06.553630,bob,192.168.10.101,Email contains malicious link asking for credentials,phishing,3
+2026-01-02 17:05:06.549628,eve,192.168.18.11,Suspicious email from security@company.com with credential request,phishing,3
+2025-12-19 06:22:06.552628,user3,192.168.49.221,Phishing link clicked by user user3,phishing,3
+2026-01-01 02:42:06.555629,user2,192.168.15.31,Fake invoice email detected,phishing,3
+2026-01-05 03:53:06.554630,charlie,192.168.31.21,Phishing link clicked by user user3,phishing,3
+2025-12-08 04:30:06.551627,david,192.168.23.161,Email with spoofed sender detected,phishing,3
+2025-12-12 08:05:06.554630,system,192.168.21.41,Email with spoofed sender detected,phishing,3
+2025-12-11 01:57:06.551627,user3,192.168.30.121,Malicious attachment in email from admin@corp.com,phishing,3
+2025-12-27 12:49:06.551627,user2,192.168.29.231,Suspicious email from hr@company.com with credential request,phishing,3
+2025-12-10 23:08:06.549628,system,192.168.13.101,Phishing attempt detected: fake login page,phishing,3
+2025-12-11 18:15:06.550628,david,192.168.29.31,Malicious attachment in email from admin@corp.com,phishing,3
+2026-01-02 09:04:06.555629,bob,192.168.21.51,Suspicious URL in email: http://phishing-site-545.com,phishing,3
+2025-12-04 14:58:06.549628,system,192.168.30.201,Malicious attachment in email from security@company.com,phishing,3
+2025-12-21 21:04:06.555629,alice,192.168.34.211,Malicious attachment in email from admin@corp.com,phishing,3
+2025-12-08 23:22:06.551627,system,192.168.18.141,Phishing link clicked by user bob,phishing,3
+2026-01-03 10:03:06.555629,charlie,192.168.3.151,Suspicious URL in email: http://phishing-site-750.com,phishing,3
+2025-12-30 02:18:06.552628,admin,192.168.24.71,Phishing attempt detected: fake login page,phishing,3
+2025-12-14 13:22:06.554630,user3,192.168.41.61,Email contains malicious link asking for credentials,phishing,3
+2025-12-24 10:20:06.552628,charlie,192.168.15.201,Email with spoofed sender detected,phishing,3
+2025-12-21 20:18:06.549628,charlie,192.168.47.201,Phishing attempt detected: fake login page,phishing,3
+2025-12-15 03:39:06.554630,charlie,192.168.7.111,Malicious attachment in email from security@company.com,phishing,3
+2025-12-25 04:56:06.550628,alice,192.168.4.71,Credential harvesting attempt detected,phishing,3
+2025-12-23 18:06:06.549628,eve,192.168.46.101,Phishing link clicked by user user2,phishing,3
+2025-12-06 02:53:06.549628,user1,192.168.39.161,Phishing attempt detected: fake login page,phishing,3
+2025-12-06 23:26:06.551627,system,192.168.36.191,Malicious attachment in email from security@company.com,phishing,3
+2025-12-24 08:09:06.552628,charlie,192.168.10.151,Malicious attachment in email from it@company.com,phishing,3
+2025-12-16 03:38:06.549628,alice,192.168.15.231,Email impersonation detected,phishing,3
+2025-12-16 11:48:06.551627,alice,192.168.35.11,Suspicious URL in email: http://phishing-site-931.com,phishing,3
+2025-12-25 22:39:06.553630,user1,192.168.7.211,Suspicious email from it@company.com with credential request,phishing,3
+2026-01-01 15:26:06.553630,user2,192.168.49.231,Phishing link clicked by user charlie,phishing,3
+2025-12-30 06:07:06.549628,user2,192.168.23.121,Spear phishing attempt targeting eve,phishing,3
+2025-12-13 21:52:06.549628,user3,192.168.30.101,Fake invoice email detected,phishing,3
+2025-12-22 16:07:06.554630,user2,192.168.37.161,Malicious attachment in email from security@company.com,phishing,3
+2025-12-20 22:35:06.550628,eve,192.168.38.211,Credential harvesting attempt detected,phishing,3
+2025-12-07 09:02:06.554630,user2,192.168.36.111,Fake invoice email detected,phishing,3
+2025-12-31 17:59:06.554630,david,192.168.16.161,Phishing link clicked by user user3,phishing,3
+2025-12-21 14:01:06.554630,user3,192.168.34.191,Fake invoice email detected,phishing,3
+2026-01-01 02:12:06.549628,alice,192.168.18.191,Phishing attempt detected: fake login page,phishing,3
+2025-12-31 14:37:06.548627,bob,192.168.40.41,Phishing attempt detected: fake login page,phishing,3
+2025-12-25 07:56:06.554630,admin,192.168.8.71,Suspicious email from security@company.com with credential request,phishing,3
+2026-01-02 12:50:06.551627,bob,192.168.24.71,Fake invoice email detected,phishing,3
+2025-12-21 22:47:06.551627,david,192.168.1.11,Spear phishing attempt targeting bob,phishing,3
+2025-12-02 12:44:06.551627,eve,192.168.24.231,Email with spoofed sender detected,phishing,3
+2025-12-09 00:22:06.549628,system,192.168.8.121,Malicious attachment in email from security@company.com,phishing,3
+2025-12-04 23:05:06.549628,user1,192.168.9.31,Email contains malicious link asking for credentials,phishing,3
+2025-12-07 03:27:06.551627,alice,192.168.36.181,Credential harvesting attempt detected,phishing,3
+2026-01-01 22:30:06.551627,admin,192.168.28.181,Suspicious email from hr@company.com with credential request,phishing,3
+2025-12-04 21:04:06.551627,david,192.168.5.221,Phishing attempt detected: fake login page,phishing,3
+2025-12-17 03:17:06.555629,bob,192.168.15.1,Email contains malicious link asking for credentials,phishing,3
+2025-12-06 22:03:06.554630,user3,192.168.19.231,Suspicious URL in email: http://phishing-site-533.com,phishing,3
+2026-01-01 17:44:06.550628,alice,192.168.26.201,Malicious attachment in email from admin@corp.com,phishing,3
+2025-12-19 14:43:06.554630,eve,192.168.42.161,Malicious attachment in email from security@company.com,phishing,3
+2025-12-17 05:37:06.550628,alice,192.168.7.61,Phishing link clicked by user user1,phishing,3
+2025-12-11 08:27:06.555629,user1,192.168.21.21,Suspicious URL in email: http://phishing-site-528.com,phishing,3
+2025-12-16 01:35:06.555629,user2,192.168.17.11,Phishing link clicked by user user1,phishing,3
+2025-12-03 07:45:06.550628,user2,192.168.27.61,Malicious attachment in email from admin@corp.com,phishing,3
+2026-01-03 18:52:06.549628,alice,192.168.14.31,Malicious attachment in email from hr@company.com,phishing,3
+2025-12-05 23:01:06.549628,user3,192.168.46.121,Phishing attempt detected: fake login page,phishing,3
+2025-12-10 09:14:06.553630,user2,192.168.40.41,Malicious attachment in email from hr@company.com,phishing,3
+2025-12-12 10:59:06.553630,bob,192.168.4.71,Email impersonation detected,phishing,3
+2025-12-23 17:05:06.551627,system,192.168.43.101,Malicious attachment in email from security@company.com,phishing,3
+2025-12-29 22:06:06.550628,charlie,192.168.40.221,Credential harvesting attempt detected,phishing,3
+2025-12-07 08:49:06.551627,eve,192.168.7.11,Malicious attachment in email from admin@corp.com,phishing,3
+2025-12-29 23:17:06.550628,bob,192.168.48.1,Malicious attachment in email from admin@corp.com,phishing,3
+2025-12-25 19:18:06.552628,alice,192.168.17.141,Email contains malicious link asking for credentials,phishing,3
+2025-12-11 22:28:06.550628,user1,192.168.43.71,Email impersonation detected,phishing,3
+2026-01-03 19:13:06.552628,alice,192.168.19.81,Email contains malicious link asking for credentials,phishing,3
+2025-12-31 23:25:06.552628,user2,192.168.42.161,Suspicious email from hr@company.com with credential request,phishing,3
+2025-12-27 02:04:06.553630,user1,192.168.25.101,Phishing attempt detected: fake login page,phishing,3
+2025-12-05 15:21:06.551627,system,192.168.30.181,Suspicious email from it@company.com with credential request,phishing,3
+2026-01-02 04:58:06.552628,system,192.168.22.41,Fake invoice email detected,phishing,3
+2026-01-03 09:08:06.554630,alice,192.168.47.221,Fake invoice email detected,phishing,3
+2025-12-14 01:29:06.550628,user2,192.168.46.231,Suspicious email from it@company.com with credential request,phishing,3
+2025-12-28 21:48:06.554630,eve,192.168.35.11,Fake invoice email detected,phishing,3
+2026-01-03 15:30:06.551627,system,192.168.23.201,Email contains malicious link asking for credentials,phishing,3
+2025-12-06 13:31:06.554630,bob,192.168.3.221,Suspicious URL in email: http://phishing-site-869.com,phishing,3
+2025-12-11 09:31:06.550628,admin,192.168.28.161,Credential harvesting attempt detected,phishing,3
+2025-12-17 06:07:06.553630,david,192.168.30.171,Email contains malicious link asking for credentials,phishing,3
+2025-12-12 15:04:06.549628,user2,192.168.34.201,Spear phishing attempt targeting admin,phishing,3
+2025-12-26 17:33:06.549628,eve,192.168.11.221,Phishing attempt detected: fake login page,phishing,3
+2026-01-05 03:25:06.550628,david,192.168.7.201,Email with spoofed sender detected,phishing,3
+2025-12-25 07:45:06.550628,admin,192.168.42.1,Credential harvesting attempt detected,phishing,3
+2025-12-06 22:03:06.554630,david,192.168.40.71,Email impersonation detected,phishing,3
+2025-12-04 12:24:06.553630,david,192.168.13.41,Suspicious URL in email: http://phishing-site-229.com,phishing,3
+2025-12-17 12:49:06.549628,alice,192.168.28.151,Spear phishing attempt targeting bob,phishing,3
+2025-12-31 15:51:06.549628,eve,192.168.27.21,Spear phishing attempt targeting eve,phishing,3
+2025-12-24 08:03:06.552628,bob,192.168.8.121,Phishing link clicked by user david,phishing,3
+2025-12-23 22:47:06.555629,user1,192.168.15.141,Email impersonation detected,phishing,3
+2025-12-26 16:38:06.555629,bob,192.168.16.231,Email with spoofed sender detected,phishing,3
+2025-12-07 06:12:06.554630,alice,192.168.14.61,Email with spoofed sender detected,phishing,3
+2025-12-30 16:33:06.551627,alice,192.168.38.91,Phishing link clicked by user charlie,phishing,3
+2025-12-11 15:07:06.554630,user2,192.168.24.21,Phishing attempt detected: fake login page,phishing,3
+2025-12-20 17:36:06.551627,user1,192.168.38.91,Malicious attachment in email from hr@company.com,phishing,3
+2025-12-08 03:56:06.549628,bob,192.168.10.211,Email with spoofed sender detected,phishing,3
+2026-01-02 18:15:06.555629,admin,192.168.12.71,Email with spoofed sender detected,phishing,3
+2025-12-20 08:48:06.549628,david,192.168.7.211,Credential harvesting attempt detected,phishing,3
+2025-12-10 15:53:06.555629,user1,192.168.22.201,Suspicious URL in email: http://phishing-site-554.com,phishing,3
+2025-12-13 05:05:06.552628,bob,192.168.40.171,Credential harvesting attempt detected,phishing,3
+2025-12-09 09:57:06.550628,alice,192.168.46.41,Suspicious email from admin@corp.com with credential request,phishing,3
+2025-12-25 22:02:06.548627,charlie,192.168.23.151,Credential harvesting attempt detected,phishing,3
+2025-12-28 08:06:06.551627,user2,192.168.47.1,Phishing link clicked by user charlie,phishing,3
+2025-12-25 21:55:06.549628,user3,192.168.14.181,Phishing attempt detected: fake login page,phishing,3
+2026-01-01 16:11:06.551627,admin,192.168.22.131,Email contains malicious link asking for credentials,phishing,3
+2025-12-02 03:04:06.549628,admin,192.168.39.11,Email with spoofed sender detected,phishing,3
+2025-12-25 00:41:06.554630,charlie,192.168.34.111,Phishing link clicked by user user1,phishing,3

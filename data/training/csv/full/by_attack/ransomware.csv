@@ -1,0 +1,1001 @@
+timestamp,user,ip,raw_message,label,label_id
+2025-12-06 20:08:06.570629,admin,192.168.18.211,Ransom note file detected: README.txt,ransomware,5
+2026-01-01 12:35:06.566629,bob,192.168.47.241,Files renamed with .encrypted extension,ransomware,5
+2025-12-07 02:14:06.566629,eve,192.168.1.121,Bulk file encryption in progress,ransomware,5
+2026-01-02 14:30:06.564630,charlie,192.168.44.101,Suspicious file encryption activity,ransomware,5
+2025-12-22 23:24:06.568630,user2,192.168.46.241,Bulk file encryption in progress,ransomware,5
+2025-12-25 19:17:06.567630,charlie,192.168.49.221,Files renamed with .encrypted extension,ransomware,5
+2025-12-04 17:38:06.569629,eve,192.168.5.111,Files renamed with .encrypted extension,ransomware,5
+2025-12-02 15:25:06.564630,system,192.168.4.241,Files renamed with .encrypted extension,ransomware,5
+2025-12-20 01:25:06.567630,david,192.168.32.71,Mass file modification detected,ransomware,5
+2025-12-31 02:32:06.568630,bob,192.168.4.171,Bulk file encryption in progress,ransomware,5
+2025-12-28 16:21:06.566629,user3,192.168.11.171,Crypto-locker behavior detected,ransomware,5
+2025-12-08 00:59:06.565630,eve,192.168.30.151,Mass file modification detected,ransomware,5
+2025-12-24 01:03:06.566629,user1,192.168.28.201,Shadow copy deletion detected,ransomware,5
+2025-12-25 05:31:06.569629,alice,192.168.5.1,Ransom note file detected: README.txt,ransomware,5
+2025-12-23 03:01:06.565630,system,192.168.4.71,Encryption pattern matches ransomware,ransomware,5
+2025-12-31 19:55:06.570629,admin,192.168.6.1,Encryption pattern matches ransomware,ransomware,5
+2025-12-22 08:57:06.569629,eve,192.168.5.111,Encryption pattern matches ransomware,ransomware,5
+2025-12-23 10:15:06.565630,user1,192.168.32.191,Bulk file encryption in progress,ransomware,5
+2025-12-03 20:06:06.564630,charlie,192.168.42.151,Suspicious file encryption activity,ransomware,5
+2025-12-13 20:10:06.566629,user3,192.168.24.181,Multiple files encrypted in short time interval,ransomware,5
+2026-01-01 00:53:06.564630,user2,192.168.19.121,Multiple files encrypted in short time interval,ransomware,5
+2025-12-26 21:34:06.564630,david,192.168.23.241,Encryption pattern matches ransomware,ransomware,5
+2025-12-17 01:26:06.563627,user2,192.168.26.141,Files renamed with .encrypted extension,ransomware,5
+2025-12-16 10:23:06.564630,system,192.168.43.111,Ransom note file detected: README.txt,ransomware,5
+2025-12-20 14:35:06.567630,charlie,192.168.30.201,Multiple files encrypted in short time interval,ransomware,5
+2025-12-24 08:01:06.565630,user2,192.168.35.151,Mass file modification detected,ransomware,5
+2025-12-08 22:23:06.565630,user1,192.168.36.31,Crypto-locker behavior detected,ransomware,5
+2025-12-25 09:45:06.563627,charlie,192.168.44.221,Encryption pattern matches ransomware,ransomware,5
+2025-12-15 09:34:06.569629,eve,192.168.14.121,Crypto-locker behavior detected,ransomware,5
+2025-12-25 10:24:06.569629,user2,192.168.48.121,Multiple files encrypted in short time interval,ransomware,5
+2025-12-10 13:03:06.567630,alice,192.168.9.161,Crypto-locker behavior detected,ransomware,5
+2025-12-25 20:07:06.567630,user2,192.168.5.151,Encryption pattern matches ransomware,ransomware,5
+2025-12-22 15:09:06.565630,alice,192.168.14.191,Ransom note file detected: README.txt,ransomware,5
+2026-01-03 23:23:06.570629,bob,192.168.33.241,Mass file modification detected,ransomware,5
+2025-12-13 11:45:06.564630,david,192.168.8.241,Multiple files encrypted in short time interval,ransomware,5
+2025-12-25 00:28:06.570629,admin,192.168.20.41,Bulk file encryption in progress,ransomware,5
+2025-12-10 12:03:06.570629,system,192.168.21.191,Ransomware detected: 763 files encrypted,ransomware,5
+2025-12-06 08:36:06.569629,user1,192.168.39.31,Encryption pattern matches ransomware,ransomware,5
+2025-12-13 11:10:06.568630,user1,192.168.13.51,Bulk file encryption in progress,ransomware,5
+2025-12-01 17:55:06.565630,user1,192.168.10.221,Suspicious file encryption activity,ransomware,5
+2026-01-04 07:03:06.568630,user3,192.168.39.171,Ransom note file detected: README.txt,ransomware,5
+2025-12-02 10:36:06.566629,charlie,192.168.6.241,Suspicious file encryption activity,ransomware,5
+2025-12-20 13:29:06.567630,alice,192.168.14.41,Files renamed with .encrypted extension,ransomware,5
+2025-12-21 15:28:06.570629,admin,192.168.20.31,Encryption pattern matches ransomware,ransomware,5
+2025-12-09 05:37:06.569629,user1,192.168.25.211,Ransomware detected: 509 files encrypted,ransomware,5
+2025-12-10 10:09:06.569629,david,192.168.3.241,Mass file modification detected,ransomware,5
+2025-12-29 18:57:06.566629,alice,192.168.15.191,Bulk file encryption in progress,ransomware,5
+2025-12-02 14:11:06.564630,alice,192.168.11.221,Files renamed with .encrypted extension,ransomware,5
+2025-12-12 06:00:06.569629,system,192.168.13.231,Suspicious file encryption activity,ransomware,5
+2025-12-19 18:46:06.569629,charlie,192.168.3.221,Mass file modification detected,ransomware,5
+2025-12-13 20:19:06.568630,charlie,192.168.33.151,Shadow copy deletion detected,ransomware,5
+2025-12-01 21:51:06.565630,charlie,192.168.41.11,Ransom note file detected: README.txt,ransomware,5
+2025-12-13 18:46:06.567630,eve,192.168.39.181,Ransomware detected: 679 files encrypted,ransomware,5
+2025-12-23 04:56:06.569629,system,192.168.45.71,Ransom note file detected: README.txt,ransomware,5
+2025-12-05 12:43:06.569629,charlie,192.168.49.91,Shadow copy deletion detected,ransomware,5
+2026-01-03 05:58:06.570629,system,192.168.25.101,Shadow copy deletion detected,ransomware,5
+2025-12-24 05:27:06.567630,admin,192.168.6.201,Suspicious file encryption activity,ransomware,5
+2025-12-02 12:11:06.566629,admin,192.168.12.21,Mass file modification detected,ransomware,5
+2025-12-17 09:05:06.564630,user2,192.168.17.11,Encryption pattern matches ransomware,ransomware,5
+2025-12-28 09:57:06.570629,user1,192.168.12.71,Ransom note file detected: README.txt,ransomware,5
+2025-12-08 20:38:06.567630,user1,192.168.30.111,Encryption pattern matches ransomware,ransomware,5
+2026-01-01 21:44:06.569629,alice,192.168.27.1,Crypto-locker behavior detected,ransomware,5
+2025-12-22 01:35:06.568630,charlie,192.168.35.121,Mass file modification detected,ransomware,5
+2026-01-02 20:04:06.565630,admin,192.168.21.201,Crypto-locker behavior detected,ransomware,5
+2025-12-22 10:18:06.569629,user3,192.168.27.21,Ransom note file detected: README.txt,ransomware,5
+2025-12-08 13:40:06.567630,system,192.168.26.41,Bulk file encryption in progress,ransomware,5
+2025-12-13 18:15:06.570629,eve,192.168.43.191,Multiple files encrypted in short time interval,ransomware,5
+2025-12-07 02:13:06.570629,bob,192.168.36.161,Suspicious file encryption activity,ransomware,5
+2025-12-31 00:14:06.567630,bob,192.168.18.31,Ransomware detected: 260 files encrypted,ransomware,5
+2026-01-04 12:36:06.568630,user1,192.168.39.61,Crypto-locker behavior detected,ransomware,5
+2025-12-07 19:42:06.566629,user3,192.168.20.71,Mass file modification detected,ransomware,5
+2025-12-08 06:36:06.568630,charlie,192.168.17.11,Files renamed with .encrypted extension,ransomware,5
+2026-01-01 01:47:06.566629,alice,192.168.3.41,Ransomware detected: 319 files encrypted,ransomware,5
+2025-12-05 04:25:06.567630,system,192.168.44.241,Mass file modification detected,ransomware,5
+2025-12-02 07:55:06.570629,system,192.168.45.111,Encryption pattern matches ransomware,ransomware,5
+2025-12-29 18:11:06.569629,system,192.168.37.131,Files renamed with .encrypted extension,ransomware,5
+2025-12-08 01:27:06.564630,user3,192.168.47.41,Crypto-locker behavior detected,ransomware,5
+2025-12-19 01:01:06.570629,charlie,192.168.3.121,Multiple files encrypted in short time interval,ransomware,5
+2026-01-03 12:09:06.569629,alice,192.168.41.141,Shadow copy deletion detected,ransomware,5
+2025-12-11 06:51:06.568630,user2,192.168.27.201,Shadow copy deletion detected,ransomware,5
+2025-12-03 01:50:06.570629,user1,192.168.44.81,Bulk file encryption in progress,ransomware,5
+2025-12-07 02:22:06.564630,user2,192.168.7.111,Files renamed with .encrypted extension,ransomware,5
+2025-12-28 19:25:06.567630,eve,192.168.32.11,Suspicious file encryption activity,ransomware,5
+2025-12-28 14:11:06.570629,eve,192.168.41.91,Files renamed with .encrypted extension,ransomware,5
+2025-12-20 01:57:06.570629,bob,192.168.14.211,Bulk file encryption in progress,ransomware,5
+2025-12-13 18:34:06.564630,user2,192.168.6.191,Bulk file encryption in progress,ransomware,5
+2025-12-10 14:44:06.564630,david,192.168.33.71,Files renamed with .encrypted extension,ransomware,5
+2025-12-10 20:18:06.567630,system,192.168.12.161,Crypto-locker behavior detected,ransomware,5
+2025-12-24 01:09:06.568630,david,192.168.9.51,Shadow copy deletion detected,ransomware,5
+2026-01-03 06:59:06.569629,bob,192.168.19.201,Shadow copy deletion detected,ransomware,5
+2025-12-23 02:20:06.569629,eve,192.168.48.171,Ransom note file detected: README.txt,ransomware,5
+2025-12-12 23:52:06.566629,charlie,192.168.2.171,Bulk file encryption in progress,ransomware,5
+2025-12-23 11:53:06.565630,charlie,192.168.23.171,Crypto-locker behavior detected,ransomware,5
+2025-12-18 19:48:06.564630,charlie,192.168.8.181,Multiple files encrypted in short time interval,ransomware,5
+2025-12-16 14:19:06.568630,user3,192.168.16.231,Bulk file encryption in progress,ransomware,5
+2026-01-02 20:28:06.564630,admin,192.168.20.221,Crypto-locker behavior detected,ransomware,5
+2025-12-12 03:03:06.567630,admin,192.168.45.21,Crypto-locker behavior detected,ransomware,5
+2025-12-31 13:34:06.568630,user1,192.168.48.171,Shadow copy deletion detected,ransomware,5
+2025-12-17 22:31:06.567630,user3,192.168.33.41,Ransom note file detected: README.txt,ransomware,5
+2025-12-06 16:59:06.564630,bob,192.168.42.241,Files renamed with .encrypted extension,ransomware,5
+2025-12-31 01:45:06.564630,user2,192.168.41.151,Suspicious file encryption activity,ransomware,5
+2025-12-13 02:46:06.570629,user3,192.168.39.121,Suspicious file encryption activity,ransomware,5
+2025-12-02 22:15:06.569629,system,192.168.2.201,Bulk file encryption in progress,ransomware,5
+2025-12-12 03:21:06.566629,eve,192.168.40.71,Multiple files encrypted in short time interval,ransomware,5
+2025-12-04 11:21:06.568630,user3,192.168.45.131,Shadow copy deletion detected,ransomware,5
+2025-12-23 05:42:06.569629,admin,192.168.28.151,Ransomware detected: 252 files encrypted,ransomware,5
+2025-12-06 22:00:06.565630,eve,192.168.20.21,Encryption pattern matches ransomware,ransomware,5
+2025-12-07 22:43:06.567630,user2,192.168.1.191,Multiple files encrypted in short time interval,ransomware,5
+2026-01-01 05:27:06.565630,user1,192.168.34.211,Ransomware detected: 772 files encrypted,ransomware,5
+2025-12-31 02:02:06.570629,david,192.168.36.111,Ransom note file detected: README.txt,ransomware,5
+2025-12-15 20:28:06.567630,bob,192.168.20.231,Shadow copy deletion detected,ransomware,5
+2025-12-18 07:01:06.567630,admin,192.168.23.241,Shadow copy deletion detected,ransomware,5
+2025-12-04 00:50:06.570629,eve,192.168.21.241,Suspicious file encryption activity,ransomware,5
+2025-12-17 10:19:06.565630,alice,192.168.12.161,Bulk file encryption in progress,ransomware,5
+2025-12-20 14:46:06.565630,system,192.168.33.11,Ransom note file detected: README.txt,ransomware,5
+2025-12-10 10:39:06.567630,admin,192.168.28.181,Shadow copy deletion detected,ransomware,5
+2025-12-13 09:31:06.570629,system,192.168.19.181,Encryption pattern matches ransomware,ransomware,5
+2025-12-25 16:41:06.565630,user3,192.168.17.41,Suspicious file encryption activity,ransomware,5
+2025-12-19 05:56:06.567630,user2,192.168.26.101,Files renamed with .encrypted extension,ransomware,5
+2025-12-03 22:21:06.565630,david,192.168.48.21,Multiple files encrypted in short time interval,ransomware,5
+2025-12-15 19:12:06.564630,bob,192.168.47.81,Mass file modification detected,ransomware,5
+2025-12-17 21:19:06.569629,user1,192.168.15.51,Ransomware detected: 793 files encrypted,ransomware,5
+2025-12-04 23:20:06.569629,system,192.168.28.91,Encryption pattern matches ransomware,ransomware,5
+2026-01-04 17:31:06.568630,user1,192.168.15.231,Files renamed with .encrypted extension,ransomware,5
+2025-12-17 03:29:06.568630,system,192.168.10.31,Suspicious file encryption activity,ransomware,5
+2025-12-26 22:28:06.568630,eve,192.168.32.181,Multiple files encrypted in short time interval,ransomware,5
+2025-12-18 07:47:06.570629,system,192.168.37.11,Files renamed with .encrypted extension,ransomware,5
+2025-12-31 05:12:06.570629,bob,192.168.6.151,Files renamed with .encrypted extension,ransomware,5
+2025-12-31 17:18:06.569629,system,192.168.32.181,Ransom note file detected: README.txt,ransomware,5
+2026-01-04 12:47:06.567630,bob,192.168.44.71,Shadow copy deletion detected,ransomware,5
+2025-12-30 08:47:06.570629,user2,192.168.27.91,Ransomware detected: 243 files encrypted,ransomware,5
+2025-12-03 18:19:06.565630,user1,192.168.37.201,Multiple files encrypted in short time interval,ransomware,5
+2025-12-12 21:55:06.565630,user3,192.168.16.131,Ransomware detected: 549 files encrypted,ransomware,5
+2025-12-05 08:43:06.567630,bob,192.168.33.151,Encryption pattern matches ransomware,ransomware,5
+2025-12-26 12:44:06.568630,admin,192.168.9.111,Ransom note file detected: README.txt,ransomware,5
+2025-12-04 20:09:06.570629,charlie,192.168.43.121,Ransom note file detected: README.txt,ransomware,5
+2025-12-18 11:23:06.570629,admin,192.168.32.231,Files renamed with .encrypted extension,ransomware,5
+2025-12-27 07:50:06.570629,system,192.168.8.101,Crypto-locker behavior detected,ransomware,5
+2025-12-28 06:43:06.567630,alice,192.168.11.81,Ransomware detected: 865 files encrypted,ransomware,5
+2025-12-05 13:33:06.569629,user2,192.168.26.1,Bulk file encryption in progress,ransomware,5
+2025-12-26 16:47:06.569629,david,192.168.29.61,Crypto-locker behavior detected,ransomware,5
+2025-12-16 11:09:06.564630,eve,192.168.34.121,Mass file modification detected,ransomware,5
+2025-12-10 23:20:06.567630,bob,192.168.40.191,Shadow copy deletion detected,ransomware,5
+2025-12-04 23:42:06.564630,bob,192.168.30.191,Mass file modification detected,ransomware,5
+2025-12-18 03:24:06.569629,alice,192.168.47.41,Crypto-locker behavior detected,ransomware,5
+2025-12-14 17:57:06.569629,admin,192.168.33.221,Ransomware detected: 19 files encrypted,ransomware,5
+2025-12-10 00:35:06.570629,alice,192.168.49.151,Mass file modification detected,ransomware,5
+2025-12-31 15:42:06.570629,system,192.168.13.71,Crypto-locker behavior detected,ransomware,5
+2025-12-04 17:16:06.569629,charlie,192.168.47.71,Files renamed with .encrypted extension,ransomware,5
+2026-01-03 16:07:06.563627,eve,192.168.28.151,Multiple files encrypted in short time interval,ransomware,5
+2025-12-30 04:07:06.569629,user2,192.168.31.221,Encryption pattern matches ransomware,ransomware,5
+2025-12-18 18:55:06.568630,user2,192.168.29.31,Crypto-locker behavior detected,ransomware,5
+2026-01-03 05:53:06.567630,user1,192.168.7.171,Files renamed with .encrypted extension,ransomware,5
+2025-12-04 14:30:06.570629,user3,192.168.3.181,Crypto-locker behavior detected,ransomware,5
+2025-12-26 02:16:06.566629,eve,192.168.43.241,Mass file modification detected,ransomware,5
+2025-12-09 08:49:06.570629,eve,192.168.40.121,Multiple files encrypted in short time interval,ransomware,5
+2025-12-02 12:27:06.568630,user3,192.168.5.231,Mass file modification detected,ransomware,5
+2025-12-06 08:37:06.569629,eve,192.168.12.71,Files renamed with .encrypted extension,ransomware,5
+2025-12-30 19:21:06.570629,eve,192.168.27.11,Files renamed with .encrypted extension,ransomware,5
+2025-12-05 04:10:06.565630,charlie,192.168.8.181,Encryption pattern matches ransomware,ransomware,5
+2025-12-24 00:45:06.566629,user1,192.168.7.191,Encryption pattern matches ransomware,ransomware,5
+2025-12-17 12:26:06.570629,david,192.168.45.141,Suspicious file encryption activity,ransomware,5
+2026-01-02 03:18:06.563627,system,192.168.46.181,Ransomware detected: 124 files encrypted,ransomware,5
+2025-12-03 14:42:06.567630,alice,192.168.9.181,Encryption pattern matches ransomware,ransomware,5
+2025-12-13 06:53:06.565630,david,192.168.2.21,Multiple files encrypted in short time interval,ransomware,5
+2025-12-16 16:57:06.564630,alice,192.168.37.1,Encryption pattern matches ransomware,ransomware,5
+2025-12-03 14:09:06.565630,user3,192.168.13.151,Ransom note file detected: README.txt,ransomware,5
+2025-12-29 15:01:06.570629,charlie,192.168.32.11,Ransom note file detected: README.txt,ransomware,5
+2025-12-29 18:40:06.569629,david,192.168.28.141,Bulk file encryption in progress,ransomware,5
+2025-12-03 05:03:06.565630,user3,192.168.28.221,Mass file modification detected,ransomware,5
+2025-12-07 15:37:06.566629,user1,192.168.36.211,Multiple files encrypted in short time interval,ransomware,5
+2025-12-03 05:10:06.565630,system,192.168.44.211,Shadow copy deletion detected,ransomware,5
+2025-12-09 09:53:06.565630,eve,192.168.6.141,Mass file modification detected,ransomware,5
+2025-12-28 06:06:06.564630,bob,192.168.16.81,Multiple files encrypted in short time interval,ransomware,5
+2025-12-23 12:44:06.569629,eve,192.168.15.181,Mass file modification detected,ransomware,5
+2025-12-27 18:08:06.567630,user2,192.168.23.241,Shadow copy deletion detected,ransomware,5
+2025-12-24 15:41:06.565630,user3,192.168.14.221,Shadow copy deletion detected,ransomware,5
+2025-12-23 04:37:06.563627,user1,192.168.41.11,Crypto-locker behavior detected,ransomware,5
+2025-12-30 08:33:06.570629,bob,192.168.3.181,Suspicious file encryption activity,ransomware,5
+2025-12-06 05:25:06.570629,alice,192.168.44.71,Mass file modification detected,ransomware,5
+2025-12-29 15:27:06.565630,user1,192.168.4.11,Ransomware detected: 207 files encrypted,ransomware,5
+2025-12-22 19:48:06.570629,charlie,192.168.7.171,Encryption pattern matches ransomware,ransomware,5
+2025-12-05 02:17:06.564630,admin,192.168.18.61,Mass file modification detected,ransomware,5
+2025-12-18 11:35:06.566629,admin,192.168.45.31,Bulk file encryption in progress,ransomware,5
+2025-12-08 14:17:06.564630,alice,192.168.44.1,Crypto-locker behavior detected,ransomware,5
+2026-01-04 19:54:06.570629,user1,192.168.16.61,Ransomware detected: 577 files encrypted,ransomware,5
+2025-12-29 02:47:06.565630,user3,192.168.35.61,Encryption pattern matches ransomware,ransomware,5
+2025-12-24 16:18:06.570629,user2,192.168.34.191,Files renamed with .encrypted extension,ransomware,5
+2025-12-09 23:55:06.568630,admin,192.168.9.171,Shadow copy deletion detected,ransomware,5
+2025-12-27 02:04:06.570629,admin,192.168.11.1,Bulk file encryption in progress,ransomware,5
+2025-12-20 07:27:06.569629,charlie,192.168.40.231,Mass file modification detected,ransomware,5
+2025-12-20 13:49:06.569629,user2,192.168.42.131,Encryption pattern matches ransomware,ransomware,5
+2025-12-07 04:41:06.564630,system,192.168.47.131,Suspicious file encryption activity,ransomware,5
+2025-12-05 15:30:06.569629,user2,192.168.26.211,Multiple files encrypted in short time interval,ransomware,5
+2025-12-20 10:10:06.567630,eve,192.168.37.181,Mass file modification detected,ransomware,5
+2025-12-06 01:21:06.564630,bob,192.168.42.161,Ransom note file detected: README.txt,ransomware,5
+2025-12-21 04:49:06.566629,user3,192.168.44.81,Suspicious file encryption activity,ransomware,5
+2025-12-10 01:51:06.569629,user3,192.168.5.71,Shadow copy deletion detected,ransomware,5
+2025-12-03 19:33:06.569629,user3,192.168.2.181,Suspicious file encryption activity,ransomware,5
+2025-12-12 15:28:06.564630,alice,192.168.14.61,Multiple files encrypted in short time interval,ransomware,5
+2025-12-26 13:23:06.563627,eve,192.168.21.231,Files renamed with .encrypted extension,ransomware,5
+2025-12-06 18:40:06.566629,david,192.168.2.101,Ransom note file detected: README.txt,ransomware,5
+2025-12-06 13:06:06.566629,alice,192.168.14.181,Encryption pattern matches ransomware,ransomware,5
+2025-12-26 00:23:06.567630,bob,192.168.1.141,Shadow copy deletion detected,ransomware,5
+2025-12-10 20:48:06.565630,admin,192.168.7.161,Bulk file encryption in progress,ransomware,5
+2025-12-10 14:32:06.568630,system,192.168.12.201,Bulk file encryption in progress,ransomware,5
+2025-12-31 22:11:06.567630,david,192.168.32.51,Files renamed with .encrypted extension,ransomware,5
+2025-12-30 05:48:06.567630,user3,192.168.48.31,Shadow copy deletion detected,ransomware,5
+2025-12-17 08:02:06.568630,user3,192.168.32.191,Bulk file encryption in progress,ransomware,5
+2025-12-10 08:25:06.569629,system,192.168.26.141,Files renamed with .encrypted extension,ransomware,5
+2025-12-27 20:33:06.569629,alice,192.168.9.131,Encryption pattern matches ransomware,ransomware,5
+2025-12-25 02:03:06.564630,bob,192.168.1.91,Bulk file encryption in progress,ransomware,5
+2025-12-14 19:40:06.566629,alice,192.168.32.201,Crypto-locker behavior detected,ransomware,5
+2025-12-25 17:56:06.565630,alice,192.168.6.11,Crypto-locker behavior detected,ransomware,5
+2026-01-03 17:25:06.569629,user1,192.168.19.141,Suspicious file encryption activity,ransomware,5
+2025-12-09 08:13:06.570629,user3,192.168.16.41,Bulk file encryption in progress,ransomware,5
+2025-12-14 23:23:06.565630,user3,192.168.5.1,Multiple files encrypted in short time interval,ransomware,5
+2025-12-31 16:03:06.565630,david,192.168.44.111,Shadow copy deletion detected,ransomware,5
+2025-12-19 13:10:06.565630,eve,192.168.37.241,Files renamed with .encrypted extension,ransomware,5
+2025-12-12 08:05:06.565630,user3,192.168.42.241,Mass file modification detected,ransomware,5
+2025-12-13 20:01:06.569629,admin,192.168.27.41,Shadow copy deletion detected,ransomware,5
+2025-12-05 22:11:06.568630,user1,192.168.34.241,Ransomware detected: 237 files encrypted,ransomware,5
+2025-12-25 06:02:06.564630,david,192.168.17.31,Multiple files encrypted in short time interval,ransomware,5
+2025-12-30 08:57:06.565630,admin,192.168.9.91,Multiple files encrypted in short time interval,ransomware,5
+2025-12-13 13:08:06.570629,admin,192.168.7.71,Ransomware detected: 731 files encrypted,ransomware,5
+2025-12-08 10:25:06.567630,alice,192.168.9.201,Mass file modification detected,ransomware,5
+2026-01-01 23:16:06.566629,eve,192.168.18.81,Multiple files encrypted in short time interval,ransomware,5
+2025-12-11 08:53:06.566629,admin,192.168.49.171,Encryption pattern matches ransomware,ransomware,5
+2025-12-26 09:30:06.564630,david,192.168.19.81,Ransom note file detected: README.txt,ransomware,5
+2025-12-10 21:53:06.567630,user1,192.168.40.171,Shadow copy deletion detected,ransomware,5
+2025-12-26 11:04:06.570629,admin,192.168.37.71,Bulk file encryption in progress,ransomware,5
+2025-12-30 15:22:06.569629,admin,192.168.46.31,Encryption pattern matches ransomware,ransomware,5
+2025-12-21 02:52:06.566629,admin,192.168.34.81,Ransomware detected: 981 files encrypted,ransomware,5
+2025-12-17 05:39:06.565630,david,192.168.11.101,Ransom note file detected: README.txt,ransomware,5
+2025-12-25 21:15:06.564630,alice,192.168.25.131,Encryption pattern matches ransomware,ransomware,5
+2025-12-09 02:03:06.566629,user1,192.168.41.1,Bulk file encryption in progress,ransomware,5
+2025-12-21 20:59:06.568630,bob,192.168.38.151,Bulk file encryption in progress,ransomware,5
+2025-12-06 18:15:06.564630,user1,192.168.20.201,Ransom note file detected: README.txt,ransomware,5
+2025-12-11 00:49:06.566629,charlie,192.168.24.91,Multiple files encrypted in short time interval,ransomware,5
+2025-12-30 09:55:06.568630,admin,192.168.17.51,Files renamed with .encrypted extension,ransomware,5
+2025-12-29 21:59:06.569629,user1,192.168.37.221,Files renamed with .encrypted extension,ransomware,5
+2025-12-04 10:37:06.567630,system,192.168.18.81,Bulk file encryption in progress,ransomware,5
+2026-01-01 11:37:06.565630,eve,192.168.49.141,Ransomware detected: 254 files encrypted,ransomware,5
+2026-01-02 23:05:06.563627,admin,192.168.35.221,Ransomware detected: 300 files encrypted,ransomware,5
+2025-12-09 03:46:06.568630,bob,192.168.17.141,Files renamed with .encrypted extension,ransomware,5
+2025-12-21 10:03:06.564630,user2,192.168.1.231,Suspicious file encryption activity,ransomware,5
+2025-12-27 03:39:06.570629,david,192.168.48.171,Suspicious file encryption activity,ransomware,5
+2025-12-10 09:43:06.570629,user3,192.168.35.161,Bulk file encryption in progress,ransomware,5
+2025-12-17 19:07:06.565630,charlie,192.168.7.51,Mass file modification detected,ransomware,5
+2025-12-09 18:00:06.568630,david,192.168.9.171,Suspicious file encryption activity,ransomware,5
+2025-12-06 07:28:06.568630,user2,192.168.41.131,Bulk file encryption in progress,ransomware,5
+2026-01-02 20:28:06.569629,user3,192.168.27.51,Mass file modification detected,ransomware,5
+2025-12-19 13:36:06.565630,charlie,192.168.41.11,Ransomware detected: 214 files encrypted,ransomware,5
+2025-12-11 02:49:06.563627,user2,192.168.40.131,Ransomware detected: 441 files encrypted,ransomware,5
+2025-12-28 16:33:06.564630,admin,192.168.34.31,Multiple files encrypted in short time interval,ransomware,5
+2026-01-01 06:52:06.565630,david,192.168.40.191,Multiple files encrypted in short time interval,ransomware,5
+2025-12-15 00:25:06.564630,alice,192.168.29.21,Bulk file encryption in progress,ransomware,5
+2025-12-18 10:44:06.568630,charlie,192.168.15.41,Ransomware detected: 48 files encrypted,ransomware,5
+2025-12-03 16:46:06.564630,charlie,192.168.36.141,Shadow copy deletion detected,ransomware,5
+2025-12-24 01:09:06.565630,david,192.168.2.31,Crypto-locker behavior detected,ransomware,5
+2025-12-11 18:39:06.566629,user3,192.168.49.151,Encryption pattern matches ransomware,ransomware,5
+2026-01-01 22:42:06.564630,bob,192.168.32.41,Multiple files encrypted in short time interval,ransomware,5
+2025-12-03 14:48:06.569629,user1,192.168.12.141,Bulk file encryption in progress,ransomware,5
+2025-12-23 18:24:06.564630,david,192.168.46.41,Ransomware detected: 263 files encrypted,ransomware,5
+2025-12-23 18:07:06.566629,system,192.168.31.71,Shadow copy deletion detected,ransomware,5
+2025-12-11 09:11:06.564630,user2,192.168.24.241,Shadow copy deletion detected,ransomware,5
+2025-12-08 04:21:06.567630,eve,192.168.18.231,Bulk file encryption in progress,ransomware,5
+2025-12-05 00:18:06.564630,admin,192.168.47.1,Mass file modification detected,ransomware,5
+2025-12-12 10:10:06.570629,system,192.168.24.241,Encryption pattern matches ransomware,ransomware,5
+2025-12-29 01:15:06.569629,david,192.168.25.11,Crypto-locker behavior detected,ransomware,5
+2026-01-01 03:38:06.568630,user3,192.168.11.21,Ransom note file detected: README.txt,ransomware,5
+2025-12-27 19:25:06.569629,admin,192.168.24.161,Ransom note file detected: README.txt,ransomware,5
+2025-12-28 05:19:06.564630,alice,192.168.10.171,Suspicious file encryption activity,ransomware,5
+2026-01-03 22:14:06.567630,user3,192.168.14.151,Ransomware detected: 687 files encrypted,ransomware,5
+2025-12-07 06:16:06.565630,system,192.168.42.221,Files renamed with .encrypted extension,ransomware,5
+2026-01-01 06:54:06.566629,bob,192.168.44.151,Ransomware detected: 151 files encrypted,ransomware,5
+2025-12-30 21:04:06.564630,user3,192.168.12.171,Ransomware detected: 586 files encrypted,ransomware,5
+2025-12-12 11:42:06.570629,eve,192.168.44.71,Mass file modification detected,ransomware,5
+2025-12-03 05:24:06.563627,admin,192.168.35.31,Suspicious file encryption activity,ransomware,5
+2025-12-27 13:40:06.566629,admin,192.168.7.51,Multiple files encrypted in short time interval,ransomware,5
+2025-12-31 16:36:06.568630,admin,192.168.17.21,Crypto-locker behavior detected,ransomware,5
+2025-12-21 23:37:06.564630,system,192.168.31.131,Shadow copy deletion detected,ransomware,5
+2025-12-10 20:32:06.569629,system,192.168.29.231,Multiple files encrypted in short time interval,ransomware,5
+2025-12-14 15:34:06.570629,user2,192.168.47.191,Bulk file encryption in progress,ransomware,5
+2025-12-31 02:53:06.567630,system,192.168.44.171,Encryption pattern matches ransomware,ransomware,5
+2025-12-30 12:09:06.569629,user2,192.168.43.211,Multiple files encrypted in short time interval,ransomware,5
+2025-12-20 22:23:06.566629,user1,192.168.29.11,Suspicious file encryption activity,ransomware,5
+2025-12-13 11:59:06.563627,charlie,192.168.47.181,Files renamed with .encrypted extension,ransomware,5
+2025-12-17 17:08:06.567630,charlie,192.168.33.81,Files renamed with .encrypted extension,ransomware,5
+2025-12-02 01:33:06.565630,user3,192.168.19.241,Suspicious file encryption activity,ransomware,5
+2026-01-01 10:32:06.570629,system,192.168.13.141,Ransomware detected: 427 files encrypted,ransomware,5
+2025-12-22 18:35:06.564630,david,192.168.42.101,Bulk file encryption in progress,ransomware,5
+2025-12-27 19:16:06.565630,admin,192.168.4.121,Multiple files encrypted in short time interval,ransomware,5
+2025-12-24 06:18:06.568630,bob,192.168.26.11,Shadow copy deletion detected,ransomware,5
+2025-12-09 12:54:06.565630,alice,192.168.40.81,Ransomware detected: 461 files encrypted,ransomware,5
+2025-12-14 17:46:06.565630,user1,192.168.12.211,Encryption pattern matches ransomware,ransomware,5
+2025-12-20 16:20:06.569629,user1,192.168.16.71,Crypto-locker behavior detected,ransomware,5
+2025-12-31 10:14:06.565630,system,192.168.27.101,Crypto-locker behavior detected,ransomware,5
+2025-12-29 01:29:06.566629,charlie,192.168.36.11,Multiple files encrypted in short time interval,ransomware,5
+2026-01-02 02:21:06.569629,admin,192.168.46.111,Files renamed with .encrypted extension,ransomware,5
+2025-12-13 15:37:06.568630,charlie,192.168.38.101,Shadow copy deletion detected,ransomware,5
+2026-01-03 11:25:06.568630,charlie,192.168.17.211,Bulk file encryption in progress,ransomware,5
+2025-12-26 05:59:06.568630,user2,192.168.48.11,Encryption pattern matches ransomware,ransomware,5
+2025-12-11 16:57:06.569629,bob,192.168.33.151,Encryption pattern matches ransomware,ransomware,5
+2025-12-30 02:42:06.566629,user3,192.168.29.11,Bulk file encryption in progress,ransomware,5
+2025-12-06 02:48:06.567630,eve,192.168.23.191,Files renamed with .encrypted extension,ransomware,5
+2025-12-20 10:50:06.570629,alice,192.168.15.121,Suspicious file encryption activity,ransomware,5
+2025-12-14 16:27:06.569629,system,192.168.42.221,Multiple files encrypted in short time interval,ransomware,5
+2025-12-07 12:14:06.568630,bob,192.168.46.91,Bulk file encryption in progress,ransomware,5
+2025-12-09 05:09:06.569629,user3,192.168.25.121,Mass file modification detected,ransomware,5
+2026-01-04 05:20:06.570629,charlie,192.168.30.71,Bulk file encryption in progress,ransomware,5
+2026-01-03 14:02:06.570629,eve,192.168.49.111,Suspicious file encryption activity,ransomware,5
+2025-12-09 06:45:06.569629,user3,192.168.36.51,Mass file modification detected,ransomware,5
+2025-12-31 03:30:06.564630,user3,192.168.5.81,Bulk file encryption in progress,ransomware,5
+2025-12-09 13:04:06.568630,system,192.168.10.181,Encryption pattern matches ransomware,ransomware,5
+2025-12-26 07:20:06.570629,admin,192.168.23.91,Suspicious file encryption activity,ransomware,5
+2026-01-02 11:47:06.569629,user1,192.168.41.241,Bulk file encryption in progress,ransomware,5
+2025-12-07 09:27:06.564630,eve,192.168.31.51,Mass file modification detected,ransomware,5
+2025-12-09 18:12:06.570629,alice,192.168.18.21,Files renamed with .encrypted extension,ransomware,5
+2025-12-25 13:59:06.566629,alice,192.168.49.131,Ransom note file detected: README.txt,ransomware,5
+2025-12-31 14:49:06.566629,user2,192.168.18.71,Multiple files encrypted in short time interval,ransomware,5
+2025-12-25 02:23:06.568630,system,192.168.4.151,Shadow copy deletion detected,ransomware,5
+2025-12-23 13:27:06.564630,bob,192.168.27.11,Suspicious file encryption activity,ransomware,5
+2026-01-01 06:50:06.566629,david,192.168.12.71,Multiple files encrypted in short time interval,ransomware,5
+2025-12-10 20:03:06.566629,alice,192.168.31.91,Ransomware detected: 988 files encrypted,ransomware,5
+2025-12-26 18:41:06.569629,user2,192.168.20.1,Ransom note file detected: README.txt,ransomware,5
+2026-01-03 18:15:06.565630,alice,192.168.42.141,Shadow copy deletion detected,ransomware,5
+2025-12-11 23:37:06.566629,user3,192.168.21.61,Ransomware detected: 304 files encrypted,ransomware,5
+2026-01-03 16:00:06.565630,eve,192.168.10.61,Ransomware detected: 548 files encrypted,ransomware,5
+2025-12-26 14:37:06.569629,alice,192.168.49.121,Files renamed with .encrypted extension,ransomware,5
+2025-12-24 13:54:06.570629,admin,192.168.14.41,Suspicious file encryption activity,ransomware,5
+2025-12-07 17:27:06.566629,user3,192.168.48.121,Files renamed with .encrypted extension,ransomware,5
+2025-12-27 02:18:06.569629,alice,192.168.26.51,Crypto-locker behavior detected,ransomware,5
+2026-01-01 13:17:06.568630,charlie,192.168.35.41,Shadow copy deletion detected,ransomware,5
+2025-12-03 16:19:06.568630,user2,192.168.16.201,Multiple files encrypted in short time interval,ransomware,5
+2025-12-06 00:00:06.567630,user1,192.168.24.31,Shadow copy deletion detected,ransomware,5
+2025-12-23 04:40:06.564630,david,192.168.5.131,Crypto-locker behavior detected,ransomware,5
+2025-12-20 10:27:06.568630,user3,192.168.45.211,Multiple files encrypted in short time interval,ransomware,5
+2026-01-04 19:49:06.563627,bob,192.168.25.241,Suspicious file encryption activity,ransomware,5
+2025-12-07 05:06:06.569629,bob,192.168.12.31,Encryption pattern matches ransomware,ransomware,5
+2025-12-16 05:59:06.564630,charlie,192.168.33.191,Shadow copy deletion detected,ransomware,5
+2025-12-22 23:14:06.568630,david,192.168.40.51,Bulk file encryption in progress,ransomware,5
+2025-12-26 17:11:06.568630,alice,192.168.34.111,Encryption pattern matches ransomware,ransomware,5
+2025-12-27 11:47:06.566629,user3,192.168.39.131,Files renamed with .encrypted extension,ransomware,5
+2025-12-05 00:40:06.565630,user1,192.168.40.231,Multiple files encrypted in short time interval,ransomware,5
+2025-12-23 00:57:06.566629,eve,192.168.25.201,Shadow copy deletion detected,ransomware,5
+2025-12-11 00:56:06.570629,eve,192.168.2.221,Multiple files encrypted in short time interval,ransomware,5
+2025-12-14 22:59:06.566629,admin,192.168.28.71,Multiple files encrypted in short time interval,ransomware,5
+2025-12-10 04:06:06.569629,bob,192.168.25.121,Suspicious file encryption activity,ransomware,5
+2025-12-16 06:53:06.564630,bob,192.168.38.111,Ransomware detected: 731 files encrypted,ransomware,5
+2025-12-24 03:28:06.567630,user2,192.168.44.81,Bulk file encryption in progress,ransomware,5
+2025-12-21 14:36:06.569629,user3,192.168.6.31,Ransomware detected: 524 files encrypted,ransomware,5
+2026-01-04 14:04:06.570629,david,192.168.34.121,Multiple files encrypted in short time interval,ransomware,5
+2025-12-09 20:38:06.567630,system,192.168.35.51,Shadow copy deletion detected,ransomware,5
+2025-12-26 22:40:06.564630,user1,192.168.5.191,Mass file modification detected,ransomware,5
+2026-01-01 07:32:06.569629,system,192.168.28.91,Bulk file encryption in progress,ransomware,5
+2025-12-02 22:56:06.565630,user3,192.168.36.231,Encryption pattern matches ransomware,ransomware,5
+2025-12-23 04:55:06.570629,bob,192.168.33.201,Ransomware detected: 748 files encrypted,ransomware,5
+2025-12-31 17:47:06.570629,system,192.168.10.151,Files renamed with .encrypted extension,ransomware,5
+2025-12-09 12:32:06.564630,system,192.168.36.1,Bulk file encryption in progress,ransomware,5
+2025-12-21 22:40:06.567630,david,192.168.36.241,Encryption pattern matches ransomware,ransomware,5
+2025-12-04 18:59:06.568630,charlie,192.168.8.71,Multiple files encrypted in short time interval,ransomware,5
+2026-01-03 18:46:06.568630,alice,192.168.40.241,Files renamed with .encrypted extension,ransomware,5
+2025-12-26 03:47:06.565630,user1,192.168.25.121,Ransomware detected: 382 files encrypted,ransomware,5
+2025-12-16 18:12:06.568630,system,192.168.38.121,Crypto-locker behavior detected,ransomware,5
+2026-01-02 04:03:06.563627,bob,192.168.31.141,Bulk file encryption in progress,ransomware,5
+2025-12-23 13:02:06.567630,admin,192.168.7.71,Bulk file encryption in progress,ransomware,5
+2025-12-03 12:46:06.568630,charlie,192.168.46.21,Encryption pattern matches ransomware,ransomware,5
+2026-01-04 21:13:06.566629,eve,192.168.14.71,Encryption pattern matches ransomware,ransomware,5
+2025-12-19 07:59:06.569629,user1,192.168.29.151,Multiple files encrypted in short time interval,ransomware,5
+2025-12-16 02:40:06.567630,alice,192.168.14.61,Mass file modification detected,ransomware,5
+2026-01-01 14:06:06.565630,alice,192.168.15.71,Files renamed with .encrypted extension,ransomware,5
+2025-12-30 14:20:06.570629,user3,192.168.20.241,Suspicious file encryption activity,ransomware,5
+2025-12-07 18:04:06.569629,charlie,192.168.18.191,Shadow copy deletion detected,ransomware,5
+2025-12-10 22:26:06.568630,user2,192.168.37.101,Ransomware detected: 566 files encrypted,ransomware,5
+2025-12-09 07:40:06.564630,user1,192.168.11.71,Files renamed with .encrypted extension,ransomware,5
+2025-12-29 18:51:06.563627,system,192.168.40.101,Shadow copy deletion detected,ransomware,5
+2025-12-19 21:07:06.567630,admin,192.168.35.71,Suspicious file encryption activity,ransomware,5
+2026-01-01 19:58:06.569629,charlie,192.168.23.211,Encryption pattern matches ransomware,ransomware,5
+2025-12-18 03:37:06.565630,charlie,192.168.18.11,Ransomware detected: 671 files encrypted,ransomware,5
+2025-12-16 06:18:06.569629,david,192.168.42.221,Ransom note file detected: README.txt,ransomware,5
+2026-01-04 00:32:06.565630,charlie,192.168.3.211,Mass file modification detected,ransomware,5
+2025-12-24 03:34:06.570629,charlie,192.168.4.211,Suspicious file encryption activity,ransomware,5
+2026-01-05 02:51:06.569629,user2,192.168.48.161,Shadow copy deletion detected,ransomware,5
+2025-12-04 02:24:06.564630,eve,192.168.15.41,Crypto-locker behavior detected,ransomware,5
+2025-12-22 07:19:06.570629,admin,192.168.43.231,Ransom note file detected: README.txt,ransomware,5
+2025-12-18 03:09:06.568630,admin,192.168.30.31,Files renamed with .encrypted extension,ransomware,5
+2025-12-19 09:27:06.568630,eve,192.168.32.161,Ransomware detected: 900 files encrypted,ransomware,5
+2025-12-10 05:24:06.564630,alice,192.168.3.241,Encryption pattern matches ransomware,ransomware,5
+2025-12-11 03:54:06.567630,charlie,192.168.28.221,Suspicious file encryption activity,ransomware,5
+2025-12-10 07:36:06.565630,user1,192.168.16.181,Ransom note file detected: README.txt,ransomware,5
+2025-12-20 10:31:06.567630,bob,192.168.26.171,Ransomware detected: 822 files encrypted,ransomware,5
+2025-12-05 05:20:06.566629,david,192.168.2.211,Encryption pattern matches ransomware,ransomware,5
+2025-12-09 16:26:06.567630,charlie,192.168.48.91,Suspicious file encryption activity,ransomware,5
+2025-12-30 20:18:06.570629,charlie,192.168.6.31,Files renamed with .encrypted extension,ransomware,5
+2025-12-22 04:33:06.568630,admin,192.168.35.221,Files renamed with .encrypted extension,ransomware,5
+2026-01-04 05:26:06.566629,user2,192.168.46.21,Multiple files encrypted in short time interval,ransomware,5
+2025-12-17 12:25:06.568630,user3,192.168.17.51,Mass file modification detected,ransomware,5
+2025-12-16 16:00:06.569629,eve,192.168.4.21,Mass file modification detected,ransomware,5
+2025-12-27 15:59:06.569629,bob,192.168.12.1,Bulk file encryption in progress,ransomware,5
+2025-12-09 07:03:06.569629,system,192.168.44.171,Suspicious file encryption activity,ransomware,5
+2025-12-19 10:45:06.566629,charlie,192.168.37.41,Multiple files encrypted in short time interval,ransomware,5
+2025-12-13 22:23:06.564630,alice,192.168.47.101,Bulk file encryption in progress,ransomware,5
+2025-12-20 06:56:06.568630,system,192.168.41.131,Suspicious file encryption activity,ransomware,5
+2025-12-29 20:36:06.567630,user2,192.168.36.81,Shadow copy deletion detected,ransomware,5
+2025-12-24 13:53:06.567630,charlie,192.168.9.201,Ransom note file detected: README.txt,ransomware,5
+2025-12-01 18:48:06.569629,eve,192.168.15.221,Ransom note file detected: README.txt,ransomware,5
+2025-12-06 20:11:06.563627,charlie,192.168.14.181,Files renamed with .encrypted extension,ransomware,5
+2025-12-17 12:07:06.565630,user2,192.168.14.211,Shadow copy deletion detected,ransomware,5
+2025-12-29 04:13:06.570629,bob,192.168.5.131,Shadow copy deletion detected,ransomware,5
+2025-12-11 06:57:06.564630,david,192.168.47.161,Bulk file encryption in progress,ransomware,5
+2025-12-15 22:25:06.567630,eve,192.168.16.41,Files renamed with .encrypted extension,ransomware,5
+2025-12-27 23:21:06.568630,user3,192.168.8.231,Ransom note file detected: README.txt,ransomware,5
+2025-12-03 11:45:06.565630,david,192.168.6.201,Shadow copy deletion detected,ransomware,5
+2026-01-03 07:40:06.569629,david,192.168.2.241,Multiple files encrypted in short time interval,ransomware,5
+2025-12-29 19:30:06.566629,charlie,192.168.32.51,Suspicious file encryption activity,ransomware,5
+2025-12-18 20:00:06.568630,alice,192.168.42.161,Mass file modification detected,ransomware,5
+2025-12-13 06:58:06.566629,user2,192.168.46.111,Bulk file encryption in progress,ransomware,5
+2025-12-11 16:36:06.567630,bob,192.168.36.11,Ransom note file detected: README.txt,ransomware,5
+2025-12-13 15:58:06.564630,eve,192.168.27.51,Ransom note file detected: README.txt,ransomware,5
+2025-12-22 03:58:06.567630,bob,192.168.41.51,Ransom note file detected: README.txt,ransomware,5
+2025-12-12 20:38:06.565630,alice,192.168.23.81,Ransom note file detected: README.txt,ransomware,5
+2026-01-01 15:10:06.563627,charlie,192.168.6.101,Ransomware detected: 816 files encrypted,ransomware,5
+2026-01-02 10:50:06.565630,system,192.168.3.211,Files renamed with .encrypted extension,ransomware,5
+2026-01-05 02:23:06.568630,user3,192.168.11.191,Mass file modification detected,ransomware,5
+2025-12-25 01:41:06.566629,user2,192.168.18.201,Files renamed with .encrypted extension,ransomware,5
+2025-12-23 19:08:06.566629,charlie,192.168.35.201,Files renamed with .encrypted extension,ransomware,5
+2025-12-31 23:53:06.565630,admin,192.168.16.181,Files renamed with .encrypted extension,ransomware,5
+2025-12-25 10:58:06.570629,bob,192.168.30.201,Ransomware detected: 585 files encrypted,ransomware,5
+2025-12-25 02:56:06.568630,bob,192.168.2.21,Ransomware detected: 845 files encrypted,ransomware,5
+2025-12-09 12:07:06.567630,user1,192.168.24.131,Multiple files encrypted in short time interval,ransomware,5
+2025-12-13 07:04:06.568630,user3,192.168.9.81,Shadow copy deletion detected,ransomware,5
+2025-12-19 07:40:06.564630,user3,192.168.25.11,Shadow copy deletion detected,ransomware,5
+2025-12-05 07:55:06.567630,user1,192.168.30.161,Suspicious file encryption activity,ransomware,5
+2025-12-29 16:02:06.568630,david,192.168.39.231,Files renamed with .encrypted extension,ransomware,5
+2025-12-08 00:32:06.567630,bob,192.168.20.1,Mass file modification detected,ransomware,5
+2025-12-26 06:25:06.569629,admin,192.168.32.141,Suspicious file encryption activity,ransomware,5
+2025-12-16 15:08:06.564630,user1,192.168.4.111,Encryption pattern matches ransomware,ransomware,5
+2025-12-07 14:17:06.569629,eve,192.168.1.41,Mass file modification detected,ransomware,5
+2025-12-31 22:18:06.564630,alice,192.168.47.171,Multiple files encrypted in short time interval,ransomware,5
+2026-01-01 09:14:06.569629,user2,192.168.33.1,Encryption pattern matches ransomware,ransomware,5
+2025-12-27 02:58:06.565630,system,192.168.24.81,Ransomware detected: 782 files encrypted,ransomware,5
+2025-12-11 13:02:06.564630,user1,192.168.1.71,Bulk file encryption in progress,ransomware,5
+2025-12-05 21:23:06.564630,user3,192.168.30.161,Mass file modification detected,ransomware,5
+2025-12-10 04:49:06.569629,user2,192.168.10.111,Bulk file encryption in progress,ransomware,5
+2026-01-04 02:48:06.568630,bob,192.168.11.1,Ransom note file detected: README.txt,ransomware,5
+2025-12-21 20:49:06.570629,alice,192.168.14.191,Multiple files encrypted in short time interval,ransomware,5
+2025-12-25 12:18:06.568630,user2,192.168.8.181,Ransomware detected: 880 files encrypted,ransomware,5
+2025-12-07 13:58:06.569629,admin,192.168.5.41,Files renamed with .encrypted extension,ransomware,5
+2025-12-27 01:54:06.566629,user1,192.168.33.171,Multiple files encrypted in short time interval,ransomware,5
+2025-12-11 03:27:06.566629,user1,192.168.10.101,Encryption pattern matches ransomware,ransomware,5
+2025-12-30 08:44:06.567630,alice,192.168.40.71,Multiple files encrypted in short time interval,ransomware,5
+2025-12-27 21:32:06.569629,user2,192.168.2.21,Ransom note file detected: README.txt,ransomware,5
+2025-12-16 07:02:06.567630,eve,192.168.22.241,Ransomware detected: 769 files encrypted,ransomware,5
+2025-12-22 03:53:06.565630,charlie,192.168.7.121,Bulk file encryption in progress,ransomware,5
+2025-12-26 03:26:06.570629,system,192.168.20.81,Crypto-locker behavior detected,ransomware,5
+2025-12-23 18:55:06.570629,alice,192.168.6.161,Encryption pattern matches ransomware,ransomware,5
+2025-12-31 09:32:06.565630,user3,192.168.23.201,Suspicious file encryption activity,ransomware,5
+2026-01-04 00:05:06.566629,charlie,192.168.20.31,Files renamed with .encrypted extension,ransomware,5
+2025-12-16 06:19:06.564630,user2,192.168.16.151,Bulk file encryption in progress,ransomware,5
+2025-12-01 21:58:06.566629,user3,192.168.49.31,Bulk file encryption in progress,ransomware,5
+2025-12-21 05:49:06.566629,charlie,192.168.3.91,Crypto-locker behavior detected,ransomware,5
+2025-12-10 17:15:06.564630,system,192.168.42.121,Ransomware detected: 702 files encrypted,ransomware,5
+2025-12-19 07:25:06.563627,alice,192.168.37.71,Mass file modification detected,ransomware,5
+2025-12-10 21:31:06.568630,system,192.168.34.81,Files renamed with .encrypted extension,ransomware,5
+2025-12-15 22:47:06.567630,admin,192.168.31.91,Ransomware detected: 148 files encrypted,ransomware,5
+2025-12-28 13:21:06.567630,user1,192.168.8.41,Shadow copy deletion detected,ransomware,5
+2026-01-01 21:55:06.568630,charlie,192.168.18.51,Suspicious file encryption activity,ransomware,5
+2025-12-07 03:59:06.566629,user1,192.168.40.151,Ransom note file detected: README.txt,ransomware,5
+2025-12-14 17:34:06.565630,eve,192.168.16.161,Ransomware detected: 276 files encrypted,ransomware,5
+2025-12-28 23:51:06.564630,eve,192.168.41.111,Files renamed with .encrypted extension,ransomware,5
+2025-12-28 01:08:06.569629,bob,192.168.46.61,Shadow copy deletion detected,ransomware,5
+2025-12-08 09:44:06.569629,user1,192.168.20.181,Suspicious file encryption activity,ransomware,5
+2026-01-02 03:11:06.566629,charlie,192.168.31.131,Mass file modification detected,ransomware,5
+2025-12-04 22:21:06.565630,admin,192.168.17.201,Encryption pattern matches ransomware,ransomware,5
+2025-12-15 22:24:06.564630,admin,192.168.49.51,Crypto-locker behavior detected,ransomware,5
+2025-12-26 05:00:06.570629,system,192.168.21.1,Bulk file encryption in progress,ransomware,5
+2025-12-27 23:19:06.570629,david,192.168.30.21,Crypto-locker behavior detected,ransomware,5
+2025-12-05 13:12:06.566629,david,192.168.41.21,Mass file modification detected,ransomware,5
+2025-12-09 21:07:06.568630,david,192.168.45.201,Crypto-locker behavior detected,ransomware,5
+2025-12-14 09:37:06.564630,bob,192.168.22.51,Mass file modification detected,ransomware,5
+2025-12-11 01:16:06.565630,user2,192.168.1.151,Crypto-locker behavior detected,ransomware,5
+2025-12-06 05:21:06.569629,system,192.168.26.61,Files renamed with .encrypted extension,ransomware,5
+2025-12-14 08:40:06.569629,alice,192.168.33.31,Ransomware detected: 331 files encrypted,ransomware,5
+2025-12-26 00:16:06.563627,charlie,192.168.3.31,Files renamed with .encrypted extension,ransomware,5
+2025-12-30 03:20:06.569629,admin,192.168.10.61,Shadow copy deletion detected,ransomware,5
+2025-12-10 00:16:06.566629,bob,192.168.23.221,Encryption pattern matches ransomware,ransomware,5
+2025-12-19 12:54:06.570629,user3,192.168.25.51,Multiple files encrypted in short time interval,ransomware,5
+2025-12-25 11:00:06.569629,admin,192.168.44.41,Encryption pattern matches ransomware,ransomware,5
+2025-12-29 17:16:06.564630,user1,192.168.32.131,Mass file modification detected,ransomware,5
+2026-01-01 16:06:06.567630,user1,192.168.38.31,Shadow copy deletion detected,ransomware,5
+2026-01-03 19:26:06.564630,alice,192.168.20.161,Bulk file encryption in progress,ransomware,5
+2025-12-27 00:36:06.569629,david,192.168.18.71,Files renamed with .encrypted extension,ransomware,5
+2025-12-07 18:29:06.569629,user2,192.168.19.121,Files renamed with .encrypted extension,ransomware,5
+2025-12-02 04:28:06.564630,user1,192.168.42.131,Encryption pattern matches ransomware,ransomware,5
+2026-01-01 09:36:06.564630,david,192.168.5.131,Mass file modification detected,ransomware,5
+2025-12-13 00:46:06.570629,eve,192.168.3.21,Encryption pattern matches ransomware,ransomware,5
+2025-12-06 08:41:06.568630,system,192.168.46.151,Suspicious file encryption activity,ransomware,5
+2025-12-20 05:24:06.564630,admin,192.168.7.131,Multiple files encrypted in short time interval,ransomware,5
+2025-12-24 09:33:06.564630,admin,192.168.18.171,Ransomware detected: 124 files encrypted,ransomware,5
+2025-12-10 15:35:06.567630,eve,192.168.39.61,Mass file modification detected,ransomware,5
+2025-12-08 13:13:06.570629,bob,192.168.8.131,Mass file modification detected,ransomware,5
+2025-12-05 01:26:06.566629,david,192.168.49.131,Mass file modification detected,ransomware,5
+2025-12-05 09:32:06.566629,user3,192.168.17.11,Encryption pattern matches ransomware,ransomware,5
+2025-12-12 05:07:06.565630,user1,192.168.6.81,Bulk file encryption in progress,ransomware,5
+2025-12-11 23:39:06.564630,admin,192.168.12.21,Mass file modification detected,ransomware,5
+2025-12-16 08:51:06.570629,bob,192.168.15.31,Bulk file encryption in progress,ransomware,5
+2026-01-04 01:19:06.566629,admin,192.168.29.141,Bulk file encryption in progress,ransomware,5
+2025-12-10 06:26:06.570629,eve,192.168.37.11,Ransomware detected: 339 files encrypted,ransomware,5
+2025-12-09 07:14:06.567630,bob,192.168.1.11,Encryption pattern matches ransomware,ransomware,5
+2025-12-19 07:34:06.564630,alice,192.168.42.61,Mass file modification detected,ransomware,5
+2025-12-30 07:20:06.570629,admin,192.168.4.11,Mass file modification detected,ransomware,5
+2025-12-18 02:46:06.565630,user2,192.168.18.151,Ransom note file detected: README.txt,ransomware,5
+2025-12-13 19:21:06.570629,alice,192.168.30.131,Crypto-locker behavior detected,ransomware,5
+2026-01-04 09:24:06.568630,user2,192.168.40.161,Crypto-locker behavior detected,ransomware,5
+2025-12-10 01:59:06.570629,system,192.168.1.151,Encryption pattern matches ransomware,ransomware,5
+2025-12-12 06:24:06.570629,bob,192.168.13.31,Files renamed with .encrypted extension,ransomware,5
+2026-01-02 08:03:06.566629,charlie,192.168.36.61,Shadow copy deletion detected,ransomware,5
+2025-12-11 10:29:06.568630,bob,192.168.6.191,Encryption pattern matches ransomware,ransomware,5
+2026-01-03 21:02:06.566629,charlie,192.168.42.151,Bulk file encryption in progress,ransomware,5
+2025-12-23 20:06:06.568630,user1,192.168.21.171,Shadow copy deletion detected,ransomware,5
+2025-12-02 10:13:06.570629,admin,192.168.41.171,Encryption pattern matches ransomware,ransomware,5
+2025-12-26 02:27:06.569629,system,192.168.5.161,Ransomware detected: 142 files encrypted,ransomware,5
+2025-12-24 03:43:06.565630,charlie,192.168.23.41,Crypto-locker behavior detected,ransomware,5
+2025-12-08 04:06:06.565630,charlie,192.168.26.1,Suspicious file encryption activity,ransomware,5
+2025-12-21 20:37:06.570629,system,192.168.47.231,Shadow copy deletion detected,ransomware,5
+2025-12-15 08:02:06.568630,system,192.168.33.141,Shadow copy deletion detected,ransomware,5
+2025-12-01 22:08:06.563627,bob,192.168.10.21,Files renamed with .encrypted extension,ransomware,5
+2025-12-20 04:45:06.567630,charlie,192.168.40.141,Mass file modification detected,ransomware,5
+2025-12-11 22:32:06.570629,david,192.168.33.181,Crypto-locker behavior detected,ransomware,5
+2025-12-03 13:59:06.570629,system,192.168.36.121,Encryption pattern matches ransomware,ransomware,5
+2025-12-02 13:45:06.565630,user2,192.168.39.211,Suspicious file encryption activity,ransomware,5
+2025-12-18 07:04:06.568630,eve,192.168.45.231,Files renamed with .encrypted extension,ransomware,5
+2025-12-13 10:36:06.568630,alice,192.168.19.211,Encryption pattern matches ransomware,ransomware,5
+2025-12-16 08:03:06.564630,user1,192.168.1.221,Shadow copy deletion detected,ransomware,5
+2026-01-03 21:05:06.566629,user2,192.168.17.141,Bulk file encryption in progress,ransomware,5
+2025-12-21 00:01:06.570629,user2,192.168.24.151,Bulk file encryption in progress,ransomware,5
+2025-12-07 01:14:06.570629,eve,192.168.37.11,Ransomware detected: 953 files encrypted,ransomware,5
+2025-12-13 17:44:06.569629,bob,192.168.49.201,Bulk file encryption in progress,ransomware,5
+2026-01-02 16:38:06.565630,system,192.168.39.21,Mass file modification detected,ransomware,5
+2026-01-02 12:21:06.569629,alice,192.168.25.141,Ransomware detected: 524 files encrypted,ransomware,5
+2025-12-16 06:19:06.564630,david,192.168.16.11,Multiple files encrypted in short time interval,ransomware,5
+2025-12-24 02:28:06.566629,bob,192.168.21.161,Suspicious file encryption activity,ransomware,5
+2025-12-24 19:10:06.566629,user2,192.168.29.111,Crypto-locker behavior detected,ransomware,5
+2025-12-18 16:57:06.564630,charlie,192.168.9.211,Encryption pattern matches ransomware,ransomware,5
+2025-12-24 14:32:06.566629,user1,192.168.49.91,Crypto-locker behavior detected,ransomware,5
+2025-12-31 16:10:06.565630,user1,192.168.19.1,Files renamed with .encrypted extension,ransomware,5
+2025-12-07 02:49:06.567630,system,192.168.27.81,Bulk file encryption in progress,ransomware,5
+2026-01-01 09:18:06.567630,user2,192.168.23.71,Ransom note file detected: README.txt,ransomware,5
+2025-12-30 17:49:06.568630,admin,192.168.38.71,Multiple files encrypted in short time interval,ransomware,5
+2025-12-06 22:44:06.564630,eve,192.168.10.171,Multiple files encrypted in short time interval,ransomware,5
+2025-12-30 02:43:06.565630,admin,192.168.49.211,Ransomware detected: 609 files encrypted,ransomware,5
+2025-12-11 06:07:06.564630,david,192.168.17.211,Multiple files encrypted in short time interval,ransomware,5
+2025-12-03 06:39:06.567630,alice,192.168.37.11,Suspicious file encryption activity,ransomware,5
+2025-12-30 07:42:06.569629,user1,192.168.31.201,Shadow copy deletion detected,ransomware,5
+2025-12-19 08:42:06.567630,david,192.168.17.111,Ransomware detected: 566 files encrypted,ransomware,5
+2025-12-04 06:47:06.564630,admin,192.168.7.111,Ransomware detected: 348 files encrypted,ransomware,5
+2026-01-05 00:00:06.569629,bob,192.168.42.231,Crypto-locker behavior detected,ransomware,5
+2025-12-17 12:03:06.569629,user3,192.168.32.131,Files renamed with .encrypted extension,ransomware,5
+2025-12-12 06:18:06.569629,system,192.168.6.141,Files renamed with .encrypted extension,ransomware,5
+2025-12-09 05:14:06.568630,bob,192.168.48.191,Crypto-locker behavior detected,ransomware,5
+2025-12-02 13:19:06.568630,eve,192.168.48.31,Crypto-locker behavior detected,ransomware,5
+2026-01-05 08:01:06.564630,user1,192.168.45.161,Ransom note file detected: README.txt,ransomware,5
+2026-01-04 15:52:06.570629,system,192.168.10.1,Ransom note file detected: README.txt,ransomware,5
+2025-12-29 09:38:06.569629,charlie,192.168.15.1,Ransom note file detected: README.txt,ransomware,5
+2025-12-07 15:09:06.567630,user3,192.168.43.11,Bulk file encryption in progress,ransomware,5
+2025-12-22 07:54:06.565630,user2,192.168.42.1,Files renamed with .encrypted extension,ransomware,5
+2025-12-25 03:53:06.564630,system,192.168.5.21,Mass file modification detected,ransomware,5
+2025-12-06 12:16:06.565630,admin,192.168.21.151,Ransom note file detected: README.txt,ransomware,5
+2025-12-25 03:10:06.570629,alice,192.168.38.11,Ransom note file detected: README.txt,ransomware,5
+2025-12-01 20:36:06.569629,bob,192.168.29.161,Files renamed with .encrypted extension,ransomware,5
+2025-12-18 12:47:06.566629,alice,192.168.8.1,Ransomware detected: 921 files encrypted,ransomware,5
+2025-12-31 21:56:06.565630,david,192.168.18.121,Encryption pattern matches ransomware,ransomware,5
+2025-12-10 14:49:06.568630,david,192.168.8.221,Bulk file encryption in progress,ransomware,5
+2026-01-01 18:24:06.566629,charlie,192.168.41.211,Suspicious file encryption activity,ransomware,5
+2025-12-20 12:48:06.570629,bob,192.168.43.171,Ransom note file detected: README.txt,ransomware,5
+2026-01-04 23:51:06.568630,admin,192.168.37.41,Multiple files encrypted in short time interval,ransomware,5
+2025-12-03 19:38:06.566629,user2,192.168.23.161,Suspicious file encryption activity,ransomware,5
+2025-12-14 05:32:06.568630,admin,192.168.44.11,Ransomware detected: 876 files encrypted,ransomware,5
+2025-12-24 22:18:06.570629,admin,192.168.20.171,Bulk file encryption in progress,ransomware,5
+2025-12-28 04:35:06.569629,alice,192.168.11.11,Multiple files encrypted in short time interval,ransomware,5
+2025-12-24 03:44:06.567630,david,192.168.33.141,Ransomware detected: 951 files encrypted,ransomware,5
+2025-12-29 23:17:06.568630,admin,192.168.48.11,Multiple files encrypted in short time interval,ransomware,5
+2025-12-09 07:57:06.570629,alice,192.168.3.181,Files renamed with .encrypted extension,ransomware,5
+2025-12-14 02:57:06.567630,charlie,192.168.16.61,Mass file modification detected,ransomware,5
+2025-12-04 19:08:06.566629,bob,192.168.37.141,Crypto-locker behavior detected,ransomware,5
+2025-12-31 21:11:06.568630,eve,192.168.4.211,Encryption pattern matches ransomware,ransomware,5
+2025-12-20 19:19:06.568630,charlie,192.168.16.211,Encryption pattern matches ransomware,ransomware,5
+2025-12-09 06:38:06.564630,bob,192.168.30.191,Files renamed with .encrypted extension,ransomware,5
+2025-12-01 23:14:06.566629,eve,192.168.47.151,Encryption pattern matches ransomware,ransomware,5
+2025-12-25 04:55:06.568630,eve,192.168.8.31,Shadow copy deletion detected,ransomware,5
+2025-12-28 05:58:06.567630,system,192.168.21.41,Multiple files encrypted in short time interval,ransomware,5
+2025-12-09 22:32:06.568630,user1,192.168.39.231,Files renamed with .encrypted extension,ransomware,5
+2025-12-07 22:25:06.568630,bob,192.168.28.121,Files renamed with .encrypted extension,ransomware,5
+2025-12-04 23:24:06.569629,system,192.168.34.181,Ransom note file detected: README.txt,ransomware,5
+2026-01-04 12:29:06.569629,bob,192.168.6.141,Encryption pattern matches ransomware,ransomware,5
+2025-12-27 18:55:06.567630,user1,192.168.22.101,Shadow copy deletion detected,ransomware,5
+2026-01-04 13:11:06.568630,alice,192.168.21.21,Encryption pattern matches ransomware,ransomware,5
+2025-12-10 06:34:06.564630,bob,192.168.34.61,Ransomware detected: 825 files encrypted,ransomware,5
+2025-12-27 22:16:06.564630,charlie,192.168.18.111,Shadow copy deletion detected,ransomware,5
+2026-01-04 07:05:06.570629,user2,192.168.39.41,Encryption pattern matches ransomware,ransomware,5
+2025-12-09 19:54:06.570629,alice,192.168.48.11,Crypto-locker behavior detected,ransomware,5
+2025-12-15 13:41:06.568630,user3,192.168.37.141,Multiple files encrypted in short time interval,ransomware,5
+2026-01-02 19:37:06.566629,user3,192.168.22.151,Ransomware detected: 386 files encrypted,ransomware,5
+2025-12-22 23:13:06.568630,user2,192.168.11.181,Files renamed with .encrypted extension,ransomware,5
+2025-12-28 23:36:06.567630,user2,192.168.32.101,Ransomware detected: 295 files encrypted,ransomware,5
+2025-12-22 16:52:06.568630,user1,192.168.26.221,Crypto-locker behavior detected,ransomware,5
+2025-12-09 10:19:06.565630,charlie,192.168.16.21,Multiple files encrypted in short time interval,ransomware,5
+2025-12-31 02:07:06.568630,user1,192.168.24.231,Ransom note file detected: README.txt,ransomware,5
+2025-12-04 07:46:06.567630,david,192.168.28.21,Encryption pattern matches ransomware,ransomware,5
+2025-12-30 06:33:06.564630,david,192.168.1.31,Multiple files encrypted in short time interval,ransomware,5
+2025-12-23 18:48:06.563627,user3,192.168.15.91,Encryption pattern matches ransomware,ransomware,5
+2025-12-09 06:51:06.566629,bob,192.168.6.41,Ransomware detected: 737 files encrypted,ransomware,5
+2025-12-28 03:59:06.568630,eve,192.168.35.1,Shadow copy deletion detected,ransomware,5
+2025-12-15 17:53:06.567630,user1,192.168.28.11,Suspicious file encryption activity,ransomware,5
+2025-12-08 21:24:06.567630,system,192.168.39.111,Bulk file encryption in progress,ransomware,5
+2025-12-11 04:01:06.568630,user1,192.168.13.81,Ransomware detected: 164 files encrypted,ransomware,5
+2025-12-16 06:44:06.570629,david,192.168.12.121,Multiple files encrypted in short time interval,ransomware,5
+2025-12-07 16:35:06.563627,user1,192.168.48.61,Files renamed with .encrypted extension,ransomware,5
+2025-12-31 23:04:06.565630,alice,192.168.6.101,Suspicious file encryption activity,ransomware,5
+2026-01-05 01:22:06.566629,user3,192.168.23.21,Files renamed with .encrypted extension,ransomware,5
+2025-12-25 19:44:06.569629,user1,192.168.42.121,Encryption pattern matches ransomware,ransomware,5
+2025-12-07 21:45:06.565630,bob,192.168.31.121,Shadow copy deletion detected,ransomware,5
+2025-12-04 08:15:06.567630,bob,192.168.7.61,Ransomware detected: 195 files encrypted,ransomware,5
+2025-12-02 03:29:06.565630,david,192.168.42.11,Mass file modification detected,ransomware,5
+2025-12-09 17:25:06.564630,user3,192.168.10.31,Suspicious file encryption activity,ransomware,5
+2026-01-03 23:37:06.569629,admin,192.168.23.121,Suspicious file encryption activity,ransomware,5
+2025-12-11 09:42:06.568630,system,192.168.33.171,Multiple files encrypted in short time interval,ransomware,5
+2026-01-04 02:05:06.564630,user1,192.168.20.211,Files renamed with .encrypted extension,ransomware,5
+2026-01-05 07:41:06.566629,eve,192.168.36.81,Ransomware detected: 977 files encrypted,ransomware,5
+2025-12-04 08:35:06.568630,system,192.168.6.111,Bulk file encryption in progress,ransomware,5
+2025-12-03 00:20:06.564630,user1,192.168.38.31,Ransomware detected: 533 files encrypted,ransomware,5
+2025-12-12 16:22:06.570629,user2,192.168.9.61,Suspicious file encryption activity,ransomware,5
+2025-12-24 15:59:06.564630,david,192.168.36.181,Multiple files encrypted in short time interval,ransomware,5
+2025-12-24 04:37:06.568630,system,192.168.28.161,Files renamed with .encrypted extension,ransomware,5
+2025-12-24 14:37:06.566629,admin,192.168.35.101,Ransomware detected: 735 files encrypted,ransomware,5
+2026-01-05 08:48:06.564630,system,192.168.21.51,Files renamed with .encrypted extension,ransomware,5
+2025-12-30 23:44:06.570629,admin,192.168.32.11,Multiple files encrypted in short time interval,ransomware,5
+2025-12-21 12:32:06.564630,alice,192.168.10.61,Ransom note file detected: README.txt,ransomware,5
+2025-12-07 01:29:06.570629,admin,192.168.42.101,Mass file modification detected,ransomware,5
+2025-12-02 19:41:06.566629,user1,192.168.18.221,Bulk file encryption in progress,ransomware,5
+2025-12-25 15:05:06.570629,charlie,192.168.45.21,Ransom note file detected: README.txt,ransomware,5
+2025-12-11 10:44:06.565630,bob,192.168.35.231,Files renamed with .encrypted extension,ransomware,5
+2025-12-06 03:02:06.566629,user1,192.168.21.171,Files renamed with .encrypted extension,ransomware,5
+2026-01-02 20:58:06.568630,admin,192.168.18.201,Multiple files encrypted in short time interval,ransomware,5
+2025-12-19 20:15:06.564630,alice,192.168.23.211,Encryption pattern matches ransomware,ransomware,5
+2025-12-13 11:08:06.565630,system,192.168.44.201,Suspicious file encryption activity,ransomware,5
+2025-12-23 14:35:06.565630,charlie,192.168.38.121,Crypto-locker behavior detected,ransomware,5
+2025-12-20 15:06:06.565630,admin,192.168.3.241,Encryption pattern matches ransomware,ransomware,5
+2025-12-21 14:16:06.570629,user1,192.168.46.1,Multiple files encrypted in short time interval,ransomware,5
+2025-12-21 13:34:06.567630,user2,192.168.32.161,Ransomware detected: 551 files encrypted,ransomware,5
+2025-12-09 21:04:06.570629,user2,192.168.12.21,Ransomware detected: 609 files encrypted,ransomware,5
+2025-12-02 17:32:06.570629,charlie,192.168.12.91,Shadow copy deletion detected,ransomware,5
+2025-12-23 17:58:06.566629,user1,192.168.21.41,Suspicious file encryption activity,ransomware,5
+2025-12-22 16:57:06.566629,alice,192.168.5.41,Multiple files encrypted in short time interval,ransomware,5
+2026-01-04 14:48:06.566629,system,192.168.43.1,Shadow copy deletion detected,ransomware,5
+2026-01-03 04:37:06.565630,eve,192.168.2.61,Ransomware detected: 766 files encrypted,ransomware,5
+2025-12-18 22:42:06.565630,system,192.168.42.141,Encryption pattern matches ransomware,ransomware,5
+2025-12-26 16:02:06.567630,user3,192.168.10.201,Multiple files encrypted in short time interval,ransomware,5
+2026-01-03 08:02:06.564630,user3,192.168.19.101,Mass file modification detected,ransomware,5
+2025-12-17 22:25:06.570629,user1,192.168.27.21,Files renamed with .encrypted extension,ransomware,5
+2025-12-09 17:32:06.570629,admin,192.168.33.241,Files renamed with .encrypted extension,ransomware,5
+2025-12-22 16:45:06.567630,user2,192.168.24.111,Bulk file encryption in progress,ransomware,5
+2025-12-06 19:05:06.570629,admin,192.168.27.201,Crypto-locker behavior detected,ransomware,5
+2025-12-01 18:32:06.570629,david,192.168.27.191,Multiple files encrypted in short time interval,ransomware,5
+2025-12-06 16:59:06.568630,admin,192.168.49.71,Files renamed with .encrypted extension,ransomware,5
+2026-01-04 04:53:06.568630,user2,192.168.25.141,Ransom note file detected: README.txt,ransomware,5
+2025-12-21 03:22:06.566629,user1,192.168.39.221,Ransomware detected: 296 files encrypted,ransomware,5
+2025-12-31 07:10:06.566629,system,192.168.14.141,Shadow copy deletion detected,ransomware,5
+2025-12-14 10:36:06.570629,david,192.168.25.161,Multiple files encrypted in short time interval,ransomware,5
+2025-12-06 04:06:06.568630,eve,192.168.46.61,Crypto-locker behavior detected,ransomware,5
+2025-12-31 16:01:06.567630,david,192.168.33.111,Files renamed with .encrypted extension,ransomware,5
+2025-12-08 12:01:06.568630,david,192.168.42.211,Bulk file encryption in progress,ransomware,5
+2025-12-21 11:08:06.569629,david,192.168.45.81,Ransomware detected: 790 files encrypted,ransomware,5
+2026-01-01 18:37:06.570629,david,192.168.45.51,Mass file modification detected,ransomware,5
+2025-12-23 17:53:06.567630,system,192.168.37.181,Mass file modification detected,ransomware,5
+2025-12-06 07:08:06.567630,user3,192.168.2.11,Suspicious file encryption activity,ransomware,5
+2025-12-06 21:50:06.570629,bob,192.168.16.241,Files renamed with .encrypted extension,ransomware,5
+2025-12-15 07:10:06.565630,admin,192.168.4.41,Files renamed with .encrypted extension,ransomware,5
+2025-12-27 13:56:06.564630,system,192.168.28.211,Ransom note file detected: README.txt,ransomware,5
+2026-01-02 23:40:06.564630,bob,192.168.17.21,Mass file modification detected,ransomware,5
+2025-12-05 19:43:06.568630,bob,192.168.39.11,Encryption pattern matches ransomware,ransomware,5
+2025-12-20 13:15:06.569629,admin,192.168.23.151,Files renamed with .encrypted extension,ransomware,5
+2025-12-21 10:59:06.567630,david,192.168.25.21,Suspicious file encryption activity,ransomware,5
+2026-01-02 04:39:06.563627,user1,192.168.7.11,Mass file modification detected,ransomware,5
+2025-12-02 19:43:06.564630,david,192.168.16.41,Encryption pattern matches ransomware,ransomware,5
+2025-12-08 09:15:06.569629,alice,192.168.15.1,Mass file modification detected,ransomware,5
+2026-01-03 23:41:06.565630,david,192.168.43.81,Shadow copy deletion detected,ransomware,5
+2025-12-05 21:09:06.569629,admin,192.168.17.141,Ransomware detected: 534 files encrypted,ransomware,5
+2026-01-05 04:42:06.570629,system,192.168.15.71,Bulk file encryption in progress,ransomware,5
+2025-12-24 06:02:06.569629,alice,192.168.21.191,Multiple files encrypted in short time interval,ransomware,5
+2025-12-16 10:29:06.565630,user2,192.168.18.101,Mass file modification detected,ransomware,5
+2025-12-02 18:46:06.567630,user1,192.168.22.211,Encryption pattern matches ransomware,ransomware,5
+2025-12-06 23:08:06.565630,charlie,192.168.9.91,Ransomware detected: 137 files encrypted,ransomware,5
+2025-12-07 02:53:06.568630,alice,192.168.19.161,Crypto-locker behavior detected,ransomware,5
+2025-12-30 07:43:06.565630,admin,192.168.39.131,Ransom note file detected: README.txt,ransomware,5
+2025-12-23 13:11:06.568630,system,192.168.12.151,Multiple files encrypted in short time interval,ransomware,5
+2025-12-03 14:15:06.570629,system,192.168.37.211,Shadow copy deletion detected,ransomware,5
+2025-12-20 03:56:06.564630,charlie,192.168.22.161,Ransom note file detected: README.txt,ransomware,5
+2025-12-22 12:51:06.566629,eve,192.168.38.81,Bulk file encryption in progress,ransomware,5
+2025-12-05 13:35:06.565630,system,192.168.18.141,Multiple files encrypted in short time interval,ransomware,5
+2025-12-24 14:30:06.567630,user2,192.168.28.1,Files renamed with .encrypted extension,ransomware,5
+2025-12-17 10:49:06.567630,admin,192.168.27.41,Mass file modification detected,ransomware,5
+2025-12-23 09:03:06.566629,eve,192.168.49.121,Ransom note file detected: README.txt,ransomware,5
+2025-12-09 08:07:06.565630,alice,192.168.3.41,Ransom note file detected: README.txt,ransomware,5
+2025-12-08 18:19:06.569629,charlie,192.168.24.181,Encryption pattern matches ransomware,ransomware,5
+2026-01-01 12:03:06.569629,alice,192.168.26.71,Suspicious file encryption activity,ransomware,5
+2025-12-14 19:53:06.570629,bob,192.168.18.231,Crypto-locker behavior detected,ransomware,5
+2025-12-14 21:17:06.567630,eve,192.168.16.181,Mass file modification detected,ransomware,5
+2025-12-11 08:53:06.568630,user2,192.168.14.141,Shadow copy deletion detected,ransomware,5
+2026-01-04 20:29:06.570629,charlie,192.168.1.21,Suspicious file encryption activity,ransomware,5
+2025-12-23 16:21:06.570629,alice,192.168.25.51,Encryption pattern matches ransomware,ransomware,5
+2025-12-20 08:57:06.569629,system,192.168.12.71,Ransom note file detected: README.txt,ransomware,5
+2025-12-27 11:28:06.570629,system,192.168.22.201,Bulk file encryption in progress,ransomware,5
+2025-12-26 00:31:06.568630,eve,192.168.21.11,Bulk file encryption in progress,ransomware,5
+2025-12-12 06:20:06.570629,eve,192.168.44.231,Crypto-locker behavior detected,ransomware,5
+2025-12-23 08:15:06.567630,bob,192.168.41.221,Shadow copy deletion detected,ransomware,5
+2026-01-04 21:06:06.566629,user2,192.168.39.51,Multiple files encrypted in short time interval,ransomware,5
+2025-12-28 06:39:06.569629,system,192.168.36.131,Mass file modification detected,ransomware,5
+2026-01-02 05:23:06.570629,charlie,192.168.34.41,Multiple files encrypted in short time interval,ransomware,5
+2025-12-21 17:34:06.564630,user3,192.168.11.151,Mass file modification detected,ransomware,5
+2026-01-02 20:04:06.567630,user3,192.168.39.221,Encryption pattern matches ransomware,ransomware,5
+2025-12-19 23:47:06.566629,alice,192.168.45.231,Ransom note file detected: README.txt,ransomware,5
+2025-12-09 11:13:06.570629,charlie,192.168.6.161,Suspicious file encryption activity,ransomware,5
+2025-12-11 22:25:06.570629,admin,192.168.27.141,Multiple files encrypted in short time interval,ransomware,5
+2025-12-06 17:55:06.565630,user1,192.168.3.111,Files renamed with .encrypted extension,ransomware,5
+2025-12-17 19:33:06.566629,user1,192.168.30.161,Shadow copy deletion detected,ransomware,5
+2025-12-23 06:08:06.567630,david,192.168.14.241,Crypto-locker behavior detected,ransomware,5
+2025-12-25 18:58:06.565630,alice,192.168.49.111,Files renamed with .encrypted extension,ransomware,5
+2025-12-10 20:29:06.566629,alice,192.168.29.201,Multiple files encrypted in short time interval,ransomware,5
+2025-12-27 20:00:06.568630,david,192.168.20.21,Multiple files encrypted in short time interval,ransomware,5
+2025-12-06 22:20:06.569629,charlie,192.168.14.111,Crypto-locker behavior detected,ransomware,5
+2025-12-02 02:04:06.569629,system,192.168.22.51,Crypto-locker behavior detected,ransomware,5
+2025-12-27 20:30:06.565630,david,192.168.3.11,Shadow copy deletion detected,ransomware,5
+2025-12-24 19:12:06.568630,system,192.168.46.131,Suspicious file encryption activity,ransomware,5
+2025-12-24 12:17:06.567630,admin,192.168.14.81,Multiple files encrypted in short time interval,ransomware,5
+2025-12-31 00:57:06.568630,user2,192.168.6.211,Multiple files encrypted in short time interval,ransomware,5
+2025-12-10 03:56:06.564630,user2,192.168.46.1,Bulk file encryption in progress,ransomware,5
+2025-12-24 22:32:06.569629,charlie,192.168.20.41,Shadow copy deletion detected,ransomware,5
+2025-12-26 02:46:06.564630,david,192.168.47.71,Shadow copy deletion detected,ransomware,5
+2025-12-30 06:21:06.566629,admin,192.168.37.71,Shadow copy deletion detected,ransomware,5
+2026-01-02 08:21:06.564630,admin,192.168.32.51,Bulk file encryption in progress,ransomware,5
+2025-12-26 10:18:06.564630,system,192.168.40.111,Multiple files encrypted in short time interval,ransomware,5
+2025-12-27 03:47:06.567630,eve,192.168.13.111,Crypto-locker behavior detected,ransomware,5
+2025-12-28 18:51:06.566629,system,192.168.35.231,Ransomware detected: 244 files encrypted,ransomware,5
+2025-12-22 22:25:06.566629,david,192.168.23.121,Multiple files encrypted in short time interval,ransomware,5
+2025-12-09 06:24:06.564630,charlie,192.168.22.161,Ransom note file detected: README.txt,ransomware,5
+2025-12-06 03:21:06.565630,admin,192.168.39.111,Ransom note file detected: README.txt,ransomware,5
+2026-01-04 09:28:06.570629,eve,192.168.9.221,Encryption pattern matches ransomware,ransomware,5
+2025-12-07 22:50:06.565630,charlie,192.168.18.201,Shadow copy deletion detected,ransomware,5
+2025-12-20 10:07:06.569629,bob,192.168.48.141,Suspicious file encryption activity,ransomware,5
+2025-12-18 09:50:06.565630,user2,192.168.28.171,Bulk file encryption in progress,ransomware,5
+2025-12-24 07:30:06.566629,user3,192.168.4.31,Multiple files encrypted in short time interval,ransomware,5
+2025-12-09 03:42:06.568630,user2,192.168.12.221,Suspicious file encryption activity,ransomware,5
+2025-12-30 07:43:06.564630,user2,192.168.39.231,Encryption pattern matches ransomware,ransomware,5
+2025-12-05 00:29:06.570629,alice,192.168.3.41,Shadow copy deletion detected,ransomware,5
+2025-12-21 01:34:06.564630,eve,192.168.7.141,Suspicious file encryption activity,ransomware,5
+2025-12-15 19:51:06.568630,charlie,192.168.46.211,Bulk file encryption in progress,ransomware,5
+2025-12-12 16:41:06.567630,user1,192.168.6.91,Bulk file encryption in progress,ransomware,5
+2025-12-28 03:24:06.569629,user2,192.168.26.91,Bulk file encryption in progress,ransomware,5
+2025-12-15 08:12:06.568630,bob,192.168.38.231,Mass file modification detected,ransomware,5
+2025-12-16 16:57:06.565630,alice,192.168.13.101,Ransom note file detected: README.txt,ransomware,5
+2026-01-03 02:07:06.566629,charlie,192.168.44.181,Multiple files encrypted in short time interval,ransomware,5
+2025-12-09 08:05:06.567630,bob,192.168.1.151,Suspicious file encryption activity,ransomware,5
+2025-12-30 20:25:06.565630,user3,192.168.42.31,Ransom note file detected: README.txt,ransomware,5
+2025-12-26 10:48:06.565630,david,192.168.42.91,Mass file modification detected,ransomware,5
+2025-12-19 06:42:06.564630,alice,192.168.6.231,Bulk file encryption in progress,ransomware,5
+2025-12-15 07:30:06.570629,user1,192.168.2.211,Shadow copy deletion detected,ransomware,5
+2025-12-28 11:43:06.564630,eve,192.168.44.41,Encryption pattern matches ransomware,ransomware,5
+2025-12-03 15:02:06.568630,admin,192.168.45.81,Shadow copy deletion detected,ransomware,5
+2025-12-11 13:57:06.565630,bob,192.168.27.61,Encryption pattern matches ransomware,ransomware,5
+2025-12-23 12:56:06.566629,charlie,192.168.26.11,Files renamed with .encrypted extension,ransomware,5
+2025-12-26 13:44:06.568630,admin,192.168.25.181,Suspicious file encryption activity,ransomware,5
+2025-12-13 02:22:06.564630,david,192.168.26.1,Ransomware detected: 911 files encrypted,ransomware,5
+2025-12-11 13:07:06.569629,david,192.168.14.91,Files renamed with .encrypted extension,ransomware,5
+2025-12-07 06:00:06.564630,system,192.168.11.181,Bulk file encryption in progress,ransomware,5
+2025-12-22 12:04:06.570629,user2,192.168.13.161,Crypto-locker behavior detected,ransomware,5
+2025-12-22 22:12:06.569629,eve,192.168.19.81,Mass file modification detected,ransomware,5
+2025-12-13 05:33:06.567630,admin,192.168.1.11,Suspicious file encryption activity,ransomware,5
+2026-01-02 23:03:06.569629,bob,192.168.1.241,Shadow copy deletion detected,ransomware,5
+2025-12-08 18:23:06.567630,eve,192.168.39.31,Multiple files encrypted in short time interval,ransomware,5
+2026-01-04 07:19:06.566629,user2,192.168.10.161,Ransomware detected: 711 files encrypted,ransomware,5
+2025-12-15 01:52:06.563627,system,192.168.16.211,Crypto-locker behavior detected,ransomware,5
+2025-12-29 05:37:06.570629,bob,192.168.22.151,Shadow copy deletion detected,ransomware,5
+2026-01-01 08:57:06.568630,bob,192.168.15.211,Ransom note file detected: README.txt,ransomware,5
+2025-12-04 12:55:06.563627,alice,192.168.5.181,Files renamed with .encrypted extension,ransomware,5
+2025-12-08 14:09:06.568630,user2,192.168.13.181,Mass file modification detected,ransomware,5
+2025-12-13 02:08:06.565630,charlie,192.168.3.131,Crypto-locker behavior detected,ransomware,5
+2025-12-31 08:13:06.566629,user2,192.168.30.11,Multiple files encrypted in short time interval,ransomware,5
+2025-12-08 20:28:06.570629,user2,192.168.30.61,Ransomware detected: 708 files encrypted,ransomware,5
+2025-12-14 18:12:06.570629,alice,192.168.28.171,Bulk file encryption in progress,ransomware,5
+2025-12-05 21:41:06.565630,alice,192.168.21.41,Suspicious file encryption activity,ransomware,5
+2025-12-17 04:10:06.569629,admin,192.168.44.31,Crypto-locker behavior detected,ransomware,5
+2025-12-03 14:19:06.564630,user1,192.168.16.211,Files renamed with .encrypted extension,ransomware,5
+2025-12-11 10:40:06.567630,user2,192.168.13.1,Encryption pattern matches ransomware,ransomware,5
+2025-12-24 18:07:06.567630,bob,192.168.9.241,Ransomware detected: 399 files encrypted,ransomware,5
+2026-01-02 22:31:06.565630,system,192.168.28.81,Ransom note file detected: README.txt,ransomware,5
+2025-12-11 16:23:06.565630,user3,192.168.8.41,Crypto-locker behavior detected,ransomware,5
+2025-12-18 04:28:06.564630,david,192.168.6.211,Ransomware detected: 205 files encrypted,ransomware,5
+2025-12-09 01:31:06.565630,charlie,192.168.27.231,Bulk file encryption in progress,ransomware,5
+2025-12-18 10:35:06.570629,charlie,192.168.3.231,Bulk file encryption in progress,ransomware,5
+2025-12-31 22:19:06.565630,user3,192.168.18.71,Multiple files encrypted in short time interval,ransomware,5
+2025-12-20 17:36:06.565630,david,192.168.9.81,Crypto-locker behavior detected,ransomware,5
+2025-12-20 19:58:06.564630,admin,192.168.30.101,Suspicious file encryption activity,ransomware,5
+2025-12-06 02:34:06.564630,user1,192.168.29.131,Encryption pattern matches ransomware,ransomware,5
+2025-12-04 03:28:06.564630,user3,192.168.42.211,Shadow copy deletion detected,ransomware,5
+2025-12-09 10:07:06.567630,bob,192.168.2.121,Suspicious file encryption activity,ransomware,5
+2025-12-26 08:28:06.564630,alice,192.168.17.11,Bulk file encryption in progress,ransomware,5
+2026-01-03 04:24:06.567630,david,192.168.22.81,Multiple files encrypted in short time interval,ransomware,5
+2025-12-18 15:03:06.570629,user2,192.168.36.191,Shadow copy deletion detected,ransomware,5
+2025-12-23 14:21:06.570629,bob,192.168.16.141,Crypto-locker behavior detected,ransomware,5
+2025-12-23 23:24:06.569629,bob,192.168.10.51,Encryption pattern matches ransomware,ransomware,5
+2025-12-12 23:47:06.566629,user1,192.168.32.141,Suspicious file encryption activity,ransomware,5
+2025-12-02 13:41:06.569629,david,192.168.17.191,Ransom note file detected: README.txt,ransomware,5
+2025-12-06 06:34:06.569629,eve,192.168.40.221,Ransomware detected: 810 files encrypted,ransomware,5
+2025-12-15 08:34:06.568630,charlie,192.168.28.101,Crypto-locker behavior detected,ransomware,5
+2025-12-29 04:15:06.569629,admin,192.168.14.31,Bulk file encryption in progress,ransomware,5
+2025-12-05 05:48:06.564630,user1,192.168.39.241,Ransomware detected: 237 files encrypted,ransomware,5
+2025-12-16 05:40:06.570629,alice,192.168.26.131,Crypto-locker behavior detected,ransomware,5
+2025-12-21 11:46:06.570629,user3,192.168.38.71,Bulk file encryption in progress,ransomware,5
+2025-12-18 01:24:06.570629,user3,192.168.35.241,Shadow copy deletion detected,ransomware,5
+2025-12-11 23:43:06.567630,user1,192.168.34.131,Ransomware detected: 911 files encrypted,ransomware,5
+2025-12-30 13:30:06.570629,bob,192.168.40.21,Shadow copy deletion detected,ransomware,5
+2025-12-22 20:50:06.566629,user2,192.168.48.151,Suspicious file encryption activity,ransomware,5
+2026-01-01 20:18:06.565630,bob,192.168.20.241,Ransom note file detected: README.txt,ransomware,5
+2025-12-17 13:23:06.567630,user1,192.168.49.81,Multiple files encrypted in short time interval,ransomware,5
+2026-01-04 08:34:06.569629,system,192.168.9.221,Bulk file encryption in progress,ransomware,5
+2026-01-01 16:19:06.568630,system,192.168.28.121,Crypto-locker behavior detected,ransomware,5
+2025-12-04 23:18:06.568630,admin,192.168.4.51,Mass file modification detected,ransomware,5
+2025-12-08 17:29:06.564630,admin,192.168.38.141,Ransom note file detected: README.txt,ransomware,5
+2025-12-01 23:07:06.569629,bob,192.168.30.71,Multiple files encrypted in short time interval,ransomware,5
+2025-12-16 14:14:06.570629,system,192.168.39.51,Mass file modification detected,ransomware,5
+2025-12-17 06:21:06.570629,bob,192.168.39.161,Suspicious file encryption activity,ransomware,5
+2025-12-07 05:44:06.566629,david,192.168.19.191,Suspicious file encryption activity,ransomware,5
+2025-12-27 08:19:06.568630,eve,192.168.12.11,Mass file modification detected,ransomware,5
+2025-12-05 01:41:06.566629,user3,192.168.24.191,Files renamed with .encrypted extension,ransomware,5
+2025-12-17 05:33:06.568630,user1,192.168.42.91,Ransom note file detected: README.txt,ransomware,5
+2025-12-20 12:55:06.566629,david,192.168.33.171,Multiple files encrypted in short time interval,ransomware,5
+2025-12-07 16:31:06.569629,bob,192.168.9.171,Bulk file encryption in progress,ransomware,5
+2025-12-11 00:06:06.570629,alice,192.168.35.221,Mass file modification detected,ransomware,5
+2025-12-25 15:42:06.564630,system,192.168.26.111,Multiple files encrypted in short time interval,ransomware,5
+2025-12-14 22:49:06.564630,admin,192.168.43.211,Mass file modification detected,ransomware,5
+2025-12-25 22:48:06.567630,alice,192.168.42.41,Ransom note file detected: README.txt,ransomware,5
+2025-12-31 02:13:06.569629,admin,192.168.24.201,Multiple files encrypted in short time interval,ransomware,5
+2025-12-25 00:16:06.566629,user1,192.168.1.221,Suspicious file encryption activity,ransomware,5
+2025-12-03 15:07:06.564630,system,192.168.6.31,Mass file modification detected,ransomware,5
+2025-12-25 18:04:06.565630,alice,192.168.28.1,Encryption pattern matches ransomware,ransomware,5
+2025-12-13 19:04:06.565630,david,192.168.49.111,Crypto-locker behavior detected,ransomware,5
+2025-12-24 22:39:06.570629,system,192.168.2.171,Shadow copy deletion detected,ransomware,5
+2025-12-27 08:40:06.565630,admin,192.168.33.161,Files renamed with .encrypted extension,ransomware,5
+2025-12-08 08:37:06.567630,david,192.168.15.231,Bulk file encryption in progress,ransomware,5
+2025-12-15 08:06:06.568630,bob,192.168.38.1,Ransom note file detected: README.txt,ransomware,5
+2025-12-20 02:14:06.568630,user1,192.168.4.241,Ransom note file detected: README.txt,ransomware,5
+2026-01-03 10:28:06.570629,alice,192.168.26.101,Files renamed with .encrypted extension,ransomware,5
+2025-12-12 07:52:06.567630,eve,192.168.12.171,Suspicious file encryption activity,ransomware,5
+2025-12-17 15:03:06.564630,user3,192.168.12.171,Ransom note file detected: README.txt,ransomware,5
+2025-12-25 04:17:06.568630,system,192.168.23.71,Files renamed with .encrypted extension,ransomware,5
+2025-12-28 21:53:06.570629,alice,192.168.11.161,Suspicious file encryption activity,ransomware,5
+2025-12-16 11:07:06.565630,user3,192.168.13.1,Shadow copy deletion detected,ransomware,5
+2026-01-01 19:28:06.570629,user2,192.168.29.11,Mass file modification detected,ransomware,5
+2025-12-13 12:41:06.568630,admin,192.168.5.11,Shadow copy deletion detected,ransomware,5
+2026-01-04 21:25:06.566629,eve,192.168.43.41,Encryption pattern matches ransomware,ransomware,5
+2025-12-31 15:40:06.570629,user3,192.168.38.141,Encryption pattern matches ransomware,ransomware,5
+2025-12-08 03:09:06.566629,system,192.168.18.211,Encryption pattern matches ransomware,ransomware,5
+2025-12-03 22:13:06.564630,bob,192.168.9.31,Crypto-locker behavior detected,ransomware,5
+2025-12-11 11:20:06.569629,david,192.168.34.131,Mass file modification detected,ransomware,5
+2025-12-16 10:18:06.563627,eve,192.168.47.111,Ransom note file detected: README.txt,ransomware,5
+2025-12-18 05:18:06.566629,eve,192.168.32.241,Shadow copy deletion detected,ransomware,5
+2025-12-07 18:36:06.567630,alice,192.168.46.91,Crypto-locker behavior detected,ransomware,5
+2025-12-31 04:43:06.564630,user2,192.168.37.91,Ransomware detected: 298 files encrypted,ransomware,5
+2025-12-08 18:35:06.564630,system,192.168.26.11,Shadow copy deletion detected,ransomware,5
+2025-12-31 00:28:06.564630,user3,192.168.3.21,Files renamed with .encrypted extension,ransomware,5
+2025-12-06 00:44:06.565630,admin,192.168.41.41,Encryption pattern matches ransomware,ransomware,5
+2025-12-03 04:55:06.568630,admin,192.168.14.101,Bulk file encryption in progress,ransomware,5
+2025-12-25 18:38:06.568630,charlie,192.168.35.31,Multiple files encrypted in short time interval,ransomware,5
+2025-12-18 04:55:06.569629,eve,192.168.19.131,Multiple files encrypted in short time interval,ransomware,5
+2025-12-09 10:41:06.569629,user2,192.168.44.211,Bulk file encryption in progress,ransomware,5
+2025-12-12 10:07:06.566629,david,192.168.18.1,Ransomware detected: 69 files encrypted,ransomware,5
+2025-12-29 16:27:06.565630,user1,192.168.47.171,Multiple files encrypted in short time interval,ransomware,5
+2025-12-24 14:14:06.565630,user3,192.168.33.141,Ransomware detected: 320 files encrypted,ransomware,5
+2025-12-18 14:50:06.564630,eve,192.168.18.141,Shadow copy deletion detected,ransomware,5
+2025-12-03 06:35:06.569629,admin,192.168.12.161,Multiple files encrypted in short time interval,ransomware,5
+2025-12-25 06:36:06.565630,eve,192.168.38.1,Encryption pattern matches ransomware,ransomware,5
+2025-12-12 18:07:06.568630,user2,192.168.21.151,Encryption pattern matches ransomware,ransomware,5
+2025-12-25 02:06:06.567630,user1,192.168.31.81,Shadow copy deletion detected,ransomware,5
+2025-12-21 03:47:06.567630,charlie,192.168.19.41,Bulk file encryption in progress,ransomware,5
+2025-12-24 16:22:06.569629,system,192.168.44.181,Suspicious file encryption activity,ransomware,5
+2025-12-12 14:00:06.565630,alice,192.168.9.221,Shadow copy deletion detected,ransomware,5
+2025-12-05 06:44:06.565630,alice,192.168.25.151,Multiple files encrypted in short time interval,ransomware,5
+2025-12-23 00:21:06.564630,alice,192.168.5.201,Shadow copy deletion detected,ransomware,5
+2025-12-11 17:46:06.568630,user2,192.168.31.191,Bulk file encryption in progress,ransomware,5
+2026-01-04 17:59:06.569629,user3,192.168.18.191,Suspicious file encryption activity,ransomware,5
+2025-12-08 03:20:06.570629,user3,192.168.42.191,Ransomware detected: 345 files encrypted,ransomware,5
+2025-12-31 02:40:06.566629,user3,192.168.5.181,Mass file modification detected,ransomware,5
+2025-12-18 05:04:06.570629,bob,192.168.6.101,Shadow copy deletion detected,ransomware,5
+2025-12-25 00:28:06.568630,user3,192.168.32.121,Shadow copy deletion detected,ransomware,5
+2025-12-10 00:42:06.564630,david,192.168.29.111,Ransomware detected: 540 files encrypted,ransomware,5
+2025-12-18 00:19:06.570629,david,192.168.45.191,Ransomware detected: 967 files encrypted,ransomware,5
+2025-12-19 12:18:06.569629,user2,192.168.5.31,Files renamed with .encrypted extension,ransomware,5
+2025-12-02 19:45:06.569629,eve,192.168.41.51,Crypto-locker behavior detected,ransomware,5
+2025-12-27 09:35:06.565630,admin,192.168.36.51,Shadow copy deletion detected,ransomware,5
+2025-12-15 08:38:06.567630,user3,192.168.1.231,Ransom note file detected: README.txt,ransomware,5
+2025-12-03 09:03:06.566629,bob,192.168.18.41,Bulk file encryption in progress,ransomware,5
+2025-12-01 22:11:06.569629,charlie,192.168.2.71,Suspicious file encryption activity,ransomware,5
+2025-12-10 07:19:06.564630,eve,192.168.17.81,Crypto-locker behavior detected,ransomware,5
+2025-12-23 09:46:06.570629,david,192.168.32.201,Ransomware detected: 407 files encrypted,ransomware,5
+2025-12-07 04:25:06.570629,user2,192.168.46.131,Ransom note file detected: README.txt,ransomware,5
+2025-12-13 22:30:06.570629,user2,192.168.17.11,Multiple files encrypted in short time interval,ransomware,5
+2025-12-16 00:10:06.566629,alice,192.168.21.221,Bulk file encryption in progress,ransomware,5
+2025-12-25 15:30:06.566629,bob,192.168.2.121,Ransom note file detected: README.txt,ransomware,5
+2025-12-08 22:14:06.564630,eve,192.168.29.71,Mass file modification detected,ransomware,5
+2026-01-05 08:10:06.570629,user2,192.168.26.211,Mass file modification detected,ransomware,5
+2025-12-05 09:02:06.564630,eve,192.168.27.71,Ransomware detected: 946 files encrypted,ransomware,5
+2026-01-01 19:11:06.565630,user3,192.168.40.231,Mass file modification detected,ransomware,5
+2025-12-31 00:56:06.564630,charlie,192.168.32.191,Files renamed with .encrypted extension,ransomware,5
+2025-12-05 08:05:06.565630,admin,192.168.46.11,Suspicious file encryption activity,ransomware,5
+2025-12-22 10:48:06.565630,user3,192.168.18.151,Mass file modification detected,ransomware,5
+2025-12-15 14:49:06.565630,user1,192.168.23.91,Ransomware detected: 336 files encrypted,ransomware,5
+2025-12-14 12:15:06.570629,alice,192.168.11.91,Multiple files encrypted in short time interval,ransomware,5
+2025-12-12 15:13:06.565630,alice,192.168.14.241,Crypto-locker behavior detected,ransomware,5
+2025-12-06 15:08:06.570629,user2,192.168.17.151,Files renamed with .encrypted extension,ransomware,5
+2026-01-03 17:06:06.566629,admin,192.168.17.201,Ransom note file detected: README.txt,ransomware,5
+2025-12-02 16:29:06.565630,bob,192.168.8.131,Mass file modification detected,ransomware,5
+2025-12-23 04:41:06.568630,alice,192.168.6.161,Suspicious file encryption activity,ransomware,5
+2025-12-23 21:52:06.565630,bob,192.168.48.71,Encryption pattern matches ransomware,ransomware,5
+2025-12-27 10:31:06.570629,bob,192.168.29.51,Suspicious file encryption activity,ransomware,5
+2025-12-25 07:19:06.565630,alice,192.168.45.231,Ransomware detected: 682 files encrypted,ransomware,5
+2025-12-14 07:07:06.568630,alice,192.168.28.171,Multiple files encrypted in short time interval,ransomware,5
+2025-12-03 17:58:06.563627,david,192.168.29.31,Mass file modification detected,ransomware,5
+2025-12-09 22:32:06.570629,charlie,192.168.41.201,Suspicious file encryption activity,ransomware,5
+2025-12-04 20:30:06.569629,alice,192.168.31.191,Encryption pattern matches ransomware,ransomware,5
+2025-12-27 18:03:06.568630,eve,192.168.31.81,Shadow copy deletion detected,ransomware,5
+2025-12-14 21:03:06.567630,user3,192.168.46.111,Ransom note file detected: README.txt,ransomware,5
+2025-12-26 09:17:06.570629,user1,192.168.33.21,Suspicious file encryption activity,ransomware,5
+2026-01-03 12:29:06.564630,admin,192.168.13.161,Encryption pattern matches ransomware,ransomware,5
+2025-12-29 19:51:06.568630,bob,192.168.22.241,Multiple files encrypted in short time interval,ransomware,5
+2026-01-04 04:49:06.570629,alice,192.168.9.101,Mass file modification detected,ransomware,5
+2025-12-24 09:07:06.565630,admin,192.168.2.221,Crypto-locker behavior detected,ransomware,5
+2025-12-18 10:02:06.567630,eve,192.168.23.131,Multiple files encrypted in short time interval,ransomware,5
+2025-12-15 06:37:06.569629,alice,192.168.46.31,Mass file modification detected,ransomware,5
+2025-12-30 13:58:06.569629,user2,192.168.9.151,Suspicious file encryption activity,ransomware,5
+2025-12-11 14:35:06.570629,admin,192.168.38.141,Shadow copy deletion detected,ransomware,5
+2025-12-14 19:49:06.567630,user2,192.168.14.181,Multiple files encrypted in short time interval,ransomware,5
+2025-12-03 04:04:06.566629,alice,192.168.13.171,Files renamed with .encrypted extension,ransomware,5
+2025-12-18 09:30:06.570629,user3,192.168.33.241,Shadow copy deletion detected,ransomware,5
+2025-12-21 06:24:06.569629,charlie,192.168.25.111,Multiple files encrypted in short time interval,ransomware,5
+2025-12-20 23:53:06.567630,eve,192.168.39.231,Suspicious file encryption activity,ransomware,5
+2025-12-24 07:05:06.569629,admin,192.168.10.101,Ransomware detected: 166 files encrypted,ransomware,5
+2025-12-02 06:43:06.568630,user3,192.168.22.151,Shadow copy deletion detected,ransomware,5
+2025-12-21 04:19:06.567630,bob,192.168.43.141,Multiple files encrypted in short time interval,ransomware,5
+2025-12-15 04:39:06.569629,system,192.168.42.71,Ransom note file detected: README.txt,ransomware,5
+2025-12-11 06:18:06.565630,system,192.168.38.161,Encryption pattern matches ransomware,ransomware,5
+2026-01-05 10:59:06.565630,bob,192.168.41.221,Ransomware detected: 562 files encrypted,ransomware,5
+2025-12-12 03:59:06.569629,user3,192.168.26.171,Crypto-locker behavior detected,ransomware,5
+2025-12-23 07:45:06.570629,david,192.168.13.221,Crypto-locker behavior detected,ransomware,5
+2025-12-30 05:22:06.568630,alice,192.168.25.31,Files renamed with .encrypted extension,ransomware,5
+2026-01-02 06:10:06.568630,david,192.168.28.11,Shadow copy deletion detected,ransomware,5
+2025-12-19 07:27:06.565630,user2,192.168.8.31,Files renamed with .encrypted extension,ransomware,5
+2025-12-21 21:16:06.569629,admin,192.168.23.81,Files renamed with .encrypted extension,ransomware,5
+2025-12-28 08:21:06.566629,admin,192.168.9.131,Shadow copy deletion detected,ransomware,5
+2025-12-03 03:18:06.567630,user1,192.168.38.91,Ransomware detected: 293 files encrypted,ransomware,5
+2026-01-04 10:24:06.568630,david,192.168.34.151,Crypto-locker behavior detected,ransomware,5
+2025-12-10 03:26:06.570629,charlie,192.168.45.1,Ransomware detected: 728 files encrypted,ransomware,5
+2026-01-02 01:58:06.564630,alice,192.168.17.21,Files renamed with .encrypted extension,ransomware,5
+2025-12-26 08:46:06.567630,bob,192.168.45.41,Ransom note file detected: README.txt,ransomware,5
+2025-12-05 14:40:06.567630,system,192.168.4.121,Multiple files encrypted in short time interval,ransomware,5
+2025-12-02 20:33:06.568630,admin,192.168.28.211,Encryption pattern matches ransomware,ransomware,5
+2025-12-05 17:50:06.567630,alice,192.168.25.161,Mass file modification detected,ransomware,5
+2025-12-24 10:06:06.569629,user3,192.168.8.1,Encryption pattern matches ransomware,ransomware,5
+2025-12-08 20:59:06.564630,david,192.168.44.41,Bulk file encryption in progress,ransomware,5
+2026-01-01 13:19:06.570629,eve,192.168.15.211,Files renamed with .encrypted extension,ransomware,5
+2025-12-06 12:35:06.565630,user2,192.168.2.171,Ransomware detected: 583 files encrypted,ransomware,5
+2025-12-06 06:14:06.564630,alice,192.168.42.231,Files renamed with .encrypted extension,ransomware,5
+2025-12-05 16:55:06.570629,alice,192.168.22.121,Bulk file encryption in progress,ransomware,5
+2026-01-01 22:22:06.564630,david,192.168.19.161,Ransomware detected: 279 files encrypted,ransomware,5
+2026-01-01 23:32:06.568630,admin,192.168.15.81,Ransom note file detected: README.txt,ransomware,5
+2025-12-09 20:41:06.564630,user1,192.168.44.41,Multiple files encrypted in short time interval,ransomware,5
+2025-12-16 13:20:06.570629,david,192.168.4.1,Suspicious file encryption activity,ransomware,5
+2025-12-24 15:53:06.570629,david,192.168.32.91,Suspicious file encryption activity,ransomware,5
+2025-12-24 14:39:06.570629,bob,192.168.3.211,Ransomware detected: 668 files encrypted,ransomware,5
+2025-12-29 20:50:06.570629,david,192.168.26.41,Ransomware detected: 562 files encrypted,ransomware,5
+2025-12-06 20:09:06.569629,system,192.168.47.171,Ransomware detected: 139 files encrypted,ransomware,5
+2025-12-30 17:42:06.568630,admin,192.168.31.151,Ransomware detected: 651 files encrypted,ransomware,5
+2025-12-10 09:44:06.565630,charlie,192.168.9.101,Ransom note file detected: README.txt,ransomware,5
+2025-12-15 20:01:06.565630,user2,192.168.44.21,Encryption pattern matches ransomware,ransomware,5
+2025-12-04 16:22:06.567630,system,192.168.11.211,Ransom note file detected: README.txt,ransomware,5
+2025-12-19 04:05:06.565630,user1,192.168.27.241,Files renamed with .encrypted extension,ransomware,5
+2025-12-18 04:23:06.568630,charlie,192.168.1.151,Ransomware detected: 238 files encrypted,ransomware,5
+2025-12-30 22:09:06.565630,alice,192.168.36.31,Mass file modification detected,ransomware,5
+2025-12-13 01:22:06.567630,system,192.168.32.141,Ransomware detected: 433 files encrypted,ransomware,5
+2026-01-03 20:44:06.566629,user3,192.168.47.111,Shadow copy deletion detected,ransomware,5
+2025-12-13 12:35:06.564630,eve,192.168.4.141,Crypto-locker behavior detected,ransomware,5
+2025-12-31 14:17:06.566629,user1,192.168.3.31,Ransomware detected: 562 files encrypted,ransomware,5
+2025-12-09 04:56:06.568630,user2,192.168.13.81,Bulk file encryption in progress,ransomware,5
+2025-12-10 03:17:06.568630,david,192.168.44.71,Suspicious file encryption activity,ransomware,5
+2025-12-06 02:07:06.566629,eve,192.168.19.211,Encryption pattern matches ransomware,ransomware,5
+2025-12-09 05:54:06.569629,bob,192.168.40.61,Shadow copy deletion detected,ransomware,5
+2025-12-16 18:08:06.565630,system,192.168.35.131,Ransomware detected: 322 files encrypted,ransomware,5
+2025-12-24 11:28:06.565630,david,192.168.44.1,Bulk file encryption in progress,ransomware,5
+2025-12-15 10:09:06.566629,user2,192.168.26.61,Suspicious file encryption activity,ransomware,5
