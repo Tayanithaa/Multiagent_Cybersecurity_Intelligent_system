@@ -42,16 +42,7 @@ def main():
         "python training/train_bert_model.py"
     )
     
-    # Step 3: Backup old model
-    if os.path.exists("agents/bert_detection.py"):
-        print("\n📦 Backing up old bert_detection.py...")
-        os.rename("agents/bert_detection.py", "agents/bert_detection_OLD.py")
-    
-    # Step 4: Integrate new model
-    print("\n🔄 Integrating new BERT model...")
-    os.rename("agents/bert_detection_new.py", "agents/bert_detection.py")
-    
-    # Step 5: Test
+    # Step 3: Test BERT model
     run_command(
         "Step 3/4: Test BERT model",
         "python agents/bert_detection.py"

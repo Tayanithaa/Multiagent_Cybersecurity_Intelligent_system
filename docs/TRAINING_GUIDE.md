@@ -1,9 +1,17 @@
-# 🚀 DistilBERT Training Pipeline - 10 Hour Sprint
+# 🚀 Multi-Agent Training Pipeline Guide
 
 ## 📋 Overview
-Transform the toy classifier into a production-grade DistilBERT model for security log classification.
+Transform the rule-based system into a production-grade ML-powered multi-agent system for security log analysis.
 
-**Goal:** Train a real transformer model on 8 threat classes with 90%+ precision.
+**Goal:** Train transformer models (BERT, RoBERTa, ALBERT) for 4 specialized agents with 90%+ precision.
+
+## 📂 Training Scripts Structure
+All training scripts are now organized in the `training/` folder:
+- `training/train_bert_model.py` - Main DistilBERT classifier (8 threat classes)
+- `training/train_correlation_roberta_model.py` - RoBERTa correlation model
+- `training/train_ti_enrichment_bert_model.py` - BERT threat intelligence enrichment
+- `training/train_response_albert_model.py` - ALBERT response recommendation
+- `training/run_training_pipeline.py` - Complete automated pipeline
 
 ---
 
@@ -79,20 +87,17 @@ Epoch 2/5: [████████████] loss: 0.234
 
 ---
 
-### **Hour 7-8: Model Integration**
+### **Hour 7-8: Model Verification**
 
-Replace old classifier:
-```powershell
-# Backup old version
-mv agents\bert_detection.py agents\bert_detection_OLD.py
-
-# Use new BERT model
-mv agents\bert_detection_new.py agents\bert_detection.py
-```
-
-**Test inference:**
+**Test trained model:**
 ```powershell
 python agents\bert_detection.py
+```
+
+**Expected output:**
+```
+Model loaded from models/distilbert_log_classifier/
+BERT Detection Agent ready
 ```
 
 ---
@@ -148,17 +153,17 @@ print(results[['raw_message', 'bert_class', 'bert_confidence', 'severity']].head
 
 **If training is too slow (>4 hours):**
 ```python
-# In train_bert_model.py, reduce:
+# In training/train_bert_model.py, reduce:
 "batch_size": 32,  # Increase if you have RAM
 "num_epochs": 3,   # Reduce epochs
 ```
 
 **If accuracy is low (<85%):**
 ```python
-# In generate_training_data.py:
+# In data/training/scripts/generate_training_data.py:
 SAMPLES_PER_CLASS = 2000  # More data
 
-# In train_bert_model.py:
+# In training/train_bert_model.py:
 "num_epochs": 8,          # More epochs
 "learning_rate": 1e-5,    # Lower learning rate
 ```
@@ -175,7 +180,7 @@ SAMPLES_PER_CLASS = 2000  # More data
 
 **Error: "CUDA out of memory"**
 ```python
-# Reduce batch size in train_bert_model.py
+# Reduce batch size in training/train_bert_model.py
 "batch_size": 8,
 ```
 
@@ -209,6 +214,7 @@ print(torch.cuda.is_available())  # Must be True
 
 ## 🔥 Quick Start (Copy-Paste)
 
+**Option 1: Train Main BERT Classifier Only**
 ```powershell
 # Complete pipeline in 4 commands:
 .\venv\Scripts\Activate.ps1
@@ -216,10 +222,41 @@ pip install torch transformers datasets accelerate
 python data/training/scripts/generate_training_data.py
 python training/train_bert_model.py
 
-# After training completes:
-mv agents\bert_detection.py agents\bert_detection_OLD.py
-mv agents\bert_detection_new.py agents\bert_detection.py
+# Test the trained model:
 python tests\test_correlation.py
+```
+
+**Option 2: Train All Multi-Agent Models (Automated)**
+```powershell
+# Complete automated pipeline:
+.\venv\Scripts\Activate.ps1
+pip install torch transformers datasets accelerate
+python training/run_training_pipeline.py
+
+# This will:
+# 1. Generate all required datasets
+# 2. Train DistilBERT for main classification
+# 3. Train RoBERTa for correlation
+# 4. Train BERT for TI enrichment
+# 5. Train ALBERT for response recommendations
+```
+
+**Option 3: Train Individual Models**
+```bash
+# Main classifier
+python training/train_bert_model.py
+
+# Correlation agent
+python data/training/scripts/generate_correlation_training_data.py
+python training/train_correlation_roberta_model.py
+
+# TI enrichment agent
+python data/training/scripts/generate_ti_enrichment_training_data.py
+python training/train_ti_enrichment_bert_model.py
+
+# Response agent
+python data/training/scripts/generate_response_training_data.py
+python training/train_response_albert_model.py
 ```
 
 ---
@@ -239,17 +276,31 @@ python tests\test_correlation.py
 
 ## ✅ Checklist
 
+**Basic Setup:**
 - [ ] GPU available and working
 - [ ] Dependencies installed
+- [ ] Virtual environment activated
+
+**Main BERT Classifier:**
 - [ ] 8,000 training samples generated
 - [ ] Model training started
 - [ ] Training completed (2-4 hours)
 - [ ] Test precision > 90%
-- [ ] Model saved successfully
+- [ ] Model saved to `models/distilbert_log_classifier/`
+
+**Multi-Agent Models (Optional):**
+- [ ] Correlation dataset generated (5,000 pairs)
+- [ ] RoBERTa correlation model trained
+- [ ] TI enrichment dataset generated (4,000 samples)
+- [ ] BERT TI enrichment model trained
+- [ ] Response dataset generated (1,000 samples)
+- [ ] ALBERT response model trained
+
+**Integration & Testing:**
 - [ ] Old bert_detection.py backed up
 - [ ] New model integrated
 - [ ] End-to-end test passes
-- [ ] Documentation complete
+- [ ] Documentation updated
 
 ---
 

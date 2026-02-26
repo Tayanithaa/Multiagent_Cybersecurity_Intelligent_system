@@ -540,8 +540,9 @@ jupyter==1.0.0      (notebooks)
 AI_Aztechs/
 ├── agents/
 │   ├── bert_detection.py          # BERT classifier module
-│   ├── bert_detection_OLD.py      # Backup of old TF-IDF classifier
 │   ├── correlation.py             # Alert correlation engine
+│   ├── ti_enrichment.py           # Threat intelligence enrichment
+│   ├── response_agent.py          # Response recommendation
 │   └── __pycache__/
 ├── data/
 │   ├── sample_logs.csv            # Test dataset (85 logs)
