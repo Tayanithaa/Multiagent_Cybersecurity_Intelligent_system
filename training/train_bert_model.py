@@ -12,7 +12,8 @@ from transformers import (
     DistilBertForSequenceClassification,
     Trainer,
     TrainingArguments,
-    EarlyStoppingCallback
+    EarlyStoppingCallback,
+    DataCollatorWithPadding
 )
 from datasets import Dataset
 import os
@@ -181,6 +182,13 @@ def compute_metrics(eval_pred):
     }
 
 # ==============================================================================
+# DATA COLLATOR
+# ==============================================================================
+print("\n📦 Setting up data collator...")
+data_collator = DataCollatorWithPadding(tokenizer=tokenizer)
+print("✅ Data collator ready")
+
+# ==============================================================================
 # TRAINER
 # ==============================================================================
 print("\n🏋️  Initializing trainer...")
@@ -189,7 +197,7 @@ trainer = Trainer(
     args=training_args,
     train_dataset=train_dataset,
     eval_dataset=val_dataset,
-    tokenizer=tokenizer,
+    data_collator=data_collator,
     compute_metrics=compute_metrics,
     callbacks=[EarlyStoppingCallback(early_stopping_patience=2)]
 )
