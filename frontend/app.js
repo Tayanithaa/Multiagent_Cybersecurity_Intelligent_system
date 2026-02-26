@@ -55,7 +55,7 @@ function switchTab(tabName) {
 // Load dashboard data
 async function loadDashboard() {
     try {
-        const response = await fetch(`${API_BASE}/incidents?limit=1000`);
+        const response = await fetch(`${API_BASE}/incidents?limit=10000`);
         if (!response.ok) throw new Error('Backend not available');
         
         allIncidents = await response.json();
