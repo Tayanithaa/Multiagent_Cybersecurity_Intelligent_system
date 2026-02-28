@@ -50,8 +50,9 @@ def main():
     print(f"Using device: {device}")
 
     df = pd.read_csv(CONFIG["data_path"])
-    if "correlation_text" not in df.columns or "should_correlate" not in df.columns:
-        raise ValueError("Dataset must include correlation_text and should_correlate columns")
+    required_cols = {"correlation_text", "should_correlate"}
+    if not required_cols.issubset(set(df.columns)):
+        raise ValueError(f"Dataset missing required columns: {required_cols}")
 
     df["label"] = df["should_correlate"].astype(int)
 
@@ -99,7 +100,7 @@ def main():
 
     training_args = TrainingArguments(
         output_dir=CONFIG["output_dir"],
-        evaluation_strategy="epoch",
+        eval_strategy="epoch",  # Changed from evaluation_strategy
         save_strategy="epoch",
         learning_rate=CONFIG["learning_rate"],
         per_device_train_batch_size=CONFIG["batch_size"],
@@ -121,7 +122,6 @@ def main():
         args=training_args,
         train_dataset=train_dataset,
         eval_dataset=val_dataset,
-        tokenizer=tokenizer,
         compute_metrics=compute_metrics,
         callbacks=[EarlyStoppingCallback(early_stopping_patience=2)],
     )
@@ -178,5 +178,5 @@ def main():
     print("Training complete")
 
 
-+if __name__ == "__main__":
-+    main()
+if __name__ == "__main__":
+    main()

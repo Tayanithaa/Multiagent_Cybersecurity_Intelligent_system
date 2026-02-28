@@ -49,8 +49,22 @@ def main():
     print(f"Using device: {device}")
 
     df = pd.read_csv(CONFIG["data_path"])
-    if "text" not in df.columns or "label" not in df.columns:
-        raise ValueError("Dataset must include text and label columns")
+    if "label" not in df.columns:
+        raise ValueError("Dataset must include label column")
+
+    # Create text column from relevant fields
+    df["text"] = (
+        "threat_type="
+        + df["threat_type"].astype(str)
+        + "; ti_category="
+        + df["ti_category"].astype(str)
+        + "; ti_risk_level="
+        + df["ti_risk_level"].astype(str)
+        + "; ti_impact="
+        + df["ti_impact"].astype(str)
+        + "; ti_mitigation="
+        + df["ti_mitigation"].astype(str)
+    )
 
     unique_labels = sorted(df["label"].unique())
     label_map = {label: idx for idx, label in enumerate(unique_labels)}
@@ -101,7 +115,7 @@ def main():
 
     training_args = TrainingArguments(
         output_dir=CONFIG["output_dir"],
-        evaluation_strategy="epoch",
+        eval_strategy="epoch",
         save_strategy="epoch",
         learning_rate=CONFIG["learning_rate"],
         per_device_train_batch_size=CONFIG["batch_size"],
@@ -123,7 +137,6 @@ def main():
         args=training_args,
         train_dataset=train_dataset,
         eval_dataset=val_dataset,
-        tokenizer=tokenizer,
         compute_metrics=compute_metrics,
         callbacks=[EarlyStoppingCallback(early_stopping_patience=2)],
     )
@@ -176,5 +189,5 @@ def main():
     print("Training complete")
 
 
-+if __name__ == "__main__":
-+    main()
+if __name__ == "__main__":
+    main()
