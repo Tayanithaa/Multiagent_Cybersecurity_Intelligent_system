@@ -20,7 +20,7 @@ from transformers import (
 
 
 CONFIG = {
-    "data_path": "data/training/csv/response/response_agent_training.csv",
+    "data_path": "C:\\Projects\\MultiagentcysIntelSys\\Multiagent_Cybersecurity_Intelligent_system\\data\\training\\csv\\response\\response_agent_training.csv",
     "model_name": "albert-base-v2",
     "output_dir": "models/response_albert",
     "max_length": 128,
@@ -187,6 +187,5 @@ def main():
 
     print("Training complete")
 
-
-+if __name__ == "__main__":
-+    main()
+if __name__ == "__main__":
+    main()

@@ -21,7 +21,7 @@ from transformers import (
 
 
 CONFIG = {
-    "data_path": "data/training/csv/correlation/correlation_dataset.csv",
+    "data_path": "C:\\Projects\\MultiagentcysIntelSys\\Multiagent_Cybersecurity_Intelligent_system\\data\\training\\csv\\correlation\\correlation_dataset.csv",
     "model_name": "roberta-base",
     "output_dir": "models/correlation_roberta",
     "max_length": 128,
@@ -178,5 +178,5 @@ def main():
     print("Training complete")
 
 
-+if __name__ == "__main__":
-+    main()
+if __name__ == "__main__":
+    main()
