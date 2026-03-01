@@ -1,0 +1,79 @@
+============================================================
+  CORRELATION ROBERTA MODEL - TRAINING RESULTS
+  Date: 2026-03-01
+  Model: roberta-base → RobertaForSequenceClassification
+  Device: CUDA
+============================================================
+
+------------------------------------------------------------
+TRAINING CONFIGURATION
+------------------------------------------------------------
+  Classes        : 2  (no, yes)
+  Epochs         : 4
+  Batch size     : 16
+  Learning rate  : 2e-5
+  Warmup steps   : 200
+  Weight decay   : 0.01
+  Total steps    : 360
+
+------------------------------------------------------------
+TRAINING LOG (loss per step)
+------------------------------------------------------------
+  Epoch 0.56  | loss: 0.68980   | grad_norm: 2.7912  | lr: 4.90e-06
+  Epoch 1.11  | loss: 0.13320   | grad_norm: 0.0545  | lr: 9.90e-06
+  Epoch 1.67  | loss: 0.00118   | grad_norm: 0.0232  | lr: 1.49e-05
+  Epoch 2.22  | loss: 0.000565  | grad_norm: 0.0106  | lr: 1.99e-05
+  Epoch 2.78  | loss: 0.000347  | grad_norm: 0.0065  | lr: 1.39e-05
+  Epoch 3.33  | loss: 0.000271  | grad_norm: 0.0062  | lr: 7.63e-06
+  Epoch 3.89  | loss: 0.000233  | grad_norm: 0.0053  | lr: 1.38e-06
+
+------------------------------------------------------------
+VALIDATION METRICS (per epoch)
+------------------------------------------------------------
+  Epoch 1 | eval_loss: 0.001774 | precision: 1.0 | recall: 1.0 | f1: 1.0
+  Epoch 2 | eval_loss: 0.000238 | precision: 1.0 | recall: 1.0 | f1: 1.0
+  Epoch 3 | eval_loss: 0.000120 | precision: 1.0 | recall: 1.0 | f1: 1.0
+  Epoch 4 | eval_loss: 0.000101 | precision: 1.0 | recall: 1.0 | f1: 1.0
+
+------------------------------------------------------------
+TEST SET METRICS
+------------------------------------------------------------
+  test_loss                  : 0.000100
+  test_precision             : 1.0
+  test_recall                : 1.0
+  test_f1                    : 1.0
+  test_runtime               : 1.784 s
+  test_samples_per_second    : 223.097
+  test_steps_per_second      : 14.014
+
+------------------------------------------------------------
+CLASSIFICATION REPORT (Test Set - 398 samples, 2 classes)
+------------------------------------------------------------
+              precision    recall  f1-score   support
+
+          no   1.0000      1.0000    1.0000       199
+         yes   1.0000      1.0000    1.0000       199
+
+    accuracy                          1.0000       398
+   macro avg   1.0000      1.0000    1.0000       398
+weighted avg   1.0000      1.0000    1.0000       398
+
+------------------------------------------------------------
+CONFUSION MATRIX
+------------------------------------------------------------
+              Predicted NO   Predicted YES
+  Actual NO        199              0
+  Actual YES         0            199
+
+------------------------------------------------------------
+TRAINING SUMMARY
+------------------------------------------------------------
+  best_checkpoint            : checkpoint-360
+  best_eval_loss             : 0.000101
+  total_flos                 : 376,511,920,220,160
+  total_epochs               : 4
+  total_steps                : 360
+
+------------------------------------------------------------
+STATUS: Training complete ✓
+============================================================

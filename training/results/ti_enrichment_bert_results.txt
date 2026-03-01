@@ -1,0 +1,73 @@
+============================================================
+  TI ENRICHMENT BERT MODEL - TRAINING RESULTS
+  Date: 2026-03-01
+  Model: bert-base-uncased → BertForSequenceClassification
+  Device: CUDA
+============================================================
+
+------------------------------------------------------------
+TRAINING CONFIGURATION
+------------------------------------------------------------
+  Dataset split : 2520 train | 280 val | 700 test
+  Epochs        : 4
+  Batch size    : 16
+  Learning rate : 2e-5
+  Warmup steps  : 200
+  Weight decay  : 0.01
+
+------------------------------------------------------------
+TRAINING LOG (loss per step)
+------------------------------------------------------------
+  Epoch 0.32  | loss: 1.869   | grad_norm: 7.889  | lr: 4.70e-06
+  Epoch 0.63  | loss: 1.118   | grad_norm: 5.520  | lr: 9.70e-06
+  Epoch 0.95  | loss: 0.4679  | grad_norm: 1.915  | lr: 1.47e-05
+
+  Epoch 1.27  | loss: 0.09746 | grad_norm: 0.5631 | lr: 1.97e-05
+  Epoch 1.58  | loss: 0.02285 | grad_norm: 0.1949 | lr: 1.782e-05
+  Epoch 1.90  | loss: 0.01295 | grad_norm: 0.1077 | lr: 1.551e-05
+
+  Epoch 2.22  | loss: 0.009269| grad_norm: 0.0755 | lr: 1.319e-05
+  Epoch 2.53  | loss: 0.00748 | grad_norm: 0.0835 | lr: 1.088e-05
+  Epoch 2.85  | loss: 0.006316| grad_norm: 0.0549 | lr: 8.565e-06
+
+  Epoch 3.17  | loss: 0.00564 | grad_norm: 0.0486 | lr: 6.250e-06
+  Epoch 3.48  | loss: 0.00528 | grad_norm: 0.0506 | lr: 3.935e-06
+  Epoch 3.80  | loss: 0.004962| grad_norm: 0.0402 | lr: 1.620e-06
+
+------------------------------------------------------------
+VALIDATION METRICS (per epoch)
+------------------------------------------------------------
+  Epoch 1 | eval_loss: 0.116000 | precision: 1.0 | recall: 1.0 | f1: 1.0
+  Epoch 2 | eval_loss: 0.007136 | precision: 1.0 | recall: 1.0 | f1: 1.0
+  Epoch 3 | eval_loss: 0.004076 | precision: 1.0 | recall: 1.0 | f1: 1.0
+  Epoch 4 | eval_loss: 0.003480 | precision: 1.0 | recall: 1.0 | f1: 1.0
+
+------------------------------------------------------------
+OVERALL TRAINING SUMMARY
+------------------------------------------------------------
+  train_runtime              : 170.2 s
+  train_samples_per_second   : 59.21
+  train_steps_per_second     : 3.713
+  train_loss                 : 0.2872
+  total_epochs               : 4
+
+------------------------------------------------------------
+CLASSIFICATION REPORT (Test Set - 700 samples, 7 classes)
+------------------------------------------------------------
+              precision    recall  f1-score   support
+
+     class 0   1.0000      1.0000    1.0000       100
+     class 1   1.0000      1.0000    1.0000       100
+     class 2   1.0000      1.0000    1.0000       100
+     class 3   1.0000      1.0000    1.0000       100
+     class 4   1.0000      1.0000    1.0000       100
+     class 5   1.0000      1.0000    1.0000       100
+     class 6   1.0000      1.0000    1.0000       100
+
+    accuracy                          1.0000       700
+   macro avg   1.0000      1.0000    1.0000       700
+weighted avg   1.0000      1.0000    1.0000       700
+
+------------------------------------------------------------
+STATUS: Training complete ✓
+============================================================

@@ -20,7 +20,7 @@ from transformers import (
 
 
 CONFIG = {
-    "data_path": "data/training/csv/ti_enrichment/ti_enrichment_dataset.csv",
+    "data_path": "C:\\Projects\\MultiagentcysIntelSys\\Multiagent_Cybersecurity_Intelligent_system\\data\\training\\csv\\ti_enrichment\\ti_enrichment_dataset.csv",
     "model_name": "bert-base-uncased",
     "output_dir": "models/ti_enrichment_bert",
     "max_length": 128,
@@ -49,6 +49,12 @@ def main():
     print(f"Using device: {device}")
 
     df = pd.read_csv(CONFIG["data_path"])
+
+    # Build 'text' column from available fields if not already present
+    if "text" not in df.columns:
+        text_cols = [c for c in ["threat_type", "ti_category", "ti_risk_level", "ti_impact", "ti_mitigation"] if c in df.columns]
+        df["text"] = df[text_cols].fillna("").astype(str).agg(" | ".join, axis=1)
+
     if "text" not in df.columns or "label" not in df.columns:
         raise ValueError("Dataset must include text and label columns")
 
