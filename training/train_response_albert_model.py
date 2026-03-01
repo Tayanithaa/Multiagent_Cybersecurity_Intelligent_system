@@ -113,7 +113,7 @@ def main():
 
     training_args = TrainingArguments(
         output_dir=CONFIG["output_dir"],
-        evaluation_strategy="epoch",
+        eval_strategy="epoch",
         save_strategy="epoch",
         learning_rate=CONFIG["learning_rate"],
         per_device_train_batch_size=CONFIG["batch_size"],
@@ -135,7 +135,7 @@ def main():
         args=training_args,
         train_dataset=train_dataset,
         eval_dataset=val_dataset,
-        tokenizer=tokenizer,
+        processing_class=tokenizer,
         compute_metrics=compute_metrics,
         callbacks=[EarlyStoppingCallback(early_stopping_patience=2)],
     )
