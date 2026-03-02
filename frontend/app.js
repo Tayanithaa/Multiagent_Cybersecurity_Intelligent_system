@@ -272,12 +272,14 @@ function displayIncidents(incidents) {
     }
     
     incidents.forEach((incident, index) => {
+        const sourceIp = getSourceIp(incident);
+        const alertCount = getAlertCount(incident);
         const row = document.createElement('tr');
         row.innerHTML = `
-            <td><code>${incident.source_ip}</code></td>
+            <td><code>${sourceIp}</code></td>
             <td><span class="badge badge-threat">${(incident.threat_type || '').replace('_', ' ').toUpperCase()}</span></td>
             <td><span class="badge badge-${incident.severity.toLowerCase()}">${incident.severity}</span></td>
-            <td><span class="badge badge-count">${incident.alert_count}</span></td>
+            <td><span class="badge badge-count">${alertCount}</span></td>
             <td><span class="badge badge-confidence">${(incident.avg_confidence * 100).toFixed(1)}%</span></td>
             <td><small>${incident.enrichment?.location || 'N/A'}</small></td>
             <td><span class="badge badge-action">${incident.recommended_action}</span></td>
@@ -292,6 +294,18 @@ function displayIncidents(incidents) {
 function getPriorityLabel(priority) {
     const labels = { 1: 'Critical', 2: 'High', 3: 'Medium' };
     return labels[priority] || 'Low';
+}
+
+function getSourceIp(incident) {
+    return incident?.source_ip || incident?.ip || incident?.src_ip || incident?.sourceIp || incident?.attacker_ip || 'N/A';
+}
+
+function getAlertCount(incident) {
+    return incident?.alert_count ?? incident?.alerts_count ?? incident?.alerts ?? incident?.correlated_events ?? 0;
+}
+
+function getTiCategory(incident) {
+    return incident?.ti_category || incident?.enrichment?.ti_category || incident?.enrichment?.category || incident?.threat_type || 'N/A';
 }
 
 function formatTimestamp(timestamp) {
@@ -321,7 +335,7 @@ function applyFilters() {
     
     if (search) {
         filtered = filtered.filter(i => 
-            (i.source_ip || '').toLowerCase().includes(search) ||
+            getSourceIp(i).toLowerCase().includes(search) ||
             (i.threat_type || '').toLowerCase().includes(search)
         );
     }
@@ -423,7 +437,7 @@ async function uploadFile() {
             resultBox.innerHTML = `
                 <h4>✅ Analysis Complete!</h4>
                 <p>File: <strong>${file.name}</strong></p>
-                <p>Incidents detected: <strong>${result.incidents_count || 0}</strong></p>
+                <p>Incidents detected: <strong>${result.incidents_detected ?? result.incidents_count ?? 0}</strong></p>
                 <p>Pipeline: BERT Detection → Correlation → TI Enrichment → Response Recommendations</p>
                 <button class="btn-primary" onclick="switchTab('incidents')">View Incidents</button>
             `;
@@ -474,6 +488,8 @@ function showIncidentDetails(incidentIndex) {
     }
     
     const enrichment = incident.enrichment || {};
+    const alertCount = getAlertCount(incident);
+    const tiCategory = getTiCategory(incident);
     
     modalBody.innerHTML = `
         <div class="modal-section">
@@ -499,11 +515,11 @@ function showIncidentDetails(incidentIndex) {
             <div class="detail-grid">
                 <div class="detail-item">
                     <span class="detail-label">Source IP:</span>
-                    <span class="detail-value"><code>${incident.source_ip}</code></span>
+                    <span class="detail-value"><code>${getSourceIp(incident)}</code></span>
                 </div>
                 <div class="detail-item">
                     <span class="detail-label">Alert Count:</span>
-                    <span class="detail-value"><strong>${incident.alert_count}</strong> correlated events</span>
+                    <span class="detail-value"><strong>${alertCount}</strong> correlated events</span>
                 </div>
                 <div class="detail-item">
                     <span class="detail-label">Affected Users:</span>
@@ -519,6 +535,10 @@ function showIncidentDetails(incidentIndex) {
         <div class="modal-section">
             <h3>🌐 Threat Intelligence Enrichment</h3>
             <div class="detail-grid">
+                <div class="detail-item">
+                    <span class="detail-label">TI Category:</span>
+                    <span class="detail-value">${tiCategory}</span>
+                </div>
                 <div class="detail-item">
                     <span class="detail-label">Geolocation:</span>
                     <span class="detail-value">${enrichment.location || 'Unknown'}</span>
