@@ -302,8 +302,9 @@ async function loadIncidents() {
     }
 }
 
-function displayIncidents(incidents) {
+function displayIncidents(incidents, groupBy = '') {
     const tbody = document.getElementById('incidents-body');
+    const thead = document.querySelector('#incidents-table thead tr');
     tbody.innerHTML = '';
 
     if (incidents.length === 0) {
@@ -311,24 +312,96 @@ function displayIncidents(incidents) {
         return;
     }
 
-    incidents.forEach((incident, index) => {
-        const sourceIp = getSourceIp(incident);
-        const alertCount = getAlertCount(incident);
-        const row = document.createElement('tr');
-        row.innerHTML = `
-            <td><code>${sourceIp}</code></td>
-            <td><span class="badge badge-threat">${(incident.threat_type || '').replace('_', ' ').toUpperCase()}</span></td>
-            <td><span class="badge badge-${incident.severity.toLowerCase()}">${incident.severity}</span></td>
-            <td><span class="badge badge-count">${alertCount}</span></td>
-            <td><span class="badge badge-confidence">${(incident.avg_confidence * 100).toFixed(1)}%</span></td>
-            <td><small>${incident.enrichment?.location || 'N/A'}</small></td>
-            <td><span class="badge badge-action">${incident.recommended_action}</span></td>
-            <td><span class="badge badge-priority-${incident.action_priority}">${getPriorityLabel(incident.action_priority)}</span></td>
-            <td><small>${formatTimestamp(incident.timestamp)}</small></td>
-            <td><button class="btn-details" onclick="showIncidentDetails(${index})">🔍 View</button></td>
-        `;
-        tbody.appendChild(row);
-    });
+    // --- GROUPED MODE ---
+    if (groupBy) {
+        // Hide table header — we render group headers instead
+        thead.style.display = 'none';
+
+        // Build group key extractor
+        const getKey = (inc) => {
+            switch (groupBy) {
+                case 'ip': return getSourceIp(inc) || 'Unknown';
+                case 'threat': return (inc.threat_type || inc.bert_class || 'Unknown').replace('_', ' ').toUpperCase();
+                case 'severity': return inc.severity || 'Unknown';
+                case 'priority': return getPriorityLabel(inc.action_priority);
+                default: return 'All';
+            }
+        };
+
+        // Group incidents
+        const groups = {};
+        incidents.forEach(inc => {
+            const key = getKey(inc);
+            if (!groups[key]) groups[key] = [];
+            groups[key].push(inc);
+        });
+
+        // Sort groups by count descending
+        const sortedKeys = Object.keys(groups).sort((a, b) => groups[b].length - groups[a].length);
+
+        sortedKeys.forEach(key => {
+            const groupIncidents = groups[key];
+
+            // Group header row
+            const headerRow = document.createElement('tr');
+            headerRow.className = 'group-header-row';
+            headerRow.innerHTML = `
+                <td colspan="10">
+                    <div class="group-header-inner">
+                        <span class="group-toggle" onclick="toggleGroup(this)">▾</span>
+                        <span class="group-label">${key}</span>
+                        <span class="group-count">${groupIncidents.length} incident${groupIncidents.length !== 1 ? 's' : ''}</span>
+                    </div>
+                </td>
+            `;
+            tbody.appendChild(headerRow);
+
+            // Incident rows for this group
+            groupIncidents.forEach((incident, index) => {
+                const row = buildIncidentRow(incident, incidents.indexOf(incident));
+                row.className = 'group-member-row';
+                tbody.appendChild(row);
+            });
+        });
+
+        // --- FLAT MODE ---
+    } else {
+        thead.style.display = '';
+        incidents.forEach((incident, index) => {
+            tbody.appendChild(buildIncidentRow(incident, index));
+        });
+    }
+}
+
+function toggleGroup(btn) {
+    const headerRow = btn.closest('tr');
+    let next = headerRow.nextElementSibling;
+    let hidden = false;
+    while (next && next.classList.contains('group-member-row')) {
+        if (!hidden) hidden = next.style.display === 'none';
+        next.style.display = next.style.display === 'none' ? '' : 'none';
+        next = next.nextElementSibling;
+    }
+    btn.textContent = hidden ? '▾' : '▸';
+}
+
+function buildIncidentRow(incident, index) {
+    const sourceIp = getSourceIp(incident);
+    const alertCount = getAlertCount(incident);
+    const row = document.createElement('tr');
+    row.innerHTML = `
+        <td><code>${sourceIp}</code></td>
+        <td><span class="badge badge-threat">${(incident.threat_type || '').replace('_', ' ').toUpperCase()}</span></td>
+        <td><span class="badge badge-${incident.severity.toLowerCase()}">${incident.severity}</span></td>
+        <td><span class="badge badge-count">${alertCount}</span></td>
+        <td><span class="badge badge-confidence">${(incident.avg_confidence * 100).toFixed(1)}%</span></td>
+        <td><small>${incident.enrichment?.location || 'N/A'}</small></td>
+        <td><span class="badge badge-action">${incident.recommended_action}</span></td>
+        <td><span class="badge badge-priority-${incident.action_priority}">${getPriorityLabel(incident.action_priority)}</span></td>
+        <td><small>${formatTimestamp(incident.timestamp)}</small></td>
+        <td><button class="btn-details" onclick="showIncidentDetails(${index})">🔍 View</button></td>
+    `;
+    return row;
 }
 
 function getPriorityLabel(priority) {
@@ -390,14 +463,17 @@ function initAuth() {
 function initFilters() {
     const severityFilter = document.getElementById('severity-filter');
     const searchInput = document.getElementById('search-input');
+    const groupBySelect = document.getElementById('group-by-select');
 
     severityFilter.addEventListener('change', applyFilters);
     searchInput.addEventListener('input', applyFilters);
+    groupBySelect.addEventListener('change', applyFilters);
 }
 
 function applyFilters() {
     const severity = document.getElementById('severity-filter').value;
     const search = document.getElementById('search-input').value.toLowerCase();
+    const groupBy = document.getElementById('group-by-select').value;
 
     let filtered = allIncidents;
 
@@ -412,7 +488,7 @@ function applyFilters() {
         );
     }
 
-    displayIncidents(filtered);
+    displayIncidents(filtered, groupBy);
 }
 
 // File upload
