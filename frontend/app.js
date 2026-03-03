@@ -12,14 +12,15 @@ let confidenceChart = null;
 
 // Initialize
 document.addEventListener('DOMContentLoaded', () => {
+    initAuth();
     initTabs();
     initFileUpload();
     initFilters();
     loadDashboard();
-    
+
     // Auto-refresh every 30 seconds
     setInterval(loadDashboard, 30000);
-    
+
     document.getElementById('refresh-btn').addEventListener('click', loadDashboard);
 });
 
@@ -38,14 +39,14 @@ function switchTab(tabName) {
     document.querySelectorAll('.tab-btn').forEach(btn => {
         btn.classList.toggle('active', btn.dataset.tab === tabName);
     });
-    
+
     // Update content
     document.querySelectorAll('.tab-content').forEach(content => {
         content.classList.toggle('active', content.id === `${tabName}-tab`);
     });
-    
+
     currentTab = tabName;
-    
+
     // Load data for the tab
     if (tabName === 'incidents') {
         loadIncidents();
@@ -57,13 +58,13 @@ async function loadDashboard() {
     try {
         const response = await fetch(`${API_BASE}/incidents?limit=1000`);
         if (!response.ok) throw new Error('Backend not available');
-        
+
         allIncidents = await response.json();
         console.log('📊 Loaded incidents:', allIncidents.length);
-        
+
         updateDashboardStats(allIncidents);
         updateCharts(allIncidents);
-        
+
         if (currentTab === 'incidents') {
             displayIncidents(allIncidents);
         }
@@ -76,19 +77,19 @@ async function loadDashboard() {
 // Update dashboard statistics
 function updateDashboardStats(incidents) {
     console.log('📈 Updating stats for', incidents.length, 'incidents');
-    
+
     const total = incidents.length;
     const highSeverity = incidents.filter(i => i.severity === 'HIGH').length;
     const mediumSeverity = incidents.filter(i => i.severity === 'MEDIUM').length;
     const lowSeverity = incidents.filter(i => i.severity === 'LOW').length;
     const criticalActions = incidents.filter(i => i.action_priority === 1).length;
-    
+
     const avgConfidence = incidents.length > 0
         ? (incidents.reduce((sum, i) => sum + (i.avg_confidence || i.bert_confidence || 0), 0) / incidents.length * 100).toFixed(1)
         : 0;
-    
+
     console.log('Stats:', { total, highSeverity, mediumSeverity, lowSeverity, criticalActions, avgConfidence });
-    
+
     document.getElementById('total-incidents').textContent = total;
     document.getElementById('high-severity').textContent = highSeverity;
     document.getElementById('avg-confidence').textContent = `${avgConfidence}%`;
@@ -103,13 +104,13 @@ function updateCharts(incidents) {
         const threat = incident.threat_type || incident.bert_class || 'unknown';
         threatCounts[threat] = (threatCounts[threat] || 0) + 1;
     });
-    
+
     const threatLabels = Object.keys(threatCounts).sort((a, b) => threatCounts[b] - threatCounts[a]);
     const threatData = threatLabels.map(label => threatCounts[label]);
-    
+
     // Professional color palette
     const colors = ['#4F46E5', '#7C3AED', '#EC4899', '#EF4444', '#F59E0B', '#10B981', '#3B82F6', '#6366F1'];
-    
+
     if (threatChart) threatChart.destroy();
     const threatCtx = document.getElementById('threatChart').getContext('2d');
     threatChart = new Chart(threatCtx, {
@@ -132,7 +133,7 @@ function updateCharts(incidents) {
             plugins: {
                 legend: {
                     position: 'right',
-                    labels: { 
+                    labels: {
                         color: '#374151',
                         font: { size: 12, weight: '500' },
                         padding: 15,
@@ -157,13 +158,13 @@ function updateCharts(incidents) {
             }
         }
     });
-    
+
     // Confidence Distribution - Line Graph
     // Create bins for confidence ranges
     const bins = [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100];
     const binLabels = bins.slice(0, -1).map((bin, i) => `${bin}-${bins[i + 1]}%`);
     const binCounts = new Array(bins.length - 1).fill(0);
-    
+
     incidents.forEach(incident => {
         const conf = (incident.bert_confidence || incident.avg_confidence || 0) * 100;
         for (let i = 0; i < bins.length - 1; i++) {
@@ -173,7 +174,7 @@ function updateCharts(incidents) {
             }
         }
     });
-    
+
     if (confidenceChart) confidenceChart.destroy();
     const confidenceCtx = document.getElementById('confidenceChart').getContext('2d');
     confidenceChart = new Chart(confidenceCtx, {
@@ -215,11 +216,11 @@ function updateCharts(incidents) {
             },
             scales: {
                 x: {
-                    grid: { 
+                    grid: {
                         color: '#F3F4F6',
                         drawBorder: false
                     },
-                    ticks: { 
+                    ticks: {
                         color: '#6B7280',
                         font: { size: 11 }
                     },
@@ -231,11 +232,11 @@ function updateCharts(incidents) {
                     }
                 },
                 y: {
-                    grid: { 
+                    grid: {
                         color: '#F3F4F6',
                         drawBorder: false
                     },
-                    ticks: { 
+                    ticks: {
                         color: '#6B7280',
                         font: { size: 11 },
                         stepSize: 1
@@ -265,12 +266,12 @@ async function loadIncidents() {
 function displayIncidents(incidents) {
     const tbody = document.getElementById('incidents-body');
     tbody.innerHTML = '';
-    
+
     if (incidents.length === 0) {
         tbody.innerHTML = '<tr><td colspan="10" class="no-data">No incidents to display. Upload logs to analyze.</td></tr>';
         return;
     }
-    
+
     incidents.forEach((incident, index) => {
         const sourceIp = getSourceIp(incident);
         const alertCount = getAlertCount(incident);
@@ -314,11 +315,39 @@ function formatTimestamp(timestamp) {
     return date.toLocaleString();
 }
 
+// Auth session
+function initAuth() {
+    const sessionStr = localStorage.getItem('soc_session');
+    if (!sessionStr) {
+        window.location.replace('auth.html');
+        return;
+    }
+    try {
+        const session = JSON.parse(sessionStr);
+        const nameEl = document.getElementById('user-name');
+        if (nameEl && session.username) {
+            nameEl.textContent = session.username;
+        }
+    } catch (e) {
+        // session malformed — log out
+        localStorage.removeItem('soc_session');
+        window.location.replace('auth.html');
+    }
+
+    const logoutBtn = document.getElementById('logout-btn');
+    if (logoutBtn) {
+        logoutBtn.addEventListener('click', () => {
+            localStorage.removeItem('soc_session');
+            window.location.replace('auth.html');
+        });
+    }
+}
+
 // Filters
 function initFilters() {
     const severityFilter = document.getElementById('severity-filter');
     const searchInput = document.getElementById('search-input');
-    
+
     severityFilter.addEventListener('change', applyFilters);
     searchInput.addEventListener('input', applyFilters);
 }
@@ -326,20 +355,20 @@ function initFilters() {
 function applyFilters() {
     const severity = document.getElementById('severity-filter').value;
     const search = document.getElementById('search-input').value.toLowerCase();
-    
+
     let filtered = allIncidents;
-    
+
     if (severity) {
         filtered = filtered.filter(i => i.severity === severity);
     }
-    
+
     if (search) {
-        filtered = filtered.filter(i => 
+        filtered = filtered.filter(i =>
             getSourceIp(i).toLowerCase().includes(search) ||
             (i.threat_type || '').toLowerCase().includes(search)
         );
     }
-    
+
     displayIncidents(filtered);
 }
 
@@ -348,24 +377,24 @@ function initFileUpload() {
     const fileInput = document.getElementById('file-input');
     const uploadBox = document.getElementById('upload-box');
     const uploadBtn = document.getElementById('upload-btn');
-    
+
     fileInput.addEventListener('change', handleFileSelect);
     uploadBtn.addEventListener('click', uploadFile);
-    
+
     // Drag and drop
     uploadBox.addEventListener('dragover', (e) => {
         e.preventDefault();
         uploadBox.classList.add('drag-over');
     });
-    
+
     uploadBox.addEventListener('dragleave', () => {
         uploadBox.classList.remove('drag-over');
     });
-    
+
     uploadBox.addEventListener('drop', (e) => {
         e.preventDefault();
         uploadBox.classList.remove('drag-over');
-        
+
         const files = e.dataTransfer.files;
         if (files.length > 0 && files[0].name.endsWith('.csv')) {
             fileInput.files = files;
@@ -377,12 +406,12 @@ function initFileUpload() {
 function handleFileSelect() {
     const file = document.getElementById('file-input').files[0];
     if (!file) return;
-    
+
     if (!file.name.endsWith('.csv')) {
         showNotification('Please select a CSV file', 'error');
         return;
     }
-    
+
     document.getElementById('file-name').textContent = `${file.name} (${(file.size / 1024).toFixed(2)} KB)`;
     document.getElementById('file-info').style.display = 'flex';
 }
@@ -390,46 +419,46 @@ function handleFileSelect() {
 async function uploadFile() {
     const fileInput = document.getElementById('file-input');
     const file = fileInput.files[0];
-    
+
     if (!file) {
         showNotification('Please select a file first', 'error');
         return;
     }
-    
+
     const progressContainer = document.getElementById('upload-progress');
     const progressFill = document.getElementById('progress-fill');
     const progressText = document.getElementById('progress-text');
     const resultBox = document.getElementById('upload-result');
-    
+
     progressContainer.style.display = 'block';
     resultBox.style.display = 'none';
     progressFill.style.width = '0%';
-    
+
     try {
         // Simulate progress
         progressFill.style.width = '30%';
         progressText.textContent = 'Uploading file...';
-        
+
         const formData = new FormData();
         formData.append('file', file);
-        
+
         const response = await fetch(`${API_BASE}/upload`, {
             method: 'POST',
             body: formData
         });
-        
+
         progressFill.style.width = '70%';
         progressText.textContent = 'Running BERT → Correlation → TI → Response pipeline...';
-        
+
         if (!response.ok) {
             throw new Error(`Upload failed: ${response.statusText}`);
         }
-        
+
         const result = await response.json();
-        
+
         progressFill.style.width = '100%';
         progressText.textContent = 'Analysis complete!';
-        
+
         setTimeout(() => {
             progressContainer.style.display = 'none';
             resultBox.style.display = 'block';
@@ -441,16 +470,16 @@ async function uploadFile() {
                 <p>Pipeline: BERT Detection → Correlation → TI Enrichment → Response Recommendations</p>
                 <button class="btn-primary" onclick="switchTab('incidents')">View Incidents</button>
             `;
-            
+
             // Reload dashboard
             loadDashboard();
             showNotification('File analyzed successfully!', 'success');
-            
+
             // Reset upload
             fileInput.value = '';
             document.getElementById('file-info').style.display = 'none';
         }, 1000);
-        
+
     } catch (error) {
         console.error('Upload error:', error);
         progressContainer.style.display = 'none';
@@ -470,7 +499,7 @@ function showNotification(message, type = 'info') {
     const notification = document.getElementById('notification');
     notification.textContent = message;
     notification.className = `notification show ${type}`;
-    
+
     setTimeout(() => {
         notification.classList.remove('show');
     }, 5000);
@@ -480,17 +509,17 @@ function showNotification(message, type = 'info') {
 function showIncidentDetails(incidentIndex) {
     const modal = document.getElementById('incident-modal');
     const modalBody = document.getElementById('modal-body');
-    
+
     const incident = allIncidents[incidentIndex];
     if (!incident) {
         console.error('Incident not found at index:', incidentIndex);
         return;
     }
-    
+
     const enrichment = incident.enrichment || {};
     const alertCount = getAlertCount(incident);
     const tiCategory = getTiCategory(incident);
-    
+
     modalBody.innerHTML = `
         <div class="modal-section">
             <h3>🎯 BERT Detection Results</h3>
@@ -611,7 +640,7 @@ function showIncidentDetails(incidentIndex) {
             </div>
         </div>
     `;
-    
+
     modal.style.display = 'flex';
 }
 
@@ -621,7 +650,7 @@ function closeIncidentModal() {
 }
 
 // Close modal when clicking outside
-window.onclick = function(event) {
+window.onclick = function (event) {
     const modal = document.getElementById('incident-modal');
     if (event.target === modal) {
         closeIncidentModal();

@@ -100,7 +100,7 @@ def main():
 
     training_args = TrainingArguments(
         output_dir=CONFIG["output_dir"],
-        eval_strategy="epoch",  # Changed from evaluation_strategy
+        eval_strategy="epoch",
         save_strategy="epoch",
         learning_rate=CONFIG["learning_rate"],
         per_device_train_batch_size=CONFIG["batch_size"],

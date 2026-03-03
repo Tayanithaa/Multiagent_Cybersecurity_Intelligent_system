@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <script src="auth-check.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Multi-Agent SOC Security Dashboard</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 </head>
+
 <body>
     <!-- Header -->
     <header class="header">
@@ -22,6 +27,11 @@
                 <span class="status-dot"></span>
                 <span>System Active</span>
                 <button id="refresh-btn" class="btn-icon" title="Refresh">🔄</button>
+                <div class="header-user" id="header-user">
+                    <span class="user-avatar">👤</span>
+                    <span class="user-name" id="user-name">Operator</span>
+                </div>
+                <button id="logout-btn" class="btn-logout" title="Sign Out">⏻ Logout</button>
             </div>
         </div>
     </header>
@@ -35,7 +45,7 @@
 
     <!-- Main Content -->
     <main class="main-content">
-        
+
         <!-- Dashboard Tab -->
         <div id="dashboard-tab" class="tab-content active">
             <div class="stats-grid">
@@ -95,7 +105,7 @@
                     <input type="text" id="search-input" placeholder="Search IP or threat..." class="search-input">
                 </div>
             </div>
-            
+
             <div class="table-container">
                 <table id="incidents-table">
                     <thead>
@@ -127,14 +137,16 @@
                 <h2>Upload Security Logs</h2>
                 <p class="upload-description">
                     Upload a CSV file containing security logs for AI-powered analysis.<br>
-                    Pipeline: <strong>BERT Detection</strong> → <strong>Correlation</strong> → <strong>TI Enrichment</strong> → <strong>Response Recommendations</strong>
+                    Pipeline: <strong>BERT Detection</strong> → <strong>Correlation</strong> → <strong>TI
+                        Enrichment</strong> → <strong>Response Recommendations</strong>
                 </p>
 
                 <div class="upload-box" id="upload-box">
                     <div class="upload-icon">📁</div>
                     <p class="upload-text">Drag & drop CSV file here or click to browse</p>
                     <input type="file" id="file-input" accept=".csv" hidden>
-                    <button class="btn-primary" onclick="document.getElementById('file-input').click()">Choose File</button>
+                    <button class="btn-primary" onclick="document.getElementById('file-input').click()">Choose
+                        File</button>
                 </div>
 
                 <div id="file-info" class="file-info" style="display: none;">
@@ -208,4 +220,5 @@
 
     <script src="app.js"></script>
 </body>
+
 </html>

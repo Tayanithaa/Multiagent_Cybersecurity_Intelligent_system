@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOC Dashboard — Authentication</title>
+    <meta name="description" content="Sign in or create an account to access the Multi-Agent SOC Security Dashboard.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* ─────────────────────────────────────────────
+           AUTH PAGE — Full layout override
+        ───────────────────────────────────────────── */
+
+        .auth-page {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            padding: 2rem;
+            overflow: hidden;
+        }
+
+        /* Animated background grid */
+        .auth-bg {
+            position: fixed;
+            inset: 0;
+            z-index: 0;
+            background:
+                linear-gradient(rgba(0, 245, 255, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0, 245, 255, 0.03) 1px, transparent 1px);
+            background-size: 40px 40px;
+            animation: bgScroll 30s linear infinite;
+        }
+
+        @keyframes bgScroll {
+            0%   { background-position: 0 0, 0 0; }
+            100% { background-position: 40px 40px, 40px 40px; }
+        }
+
+        /* Atmospheric glows */
+        .auth-glow-1 {
+            position: fixed;
+            width: 600px;
+            height: 600px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(0, 245, 255, 0.07) 0%, transparent 70%);
+            top: -150px;
+            left: -150px;
+            pointer-events: none;
+            z-index: 0;
+            animation: glowDrift1 8s ease-in-out infinite;
+        }
+
+        .auth-glow-2 {
+            position: fixed;
+            width: 500px;
+            height: 500px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(124, 58, 237, 0.08) 0%, transparent 70%);
+            bottom: -100px;
+            right: -100px;
+            pointer-events: none;
+            z-index: 0;
+            animation: glowDrift2 10s ease-in-out infinite;
+        }
+
+        @keyframes glowDrift1 {
+            0%, 100% { transform: translate(0, 0); }
+            50% { transform: translate(40px, 30px); }
+        }
+
+        @keyframes glowDrift2 {
+            0%, 100% { transform: translate(0, 0); }
+            50% { transform: translate(-30px, -40px); }
+        }
+
+        /* Corner decorations */
+        .auth-corner {
+            position: fixed;
+            width: 80px;
+            height: 80px;
+            z-index: 1;
+            opacity: 0.4;
+        }
+
+        .auth-corner.tl {
+            top: 1.5rem;
+            left: 1.5rem;
+            border-top: 2px solid var(--accent-primary);
+            border-left: 2px solid var(--accent-primary);
+        }
+
+        .auth-corner.tr {
+            top: 1.5rem;
+            right: 1.5rem;
+            border-top: 2px solid var(--accent-secondary);
+            border-right: 2px solid var(--accent-secondary);
+        }
+
+        .auth-corner.bl {
+            bottom: 1.5rem;
+            left: 1.5rem;
+            border-bottom: 2px solid var(--accent-secondary);
+            border-left: 2px solid var(--accent-secondary);
+        }
+
+        .auth-corner.br {
+            bottom: 1.5rem;
+            right: 1.5rem;
+            border-bottom: 2px solid var(--accent-primary);
+            border-right: 2px solid var(--accent-primary);
+        }
+
+        /* Scanning line animation */
+        .auth-scan-line {
+            position: fixed;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, var(--accent-primary), transparent);
+            opacity: 0.15;
+            z-index: 1;
+            animation: scanLine 6s linear infinite;
+        }
+
+        @keyframes scanLine {
+            0%   { top: -2px; opacity: 0; }
+            5%   { opacity: 0.15; }
+            95%  { opacity: 0.15; }
+            100% { top: 100vh; opacity: 0; }
+        }
+
+        /* ─── Auth Card ─── */
+        .auth-card {
+            position: relative;
+            z-index: 10;
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            width: 100%;
+            max-width: 460px;
+            box-shadow:
+                0 0 0 1px rgba(0, 245, 255, 0.08),
+                0 20px 60px rgba(0, 0, 0, 0.5),
+                0 0 80px rgba(0, 245, 255, 0.06),
+                0 0 120px rgba(124, 58, 237, 0.04);
+            animation: cardAppear 0.6s cubic-bezier(0.16, 1, 0.3, 1) both;
+        }
+
+        @keyframes cardAppear {
+            from { opacity: 0; transform: translateY(30px) scale(0.97); }
+            to   { opacity: 1; transform: translateY(0) scale(1); }
+        }
+
+        /* Glowing top border */
+        .auth-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 10%;
+            right: 10%;
+            height: 2px;
+            border-radius: 2px;
+            background: linear-gradient(90deg, transparent, var(--accent-primary), var(--accent-secondary), transparent);
+            animation: borderGlow 3s ease-in-out infinite;
+        }
+
+        .auth-card-header {
+            padding: 2.5rem 2.5rem 1.5rem;
+            text-align: center;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .auth-logo-icon {
+            font-size: 3rem;
+            display: block;
+            margin-bottom: 0.75rem;
+            filter: drop-shadow(0 0 16px var(--glow-cyan));
+            animation: iconPulse 3s ease-in-out infinite;
+        }
+
+        @keyframes iconPulse {
+            0%, 100% { filter: drop-shadow(0 0 16px var(--glow-cyan)); }
+            50%       { filter: drop-shadow(0 0 28px var(--glow-cyan)) drop-shadow(0 0 40px var(--glow-purple)); }
+        }
+
+        .auth-title {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 0.25rem;
+        }
+
+        .auth-subtitle {
+            font-family: 'Share Tech Mono', monospace;
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        /* ─── Tab Switcher ─── */
+        .auth-tabs {
+            display: flex;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .auth-tab-btn {
+            flex: 1;
+            background: none;
+            border: none;
+            padding: 1rem;
+            font-family: 'Orbitron', sans-serif;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--text-secondary);
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 3px solid transparent;
+            transition: all 0.25s ease;
+            position: relative;
+        }
+
+        .auth-tab-btn:hover {
+            color: var(--accent-primary);
+            background: rgba(0, 245, 255, 0.04);
+        }
+
+        .auth-tab-btn.active {
+            color: var(--accent-primary);
+            border-bottom-color: var(--accent-primary);
+            background: rgba(0, 245, 255, 0.06);
+            text-shadow: 0 0 10px var(--glow-cyan);
+        }
+
+        /* ─── Panel ─── */
+        .auth-panel {
+            display: none;
+            padding: 2rem 2.5rem 2.5rem;
+            animation: panelFade 0.3s ease;
+        }
+
+        .auth-panel.active {
+            display: block;
+        }
+
+        @keyframes panelFade {
+            from { opacity: 0; transform: translateY(6px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+
+        /* ─── Input fields ─── */
+        .auth-field {
+            margin-bottom: 1.25rem;
+        }
+
+        .auth-field label {
+            display: block;
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-secondary);
+            margin-bottom: 0.5rem;
+        }
+
+        .auth-input-wrap {
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+
+        .auth-input-icon {
+            position: absolute;
+            left: 0.85rem;
+            font-size: 1rem;
+            opacity: 0.5;
+            pointer-events: none;
+        }
+
+        .auth-input {
+            width: 100%;
+            padding: 0.75rem 1rem 0.75rem 2.6rem;
+            background: var(--bg-tertiary);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            color: var(--text-primary);
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 1rem;
+            transition: all 0.25s ease;
+        }
+
+        .auth-input:focus {
+            outline: none;
+            border-color: var(--accent-primary);
+            background: var(--bg-secondary);
+            box-shadow: 0 0 0 3px rgba(0, 245, 255, 0.1), 0 0 20px rgba(0, 245, 255, 0.08);
+        }
+
+        .auth-input::placeholder {
+            color: var(--text-secondary);
+            opacity: 0.5;
+        }
+
+        .toggle-password {
+            position: absolute;
+            right: 0.75rem;
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+            opacity: 0.5;
+            transition: opacity 0.2s;
+            padding: 0.25rem;
+        }
+
+        .toggle-password:hover {
+            opacity: 1;
+        }
+
+        /* ─── Messages ─── */
+        .auth-error {
+            display: none;
+            background: rgba(255, 0, 85, 0.12);
+            border: 1px solid rgba(255, 0, 85, 0.4);
+            border-left: 3px solid var(--accent-danger);
+            border-radius: 6px;
+            padding: 0.75rem 1rem;
+            margin-bottom: 1rem;
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 0.95rem;
+            color: #ff6694;
+            box-shadow: 0 0 15px rgba(255, 0, 85, 0.1);
+        }
+
+        .auth-success {
+            display: none;
+            background: rgba(0, 255, 136, 0.1);
+            border: 1px solid rgba(0, 255, 136, 0.4);
+            border-left: 3px solid var(--accent-success);
+            border-radius: 6px;
+            padding: 0.75rem 1rem;
+            margin-bottom: 1rem;
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 0.95rem;
+            color: var(--accent-success);
+            box-shadow: 0 0 15px rgba(0, 255, 136, 0.1);
+        }
+
+        /* ─── Submit button ─── */
+        .auth-submit-btn {
+            width: 100%;
+            padding: 0.9rem;
+            background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+            color: var(--bg-primary);
+            border: none;
+            border-radius: 8px;
+            font-family: 'Orbitron', sans-serif;
+            font-size: 0.95rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 25px rgba(0, 245, 255, 0.3), 0 4px 15px rgba(0, 0, 0, 0.3);
+            margin-top: 0.5rem;
+        }
+
+        .auth-submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 0 40px rgba(0, 245, 255, 0.45), 0 0 60px rgba(124, 58, 237, 0.25), 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .auth-submit-btn:active {
+            transform: translateY(0);
+        }
+
+        /* ─── Footer link ─── */
+        .auth-switch {
+            text-align: center;
+            margin-top: 1.5rem;
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+        }
+
+        .auth-switch-link {
+            color: var(--accent-primary);
+            cursor: pointer;
+            font-weight: 600;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+            transition: text-shadow 0.2s;
+        }
+
+        .auth-switch-link:hover {
+            text-shadow: 0 0 10px var(--glow-cyan);
+        }
+
+        /* ─── Divider ─── */
+        .auth-divider {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin: 1.25rem 0;
+            color: var(--text-secondary);
+            font-family: 'Share Tech Mono', monospace;
+            font-size: 0.75rem;
+            letter-spacing: 2px;
+        }
+
+        .auth-divider::before,
+        .auth-divider::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--border-color));
+        }
+
+        .auth-divider::after {
+            background: linear-gradient(270deg, transparent, var(--border-color));
+        }
+
+        /* ─── Demo hint ─── */
+        .auth-demo-hint {
+            text-align: center;
+            font-family: 'Share Tech Mono', monospace;
+            font-size: 0.72rem;
+            color: var(--text-secondary);
+            opacity: 0.55;
+            margin-top: 1.5rem;
+            letter-spacing: 0.5px;
+        }
+
+        /* ─── Shake animation ─── */
+        @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            15%  { transform: translateX(-8px); }
+            30%  { transform: translateX(8px); }
+            45%  { transform: translateX(-5px); }
+            60%  { transform: translateX(5px); }
+            75%  { transform: translateX(-3px); }
+            90%  { transform: translateX(3px); }
+        }
+
+        .shake {
+            animation: shake 0.5s ease;
+        }
+
+        /* ─── Status ticker at bottom ─── */
+        .auth-status-bar {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 5;
+            padding: 0.4rem 1.5rem;
+            background: rgba(10, 14, 39, 0.8);
+            border-top: 1px solid var(--border-color);
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            font-family: 'Share Tech Mono', monospace;
+            font-size: 0.72rem;
+            color: var(--text-secondary);
+            letter-spacing: 0.5px;
+            backdrop-filter: blur(4px);
+        }
+
+        .auth-status-dot {
+            width: 7px;
+            height: 7px;
+            background: var(--accent-success);
+            border-radius: 50%;
+            animation: statusPulse 2s infinite;
+            box-shadow: 0 0 8px var(--accent-success);
+            flex-shrink: 0;
+        }
+
+        /* ─── Responsive ─── */
+        @media (max-width: 520px) {
+            .auth-card-header { padding: 2rem 1.5rem 1.25rem; }
+            .auth-panel { padding: 1.5rem 1.5rem 2rem; }
+            .auth-title { font-size: 0.95rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="auth-page">
+        <!-- Animated background -->
+        <div class="auth-bg"></div>
+        <div class="auth-glow-1"></div>
+        <div class="auth-glow-2"></div>
+        <div class="auth-scan-line"></div>
+
+        <!-- Corner decorations -->
+        <div class="auth-corner tl"></div>
+        <div class="auth-corner tr"></div>
+        <div class="auth-corner bl"></div>
+        <div class="auth-corner br"></div>
+
+        <!-- Auth Card -->
+        <div class="auth-card" id="auth-card">
+
+            <!-- Header / Brand -->
+            <div class="auth-card-header">
+                <span class="auth-logo-icon">🛡️</span>
+                <h1 class="auth-title">Multi-Agent SOC Dashboard</h1>
+                <p class="auth-subtitle">Secure Operations Center · Authentication Required</p>
+            </div>
+
+            <!-- Tab Switcher -->
+            <div class="auth-tabs">
+                <button class="auth-tab-btn active" id="tab-login">🔐 Sign In</button>
+                <button class="auth-tab-btn" id="tab-signup">✨ Create Account</button>
+            </div>
+
+            <!-- ─── LOGIN PANEL ─── -->
+            <div class="auth-panel active" id="login-panel">
+                <div id="login-error" class="auth-error"></div>
+                <div id="login-success" class="auth-success"></div>
+
+                <form id="login-form" novalidate>
+                    <div class="auth-field">
+                        <label for="login-username">Username</label>
+                        <div class="auth-input-wrap">
+                            <span class="auth-input-icon">👤</span>
+                            <input
+                                class="auth-input"
+                                type="text"
+                                id="login-username"
+                                placeholder="Enter your username"
+                                autocomplete="username"
+                                required
+                            >
+                        </div>
+                    </div>
+
+                    <div class="auth-field">
+                        <label for="login-password">Password</label>
+                        <div class="auth-input-wrap">
+                            <span class="auth-input-icon">🔒</span>
+                            <input
+                                class="auth-input"
+                                type="password"
+                                id="login-password"
+                                placeholder="Enter your password"
+                                autocomplete="current-password"
+                                required
+                            >
+                            <button type="button" class="toggle-password" data-target="login-password" title="Toggle password visibility">👁️</button>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="auth-submit-btn">
+                        ⚡ ACCESS DASHBOARD
+                    </button>
+                </form>
+
+                <div class="auth-switch">
+                    Don't have an account?
+                    <span class="auth-switch-link" onclick="showTab('signup')">Create one</span>
+                </div>
+
+                <p class="auth-demo-hint">[ CLIENT-SIDE DEMO AUTH — localStorage based ]</p>
+            </div>
+
+            <!-- ─── SIGN UP PANEL ─── -->
+            <div class="auth-panel" id="signup-panel">
+                <div id="signup-error" class="auth-error"></div>
+                <div id="signup-success" class="auth-success"></div>
+
+                <form id="signup-form" novalidate>
+                    <div class="auth-field">
+                        <label for="signup-username">Username</label>
+                        <div class="auth-input-wrap">
+                            <span class="auth-input-icon">👤</span>
+                            <input
+                                class="auth-input"
+                                type="text"
+                                id="signup-username"
+                                placeholder="Choose a username (min 3 chars)"
+                                autocomplete="username"
+                                required
+                            >
+                        </div>
+                    </div>
+
+                    <div class="auth-field">
+                        <label for="signup-email">Email</label>
+                        <div class="auth-input-wrap">
+                            <span class="auth-input-icon">📧</span>
+                            <input
+                                class="auth-input"
+                                type="email"
+                                id="signup-email"
+                                placeholder="your@email.com"
+                                autocomplete="email"
+                                required
+                            >
+                        </div>
+                    </div>
+
+                    <div class="auth-field">
+                        <label for="signup-password">Password</label>
+                        <div class="auth-input-wrap">
+                            <span class="auth-input-icon">🔒</span>
+                            <input
+                                class="auth-input"
+                                type="password"
+                                id="signup-password"
+                                placeholder="Min 6 characters"
+                                autocomplete="new-password"
+                                required
+                            >
+                            <button type="button" class="toggle-password" data-target="signup-password" title="Toggle password visibility">👁️</button>
+                        </div>
+                    </div>
+
+                    <div class="auth-field">
+                        <label for="signup-confirm">Confirm Password</label>
+                        <div class="auth-input-wrap">
+                            <span class="auth-input-icon">🔑</span>
+                            <input
+                                class="auth-input"
+                                type="password"
+                                id="signup-confirm"
+                                placeholder="Re-enter your password"
+                                autocomplete="new-password"
+                                required
+                            >
+                            <button type="button" class="toggle-password" data-target="signup-confirm" title="Toggle password visibility">👁️</button>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="auth-submit-btn">
+                        🚀 CREATE ACCOUNT
+                    </button>
+                </form>
+
+                <div class="auth-switch">
+                    Already have an account?
+                    <span class="auth-switch-link" onclick="showTab('login')">Sign in</span>
+                </div>
+            </div>
+
+        </div>
+        <!-- /auth-card -->
+    </div>
+    <!-- /auth-page -->
+
+    <!-- Status bar -->
+    <div class="auth-status-bar">
+        <div class="auth-status-dot"></div>
+        <span>SYSTEM ACTIVE · MULTI-AGENT SOC · SECURE CONNECTION</span>
+        <span style="margin-left: auto; opacity: 0.5;">v2.0</span>
+    </div>
+
+    <script src="auth.js"></script>
+</body>
+</html>
