@@ -220,6 +220,7 @@ async def upload_csv(file: UploadFile = File(...)):
             "filename": file.filename,
             "total_logs": len(df),
             "incidents_detected": len(incidents_list),
+            "incidents": incidents_list,
             "message": f"Processed {len(df)} logs from {file.filename}"
         }
         

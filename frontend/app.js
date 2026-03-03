@@ -4,7 +4,9 @@
 const API_BASE = 'http://localhost:8000';
 
 let allIncidents = [];
+let lastUploadIncidents = [];  // incidents from the most recent upload only
 let currentTab = 'dashboard';
+let dashboardMode = 'all'; // 'all' | 'upload'
 
 // Chart instances
 let threatChart = null;
@@ -21,7 +23,27 @@ document.addEventListener('DOMContentLoaded', () => {
     // Auto-refresh every 30 seconds
     setInterval(loadDashboard, 30000);
 
-    document.getElementById('refresh-btn').addEventListener('click', loadDashboard);
+    // Restore last-known stats from cache before API responds (per-user key)
+    const cacheKey = `soc_incidents_${currentUser}`;
+    const cached = localStorage.getItem(cacheKey);
+    if (cached) {
+        try {
+            const cachedIncidents = JSON.parse(cached);
+            updateDashboardStats(cachedIncidents);
+            updateCharts(cachedIncidents);
+            setDashboardBadge('all');
+        } catch (e) { /* ignore corrupt cache */ }
+    } else {
+        // New user — render null/empty state explicitly
+        renderNullState();
+    }
+
+    document.getElementById('refresh-btn').addEventListener('click', () => {
+        dashboardMode = 'all';
+        lastUploadIncidents = [];
+        loadDashboard();
+        showNotification('Showing all-time incidents', 'info');
+    });
 });
 
 // Tab switching
@@ -53,7 +75,7 @@ function switchTab(tabName) {
     }
 }
 
-// Load dashboard data
+// Load dashboard data (all-time)
 async function loadDashboard() {
     try {
         const response = await fetch(`${API_BASE}/incidents?limit=1000`);
@@ -62,8 +84,16 @@ async function loadDashboard() {
         allIncidents = await response.json();
         console.log('📊 Loaded incidents:', allIncidents.length);
 
-        updateDashboardStats(allIncidents);
-        updateCharts(allIncidents);
+        // Cache to localStorage per-user for instant-load on next page visit
+        const cacheKey = `soc_incidents_${currentUser}`;
+        localStorage.setItem(cacheKey, JSON.stringify(allIncidents));
+
+        // Only update charts if we are NOT in per-upload mode
+        if (dashboardMode === 'all') {
+            updateDashboardStats(allIncidents);
+            updateCharts(allIncidents);
+            setDashboardBadge('all');
+        }
 
         if (currentTab === 'incidents') {
             displayIncidents(allIncidents);
@@ -74,9 +104,22 @@ async function loadDashboard() {
     }
 }
 
+// Render null / empty state for new users with no history
+function renderNullState() {
+    ['total-incidents', 'high-severity', 'avg-confidence', 'critical-actions'].forEach(id => {
+        const el = document.getElementById(id);
+        if (el) el.textContent = '—';
+    });
+}
+
 // Update dashboard statistics
 function updateDashboardStats(incidents) {
     console.log('📈 Updating stats for', incidents.length, 'incidents');
+
+    if (!incidents || incidents.length === 0) {
+        renderNullState();
+        return;
+    }
 
     const total = incidents.length;
     const highSeverity = incidents.filter(i => i.severity === 'HIGH').length;
@@ -84,11 +127,7 @@ function updateDashboardStats(incidents) {
     const lowSeverity = incidents.filter(i => i.severity === 'LOW').length;
     const criticalActions = incidents.filter(i => i.action_priority === 1).length;
 
-    const avgConfidence = incidents.length > 0
-        ? (incidents.reduce((sum, i) => sum + (i.avg_confidence || i.bert_confidence || 0), 0) / incidents.length * 100).toFixed(1)
-        : 0;
-
-    console.log('Stats:', { total, highSeverity, mediumSeverity, lowSeverity, criticalActions, avgConfidence });
+    const avgConfidence = (incidents.reduce((sum, i) => sum + (i.avg_confidence || i.bert_confidence || 0), 0) / incidents.length * 100).toFixed(1);
 
     document.getElementById('total-incidents').textContent = total;
     document.getElementById('high-severity').textContent = highSeverity;
@@ -316,6 +355,8 @@ function formatTimestamp(timestamp) {
 }
 
 // Auth session
+let currentUser = null;
+
 function initAuth() {
     const sessionStr = localStorage.getItem('soc_session');
     if (!sessionStr) {
@@ -324,12 +365,10 @@ function initAuth() {
     }
     try {
         const session = JSON.parse(sessionStr);
+        currentUser = session.username || 'user';
         const nameEl = document.getElementById('user-name');
-        if (nameEl && session.username) {
-            nameEl.textContent = session.username;
-        }
+        if (nameEl) nameEl.textContent = currentUser;
     } catch (e) {
-        // session malformed — log out
         localStorage.removeItem('soc_session');
         window.location.replace('auth.html');
     }
@@ -337,6 +376,10 @@ function initAuth() {
     const logoutBtn = document.getElementById('logout-btn');
     if (logoutBtn) {
         logoutBtn.addEventListener('click', () => {
+            // Clear this user's incident cache on logout
+            if (currentUser) {
+                localStorage.removeItem(`soc_incidents_${currentUser}`);
+            }
             localStorage.removeItem('soc_session');
             window.location.replace('auth.html');
         });
@@ -471,11 +514,21 @@ async function uploadFile() {
                 <button class="btn-primary" onclick="switchTab('incidents')">View Incidents</button>
             `;
 
-            // Reload dashboard
-            loadDashboard();
-            showNotification('File analyzed successfully!', 'success');
+            // Use returned incidents for per-upload dashboard view
+            if (result.incidents && result.incidents.length > 0) {
+                lastUploadIncidents = result.incidents;
+                dashboardMode = 'upload';
+                updateDashboardStats(lastUploadIncidents);
+                updateCharts(lastUploadIncidents);
+                setDashboardBadge('upload', file.name);
+                showNotification(`Dashboard shows ${file.name} — hit 🔄 for all-time view.`, 'success');
+            } else {
+                dashboardMode = 'all';
+                loadDashboard();
+                showNotification('No threats detected in uploaded file.', 'info');
+            }
 
-            // Reset upload
+            // Reset upload form
             fileInput.value = '';
             document.getElementById('file-info').style.display = 'none';
         }, 1000);
@@ -491,6 +544,28 @@ async function uploadFile() {
             <p>Make sure the FastAPI backend is running on port 8000.</p>
         `;
         showNotification('Upload failed. Check backend connection.', 'error');
+    }
+}
+
+// Dashboard mode badge
+function setDashboardBadge(mode, filename = '') {
+    const badge = document.getElementById('dashboard-badge');
+    if (!badge) return;
+    if (mode === 'upload') {
+        badge.style.display = 'flex';
+        badge.className = 'dashboard-badge badge-upload-mode';
+        badge.innerHTML = `
+            <span class="badge-icon">📄</span>
+            <span>Showing results for: <strong>${filename}</strong></span>
+            <span class="badge-hint">Hit 🔄 to view all-time data</span>
+        `;
+    } else {
+        badge.style.display = 'flex';
+        badge.className = 'dashboard-badge badge-all-mode';
+        badge.innerHTML = `
+            <span class="badge-icon">🗄️</span>
+            <span>Showing <strong>all-time</strong> incidents from database</span>
+        `;
     }
 }
 
