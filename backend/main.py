@@ -234,6 +234,165 @@ async def upload_csv(file: UploadFile = File(...)):
         raise HTTPException(status_code=500, detail=f"Upload failed: {str(e)}")
 
 
+@app.post("/connect/test")
+async def test_connection(payload: dict):
+    """
+    Test connectivity to a remote URL (log API or model endpoint).
+    Returns status, latency, and a row count estimate if the response is JSON.
+    """
+    import time, requests as req
+    url = payload.get("url", "").strip()
+    token = payload.get("token", "").strip()
+
+    if not url:
+        raise HTTPException(status_code=400, detail="URL is required")
+
+    headers = {}
+    if token:
+        headers["Authorization"] = token if token.startswith("Bearer ") else f"Bearer {token}"
+
+    try:
+        start = time.time()
+        r = req.get(url, headers=headers, timeout=10)
+        latency_ms = int((time.time() - start) * 1000)
+        r.raise_for_status()
+
+        # Try to count rows in JSON response
+        rows_available = None
+        try:
+            data = r.json()
+            if isinstance(data, list):
+                rows_available = len(data)
+            elif isinstance(data, dict):
+                for key in ("data", "logs", "records", "events", "results"):
+                    if key in data and isinstance(data[key], list):
+                        rows_available = len(data[key])
+                        break
+        except Exception:
+            pass
+
+        return {
+            "status": "ok",
+            "http_status": r.status_code,
+            "latency_ms": latency_ms,
+            "rows_available": rows_available,
+            "message": f"Connection successful ({latency_ms}ms)"
+        }
+
+    except req.exceptions.ConnectionError:
+        raise HTTPException(status_code=502, detail="Could not connect to the URL. Check the address.")
+    except req.exceptions.Timeout:
+        raise HTTPException(status_code=504, detail="Connection timed out after 10s.")
+    except req.exceptions.HTTPError as e:
+        raise HTTPException(status_code=502, detail=f"Remote returned HTTP {e.response.status_code}")
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Connection test failed: {str(e)}")
+
+
+@app.post("/fetch-remote")
+async def fetch_remote_logs(payload: dict):
+    """
+    Fetch logs from a remote REST API URL, run the full BERT pipeline, and return incidents.
+    The remote URL must return JSON: either a list of log objects, or a dict with a list under
+    a common key (data / logs / records / events / results).
+    """
+    import requests as req
+
+    url = payload.get("url", "").strip()
+    token = payload.get("token", "").strip()
+    limit = int(payload.get("limit", 500))
+    api_key = payload.get("api_key", "").strip()  # reserved for future cloud model auth
+
+    if not url:
+        raise HTTPException(status_code=400, detail="URL is required")
+
+    headers = {"Accept": "application/json"}
+    if token:
+        headers["Authorization"] = token if token.startswith("Bearer ") else f"Bearer {token}"
+    if api_key:
+        headers["X-API-Key"] = api_key
+
+    # Fetch logs
+    try:
+        r = req.get(url, headers=headers, params={"limit": limit}, timeout=30)
+        r.raise_for_status()
+        raw = r.json()
+    except Exception as e:
+        raise HTTPException(status_code=502, detail=f"Failed to fetch from remote URL: {str(e)}")
+
+    # Normalize to list
+    if isinstance(raw, list):
+        records = raw[:limit]
+    elif isinstance(raw, dict):
+        records = None
+        for key in ("data", "logs", "records", "events", "results"):
+            if key in raw and isinstance(raw[key], list):
+                records = raw[key][:limit]
+                break
+        if records is None:
+            raise HTTPException(status_code=422, detail="Remote JSON must be a list or have a 'data'/'logs'/'records' key containing a list.")
+    else:
+        raise HTTPException(status_code=422, detail="Unexpected JSON format from remote URL.")
+
+    if not records:
+        return {"status": "success", "total_logs": 0, "incidents_detected": 0, "incidents": [], "message": "No log records returned from remote URL."}
+
+    # Build DataFrame — normalize common field names
+    df = pd.DataFrame(records)
+    print(f"📡 Remote fetch: {len(df)} rows, columns: {df.columns.tolist()}")
+
+    # Map common field names → expected names
+    rename_map = {
+        "message": "raw_message", "log_message": "raw_message", "msg": "raw_message",
+        "source_ip": "ip", "src_ip": "ip", "attacker_ip": "ip",
+        "created_at": "timestamp", "time": "timestamp", "event_time": "timestamp",
+        "username": "user", "actor": "user",
+    }
+    df.rename(columns={k: v for k, v in rename_map.items() if k in df.columns}, inplace=True)
+
+    if "raw_message" not in df.columns and "message" not in df.columns:
+        raise HTTPException(status_code=422, detail=f"Remote records must contain a message/raw_message field. Got: {df.columns.tolist()}")
+
+    if "timestamp" not in df.columns:
+        df["timestamp"] = pd.Timestamp.now().strftime("%Y-%m-%d %H:%M:%S")
+    if "user" not in df.columns:
+        df["user"] = "unknown"
+    if "ip" not in df.columns:
+        df["ip"] = "unknown"
+
+    # Run BERT pipeline
+    print("🔍 Running BERT detection on remote logs...")
+    df = bert_detect(df)
+    incidents_df = df[df["bert_class"] != "normal"].copy()
+    print(f"📊 Found {len(incidents_df)} incidents from remote source")
+
+    # Fill required columns
+    for col, fn in [
+        ("threat_type", lambda r: r["bert_class"]),
+        ("correlated_events", lambda r: 1),
+        ("ti_risk_score", lambda r: r["bert_confidence"]),
+        ("ti_indicators", lambda r: [r["bert_class"]]),
+        ("recommended_action", lambda r: f"Investigate {r['bert_class']} from {r.get('ip', 'unknown')}"),
+        ("action_priority", lambda r: {"HIGH": 1, "MEDIUM": 2, "LOW": 3}.get(r["severity"], 3)),
+        ("avg_confidence", lambda r: r["bert_confidence"]),
+    ]:
+        if col not in incidents_df.columns:
+            incidents_df[col] = incidents_df.apply(fn, axis=1)
+
+    incidents_list = incidents_df.to_dict("records")
+    if incidents_list:
+        db.insert_incidents_bulk(incidents_list)
+
+    return {
+        "status": "success",
+        "source_url": url,
+        "total_logs": len(df),
+        "incidents_detected": len(incidents_list),
+        "incidents": incidents_list,
+        "message": f"Fetched {len(df)} logs from remote, detected {len(incidents_list)} incidents"
+    }
+
+
 @app.get("/incidents", response_model=List[Incident])
 async def get_incidents(limit: int = None, severity: str = None):
     """

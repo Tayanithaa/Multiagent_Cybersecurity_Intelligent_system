@@ -18,6 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initTabs();
     initFileUpload();
     initFilters();
+    initDataSources();
     loadDashboard();
 
     // Auto-refresh every 30 seconds
@@ -427,7 +428,208 @@ function formatTimestamp(timestamp) {
     return date.toLocaleString();
 }
 
-// Auth session
+// ─── DATA SOURCES ─────────────────────────────────────────────────────────────
+
+function switchDsPanel(btn) {
+    document.querySelectorAll('.ds-tab-btn').forEach(b => b.classList.remove('active'));
+    document.querySelectorAll('.ds-panel').forEach(p => p.classList.remove('active'));
+    btn.classList.add('active');
+    document.getElementById(btn.dataset.panel).classList.add('active');
+
+    // Persist last chosen panel
+    saveConnectionConfig({ lastPanel: btn.dataset.panel });
+}
+
+function toggleVisibility(inputId, btn) {
+    const input = document.getElementById(inputId);
+    if (input.type === 'password') {
+        input.type = 'text';
+        btn.textContent = '🙈';
+    } else {
+        input.type = 'password';
+        btn.textContent = '👁';
+    }
+}
+
+function getConnectionConfigKey() {
+    return `soc_connections_${currentUser || 'user'}`;
+}
+
+function saveConnectionConfig(patch = {}) {
+    const key = getConnectionConfigKey();
+    let cfg = {};
+    try { cfg = JSON.parse(localStorage.getItem(key) || '{}'); } catch (e) { }
+    const merged = { ...cfg, ...patch };
+    localStorage.setItem(key, JSON.stringify(merged));
+}
+
+function loadConnectionConfig() {
+    try {
+        const key = getConnectionConfigKey();
+        return JSON.parse(localStorage.getItem(key) || '{}');
+    } catch (e) { return {}; }
+}
+
+function initDataSources() {
+    const cfg = loadConnectionConfig();
+
+    // Restore saved field values
+    if (cfg.api?.endpoint) document.getElementById('api-endpoint').value = cfg.api.endpoint;
+    if (cfg.api?.key) document.getElementById('api-key').value = cfg.api.key;
+    if (cfg.db?.url) document.getElementById('db-url').value = cfg.db.url;
+    if (cfg.db?.token) document.getElementById('db-token').value = cfg.db.token;
+    if (cfg.db?.limit) document.getElementById('db-limit').value = cfg.db.limit;
+
+    // Restore last active panel
+    if (cfg.lastPanel) {
+        const btn = document.querySelector(`.ds-tab-btn[data-panel="${cfg.lastPanel}"]`);
+        if (btn) switchDsPanel(btn);
+    }
+}
+
+function saveApiConfig() {
+    const endpoint = document.getElementById('api-endpoint').value.trim();
+    const key = document.getElementById('api-key').value.trim();
+    saveConnectionConfig({ api: { endpoint, key } });
+    showNotification('API configuration saved ✅', 'success');
+}
+
+// Test API model endpoint
+async function testApiConnection() {
+    const url = document.getElementById('api-endpoint').value.trim();
+    const key = document.getElementById('api-key').value.trim();
+    const statusEl = document.getElementById('api-status');
+
+    if (!url) { showNotification('Enter an endpoint URL first', 'error'); return; }
+
+    statusEl.textContent = '⏳ Testing...';
+    statusEl.className = 'conn-status testing';
+
+    try {
+        const resp = await fetch(`${API_BASE}/connect/test`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ url, token: key ? `Bearer ${key}` : '' })
+        });
+        const data = await resp.json();
+        if (!resp.ok) throw new Error(data.detail || 'Failed');
+        statusEl.textContent = `✅ Connected (${data.latency_ms}ms)${data.rows_available != null ? ` · ${data.rows_available} rows` : ''}`;
+        statusEl.className = 'conn-status success';
+        saveConnectionConfig({ api: { endpoint: url, key } });
+    } catch (err) {
+        statusEl.textContent = `❌ ${err.message}`;
+        statusEl.className = 'conn-status error';
+    }
+}
+
+// Test remote log DB URL
+async function testDbConnection() {
+    const url = document.getElementById('db-url').value.trim();
+    const token = document.getElementById('db-token').value.trim();
+    const statusEl = document.getElementById('db-status');
+
+    if (!url) { showNotification('Enter a DB URL first', 'error'); return; }
+
+    statusEl.textContent = '⏳ Testing...';
+    statusEl.className = 'conn-status testing';
+
+    try {
+        const resp = await fetch(`${API_BASE}/connect/test`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ url, token })
+        });
+        const data = await resp.json();
+        if (!resp.ok) throw new Error(data.detail || 'Failed');
+        statusEl.textContent = `✅ Connected (${data.latency_ms}ms)${data.rows_available != null ? ` · ${data.rows_available} rows available` : ''}`;
+        statusEl.className = 'conn-status success';
+        saveConnectionConfig({ db: { url, token, limit: document.getElementById('db-limit').value } });
+    } catch (err) {
+        statusEl.textContent = `❌ ${err.message}`;
+        statusEl.className = 'conn-status error';
+    }
+}
+
+// Fetch remote logs and run the full pipeline
+async function fetchRemoteLogs() {
+    const url = document.getElementById('db-url').value.trim();
+    const token = document.getElementById('db-token').value.trim();
+    const limit = document.getElementById('db-limit').value;
+    const apiKey = loadConnectionConfig().api?.key || '';
+
+    if (!url) { showNotification('Enter a Log DB URL first', 'error'); return; }
+
+    const progressEl = document.getElementById('db-progress');
+    const fillEl = document.getElementById('db-progress-fill');
+    const textEl = document.getElementById('db-progress-text');
+    const resultEl = document.getElementById('db-result');
+
+    progressEl.style.display = 'block';
+    resultEl.style.display = 'none';
+    fillEl.style.width = '0%';
+    textEl.textContent = 'Connecting to remote log source...';
+
+    // Animate progress in stages
+    fillEl.style.width = '20%';
+    await new Promise(r => setTimeout(r, 400));
+    textEl.textContent = 'Fetching logs...';
+    fillEl.style.width = '50%';
+
+    try {
+        const resp = await fetch(`${API_BASE}/fetch-remote`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ url, token, limit: Number(limit), api_key: apiKey })
+        });
+
+        textEl.textContent = 'Running BERT → Correlation → TI → Response pipeline...';
+        fillEl.style.width = '85%';
+
+        const result = await resp.json();
+        if (!resp.ok) throw new Error(result.detail || 'Fetch failed');
+
+        fillEl.style.width = '100%';
+        textEl.textContent = 'Complete!';
+        await new Promise(r => setTimeout(r, 600));
+        progressEl.style.display = 'none';
+
+        resultEl.style.display = 'block';
+        resultEl.className = 'result-box success';
+        resultEl.innerHTML = `
+            <h4>✅ Remote Analysis Complete!</h4>
+            <p>Source: <code>${url}</code></p>
+            <p>Total logs fetched: <strong>${result.total_logs}</strong></p>
+            <p>Incidents detected: <strong>${result.incidents_detected}</strong></p>
+            <button class="btn-primary" onclick="switchTab('incidents')">View Incidents</button>
+        `;
+
+        // Drive dashboard from returned incidents
+        if (result.incidents?.length > 0) {
+            lastUploadIncidents = result.incidents;
+            dashboardMode = 'upload';
+            updateDashboardStats(lastUploadIncidents);
+            updateCharts(lastUploadIncidents);
+            setDashboardBadge('upload', new URL(url).hostname);
+            showNotification(`Fetched ${result.total_logs} logs — ${result.incidents_detected} incidents detected`, 'success');
+        } else {
+            dashboardMode = 'all';
+            loadDashboard();
+            showNotification('No threats detected in remote logs.', 'info');
+        }
+
+        saveConnectionConfig({ db: { url, token, limit } });
+
+    } catch (err) {
+        progressEl.style.display = 'none';
+        resultEl.style.display = 'block';
+        resultEl.className = 'result-box error';
+        resultEl.innerHTML = `<h4>❌ Fetch Failed</h4><p>${err.message}</p>`;
+        showNotification('Remote fetch failed. Check the URL and token.', 'error');
+    }
+}
+
+// ─── AUTH SESSION ─────────────────────────────────────────────────────────────
+
 let currentUser = null;
 
 function initAuth() {

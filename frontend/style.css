@@ -783,6 +783,217 @@ code {
 }
 
 /* Upload Section */
+/* ── DATA SOURCES TAB ───────────────────────────────────── */
+.datasource-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.datasource-header h2 {
+    font-family: 'Orbitron', sans-serif;
+    color: var(--accent-primary);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1.3rem;
+    margin-bottom: 0.3rem;
+}
+
+.datasource-desc {
+    color: var(--text-secondary);
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 0.95rem;
+}
+
+/* Segmented tab switcher */
+.datasource-tabs {
+    display: flex;
+    gap: 0;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    overflow: hidden;
+    width: fit-content;
+}
+
+.ds-tab-btn {
+    background: none;
+    border: none;
+    color: var(--text-secondary);
+    padding: 0.65rem 1.4rem;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.25s;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    border-right: 1px solid var(--border-color);
+}
+
+.ds-tab-btn:last-child {
+    border-right: none;
+}
+
+.ds-tab-btn:hover {
+    background: rgba(0, 245, 255, 0.06);
+    color: var(--accent-primary);
+}
+
+.ds-tab-btn.active {
+    background: rgba(0, 245, 255, 0.12);
+    color: var(--accent-primary);
+    box-shadow: inset 0 -2px 0 var(--accent-primary);
+}
+
+.ds-tab-icon {
+    font-size: 1rem;
+}
+
+/* Panels */
+.ds-panel {
+    display: none;
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 1.75rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 0.25s ease;
+}
+
+.ds-panel.active {
+    display: block;
+}
+
+.panel-desc {
+    color: var(--text-secondary);
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+/* Connection form */
+.connection-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    max-width: 680px;
+}
+
+.connection-field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.connection-field label {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 0.88rem;
+    color: var(--text-secondary);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.optional {
+    font-weight: 400;
+    text-transform: none;
+    opacity: 0.6;
+    font-size: 0.82rem;
+}
+
+.field-row {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.conn-input {
+    flex: 1;
+    background: var(--bg-tertiary);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 0.55rem 1rem;
+    color: var(--text-primary);
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 0.88rem;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.conn-input:focus {
+    outline: none;
+    border-color: var(--accent-primary);
+    box-shadow: 0 0 0 2px rgba(0, 245, 255, 0.1);
+}
+
+.conn-select {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.btn-eye {
+    background: var(--bg-tertiary);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 0.55rem 0.75rem;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.2s;
+    flex-shrink: 0;
+}
+
+.btn-eye:hover {
+    background: var(--bg-secondary);
+}
+
+/* Test connection button + status */
+.conn-actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.conn-status {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 0.85rem;
+    transition: color 0.3s;
+}
+
+.conn-status.testing {
+    color: #f59e0b;
+}
+
+.conn-status.success {
+    color: #10b981;
+}
+
+.conn-status.error {
+    color: var(--accent-danger);
+}
+
+/* Info note box */
+.conn-note {
+    background: rgba(0, 245, 255, 0.05);
+    border: 1px solid rgba(0, 245, 255, 0.15);
+    border-radius: 8px;
+    padding: 0.65rem 1rem;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 0.88rem;
+    color: var(--text-secondary);
+    display: flex;
+    gap: 0.5rem;
+    line-height: 1.5;
+}
+
+.btn-run {
+    align-self: flex-start;
+    margin-top: 0.5rem;
+}
+
+/* ── UPLOAD CONTAINER (kept for file-panel) ─────────────── */
 .upload-container {
     background: var(--bg-card);
     padding: 2rem;

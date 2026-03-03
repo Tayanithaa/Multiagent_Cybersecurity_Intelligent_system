@@ -40,7 +40,7 @@
     <nav class="nav-tabs">
         <button class="tab-btn active" data-tab="dashboard">📊 Dashboard</button>
         <button class="tab-btn" data-tab="incidents">🚨 Incidents</button>
-        <button class="tab-btn" data-tab="upload">📤 Upload & Analyze</button>
+        <button class="tab-btn" data-tab="upload">📡 Data Sources</button>
     </nav>
 
     <!-- Main Content -->
@@ -141,72 +141,173 @@
             </div>
         </div>
 
-        <!-- Upload Tab -->
+        <!-- Data Sources Tab -->
         <div id="upload-tab" class="tab-content">
-            <div class="upload-container">
-                <h2>Upload Security Logs</h2>
-                <p class="upload-description">
-                    Upload a CSV file containing security logs for AI-powered analysis.<br>
-                    Pipeline: <strong>BERT Detection</strong> → <strong>Correlation</strong> → <strong>TI
-                        Enrichment</strong> → <strong>Response Recommendations</strong>
-                </p>
-
-                <div class="upload-box" id="upload-box">
-                    <div class="upload-icon">📁</div>
-                    <p class="upload-text">Drag & drop CSV file here or click to browse</p>
-                    <input type="file" id="file-input" accept=".csv" hidden>
-                    <button class="btn-primary" onclick="document.getElementById('file-input').click()">Choose
-                        File</button>
+            <div class="datasource-container">
+                <div class="datasource-header">
+                    <h2>Data Sources</h2>
+                    <p class="datasource-desc">Choose how to feed logs into the analysis pipeline.</p>
                 </div>
 
-                <div id="file-info" class="file-info" style="display: none;">
-                    <span id="file-name"></span>
-                    <button class="btn-primary" id="upload-btn">Upload & Analyze</button>
+                <!-- Mode switcher -->
+                <div class="datasource-tabs">
+                    <button class="ds-tab-btn active" data-panel="file-panel" onclick="switchDsPanel(this)">
+                        <span class="ds-tab-icon">📁</span> File Upload
+                    </button>
+                    <button class="ds-tab-btn" data-panel="api-panel" onclick="switchDsPanel(this)">
+                        <span class="ds-tab-icon">🔌</span> API Connection
+                    </button>
+                    <button class="ds-tab-btn" data-panel="db-panel" onclick="switchDsPanel(this)">
+                        <span class="ds-tab-icon">🗄️</span> Log Database
+                    </button>
                 </div>
 
-                <div id="upload-progress" class="progress-container" style="display: none;">
-                    <div class="progress-bar">
-                        <div class="progress-fill" id="progress-fill"></div>
+                <!-- Panel 1: File Upload -->
+                <div id="file-panel" class="ds-panel active">
+                    <p class="panel-desc">Upload a CSV file containing security logs for AI-powered analysis.<br>
+                        Pipeline: <strong>BERT Detection</strong> → <strong>Correlation</strong> → <strong>TI
+                            Enrichment</strong> → <strong>Response</strong>
+                    </p>
+                    <div class="upload-box" id="upload-box">
+                        <div class="upload-icon">📁</div>
+                        <p class="upload-text">Drag &amp; drop CSV file here or click to browse</p>
+                        <input type="file" id="file-input" accept=".csv" hidden>
+                        <button class="btn-primary" onclick="document.getElementById('file-input').click()">Choose
+                            File</button>
                     </div>
-                    <p class="progress-text" id="progress-text">Analyzing...</p>
+                    <div id="file-info" class="file-info" style="display: none;">
+                        <span id="file-name"></span>
+                        <button class="btn-primary" id="upload-btn">Upload &amp; Analyze</button>
+                    </div>
+                    <div id="upload-progress" class="progress-container" style="display: none;">
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="progress-fill"></div>
+                        </div>
+                        <p class="progress-text" id="progress-text">Analyzing...</p>
+                    </div>
+                    <div id="upload-result" class="result-box" style="display: none;"></div>
+
+                    <div class="info-section">
+                        <h3>Expected CSV Format</h3>
+                        <table class="format-table">
+                            <thead>
+                                <tr>
+                                    <th>Column</th>
+                                    <th>Description</th>
+                                    <th>Example</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>timestamp</td>
+                                    <td>Log timestamp</td>
+                                    <td>2026-01-05 10:00:00</td>
+                                </tr>
+                                <tr>
+                                    <td>source_ip / ip</td>
+                                    <td>Source IP address</td>
+                                    <td>192.168.1.100</td>
+                                </tr>
+                                <tr>
+                                    <td>user</td>
+                                    <td>Username</td>
+                                    <td>admin</td>
+                                </tr>
+                                <tr>
+                                    <td>message / raw_message</td>
+                                    <td>Log message</td>
+                                    <td>Failed password for admin</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
 
-                <div id="upload-result" class="result-box" style="display: none;"></div>
-            </div>
+                <!-- Panel 2: API Connection -->
+                <div id="api-panel" class="ds-panel">
+                    <p class="panel-desc">Connect to a hosted AI model endpoint using an API key. The key authenticates
+                        your requests to the model service.</p>
 
-            <div class="info-section">
-                <h3>Expected CSV Format</h3>
-                <table class="format-table">
-                    <thead>
-                        <tr>
-                            <th>Column</th>
-                            <th>Description</th>
-                            <th>Example</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>timestamp</td>
-                            <td>Log timestamp</td>
-                            <td>2026-01-05 10:00:00</td>
-                        </tr>
-                        <tr>
-                            <td>source_ip / ip</td>
-                            <td>Source IP address</td>
-                            <td>192.168.1.100</td>
-                        </tr>
-                        <tr>
-                            <td>user</td>
-                            <td>Username</td>
-                            <td>admin</td>
-                        </tr>
-                        <tr>
-                            <td>message / raw_message</td>
-                            <td>Log message</td>
-                            <td>Failed password for admin</td>
-                        </tr>
-                    </tbody>
-                </table>
+                    <div class="connection-form">
+                        <div class="connection-field">
+                            <label>Model Endpoint URL</label>
+                            <div class="field-row">
+                                <input type="url" id="api-endpoint" class="conn-input"
+                                    placeholder="https://api.yourmodel.com/v1/predict">
+                            </div>
+                        </div>
+                        <div class="connection-field">
+                            <label>API Key</label>
+                            <div class="field-row">
+                                <input type="password" id="api-key" class="conn-input" placeholder="sk-..."></input>
+                                <button class="btn-eye" onclick="toggleVisibility('api-key', this)">👁</button>
+                            </div>
+                        </div>
+
+                        <div class="conn-actions">
+                            <button class="btn-secondary" onclick="testApiConnection()">🔗 Test Connection</button>
+                            <span id="api-status" class="conn-status"></span>
+                        </div>
+
+                        <div class="conn-note">
+                            <span>💡</span> When an API key is configured, the pipeline sends logs to the remote model
+                            instead of the local BERT engine.
+                        </div>
+
+                        <button class="btn-primary btn-run" onclick="saveApiConfig()">💾 Save Configuration</button>
+                    </div>
+                </div>
+
+                <!-- Panel 3: Log Database -->
+                <div id="db-panel" class="ds-panel">
+                    <p class="panel-desc">Connect directly to an external log database or REST API. The system will
+                        fetch and analyze logs automatically.</p>
+
+                    <div class="connection-form">
+                        <div class="connection-field">
+                            <label>Log API / DB URL</label>
+                            <div class="field-row">
+                                <input type="url" id="db-url" class="conn-input"
+                                    placeholder="https://logs.company.com/api/events">
+                            </div>
+                        </div>
+                        <div class="connection-field">
+                            <label>Bearer Token <span class="optional">(optional)</span></label>
+                            <div class="field-row">
+                                <input type="password" id="db-token" class="conn-input"
+                                    placeholder="Bearer eyJ..."></input>
+                                <button class="btn-eye" onclick="toggleVisibility('db-token', this)">👁</button>
+                            </div>
+                        </div>
+                        <div class="connection-field">
+                            <label>Row Limit</label>
+                            <div class="field-row">
+                                <select id="db-limit" class="conn-input conn-select">
+                                    <option value="100">100 rows</option>
+                                    <option value="500" selected>500 rows</option>
+                                    <option value="1000">1 000 rows</option>
+                                    <option value="5000">5 000 rows</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="conn-actions">
+                            <button class="btn-secondary" onclick="testDbConnection()">🔗 Test Connection</button>
+                            <span id="db-status" class="conn-status"></span>
+                        </div>
+
+                        <div id="db-progress" class="progress-container" style="display:none;">
+                            <div class="progress-bar">
+                                <div class="progress-fill" id="db-progress-fill"></div>
+                            </div>
+                            <p class="progress-text" id="db-progress-text">Fetching logs...</p>
+                        </div>
+                        <div id="db-result" class="result-box" style="display:none;"></div>
+
+                        <button class="btn-primary btn-run" onclick="fetchRemoteLogs()">⚡ Fetch &amp; Analyze</button>
+                    </div>
+                </div>
+
             </div>
         </div>
 
