@@ -1,7 +1,7 @@
 // Multi-Agent SOC Dashboard - JavaScript Logic
 // Connects to FastAPI backend running Member 1 + Member 2 agents
 
-const API_BASE = 'http://localhost:8000';
+const API_BASE = `http://${window.location.hostname}:8000`;
 
 let allIncidents = [];
 let lastUploadIncidents = [];  // incidents from the most recent upload only
