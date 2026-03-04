@@ -24,7 +24,7 @@ class IncidentDatabase:
         self._create_tables()
     
     def _create_tables(self):
-        """Create incidents table if not exists"""
+        """Create tables if not exist"""
         cursor = self.conn.cursor()
         cursor.execute("""
             CREATE TABLE IF NOT EXISTS incidents (
@@ -46,7 +46,57 @@ class IncidentDatabase:
                 created_at TEXT DEFAULT CURRENT_TIMESTAMP
             )
         """)
+        cursor.execute("""
+            CREATE TABLE IF NOT EXISTS api_keys (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                username TEXT UNIQUE NOT NULL,
+                api_key TEXT NOT NULL,
+                created_at TEXT DEFAULT CURRENT_TIMESTAMP,
+                last_used TEXT
+            )
+        """)
         self.conn.commit()
+
+    # ── API Key methods ────────────────────────────────────────────────────────
+
+    def create_or_replace_api_key(self, username: str, api_key: str) -> None:
+        """Insert or replace the API key for a user."""
+        cursor = self.conn.cursor()
+        cursor.execute("""
+            INSERT INTO api_keys (username, api_key)
+            VALUES (?, ?)
+            ON CONFLICT(username) DO UPDATE SET api_key=excluded.api_key,
+                                                created_at=CURRENT_TIMESTAMP
+        """, (username, api_key))
+        self.conn.commit()
+
+    def get_api_key_for_user(self, username: str) -> Optional[Dict]:
+        """Return the API key row for a user, or None."""
+        cursor = self.conn.cursor()
+        cursor.execute("SELECT * FROM api_keys WHERE username = ?", (username,))
+        row = cursor.fetchone()
+        return dict(row) if row else None
+
+    def revoke_api_key(self, username: str) -> bool:
+        """Delete the API key for a user. Returns True if a row was deleted."""
+        cursor = self.conn.cursor()
+        cursor.execute("DELETE FROM api_keys WHERE username = ?", (username,))
+        self.conn.commit()
+        return cursor.rowcount > 0
+
+    def validate_api_key(self, api_key: str) -> Optional[str]:
+        """Validate an API key and return the username it belongs to, or None."""
+        cursor = self.conn.cursor()
+        cursor.execute("SELECT username FROM api_keys WHERE api_key = ?", (api_key,))
+        row = cursor.fetchone()
+        if row:
+            # Update last_used
+            cursor.execute("UPDATE api_keys SET last_used=CURRENT_TIMESTAMP WHERE api_key=?", (api_key,))
+            self.conn.commit()
+            return row["username"]
+        return None
+
+
     
     def insert_incident(self, incident: Dict) -> int:
         """

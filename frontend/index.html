@@ -256,6 +256,54 @@
 
                         <button class="btn-primary btn-run" onclick="saveApiConfig()">💾 Save Configuration</button>
                     </div>
+
+                    <!-- API Key issuance card -->
+                    <div class="apikey-card" id="apikey-card">
+                        <div class="apikey-card-header">
+                            <span class="apikey-icon">🔑</span>
+                            <div>
+                                <h4>Your SOC API Key</h4>
+                                <p>Generate a personal key to authenticate with this SOC system's model endpoint.</p>
+                            </div>
+                        </div>
+
+                        <!-- Existing key display -->
+                        <div id="apikey-existing" style="display:none;">
+                            <div class="apikey-display-row">
+                                <code id="apikey-display" class="apikey-display">—</code>
+                                <button class="btn-copy" onclick="copyApiKey()" title="Copy to clipboard">📋</button>
+                            </div>
+                            <div class="apikey-meta">
+                                <span id="apikey-created">Created: —</span>
+                                <span id="apikey-last-used">Last used: —</span>
+                            </div>
+                            <div class="apikey-actions">
+                                <button class="btn-secondary" onclick="regenerateKey()">🔄 Regenerate Key</button>
+                                <button class="btn-danger" onclick="revokeKey()">🗑 Revoke</button>
+                            </div>
+                        </div>
+
+                        <!-- No key yet -->
+                        <div id="apikey-empty">
+                            <p class="apikey-empty-msg">You don't have an API key yet.</p>
+                            <button class="btn-primary" onclick="generateKey()">✨ Generate My API Key</button>
+                        </div>
+
+                        <!-- Newly generated key (full reveal) -->
+                        <div id="apikey-new-reveal" style="display:none;" class="apikey-reveal-box">
+                            <p class="reveal-label">⚠️ <strong>Copy this key now — it won't be shown again in
+                                    full.</strong></p>
+                            <div class="apikey-display-row">
+                                <code id="apikey-new-value" class="apikey-display highlight"></code>
+                                <button class="btn-copy" onclick="copyNewApiKey()" title="Copy to clipboard">📋
+                                    Copy</button>
+                            </div>
+                            <button class="btn-secondary" style="margin-top:0.75rem" onclick="dismissReveal()">✅ I've
+                                saved it</button>
+                        </div>
+
+                        <div id="apikey-status" class="conn-status" style="margin-top:0.5rem;"></div>
+                    </div>
                 </div>
 
                 <!-- Panel 3: Log Database -->

@@ -485,6 +485,9 @@ function initDataSources() {
         const btn = document.querySelector(`.ds-tab-btn[data-panel="${cfg.lastPanel}"]`);
         if (btn) switchDsPanel(btn);
     }
+
+    // Load user's existing API key state
+    loadUserApiKey();
 }
 
 function saveApiConfig() {
@@ -492,6 +495,92 @@ function saveApiConfig() {
     const key = document.getElementById('api-key').value.trim();
     saveConnectionConfig({ api: { endpoint, key } });
     showNotification('API configuration saved ✅', 'success');
+}
+
+// ── API KEY MANAGEMENT ────────────────────────────────────────────────────────
+
+let _newKeyValue = ''; // holds the full key during reveal window
+
+function _setApikeyUiState(state) {
+    // state: 'empty' | 'existing' | 'reveal'
+    document.getElementById('apikey-empty').style.display = state === 'empty' ? '' : 'none';
+    document.getElementById('apikey-existing').style.display = state === 'existing' ? '' : 'none';
+    document.getElementById('apikey-new-reveal').style.display = state === 'reveal' ? '' : 'none';
+    document.getElementById('apikey-status').textContent = '';
+}
+
+async function loadUserApiKey() {
+    if (!currentUser) return;
+    try {
+        const resp = await fetch(`${API_BASE}/api-key/${encodeURIComponent(currentUser)}`);
+        if (resp.status === 404) { _setApikeyUiState('empty'); return; }
+        if (!resp.ok) throw new Error('Failed to fetch key info');
+        const data = await resp.json();
+        document.getElementById('apikey-display').textContent = data.api_key_masked;
+        document.getElementById('apikey-created').textContent = `Created: ${data.created_at ? new Date(data.created_at).toLocaleString() : '—'}`;
+        document.getElementById('apikey-last-used').textContent = `Last used: ${data.last_used ? new Date(data.last_used).toLocaleString() : 'Never'}`;
+        _setApikeyUiState('existing');
+    } catch (e) {
+        _setApikeyUiState('empty');
+    }
+}
+
+async function generateKey(confirm = false) {
+    const statusEl = document.getElementById('apikey-status');
+    statusEl.textContent = '⏳ Generating...';
+    statusEl.className = 'conn-status testing';
+
+    try {
+        const resp = await fetch(`${API_BASE}/api-key/generate`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ username: currentUser, confirm_regenerate: confirm })
+        });
+        const data = await resp.json();
+        if (!resp.ok) throw new Error(data.detail || 'Generation failed');
+
+        _newKeyValue = data.api_key;
+        document.getElementById('apikey-new-value').textContent = _newKeyValue;
+        _setApikeyUiState('reveal');
+        statusEl.textContent = '';
+        showNotification('API key generated! Copy it now.', 'success');
+    } catch (err) {
+        statusEl.textContent = `❌ ${err.message}`;
+        statusEl.className = 'conn-status error';
+    }
+}
+
+function regenerateKey() {
+    if (!confirm('This will invalidate your current key. Are you sure?')) return;
+    generateKey(true);
+}
+
+async function revokeKey() {
+    if (!confirm('Revoke your API key? Any connections using it will stop working.')) return;
+    const statusEl = document.getElementById('apikey-status');
+    try {
+        const resp = await fetch(`${API_BASE}/api-key/${encodeURIComponent(currentUser)}`, { method: 'DELETE' });
+        if (!resp.ok) throw new Error((await resp.json()).detail || 'Revoke failed');
+        _setApikeyUiState('empty');
+        showNotification('API key revoked.', 'info');
+    } catch (err) {
+        statusEl.textContent = `❌ ${err.message}`;
+        statusEl.className = 'conn-status error';
+    }
+}
+
+function copyApiKey() {
+    const text = document.getElementById('apikey-display').textContent;
+    navigator.clipboard.writeText(text).then(() => showNotification('Masked key copied (use the full key from generation)', 'info'));
+}
+
+function copyNewApiKey() {
+    navigator.clipboard.writeText(_newKeyValue).then(() => showNotification('Full API key copied to clipboard ✅', 'success'));
+}
+
+function dismissReveal() {
+    _newKeyValue = '';
+    loadUserApiKey(); // reload masked version
 }
 
 // Test API model endpoint

@@ -993,6 +993,143 @@ code {
     margin-top: 0.5rem;
 }
 
+/* ── API KEY CARD ─────────────────────────────────────────── */
+.apikey-card {
+    margin-top: 2rem;
+    background: rgba(251, 191, 36, 0.04);
+    border: 1px solid rgba(251, 191, 36, 0.25);
+    border-radius: 12px;
+    padding: 1.5rem;
+    max-width: 680px;
+    animation: fadeIn 0.3s ease;
+}
+
+.apikey-card-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 1.25rem;
+}
+
+.apikey-icon {
+    font-size: 1.8rem;
+    flex-shrink: 0;
+    margin-top: 0.1rem;
+}
+
+.apikey-card-header h4 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.95rem;
+    color: #fbbf24;
+    letter-spacing: 1px;
+    margin-bottom: 0.25rem;
+}
+
+.apikey-card-header p {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 0.88rem;
+    color: var(--text-secondary);
+}
+
+.apikey-display-row {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    background: var(--bg-tertiary);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 0.6rem 1rem;
+    margin-bottom: 0.6rem;
+}
+
+.apikey-display {
+    flex: 1;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 0.88rem;
+    color: #fbbf24;
+    word-break: break-all;
+    letter-spacing: 0.5px;
+}
+
+.apikey-display.highlight {
+    color: #34d399;
+    /* Green for full key reveal */
+}
+
+.btn-copy {
+    background: none;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: 0.3rem 0.6rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    transition: all 0.2s;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.btn-copy:hover {
+    background: var(--bg-secondary);
+    color: var(--text-primary);
+}
+
+.apikey-meta {
+    display: flex;
+    gap: 1.5rem;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 0.78rem;
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+    opacity: 0.7;
+}
+
+.apikey-actions {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+}
+
+.btn-danger {
+    background: rgba(239, 68, 68, 0.1);
+    border: 1px solid rgba(239, 68, 68, 0.3);
+    color: #ef4444;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: all 0.2s;
+}
+
+.btn-danger:hover {
+    background: rgba(239, 68, 68, 0.2);
+    border-color: #ef4444;
+}
+
+.apikey-empty-msg {
+    font-family: 'Rajdhani', sans-serif;
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+}
+
+/* Full key reveal box */
+.apikey-reveal-box {
+    background: rgba(52, 211, 153, 0.05);
+    border: 1px solid rgba(52, 211, 153, 0.3);
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.reveal-label {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 0.9rem;
+    color: #f59e0b;
+    margin-bottom: 0.75rem;
+}
+
 /* ── UPLOAD CONTAINER (kept for file-panel) ─────────────── */
 .upload-container {
     background: var(--bg-card);

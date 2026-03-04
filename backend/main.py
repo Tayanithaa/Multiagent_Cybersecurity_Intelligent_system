@@ -482,6 +482,92 @@ async def clear_incidents():
         raise HTTPException(status_code=500, detail=f"Failed to clear incidents: {str(e)}")
 
 
+
+# ── API Key Management ─────────────────────────────────────────────────────────
+
+import secrets, hashlib
+
+def _generate_api_key(username: str) -> str:
+    """Generate a deterministic-but-random API key scoped to a username."""
+    random_part = secrets.token_hex(16)  # 32 hex chars
+    prefix = "soc"
+    return f"{prefix}_{username[:8]}_{random_part}"
+
+
+@app.post("/api-key/generate")
+async def generate_api_key(payload: dict):
+    """
+    Generate (or regenerate) an API key for a user.
+    Body: { "username": "...", "confirm_regenerate": false }
+    """
+    username = payload.get("username", "").strip()
+    if not username:
+        raise HTTPException(status_code=400, detail="username is required")
+
+    existing = db.get_api_key_for_user(username)
+    confirm = payload.get("confirm_regenerate", False)
+
+    if existing and not confirm:
+        raise HTTPException(
+            status_code=409,
+            detail="A key already exists for this user. Send confirm_regenerate=true to replace it."
+        )
+
+    new_key = _generate_api_key(username)
+    db.create_or_replace_api_key(username, new_key)
+
+    return {
+        "status": "created",
+        "username": username,
+        "api_key": new_key,
+        "message": "Store this key securely — it will be partially masked on subsequent requests."
+    }
+
+
+@app.get("/api-key/{username}")
+async def get_api_key(username: str):
+    """
+    Retrieve API key info for a user (key is masked, showing only prefix + last 4 chars).
+    Full key is only shown once at generation time.
+    """
+    row = db.get_api_key_for_user(username)
+    if not row:
+        raise HTTPException(status_code=404, detail="No API key found for this user.")
+
+    key = row["api_key"]
+    # Mask: show prefix + *** + last 4
+    parts = key.split("_", 2)
+    masked = f"{parts[0]}_{parts[1]}_{'*' * (len(parts[2]) - 4)}{parts[2][-4:]}" if len(parts) == 3 else key[:8] + "..." + key[-4:]
+
+    return {
+        "username": username,
+        "api_key_masked": masked,
+        "created_at": row["created_at"],
+        "last_used": row.get("last_used")
+    }
+
+
+@app.delete("/api-key/{username}")
+async def revoke_api_key(username: str):
+    """Revoke (delete) the API key for a user."""
+    deleted = db.revoke_api_key(username)
+    if not deleted:
+        raise HTTPException(status_code=404, detail="No API key found for this user.")
+    return {"status": "revoked", "username": username, "message": "API key revoked successfully."}
+
+
+@app.post("/api-key/validate")
+async def validate_api_key(payload: dict):
+    """Validate an API key and return the owner (used internally by the pipeline)."""
+    key = payload.get("api_key", "").strip()
+    if not key:
+        raise HTTPException(status_code=400, detail="api_key is required")
+    username = db.validate_api_key(key)
+    if not username:
+        raise HTTPException(status_code=401, detail="Invalid or expired API key.")
+    return {"valid": True, "username": username}
+
+
 # Startup event
 @app.on_event("startup")
 async def startup_event():
