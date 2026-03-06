@@ -41,10 +41,14 @@ python -m http.server 8080
 ```
 🌐 Open http://localhost:8080 in your browser
 
-### 5. Start Backend API (Coming Soon - Member 3)
+### 5. Start Backend API
 ```bash
-# FastAPI backend with /analyze_logs, /incidents, /stats endpoints
-python -m uvicorn backend.main:app --reload --port 8000
+# FastAPI backend with /upload, /incidents, /stats endpoints
+# Use --host 0.0.0.0 for remote access (port forwarding/network deployment)
+python -m uvicorn backend.main:app --host 0.0.0.0 --port 8000 --reload
+
+# For local-only access:
+# python -m uvicorn backend.main:app --reload --port 8000
 ```
 
 ---
@@ -261,8 +265,9 @@ python tests/test_integration.py    # Full pipeline
 | Document | Description |
 |----------|-------------|
 | [START_HERE.md](START_HERE.md) | Beginner-friendly setup guide |
-| [TRAINING_GUIDE.md](TRAINING_GUIDE.md) | Model training documentation |
-| [STUDY.md](STUDY.md) | **Complete technical deep dive** (1000+ lines) |
+| [DEPLOYMENT.md](docs/DEPLOYMENT.md) | **Production deployment & troubleshooting guide** |
+| [TRAINING_GUIDE.md](docs/TRAINING_GUIDE.md) | Model training documentation |
+| [STUDY.md](docs/STUDY.md) | **Complete technical deep dive** (1000+ lines) |
 | [LICENSE](LICENSE) | Apache 2.0 open source license |
 
 ### 📖 STUDY.md Highlights
@@ -289,22 +294,32 @@ The **STUDY.md** file is a comprehensive 1000+ line technical guide covering:
 ### Running the Dashboard
 
 ```bash
-# Terminal 1: Start frontend
+# Terminal 1: Start backend API
+python -m uvicorn backend.main:app --host 0.0.0.0 --port 8000 --reload
+
+# Terminal 2: Start frontend
 cd frontend
 python -m http.server 8080
 # Open http://localhost:8080
-
-# Terminal 2: Start backend (Member 3 - to be implemented)
-python -m uvicorn backend.main:app --reload --port 8000
 ```
+
+**Remote Access (Mobile/Other Devices):**
+- Backend uses `--host 0.0.0.0` to accept connections from all network interfaces
+- Frontend automatically connects to backend using same hostname (e.g., `192.168.1.50:8000`)
+- Port forward both 8080 (frontend) and 8000 (backend) through your router/firewall
+- Access via `http://your-server-ip:8080` from any device on the network
 
 ### Features
 
 - **Dashboard Tab:** Real-time stats, threat charts, severity breakdown
-- **Incidents Tab:** Full table with 9 columns, search/filter capabilities
+- **Incidents Tab:** 
+  - Shows only current uploaded file's incidents (until reload button clicked)
+  - Click 🔄 Reload to view all-time incidents for the user
+  - Full table with 9 columns, search/filter capabilities
 - **Upload Tab:** CSV file upload with drag-and-drop, progress bar
 - **Auto-refresh:** Updates every 30 seconds
 - **Notifications:** Toast messages for success/error feedback
+- **Dynamic API Connection:** Frontend automatically uses correct backend URL (localhost or remote IP)
 
 ### CSV Format
 
@@ -371,10 +386,19 @@ Response: {
 1. **Clone repository** on production server
 2. **Install dependencies** in virtual environment
 3. **Train model** (first time only)
-4. **Set up backend API** (FastAPI + PostgreSQL)
-5. **Deploy frontend** (Nginx/Apache static hosting)
-6. **Integrate with SIEM** (batch or streaming)
-7. **Monitor performance** (log predictions, track accuracy)
+4. **Start backend API** with `--host 0.0.0.0` for network access
+   ```bash
+   python -m uvicorn backend.main:app --host 0.0.0.0 --port 8000
+   ```
+5. **Deploy frontend** (Nginx/Apache static hosting or `python -m http.server 8080`)
+6. **Configure firewall** to allow ports 8000 (backend) and 8080 (frontend)
+7. **Integrate with SIEM** (batch or streaming)
+8. **Monitor performance** (log predictions, track accuracy)
+
+**Network Configuration:**
+- Backend must bind to `0.0.0.0` (not `127.0.0.1`) for remote access
+- Frontend uses `window.location.hostname` to auto-detect backend URL
+- Works seamlessly on localhost, LAN, and port-forwarded deployments
 
 ### Scaling Recommendations
 

@@ -1,7 +1,8 @@
 // Multi-Agent SOC Dashboard - JavaScript Logic
 // Connects to FastAPI backend running Member 1 + Member 2 agents
 
-const API_BASE = `http://${window.location.hostname}:8000`;
+const API_BASE = `https://4tb8px49-8000.inc1.devtunnels.ms`;
+console.log('🔗 API_BASE:', API_BASE);
 
 let allIncidents = [];
 let lastUploadIncidents = [];  // incidents from the most recent upload only
@@ -43,6 +44,10 @@ document.addEventListener('DOMContentLoaded', () => {
         dashboardMode = 'all';
         lastUploadIncidents = [];
         loadDashboard();
+        // Refresh incidents tab if currently viewing it
+        if (currentTab === 'incidents') {
+            displayIncidents(allIncidents);
+        }
         showNotification('Showing all-time incidents', 'info');
     });
 });
@@ -80,7 +85,10 @@ function switchTab(tabName) {
 async function loadDashboard() {
     try {
         const response = await fetch(`${API_BASE}/incidents?limit=1000`);
-        if (!response.ok) throw new Error('Backend not available');
+        if (!response.ok) {
+            const errorText = await response.text();
+            throw new Error(`Backend error: ${response.status} - ${errorText}`);
+        }
 
         allIncidents = await response.json();
         console.log('📊 Loaded incidents:', allIncidents.length);
@@ -97,11 +105,16 @@ async function loadDashboard() {
         }
 
         if (currentTab === 'incidents') {
-            displayIncidents(allIncidents);
+            loadIncidents();
         }
     } catch (error) {
         console.error('Failed to load dashboard:', error);
-        showNotification('Backend not available. Please start the FastAPI server.', 'error');
+        // More specific error message
+        if (error.message.includes('Failed to fetch')) {
+            showNotification(`Cannot connect to backend at ${API_BASE}. Please start the FastAPI server.`, 'error');
+        } else {
+            showNotification(`Backend error: ${error.message}`, 'error');
+        }
     }
 }
 
@@ -296,9 +309,15 @@ function updateCharts(incidents) {
 
 // Load and display incidents
 async function loadIncidents() {
-    if (allIncidents.length === 0) {
-        await loadDashboard();
-    } else {
+    // If we're in upload mode and have upload-specific incidents, show those
+    if (dashboardMode === 'upload' && lastUploadIncidents.length > 0) {
+        displayIncidents(lastUploadIncidents);
+    } 
+    // Otherwise, load and show all incidents
+    else {
+        if (allIncidents.length === 0) {
+            await loadDashboard();
+        }
         displayIncidents(allIncidents);
     }
 }
@@ -873,10 +892,13 @@ async function uploadFile() {
             progressContainer.style.display = 'none';
             resultBox.style.display = 'block';
             resultBox.className = 'result-box success';
+            
+            const incidentCount = result.incidents_detected ?? result.incidents_count ?? result.incidents?.length ?? 0;
+            
             resultBox.innerHTML = `
                 <h4>✅ Analysis Complete!</h4>
                 <p>File: <strong>${file.name}</strong></p>
-                <p>Incidents detected: <strong>${result.incidents_detected ?? result.incidents_count ?? 0}</strong></p>
+                <p>Incidents detected: <strong>${incidentCount}</strong></p>
                 <p>Pipeline: BERT Detection → Correlation → TI Enrichment → Response Recommendations</p>
                 <button class="btn-primary" onclick="switchTab('incidents')">View Incidents</button>
             `;
@@ -889,6 +911,11 @@ async function uploadFile() {
                 updateCharts(lastUploadIncidents);
                 setDashboardBadge('upload', file.name);
                 showNotification(`Dashboard shows ${file.name} — hit 🔄 for all-time view.`, 'success');
+                
+                // If on incidents tab, refresh it
+                if (currentTab === 'incidents') {
+                    displayIncidents(lastUploadIncidents);
+                }
             } else {
                 dashboardMode = 'all';
                 loadDashboard();
