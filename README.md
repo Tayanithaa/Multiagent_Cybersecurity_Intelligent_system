@@ -26,6 +26,9 @@ pip install -r requirements.txt
 ### 2. Train the Model (First Time Only)
 ```bash
 python training/train_bert_model.py
+python training/train_correlation_roberta_model.py
+python training/train_ti_enrichment_bert_model.py
+python training/train_response_albert_model.py
 ```
 ⏱️ Training time: ~3 minutes on RTX 3050 GPU
 
@@ -37,7 +40,7 @@ python test_real_logs.py csv data/sample_logs.csv
 ### 4. Launch Frontend Dashboard
 ```bash
 cd frontend
-python -m http.server 8080
+python3 -m http.server 8080 --bind 0.0.0.0
 ```
 🌐 Open http://localhost:8080 in your browser
 
@@ -195,7 +198,10 @@ AI_Aztechs/
 │   ├── app.js                       # JavaScript logic + API calls
 │   └── style.css                    # Modern dashboard styling
 ├── models/
-│   └── distilbert_log_classifier/   # Trained BERT model (268MB)
+│   ├── distilbert_log_classifier/   # BERT detection model + metadata.json
+│   ├── correlation_roberta/         # Correlation model + metadata.json
+│   ├── ti_enrichment_bert/          # TI enrichment model + metadata.json
+│   └── response_albert/             # Response model + metadata.json
 ├── tests/
 │   ├── test_bert.py                 # BERT unit tests
 │   ├── test_correlation.py          # Correlation tests
@@ -299,7 +305,7 @@ python -m uvicorn backend.main:app --host 0.0.0.0 --port 8000 --reload
 
 # Terminal 2: Start frontend
 cd frontend
-python -m http.server 8080
+python3 -m http.server 8080 --bind 0.0.0.0
 # Open http://localhost:8080
 ```
 
@@ -390,7 +396,7 @@ Response: {
    ```bash
    python -m uvicorn backend.main:app --host 0.0.0.0 --port 8000
    ```
-5. **Deploy frontend** (Nginx/Apache static hosting or `python -m http.server 8080`)
+5. **Deploy frontend** (Nginx/Apache static hosting or `python3 -m http.server 8080 --bind 0.0.0.0`)
 6. **Configure firewall** to allow ports 8000 (backend) and 8080 (frontend)
 7. **Integrate with SIEM** (batch or streaming)
 8. **Monitor performance** (log predictions, track accuracy)

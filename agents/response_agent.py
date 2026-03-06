@@ -2,13 +2,12 @@
 RESPONSE RECOMMENDATION MODEL
 Uses ALBERT to predict primary response actions.
 """
-import json
-import os
 import warnings
 
 import pandas as pd
 import torch
 from transformers import AlbertForSequenceClassification, AlbertTokenizer
+from agents.model_utils import get_model_metadata, validate_model_artifacts
 
 warnings.filterwarnings("ignore")
 
@@ -77,25 +76,20 @@ ACTIONS = {
 
 
 class ResponseAlbertModel:
-    def __init__(self, model_path="models/response_albert"):
-        self.model_path = model_path
+    def __init__(self, model_path=None):
+        self.model_path = validate_model_artifacts("response", model_path)
         self.device = "cuda" if torch.cuda.is_available() else "cpu"
 
-        config_file = os.path.join(model_path, "config.json")
-        if not os.path.exists(config_file):
-            raise FileNotFoundError(
-                f"Model config not found at {config_file}. "
-                "Please train the model first using train_response_albert_model.py"
-            )
+        metadata = get_model_metadata(self.model_path)
+        self.label_map = metadata["label_map"]
+        self.id_to_label = metadata["id_to_label"]
+        self.max_length = metadata["max_length"]
 
-        with open(config_file, "r") as f:
-            self.config = json.load(f)
-
-        self.id_to_label = {int(k): v for k, v in self.config["id_to_label"].items()}
-        self.max_length = self.config["max_length"]
-
-        self.tokenizer = AlbertTokenizer.from_pretrained(model_path)
-        self.model = AlbertForSequenceClassification.from_pretrained(model_path)
+        self.tokenizer = AlbertTokenizer.from_pretrained(str(self.model_path))
+        self.model = AlbertForSequenceClassification.from_pretrained(
+            str(self.model_path),
+            num_labels=len(self.label_map)
+        )
         self.model.to(self.device)
         self.model.eval()
 
@@ -119,6 +113,7 @@ class ResponseAlbertModel:
 
 
 _global_response_model = None
+_global_response_model_path = None
 
 
 def _build_action_text(row):
@@ -131,14 +126,15 @@ def _build_action_text(row):
     )
 
 
-def recommend_response(enriched_df, model_path="models/response_albert", batch_size=32):
+def recommend_response(enriched_df, model_path=None, batch_size=32):
     if enriched_df is None or len(enriched_df) == 0:
         print("No incidents to process")
         return pd.DataFrame()
 
-    global _global_response_model
-    if _global_response_model is None:
+    global _global_response_model, _global_response_model_path
+    if _global_response_model is None or model_path != _global_response_model_path:
         _global_response_model = ResponseAlbertModel(model_path)
+        _global_response_model_path = model_path
 
     response_df = enriched_df.copy()
     texts = response_df.apply(_build_action_text, axis=1).tolist()

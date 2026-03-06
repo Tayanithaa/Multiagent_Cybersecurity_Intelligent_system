@@ -22,6 +22,7 @@ from agents.bert_detection import bert_detect
 from agents.correlation import correlate_alerts
 from agents.ti_enrichment import enrich_with_threat_intel
 from agents.response_agent import recommend_response
+from agents.model_utils import ModelArtifactsError, validate_all_models
 
 # Initialize FastAPI app
 app = FastAPI(
@@ -147,6 +148,10 @@ async def analyze_logs(request: AnalyzeRequest):
             message=f"Analyzed {len(df)} logs, detected {len(incidents)} incidents"
         )
         
+    except ModelArtifactsError as e:
+        raise HTTPException(status_code=503, detail=f"Model unavailable: {str(e)}")
+    except FileNotFoundError as e:
+        raise HTTPException(status_code=503, detail=f"Model unavailable: {str(e)}")
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Analysis failed: {str(e)}")
 
@@ -227,6 +232,12 @@ async def upload_csv(file: UploadFile = File(...)):
     except pd.errors.ParserError as e:
         print(f"❌ CSV parsing error: {str(e)}")
         raise HTTPException(status_code=400, detail=f"Invalid CSV format: {str(e)}")
+    except ModelArtifactsError as e:
+        print(f"❌ Model artifact error: {str(e)}")
+        raise HTTPException(status_code=503, detail=f"Model unavailable: {str(e)}")
+    except FileNotFoundError as e:
+        print(f"❌ Model file error: {str(e)}")
+        raise HTTPException(status_code=503, detail=f"Model unavailable: {str(e)}")
     except Exception as e:
         print(f"❌ Upload error: {str(e)}")
         import traceback
@@ -575,6 +586,16 @@ async def startup_event():
     print("="*80)
     print("🚀 Multi-Agent SOC API Starting...")
     print("="*80)
+    try:
+        resolved_models = validate_all_models()
+        print("✅ Model artifact validation passed")
+        for model_name, model_path in resolved_models.items():
+            print(f"   - {model_name}: {model_path}")
+    except ModelArtifactsError as e:
+        print("❌ Model artifact validation failed")
+        print(str(e))
+        raise RuntimeError(str(e))
+
     print("📊 Dashboard: http://localhost:8000")
     print("📖 API Docs: http://localhost:8000/docs")
     print("🔍 Agents: BERT Detection → Correlation → TI Enrichment → Response")

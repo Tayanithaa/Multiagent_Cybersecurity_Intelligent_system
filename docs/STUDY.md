@@ -1259,7 +1259,7 @@ body {
 **1. Start the frontend server:**
 ```bash
 cd frontend
-python -m http.server 8080
+python3 -m http.server 8080 --bind 0.0.0.0
 ```
 
 **2. Open in browser:**

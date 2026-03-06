@@ -2,13 +2,12 @@
 CORRELATION MODEL AGENT
 Uses RoBERTa to predict whether alerts should be correlated.
 """
-import json
-import os
 import warnings
 
 import pandas as pd
 import torch
 from transformers import RobertaForSequenceClassification, RobertaTokenizer
+from agents.model_utils import get_model_metadata, validate_model_artifacts
 
 warnings.filterwarnings("ignore")
 
@@ -16,27 +15,21 @@ warnings.filterwarnings("ignore")
 class CorrelationRoBERTaModel:
     """RoBERTa-based correlation model for alert pairing."""
 
-    def __init__(self, model_path="models/correlation_roberta"):
-        self.model_path = model_path
+    def __init__(self, model_path=None):
+        self.model_path = validate_model_artifacts("correlation", model_path)
         self.device = "cuda" if torch.cuda.is_available() else "cpu"
 
-        config_file = os.path.join(model_path, "config.json")
-        if not os.path.exists(config_file):
-            raise FileNotFoundError(
-                f"Model config not found at {config_file}. "
-                "Please train the model first using train_correlation_roberta_model.py"
-            )
-
-        with open(config_file, "r") as f:
-            self.config = json.load(f)
-
-        self.label_map = self.config["label_map"]
-        self.id_to_label = {int(k): v for k, v in self.config["id_to_label"].items()}
-        self.max_length = self.config["max_length"]
+        metadata = get_model_metadata(self.model_path)
+        self.label_map = metadata["label_map"]
+        self.id_to_label = metadata["id_to_label"]
+        self.max_length = metadata["max_length"]
         self.positive_label_id = self.label_map.get("yes", 1)
 
-        self.tokenizer = RobertaTokenizer.from_pretrained(model_path)
-        self.model = RobertaForSequenceClassification.from_pretrained(model_path)
+        self.tokenizer = RobertaTokenizer.from_pretrained(str(self.model_path))
+        self.model = RobertaForSequenceClassification.from_pretrained(
+            str(self.model_path),
+            num_labels=len(self.label_map)
+        )
         self.model.to(self.device)
         self.model.eval()
 
@@ -84,6 +77,7 @@ class UnionFind:
 
 
 _global_correlation_model = None
+_global_correlation_model_path = None
 
 
 def _build_pair_text(threat_type, ip_a, ip_b, time_diff_minutes):
@@ -93,7 +87,7 @@ def _build_pair_text(threat_type, ip_a, ip_b, time_diff_minutes):
     )
 
 
-def correlate_alerts(df, time_window="5min", model_path="models/correlation_roberta", threshold=0.5):
+def correlate_alerts(df, time_window="5min", model_path=None, threshold=0.5):
     if df is None or len(df) == 0:
         return pd.DataFrame()
 
@@ -109,9 +103,10 @@ def correlate_alerts(df, time_window="5min", model_path="models/correlation_robe
         print("No threats detected - all logs are normal activity")
         return pd.DataFrame()
 
-    global _global_correlation_model
-    if _global_correlation_model is None:
+    global _global_correlation_model, _global_correlation_model_path
+    if _global_correlation_model is None or model_path != _global_correlation_model_path:
         _global_correlation_model = CorrelationRoBERTaModel(model_path)
+        _global_correlation_model_path = model_path
 
     time_delta = pd.to_timedelta(time_window)
     threats = threats.sort_values("timestamp").reset_index(drop=True)

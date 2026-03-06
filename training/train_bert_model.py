@@ -231,8 +231,8 @@ model.config.label2id = LABEL_MAP
 model.save_pretrained(CONFIG["output_dir"])
 tokenizer.save_pretrained(CONFIG["output_dir"])
 
-# Save config and label map
-config_data = {
+# Save metadata and label map
+metadata_data = {
     "label_map": LABEL_MAP,
     "id_to_label": ID_TO_LABEL,
     "max_length": CONFIG["max_length"],
@@ -242,8 +242,8 @@ config_data = {
     "timestamp": datetime.now().isoformat()
 }
 
-with open(f"{CONFIG['output_dir']}/config.json", "w") as f:
-    json.dump(config_data, f, indent=2)
+with open(f"{CONFIG['output_dir']}/metadata.json", "w") as f:
+    json.dump(metadata_data, f, indent=2)
 
 print(f"✅ Model saved to: {CONFIG['output_dir']}")
 

@@ -5,47 +5,36 @@ Replaces the toy TF-IDF classifier with trained DistilBERT model
 import pandas as pd
 import torch
 from transformers import DistilBertTokenizer, DistilBertForSequenceClassification
-import json
-import os
 import warnings
+from agents.model_utils import get_model_metadata, validate_model_artifacts
 warnings.filterwarnings('ignore')
 
 
 class BERTLogClassifier:
     """Production BERT-based log classifier using fine-tuned DistilBERT"""
     
-    def __init__(self, model_path="models/distilbert_log_classifier"):
+    def __init__(self, model_path=None):
         """
         Initialize the classifier with trained model
         
         Args:
             model_path: Path to saved DistilBERT model directory
         """
-        self.model_path = model_path
+        self.model_path = validate_model_artifacts("bert_detection", model_path)
         self.device = "cuda" if torch.cuda.is_available() else "cpu"
-        
-        # Load config
-        config_file = os.path.join(model_path, "config.json")
-        if not os.path.exists(config_file):
-            raise FileNotFoundError(
-                f"Model config not found at {config_file}. "
-                "Please train the model first using train_bert_model.py"
-            )
-        
-        with open(config_file, 'r') as f:
-            self.config = json.load(f)
-        
-        self.label_map = self.config["label_map"]
-        self.id_to_label = {int(k): v for k, v in self.config["id_to_label"].items()}
-        self.max_length = self.config["max_length"]
+
+        metadata = get_model_metadata(self.model_path)
+        self.label_map = metadata["label_map"]
+        self.id_to_label = metadata["id_to_label"]
+        self.max_length = metadata["max_length"]
         self.num_labels = len(self.label_map)
         
         # Load model and tokenizer
-        print(f"Loading model from {model_path}...")
+        print(f"Loading model from {self.model_path}...")
         print(f"Model has {self.num_labels} classes: {list(self.label_map.keys())}")
-        self.tokenizer = DistilBertTokenizer.from_pretrained(model_path)
+        self.tokenizer = DistilBertTokenizer.from_pretrained(str(self.model_path))
         self.model = DistilBertForSequenceClassification.from_pretrained(
-            model_path,
+            str(self.model_path),
             num_labels=self.num_labels
         )
         self.model.to(self.device)
@@ -163,8 +152,9 @@ class BERTLogClassifier:
 # PUBLIC INTERFACE (compatible with existing code)
 # ==============================================================================
 _global_detector = None
+_global_detector_path = None
 
-def bert_detect(df, model_path="models/distilbert_log_classifier"):
+def bert_detect(df, model_path=None):
     """
     Public function to run BERT detection (drop-in replacement)
     
@@ -175,11 +165,12 @@ def bert_detect(df, model_path="models/distilbert_log_classifier"):
     Returns:
         DataFrame with bert_class, bert_confidence, severity columns
     """
-    global _global_detector
+    global _global_detector, _global_detector_path
     
     # Lazy load model (only once)
-    if _global_detector is None:
+    if _global_detector is None or model_path != _global_detector_path:
         _global_detector = BERTLogClassifier(model_path)
+        _global_detector_path = model_path
     
     return _global_detector.detect(df)
 

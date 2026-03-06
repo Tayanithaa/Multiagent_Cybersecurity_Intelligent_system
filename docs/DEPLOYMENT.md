@@ -12,7 +12,7 @@ python -m uvicorn backend.main:app --reload --port 8000
 ### 2. Start Frontend
 ```bash
 cd frontend
-python -m http.server 8080
+python3 -m http.server 8080 --bind 0.0.0.0
 ```
 
 ### 3. Access
@@ -36,6 +36,15 @@ source venv/bin/activate
 python -m uvicorn backend.main:app --host 0.0.0.0 --port 8000 --reload
 ```
 
+**Startup validation behavior (fail-fast):**
+- Backend validates all required model artifacts at startup and refuses to start if any are missing/corrupt.
+- Required model folders:
+    - `models/distilbert_log_classifier`
+    - `models/correlation_roberta`
+    - `models/ti_enrichment_bert`
+    - `models/response_albert`
+- Each folder should contain Hugging Face artifacts (`config.json`, tokenizer files, weights) plus `metadata.json`.
+
 **Verify backend is accessible:**
 ```bash
 # Check it's listening on all interfaces (0.0.0.0:8000), not just localhost (127.0.0.1:8000)
@@ -50,7 +59,7 @@ curl http://localhost:8000/
 ### 2. Start Frontend
 ```bash
 cd frontend
-python -m http.server 8080
+python3 -m http.server 8080 --bind 0.0.0.0
 ```
 
 ### 3. Configure Firewall
@@ -434,7 +443,7 @@ Use sudo or change to port > 1024 (e.g., 8080, 8000)
 python -m uvicorn backend.main:app --host 0.0.0.0 --port 8000 --reload
 
 # Start frontend
-cd frontend && python -m http.server 8080
+cd frontend && python3 -m http.server 8080 --bind 0.0.0.0
 
 # Check ports
 netstat -tulnp | grep -E ':(8000|8080)'

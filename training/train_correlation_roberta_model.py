@@ -138,7 +138,7 @@ def main():
     model.save_pretrained(CONFIG["output_dir"])
     tokenizer.save_pretrained(CONFIG["output_dir"])
 
-    config_data = {
+    metadata_data = {
         "label_map": {"no": 0, "yes": 1},
         "id_to_label": {0: "no", 1: "yes"},
         "max_length": CONFIG["max_length"],
@@ -148,8 +148,8 @@ def main():
         "timestamp": datetime.now().isoformat(),
     }
 
-    with open(f"{CONFIG['output_dir']}/config.json", "w") as f:
-        json.dump(config_data, f, indent=2)
+    with open(f"{CONFIG['output_dir']}/metadata.json", "w") as f:
+        json.dump(metadata_data, f, indent=2)
 
     print("Evaluating on test set...")
     test_results = trainer.predict(test_dataset)

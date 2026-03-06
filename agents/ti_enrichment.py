@@ -2,13 +2,12 @@
 THREAT INTELLIGENCE ENRICHMENT MODEL
 Uses BERT to predict TI profiles for incidents.
 """
-import json
-import os
 import warnings
 
 import pandas as pd
 import torch
 from transformers import BertForSequenceClassification, BertTokenizer
+from agents.model_utils import get_model_metadata, validate_model_artifacts
 
 warnings.filterwarnings("ignore")
 
@@ -84,25 +83,20 @@ TI_PROFILES = {
 
 
 class TIEnrichmentBERTModel:
-    def __init__(self, model_path="models/ti_enrichment_bert"):
-        self.model_path = model_path
+    def __init__(self, model_path=None):
+        self.model_path = validate_model_artifacts("ti_enrichment", model_path)
         self.device = "cuda" if torch.cuda.is_available() else "cpu"
 
-        config_file = os.path.join(model_path, "config.json")
-        if not os.path.exists(config_file):
-            raise FileNotFoundError(
-                f"Model config not found at {config_file}. "
-                "Please train the model first using train_ti_enrichment_bert_model.py"
-            )
+        metadata = get_model_metadata(self.model_path)
+        self.label_map = metadata["label_map"]
+        self.id_to_label = metadata["id_to_label"]
+        self.max_length = metadata["max_length"]
 
-        with open(config_file, "r") as f:
-            self.config = json.load(f)
-
-        self.id_to_label = {int(k): v for k, v in self.config["id_to_label"].items()}
-        self.max_length = self.config["max_length"]
-
-        self.tokenizer = BertTokenizer.from_pretrained(model_path)
-        self.model = BertForSequenceClassification.from_pretrained(model_path)
+        self.tokenizer = BertTokenizer.from_pretrained(str(self.model_path))
+        self.model = BertForSequenceClassification.from_pretrained(
+            str(self.model_path),
+            num_labels=len(self.label_map)
+        )
         self.model.to(self.device)
         self.model.eval()
 
@@ -126,6 +120,7 @@ class TIEnrichmentBERTModel:
 
 
 _global_ti_model = None
+_global_ti_model_path = None
 
 
 def _build_incident_text(row):
@@ -136,14 +131,15 @@ def _build_incident_text(row):
     )
 
 
-def enrich_with_threat_intel(incidents_df, model_path="models/ti_enrichment_bert", batch_size=32):
+def enrich_with_threat_intel(incidents_df, model_path=None, batch_size=32):
     if incidents_df is None or len(incidents_df) == 0:
         print("No incidents to enrich")
         return pd.DataFrame()
 
-    global _global_ti_model
-    if _global_ti_model is None:
+    global _global_ti_model, _global_ti_model_path
+    if _global_ti_model is None or model_path != _global_ti_model_path:
         _global_ti_model = TIEnrichmentBERTModel(model_path)
+        _global_ti_model_path = model_path
 
     enriched = incidents_df.copy()
     texts = enriched.apply(_build_incident_text, axis=1).tolist()
