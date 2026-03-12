@@ -476,5 +476,5 @@ This project is licensed under the **Apache License 2.0** - see the [LICENSE](LI
 - 🌐 **Modern Web UI** with real-time updates
 - 🔧 **Production Ready** with complete testing
 
-**Built with ❤️ using PyTorch, Transformers, and Vanilla JavaScript**
+**Built with 💛 using PyTorch, Transformers, and Vanilla JavaScript**
 
