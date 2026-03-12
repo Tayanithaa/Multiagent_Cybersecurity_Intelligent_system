@@ -478,4 +478,3 @@ This project is licensed under the **Apache License 2.0** - see the [LICENSE](LI
 
 **Built with ❤️ using PyTorch, Transformers, and Vanilla JavaScript**
 
-Co-authored-by: Friend Name kmariandeepak@gmail.com
